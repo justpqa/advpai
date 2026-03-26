@@ -1,0 +1,54 @@
+[
+  [
+    "30413934_PMC6358498.csv",
+    "Table 30413934_PMC6358498.csv (66.67) does not contain right set of Study type for SNP ['rs1048365', 'rs10906257', 'rs10991386', 'rs11039131', 'rs11039297', 'rs11144711', 'rs114465688', 'rs115674098', 'rs115785781', 'rs115795926', 'rs115802139', 'rs115813375', 'rs116715716', 'rs117922969', 'rs12056620', 'rs12188460', 'rs12194027', 'rs12339683', 'rs12595955', 'rs1263170', 'rs12783314', 'rs12784561', 'rs13114818', 'rs13277568', 'rs141129230', 'rs1534576', 'rs1635142', 'rs16895579', 'rs16953089', 'rs1759499']"
+  ],
+  [
+    "30651383_PMC6369905.csv",
+    "Table 30651383_PMC6369905.csv (0.0) does not contain right set of Study type for SNP ['rs12373108', 'rs12583648', 'rs39938', 'rs74587705', 'rs75889566', 'rs9371194']"
+  ],
+  [
+    "29107063_PMC5920782.csv",
+    "Table 29107063_PMC5920782.csv (78.57) does not contain right set of Study type for SNP ['rs115881343', 'rs12721046', 'rs76366838']"
+  ],
+  [
+    "31426376_PMC6723529.csv",
+    "Table 31426376_PMC6723529.csv (0.0) does not contain right set of Study type for SNP ['APOE-e3e4', 'APOE-e4e4']"
+  ],
+  [
+    "29777097_PMC5959890.csv",
+    "Table 29777097_PMC5959890.csv (0.0) does not contain right set of Study type for SNP ['rs593742', 'rs6504163', 'rs889555']"
+  ],
+  [
+    "29274321_PMC5938137.csv",
+    "Table 29274321_PMC5938137.csv (0.0) does not contain right set of Study type for SNP ['rs10775009', 'rs111882035', 'rs118130881', 'rs12268753', 'rs2378873', 'rs2819438', 'rs4921790', 'rs55644114', 'rs73705514', 'rs74442473', 'rs74834332', 'rs79846291']"
+  ],
+  [
+    "29967939_PMC6280657.csv",
+    "Table 29967939_PMC6280657.csv (0.0) does not contain right set of Study type for SNP ['rs12961169', 'rs13115400', 'rs1393060', 'rs185031519', 'rs316341', 'rs35055419', 'rs514716', 'rs769449', 'rs9527039']"
+  ],
+  [
+    "30930738_PMC6425305.csv",
+    "Table 30930738_PMC6425305.csv (0.0) does not contain right set of Study type for SNP ['rs10792421', 'rs11649476']"
+  ],
+  [
+    "30448613_PMC6331247.csv",
+    "Table 30448613_PMC6331247.csv (0.0) does not contain right set of Study type for SNP ['rs10838725', 'rs10948363', 'rs111418223', 'rs11771145', 'rs12453', 'rs12459419', 'rs1476679', 'rs1859788', 'rs2293576', 'rs2296160', 'rs2405442', 'rs28834970', 'rs3752246', 'rs3865444', 'rs4147929', 'rs4844600', 'rs6656401', 'rs6733839', 'rs7982', 'rs8093731', 'rs9271192', 'rs9331896', 'rs983392']"
+  ],
+  [
+    "27899424_PMC5237405.csv",
+    "Table 27899424_PMC5237405.csv (0.0) does not contain right set of Study type for SNP ['rs10784359', 'rs12964543', 'rs1328032', 'rs1358071', 'rs199528', 'rs2446406', 'rs2893253', 'rs405509', 'rs4417745', 'rs676768', 'rs6857', 'rs7184882', 'rs7664889', 'rs9268877']"
+  ],
+  [
+    "28247064_PMC5613285.csv",
+    "Table 28247064_PMC5613285.csv (0.0) does not contain right set of Study type for SNP ['rs12961169', 'rs185031519', 'rs316341', 'rs35055419', 'rs514716', 'rs769449', 'rs9527039']"
+  ],
+  [
+    "29752348_PMC5976227.csv",
+    "Table 29752348_PMC5976227.csv (0.0) does not contain right set of Study type for SNP ['rs13164785', 'rs146896516', 'rs3744020', 'rs67827860']"
+  ],
+  [
+    "30820047_PMC6463297.csv",
+    "Table 30820047_PMC6463297.csv (0.0) does not contain right set of Study type for SNP ['rs10467994', 'rs10808026', 'rs10933431', 'rs11218343', 'rs114812713', 'rs12539172', 'rs12881735', 'rs138190086', 'rs17125924', 'rs190982', 'rs2632516', 'rs2830500', 'rs35868327', 'rs3740688', 'rs3752246', 'rs3851179', 'rs429358', 'rs4723711', 'rs4735340', 'rs4844610', 'rs593742', 'rs6024870', 'rs62039712', 'rs6733839', 'rs71618613', 'rs7185636', 'rs7295246', 'rs73223431', 'rs75932628', 'rs7920721', 'rs7933202', 'rs9271058', 'rs9331896', 'rs9473117']"
+  ]
+]

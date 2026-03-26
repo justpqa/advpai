@@ -1,8 +1,8 @@
-Pubmed ID,PMCID,Table ID,SNP,Chr,RA1,RA2,AF,P-value,Effect,Effect Type,Population,Cohort,Stage
-28560309.0,PMC5440281,Table 1,,18.0,,,0.09,9.48e-08,5.15,BETA,white,ADNI,
-28560309.0,PMC5440281,Table 1,,3.0,,,0.26,4.92e-07,3.34,BETA,white,ADNI,
-28560309.0,PMC5440281,Table 1,,13.0,,,0.42,1.52e-06,-2.98,BETA,white,ADNI,
-28560309.0,PMC5440281,Table 1,,13.0,,,0.3,1.55e-06,2.89,BETA,white,ADNI,
-28560309.0,PMC5440281,Table 1,,1.0,,,0.06,1.92e-06,5.76,BETA,white,ADNI,
-28560309.0,PMC5440281,Table 1,,3.0,,,0.1,2.83e-06,4.53,BETA,white,ADNI,
-28560309.0,PMC5440281,Table 1,,10.0,,,0.08,3.24e-06,4.58,BETA,white,ADNI,
+Pubmed ID,PMCID,Table ID,SNP,Chr,RA1,RA2,AF,P-value,Effect,Effect Type,Population,Cohort,Stage,Imputation,Phenotype,Study type
+28560309.0,PMC5440281,Table 1,,18.0,,,0.09,9.48e-08,5.15,BETA,white,ADNI,,1000G,ADAS-Cog scores (Longitudinal Alzheimer's Disease Assessment Scale-Cognition scores),Interaction(SNP)
+28560309.0,PMC5440281,Table 1,,3.0,,,0.26,4.92e-07,3.34,BETA,white,ADNI,,1000G,ADAS-Cog scores (Longitudinal Alzheimer's Disease Assessment Scale-Cognition scores),Interaction(SNP)
+28560309.0,PMC5440281,Table 1,,13.0,,,0.42,1.52e-06,-2.98,BETA,white,ADNI,,1000G,ADAS-Cog scores (Longitudinal Alzheimer's Disease Assessment Scale-Cognition scores),Interaction(SNP)
+28560309.0,PMC5440281,Table 1,,13.0,,,0.3,1.55e-06,2.89,BETA,white,ADNI,,1000G,ADAS-Cog scores (Longitudinal Alzheimer's Disease Assessment Scale-Cognition scores),Interaction(SNP)
+28560309.0,PMC5440281,Table 1,,1.0,,,0.06,1.92e-06,5.76,BETA,white,ADNI,,1000G,ADAS-Cog scores (Longitudinal Alzheimer's Disease Assessment Scale-Cognition scores),Interaction(SNP)
+28560309.0,PMC5440281,Table 1,,3.0,,,0.1,2.83e-06,4.53,BETA,white,ADNI,,1000G,ADAS-Cog scores (Longitudinal Alzheimer's Disease Assessment Scale-Cognition scores),Interaction(SNP)
+28560309.0,PMC5440281,Table 1,,10.0,,,0.08,3.24e-06,4.58,BETA,white,ADNI,,1000G,ADAS-Cog scores (Longitudinal Alzheimer's Disease Assessment Scale-Cognition scores),Interaction(SNP)

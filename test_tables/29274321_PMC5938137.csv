@@ -1,13 +1,13 @@
-Pubmed ID,PMCID,Table ID,SNP,Chr,RA1,RA2,AF,P-value,Effect,Effect Type,Population,Cohort,Stage
-29274321.0,PMC5938137,Table 1,rs10775009,12.0,T,,0.34,1.59e-09,0.51,BETA,European ancestry,ADNI,
-29274321.0,PMC5938137,Table 1,rs111882035,4.0,G,,0.02,2.74e-08,-0.93,BETA,European ancestry,ADNI,
-29274321.0,PMC5938137,Table 1,rs118130881,8.0,G,,0.04,1.72e-08,-0.61,BETA,European ancestry,ADNI,
-29274321.0,PMC5938137,Table 1,rs12268753,10.0,C,,0.21,2.01e-08,0.3,BETA,European ancestry,ADNI,
-29274321.0,PMC5938137,Table 1,rs2378873,17.0,T,,0.44,2.03e-08,-0.53,BETA,European ancestry,ADNI,
-29274321.0,PMC5938137,Table 1,rs2819438,14.0,A,,0.13,6.94e-09,-0.8,BETA,European ancestry,ADNI,
-29274321.0,PMC5938137,Table 1,rs4921790,8.0,C,,0.12,4.58e-09,0.61,BETA,European ancestry,ADNI,
-29274321.0,PMC5938137,Table 1,rs55644114,8.0,A,,0.16,2.54e-08,0.41,BETA,European ancestry,ADNI,
-29274321.0,PMC5938137,Table 1,rs73705514,7.0,C,,0.02,2.86e-09,-0.84,BETA,European ancestry,ADNI,
-29274321.0,PMC5938137,Table 1,rs74442473,12.0,G,,0.07,2.53e-08,-1.02,BETA,European ancestry,ADNI,
-29274321.0,PMC5938137,Table 1,rs74834332,1.0,A,,0.03,4.3e-08,0.79,BETA,European ancestry,ADNI,
-29274321.0,PMC5938137,Table 1,rs79846291,6.0,T,,0.02,1.76e-08,1.85,BETA,European ancestry,ADNI,
+Pubmed ID,PMCID,Table ID,SNP,Chr,RA1,RA2,AF,P-value,Effect,Effect Type,Population,Cohort,Stage,Imputation,Phenotype,Study type
+29274321.0,PMC5938137,Table 1,rs10775009,12.0,T,,0.34,1.59e-09,0.51,BETA,European ancestry,ADNI,,1000G (release Mar 2012),CSF T-tau,SNP-based
+29274321.0,PMC5938137,Table 1,rs111882035,4.0,G,,0.02,2.74e-08,-0.93,BETA,European ancestry,ADNI,,1000G (release Mar 2012),Logic memory delayed (LMdT) recall test,SNP-based
+29274321.0,PMC5938137,Table 1,rs118130881,8.0,G,,0.04,1.72e-08,-0.61,BETA,European ancestry,ADNI,,1000G (release Mar 2012),Logical memory immediate (LMiT) recall test,SNP-based
+29274321.0,PMC5938137,Table 1,rs12268753,10.0,C,,0.21,2.01e-08,0.3,BETA,European ancestry,ADNI,,1000G (release Mar 2012),Logic memory delayed (LMdT) recall test,SNP-based
+29274321.0,PMC5938137,Table 1,rs2378873,17.0,T,,0.44,2.03e-08,-0.53,BETA,European ancestry,ADNI,,1000G (release Mar 2012),CSF Ab1-42,SNP-based
+29274321.0,PMC5938137,Table 1,rs2819438,14.0,A,,0.13,6.94e-09,-0.8,BETA,European ancestry,ADNI,,1000G (release Mar 2012),CSF T-tau,SNP-based
+29274321.0,PMC5938137,Table 1,rs4921790,8.0,C,,0.12,4.58e-09,0.61,BETA,European ancestry,ADNI,,1000G (release Mar 2012),Hippocampal volume (HPV),SNP-based
+29274321.0,PMC5938137,Table 1,rs55644114,8.0,A,,0.16,2.54e-08,0.41,BETA,European ancestry,ADNI,,1000G (release Mar 2012),CSF Ab1-42,SNP-based
+29274321.0,PMC5938137,Table 1,rs73705514,7.0,C,,0.02,2.86e-09,-0.84,BETA,European ancestry,ADNI,,1000G (release Mar 2012),Logic memory delayed (LMdT) recall test,SNP-based
+29274321.0,PMC5938137,Table 1,rs74442473,12.0,G,,0.07,2.53e-08,-1.02,BETA,European ancestry,ADNI,,1000G (release Mar 2012),CSF Ab1-42,SNP-based
+29274321.0,PMC5938137,Table 1,rs74834332,1.0,A,,0.03,4.3e-08,0.79,BETA,European ancestry,ADNI,,1000G (release Mar 2012),Logic memory delayed (LMdT) recall test,SNP-based
+29274321.0,PMC5938137,Table 1,rs79846291,6.0,T,,0.02,1.76e-08,1.85,BETA,European ancestry,ADNI,,1000G (release Mar 2012),Hippocampal volume (HPV),SNP-based

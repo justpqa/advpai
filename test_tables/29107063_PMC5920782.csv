@@ -1,33 +1,33 @@
-Pubmed ID,PMCID,Table ID,SNP,Chr,RA1,RA2,AF,P-value,Effect,Effect Type,Population,Cohort,Stage
-29107063.0,PMC5920782,Table 2.2,rs115881343,19.0,C,"G,T",0.03,2.03e-09,0.5,HR,"White, black, other",HRS,
-29107063.0,PMC5920782,Table 2.1,rs12721046,19.0,A,G,,4.87e-09,2.2,OR,NHW,FHS,Discovery
-29107063.0,PMC5920782,Table 2.2,rs12721046,19.0,G,A,0.08,2.39e-14,2.2,HR,"White, black, other",CHS,
-29107063.0,PMC5920782,Table 2.2,rs12721046,19.0,G,A,0.08,2.93e-09,2.0,HR,NHW,FHS,
-29107063.0,PMC5920782,Table 2.1,rs157580,19.0,G,A,,1.5e-23,0.5,OR,"White, black, other",LOADFS,Discovery
-29107063.0,PMC5920782,Table 2.2,rs157582,19.0,C,T,0.29,1.68e-07,0.7,HR,"White, black, other",HRS,
-29107063.0,PMC5920782,Table 2.1,rs157582,19.0,T,C,,3.32e-09,1.5,OR,"White, black, other",HRS,Discovery
-29107063.0,PMC5920782,Table 2.1,rs2075650,19.0,G,A,,4.02e-09,2.3,OR,NHW,FHS,Discovery
-29107063.0,PMC5920782,Table 2.1,rs2075650,19.0,G,A,,2.86e-64,3.6,OR,"White, black, other",LOADFS,Discovery
-29107063.0,PMC5920782,Table 2.1,rs2075650,19.0,G,A,,9.32e-15,2.3,OR,"White, black, other",CHS,Discovery
-29107063.0,PMC5920782,Table 2.2,rs2075650,19.0,A,G,0.12,1.99e-15,2.3,HR,"White, black, other",CHS,
-29107063.0,PMC5920782,Table 2.2,rs2075650,19.0,A,G,0.12,1.46e-05,1.7,HR,NHW,FHS,
-29107063.0,PMC5920782,Table 2.1,rs2075650,19.0,G,A,,1.65e-07,1.5,OR,"White, black, other",HRS,Discovery
-29107063.0,PMC5920782,Table 2.2,rs2075650,19.0,A,G,0.12,5.17e-07,1.5,HR,"White, black, other",HRS,
-29107063.0,PMC5920782,Table 2.2,rs283815,19.0,A,G,0.3,3.07e-07,0.7,HR,"White, black, other",HRS,
-29107063.0,PMC5920782,Table 2.1,rs283815,19.0,G,A,,1.41e-08,1.5,OR,"White, black, other",HRS,Discovery
-29107063.0,PMC5920782,Table 2.1,rs405509,19.0,T,G,,1.31e-06,1.5,OR,"White, black, other",CHS,Discovery
-29107063.0,PMC5920782,Table 2.2,rs405509,19.0,T,G,0.47,1.16e-05,1.4,HR,"White, black, other",CHS,
-29107063.0,PMC5920782,Table 2.1,rs405509,19.0,T,G,,1.5e-20,1.7,OR,"White, black, other",LOADFS,Discovery
-29107063.0,PMC5920782,Table 2.1,rs439401,19.0,T,C,,5.17e-17,0.6,OR,"White, black, other",LOADFS,Discovery
-29107063.0,PMC5920782,Table 2.1,rs6859,19.0,A,G,,5.34e-05,1.4,OR,"White, black, other",CHS,Discovery
-29107063.0,PMC5920782,Table 2.2,rs6859,19.0,A,G,0.37,2.87e-05,1.4,HR,"White, black, other",CHS,
-29107063.0,PMC5920782,Table 2.1,rs6859,19.0,A,G,,1.12e-18,1.7,OR,"White, black, other",LOADFS,Discovery
-29107063.0,PMC5920782,Table 2.1,rs71352238,19.0,C,T,,7.54e-08,1.6,OR,"White, black, other",HRS,Discovery
-29107063.0,PMC5920782,Table 2.2,rs71352238,19.0,T,C,0.09,3.19e-06,1.5,HR,"White, black, other",HRS,
-29107063.0,PMC5920782,Table 2.2,rs76366838,19.0,G,A,0.03,1.71e-08,0.4,HR,"White, black, other",HRS,
-29107063.0,PMC5920782,Table 2.2,rs769449,19.0,G,A,0.06,3.12e-08,1.7,HR,"White, black, other",HRS,
-29107063.0,PMC5920782,Table 2.1,rs769449,19.0,A,G,,3e-12,1.9,OR,"White, black, other",HRS,Discovery
-29107063.0,PMC5920782,Table 2.1,rs769450,19.0,A,G,,0.000159,0.7,OR,"White, black, other",CHS,Discovery
-29107063.0,PMC5920782,Table 2.1,rs8106922,19.0,G,A,,4.54e-05,0.7,OR,"White, black, other",CHS,Discovery
-29107063.0,PMC5920782,Table 2.2,rs8106922,19.0,A,G,0.3,8.34e-05,0.7,HR,"White, black, other",CHS,
-29107063.0,PMC5920782,Table 2.1,rs8106922,19.0,G,A,,1.14e-23,0.5,OR,"White, black, other",LOADFS,Discovery
+Pubmed ID,PMCID,Table ID,SNP,Chr,RA1,RA2,AF,P-value,Effect,Effect Type,Population,Cohort,Stage,Imputation,Phenotype,Study type
+29107063.0,PMC5920782,Table 2.2,rs115881343,19.0,C,"G,T",0.03,2.03e-09,0.5,HR,"White, black, other",HRS,,,Age at onset,SNP-based
+29107063.0,PMC5920782,Table 2.1,rs12721046,19.0,A,G,,4.87e-09,2.2,OR,NHW,FHS,Discovery,,AD,SNP-based
+29107063.0,PMC5920782,Table 2.2,rs12721046,19.0,G,A,0.08,2.39e-14,2.2,HR,"White, black, other",CHS,,,Age at onset,SNP-based
+29107063.0,PMC5920782,Table 2.2,rs12721046,19.0,G,A,0.08,2.93e-09,2.0,HR,NHW,FHS,,,Age at onset,SNP-based
+29107063.0,PMC5920782,Table 2.1,rs157580,19.0,G,A,,1.5e-23,0.5,OR,"White, black, other",LOADFS,Discovery,,AD,SNP-based
+29107063.0,PMC5920782,Table 2.2,rs157582,19.0,C,T,0.29,1.68e-07,0.7,HR,"White, black, other",HRS,,,Age at onset,SNP-based
+29107063.0,PMC5920782,Table 2.1,rs157582,19.0,T,C,,3.32e-09,1.5,OR,"White, black, other",HRS,Discovery,,AD,SNP-based
+29107063.0,PMC5920782,Table 2.1,rs2075650,19.0,G,A,,4.02e-09,2.3,OR,NHW,FHS,Discovery,,AD,SNP-based
+29107063.0,PMC5920782,Table 2.1,rs2075650,19.0,G,A,,2.86e-64,3.6,OR,"White, black, other",LOADFS,Discovery,,AD,SNP-based
+29107063.0,PMC5920782,Table 2.1,rs2075650,19.0,G,A,,9.32e-15,2.3,OR,"White, black, other",CHS,Discovery,,AD,SNP-based
+29107063.0,PMC5920782,Table 2.2,rs2075650,19.0,A,G,0.12,1.99e-15,2.3,HR,"White, black, other",CHS,,,Age at onset,SNP-based
+29107063.0,PMC5920782,Table 2.2,rs2075650,19.0,A,G,0.12,1.46e-05,1.7,HR,NHW,FHS,,,Age at onset,SNP-based
+29107063.0,PMC5920782,Table 2.1,rs2075650,19.0,G,A,,1.65e-07,1.5,OR,"White, black, other",HRS,Discovery,,AD,SNP-based
+29107063.0,PMC5920782,Table 2.2,rs2075650,19.0,A,G,0.12,5.17e-07,1.5,HR,"White, black, other",HRS,,,Age at onset,SNP-based
+29107063.0,PMC5920782,Table 2.2,rs283815,19.0,A,G,0.3,3.07e-07,0.7,HR,"White, black, other",HRS,,,Age at onset,SNP-based
+29107063.0,PMC5920782,Table 2.1,rs283815,19.0,G,A,,1.41e-08,1.5,OR,"White, black, other",HRS,Discovery,,AD,SNP-based
+29107063.0,PMC5920782,Table 2.1,rs405509,19.0,T,G,,1.31e-06,1.5,OR,"White, black, other",CHS,Discovery,,AD,SNP-based
+29107063.0,PMC5920782,Table 2.2,rs405509,19.0,T,G,0.47,1.16e-05,1.4,HR,"White, black, other",CHS,,,Age at onset,SNP-based
+29107063.0,PMC5920782,Table 2.1,rs405509,19.0,T,G,,1.5e-20,1.7,OR,"White, black, other",LOADFS,Discovery,,AD,SNP-based
+29107063.0,PMC5920782,Table 2.1,rs439401,19.0,T,C,,5.17e-17,0.6,OR,"White, black, other",LOADFS,Discovery,,AD,SNP-based
+29107063.0,PMC5920782,Table 2.1,rs6859,19.0,A,G,,5.34e-05,1.4,OR,"White, black, other",CHS,Discovery,,AD,SNP-based
+29107063.0,PMC5920782,Table 2.2,rs6859,19.0,A,G,0.37,2.87e-05,1.4,HR,"White, black, other",CHS,,,Age at onset,SNP-based
+29107063.0,PMC5920782,Table 2.1,rs6859,19.0,A,G,,1.12e-18,1.7,OR,"White, black, other",LOADFS,Discovery,,AD,SNP-based
+29107063.0,PMC5920782,Table 2.1,rs71352238,19.0,C,T,,7.54e-08,1.6,OR,"White, black, other",HRS,Discovery,,AD,SNP-based
+29107063.0,PMC5920782,Table 2.2,rs71352238,19.0,T,C,0.09,3.19e-06,1.5,HR,"White, black, other",HRS,,,Age at onset,SNP-based
+29107063.0,PMC5920782,Table 2.2,rs76366838,19.0,G,A,0.03,1.71e-08,0.4,HR,"White, black, other",HRS,,,Age at onset,SNP-based
+29107063.0,PMC5920782,Table 2.2,rs769449,19.0,G,A,0.06,3.12e-08,1.7,HR,"White, black, other",HRS,,,Age at onset,SNP-based
+29107063.0,PMC5920782,Table 2.1,rs769449,19.0,A,G,,3e-12,1.9,OR,"White, black, other",HRS,Discovery,,AD,SNP-based
+29107063.0,PMC5920782,Table 2.1,rs769450,19.0,A,G,,0.000159,0.7,OR,"White, black, other",CHS,Discovery,,AD,SNP-based
+29107063.0,PMC5920782,Table 2.1,rs8106922,19.0,G,A,,4.54e-05,0.7,OR,"White, black, other",CHS,Discovery,,AD,SNP-based
+29107063.0,PMC5920782,Table 2.2,rs8106922,19.0,A,G,0.3,8.34e-05,0.7,HR,"White, black, other",CHS,,,Age at onset,SNP-based
+29107063.0,PMC5920782,Table 2.1,rs8106922,19.0,G,A,,1.14e-23,0.5,OR,"White, black, other",LOADFS,Discovery,,AD,SNP-based

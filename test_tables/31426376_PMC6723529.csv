@@ -1,36 +1,36 @@
-Pubmed ID,PMCID,Table ID,SNP,Chr,RA1,RA2,AF,P-value,Effect,Effect Type,Population,Cohort,Stage
-31426376.0,PMC6723529,Table 1,APOE-e3e4,,,,,1.3e-35,2.49,OR,African ancestry,ADGC,Discovery
-31426376.0,PMC6723529,Table 3,APOE-e3e4,,T,T,,0.16,1.95,F-value,European ancestry,ADNI,
-31426376.0,PMC6723529,Table 3,APOE-e3e4,,G,G,,0.11,2.65,F-value,European ancestry,ADNI,
-31426376.0,PMC6723529,Table 3,APOE-e3e4,,G,G,,0.75,0.1,F-value,European ancestry,ADNI,
-31426376.0,PMC6723529,Table 3,APOE-e3e4,,G,G,,0.62,0.24,F-value,European ancestry,ADNI,
-31426376.0,PMC6723529,Table 2,APOE-e3e4,,G,T,,4.53e-176,4.1,OR,"East Asian, European ancestry","East Asian Cohort (Korean National Research Center for Dementia), Japanese (Japanese Genetics Study Consortium of AlzheimerÕs Disease), Korean ( Korean Genome and Epidemiology Study) ",Discovery
-31426376.0,PMC6723529,Table 2,APOE-e3e4,,T,T,,2.6e-187,4.62,OR,"East Asian, European ancestry","East Asian Cohort (Korean National Research Center for Dementia), Japanese (Japanese Genetics Study Consortium of AlzheimerÕs Disease), Korean ( Korean Genome and Epidemiology Study) ",Discovery
-31426376.0,PMC6723529,Table 3,APOE-e3e4,,T,T,,0.03,4.58,F-value,European ancestry,ADNI,
-31426376.0,PMC6723529,Table 2,APOE-e3e4,,G,T,,1.09e-45,4.55,OR,East Asian,"East Asian Cohort (Korean National Research Center for Dementia), Japanese (Japanese Genetics Study Consortium of AlzheimerÕs Disease), Korean ( Korean Genome and Epidemiology Study) ",Discovery
-31426376.0,PMC6723529,Table 2,APOE-e3e4,,G,T,,2.55e-134,3.89,OR,European ancestry,ADGC,Discovery
-31426376.0,PMC6723529,Table 2,APOE-e3e4,,G,G,,7.16e-39,3.4,OR,"East Asian, European ancestry","East Asian Cohort (Korean National Research Center for Dementia), Japanese (Japanese Genetics Study Consortium of AlzheimerÕs Disease), Korean ( Korean Genome and Epidemiology Study) ",Discovery
-31426376.0,PMC6723529,Table 2,APOE-e3e4,,T,T,,5.1e-98,5.13,OR,East Asian,"East Asian Cohort (Korean National Research Center for Dementia), Japanese (Japanese Genetics Study Consortium of AlzheimerÕs Disease), Korean ( Korean Genome and Epidemiology Study) ",Discovery
-31426376.0,PMC6723529,Table 3,APOE-e3e4,,T,T,,0.04,7.4,F-value,European ancestry,ADNI,
-31426376.0,PMC6723529,Table 2,APOE-e3e4,,T,T,,1.55e-94,4.25,OR,European ancestry,ADGC,Discovery
-31426376.0,PMC6723529,Table 1,APOE-e3e4,,,,,3e-54,8.17,OR,African ancestry,ADGC,Discovery
-31426376.0,PMC6723529,Table 2,APOE-e3e4,,G,G,,4.87e-37,3.39,OR,European ancestry,ADGC,Discovery
-31426376.0,PMC6723529,Table 2,APOE-e3e4,,G,G,,0.006,3.55,OR,East Asian,"East Asian Cohort (Korean National Research Center for Dementia), Japanese (Japanese Genetics Study Consortium of AlzheimerÕs Disease), Korean ( Korean Genome and Epidemiology Study) ",Discovery
-31426376.0,PMC6723529,Table 1,APOE-e3e4,,,,,2e-270,3.83,OR,European ancestry,ADGC,Discovery
-31426376.0,PMC6723529,Table 1,APOE-e3e4,,,,,2.8e-109,25.12,OR,East Asian,"East Asian Cohort (Korean National Research Center for Dementia), Japanese (Japanese Genetics Study Consortium of AlzheimerÕs Disease), Korean ( Korean Genome and Epidemiology Study) ",Discovery
-31426376.0,PMC6723529,Table 1,APOE-e3e4,,,,,2.3e-187,14.35,OR,European ancestry,ADGC,Discovery
-31426376.0,PMC6723529,Table 1,APOE-e3e4,,,,,2.6e-152,4.98,OR,East Asian,"East Asian Cohort (Korean National Research Center for Dementia), Japanese (Japanese Genetics Study Consortium of AlzheimerÕs Disease), Korean ( Korean Genome and Epidemiology Study) ",Discovery
-31426376.0,PMC6723529,Table 3,APOE-e4e4,,T,T,,3.4e-05,18.13,F-value,European ancestry,ADNI,
-31426376.0,PMC6723529,Table 3,APOE-e4e4,,T,T,,0.005,8.27,F-value,European ancestry,ADNI,
-31426376.0,PMC6723529,Table 3,APOE-e4e4,,T,T,,0.013,6.33,F-value,European ancestry,ADNI,
-31426376.0,PMC6723529,Table 3,APOE-e4e4,,G,G,,0.24,1.43,F-value,European ancestry,ADNI,
-31426376.0,PMC6723529,Table 2,APOE-e4e4,,G,G,,1.84e-12,8.44,OR,"East Asian, European ancestry","East Asian Cohort (Korean National Research Center for Dementia), Japanese (Japanese Genetics Study Consortium of AlzheimerÕs Disease), Korean ( Korean Genome and Epidemiology Study) ",Discovery
-31426376.0,PMC6723529,Table 2,APOE-e4e4,,T,T,,2.69e-108,18.13,OR,European ancestry,ADGC,Discovery
-31426376.0,PMC6723529,Table 2,APOE-e4e4,,G,T,,1.05e-71,12.9,OR,"East Asian, European ancestry","East Asian Cohort (Korean National Research Center for Dementia), Japanese (Japanese Genetics Study Consortium of AlzheimerÕs Disease), Korean ( Korean Genome and Epidemiology Study) ",Discovery
-31426376.0,PMC6723529,Table 2,APOE-e4e4,,T,T,,7.69e-186,20.96,OR,"East Asian, European ancestry","East Asian Cohort (Korean National Research Center for Dementia), Japanese (Japanese Genetics Study Consortium of AlzheimerÕs Disease), Korean ( Korean Genome and Epidemiology Study) ",Discovery
-31426376.0,PMC6723529,Table 2,APOE-e4e4,,T,T,,8.8e-94,27.02,OR,East Asian,"East Asian Cohort (Korean National Research Center for Dementia), Japanese (Japanese Genetics Study Consortium of AlzheimerÕs Disease), Korean ( Korean Genome and Epidemiology Study) ",Discovery
-31426376.0,PMC6723529,Table 2,APOE-e4e4,,G,T,,2.62e-09,15.87,OR,East Asian,"East Asian Cohort (Korean National Research Center for Dementia), Japanese (Japanese Genetics Study Consortium of AlzheimerÕs Disease), Korean ( Korean Genome and Epidemiology Study) ",Discovery
-31426376.0,PMC6723529,Table 2,APOE-e4e4,,G,G,,4.07e-12,8.35,OR,European ancestry,ADGC,Discovery
-31426376.0,PMC6723529,Table 2,APOE-e4e4,,G,T,,3.44e-64,12.63,OR,European ancestry,ADGC,Discovery
-31426376.0,PMC6723529,Table 3,APOE-e4e4,,G,G,,0.92,0.01,F-value,European ancestry,ADNI,
-31426376.0,PMC6723529,Table 3,APOE-e4e4,,G,G,,0.85,0.04,F-value,European ancestry,ADNI,
+Pubmed ID,PMCID,Table ID,SNP,Chr,RA1,RA2,AF,P-value,Effect,Effect Type,Population,Cohort,Stage,Imputation,Phenotype,Study type
+31426376.0,PMC6723529,Table 1,APOE-e3e4,,,,,1.3e-35,2.49,OR,African ancestry,ADGC,Discovery,1000G Phase 3 (release Oct 2014),AD,SNP-based
+31426376.0,PMC6723529,Table 3,APOE-e3e4,,T,T,,0.16,1.95,F-value,European ancestry,ADNI,,,Cortical atrophy in Medial temporal cortex,SNP-based
+31426376.0,PMC6723529,Table 3,APOE-e3e4,,G,G,,0.11,2.65,F-value,European ancestry,ADNI,,,Cortical atrophy in Hippocampal Volume,SNP-based
+31426376.0,PMC6723529,Table 3,APOE-e3e4,,G,G,,0.75,0.1,F-value,European ancestry,ADNI,,,Cortical atrophy in Precuneus,SNP-based
+31426376.0,PMC6723529,Table 3,APOE-e3e4,,G,G,,0.62,0.24,F-value,European ancestry,ADNI,,,Cortical atrophy in Medial temporal cortex,SNP-based
+31426376.0,PMC6723529,Table 2,APOE-e3e4,,G,T,,4.53e-176,4.1,OR,"East Asian, European ancestry","East Asian Cohort (Korean National Research Center for Dementia), Japanese (Japanese Genetics Study Consortium of AlzheimerÕs Disease), Korean ( Korean Genome and Epidemiology Study) ",Discovery,"HRC r1.1, 1000G Phase 3",AD,SNP-based
+31426376.0,PMC6723529,Table 2,APOE-e3e4,,T,T,,2.6e-187,4.62,OR,"East Asian, European ancestry","East Asian Cohort (Korean National Research Center for Dementia), Japanese (Japanese Genetics Study Consortium of AlzheimerÕs Disease), Korean ( Korean Genome and Epidemiology Study) ",Discovery,"HRC r1.1, 1000G Phase 3",AD,SNP-based
+31426376.0,PMC6723529,Table 3,APOE-e3e4,,T,T,,0.03,4.58,F-value,European ancestry,ADNI,,,Cortical atrophy in Precuneus,SNP-based
+31426376.0,PMC6723529,Table 2,APOE-e3e4,,G,T,,1.09e-45,4.55,OR,East Asian,"East Asian Cohort (Korean National Research Center for Dementia), Japanese (Japanese Genetics Study Consortium of AlzheimerÕs Disease), Korean ( Korean Genome and Epidemiology Study) ",Discovery,1000G Phase 3 (release Oct 2014),AD,SNP-based
+31426376.0,PMC6723529,Table 2,APOE-e3e4,,G,T,,2.55e-134,3.89,OR,European ancestry,ADGC,Discovery,HRC r1.1,AD,SNP-based
+31426376.0,PMC6723529,Table 2,APOE-e3e4,,G,G,,7.16e-39,3.4,OR,"East Asian, European ancestry","East Asian Cohort (Korean National Research Center for Dementia), Japanese (Japanese Genetics Study Consortium of AlzheimerÕs Disease), Korean ( Korean Genome and Epidemiology Study) ",Discovery,"HRC r1.1, 1000G Phase 3",AD,SNP-based
+31426376.0,PMC6723529,Table 2,APOE-e3e4,,T,T,,5.1e-98,5.13,OR,East Asian,"East Asian Cohort (Korean National Research Center for Dementia), Japanese (Japanese Genetics Study Consortium of AlzheimerÕs Disease), Korean ( Korean Genome and Epidemiology Study) ",Discovery,1000G Phase 3 (release Oct 2014),AD,SNP-based
+31426376.0,PMC6723529,Table 3,APOE-e3e4,,T,T,,0.04,7.4,F-value,European ancestry,ADNI,,,Cortical atrophy in Hippocampal Volume,SNP-based
+31426376.0,PMC6723529,Table 2,APOE-e3e4,,T,T,,1.55e-94,4.25,OR,European ancestry,ADGC,Discovery,HRC r1.1,AD,SNP-based
+31426376.0,PMC6723529,Table 1,APOE-e3e4,,,,,3e-54,8.17,OR,African ancestry,ADGC,Discovery,1000G Phase 3 (release Oct 2014),AD,SNP-based
+31426376.0,PMC6723529,Table 2,APOE-e3e4,,G,G,,4.87e-37,3.39,OR,European ancestry,ADGC,Discovery,HRC r1.1,AD,SNP-based
+31426376.0,PMC6723529,Table 2,APOE-e3e4,,G,G,,0.006,3.55,OR,East Asian,"East Asian Cohort (Korean National Research Center for Dementia), Japanese (Japanese Genetics Study Consortium of AlzheimerÕs Disease), Korean ( Korean Genome and Epidemiology Study) ",Discovery,1000G Phase 3 (release Oct 2014),AD,SNP-based
+31426376.0,PMC6723529,Table 1,APOE-e3e4,,,,,2e-270,3.83,OR,European ancestry,ADGC,Discovery,HRC r1.1,AD,SNP-based
+31426376.0,PMC6723529,Table 1,APOE-e3e4,,,,,2.8e-109,25.12,OR,East Asian,"East Asian Cohort (Korean National Research Center for Dementia), Japanese (Japanese Genetics Study Consortium of AlzheimerÕs Disease), Korean ( Korean Genome and Epidemiology Study) ",Discovery,1000G Phase 3 (release Oct 2014),AD,SNP-based
+31426376.0,PMC6723529,Table 1,APOE-e3e4,,,,,2.3e-187,14.35,OR,European ancestry,ADGC,Discovery,HRC r1.1,AD,SNP-based
+31426376.0,PMC6723529,Table 1,APOE-e3e4,,,,,2.6e-152,4.98,OR,East Asian,"East Asian Cohort (Korean National Research Center for Dementia), Japanese (Japanese Genetics Study Consortium of AlzheimerÕs Disease), Korean ( Korean Genome and Epidemiology Study) ",Discovery,1000G Phase 3 (release Oct 2014),AD,SNP-based
+31426376.0,PMC6723529,Table 3,APOE-e4e4,,T,T,,3.4e-05,18.13,F-value,European ancestry,ADNI,,,Cortical atrophy in Hippocampal Volume,SNP-based
+31426376.0,PMC6723529,Table 3,APOE-e4e4,,T,T,,0.005,8.27,F-value,European ancestry,ADNI,,,Cortical atrophy in Precuneus,SNP-based
+31426376.0,PMC6723529,Table 3,APOE-e4e4,,T,T,,0.013,6.33,F-value,European ancestry,ADNI,,,Cortical atrophy in Medial temporal cortex,SNP-based
+31426376.0,PMC6723529,Table 3,APOE-e4e4,,G,G,,0.24,1.43,F-value,European ancestry,ADNI,,,Cortical atrophy in Hippocampal Volume,SNP-based
+31426376.0,PMC6723529,Table 2,APOE-e4e4,,G,G,,1.84e-12,8.44,OR,"East Asian, European ancestry","East Asian Cohort (Korean National Research Center for Dementia), Japanese (Japanese Genetics Study Consortium of AlzheimerÕs Disease), Korean ( Korean Genome and Epidemiology Study) ",Discovery,"HRC r1.1, 1000G Phase 3",AD,SNP-based
+31426376.0,PMC6723529,Table 2,APOE-e4e4,,T,T,,2.69e-108,18.13,OR,European ancestry,ADGC,Discovery,HRC r1.1,AD,SNP-based
+31426376.0,PMC6723529,Table 2,APOE-e4e4,,G,T,,1.05e-71,12.9,OR,"East Asian, European ancestry","East Asian Cohort (Korean National Research Center for Dementia), Japanese (Japanese Genetics Study Consortium of AlzheimerÕs Disease), Korean ( Korean Genome and Epidemiology Study) ",Discovery,"HRC r1.1, 1000G Phase 3",AD,SNP-based
+31426376.0,PMC6723529,Table 2,APOE-e4e4,,T,T,,7.69e-186,20.96,OR,"East Asian, European ancestry","East Asian Cohort (Korean National Research Center for Dementia), Japanese (Japanese Genetics Study Consortium of AlzheimerÕs Disease), Korean ( Korean Genome and Epidemiology Study) ",Discovery,"HRC r1.1, 1000G Phase 3",AD,SNP-based
+31426376.0,PMC6723529,Table 2,APOE-e4e4,,T,T,,8.8e-94,27.02,OR,East Asian,"East Asian Cohort (Korean National Research Center for Dementia), Japanese (Japanese Genetics Study Consortium of AlzheimerÕs Disease), Korean ( Korean Genome and Epidemiology Study) ",Discovery,1000G Phase 3 (release Oct 2014),AD,SNP-based
+31426376.0,PMC6723529,Table 2,APOE-e4e4,,G,T,,2.62e-09,15.87,OR,East Asian,"East Asian Cohort (Korean National Research Center for Dementia), Japanese (Japanese Genetics Study Consortium of AlzheimerÕs Disease), Korean ( Korean Genome and Epidemiology Study) ",Discovery,1000G Phase 3 (release Oct 2014),AD,SNP-based
+31426376.0,PMC6723529,Table 2,APOE-e4e4,,G,G,,4.07e-12,8.35,OR,European ancestry,ADGC,Discovery,HRC r1.1,AD,SNP-based
+31426376.0,PMC6723529,Table 2,APOE-e4e4,,G,T,,3.44e-64,12.63,OR,European ancestry,ADGC,Discovery,HRC r1.1,AD,SNP-based
+31426376.0,PMC6723529,Table 3,APOE-e4e4,,G,G,,0.92,0.01,F-value,European ancestry,ADNI,,,Cortical atrophy in Precuneus,SNP-based
+31426376.0,PMC6723529,Table 3,APOE-e4e4,,G,G,,0.85,0.04,F-value,European ancestry,ADNI,,,Cortical atrophy in Medial temporal cortex,SNP-based

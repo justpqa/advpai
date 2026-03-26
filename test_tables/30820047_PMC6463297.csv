@@ -1,105 +1,105 @@
-Pubmed ID,PMCID,Table ID,SNP,Chr,RA1,RA2,AF,P-value,Effect,Effect Type,Population,Cohort,Stage
-30820047.0,PMC6463297,Table 2,rs10467994,15.0,C,T,0.333,4.3e-07,0.94,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD","Discovery, Stage 2, Stage 3A"
-30820047.0,PMC6463297,Table 2,rs10467994,15.0,C,T,0.333,0.62,0.97,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 2,rs10467994,15.0,C,T,0.333,3.9e-07,0.94,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs10808026,7.0,A,C,0.199,1.3e-10,0.9,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs10808026,7.0,A,C,0.199,3.1e-08,0.9,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs10808026,7.0,A,C,0.199,0.0011,0.91,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs10933431,2.0,G,C,0.223,2.6e-07,0.9,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs10933431,2.0,G,C,0.223,0.0032,0.92,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs10933431,2.0,G,C,0.223,3.4e-09,0.91,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs11218343,11.0,C,T,0.04,2.7e-08,0.81,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs11218343,11.0,C,T,0.04,1.8e-05,0.77,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs11218343,11.0,C,T,0.04,2.9e-12,0.8,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 2,rs114812713,6.0,C,G,0.03,4.5e-12,1.35,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Discovery
-30820047.0,PMC6463297,Table 2,rs114812713,6.0,C,G,0.03,0.0072,1.23,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Stage 3B (Stage 2 + Stage 3A)
-30820047.0,PMC6463297,Table 2,rs114812713,6.0,C,G,0.03,2.1e-13,1.32,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD","Stage 1, Stage 3B (Stage 2 + Stage 3A)"
-30820047.0,PMC6463297,Table 1,rs12539172,7.0,T,C,0.303,2.1e-05,0.93,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs12539172,7.0,T,C,0.303,2.1e-06,0.89,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs12539172,7.0,T,C,0.303,9.3e-10,0.92,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs12881735,14.0,C,T,0.221,7.4e-09,0.92,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs12881735,14.0,C,T,0.221,4.9e-07,0.92,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs12881735,14.0,C,T,0.221,0.0043,0.92,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs138190086,17.0,A,G,0.02,0.00018,1.41,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs138190086,17.0,A,G,0.02,7.5e-09,1.32,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs138190086,17.0,A,G,0.02,7.5e-06,1.29,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 2,rs138190086,17.0,A,G,0.02,0.21,1.17,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 2,rs138190086,17.0,A,G,0.02,5.3e-09,1.3,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD","Discovery, Stage 2, Stage 3A"
-30820047.0,PMC6463297,Table 1,rs17125924,14.0,G,A,0.093,1.4e-09,1.14,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs17125924,14.0,G,A,0.093,6.6e-07,1.13,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs17125924,14.0,G,A,0.093,0.0005,1.15,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs190982,5.0,G,A,0.39,0.0027,0.93,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs190982,5.0,G,A,0.39,2.8e-06,0.94,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs190982,5.0,G,A,0.39,0.00028,0.95,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 2,rs2632516,17.0,C,G,0.44,5.3e-08,0.94,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD","Discovery, Stage 2, Stage 3A"
-30820047.0,PMC6463297,Table 2,rs2632516,17.0,C,G,0.44,2.3e-07,0.94,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 2,rs2632516,17.0,C,G,0.44,0.075,0.91,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 2,rs2830500,21.0,A,C,0.308,7.4e-08,0.93,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 2,rs2830500,21.0,A,C,0.308,0.13,0.95,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 2,rs2830500,21.0,A,C,0.308,2.6e-08,0.93,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD","Discovery, Stage 2, Stage 3A"
-30820047.0,PMC6463297,Table 2,rs35868327,5.0,A,T,0.013,2.6e-07,0.68,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD","Stage 1, Stage 3B (Stage 2 + Stage 3A)"
-30820047.0,PMC6463297,Table 2,rs35868327,5.0,A,T,0.013,0.12,0.58,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Stage 3B (Stage 2 + Stage 3A)
-30820047.0,PMC6463297,Table 2,rs35868327,5.0,A,T,0.013,7.8e-07,0.69,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Discovery
-30820047.0,PMC6463297,Table 1,rs3740688,11.0,G,T,0.448,0.0012,0.93,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs3740688,11.0,G,T,0.448,5.4e-13,0.92,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs3740688,11.0,G,T,0.448,9.7e-11,0.91,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs3752246,19.0,G,C,0.182,6.6e-10,1.13,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs3752246,19.0,G,C,0.182,4.7e-08,1.18,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs3752246,19.0,G,C,0.182,3.1e-16,1.15,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs3851179,11.0,T,C,0.356,6.1e-11,0.85,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs3851179,11.0,T,C,0.356,6e-25,0.88,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs3851179,11.0,T,C,0.356,5.8e-16,0.89,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs429358,19.0,C,T,0.216,0.0,3.32,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs4723711,7.0,T,A,0.356,0.0001,0.91,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs4723711,7.0,T,A,0.356,2.8e-07,0.94,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs4723711,7.0,T,A,0.356,0.00027,0.95,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 2,rs4735340,8.0,A,T,0.476,3.4e-07,0.94,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 2,rs4735340,8.0,A,T,0.476,9.2e-08,0.94,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD","Discovery, Stage 2, Stage 3A"
-30820047.0,PMC6463297,Table 2,rs4735340,8.0,A,T,0.476,0.097,0.92,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs4844610,1.0,A,C,0.187,8.2e-16,1.16,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs4844610,1.0,A,C,0.187,3.8e-10,1.2,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs4844610,1.0,A,C,0.187,3.6e-24,1.17,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 2,rs593742,15.0,G,A,0.295,6.8e-09,0.93,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD","Discovery, Stage 2, Stage 3A"
-30820047.0,PMC6463297,Table 2,rs593742,15.0,G,A,0.295,0.015,0.91,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 2,rs593742,15.0,G,A,0.295,1.3e-07,0.93,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs6024870,20.0,A,G,0.088,3.5e-08,0.88,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs6024870,20.0,A,G,0.088,0.009,0.9,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs6024870,20.0,A,G,0.088,1.1e-06,0.88,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 2,rs62039712,16.0,A,G,0.116,1.2e-07,1.17,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Discovery
-30820047.0,PMC6463297,Table 2,rs62039712,16.0,A,G,0.116,3.7e-08,1.16,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD","Stage 1, Stage 3B (Stage 2 + Stage 3A)"
-30820047.0,PMC6463297,Table 2,rs62039712,16.0,A,G,0.116,0.13,1.14,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Stage 3B (Stage 2 + Stage 3A)
-30820047.0,PMC6463297,Table 1,rs6733839,2.0,T,C,0.407,2e-18,1.23,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs6733839,2.0,T,C,0.407,4e-28,1.18,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs6733839,2.0,T,C,0.407,2.1e-44,1.2,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 2,rs71618613,5.0,C,A,0.01,3.3e-07,0.71,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD","Stage 1, Stage 3B (Stage 2 + Stage 3A)"
-30820047.0,PMC6463297,Table 2,rs71618613,5.0,C,A,0.01,0.0068,0.76,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Stage 3B (Stage 2 + Stage 3A)
-30820047.0,PMC6463297,Table 2,rs71618613,5.0,C,A,0.01,9.8e-06,0.68,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Discovery
-30820047.0,PMC6463297,Table 2,rs7185636,16.0,C,T,0.18,2.4e-08,0.92,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD","Discovery, Stage 2, Stage 3A"
-30820047.0,PMC6463297,Table 2,rs7185636,16.0,C,T,0.18,8.4e-08,0.92,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 2,rs7185636,16.0,C,T,0.18,0.11,0.94,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 2,rs7295246,12.0,G,T,0.413,3.9e-07,1.06,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD","Discovery, Stage 2, Stage 3A"
-30820047.0,PMC6463297,Table 2,rs7295246,12.0,G,T,0.413,0.45,1.02,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 2,rs7295246,12.0,G,T,0.413,2.7e-07,1.07,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs73223431,8.0,T,C,0.367,1.5e-05,1.11,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs73223431,8.0,T,C,0.367,6.3e-14,1.1,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs73223431,8.0,T,C,0.367,8.3e-10,1.1,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs75932628,6.0,T,C,0.008,2.7e-15,2.08,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs75932628,6.0,T,C,0.008,0.00015,2.5,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs75932628,6.0,T,C,0.008,2.9e-12,2.01,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs7920721,10.0,G,A,0.389,1.9e-07,1.08,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 2,rs7920721,10.0,G,A,0.39,0.0015,1.11,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 2,rs7920721,10.0,G,A,0.39,1.8e-11,1.08,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD","Discovery, Stage 2, Stage 3A"
-30820047.0,PMC6463297,Table 1,rs7920721,10.0,G,A,0.389,0.0032,1.07,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs7920721,10.0,G,A,0.389,2.3e-09,1.08,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs7933202,11.0,C,A,0.391,1.9e-19,0.89,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs7933202,11.0,C,A,0.391,1.6e-05,0.9,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs7933202,11.0,C,A,0.391,2.2e-15,0.89,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs9271058,6.0,A,T,0.27,5.7e-05,1.11,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs9271058,6.0,A,T,0.27,5.1e-08,1.1,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs9271058,6.0,A,T,0.27,1.4e-11,1.1,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs9331896,8.0,C,T,0.387,1.7e-09,0.87,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs9331896,8.0,C,T,0.387,4.6e-24,0.88,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs9331896,8.0,C,T,0.387,3.6e-16,0.88,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs9473117,6.0,C,A,0.28,1.2e-10,1.09,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs9473117,6.0,C,A,0.28,2.3e-07,1.09,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
-30820047.0,PMC6463297,Table 1,rs9473117,6.0,C,A,0.28,0.0001,1.11,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis
+Pubmed ID,PMCID,Table ID,SNP,Chr,RA1,RA2,AF,P-value,Effect,Effect Type,Population,Cohort,Stage,Imputation,Phenotype,Study type
+30820047.0,PMC6463297,Table 2,rs10467994,15.0,C,T,0.333,4.3e-07,0.94,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD","Discovery, Stage 2, Stage 3A",1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs10467994,15.0,C,T,0.333,0.62,0.97,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs10467994,15.0,C,T,0.333,3.9e-07,0.94,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs10808026,7.0,A,C,0.199,1.3e-10,0.9,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs10808026,7.0,A,C,0.199,3.1e-08,0.9,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs10808026,7.0,A,C,0.199,0.0011,0.91,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs10933431,2.0,G,C,0.223,2.6e-07,0.9,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs10933431,2.0,G,C,0.223,0.0032,0.92,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs10933431,2.0,G,C,0.223,3.4e-09,0.91,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs11218343,11.0,C,T,0.04,2.7e-08,0.81,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs11218343,11.0,C,T,0.04,1.8e-05,0.77,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs11218343,11.0,C,T,0.04,2.9e-12,0.8,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs114812713,6.0,C,G,0.03,4.5e-12,1.35,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Discovery,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs114812713,6.0,C,G,0.03,0.0072,1.23,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Stage 3B (Stage 2 + Stage 3A),1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs114812713,6.0,C,G,0.03,2.1e-13,1.32,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD","Stage 1, Stage 3B (Stage 2 + Stage 3A)",1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs12539172,7.0,T,C,0.303,2.1e-05,0.93,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs12539172,7.0,T,C,0.303,2.1e-06,0.89,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs12539172,7.0,T,C,0.303,9.3e-10,0.92,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs12881735,14.0,C,T,0.221,7.4e-09,0.92,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs12881735,14.0,C,T,0.221,4.9e-07,0.92,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs12881735,14.0,C,T,0.221,0.0043,0.92,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs138190086,17.0,A,G,0.02,0.00018,1.41,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs138190086,17.0,A,G,0.02,7.5e-09,1.32,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs138190086,17.0,A,G,0.02,7.5e-06,1.29,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs138190086,17.0,A,G,0.02,0.21,1.17,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs138190086,17.0,A,G,0.02,5.3e-09,1.3,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD","Discovery, Stage 2, Stage 3A",1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs17125924,14.0,G,A,0.093,1.4e-09,1.14,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs17125924,14.0,G,A,0.093,6.6e-07,1.13,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs17125924,14.0,G,A,0.093,0.0005,1.15,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs190982,5.0,G,A,0.39,0.0027,0.93,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs190982,5.0,G,A,0.39,2.8e-06,0.94,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs190982,5.0,G,A,0.39,0.00028,0.95,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs2632516,17.0,C,G,0.44,5.3e-08,0.94,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD","Discovery, Stage 2, Stage 3A",1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs2632516,17.0,C,G,0.44,2.3e-07,0.94,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs2632516,17.0,C,G,0.44,0.075,0.91,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs2830500,21.0,A,C,0.308,7.4e-08,0.93,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs2830500,21.0,A,C,0.308,0.13,0.95,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs2830500,21.0,A,C,0.308,2.6e-08,0.93,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD","Discovery, Stage 2, Stage 3A",1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs35868327,5.0,A,T,0.013,2.6e-07,0.68,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD","Stage 1, Stage 3B (Stage 2 + Stage 3A)",1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs35868327,5.0,A,T,0.013,0.12,0.58,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Stage 3B (Stage 2 + Stage 3A),1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs35868327,5.0,A,T,0.013,7.8e-07,0.69,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Discovery,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs3740688,11.0,G,T,0.448,0.0012,0.93,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs3740688,11.0,G,T,0.448,5.4e-13,0.92,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs3740688,11.0,G,T,0.448,9.7e-11,0.91,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs3752246,19.0,G,C,0.182,6.6e-10,1.13,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs3752246,19.0,G,C,0.182,4.7e-08,1.18,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs3752246,19.0,G,C,0.182,3.1e-16,1.15,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs3851179,11.0,T,C,0.356,6.1e-11,0.85,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs3851179,11.0,T,C,0.356,6e-25,0.88,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs3851179,11.0,T,C,0.356,5.8e-16,0.89,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs429358,19.0,C,T,0.216,0.0,3.32,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs4723711,7.0,T,A,0.356,0.0001,0.91,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs4723711,7.0,T,A,0.356,2.8e-07,0.94,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs4723711,7.0,T,A,0.356,0.00027,0.95,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs4735340,8.0,A,T,0.476,3.4e-07,0.94,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs4735340,8.0,A,T,0.476,9.2e-08,0.94,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD","Discovery, Stage 2, Stage 3A",1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs4735340,8.0,A,T,0.476,0.097,0.92,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs4844610,1.0,A,C,0.187,8.2e-16,1.16,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs4844610,1.0,A,C,0.187,3.8e-10,1.2,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs4844610,1.0,A,C,0.187,3.6e-24,1.17,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs593742,15.0,G,A,0.295,6.8e-09,0.93,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD","Discovery, Stage 2, Stage 3A",1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs593742,15.0,G,A,0.295,0.015,0.91,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs593742,15.0,G,A,0.295,1.3e-07,0.93,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs6024870,20.0,A,G,0.088,3.5e-08,0.88,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs6024870,20.0,A,G,0.088,0.009,0.9,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs6024870,20.0,A,G,0.088,1.1e-06,0.88,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs62039712,16.0,A,G,0.116,1.2e-07,1.17,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Discovery,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs62039712,16.0,A,G,0.116,3.7e-08,1.16,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD","Stage 1, Stage 3B (Stage 2 + Stage 3A)",1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs62039712,16.0,A,G,0.116,0.13,1.14,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Stage 3B (Stage 2 + Stage 3A),1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs6733839,2.0,T,C,0.407,2e-18,1.23,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs6733839,2.0,T,C,0.407,4e-28,1.18,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs6733839,2.0,T,C,0.407,2.1e-44,1.2,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs71618613,5.0,C,A,0.01,3.3e-07,0.71,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD","Stage 1, Stage 3B (Stage 2 + Stage 3A)",1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs71618613,5.0,C,A,0.01,0.0068,0.76,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Stage 3B (Stage 2 + Stage 3A),1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs71618613,5.0,C,A,0.01,9.8e-06,0.68,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Discovery,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs7185636,16.0,C,T,0.18,2.4e-08,0.92,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD","Discovery, Stage 2, Stage 3A",1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs7185636,16.0,C,T,0.18,8.4e-08,0.92,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs7185636,16.0,C,T,0.18,0.11,0.94,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs7295246,12.0,G,T,0.413,3.9e-07,1.06,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD","Discovery, Stage 2, Stage 3A",1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs7295246,12.0,G,T,0.413,0.45,1.02,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs7295246,12.0,G,T,0.413,2.7e-07,1.07,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs73223431,8.0,T,C,0.367,1.5e-05,1.11,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs73223431,8.0,T,C,0.367,6.3e-14,1.1,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs73223431,8.0,T,C,0.367,8.3e-10,1.1,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs75932628,6.0,T,C,0.008,2.7e-15,2.08,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs75932628,6.0,T,C,0.008,0.00015,2.5,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs75932628,6.0,T,C,0.008,2.9e-12,2.01,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs7920721,10.0,G,A,0.389,1.9e-07,1.08,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs7920721,10.0,G,A,0.39,0.0015,1.11,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 2,rs7920721,10.0,G,A,0.39,1.8e-11,1.08,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD","Discovery, Stage 2, Stage 3A",1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs7920721,10.0,G,A,0.389,0.0032,1.07,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs7920721,10.0,G,A,0.389,2.3e-09,1.08,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs7933202,11.0,C,A,0.391,1.9e-19,0.89,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs7933202,11.0,C,A,0.391,1.6e-05,0.9,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs7933202,11.0,C,A,0.391,2.2e-15,0.89,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs9271058,6.0,A,T,0.27,5.7e-05,1.11,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs9271058,6.0,A,T,0.27,5.1e-08,1.1,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs9271058,6.0,A,T,0.27,1.4e-11,1.1,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs9331896,8.0,C,T,0.387,1.7e-09,0.87,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs9331896,8.0,C,T,0.387,4.6e-24,0.88,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs9331896,8.0,C,T,0.387,3.6e-16,0.88,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs9473117,6.0,C,A,0.28,1.2e-10,1.09,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs9473117,6.0,C,A,0.28,2.3e-07,1.09,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based
+30820047.0,PMC6463297,Table 1,rs9473117,6.0,C,A,0.28,0.0001,1.11,OR,Non-Hispanic White,"ADGC, CHARGE, EADI, GERAD",Meta-analysis,1000G,Clinically diagnosed LOAD,SNP-based

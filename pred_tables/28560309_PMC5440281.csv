@@ -1,29 +1,29 @@
-P-value,Effect,AF,SNP,Chr,Position,RA1,RA2,Effect notes,P-value notes,Population,Cohort,Stage
-30.54,5.15,0.093,rs17090219,18,,,,Coefficient,F value,white,ADNI,Replication
-9.48e-08,5.15,0.093,rs17090219,18,,,,Coefficient,P value,white,ADNI,Replication
-26.83,3.34,0.256,rs3936289,3,,,,Coefficient,F value,white,ADNI,Replication
-4.92e-07,3.34,0.256,rs3936289,3,,,,Coefficient,P value,white,ADNI,Replication
-24.4,-2.98,0.424,rs56378310,13,,,,Coefficient,F value,white,ADNI,Replication
-1.52e-06,-2.98,0.424,rs56378310,13,,,,Coefficient,P value,white,ADNI,Replication
-24.36,2.89,0.3,rs192470679,13,,,,Coefficient,F value,white,ADNI,Replication
-1.55e-06,2.89,0.3,rs192470679,13,,,,Coefficient,P value,white,ADNI,Replication
-24.0,5.76,0.062,rs11121365,1,,,,Coefficient,F value,white,ADNI,Replication
-1.92e-06,5.76,0.062,rs11121365,1,,,,Coefficient,P value,white,ADNI,Replication
-23.03,4.53,0.095,rs2484,3,,,,Coefficient,F value,white,ADNI,Replication
-2.83e-06,4.53,0.095,rs2484,3,,,,Coefficient,P value,white,ADNI,Replication
-22.8,4.58,0.083,rs10903488,10,,,,Coefficient,F value,white,ADNI,Replication
-3.24e-06,4.58,0.083,rs10903488,10,,,,Coefficient,P value,white,ADNI,Replication
-30.54,0.93,0.093,rs17090219,18,,,,SE,F value,white,ADNI,Discovery + Replication
-9.48e-08,0.93,0.093,rs17090219,18,,,,SE,P value,white,ADNI,Discovery + Replication
-26.83,0.64,0.256,rs3936289,3,,,,SE,F value,white,ADNI,Discovery + Replication
-4.92e-07,0.64,0.256,rs3936289,3,,,,SE,P value,white,ADNI,Discovery + Replication
-24.4,0.6,0.424,rs56378310,13,,,,SE,F value,white,ADNI,Discovery + Replication
-1.52e-06,0.6,0.424,rs56378310,13,,,,SE,P value,white,ADNI,Discovery + Replication
-24.36,0.59,0.3,rs192470679,13,,,,SE,F value,white,ADNI,Discovery + Replication
-1.55e-06,0.59,0.3,rs192470679,13,,,,SE,P value,white,ADNI,Discovery + Replication
-24.0,1.18,0.062,rs11121365,1,,,,SE,F value,white,ADNI,Discovery + Replication
-1.92e-06,1.18,0.062,rs11121365,1,,,,SE,P value,white,ADNI,Discovery + Replication
-23.03,0.94,0.095,rs2484,3,,,,SE,F value,white,ADNI,Discovery + Replication
-2.83e-06,0.94,0.095,rs2484,3,,,,SE,P value,white,ADNI,Discovery + Replication
-22.8,0.96,0.083,rs10903488,10,,,,SE,F value,white,ADNI,Discovery + Replication
-3.24e-06,0.96,0.083,rs10903488,10,,,,SE,P value,white,ADNI,Discovery + Replication
+P-value,Effect,AF,SNP,Chr,Position,RA1,RA2,Effect notes,P-value notes,Population,Cohort,Stage,Imputation,Study type,Phenotype
+30.54,5.15,0.093,rs17090219,18,,,,Coefficient,F value,European (EUR),ADNI-GO + ADNI-1 + ADNI-2 + ADNI,,1000 Genomes (1000G),Whole Genome Sequencing (WGS) + Genotyping,Alzheimer’s disease + MCI conversion to AD
+9.48e-08,5.15,0.093,rs17090219,18,,,,Coefficient,P value,European (EUR),ADNI-GO + ADNI-1 + ADNI-2 + ADNI,,1000 Genomes (1000G),Whole Genome Sequencing (WGS) + Genotyping,Alzheimer’s disease + MCI conversion to AD
+26.83,3.34,0.256,rs3936289,3,,,,Coefficient,F value,European (EUR),ADNI-GO + ADNI-1 + ADNI-2 + ADNI,,1000 Genomes (1000G),Whole Genome Sequencing (WGS) + Genotyping,Alzheimer’s disease + MCI conversion to AD
+4.92e-07,3.34,0.256,rs3936289,3,,,,Coefficient,P value,European (EUR),ADNI-GO + ADNI-1 + ADNI-2 + ADNI,,1000 Genomes (1000G),Whole Genome Sequencing (WGS) + Genotyping,Alzheimer’s disease + MCI conversion to AD
+24.4,-2.98,0.424,rs56378310,13,,,,Coefficient,F value,European (EUR),ADNI-GO + ADNI-1 + ADNI-2 + ADNI,,1000 Genomes (1000G),Whole Genome Sequencing (WGS) + Genotyping,Alzheimer’s disease + MCI conversion to AD
+1.52e-06,-2.98,0.424,rs56378310,13,,,,Coefficient,P value,European (EUR),ADNI-GO + ADNI-1 + ADNI-2 + ADNI,,1000 Genomes (1000G),Whole Genome Sequencing (WGS) + Genotyping,Alzheimer’s disease + MCI conversion to AD
+24.36,2.89,0.3,rs192470679,13,,,,Coefficient,F value,European (EUR),ADNI-GO + ADNI-1 + ADNI-2 + ADNI,,1000 Genomes (1000G),Whole Genome Sequencing (WGS) + Genotyping,Alzheimer’s disease + MCI conversion to AD
+1.55e-06,2.89,0.3,rs192470679,13,,,,Coefficient,P value,European (EUR),ADNI-GO + ADNI-1 + ADNI-2 + ADNI,,1000 Genomes (1000G),Whole Genome Sequencing (WGS) + Genotyping,Alzheimer’s disease + MCI conversion to AD
+24.0,5.76,0.062,rs11121365,1,,,,Coefficient,F value,European (EUR),ADNI-GO + ADNI-1 + ADNI-2 + ADNI,,1000 Genomes (1000G),Whole Genome Sequencing (WGS) + Genotyping,Alzheimer’s disease + MCI conversion to AD
+1.92e-06,5.76,0.062,rs11121365,1,,,,Coefficient,P value,European (EUR),ADNI-GO + ADNI-1 + ADNI-2 + ADNI,,1000 Genomes (1000G),Whole Genome Sequencing (WGS) + Genotyping,Alzheimer’s disease + MCI conversion to AD
+23.03,4.53,0.095,rs2484,3,,,,Coefficient,F value,European (EUR),ADNI-GO + ADNI-1 + ADNI-2 + ADNI,,1000 Genomes (1000G),Whole Genome Sequencing (WGS) + Genotyping,Alzheimer’s disease + MCI conversion to AD
+2.83e-06,4.53,0.095,rs2484,3,,,,Coefficient,P value,European (EUR),ADNI-GO + ADNI-1 + ADNI-2 + ADNI,,1000 Genomes (1000G),Whole Genome Sequencing (WGS) + Genotyping,Alzheimer’s disease + MCI conversion to AD
+22.8,4.58,0.083,rs10903488,10,,,,Coefficient,F value,European (EUR),ADNI-GO + ADNI-1 + ADNI-2 + ADNI,,1000 Genomes (1000G),Whole Genome Sequencing (WGS) + Genotyping,Alzheimer’s disease + MCI conversion to AD
+3.24e-06,4.58,0.083,rs10903488,10,,,,Coefficient,P value,European (EUR),ADNI-GO + ADNI-1 + ADNI-2 + ADNI,,1000 Genomes (1000G),Whole Genome Sequencing (WGS) + Genotyping,Alzheimer’s disease + MCI conversion to AD
+30.54,0.93,0.093,rs17090219,18,,,,SE,F value,European (EUR),ADNI-GO + ADNI-1 + ADNI-2 + ADNI,,1000 Genomes (1000G),Whole Genome Sequencing (WGS) + Genotyping,Alzheimer’s disease + MCI conversion to AD
+9.48e-08,0.93,0.093,rs17090219,18,,,,SE,P value,European (EUR),ADNI-GO + ADNI-1 + ADNI-2 + ADNI,,1000 Genomes (1000G),Whole Genome Sequencing (WGS) + Genotyping,Alzheimer’s disease + MCI conversion to AD
+26.83,0.64,0.256,rs3936289,3,,,,SE,F value,European (EUR),ADNI-GO + ADNI-1 + ADNI-2 + ADNI,,1000 Genomes (1000G),Whole Genome Sequencing (WGS) + Genotyping,Alzheimer’s disease + MCI conversion to AD
+4.92e-07,0.64,0.256,rs3936289,3,,,,SE,P value,European (EUR),ADNI-GO + ADNI-1 + ADNI-2 + ADNI,,1000 Genomes (1000G),Whole Genome Sequencing (WGS) + Genotyping,Alzheimer’s disease + MCI conversion to AD
+24.4,0.6,0.424,rs56378310,13,,,,SE,F value,European (EUR),ADNI-GO + ADNI-1 + ADNI-2 + ADNI,,1000 Genomes (1000G),Whole Genome Sequencing (WGS) + Genotyping,Alzheimer’s disease + MCI conversion to AD
+1.52e-06,0.6,0.424,rs56378310,13,,,,SE,P value,European (EUR),ADNI-GO + ADNI-1 + ADNI-2 + ADNI,,1000 Genomes (1000G),Whole Genome Sequencing (WGS) + Genotyping,Alzheimer’s disease + MCI conversion to AD
+24.36,0.59,0.3,rs192470679,13,,,,SE,F value,European (EUR),ADNI-GO + ADNI-1 + ADNI-2 + ADNI,,1000 Genomes (1000G),Whole Genome Sequencing (WGS) + Genotyping,Alzheimer’s disease + MCI conversion to AD
+1.55e-06,0.59,0.3,rs192470679,13,,,,SE,P value,European (EUR),ADNI-GO + ADNI-1 + ADNI-2 + ADNI,,1000 Genomes (1000G),Whole Genome Sequencing (WGS) + Genotyping,Alzheimer’s disease + MCI conversion to AD
+24.0,1.18,0.062,rs11121365,1,,,,SE,F value,European (EUR),ADNI-GO + ADNI-1 + ADNI-2 + ADNI,,1000 Genomes (1000G),Whole Genome Sequencing (WGS) + Genotyping,Alzheimer’s disease + MCI conversion to AD
+1.92e-06,1.18,0.062,rs11121365,1,,,,SE,P value,European (EUR),ADNI-GO + ADNI-1 + ADNI-2 + ADNI,,1000 Genomes (1000G),Whole Genome Sequencing (WGS) + Genotyping,Alzheimer’s disease + MCI conversion to AD
+23.03,0.94,0.095,rs2484,3,,,,SE,F value,European (EUR),ADNI-GO + ADNI-1 + ADNI-2 + ADNI,,1000 Genomes (1000G),Whole Genome Sequencing (WGS) + Genotyping,Alzheimer’s disease + MCI conversion to AD
+2.83e-06,0.94,0.095,rs2484,3,,,,SE,P value,European (EUR),ADNI-GO + ADNI-1 + ADNI-2 + ADNI,,1000 Genomes (1000G),Whole Genome Sequencing (WGS) + Genotyping,Alzheimer’s disease + MCI conversion to AD
+22.8,0.96,0.083,rs10903488,10,,,,SE,F value,European (EUR),ADNI-GO + ADNI-1 + ADNI-2 + ADNI,,1000 Genomes (1000G),Whole Genome Sequencing (WGS) + Genotyping,Alzheimer’s disease + MCI conversion to AD
+3.24e-06,0.96,0.083,rs10903488,10,,,,SE,P value,European (EUR),ADNI-GO + ADNI-1 + ADNI-2 + ADNI,,1000 Genomes (1000G),Whole Genome Sequencing (WGS) + Genotyping,Alzheimer’s disease + MCI conversion to AD

@@ -105,7 +105,6 @@ def create_test_tables_from_advp():
 def create_test_tables_from_advp_v2():
     advp1 = pd.read_csv("test_tables/ADVP_1026_v3p8_extracted.txt", sep = "\t", encoding="cp1252")
     advp1 = advp1.replace("NR", pd.NA)
-    
     # modify column name of those used to test
     advp1 = advp1.rename({
         "Top SNP": "SNP",
@@ -118,7 +117,7 @@ def create_test_tables_from_advp_v2():
         "RA 2(Reported Allele 2)": "RA2",
         "Table Ref in paper": "Table ID"
     }, axis = 1)[[
-        "Pubmed ID", "PMCID", "Table ID", "SNP", "Chr", "RA1", "RA2", "AF", "P-value", "Effect", "Effect Type", "Population", "Cohort", "Stage",
+        "Pubmed ID", "PMCID", "Table ID", "SNP", "Chr", "RA1", "RA2", "AF", "P-value", "Effect", "Effect Type", "Population", "Cohort", "Stage", "Imputation", "Phenotype", "Study type"
     ]]
 
     # Update chr to right format

@@ -3,17 +3,17 @@
         "SNP": [
             [
                 "IGAP SNP | SNP | SNP",
-                0.6233228445053101
+                0.723322868347168
             ],
             [
                 "Exonic SNP | SNP ID | SNP ID",
-                0.5262033343315125
+                0.6262033581733704
             ]
         ],
         "IGAP SNP | Closest gene | Closest gene": [
             [
                 "IGAP SNP | Closest gene | Closest gene",
-                1.0
+                Infinity
             ]
         ],
         "Effect": [
@@ -49,25 +49,25 @@
         "SNP": [
             [
                 "IGAP SNP | IGAP SNP",
-                0.5784640312194824
+                0.6784640550613403
             ]
         ],
         "Closest gene | Closest gene": [
             [
                 "Closest gene | Closest gene",
-                1.0
+                Infinity
             ]
         ],
         "Position": [
             [
                 "Probe set ID a | Probe set ID a",
-                0.41968217492103577
+                0.5196821689605713
             ]
         ],
         "Gene | Gene": [
             [
                 "Gene | Gene",
-                1.0
+                Infinity
             ]
         ],
         "Effect": [
@@ -91,31 +91,31 @@
         "SNP": [
             [
                 "IGAP SNP",
-                0.46630939841270447
+                0.56630939245224
             ]
         ],
         "Closest  gene": [
             [
                 "Closest  gene",
-                1.0
+                Infinity
             ]
         ],
         "Position": [
             [
                 "Probe set ID a",
-                0.32108262181282043
+                0.42108261585235596
             ]
         ],
         "Gene  expression": [
             [
                 "Gene  expression",
-                1.0
+                Infinity
             ]
         ],
         "Brain  region": [
             [
                 "Brain  region",
-                1.0
+                Infinity
             ]
         ],
         "Effect": [
@@ -135,7 +135,7 @@
         "Position": [
             [
                 "Probe set ID a | Probe set ID a",
-                0.34694597125053406
+                0.4469459652900696
             ]
         ],
         "Effect": [
@@ -179,13 +179,13 @@
         "Unnamed: 0_level_0 | Gene": [
             [
                 "Unnamed: 0_level_0 | Gene",
-                1.0
+                Infinity
             ]
         ],
         "Chr": [
             [
                 "Unnamed: 1_level_0 | Chr",
-                0.4238249361515045
+                0.52382493019104
             ]
         ],
         "P-value": [
@@ -209,13 +209,13 @@
         "SNP": [
             [
                 "Top SNP in gene | Top SNP in gene",
-                0.5514888763427734
+                0.6514889001846313
             ]
         ],
         "RA2": [
             [
                 "A1/A2 | A1/A2",
-                0.6472885608673096
+                0.7472885847091675
             ]
         ],
         "AF": [
@@ -251,25 +251,25 @@
         "Analyte": [
             [
                 "Analyte",
-                1.0
+                Infinity
             ]
         ],
         "SNP": [
             [
                 "SNP",
-                0.5469998121261597
+                0.6469998359680176
             ]
         ],
         "Tissue/cell type": [
             [
                 "Tissue/cell type",
-                1.0
+                Infinity
             ]
         ],
         "Gene": [
             [
                 "Gene",
-                1.0
+                Infinity
             ]
         ],
         "Effect": [
@@ -278,7 +278,7 @@
                 0.6514979600906372
             ]
         ],
-        "P": [
+        "P-value": [
             [
                 "P",
                 0.7167489528656006
@@ -287,7 +287,7 @@
         "Position": [
             [
                 "References",
-                0.3577583432197571
+                0.4577583372592926
             ]
         ]
     },
@@ -295,13 +295,13 @@
         "SNP": [
             [
                 "SNP [effect allele] | SNP [effect allele] | SNP [effect allele]",
-                0.45785918831825256
+                0.5578591823577881
             ]
         ],
         "Gene | Gene | Gene": [
             [
                 "Gene | Gene | Gene",
-                1.0
+                Infinity
             ]
         ],
         "AF": [
@@ -313,7 +313,7 @@
         "CSF levels n = 3146 | Unnamed: 3_level_1 | \u03b2": [
             [
                 "CSF levels n = 3146 | Unnamed: 3_level_1 | \u03b2",
-                1.0
+                Infinity
             ]
         ],
         "P-value": [
@@ -337,19 +337,19 @@
         "AD risk [48] n = 74,026 | Unnamed: 5_level_1 | OR": [
             [
                 "AD risk [48] n = 74,026 | Unnamed: 5_level_1 | OR",
-                1.0
+                Infinity
             ]
         ],
         "Progression n = 1530 | Unnamed: 7_level_1 | \u03b2": [
             [
                 "Progression n = 1530 | Unnamed: 7_level_1 | \u03b2",
-                1.0
+                Infinity
             ]
         ],
         "AAO n = 39,855 | Unnamed: 9_level_1 | \u03b2": [
             [
                 "AAO n = 39,855 | Unnamed: 9_level_1 | \u03b2",
-                1.0
+                Infinity
             ]
         ]
     },
@@ -357,23 +357,23 @@
         "SNP": [
             [
                 "HGVS | HGVS",
-                0.33397120237350464
+                0.43397119641304016
             ],
             [
                 "SNP[effect allele] | SNP[effect allele]",
-                0.566502034664154
+                0.666502058506012
             ]
         ],
         "Gene | Gene": [
             [
                 "Gene | Gene",
-                1.0
+                Infinity
             ]
         ],
         "Function | Function": [
             [
                 "Function | Function",
-                1.0
+                Infinity
             ]
         ],
         "AF": [
@@ -415,51 +415,51 @@
         "Unnamed: 0": [
             [
                 "Unnamed: 0",
-                1.0
+                Infinity
             ]
         ],
         "Position": [
             [
                 "Knight ADRC",
-                0.3305644690990448
+                0.4305644631385803
             ],
             [
                 "ADNI1",
-                0.32168662548065186
+                0.4216866195201874
             ],
             [
                 "ADNI2",
-                0.3327779471874237
+                0.43277794122695923
             ],
             [
                 "BIOCARD",
-                0.3152090013027191
+                0.41520899534225464
             ],
             [
                 "UPENN",
-                0.35514935851097107
+                0.4551493525505066
             ],
             [
                 "UW",
-                0.39689791202545166
+                0.4968979060649872
             ]
         ],
         "HB": [
             [
                 "HB",
-                1.0
+                Infinity
             ]
         ],
         "M AYO": [
             [
                 "M AYO",
-                1.0
+                Infinity
             ]
         ],
         "SWEDEN": [
             [
                 "SWEDEN",
-                1.0
+                Infinity
             ]
         ]
     },
@@ -467,31 +467,31 @@
         "Chr": [
             [
                 "Region | Locus",
-                0.3687704801559448
+                0.46877047419548035
             ],
             [
                 "Region | Chr",
-                0.5092195868492126
+                0.6092196106910706
             ]
         ],
         "Region | Gene": [
             [
                 "Region | Gene",
-                1.0
+                Infinity
             ]
         ],
         "SNP": [
             [
                 "Case-control status (Phase 1) | SNP",
-                0.6053149700164795
+                0.7053149938583374
             ],
             [
                 "AD-by-proxy (Phase 2) | SNP",
-                0.6052665710449219
+                0.7052665948867798
             ],
             [
                 "Overall (Phase 3) | SNP",
-                0.6085459589958191
+                0.708545982837677
             ]
         ],
         "P-value": [
@@ -511,17 +511,17 @@
         "Position": [
             [
                 "Overall (Phase 3) | bp",
-                0.5940136313438416
+                0.6940136551856995
             ]
         ],
         "RA2": [
             [
                 "Overall (Phase 3) | A1",
-                0.6957937479019165
+                0.7957937717437744
             ],
             [
                 "Overall (Phase 3) | A2",
-                0.6739994287490845
+                0.7739994525909424
             ]
         ],
         "AF": [
@@ -539,7 +539,7 @@
         "Overall (Phase 3) | direction": [
             [
                 "Overall (Phase 3) | direction",
-                1.0
+                Infinity
             ]
         ]
     },
@@ -547,7 +547,7 @@
         "Pathway": [
             [
                 "Pathway",
-                1.0
+                Infinity
             ]
         ],
         "Effect": [
@@ -577,7 +577,7 @@
         "Pathway description": [
             [
                 "Pathway description",
-                1.0
+                Infinity
             ]
         ]
     },
@@ -585,13 +585,13 @@
         "Category": [
             [
                 "Category",
-                1.0
+                Infinity
             ]
         ],
         "Subcategory": [
             [
                 "Subcategory",
-                1.0
+                Infinity
             ]
         ],
         "Effect": [
@@ -623,31 +623,31 @@
         "SNP": [
             [
                 "Unnamed: 0_level_0 | Variant a",
-                0.3463507890701294
+                0.4463507831096649
             ]
         ],
         "Chr": [
             [
                 "Unnamed: 1_level_0 | chr.",
-                0.36391356587409973
+                0.46391355991363525
             ]
         ],
         "Unnamed: 2_level_0 | Positionb": [
             [
                 "Unnamed: 2_level_0 | Positionb",
-                1.0
+                Infinity
             ]
         ],
         "Unnamed: 3_level_0 | Closest genec": [
             [
                 "Unnamed: 3_level_0 | Closest genec",
-                1.0
+                Infinity
             ]
         ],
         "RA1": [
             [
                 "Unnamed: 4_level_0 | Major/minor alleles",
-                0.49568459391593933
+                0.5956845879554749
             ]
         ],
         "AF": [
@@ -673,7 +673,7 @@
         "Stage 1 discovery (n = 63,926) | 95% CIe": [
             [
                 "Stage 1 discovery (n = 63,926) | 95% CIe",
-                1.0
+                Infinity
             ]
         ],
         "P-value": [
@@ -697,13 +697,13 @@
         "Stage 2 (n = 18,845) | 95% CIe": [
             [
                 "Stage 2 (n = 18,845) | 95% CIe",
-                1.0
+                Infinity
             ]
         ],
         "Overall stage 1 + stage 2 (n = 82,771) | 95% CIe": [
             [
                 "Overall stage 1 + stage 2 (n = 82,771) | 95% CIe",
-                1.0
+                Infinity
             ]
         ]
     },
@@ -711,31 +711,31 @@
         "SNP": [
             [
                 "Stage 3A | SNPa",
-                0.5297479629516602
+                0.6297479867935181
             ]
         ],
         "Chr": [
             [
                 "Stage 3A | Chr.",
-                0.5239511132240295
+                0.6239511370658875
             ]
         ],
         "Position": [
             [
                 "Stage 3A | Positionb",
-                0.5183885097503662
+                0.6183885335922241
             ]
         ],
         "Stage 3A | Closest genec": [
             [
                 "Stage 3A | Closest genec",
-                1.0
+                Infinity
             ]
         ],
         "RA2": [
             [
                 "Stage 3A | Major/ minor allele",
-                0.6639016270637512
+                0.7639016509056091
             ]
         ],
         "AF": [
@@ -789,7 +789,7 @@
         "Unnamed: 0_level_0 | Unnamed: 0_level_1 | Gene": [
             [
                 "Unnamed: 0_level_0 | Unnamed: 0_level_1 | Gene",
-                1.0
+                Infinity
             ]
         ],
         "Effect": [
@@ -841,23 +841,23 @@
         "Chr": [
             [
                 "Unnamed: 0_level_0 | Chromosome",
-                0.4875873625278473
+                0.5875873565673828
             ]
         ],
         "Position": [
             [
                 "Unnamed: 1_level_0 | Start",
-                0.5194944739341736
+                0.6194944977760315
             ],
             [
                 "Unnamed: 2_level_0 | End",
-                0.47134825587272644
+                0.571348249912262
             ]
         ],
         "Unnamed: 3_level_0 | Gene": [
             [
                 "Unnamed: 3_level_0 | Gene",
-                1.0
+                Infinity
             ]
         ],
         "P-value": [
@@ -891,26 +891,38 @@
         "Chr": [
             [
                 "Unnamed: 0_level_0 | Unnamed: 0_level_1 | Chromosome",
-                0.531132698059082
+                0.6311327219009399
             ]
         ],
         "SNP": [
             [
                 "Unnamed: 1_level_0 | Unnamed: 1_level_1 | SNP",
-                0.5775579214096069
+                0.6775579452514648
             ]
         ],
         "Unnamed: 2_level_0 | Unnamed: 2_level_1 | Gene": [
             [
                 "Unnamed: 2_level_0 | Unnamed: 2_level_1 | Gene",
-                1.0
+                Infinity
+            ]
+        ],
+        "RA2": [
+            [
+                "Unnamed: 3_level_0 | Unnamed: 3_level_1 | EA",
+                0.5496001243591309
+            ],
+            [
+                "Unnamed: 4_level_0 | Unnamed: 4_level_1 | RA",
+                0.6750330924987793
+            ]
+        ],
+        "AF": [
+            [
+                "Unnamed: 5_level_0 | Unnamed: 5_level_1 | EAF",
+                0.6420698165893555
             ]
         ],
         "Effect": [
-            [
-                "Unnamed: 3_level_0 | Unnamed: 3_level_1 | EA",
-                0.46125927567481995
-            ],
             [
                 "Univariate models | AD status | \u03b2 value (SE)",
                 0.6558738350868225
@@ -926,18 +938,6 @@
             [
                 "Univariate models | CAA | \u03b2 value (SE)",
                 0.6517279744148254
-            ]
-        ],
-        "RA2": [
-            [
-                "Unnamed: 4_level_0 | Unnamed: 4_level_1 | RA",
-                0.5750330686569214
-            ]
-        ],
-        "AF": [
-            [
-                "Unnamed: 5_level_0 | Unnamed: 5_level_1 | EAF",
-                0.6420698165893555
             ]
         ],
         "P-value": [
@@ -973,19 +973,19 @@
         "Joint models | NP + NFT | Direction": [
             [
                 "Joint models | NP + NFT | Direction",
-                1.0
+                Infinity
             ]
         ],
         "Joint models | NP + CAA | Direction": [
             [
                 "Joint models | NP + CAA | Direction",
-                1.0
+                Infinity
             ]
         ],
         "Joint models | NFT + CAA | Direction": [
             [
                 "Joint models | NFT + CAA | Direction",
-                1.0
+                Infinity
             ]
         ]
     },
@@ -993,41 +993,41 @@
         "Chr": [
             [
                 "Locus",
-                0.3600465655326843
+                0.46004655957221985
             ],
             [
                 "Chr",
-                0.5520840883255005
+                0.6520841121673584
             ]
         ],
         "SNP": [
             [
                 "Lead SNP",
-                0.5980034470558167
+                0.6980034708976746
             ]
         ],
         "RA2": [
             [
                 "A1",
-                0.5591665506362915
+                0.6591665744781494
             ],
             [
                 "A2",
-                0.4665481150150299
+                0.5665481090545654
             ]
         ],
         "Position": [
             [
                 "BP",
-                0.6055316925048828
+                0.7055317163467407
             ],
             [
                 "Locus start",
-                0.6294394731521606
+                0.7294394969940186
             ],
             [
                 "Locus end",
-                0.6084877848625183
+                0.7084878087043762
             ]
         ],
         "AF": [
@@ -1042,7 +1042,7 @@
                 0.5528038740158081
             ]
         ],
-        "P": [
+        "P-value": [
             [
                 "P",
                 0.7669540643692017
@@ -1051,7 +1051,7 @@
         "Directiona": [
             [
                 "Directiona",
-                1.0
+                Infinity
             ]
         ]
     },
@@ -1059,19 +1059,19 @@
         "Trait 1": [
             [
                 "Trait 1",
-                1.0
+                Infinity
             ]
         ],
         "Trait 2: Cancer": [
             [
                 "Trait 2: Cancer",
-                1.0
+                Infinity
             ]
         ],
         "Position": [
             [
                 "#SNPsc",
-                0.5466748476028442
+                0.6466748714447021
             ]
         ],
         "Effect": [
@@ -1099,43 +1099,43 @@
         "Dataset": [
             [
                 "Dataset",
-                1.0
+                Infinity
             ]
         ],
         "SNP": [
             [
                 "#SNPs",
-                0.4187929928302765
+                0.518792986869812
             ]
         ],
         "#Studya": [
             [
                 "#Studya",
-                1.0
+                Infinity
             ]
         ],
         "#Casea": [
             [
                 "#Casea",
-                1.0
+                Infinity
             ]
         ],
         "#Controla": [
             [
                 "#Controla",
-                1.0
+                Infinity
             ]
         ],
         "#Total samples": [
             [
                 "#Total samples",
-                1.0
+                Infinity
             ]
         ],
         "Imputation QC": [
             [
                 "Imputation QC",
-                1.0
+                Infinity
             ]
         ]
     },
@@ -1143,33 +1143,33 @@
         "SNP": [
             [
                 "SNP | SNP",
-                0.7081223130226135
+                0.8081223368644714
             ]
         ],
         "Chr": [
             [
                 "CHR | CHR",
-                0.6474137306213379
+                0.7474137544631958
             ]
         ],
         "Position": [
             [
                 "Position | Position",
-                0.5277512073516846
+                0.6277512311935425
             ],
             [
                 "CPMA stat | CPMA stat",
-                0.34587404131889343
+                0.44587403535842896
             ]
         ],
         "RA1": [
             [
                 "Eff allele | Eff allele",
-                0.6019611954689026
+                0.7019612193107605
             ],
             [
                 "Ref allele | Ref allele",
-                0.6157703399658203
+                0.7157703638076782
             ]
         ],
         "Effect": [
@@ -1211,13 +1211,13 @@
         "Gene | Gene": [
             [
                 "Gene | Gene",
-                1.0
+                Infinity
             ]
         ],
         "Nearest gene | Nearest gene": [
             [
                 "Nearest gene | Nearest gene",
-                1.0
+                Infinity
             ]
         ]
     },
@@ -1225,31 +1225,31 @@
         "SNP": [
             [
                 "SNP",
-                0.5790033340454102
+                0.6790033578872681
             ]
         ],
         "Chr": [
             [
                 "Chr. region",
-                0.4039444625377655
+                0.503944456577301
             ]
         ],
         "Position": [
             [
                 "Position",
-                0.5053907632827759
+                0.6053907871246338
             ]
         ],
         "Closest gene": [
             [
                 "Closest gene",
-                1.0
+                Infinity
             ]
         ],
         "Location relative to the closest gene": [
             [
                 "Location relative to the closest gene",
-                1.0
+                Infinity
             ]
         ],
         "P-value": [
@@ -1275,7 +1275,7 @@
         "RA2": [
             [
                 "Effective/ other allele",
-                0.5896703004837036
+                0.6896703243255615
             ]
         ]
     },
@@ -1283,7 +1283,7 @@
         "Region of Interest | Region of Interest | Unnamed: 0_level_2": [
             [
                 "Region of Interest | Region of Interest | Unnamed: 0_level_2",
-                1.0
+                Infinity
             ]
         ],
         "Effect": [
@@ -1327,19 +1327,19 @@
         "Population | Population": [
             [
                 "Population | Population",
-                1.0
+                Infinity
             ]
         ],
         "Position": [
             [
                 "N | N",
-                0.40044692158699036
+                0.5004469156265259
             ]
         ],
         "Control/AD | Control/AD": [
             [
                 "Control/AD | Control/AD",
-                1.0
+                Infinity
             ]
         ],
         "Effect": [
@@ -1367,25 +1367,25 @@
         "Population | Population": [
             [
                 "Population | Population",
-                1.0
+                Infinity
             ]
         ],
         "RA1": [
             [
                 "rs405509 | rs405509",
-                0.403075248003006
+                0.5030752420425415
             ]
         ],
         "Position": [
             [
                 "n | n",
-                0.43263164162635803
+                0.5326316356658936
             ]
         ],
         "\u03b53/\u03b53 | Unnamed: 3_level_1": [
             [
                 "\u03b53/\u03b53 | Unnamed: 3_level_1",
-                1.0
+                Infinity
             ]
         ],
         "Effect": [
@@ -1407,7 +1407,7 @@
         "\u03b54/\u03b54 | Odds Ratio (95% CI)": [
             [
                 "\u03b54/\u03b54 | Odds Ratio (95% CI)",
-                1.0
+                Infinity
             ]
         ]
     },
@@ -1415,25 +1415,25 @@
         "SNP": [
             [
                 "SNP | SNP",
-                0.6881399154663086
+                0.7881399393081665
             ]
         ],
         "Chr": [
             [
                 "Chr | Chr",
-                0.44632527232170105
+                0.5463252663612366
             ]
         ],
         "Gene+ | Gene+": [
             [
                 "Gene+ | Gene+",
-                1.0
+                Infinity
             ]
         ],
         "Function | Function": [
             [
                 "Function | Function",
-                1.0
+                Infinity
             ]
         ],
         "Effect": [
@@ -1469,25 +1469,25 @@
         "SNP": [
             [
                 "SNP | SNP",
-                0.6885242462158203
+                0.7885242700576782
             ]
         ],
         "Chr": [
             [
                 "Chr | Chr",
-                0.4528941214084625
+                0.552894115447998
             ]
         ],
         "Gene+ | Gene+": [
             [
                 "Gene+ | Gene+",
-                1.0
+                Infinity
             ]
         ],
         "Function | Function": [
             [
                 "Function | Function",
-                1.0
+                Infinity
             ]
         ],
         "Effect": [
@@ -1523,7 +1523,7 @@
         "Unnamed: 0": [
             [
                 "Unnamed: 0",
-                1.0
+                Infinity
             ]
         ],
         "AF": [
@@ -1536,7 +1536,7 @@
                 0.4287237524986267
             ]
         ],
-        "P": [
+        "P-value": [
             [
                 "P",
                 0.7210210561752319
@@ -1547,25 +1547,25 @@
         "SNP": [
             [
                 "SNP | SNP",
-                0.6972699761390686
+                0.7972699999809265
             ]
         ],
         "Chr": [
             [
                 "Chr | Chr",
-                0.4688672125339508
+                0.5688672065734863
             ]
         ],
         "Gene+ | Gene+": [
             [
                 "Gene+ | Gene+",
-                1.0
+                Infinity
             ]
         ],
         "Function | Function": [
             [
                 "Function | Function",
-                1.0
+                Infinity
             ]
         ],
         "Effect": [
@@ -1609,41 +1609,41 @@
         "By gender | Dataset | Dataset": [
             [
                 "By gender | Dataset | Dataset",
-                1.0
+                Infinity
             ]
         ],
         "Position": [
             [
                 "By gender | Before QC | #Samples",
-                0.45312991738319397
+                0.5531299114227295
             ],
             [
                 "By gender | Before QC | #Males",
-                0.36467382311820984
+                0.46467381715774536
             ],
             [
                 "By gender | Before QC | #Females",
-                0.3745187222957611
+                0.47451871633529663
             ],
             [
                 "By gender | Before QC | #SNPs",
-                0.5166608095169067
+                0.6166608333587646
             ],
             [
                 "By gender | After QC | #Samples",
-                0.44503405690193176
+                0.5450340509414673
             ],
             [
                 "By gender | After QC | #Males",
-                0.373832106590271
+                0.4738321006298065
             ],
             [
                 "By gender | After QC | #Females",
-                0.36359307169914246
+                0.463593065738678
             ],
             [
                 "By gender | After QC | #SNPs",
-                0.5397603511810303
+                0.6397603750228882
             ]
         ]
     },
@@ -1651,43 +1651,43 @@
         "SNP": [
             [
                 "SNP",
-                0.6092462539672852
+                0.7092462778091431
             ]
         ],
         "Closest gene (involved in, associated with)": [
             [
                 "Closest gene (involved in, associated with)",
-                1.0
+                Infinity
             ]
         ],
         "LD with (0.4 \u2264 r2; D\u2032 > 0.7)": [
             [
                 "LD with (0.4 \u2264 r2; D\u2032 > 0.7)",
-                1.0
+                Infinity
             ]
         ],
         "eQTL (SNP influences expression of)": [
             [
                 "eQTL (SNP influences expression of)",
-                1.0
+                Infinity
             ]
         ],
         "SNP is in enhancer region in": [
             [
                 "SNP is in enhancer region in",
-                1.0
+                Infinity
             ]
         ],
         "SNP was previously associated with": [
             [
                 "SNP was previously associated with",
-                1.0
+                Infinity
             ]
         ],
         "Position": [
             [
                 "References",
-                0.3480352461338043
+                0.44803524017333984
             ]
         ]
     },
@@ -1695,45 +1695,45 @@
         "By race | Dataset | Dataset": [
             [
                 "By race | Dataset | Dataset",
-                1.0
+                Infinity
             ]
         ],
         "Position": [
             [
                 "By race | Before QC | #White",
-                0.445741206407547
+                0.5457412004470825
             ],
             [
                 "By race | Before QC | #Black",
-                0.4150766432285309
+                0.5150766372680664
             ],
             [
                 "By race | Before QC | #Others",
-                0.3619002103805542
+                0.4619002044200897
             ],
             [
                 "By race | After QC | #White",
-                0.43746110796928406
+                0.5374611020088196
             ],
             [
                 "By race | After QC | #Black",
-                0.41780325770378113
+                0.5178032517433167
             ],
             [
                 "By race | After QC | #Others",
-                0.3581632971763611
+                0.4581632912158966
             ]
         ],
         "By race | Before QC | Unnamed: 4_level_2": [
             [
                 "By race | Before QC | Unnamed: 4_level_2",
-                1.0
+                Infinity
             ]
         ],
         "By race | After QC | Unnamed: 8_level_2": [
             [
                 "By race | After QC | Unnamed: 8_level_2",
-                1.0
+                Infinity
             ]
         ]
     },
@@ -1741,13 +1741,13 @@
         "Dataset": [
             [
                 "Dataset",
-                1.0
+                Infinity
             ]
         ],
         "SNP": [
             [
                 "SNP",
-                0.6067913770675659
+                0.7067914009094238
             ]
         ],
         "P-value": [
@@ -1765,17 +1765,17 @@
         "Chr": [
             [
                 "Chr",
-                0.5189694166183472
+                0.6189694404602051
             ]
         ],
         "RA1": [
             [
                 "Minor",
-                0.4838959276676178
+                0.5838959217071533
             ],
             [
                 "Major",
-                0.4692712128162384
+                0.5692712068557739
             ]
         ],
         "AF": [
@@ -1791,13 +1791,13 @@
         "Gene": [
             [
                 "Gene",
-                1.0
+                Infinity
             ]
         ],
         "Location": [
             [
                 "Location",
-                1.0
+                Infinity
             ]
         ]
     },
@@ -1805,13 +1805,13 @@
         "Dataset": [
             [
                 "Dataset",
-                1.0
+                Infinity
             ]
         ],
         "SNP": [
             [
                 "SNP",
-                0.6094402074813843
+                0.7094402313232422
             ]
         ],
         "P-value": [
@@ -1829,17 +1829,17 @@
         "Chr": [
             [
                 "Chr",
-                0.5189694166183472
+                0.6189694404602051
             ]
         ],
         "RA1": [
             [
                 "Ref",
-                0.5798928141593933
+                0.6798928380012512
             ],
             [
                 "Alt",
-                0.6429998874664307
+                0.7429999113082886
             ]
         ],
         "AF": [
@@ -1851,13 +1851,13 @@
         "Gene": [
             [
                 "Gene",
-                1.0
+                Infinity
             ]
         ],
         "Location": [
             [
                 "Location",
-                1.0
+                Infinity
             ]
         ]
     },
@@ -1865,41 +1865,41 @@
         "Group": [
             [
                 "Group",
-                1.0
+                Infinity
             ]
         ],
         "Traits": [
             [
                 "Traits",
-                1.0
+                Infinity
             ]
         ],
         "Chr": [
             [
                 "CHR",
-                0.6344525218009949
+                0.7344525456428528
             ]
         ],
         "Position": [
             [
                 "BP",
-                0.6051620244979858
+                0.7051620483398438
             ],
             [
                 "Closest Genes",
-                0.30867475271224976
+                0.4086747467517853
             ]
         ],
         "SNP": [
             [
                 "SNP",
-                0.607770562171936
+                0.707770586013794
             ]
         ],
         "RA2": [
             [
                 "MA",
-                0.4498092830181122
+                0.5498092770576477
             ]
         ],
         "AF": [
@@ -1908,19 +1908,17 @@
                 0.6862615942955017
             ]
         ],
-        "BETA": [
+        "Effect": [
             [
                 "BETA",
                 0.6260936260223389
-            ]
-        ],
-        "Effect": [
+            ],
             [
                 "SE",
                 0.638190507888794
             ]
         ],
-        "P": [
+        "P-value": [
             [
                 "P",
                 0.6801998615264893
@@ -1929,7 +1927,7 @@
         "Unnamed: 11": [
             [
                 "Unnamed: 11",
-                1.0
+                Infinity
             ]
         ]
     },
@@ -1937,23 +1935,23 @@
         "SNP": [
             [
                 "eQTL | eQTL | eQTL",
-                0.6205278038978577
+                0.7205278277397156
             ]
         ],
         "RA2": [
             [
                 "EA | EA | EA",
-                0.6207661032676697
+                0.7207661271095276
             ],
             [
                 "RA | RA | RA",
-                0.5927678346633911
+                0.692767858505249
             ]
         ],
         "Gene | Gene | Gene": [
             [
                 "Gene | Gene | Gene",
-                1.0
+                Infinity
             ]
         ],
         "P-value": [
@@ -1969,7 +1967,7 @@
         "eSNP Association Summary | Other brain region | Region": [
             [
                 "eSNP Association Summary | Other brain region | Region",
-                1.0
+                Infinity
             ]
         ]
     },
@@ -1977,19 +1975,19 @@
         "Source | Source": [
             [
                 "Source | Source",
-                1.0
+                Infinity
             ]
         ],
         "Brain region | Brain region": [
             [
                 "Brain region | Brain region",
-                1.0
+                Infinity
             ]
         ],
         "Predictor | Predictor": [
             [
                 "Predictor | Predictor",
-                1.0
+                Infinity
             ]
         ],
         "Effect": [
@@ -2025,13 +2023,13 @@
         "Disease/trait": [
             [
                 "Disease/trait",
-                1.0
+                Infinity
             ]
         ],
         "Abbr": [
             [
                 "Abbr",
-                1.0
+                Infinity
             ]
         ],
         "Effect": [
@@ -2043,37 +2041,37 @@
         "Position": [
             [
                 "Cases",
-                0.3695768713951111
+                0.4695768654346466
             ],
             [
                 "Controls",
-                0.4054202735424042
+                0.5054202675819397
             ],
             [
                 "References",
-                0.34933942556381226
+                0.4493394196033478
             ],
             [
                 "SNPs",
-                0.5200214982032776
+                0.6200215220451355
             ]
         ],
         "URL": [
             [
                 "URL",
-                1.0
+                Infinity
             ]
         ],
         "Ethnicities included": [
             [
                 "Ethnicities included",
-                1.0
+                Infinity
             ]
         ],
         "Covariate adjustments": [
             [
                 "Covariate adjustments",
-                1.0
+                Infinity
             ]
         ]
     },
@@ -2081,37 +2079,37 @@
         "Unnamed: 0": [
             [
                 "Unnamed: 0",
-                1.0
+                Infinity
             ]
         ],
         "SNP": [
             [
                 "SNP",
-                0.5974510908126831
+                0.697451114654541
             ]
         ],
         "Chr": [
             [
                 "Chr",
-                0.49284520745277405
+                0.5928452014923096
             ]
         ],
         "Position": [
             [
                 "Closest gene",
-                0.32706525921821594
+                0.42706525325775146
             ]
         ],
         "RA2": [
             [
                 "A1",
-                0.6957937479019165
+                0.7957937717437744
             ]
         ],
         "Reference trait": [
             [
                 "Reference trait",
-                1.0
+                Infinity
             ]
         ],
         "P-value": [
@@ -2133,37 +2131,37 @@
         "Unnamed: 0": [
             [
                 "Unnamed: 0",
-                1.0
+                Infinity
             ]
         ],
         "SNP": [
             [
                 "SNP",
-                0.5965044498443604
+                0.6965044736862183
             ]
         ],
         "Chr": [
             [
                 "Chr",
-                0.5145876407623291
+                0.614587664604187
             ]
         ],
         "Position": [
             [
                 "Closest gene",
-                0.32822850346565247
+                0.428228497505188
             ]
         ],
         "RA2": [
             [
                 "A1",
-                0.6976605653762817
+                0.7976605892181396
             ]
         ],
         "Ref trait": [
             [
                 "Ref trait",
-                1.0
+                Infinity
             ]
         ],
         "P-value": [
@@ -2213,42 +2211,42 @@
         "Unnamed: 0": [
             [
                 "Unnamed: 0",
-                1.0
+                Infinity
             ]
         ],
         "SNP": [
             [
                 "SNP",
-                0.5973938703536987
+                0.6973938941955566
             ]
         ],
         "Chr": [
             [
                 "Chr",
-                0.49284520745277405
+                0.5928452014923096
             ]
         ],
         "Position": [
             [
                 "Closest Gene",
-                0.3644539415836334
+                0.46445393562316895
             ],
             [
                 "BP",
-                0.6145005226135254
+                0.7145005464553833
             ],
             [
                 "NMfSS",
-                0.358912855386734
+                0.45891284942626953
             ]
         ],
         "RA2": [
             [
                 "A1",
-                0.6957937479019165
+                0.7957937717437744
             ]
         ],
-        "P": [
+        "P-value": [
             [
                 "P",
                 0.7605590224266052
@@ -2271,13 +2269,13 @@
         "Phenotype 1": [
             [
                 "Phenotype 1",
-                1.0
+                Infinity
             ]
         ],
         "Phenotype 2": [
             [
                 "Phenotype 2",
-                1.0
+                Infinity
             ]
         ],
         "Effect": [
@@ -2309,13 +2307,13 @@
         "SNP": [
             [
                 "SNP | SNP",
-                0.7021282911300659
+                0.8021283149719238
             ]
         ],
         "Chr": [
             [
                 "CHR | CHR",
-                0.5871924161911011
+                0.687192440032959
             ]
         ],
         "Effect": [
@@ -2327,11 +2325,11 @@
         "Position": [
             [
                 "Position | Position",
-                0.34401312470436096
+                0.4440131187438965
             ],
             [
                 "Genes within clumping region | Genes within clumping region",
-                0.32758739590644836
+                0.4275873899459839
             ]
         ],
         "P-value": [
@@ -2359,7 +2357,7 @@
         "pQTL | pQTL": [
             [
                 "pQTL | pQTL",
-                1.0
+                Infinity
             ]
         ]
     },
@@ -2367,29 +2365,29 @@
         "SNP": [
             [
                 "SNP | SNP",
-                0.696595311164856
+                0.7965953350067139
             ]
         ],
         "Chr": [
             [
                 "CHR | CHR",
-                0.6151218414306641
-            ]
-        ],
-        "Effect": [
-            [
-                "N | N",
-                0.43076372146606445
+                0.715121865272522
             ],
             [
-                "AD | BETA",
-                0.5847964286804199
+                "N | N",
+                0.43565285205841064
             ]
         ],
         "Position": [
             [
                 "Position | Position",
-                0.35620561242103577
+                0.4562056064605713
+            ]
+        ],
+        "Effect": [
+            [
+                "AD | BETA",
+                0.5847964286804199
             ]
         ],
         "P-value": [
@@ -2413,13 +2411,13 @@
         "Genes within clumping region | Genes within clumping region": [
             [
                 "Genes within clumping region | Genes within clumping region",
-                1.0
+                Infinity
             ]
         ],
         "pQTL | pQTL": [
             [
                 "pQTL | pQTL",
-                1.0
+                Infinity
             ]
         ]
     },
@@ -2427,37 +2425,37 @@
         "Probe ID": [
             [
                 "Probe ID",
-                1.0
+                Infinity
             ]
         ],
         "Gene": [
             [
                 "Gene",
-                1.0
+                Infinity
             ]
         ],
         "SNP": [
             [
                 "Top eQTL",
-                0.527808427810669
+                0.6278084516525269
             ]
         ],
         "Chr": [
             [
                 "Chromosomal region",
-                0.42751362919807434
+                0.5275136232376099
             ]
         ],
         "Position": [
             [
                 "Position",
-                0.39783740043640137
+                0.4978373944759369
             ]
         ],
         "RA2": [
             [
                 "A1",
-                0.4374981224536896
+                0.5374981164932251
             ]
         ],
         "AF": [
@@ -2499,13 +2497,13 @@
         "Cohort": [
             [
                 "Cohort",
-                1.0
+                Infinity
             ]
         ],
         "Position": [
             [
                 "Total",
-                0.3983285427093506
+                0.4983285367488861
             ]
         ],
         "Effect": [
@@ -2531,35 +2529,35 @@
         "Position": [
             [
                 "Probe ID",
-                0.35886141657829285
+                0.45886141061782837
             ],
             [
                 "Position",
-                1.0
+                Infinity
             ]
         ],
         "Gene": [
             [
                 "Gene",
-                1.0
+                Infinity
             ]
         ],
         "SNP": [
             [
                 "Top eQTL",
-                0.4253893792629242
+                0.5253893733024597
             ]
         ],
         "Chr": [
             [
                 "Chromosomal region",
-                0.4045175015926361
+                0.5045174956321716
             ]
         ],
         "RA2": [
             [
                 "A1",
-                0.3908909857273102
+                0.4908909797668457
             ]
         ],
         "AF": [
@@ -2595,13 +2593,13 @@
         "SESMR": [
             [
                 "SESMR",
-                1.0
+                Infinity
             ]
         ],
         "Brain region": [
             [
                 "Brain region",
-                1.0
+                Infinity
             ]
         ]
     },
@@ -2609,35 +2607,35 @@
         "Chr": [
             [
                 "Chromosome",
-                0.44674721360206604
+                0.5467472076416016
             ]
         ],
         "Position": [
             [
                 "Closest gene",
-                0.301273912191391
+                0.4012739062309265
             ],
             [
                 "Position",
-                0.37640440464019775
+                0.4764043986797333
             ]
         ],
         "SNP": [
             [
                 "SNP",
-                0.525030255317688
+                0.6250302791595459
             ]
         ],
         "RA2": [
             [
                 "A1",
-                0.5075969696044922
+                0.6075969934463501
             ]
         ],
         "Sig?": [
             [
                 "Sig?",
-                1.0
+                Infinity
             ]
         ],
         "P-value": [
@@ -2661,7 +2659,7 @@
         "Effects": [
             [
                 "Effects",
-                1.0
+                Infinity
             ]
         ],
         "AF": [
@@ -2683,19 +2681,19 @@
         "Proxy?": [
             [
                 "Proxy?",
-                1.0
+                Infinity
             ]
         ],
         "Gene?": [
             [
                 "Gene?",
-                1.0
+                Infinity
             ]
         ],
         "Region?": [
             [
                 "Region?",
-                1.0
+                Infinity
             ]
         ]
     },
@@ -2703,34 +2701,34 @@
         "Gene | Gene": [
             [
                 "Gene | Gene",
-                1.0
+                Infinity
             ]
         ],
         "Chr": [
             [
                 "Chromosomal region | Chromosomal region",
-                0.3872879445552826
+                0.4872879385948181
             ]
         ],
         "Position": [
             [
                 "Start | Start",
-                0.5115360021591187
+                0.6115360260009766
             ],
             [
                 "End | End",
-                0.4636068046092987
+                0.5636067986488342
             ],
             [
                 "Number of SNPs | Number of SNPs",
-                0.4046138823032379
+                0.5046138763427734
+            ],
+            [
+                "Plan 1 (males and females) | \u03c7 2",
+                0.4517434537410736
             ]
         ],
         "P-value": [
-            [
-                "Plan 1 (males and females) | \u03c7 2",
-                0.4259616434574127
-            ],
             [
                 "Plan 1 (males and females) | p value",
                 0.7292239665985107
@@ -2757,39 +2755,39 @@
         "Pathway | Pathway": [
             [
                 "Pathway | Pathway",
-                1.0
+                Infinity
             ]
         ],
         "Position": [
             [
                 "Pathway GSEA ID | Pathway GSEA ID",
-                0.354966402053833
+                0.45496639609336853
             ],
             [
                 "Number of genes | Number of genes",
-                0.41366395354270935
+                0.5136639475822449
+            ],
+            [
+                "Plan 1 (males and females) | \u03c7 2",
+                0.48277243971824646
+            ],
+            [
+                "Plan 2 (only males) | \u03c7 2",
+                0.4714442491531372
+            ],
+            [
+                "Plan 3 (only females) | \u03c7 2",
+                0.4903757572174072
             ]
         ],
         "P-value": [
-            [
-                "Plan 1 (males and females) | \u03c7 2",
-                0.4274487793445587
-            ],
             [
                 "Plan 1 (males and females) | p value",
                 0.7061824798583984
             ],
             [
-                "Plan 2 (only males) | \u03c7 2",
-                0.41646715998649597
-            ],
-            [
                 "Plan 2 (only males) | p value",
                 0.7221672534942627
-            ],
-            [
-                "Plan 3 (only females) | \u03c7 2",
-                0.4259103238582611
             ],
             [
                 "Plan 3 (only females) | p value",
@@ -2801,19 +2799,19 @@
         "SNP": [
             [
                 "SNP",
-                0.6023739576339722
+                0.7023739814758301
             ]
         ],
         "Chr": [
             [
                 "Chr",
-                0.6017327308654785
+                0.7017327547073364
             ]
         ],
         "Gene": [
             [
                 "Gene",
-                1.0
+                Infinity
             ]
         ],
         "AF": [
@@ -2847,35 +2845,35 @@
         "SNP": [
             [
                 "SNP",
-                0.6063233613967896
+                0.7063233852386475
             ],
             [
                 "Nearest gene",
-                0.3056492507457733
+                0.40564924478530884
             ]
         ],
         "Position": [
             [
                 "Position",
-                0.4365669786930084
+                0.536566972732544
             ]
         ],
         "Chr": [
             [
                 "Chr",
-                0.6150348782539368
+                0.7150349020957947
             ]
         ],
         "RA1": [
             [
                 "Reference allele",
-                0.52125084400177
+                0.6212508678436279
             ]
         ],
         "Associated phenotype": [
             [
                 "Associated phenotype",
-                1.0
+                Infinity
             ]
         ],
         "P-value": [
@@ -2915,59 +2913,59 @@
         "SNP": [
             [
                 "Unnamed: 0_level_0 | Unnamed: 0_level_1 | SNP",
-                0.59244704246521
+                0.6924470663070679
             ],
             [
                 "eQTL | Braineac | Gene",
-                0.3326255977153778
+                0.43262559175491333
             ],
             [
                 "eQTL | GTEx | Gene",
-                0.3048856556415558
+                0.4048856496810913
             ]
         ],
         "Position": [
             [
                 "Unnamed: 1_level_0 | Unnamed: 1_level_1 | bp",
-                0.618295431137085
+                0.7182954549789429
             ]
         ],
         "RA2": [
             [
                 "Unnamed: 2_level_0 | Unnamed: 2_level_1 | Risk allele",
-                0.6502707004547119
+                0.7502707242965698
             ],
             [
                 "eQTL | Braineac | Effect of risk allele",
-                0.3347105085849762
+                0.4347105026245117
             ],
             [
                 "eQTL | GTEx | Effect of risk allele",
-                0.30936041474342346
+                0.409360408782959
             ]
         ],
         "Chr": [
             [
                 "Unnamed: 3_level_0 | Unnamed: 3_level_1 | Chr",
-                0.6153022646903992
+                0.7153022885322571
             ]
         ],
         "Unnamed: 4_level_0 | Unnamed: 4_level_1 | Location": [
             [
                 "Unnamed: 4_level_0 | Unnamed: 4_level_1 | Location",
-                1.0
+                Infinity
             ]
         ],
         "Unnamed: 5_level_0 | Unnamed: 5_level_1 | Nearest gene": [
             [
                 "Unnamed: 5_level_0 | Unnamed: 5_level_1 | Nearest gene",
-                1.0
+                Infinity
             ]
         ],
         "eQTL | Braineac | Brain region": [
             [
                 "eQTL | Braineac | Brain region",
-                1.0
+                Infinity
             ]
         ],
         "P-value": [
@@ -2983,7 +2981,7 @@
         "eQTL | GTEx | Brain region": [
             [
                 "eQTL | GTEx | Brain region",
-                1.0
+                Infinity
             ]
         ]
     },
@@ -2991,25 +2989,25 @@
         "Disease/trait": [
             [
                 "Disease/trait",
-                1.0
+                Infinity
             ]
         ],
         "Total N": [
             [
                 "Total N",
-                1.0
+                Infinity
             ]
         ],
-        "P-value": [
+        "Position": [
             [
                 "# SNPs",
-                0.4197334051132202
+                0.43684685230255127
             ]
         ],
         "Reference": [
             [
                 "Reference",
-                1.0
+                Infinity
             ]
         ]
     },
@@ -3017,29 +3015,29 @@
         "SNP": [
             [
                 "SNP",
-                0.59244704246521
+                0.6924470663070679
             ],
             [
                 "Location; nearest gene",
-                0.37054264545440674
+                0.47054263949394226
             ]
         ],
         "Position": [
             [
                 "Position",
-                0.44391384720802307
+                0.5439138412475586
             ]
         ],
         "Chr": [
             [
                 "Chr",
-                0.6153022646903992
+                0.7153022885322571
             ]
         ],
         "Associated phenotype": [
             [
                 "Associated phenotype",
-                1.0
+                Infinity
             ]
         ],
         "P-value": [

@@ -1,4 +1,4 @@
-P-value,Effect,AF,SNP,Chr,Position,RA1,RA2,P
-,1.06,0.69,rs593742,15,58873555,,A,6.20E−11
-,0.95,0.29,rs889555,16,30916129,,T,3.20E−08
-,1.05,0.63,rs6504163,17,61545779,,T,5.40E−09
+P-value,Effect,AF,SNP,Chr,Position,RA1,RA2,Population,Cohort,Stage,Imputation,Study type,Phenotype
+6.2e-11,1.06,0.69,rs593742,15,58873555,,A,,UK Biobank,Stage 1 + Stage 2 + Meta-analysis,1000 Genomes phase 1 reference panel + Haplotype Reference Consortium (HRC),genome-wide association study,Alzheimer’s disease + dementia
+3.2e-08,0.95,0.29,rs889555,16,30916129,,T,,UK Biobank,Stage 1 + Stage 2 + Meta-analysis,1000 Genomes phase 1 reference panel + Haplotype Reference Consortium (HRC),genome-wide association study,Alzheimer’s disease + dementia
+5.4e-09,1.05,0.63,rs6504163,17,61545779,,T,,UK Biobank,Stage 1 + Stage 2 + Meta-analysis,1000 Genomes phase 1 reference panel + Haplotype Reference Consortium (HRC),genome-wide association study,Alzheimer’s disease + dementia

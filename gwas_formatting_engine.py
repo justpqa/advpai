@@ -325,9 +325,9 @@ class GWASFormattingEngine:
         
         threshold = 0.4 # NOTE: best after trying different val
         if best_score < threshold:
-            return (col, 1)
+            return (col, float("inf"))
         else:
-            candidates = [(self.referencing_col_lst[inx], scores[inx] - (self.referencing_col_group_lst[inx]) * 0.1) for inx in top_k_indices if scores[inx] >= threshold]
+            candidates = [(self.referencing_col_lst[inx], scores[inx] - (self.referencing_col_group_lst[inx]) * 0) for inx in top_k_indices if scores[inx] >= threshold]
             candidates.sort(key = lambda x: x[1], reverse = True)
             return (candidates[0][0], candidates[0][1])
 
@@ -409,7 +409,7 @@ class GWASFormattingEngine:
                     
                     # matching and compare
                     ref_col, score = self.match_single_col_to_ref_col(sub_col, cleaned_sub_col_example)
-                    if score > best_score and ref_col != sub_col:
+                    if score > best_score and score < float("inf"):
                         best_ref_col = ref_col
                         best_score = score
                 
@@ -421,7 +421,7 @@ class GWASFormattingEngine:
                 else:
                     if col not in ref_col_to_col_lst:
                         ref_col_to_col_lst[col] = []
-                    ref_col_to_col_lst[col].append((col, 1))
+                    ref_col_to_col_lst[col].append((col, float("inf")))
             elif re.search(multi_index_pattern_2, cleaned_col.strip()):
                 # try to assess each part and see if which one have highest score
                 best_ref_col, best_score = None, 0
@@ -433,7 +433,7 @@ class GWASFormattingEngine:
                     
                     # matching and compare
                     ref_col, score = self.match_single_col_to_ref_col(sub_col, cleaned_sub_col_example)
-                    if score > best_score and ref_col != sub_col:
+                    if score > best_score and score < float("inf"):
                         best_ref_col = ref_col
                         best_score = score
                 
@@ -445,18 +445,18 @@ class GWASFormattingEngine:
                 else:
                     if col not in ref_col_to_col_lst:
                         ref_col_to_col_lst[col] = []
-                    ref_col_to_col_lst[col].append((col, 1))
+                    ref_col_to_col_lst[col].append((col, float("inf")))
             else:
                 # match a single col with best fit referencing col and return a dict
                 # make the col prompt
                 # extra steps to remove .
-                cleaned_col = cleaned_col.replace(".", "")
+                cleaned_col = cleaned_col.replace(".", "").replace("|", "")
                 cleaned_col_prompt, cleaned_col_example = self.make_col_prompt(cleaned_col, example_values)
 
                 # matching for best col
                 ref_col, score = self.match_single_col_to_ref_col(cleaned_col, cleaned_col_example)
                 # if we still get same col
-                if ref_col == cleaned_col: 
+                if score == float("inf"): 
                     ref_col = col
                 if ref_col not in ref_col_to_col_lst:
                     ref_col_to_col_lst[ref_col] = []
@@ -590,7 +590,7 @@ class GWASFormattingEngine:
         for new_col in new_col_to_old_col_lst:
             if len(new_col_to_old_col_lst[new_col]) == 1:
                 # check if we remove unique col or not and if yes, is this a case of a col map to itself (score = 1)
-                if (not remove_unique_col) or (remove_unique_col and new_col_to_old_col_lst[new_col][0][1] != 1):
+                if (not remove_unique_col) or (remove_unique_col and new_col_to_old_col_lst[new_col][0][1] < float("inf")):
                     if df_with_ref_col is None:
                         df_with_ref_col = df[[new_col_to_old_col_lst[new_col][0][0]]]
                         df_with_ref_col = df_with_ref_col.rename({new_col_to_old_col_lst[new_col][0][0]: new_col}, axis = 1)

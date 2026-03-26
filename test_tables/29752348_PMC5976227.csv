@@ -1,5 +1,5 @@
-Pubmed ID,PMCID,Table ID,SNP,Chr,RA1,RA2,AF,P-value,Effect,Effect Type,Population,Cohort,Stage
-29752348.0,PMC5976227,Table 2,rs13164785,5.0,G,T,0.19,3.72e-18,0.67,Beta,NHW,UKBB,
-29752348.0,PMC5976227,Table 2,rs146896516,2.0,A,C,0.1,3.91e-12,0.15,Beta,NHW,UKBB,
-29752348.0,PMC5976227,Table 2,rs3744020,17.0,A,G,0.19,3.52e-11,0.11,Beta,NHW,UKBB,
-29752348.0,PMC5976227,Table 2,rs67827860,5.0,T,C,0.19,1.25e-14,-0.61,Beta,NHW,UKBB,
+Pubmed ID,PMCID,Table ID,SNP,Chr,RA1,RA2,AF,P-value,Effect,Effect Type,Population,Cohort,Stage,Imputation,Phenotype,Study type
+29752348.0,PMC5976227,Table 2,rs13164785,5.0,G,T,0.19,3.72e-18,0.67,Beta,NHW,UKBB,,HRC,Mean Diffusivity,SNP-based
+29752348.0,PMC5976227,Table 2,rs146896516,2.0,A,C,0.1,3.91e-12,0.15,Beta,NHW,UKBB,,HRC,White Matter Hyperintensity Volume,SNP-based
+29752348.0,PMC5976227,Table 2,rs3744020,17.0,A,G,0.19,3.52e-11,0.11,Beta,NHW,UKBB,,HRC,White Matter Hyperintensity Volume,SNP-based
+29752348.0,PMC5976227,Table 2,rs67827860,5.0,T,C,0.19,1.25e-14,-0.61,Beta,NHW,UKBB,,HRC,Fractional Anisotropy,SNP-based

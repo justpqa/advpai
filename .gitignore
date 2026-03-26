@@ -9,3 +9,4 @@ test_tables/ADVP_1026_v3p8_extracted.txt
 chroma_db/
 .env
 *.gguf
+pred_tables_v2

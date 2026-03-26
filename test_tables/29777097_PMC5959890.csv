@@ -1,4 +1,4 @@
-Pubmed ID,PMCID,Table ID,SNP,Chr,RA1,RA2,AF,P-value,Effect,Effect Type,Population,Cohort,Stage
-29777097.0,PMC5959890,Table 1,rs593742,15.0,A,G,0.69,6.2e-11,1.06,OR,NHW,UKBB,Meta-analysis
-29777097.0,PMC5959890,Table 1,rs6504163,17.0,T,C,0.63,5.4e-09,1.05,OR,NHW,UKBB,Meta-analysis
-29777097.0,PMC5959890,Table 1,rs889555,16.0,T,C,0.29,3.2e-08,0.95,OR,NHW,UKBB,Meta-analysis
+Pubmed ID,PMCID,Table ID,SNP,Chr,RA1,RA2,AF,P-value,Effect,Effect Type,Population,Cohort,Stage,Imputation,Phenotype,Study type
+29777097.0,PMC5959890,Table 1,rs593742,15.0,A,G,0.69,6.2e-11,1.06,OR,NHW,UKBB,Meta-analysis,HRC,AD,SNP-based
+29777097.0,PMC5959890,Table 1,rs6504163,17.0,T,C,0.63,5.4e-09,1.05,OR,NHW,UKBB,Meta-analysis,HRC,AD,SNP-based
+29777097.0,PMC5959890,Table 1,rs889555,16.0,T,C,0.29,3.2e-08,0.95,OR,NHW,UKBB,Meta-analysis,HRC,AD,SNP-based

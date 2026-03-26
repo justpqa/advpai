@@ -1,33 +1,33 @@
-Pubmed ID,PMCID,Table ID,SNP,Chr,RA1,RA2,AF,P-value,Effect,Effect Type,Population,Cohort,Stage
-29458411.0,PMC5819208,Table 1,rs34487851,2.0,,,,5.8e-06,-0.42,Beta,European ancestry,ADGC,
-29458411.0,PMC5819208,Table 1,rs34487851,2.0,,,,7.7e-07,-0.3,Beta,European ancestry,ADGC,
-29458411.0,PMC5819208,Table 1,rs34487851,2.0,,,,4.5e-06,-0.25,Beta,European ancestry,ADGC,
-29458411.0,PMC5819208,Table 1,rs34487851,2.0,,,,0.06,-0.14,Beta,European ancestry,ADGC,
-29458411.0,PMC5819208,Table 1,rs34487851,2.0,,,,2e-08,,,European ancestry,ADGC,
-29458411.0,PMC5819208,Table 1,rs34487851,2.0,,,,2.5e-06,,,European ancestry,ADGC,
-29458411.0,PMC5819208,Table 1,rs34487851,2.0,,,,2.1e-05,,,European ancestry,ADGC,
-29458411.0,PMC5819208,Table 1,rs79524815,7.0,,,,0.03,0.69,Beta,European ancestry,ADGC,
-29458411.0,PMC5819208,Table 1,rs79524815,7.0,,,,0.03,0.43,Beta,European ancestry,ADGC,
-29458411.0,PMC5819208,Table 1,rs79524815,7.0,,,,2.3e-05,0.79,Beta,European ancestry,ADGC,
-29458411.0,PMC5819208,Table 1,rs79524815,7.0,,,,9.1e-06,1.16,Beta,European ancestry,ADGC,
-29458411.0,PMC5819208,Table 1,rs79524815,7.0,,,,0.00013,,,European ancestry,ADGC,
-29458411.0,PMC5819208,Table 1,rs79524815,7.0,,,,3.3e-06,,,European ancestry,ADGC,
-29458411.0,PMC5819208,Table 1,rs79524815,7.0,,,,1.1e-08,,,European ancestry,ADGC,
-29458411.0,PMC5819208,Table 2,,2.0,,,,0.09,,,European ancestry,ADGC,
-29458411.0,PMC5819208,Table 2,,2.0,,,,4e-05,,,European ancestry,ADGC,
-29458411.0,PMC5819208,Table 2,,2.0,,,,0.5,,,European ancestry,ADGC,
-29458411.0,PMC5819208,Table 2,,2.0,,,,0.01,,,European ancestry,ADGC,
-29458411.0,PMC5819208,Table 2,,2.0,,,,0.07,,,European ancestry,ADGC,
-29458411.0,PMC5819208,Table 2,,2.0,,,,2e-06,,,European ancestry,ADGC,
-29458411.0,PMC5819208,Table 2,,2.0,,,,0.002,,,European ancestry,ADGC,
-29458411.0,PMC5819208,Table 2,,2.0,,,,3.9e-05,,,European ancestry,ADGC,
-29458411.0,PMC5819208,Table 2,,2.0,,,,0.005,,,European ancestry,ADGC,
-29458411.0,PMC5819208,Table 2,,2.0,,,,1.6e-05,,,European ancestry,ADGC,
-29458411.0,PMC5819208,Table 2,,2.0,,,,2.1e-05,,,European ancestry,ADGC,
-29458411.0,PMC5819208,Table 2,,2.0,,,,,,,European ancestry,ADGC,
-29458411.0,PMC5819208,Table 2,,2.0,,,,0.003,,,European ancestry,ADGC,
-29458411.0,PMC5819208,Table 2,,2.0,,,,1.6e-05,,,European ancestry,ADGC,
-29458411.0,PMC5819208,Table 2,,2.0,,,,0.0007,,,European ancestry,ADGC,
-29458411.0,PMC5819208,Table 2,,2.0,,,,3.2e-05,,,European ancestry,ADGC,
-29458411.0,PMC5819208,Table 2,,2.0,,,,4e-06,,,European ancestry,ADGC,
-29458411.0,PMC5819208,Table 2,,2.0,,,,,,,European ancestry,ADGC,
+Pubmed ID,PMCID,Table ID,SNP,Chr,RA1,RA2,AF,P-value,Effect,Effect Type,Population,Cohort,Stage,Imputation,Phenotype,Study type
+29458411.0,PMC5819208,Table 1,rs34487851,2.0,,,,5.8e-06,-0.42,Beta,European ancestry,ADGC,,1000G ,AD,SNP-based
+29458411.0,PMC5819208,Table 1,rs34487851,2.0,,,,7.7e-07,-0.3,Beta,European ancestry,ADGC,,1000G ,Neuritic plaque (NP) ,SNP-based
+29458411.0,PMC5819208,Table 1,rs34487851,2.0,,,,4.5e-06,-0.25,Beta,European ancestry,ADGC,,1000G ,Neurofibrillary tangles (NFT),SNP-based
+29458411.0,PMC5819208,Table 1,rs34487851,2.0,,,,0.06,-0.14,Beta,European ancestry,ADGC,,1000G ,Cerebral amyloid angiopathy (CAA),SNP-based
+29458411.0,PMC5819208,Table 1,rs34487851,2.0,,,,2e-08,,,European ancestry,ADGC,,1000G ,Neuritic plaque (NP)+Neurofibrillary tangles (NFT),SNP-based
+29458411.0,PMC5819208,Table 1,rs34487851,2.0,,,,2.5e-06,,,European ancestry,ADGC,,1000G ,Neuritic plaque (NP)+Cerebral amyloid angiopathy (CAA),SNP-based
+29458411.0,PMC5819208,Table 1,rs34487851,2.0,,,,2.1e-05,,,European ancestry,ADGC,,1000G ,Neurofibrillary tangles (NFT)+Cerebral amyloid angiopathy (CAA),SNP-based
+29458411.0,PMC5819208,Table 1,rs79524815,7.0,,,,0.03,0.69,Beta,European ancestry,ADGC,,1000G ,AD,SNP-based
+29458411.0,PMC5819208,Table 1,rs79524815,7.0,,,,0.03,0.43,Beta,European ancestry,ADGC,,1000G ,Neuritic plaque (NP),SNP-based
+29458411.0,PMC5819208,Table 1,rs79524815,7.0,,,,2.3e-05,0.79,Beta,European ancestry,ADGC,,1000G ,Neurofibrillary tangles (NFT),SNP-based
+29458411.0,PMC5819208,Table 1,rs79524815,7.0,,,,9.1e-06,1.16,Beta,European ancestry,ADGC,,1000G ,Cerebral amyloid angiopathy (CAA),SNP-based
+29458411.0,PMC5819208,Table 1,rs79524815,7.0,,,,0.00013,,,European ancestry,ADGC,,1000G ,Neuritic plaque (NP)+Neurofibrillary tangles (NFT),SNP-based
+29458411.0,PMC5819208,Table 1,rs79524815,7.0,,,,3.3e-06,,,European ancestry,ADGC,,1000G ,Neuritic plaque (NP)+Cerebral amyloid angiopathy (CAA),SNP-based
+29458411.0,PMC5819208,Table 1,rs79524815,7.0,,,,1.1e-08,,,European ancestry,ADGC,,1000G ,Neurofibrillary tangles (NFT)+Cerebral amyloid angiopathy (CAA),SNP-based
+29458411.0,PMC5819208,Table 2,,2.0,,,,0.09,,,European ancestry,ADGC,,1000G ,Neuritic plaque (NP),Gene-based
+29458411.0,PMC5819208,Table 2,,2.0,,,,4e-05,,,European ancestry,ADGC,,1000G ,Neurofibrillary tangles (NFT),Gene-based
+29458411.0,PMC5819208,Table 2,,2.0,,,,0.5,,,European ancestry,ADGC,,1000G ,Cerebral amyloid angiopathy (CAA),Gene-based
+29458411.0,PMC5819208,Table 2,,2.0,,,,0.01,,,European ancestry,ADGC,,1000G ,Neuritic plaque (NP)+Neurofibrillary tangles (NFT),Gene-based
+29458411.0,PMC5819208,Table 2,,2.0,,,,0.07,,,European ancestry,ADGC,,1000G ,Neuritic plaque (NP)+Cerebral amyloid angiopathy (CAA),Gene-based
+29458411.0,PMC5819208,Table 2,,2.0,,,,2e-06,,,European ancestry,ADGC,,1000G ,Neurofibrillary tangles (NFT)+Cerebral amyloid angiopathy (CAA),Gene-based
+29458411.0,PMC5819208,Table 2,,2.0,,,,0.002,,,European ancestry,ADGC,,1000G ,Neuritic plaque (NP),Gene-based
+29458411.0,PMC5819208,Table 2,,2.0,,,,3.9e-05,,,European ancestry,ADGC,,1000G ,Neurofibrillary tangles (NFT),Gene-based
+29458411.0,PMC5819208,Table 2,,2.0,,,,0.005,,,European ancestry,ADGC,,1000G ,Cerebral amyloid angiopathy (CAA),Gene-based
+29458411.0,PMC5819208,Table 2,,2.0,,,,1.6e-05,,,European ancestry,ADGC,,1000G ,Neuritic plaque (NP)+Neurofibrillary tangles (NFT),Gene-based
+29458411.0,PMC5819208,Table 2,,2.0,,,,2.1e-05,,,European ancestry,ADGC,,1000G ,Neuritic plaque (NP)+Cerebral amyloid angiopathy (CAA),Gene-based
+29458411.0,PMC5819208,Table 2,,2.0,,,,,,,European ancestry,ADGC,,1000G ,Neurofibrillary tangles (NFT)+Cerebral amyloid angiopathy (CAA),Gene-based
+29458411.0,PMC5819208,Table 2,,2.0,,,,0.003,,,European ancestry,ADGC,,1000G ,Neuritic plaque (NP),Gene-based
+29458411.0,PMC5819208,Table 2,,2.0,,,,1.6e-05,,,European ancestry,ADGC,,1000G ,Neurofibrillary tangles (NFT),Gene-based
+29458411.0,PMC5819208,Table 2,,2.0,,,,0.0007,,,European ancestry,ADGC,,1000G ,Cerebral amyloid angiopathy (CAA),Gene-based
+29458411.0,PMC5819208,Table 2,,2.0,,,,3.2e-05,,,European ancestry,ADGC,,1000G ,Neuritic plaque (NP)+Neurofibrillary tangles (NFT),Gene-based
+29458411.0,PMC5819208,Table 2,,2.0,,,,4e-06,,,European ancestry,ADGC,,1000G ,Neuritic plaque (NP)+Cerebral amyloid angiopathy (CAA),Gene-based
+29458411.0,PMC5819208,Table 2,,2.0,,,,,,,European ancestry,ADGC,,1000G ,Neurofibrillary tangles (NFT)+Cerebral amyloid angiopathy (CAA),Gene-based

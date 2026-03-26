@@ -1,52 +1,52 @@
-P-value,Effect,AF,SNP,Chr,Position,RA1,RA2,Effect notes,P-value notes,Population,Cohort,Stage
-0.013,6.33,,,,,,,rs405509-TT | ε4/ε4 vs. ε3/ε3 (n = 175) | F-value,,European ancestry,ADNI,Stage
-0.005,8.27,,,,,,,rs405509-TT | ε4/ε4 vs. ε3/ε3 (n = 175) | F-value,,European ancestry,ADNI,Stage
-3.4e-05,18.13,,,,,,,rs405509-TT | ε4/ε4 vs. ε3/ε3 (n = 175) | F-value,,European ancestry,ADNI,Stage
-0.013,1.95,,,,,,,rs405509-TT | ε3/ε4 vs. ε3/ε3 (n = 239) | F-value,,European ancestry,ADNI,Stage
-0.005,4.58,,,,,,,rs405509-TT | ε3/ε4 vs. ε3/ε3 (n = 239) | F-value,,European ancestry,ADNI,Stage
-3.4e-05,7.4,,,,,,,rs405509-TT | ε3/ε4 vs. ε3/ε3 (n = 239) | F-value,,European ancestry,ADNI,Stage
-0.013,0.16,,,,,,,rs405509-TT | ε3/ε4 vs. ε3/ε3 (n = 239) | p,,European ancestry,ADNI,Stage
-0.005,0.03,,,,,,,rs405509-TT | ε3/ε4 vs. ε3/ε3 (n = 239) | p,,European ancestry,ADNI,Stage
-3.4e-05,0.04,,,,,,,rs405509-TT | ε3/ε4 vs. ε3/ε3 (n = 239) | p,,European ancestry,ADNI,Stage
-0.013,0.04,,,,,,,rs405509-GG | ε4/ε4 vs. ε3/ε3 (n = 128) | F-value,,European ancestry,ADNI,Stage
-0.005,0.01,,,,,,,rs405509-GG | ε4/ε4 vs. ε3/ε3 (n = 128) | F-value,,European ancestry,ADNI,Stage
-3.4e-05,1.43,,,,,,,rs405509-GG | ε4/ε4 vs. ε3/ε3 (n = 128) | F-value,,European ancestry,ADNI,Stage
-0.013,0.85,,,,,,,rs405509-GG | ε4/ε4 vs. ε3/ε3 (n = 128) | p,,European ancestry,ADNI,Stage
-0.005,0.92,,,,,,,rs405509-GG | ε4/ε4 vs. ε3/ε3 (n = 128) | p,,European ancestry,ADNI,Stage
-3.4e-05,0.24,,,,,,,rs405509-GG | ε4/ε4 vs. ε3/ε3 (n = 128) | p,,European ancestry,ADNI,Stage
-0.013,0.24,,,,,,,rs405509-GG | ε3/ε4 vs. ε3/ε3 (n = 161) | F-value,,European ancestry,ADNI,Stage
-0.005,0.1,,,,,,,rs405509-GG | ε3/ε4 vs. ε3/ε3 (n = 161) | F-value,,European ancestry,ADNI,Stage
-3.4e-05,2.65,,,,,,,rs405509-GG | ε3/ε4 vs. ε3/ε3 (n = 161) | F-value,,European ancestry,ADNI,Stage
-0.013,0.62,,,,,,,rs405509-GG | ε3/ε4 vs. ε3/ε3 (n = 161) | p,,European ancestry,ADNI,Stage
-0.005,0.75,,,,,,,rs405509-GG | ε3/ε4 vs. ε3/ε3 (n = 161) | p,,European ancestry,ADNI,Stage
-3.4e-05,0.11,,,,,,,rs405509-GG | ε3/ε4 vs. ε3/ε3 (n = 161) | p,,European ancestry,ADNI,Stage
-0.0,4.98,,,,19398.0,,,ε3/ε4 | OR (95% CI) a,ε3/ε4 | p,European ancestry,ADNI,Stage
-0.0,4.98,,,,19398.0,,,ε3/ε4 | OR (95% CI) a,ε4/ε4 | p,European ancestry,ADNI,Stage
-0.0,3.83,,,,15836.0,,,ε3/ε4 | OR (95% CI) a,ε3/ε4 | p,European ancestry,ADNI,Stage
-0.0,3.83,,,,15836.0,,,ε3/ε4 | OR (95% CI) a,ε4/ε4 | p,European ancestry,ADNI,Stage
-0.0,2.49,,,,4985.0,,,ε3/ε4 | OR (95% CI) a,ε3/ε4 | p,European ancestry,ADNI,Stage
-0.0,2.49,,,,4985.0,,,ε3/ε4 | OR (95% CI) a,ε4/ε4 | p,European ancestry,ADNI,Stage
-0.0,25.12,,,,19398.0,,,ε4/ε4 | OR (95% CI) a,ε3/ε4 | p,European ancestry,ADNI,Stage
-0.0,25.12,,,,19398.0,,,ε4/ε4 | OR (95% CI) a,ε4/ε4 | p,European ancestry,ADNI,Stage
-0.0,14.35,,,,15836.0,,,ε4/ε4 | OR (95% CI) a,ε3/ε4 | p,European ancestry,ADNI,Stage
-0.0,14.35,,,,15836.0,,,ε4/ε4 | OR (95% CI) a,ε4/ε4 | p,European ancestry,ADNI,Stage
-0.0,8.17,,,,4985.0,,,ε4/ε4 | OR (95% CI) a,ε3/ε4 | p,European ancestry,ADNI,Stage
-0.0,8.17,,,,4985.0,,,ε4/ε4 | OR (95% CI) a,ε4/ε4 | p,European ancestry,ADNI,Stage
-0.0,5.13,,,,9770.0,TT,,,ε3/ε4 | p,European ancestry,ADNI,Stage
-0.0,4.55,,,,7941.0,GT,,,ε3/ε4 | p,European ancestry,ADNI,Stage
-0.006,3.55,,,,1681.0,GG,,,ε3/ε4 | p,European ancestry,ADNI,Stage
-0.0,4.25,,,,4713.0,TT,,,ε3/ε4 | p,European ancestry,ADNI,Stage
-0.0,3.89,,,,7510.0,GT,,,ε3/ε4 | p,European ancestry,ADNI,Stage
-0.0,3.39,,,,3385.0,GG,,,ε3/ε4 | p,European ancestry,ADNI,Stage
-0.0,4.62,,,,14483.0,TT,,,ε3/ε4 | p,European ancestry,ADNI,Stage
-0.0,4.1,,,,15451.0,GT,,,ε3/ε4 | p,European ancestry,ADNI,Stage
-0.0,3.4,,,,5066.0,GG,,,ε3/ε4 | p,European ancestry,ADNI,Stage
-0.0,5.13,,,,9770.0,TT,,,ε4/ε4 | p,European ancestry,ADNI,Stage
-2.62e-09,4.55,,,,7941.0,GT,,,ε4/ε4 | p,European ancestry,ADNI,Stage
-,3.55,,,,1681.0,GG,,,ε4/ε4 | p,European ancestry,ADNI,Stage
-0.0,4.25,,,,4713.0,TT,,,ε4/ε4 | p,European ancestry,ADNI,Stage
-0.0,3.89,,,,7510.0,GT,,,ε4/ε4 | p,European ancestry,ADNI,Stage
-4.07e-12,3.39,,,,3385.0,GG,,,ε4/ε4 | p,European ancestry,ADNI,Stage
-0.0,4.62,,,,14483.0,TT,,,ε4/ε4 | p,European ancestry,ADNI,Stage
-0.0,4.1,,,,15451.0,GT,,,ε4/ε4 | p,European ancestry,ADNI,Stage
-1.84e-12,3.4,,,,5066.0,GG,,,ε4/ε4 | p,European ancestry,ADNI,Stage
+P-value,Effect,AF,SNP,Chr,Position,RA1,RA2,Effect notes,P-value notes,Population,Cohort,Stage,Imputation,Study type,Phenotype
+0.013,6.33,,,,,,,rs405509-TT | ε4/ε4 vs. ε3/ε3 (n = 175) | F-value,,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.005,8.27,,,,,,,rs405509-TT | ε4/ε4 vs. ε3/ε3 (n = 175) | F-value,,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+3.4e-05,18.13,,,,,,,rs405509-TT | ε4/ε4 vs. ε3/ε3 (n = 175) | F-value,,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.013,1.95,,,,,,,rs405509-TT | ε3/ε4 vs. ε3/ε3 (n = 239) | F-value,,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.005,4.58,,,,,,,rs405509-TT | ε3/ε4 vs. ε3/ε3 (n = 239) | F-value,,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+3.4e-05,7.4,,,,,,,rs405509-TT | ε3/ε4 vs. ε3/ε3 (n = 239) | F-value,,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.013,0.16,,,,,,,rs405509-TT | ε3/ε4 vs. ε3/ε3 (n = 239) | p,,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.005,0.03,,,,,,,rs405509-TT | ε3/ε4 vs. ε3/ε3 (n = 239) | p,,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+3.4e-05,0.04,,,,,,,rs405509-TT | ε3/ε4 vs. ε3/ε3 (n = 239) | p,,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.013,0.04,,,,,,,rs405509-GG | ε4/ε4 vs. ε3/ε3 (n = 128) | F-value,,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.005,0.01,,,,,,,rs405509-GG | ε4/ε4 vs. ε3/ε3 (n = 128) | F-value,,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+3.4e-05,1.43,,,,,,,rs405509-GG | ε4/ε4 vs. ε3/ε3 (n = 128) | F-value,,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.013,0.85,,,,,,,rs405509-GG | ε4/ε4 vs. ε3/ε3 (n = 128) | p,,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.005,0.92,,,,,,,rs405509-GG | ε4/ε4 vs. ε3/ε3 (n = 128) | p,,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+3.4e-05,0.24,,,,,,,rs405509-GG | ε4/ε4 vs. ε3/ε3 (n = 128) | p,,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.013,0.24,,,,,,,rs405509-GG | ε3/ε4 vs. ε3/ε3 (n = 161) | F-value,,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.005,0.1,,,,,,,rs405509-GG | ε3/ε4 vs. ε3/ε3 (n = 161) | F-value,,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+3.4e-05,2.65,,,,,,,rs405509-GG | ε3/ε4 vs. ε3/ε3 (n = 161) | F-value,,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.013,0.62,,,,,,,rs405509-GG | ε3/ε4 vs. ε3/ε3 (n = 161) | p,,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.005,0.75,,,,,,,rs405509-GG | ε3/ε4 vs. ε3/ε3 (n = 161) | p,,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+3.4e-05,0.11,,,,,,,rs405509-GG | ε3/ε4 vs. ε3/ε3 (n = 161) | p,,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.0,4.98,,,,19398.0,,,ε3/ε4 | OR (95% CI) a,ε3/ε4 | p,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.0,4.98,,,,19398.0,,,ε3/ε4 | OR (95% CI) a,ε4/ε4 | p,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.0,3.83,,,,15836.0,,,ε3/ε4 | OR (95% CI) a,ε3/ε4 | p,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.0,3.83,,,,15836.0,,,ε3/ε4 | OR (95% CI) a,ε4/ε4 | p,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.0,2.49,,,,4985.0,,,ε3/ε4 | OR (95% CI) a,ε3/ε4 | p,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.0,2.49,,,,4985.0,,,ε3/ε4 | OR (95% CI) a,ε4/ε4 | p,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.0,25.12,,,,19398.0,,,ε4/ε4 | OR (95% CI) a,ε3/ε4 | p,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.0,25.12,,,,19398.0,,,ε4/ε4 | OR (95% CI) a,ε4/ε4 | p,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.0,14.35,,,,15836.0,,,ε4/ε4 | OR (95% CI) a,ε3/ε4 | p,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.0,14.35,,,,15836.0,,,ε4/ε4 | OR (95% CI) a,ε4/ε4 | p,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.0,8.17,,,,4985.0,,,ε4/ε4 | OR (95% CI) a,ε3/ε4 | p,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.0,8.17,,,,4985.0,,,ε4/ε4 | OR (95% CI) a,ε4/ε4 | p,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.0,5.13,,,,9770.0,TT,,,ε3/ε4 | p,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.0,4.55,,,,7941.0,GT,,,ε3/ε4 | p,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.006,3.55,,,,1681.0,GG,,,ε3/ε4 | p,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.0,4.25,,,,4713.0,TT,,,ε3/ε4 | p,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.0,3.89,,,,7510.0,GT,,,ε3/ε4 | p,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.0,3.39,,,,3385.0,GG,,,ε3/ε4 | p,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.0,4.62,,,,14483.0,TT,,,ε3/ε4 | p,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.0,4.1,,,,15451.0,GT,,,ε3/ε4 | p,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.0,3.4,,,,5066.0,GG,,,ε3/ε4 | p,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.0,5.13,,,,9770.0,TT,,,ε4/ε4 | p,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+2.62e-09,4.55,,,,7941.0,GT,,,ε4/ε4 | p,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+,3.55,,,,1681.0,GG,,,ε4/ε4 | p,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.0,4.25,,,,4713.0,TT,,,ε4/ε4 | p,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.0,3.89,,,,7510.0,GT,,,ε4/ε4 | p,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+4.07e-12,3.39,,,,3385.0,GG,,,ε4/ε4 | p,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.0,4.62,,,,14483.0,TT,,,ε4/ε4 | p,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+0.0,4.1,,,,15451.0,GT,,,ε4/ε4 | p,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease
+1.84e-12,3.4,,,,5066.0,GG,,,ε4/ε4 | p,African American + East Asian + European ancestry,ADGC + ADNI,Meta-analysis,1000 Genomes (1000G) + Haplotype Reference Consortium (HRC),Genotyping,Alzheimer’s disease

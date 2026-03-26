@@ -1,5 +1,5 @@
-Pubmed ID,PMCID,Table ID,SNP,Chr,RA1,RA2,AF,P-value,Effect,Effect Type,Population,Cohort,Stage
-30930738.0,PMC6425305,Table 1,rs10792421,11.0,G,A,,2.16e-05,,,European,PGC2-BIP,
-30930738.0,PMC6425305,Table 1,rs10792421,11.0,G,A,,6.68e-05,,,European,IGAP,
-30930738.0,PMC6425305,Table 1,rs11649476,16.0,T,C,,2.98e-05,,,European,PGC2-BIP,
-30930738.0,PMC6425305,Table 1,rs11649476,16.0,T,C,,1.35e-05,,,European,IGAP,
+Pubmed ID,PMCID,Table ID,SNP,Chr,RA1,RA2,AF,P-value,Effect,Effect Type,Population,Cohort,Stage,Imputation,Phenotype,Study type
+30930738.0,PMC6425305,Table 1,rs10792421,11.0,G,A,,2.16e-05,,,European,PGC2-BIP,,1000G,Bipolar disorder (BIP),SNP-based
+30930738.0,PMC6425305,Table 1,rs10792421,11.0,G,A,,6.68e-05,,,European,IGAP,,1000G,AD,SNP-based
+30930738.0,PMC6425305,Table 1,rs11649476,16.0,T,C,,2.98e-05,,,European,PGC2-BIP,,1000G,Bipolar disorder (BIP),SNP-based
+30930738.0,PMC6425305,Table 1,rs11649476,16.0,T,C,,1.35e-05,,,European,IGAP,,1000G,AD,SNP-based

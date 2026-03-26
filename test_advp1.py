@@ -112,8 +112,7 @@ def check_lst1_equals_lst2(lst1: Iterable, lst2: Iterable):
 embeddings_model_lst = []
 embeddings_model_tokenizer_lst = []
 embeddings_model_name_lst = [
-    "michiyasunaga/BioLinkBERT-base", "NeuML/pubmedbert-base-embeddings", "BAAI/bge-base-en-v1.5"
-
+    "NeuML/pubmedbert-base-embeddings"
 ]
 for embedding_model_name in embeddings_model_name_lst:
     embeddings_model = AutoModel.from_pretrained(embedding_model_name)
@@ -137,7 +136,7 @@ def find_best_match_with_score(s: str, lst: Iterable) -> Tuple[str, float]:
     similarity_score_all = torch.zeros(len(lst))
     for embeddings_model, embeddings_model_tokenizer in zip(embeddings_model_lst, embeddings_model_tokenizer_lst):
         s_embeddings = make_embeddings(s, embeddings_model, embeddings_model_tokenizer)
-        lst_embeddings = make_embeddings(s, embeddings_model, embeddings_model_tokenizer)
+        lst_embeddings = make_embeddings(lst, embeddings_model, embeddings_model_tokenizer)
         similarity_score = (s_embeddings @ lst_embeddings.T).reshape(-1)
         similarity_score_all += similarity_score
     similarity_score_all /= len(embeddings_model_name_lst)
@@ -145,7 +144,7 @@ def find_best_match_with_score(s: str, lst: Iterable) -> Tuple[str, float]:
     best_match, best_match_score = lst[best_match_inx], float(similarity_score_all[best_match_inx])
     return best_match, best_match_score
 
-def check_lst1_contains_lst2_semantic(lst1: Iterable, lst2: Iterable, threshold: float = 0.4):
+def check_lst1_contains_lst2_semantic(lst1: Iterable, lst2: Iterable, threshold: float = 0.6):
     counter1 = dict(Counter(lst1))
     counter2 = dict(Counter(lst2))
     if len(counter2) == 0:
@@ -333,3 +332,33 @@ def test_snp_stage(dir_path: str):
         with open("test_logs/test_snp_stage.json", "w") as f:
             json.dump(failed_table, f, indent=2)
         raise AssertionError(f"Failed test_snp_stage on {len(failed_table)} tables")
+    
+def test_snp_imputation(dir_path: str):
+    # test for each table and for each snp we have right set of cohort
+    failed_table = get_failed_table_for_test(dir_path, "Imputation", use_semantic = True)
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        with open("test_logs/test_snp_imputation.json", "w") as f:
+            json.dump(failed_table, f, indent=2) 
+        raise AssertionError(f"Failed test_snp_imputation on {len(failed_table)} tables")
+
+def test_snp_study_type(dir_path: str):
+    # test for each table and for each snp we have right set of population
+    failed_table = get_failed_table_for_test(dir_path, "Study type", use_semantic = True)
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        with open("test_logs/test_snp_study_type.json", "w") as f:
+            json.dump(failed_table, f, indent=2)
+        raise AssertionError(f"Failed test_snp_study_type on {len(failed_table)} tables")
+    
+def test_snp_phenotype(dir_path: str):
+    # test for each table and for each snp we have right set of population
+    failed_table = get_failed_table_for_test(dir_path, "Phenotype", use_semantic = True)
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        with open("test_logs/test_snp_phenotype.json", "w") as f:
+            json.dump(failed_table, f, indent=2)
+        raise AssertionError(f"Failed test_snp_phenotype on {len(failed_table)} tables")

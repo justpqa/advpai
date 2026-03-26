@@ -1,45 +1,45 @@
-Pubmed ID,PMCID,Table ID,SNP,Chr,RA1,RA2,AF,P-value,Effect,Effect Type,Population,Cohort,Stage
-28780673.0,PMC5693762,Table 3,rs10896445,11.0,,,,0.0032,,,European ancestry,"IGAP, GAME-ON",
-28780673.0,PMC5693762,Table 3,rs10896445,11.0,,,,0.00031,,,European ancestry,IGAP,
-28780673.0,PMC5693762,Table 3,rs10896445,11.0,,,,0.011,,,European ancestry,GAME-ON,
-28780673.0,PMC5693762,Table 3,rs10896445,11.0,,,,0.0071,,,European ancestry,GAME-ON,
-28780673.0,PMC5693762,Table 3,rs11249708,5.0,,,,1.5e-05,,,European ancestry,GAME-ON,
-28780673.0,PMC5693762,Table 3,rs11249708,5.0,,,,0.00012,,,European ancestry,"IGAP, GAME-ON",
-28780673.0,PMC5693762,Table 3,rs11249708,5.0,,,,0.0006,,,European ancestry,IGAP,
-28780673.0,PMC5693762,Table 3,rs11249708,5.0,,,,0.13,,,European ancestry,GAME-ON,
-28780673.0,PMC5693762,Table 3,rs1568485,1.0,,,,0.00042,,,European ancestry,GAME-ON,
-28780673.0,PMC5693762,Table 3,rs1568485,1.0,,,,0.00097,,,European ancestry,IGAP,
-28780673.0,PMC5693762,Table 3,rs1568485,1.0,,,,0.0057,,,European ancestry,"IGAP, GAME-ON",
-28780673.0,PMC5693762,Table 3,rs1568485,1.0,,,,0.37,,,European ancestry,GAME-ON,
-28780673.0,PMC5693762,Table 3,rs17466060,8.0,,,,0.017,,,European ancestry,GAME-ON,
-28780673.0,PMC5693762,Table 3,rs17466060,8.0,,,,0.0005,,,European ancestry,"IGAP, GAME-ON",
-28780673.0,PMC5693762,Table 3,rs17466060,8.0,,,,0.00057,,,European ancestry,GAME-ON,
-28780673.0,PMC5693762,Table 3,rs17466060,8.0,,,,4.3e-06,,,European ancestry,IGAP,
-28780673.0,PMC5693762,Table 3,rs3204635,12.0,,,,0.00086,,,European ancestry,IGAP,
-28780673.0,PMC5693762,Table 3,rs3204635,12.0,,,,0.0025,,,European ancestry,"IGAP, GAME-ON",
-28780673.0,PMC5693762,Table 3,rs3204635,12.0,,,,0.00015,,,European ancestry,GAME-ON,
-28780673.0,PMC5693762,Table 3,rs3204635,12.0,,,,0.41,,,European ancestry,GAME-ON,
-28780673.0,PMC5693762,Table 3,rs3843702,15.0,,,,0.0025,,,European ancestry,"IGAP, GAME-ON",
-28780673.0,PMC5693762,Table 3,rs3843702,15.0,,,,0.44,,,European ancestry,GAME-ON,
-28780673.0,PMC5693762,Table 3,rs3843702,15.0,,,,0.00013,,,European ancestry,GAME-ON,
-28780673.0,PMC5693762,Table 3,rs3843702,15.0,,,,0.00087,,,European ancestry,IGAP,
-28780673.0,PMC5693762,Table 3,rs56117933,15.0,,,,,,,European ancestry,"IGAP, GAME-ON",
-28780673.0,PMC5693762,Table 3,rs56117933,15.0,,,,0.56,,,European ancestry,GAME-ON,
-28780673.0,PMC5693762,Table 3,rs56117933,15.0,,,,4.1e-20,,,European ancestry,GAME-ON,
-28780673.0,PMC5693762,Table 3,rs56117933,15.0,,,,0.00083,,,European ancestry,IGAP,
-28780673.0,PMC5693762,Table 3,rs59776273,4.0,,,,0.032,,,European ancestry,GAME-ON,
-28780673.0,PMC5693762,Table 3,rs59776273,4.0,,,,0.00044,,,European ancestry,IGAP,
-28780673.0,PMC5693762,Table 3,rs59776273,4.0,,,,0.00019,,,European ancestry,"IGAP, GAME-ON",
-28780673.0,PMC5693762,Table 3,rs59776273,4.0,,,,9.9e-05,,,European ancestry,GAME-ON,
-28780673.0,PMC5693762,Table 3,rs74766959,11.0,,,,0.005,,,European ancestry,"IGAP, GAME-ON",
-28780673.0,PMC5693762,Table 3,rs74766959,11.0,,,,0.00032,,,European ancestry,IGAP,
-28780673.0,PMC5693762,Table 3,rs74766959,11.0,,,,0.17,,,European ancestry,GAME-ON,
-28780673.0,PMC5693762,Table 3,rs74766959,11.0,,,,0.0008,,,European ancestry,GAME-ON,
-28780673.0,PMC5693762,Table 3,rs7725218,5.0,,,,0.0028,,,European ancestry,"IGAP, GAME-ON",
-28780673.0,PMC5693762,Table 3,rs7725218,5.0,,,,7.2e-05,,,European ancestry,GAME-ON,
-28780673.0,PMC5693762,Table 3,rs7725218,5.0,,,,0.00081,,,European ancestry,IGAP,
-28780673.0,PMC5693762,Table 3,rs7725218,5.0,,,,0.92,,,European ancestry,GAME-ON,
-28780673.0,PMC5693762,Table 3,rs77597338,2.0,,,,0.025,,,European ancestry,GAME-ON,
-28780673.0,PMC5693762,Table 3,rs77597338,2.0,,,,1.1e-05,,,European ancestry,IGAP,
-28780673.0,PMC5693762,Table 3,rs77597338,2.0,,,,0.0044,,,European ancestry,"IGAP, GAME-ON",
-28780673.0,PMC5693762,Table 3,rs77597338,2.0,,,,0.0045,,,European ancestry,GAME-ON,
+Pubmed ID,PMCID,Table ID,SNP,Chr,RA1,RA2,AF,P-value,Effect,Effect Type,Population,Cohort,Stage,Imputation,Phenotype,Study type
+28780673.0,PMC5693762,Table 3,rs10896445,11.0,,,,0.0032,,,European ancestry,"IGAP, GAME-ON",,1000G ,AD + Breast cancer + Lung Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs10896445,11.0,,,,0.00031,,,European ancestry,IGAP,,1000G ,AD,SNP-based
+28780673.0,PMC5693762,Table 3,rs10896445,11.0,,,,0.011,,,European ancestry,GAME-ON,,1000G ,Lung Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs10896445,11.0,,,,0.0071,,,European ancestry,GAME-ON,,1000G ,Breast Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs11249708,5.0,,,,1.5e-05,,,European ancestry,GAME-ON,,1000G ,Lung Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs11249708,5.0,,,,0.00012,,,European ancestry,"IGAP, GAME-ON",,1000G ,AD + Breast cancer + Lung Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs11249708,5.0,,,,0.0006,,,European ancestry,IGAP,,1000G ,AD,SNP-based
+28780673.0,PMC5693762,Table 3,rs11249708,5.0,,,,0.13,,,European ancestry,GAME-ON,,1000G ,Breast Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs1568485,1.0,,,,0.00042,,,European ancestry,GAME-ON,,1000G ,Breast Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs1568485,1.0,,,,0.00097,,,European ancestry,IGAP,,1000G ,AD,SNP-based
+28780673.0,PMC5693762,Table 3,rs1568485,1.0,,,,0.0057,,,European ancestry,"IGAP, GAME-ON",,1000G ,AD + Breast cancer + Lung Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs1568485,1.0,,,,0.37,,,European ancestry,GAME-ON,,1000G ,Lung Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs17466060,8.0,,,,0.017,,,European ancestry,GAME-ON,,1000G ,Breast Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs17466060,8.0,,,,0.0005,,,European ancestry,"IGAP, GAME-ON",,1000G ,AD + Breast cancer + Lung Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs17466060,8.0,,,,0.00057,,,European ancestry,GAME-ON,,1000G ,Lung Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs17466060,8.0,,,,4.3e-06,,,European ancestry,IGAP,,1000G ,AD,SNP-based
+28780673.0,PMC5693762,Table 3,rs3204635,12.0,,,,0.00086,,,European ancestry,IGAP,,1000G ,AD,SNP-based
+28780673.0,PMC5693762,Table 3,rs3204635,12.0,,,,0.0025,,,European ancestry,"IGAP, GAME-ON",,1000G ,AD + Breast cancer + Lung Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs3204635,12.0,,,,0.00015,,,European ancestry,GAME-ON,,1000G ,Breast Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs3204635,12.0,,,,0.41,,,European ancestry,GAME-ON,,1000G ,Lung Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs3843702,15.0,,,,0.0025,,,European ancestry,"IGAP, GAME-ON",,1000G ,AD + Breast cancer + Lung Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs3843702,15.0,,,,0.44,,,European ancestry,GAME-ON,,1000G ,Breast Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs3843702,15.0,,,,0.00013,,,European ancestry,GAME-ON,,1000G ,Lung Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs3843702,15.0,,,,0.00087,,,European ancestry,IGAP,,1000G ,AD,SNP-based
+28780673.0,PMC5693762,Table 3,rs56117933,15.0,,,,,,,European ancestry,"IGAP, GAME-ON",,1000G ,AD + Breast cancer + Lung Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs56117933,15.0,,,,0.56,,,European ancestry,GAME-ON,,1000G ,Breast Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs56117933,15.0,,,,4.1e-20,,,European ancestry,GAME-ON,,1000G ,Lung Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs56117933,15.0,,,,0.00083,,,European ancestry,IGAP,,1000G ,AD,SNP-based
+28780673.0,PMC5693762,Table 3,rs59776273,4.0,,,,0.032,,,European ancestry,GAME-ON,,1000G ,Lung Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs59776273,4.0,,,,0.00044,,,European ancestry,IGAP,,1000G ,AD,SNP-based
+28780673.0,PMC5693762,Table 3,rs59776273,4.0,,,,0.00019,,,European ancestry,"IGAP, GAME-ON",,1000G ,AD + Breast cancer + Lung Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs59776273,4.0,,,,9.9e-05,,,European ancestry,GAME-ON,,1000G ,Breast Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs74766959,11.0,,,,0.005,,,European ancestry,"IGAP, GAME-ON",,1000G ,AD + Breast cancer + Lung Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs74766959,11.0,,,,0.00032,,,European ancestry,IGAP,,1000G ,AD,SNP-based
+28780673.0,PMC5693762,Table 3,rs74766959,11.0,,,,0.17,,,European ancestry,GAME-ON,,1000G ,Breast Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs74766959,11.0,,,,0.0008,,,European ancestry,GAME-ON,,1000G ,Lung Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs7725218,5.0,,,,0.0028,,,European ancestry,"IGAP, GAME-ON",,1000G ,AD + Breast cancer + Lung Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs7725218,5.0,,,,7.2e-05,,,European ancestry,GAME-ON,,1000G ,Lung Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs7725218,5.0,,,,0.00081,,,European ancestry,IGAP,,1000G ,AD,SNP-based
+28780673.0,PMC5693762,Table 3,rs7725218,5.0,,,,0.92,,,European ancestry,GAME-ON,,1000G ,Breast Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs77597338,2.0,,,,0.025,,,European ancestry,GAME-ON,,1000G ,Breast Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs77597338,2.0,,,,1.1e-05,,,European ancestry,IGAP,,1000G ,AD,SNP-based
+28780673.0,PMC5693762,Table 3,rs77597338,2.0,,,,0.0044,,,European ancestry,"IGAP, GAME-ON",,1000G ,AD + Breast cancer + Lung Cancer,SNP-based
+28780673.0,PMC5693762,Table 3,rs77597338,2.0,,,,0.0045,,,European ancestry,GAME-ON,,1000G ,Lung Cancer,SNP-based

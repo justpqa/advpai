@@ -25,9 +25,9 @@ class AllowedTokensProcessor(LogitsProcessor):
     
 class GWASInformationRetriever:
     def __init__(self, referencing_col_df: pd.DataFrame, chroma_db_path: str = "./chroma_db", chroma_db_collection_name: str = "gwas_paper_collection", 
-                 embedding_model_name: str = "NeuML/pubmedbert-base-embeddings", reranker_model_name: str = "cross-encoder/ms-marco-MiniLM-L6-v2",
+                 embedding_model_name: str = "NeuML/pubmedbert-base-embeddings", reranker_model_name: str = "jinaai/jina-reranker-v1-turbo-en",
                  llm_model_name: Optional[str] = "Qwen/Qwen2.5-1.5B-Instruct", llm_gguf_path: Optional[str] = "./qwen2.5-7b-instruct-q4/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
-                 use_hf: bool = False, device: Optional[str] = None):
+                 use_hf: bool = True, device: Optional[str] = None):
         # load ref col df
         self.referencing_col_lst = referencing_col_df["column"].to_list()
         self.referencing_col_context_lst = referencing_col_df.apply(lambda x: x["column"] if pd.isna(x["description"]) else x["column"] + ": " + x["description"], axis = 1).to_list()
@@ -59,54 +59,60 @@ class GWASInformationRetriever:
         #     bnb_4bit_use_double_quant=True,
         #     bnb_4bit_quant_type="nf4",
         # )
-        # if use_hf and llm_model_name is not None:
-        #     self.use_hf = True
-        #     login(os.environ.get("HF_TOKEN", ""))
-        #     self.tokenizer = AutoTokenizer.from_pretrained(llm_model_name)
-        #     self.model = AutoModelForCausalLM.from_pretrained(
-        #         llm_model_name,
-        #         # quantization_config = bnb_config,
-        #         device_map = "auto",
-        #         # torch_dtype=torch.bfloat16,
-        #     )
-        #     # self.model.to(self.device)
-        #     self.model.eval()
-        # elif not use_hf and llm_gguf_path is not None:
-        #     self.use_hf = False
-        #     self.llm = Llama(
-        #         model_path=llm_gguf_path,
-        #         n_ctx=8192,
-        #         n_gpu_layers=-1,
-        #         verbose=False,
-        #     )
-        # else:
-        #     raise Exception("Missing either llm_model_name (if use_hf=True) or llm_gguf_path (if use_hf=False)")
+        if use_hf and llm_model_name is not None:
+            self.use_hf = True
+            login(os.environ.get("HF_TOKEN", ""))
+            self.tokenizer = AutoTokenizer.from_pretrained(llm_model_name)
+            self.model = AutoModelForCausalLM.from_pretrained(
+                llm_model_name,
+                # quantization_config = bnb_config,
+                device_map = "auto",
+                # torch_dtype=torch.bfloat16,
+            )
+            # self.model.to(self.device)
+            self.model.eval()
+            allowed_chars = list("01")
+            allowed_token_ids = set()
+            for token, token_id in self.tokenizer.get_vocab().items():
+                if all(c in allowed_chars for c in token):
+                    allowed_token_ids.add(token_id)
+            self.allowed_tokens_processor = AllowedTokensProcessor(allowed_token_ids)
+        elif not use_hf and llm_gguf_path is not None:
+            self.use_hf = False
+            self.llm = Llama(
+                model_path=llm_gguf_path,
+                n_ctx=8192,
+                n_gpu_layers=-1,
+                verbose=False,
+            )
+        else:
+            raise Exception("Missing either llm_model_name (if use_hf=True) or llm_gguf_path (if use_hf=False)")
         # NOTE: temporary use only hf model since we try logit bias to only generate certain ans
-        self.use_hf = True
-        login(os.environ.get("HF_TOKEN", ""))
-        self.tokenizer = AutoTokenizer.from_pretrained(llm_model_name)
-        self.model = AutoModelForCausalLM.from_pretrained(
-            llm_model_name,
-            # quantization_config = bnb_config,
-            device_map = "auto",
-            # torch_dtype=torch.bfloat16,
-        )
-        # self.model.to(self.device)
-        self.model.eval()
+        # self.use_hf = True
+        # login(os.environ.get("HF_TOKEN", ""))
+        # self.tokenizer = AutoTokenizer.from_pretrained(llm_model_name)
+        # self.model = AutoModelForCausalLM.from_pretrained(
+        #     llm_model_name,
+        #     # quantization_config = bnb_config,
+        #     device_map = "auto",
+        #     # torch_dtype=torch.bfloat16,
+        # )
+        # # self.model.to(self.device)
+        # self.model.eval()
 
         # logit processor for choices
-        allowed_chars = list("01")
-        allowed_token_ids = set()
-        for token, token_id in self.tokenizer.get_vocab().items():
-            if all(c in allowed_chars for c in token):
-                allowed_token_ids.add(token_id)
-        self.allowed_tokens_processor = AllowedTokensProcessor(allowed_token_ids)
+        # allowed_chars = list("01")
+        # allowed_token_ids = set()
+        # for token, token_id in self.tokenizer.get_vocab().items():
+        #     if all(c in allowed_chars for c in token):
+        #         allowed_token_ids.add(token_id)
+        # self.allowed_tokens_processor = AllowedTokensProcessor(allowed_token_ids)
 
 
         # NOTE: config for search and generate, add it as params later
         self.top_k = 20
         self.top_k_rerank = 5
-        self.max_new_tokens = 128
+        self.max_new_tokens = 1024
         self.similarity_score_threshold = 0.0
         self.temperature = 0
         self.top_p = 1
@@ -249,118 +255,7 @@ Output: """
 
             # extract a list of possible info from llm
             full_query = f"What kind of {ref_col} is in the paper, given that {ref_col_context}"
-            # if self.use_hf:
-            #     prompt = self.make_prompt(full_query, documents)
-            #     outputs = self.model.generate(
-            #         **self.tokenizer(prompt, return_tensors="pt").to(self.device),
-            #         max_new_tokens=self.max_new_tokens,
-            #         do_sample=False,
-            #         temperature=self.temperature,
-            #         top_p=self.top_p,
-            #     )
-            #     response = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
-            # else:
-            #     messages = self.make_messages(full_query, documents)
-            #     response = self.llm.create_chat_completion(
-            #         messages=messages,
-            #         max_tokens=self.max_new_tokens,
-            #         temperature=self.temperature,
-            #         top_p=self.top_p,
-            #     )
-            #     response = response["choices"][0]["message"]["content"]
-            prompt = self.make_prompt(full_query, documents)
-            outputs = self.model.generate(
-                **self.tokenizer(prompt, return_tensors="pt").to(self.device),
-                max_new_tokens=self.max_new_tokens,
-                do_sample=False,
-                temperature=self.temperature,
-                top_p=self.top_p,
-            )
-            response = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
-            # extract list of possible info
-            res[ref_col] = self.extract_lst_from_llm_output(response)
-    
-        return res
-    
-    def extract_possible_info_from_paper_with_choices(self, pmid: int, pmcid: str) -> Dict[str, List]:
-        """
-        Given a paper, extract all possible answer for each category
-        """
-        res = {}
-
-        for ref_col, ref_col_context, ref_col_choices in zip(self.referencing_col_lst, self.referencing_col_context_lst, self.referencing_col_choices_lst):
-            if len(ref_col_choices) > 0:
-                query = f"{ref_col_context}"
-                documents = self.vector_store.similarity_search_with_relevance_scores(
-                    query = query, 
-                    k = self.top_k,
-                    filter = {"$and": [{"PMID": str(pmid)}, {"PMCID": pmcid}]},
-                )
-                documents = [d.page_content for d, score in documents if score >= self.similarity_score_threshold]
-                # if no docs can found => no useful info 
-                if len(documents) == 0:
-                    res[ref_col] = []
-                    continue
-
-                # rerank
-                scores = self.reranker_model.predict([(query, d) for d in documents])
-                documents = [doc for _, doc in sorted(zip(scores, documents), key=lambda x: x[0], reverse=True)]
-                documents = documents[:self.top_k_rerank]
-
-                # extract a list of possible info from llm
-                full_query = f"What kind of {ref_col} is in the paper, given that {ref_col_context}"
-                prompt_lst = self.make_prompt_lst_with_choices(query, documents, ref_col_choices)
-                outputs = self.model.generate(
-                    **self.tokenizer(prompt_lst, padding=True, padding_side = "left", truncation=True, return_tensors="pt").to(self.device),
-                    max_new_tokens=1,
-                    do_sample=False,
-                    temperature=self.temperature,
-                    top_p=self.top_p,
-                    logits_processor=[self.allowed_tokens_processor],
-                )
-                decoded_outputs = self.tokenizer.batch_decode(outputs, skip_special_tokens=True)
-                res[ref_col] = [choice for inx, choice in enumerate(ref_col_choices) if decoded_outputs[inx][-1] in ['0', '1']]
-            else:
-                # search for related context
-                query = f"{ref_col_context}"
-                documents = self.vector_store.similarity_search_with_relevance_scores(
-                    query = query, 
-                    k = self.top_k,
-                    filter = {"$and": [{"PMID": str(pmid)}, {"PMCID": pmcid}]},
-                )
-                documents = [d.page_content for d, score in documents if score >= self.similarity_score_threshold]
-                # if no docs can found => no useful info 
-                if len(documents) == 0:
-                    res[ref_col] = []
-                    continue
-
-                # rerank
-                scores = self.reranker_model.predict([(query, d) for d in documents])
-                documents = [doc for _, doc in sorted(zip(scores, documents), key=lambda x: x[0], reverse=True)]
-                documents = documents[:self.top_k_rerank]
-
-                # extract a list of possible info from llm
-                full_query = f"What kind of {ref_col} is in the paper, given that {ref_col_context}"
-                prompt = self.make_prompt(full_query, documents)
-                # if self.use_hf:
-                #     prompt = self.make_prompt(full_query, documents)
-                #     outputs = self.model.generate(
-                #         **self.tokenizer(prompt, return_tensors="pt").to(self.device),
-                #         max_new_tokens=self.max_new_tokens,
-                #         do_sample=False,
-                #         temperature=self.temperature,
-                #         top_p=self.top_p,
-                #     )
-                #     response = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
-                # else:
-                #     messages = self.make_messages(full_query, documents)
-                #     response = self.llm.create_chat_completion(
-                #         messages=messages,
-                #         max_tokens=self.max_new_tokens,
-                #         temperature=self.temperature,
-                #         top_p=self.top_p,
-                #     )
-                #     response = response["choices"][0]["message"]["content"]
+            if self.use_hf:
                 prompt = self.make_prompt(full_query, documents)
                 outputs = self.model.generate(
                     **self.tokenizer(prompt, return_tensors="pt").to(self.device),
@@ -370,7 +265,118 @@ Output: """
                     top_p=self.top_p,
                 )
                 response = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
-                # extract list of possible info
-                res[ref_col] = self.extract_lst_from_llm_output(response)
-        
+            else:
+                messages = self.make_messages(full_query, documents)
+                response = self.llm.create_chat_completion(
+                    messages=messages,
+                    max_tokens=self.max_new_tokens,
+                    temperature=self.temperature,
+                    top_p=self.top_p,
+                )
+                response = response["choices"][0]["message"]["content"]
+            # prompt = self.make_prompt(full_query, documents)
+            # outputs = self.model.generate(
+            #     **self.tokenizer(prompt, return_tensors="pt").to(self.device),
+            #     max_new_tokens=self.max_new_tokens,
+            #     do_sample=False,
+            #     temperature=self.temperature,
+            #     top_p=self.top_p,
+            # )
+            # response = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
+            # extract list of possible info
+            res[ref_col] = self.extract_lst_from_llm_output(response)
+    
         return res
+    
+    # def extract_possible_info_from_paper_with_choices(self, pmid: int, pmcid: str) -> Dict[str, List]:
+    #     """
+    #     Given a paper, extract all possible answer for each category
+    #     """
+    #     res = {}
+
+    #     for ref_col, ref_col_context, ref_col_choices in zip(self.referencing_col_lst, self.referencing_col_context_lst, self.referencing_col_choices_lst):
+    #         if len(ref_col_choices) > 0:
+    #             query = f"{ref_col_context}"
+    #             documents = self.vector_store.similarity_search_with_relevance_scores(
+    #                 query = query, 
+    #                 k = self.top_k,
+    #                 filter = {"$and": [{"PMID": str(pmid)}, {"PMCID": pmcid}]},
+    #             )
+    #             documents = [d.page_content for d, score in documents if score >= self.similarity_score_threshold]
+    #             # if no docs can found => no useful info 
+    #             if len(documents) == 0:
+    #                 res[ref_col] = []
+    #                 continue
+
+    #             # rerank
+    #             scores = self.reranker_model.predict([(query, d) for d in documents])
+    #             documents = [doc for _, doc in sorted(zip(scores, documents), key=lambda x: x[0], reverse=True)]
+    #             documents = documents[:self.top_k_rerank]
+
+    #             # extract a list of possible info from llm
+    #             full_query = f"What kind of {ref_col} is in the paper, given that {ref_col_context}"
+    #             prompt_lst = self.make_prompt_lst_with_choices(query, documents, ref_col_choices)
+    #             outputs = self.model.generate(
+    #                 **self.tokenizer(prompt_lst, padding=True, padding_side = "left", truncation=True, return_tensors="pt").to(self.device),
+    #                 max_new_tokens=1,
+    #                 do_sample=False,
+    #                 temperature=self.temperature,
+    #                 top_p=self.top_p,
+    #                 logits_processor=[self.allowed_tokens_processor],
+    #             )
+    #             decoded_outputs = self.tokenizer.batch_decode(outputs, skip_special_tokens=True)
+    #             res[ref_col] = [choice for inx, choice in enumerate(ref_col_choices) if decoded_outputs[inx][-1] in ['0', '1']]
+    #         else:
+    #             # search for related context
+    #             query = f"{ref_col_context}"
+    #             documents = self.vector_store.similarity_search_with_relevance_scores(
+    #                 query = query, 
+    #                 k = self.top_k,
+    #                 filter = {"$and": [{"PMID": str(pmid)}, {"PMCID": pmcid}]},
+    #             )
+    #             documents = [d.page_content for d, score in documents if score >= self.similarity_score_threshold]
+    #             # if no docs can found => no useful info 
+    #             if len(documents) == 0:
+    #                 res[ref_col] = []
+    #                 continue
+
+    #             # rerank
+    #             scores = self.reranker_model.predict([(query, d) for d in documents])
+    #             documents = [doc for _, doc in sorted(zip(scores, documents), key=lambda x: x[0], reverse=True)]
+    #             documents = documents[:self.top_k_rerank]
+
+    #             # extract a list of possible info from llm
+    #             full_query = f"What kind of {ref_col} is in the paper, given that {ref_col_context}"
+    #             prompt = self.make_prompt(full_query, documents)
+    #             # if self.use_hf:
+    #             #     prompt = self.make_prompt(full_query, documents)
+    #             #     outputs = self.model.generate(
+    #             #         **self.tokenizer(prompt, return_tensors="pt").to(self.device),
+    #             #         max_new_tokens=self.max_new_tokens,
+    #             #         do_sample=False,
+    #             #         temperature=self.temperature,
+    #             #         top_p=self.top_p,
+    #             #     )
+    #             #     response = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
+    #             # else:
+    #             #     messages = self.make_messages(full_query, documents)
+    #             #     response = self.llm.create_chat_completion(
+    #             #         messages=messages,
+    #             #         max_tokens=self.max_new_tokens,
+    #             #         temperature=self.temperature,
+    #             #         top_p=self.top_p,
+    #             #     )
+    #             #     response = response["choices"][0]["message"]["content"]
+    #             prompt = self.make_prompt(full_query, documents)
+    #             outputs = self.model.generate(
+    #                 **self.tokenizer(prompt, return_tensors="pt").to(self.device),
+    #                 max_new_tokens=self.max_new_tokens,
+    #                 do_sample=False,
+    #                 temperature=self.temperature,
+    #                 top_p=self.top_p,
+    #             )
+    #             response = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
+    #             # extract list of possible info
+    #             res[ref_col] = self.extract_lst_from_llm_output(response)
+        
+    #     return res
