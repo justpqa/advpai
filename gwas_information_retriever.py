@@ -2,6 +2,7 @@ from typing import Optional, List, Tuple, Dict
 import re
 import ast
 import os
+from copy import deepcopy
 import pandas as pd
 from langchain_core.documents import Document
 from langchain_chroma import Chroma
@@ -118,7 +119,7 @@ class GWASInformationRetriever:
         self.top_p = 1
     
     def make_messages(self, query: str, documents: List[str]) -> List[Dict]:
-        document_str = " ".join(documents)
+        document_str = "\n\n".join([f"EXCERPT {i + 1}:\n{d}" for i, d in enumerate(documents)])
         # Example:
         # Question: What kind of study is in the paper? (Allowed values: "SNP-based", "gene-based")
         # Document: We performed both variant-level and gene-level association analyses. First, SNP-based GWAS summary statistics were computed in each ancestry group (EUR, EAS, AFR) and then combined via fixed-effect meta-analysis. In addition, we conducted a gene-based test aggregating rare variants per gene to prioritize candidate genes. The workflow included three stages: (i) discovery in EUR, (ii) validation in EAS and AFR, and (iii) trans-ancestry meta-analysis.
@@ -129,24 +130,35 @@ class GWASInformationRetriever:
         messages = [
             {
                 "role": "system", 
-                "content": "You are a helpful assistant that try to extract possible information related to a category in the question based on retrieved documents"
+                "content": """
+You are a strict biomedical information extraction engine.
+Only use the provided text. Never guess.
+Output must follow the required format exactly."""
             },
             {
                 "role": "user",
                 "content": f"""
-You are an information extraction system.
+Goal: extract candidate values for a field that will later be matched to table column headers.
 
-Task:
-Given a Question and a provided Document excerpt, extract ONLY the answer items that are explicitly supported by the Document.
+Field:
+{query}
 
-Output rules:
-- Return ONLY a Python list of strings, like: ["item1", "item2"]
-- No explanation. No markdown. No extra text.
-- Use the allowed values implied by the Question (if any).
-- If the Document does not contain enough information to answer, return: []
+Important:
+- The output will be mapped to rows by matching against column names/headers.
+- Therefore, prefer short “header-like” labels exactly as written (e.g., ADNI, IGAP, UK Biobank, discovery, replication).
+- If both a long name and an abbreviation/alias appear, include BOTH as separate items (exact casing).
+- If the field value applies to the entire paper (not tied to a specific cohort/stage), prefix it with GLOBAL: (e.g., GLOBAL: imputed to 1000 Genomes).
 
-Question: {query}
-Document: {document_str}
+Evidence text:
+{document_str}
+
+Rules:
+- Return exactly one Python list literal of strings and nothing else.
+- Only include items explicitly supported by the excerpts.
+- No paraphrasing; copy exact phrases/labels from the excerpts.
+- De-duplicate items.
+- If insufficient evidence, return [].
+
 Output:"""
             }
         ]
@@ -159,47 +171,47 @@ Output:"""
     
     from typing import List, Dict
 
-    def make_messages_with_choice(self, query: str, documents: List[str], choice: str) -> List[Dict]:
-        document_str = " ".join(documents).strip()
+#     def make_messages_with_choice(self, query: str, documents: List[str], choice: str) -> List[Dict]:
+#         document_str = " ".join(documents).strip()
 
-        messages = [
-        {
-            "role": "user",
-            "content": f"""Check whether the document clearly supports the candidate answer.
+#         messages = [
+#         {
+#             "role": "user",
+#             "content": f"""Check whether the document clearly supports the candidate answer.
 
-Question:
-{query}
+# Question:
+# {query}
 
-Candidate answer:
-{choice}
+# Candidate answer:
+# {choice}
 
-Document:
-{document_str}
+# Document:
+# {document_str}
 
-Instructions:
-- Return 0 if the document clearly supports the candidate answer.
-- Return 1 if the document does not clearly support it.
-- Return only 0 or 1.
-- Do not explain.
+# Instructions:
+# - Return 0 if the document clearly supports the candidate answer.
+# - Return 1 if the document does not clearly support it.
+# - Return only 0 or 1.
+# - Do not explain.
 
-Example:
-Candidate answer: gene-based
-Document: We performed a gene-based test.
-Output: 0
+# Example:
+# Candidate answer: gene-based
+# Document: We performed a gene-based test.
+# Output: 0
 
 
-Output: """
-            }
-        ]
-        return messages
+# Output: """
+#             }
+#         ]
+#         return messages
 
-    def make_prompt_lst_with_choices(self, query: str, documents: List[str], choices: List[str]) -> List[str]: 
-        prompt_lst = []
-        for choice in choices:
-            messages = self.make_messages_with_choice(query, documents, choice)
-            prompt = self.tokenizer.apply_chat_template(messages, tokenize=False)
-            prompt_lst.append(prompt)
-        return prompt_lst
+#     def make_prompt_lst_with_choices(self, query: str, documents: List[str], choices: List[str]) -> List[str]: 
+#         prompt_lst = []
+#         for choice in choices:
+#             messages = self.make_messages_with_choice(query, documents, choice)
+#             prompt = self.tokenizer.apply_chat_template(messages, tokenize=False)
+#             prompt_lst.append(prompt)
+#         return prompt_lst
     
     def extract_lst_from_llm_output(self, text: str) -> List[str]:
         text = text.replace("```", "").strip()
@@ -212,21 +224,21 @@ Output: """
         except Exception:
             return []
         
-    def extract_lst_from_llm_output_choices(self, text: str) -> List[int]:
-        # Remove code fences and trim
-        text = text.replace("```", "").strip()
+    # def extract_lst_from_llm_output_choices(self, text: str) -> List[int]:
+    #     # Remove code fences and trim
+    #     text = text.replace("```", "").strip()
 
-        # Extract the last bracketed list
-        matches = re.findall(r"\[[^\]]*\]", text)
-        if not matches:
-            return []
+    #     # Extract the last bracketed list
+    #     matches = re.findall(r"\[[^\]]*\]", text)
+    #     if not matches:
+    #         return []
 
-        list_str = matches[-1]
+    #     list_str = matches[-1]
 
-        # Extract all integers inside the brackets
-        numbers = re.findall(r"\d+", list_str)
+    #     # Extract all integers inside the brackets
+    #     numbers = re.findall(r"\d+", list_str)
 
-        return [int(n) for n in numbers]
+    #     return [int(n) for n in numbers]
 
     def extract_possible_info_from_paper(self, pmid: int, pmcid: str) -> Dict[str, List]:
         """
@@ -380,3 +392,71 @@ Output: """
     #             res[ref_col] = self.extract_lst_from_llm_output(response)
         
     #     return res
+
+    def extract_possible_info_from_paper_and_clues(self, pmid: int, pmcid: str, clues: List[str], batch_size: int = 16) -> Dict[str, Dict[str, List]]:
+        """
+        Given a paper, extract all possible answer for each category for each clue
+        """
+        res = {}
+
+        for ref_col, ref_col_context in zip(self.referencing_col_lst, self.referencing_col_context_lst):
+            # search for related context
+            query = f"{ref_col_context}"
+            documents = self.vector_store.similarity_search_with_relevance_scores(
+                query = query, 
+                k = self.top_k,
+                filter = {"$and": [{"PMID": str(pmid)}, {"PMCID": pmcid}]},
+            )
+            documents = [d.page_content for d, score in documents if score >= self.similarity_score_threshold]
+            # if no docs can found => no useful info 
+            if len(documents) == 0:
+                res[ref_col] = []
+                continue
+
+            # rerank
+            scores = self.reranker_model.predict([(query, d) for d in documents])
+            documents = [doc for _, doc in sorted(zip(scores, documents), key=lambda x: x[0], reverse=True)]
+            documents = documents[:self.top_k_rerank]
+
+            # extract a list of possible info from llm
+            full_query_lst = [f"What kind of {ref_col} is in the paper, given that {ref_col_context}, and clue {clue}" for clue in clues]
+            if self.use_hf:
+                prompts = [self.make_prompt(full_query, documents) for full_query in full_query_lst]
+                clue_to_response = {}
+                for i in range(0, len(prompts), batch_size):
+                    prompts_batch = prompts[i: min(i + batch_size, len(prompts))]
+                    outputs_batch = self.model.generate(
+                        **self.tokenizer(prompts_batch, return_tensors="pt").to(self.device),
+                        max_new_tokens=self.max_new_tokens,
+                        do_sample=False,
+                        temperature=self.temperature,
+                        top_p=self.top_p,
+                    )
+                    responses_batch = self.tokenizer.batch_decode(outputs_batch, skip_special_tokens=True)
+                    for j, response in enumerate(responses_batch):
+                        clue_to_response[clues[i + j]] = self.extract_lst_from_llm_output(response)
+            else:
+                clue_to_response = {}
+                for i, full_query in enumerate(full_query_lst):
+                    messages = self.make_messages(full_query, documents)
+                    response = self.llm.create_chat_completion(
+                        messages=messages,
+                        max_tokens=self.max_new_tokens,
+                        temperature=self.temperature,
+                        top_p=self.top_p,
+                    )
+                    response = response["choices"][0]["message"]["content"]
+                    clue_to_response[clues[i]] = self.extract_lst_from_llm_output(response)
+            # prompt = self.make_prompt(full_query, documents)
+            # outputs = self.model.generate(
+            #     **self.tokenizer(prompt, return_tensors="pt").to(self.device),
+            #     max_new_tokens=self.max_new_tokens,
+            #     do_sample=False,
+            #     temperature=self.temperature,
+            #     top_p=self.top_p,
+            # )
+            # response = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
+            # extract list of possible info
+            res[ref_col] = deepcopy(clue_to_response)
+    
+        return res

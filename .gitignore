@@ -10,3 +10,4 @@ chroma_db/
 .env
 *.gguf
 pred_tables_v2
+gwas_pmid_pmcid.txt
