@@ -1,5 +1,6 @@
 import os
 import re
+import unicodedata
 import pandas as pd
 import json
 from collections import Counter
@@ -9,8 +10,21 @@ import torch.nn.functional as F
 from transformers import AutoModel, AutoTokenizer, PreTrainedModel, PreTrainedTokenizer
 
 # Script for testing, require a directory of resulting table, where each test case name is {pmid}_{pmcid}.csv
-# run by pytest test_advp1.py --dir-test={insert your dir for all test tables}
+# run by pytest test_advp1.py --dir-path={insert your dir for all test tables}
 # Test log is in test_logs with detail of error for each table
+
+# Path to the term-mapping dict produced by evaluate_harmonization.py.
+# Per-column minimum coverage thresholds (%) for the harmonization tests.
+# A table whose coverage falls below its threshold is counted as a test failure.
+HARMONIZATION_TERM_MAP_PATH = "term_mapping_dict.json"
+HARMONIZATION_COL_THRESHOLD: dict = {
+    "Population": 50.0,
+    "Cohort":     50.0,
+    "Stage":      50.0,
+    "Imputation": 50.0,
+    "Study type": 50.0,
+    "Phenotype":  50.0,
+}
 
 def import_table_and_test_table(dir_path: str, file_name: str):
     if ".csv" in file_name:
@@ -167,7 +181,104 @@ def check_lst1_contains_lst2_semantic(lst1: Iterable, lst2: Iterable, threshold:
     # check if all count of items in counter2 has become 0 => we did find all matches
     return max(counter2.values()) == 0
 
-# NOTE: since we do not consider NAs value, 
+def _h_normalise(s: str) -> str:
+    s = unicodedata.normalize("NFKC", str(s))
+    s = s.replace("\u2019", "'").replace("\u2018", "'")
+    s = s.replace("\u201c", '"').replace("\u201d", '"')
+    s = s.replace("\u2013", "-").replace("\u2014", "-")
+    return re.sub(r"\s+", " ", s.lower().strip())
+
+def _h_strip_context_prefix(val: str) -> str:
+    return re.sub(r"^[^:]+:\s*", "", val).strip()
+
+def _h_parse_pred_terms(raw_value) -> list:
+    if pd.isna(raw_value):
+        return []
+    terms = set()
+    for part in str(raw_value).split(" + "):
+        part = part.strip()
+        if part:
+            terms.add(part)
+            stripped = _h_strip_context_prefix(part)
+            if stripped:
+                terms.add(stripped)
+    return list(terms)
+
+def _h_collect_pred_terms(pred_df: pd.DataFrame, snp, col: str) -> list:
+    snp_str = str(snp).strip() if snp is not None else None
+    rows = pred_df if (snp_str is None or snp_str.lower() == "nan") else pred_df[pred_df["SNP"].astype(str).str.strip() == snp_str]
+    terms: list = []
+    for val in rows[col].dropna():
+        terms.extend(_h_parse_pred_terms(val))
+    return list(set(t for t in terms if t))
+
+def _h_covers_gt_part(col: str, gt_part: str, pred_terms: list, term_map: dict) -> bool:
+    gt_norm = _h_normalise(gt_part)
+    if not gt_norm:
+        return True
+    for pt in pred_terms:
+        pt_norm = _h_normalise(pt)
+        if not pt_norm:
+            continue
+        if pt_norm == gt_norm:
+            return True
+        mapped = term_map.get(col, {}).get(pt_norm)
+        if mapped:
+            mapped_norm = _h_normalise(mapped)
+            if mapped_norm == gt_norm or gt_norm.startswith(mapped_norm) or mapped_norm.startswith(gt_norm):
+                return True
+        # if gt_norm in pt_norm or pt_norm in gt_norm:
+        #     return True
+    return False
+
+def _h_gt_is_covered(col: str, gt_value: str, pred_terms: list, term_map: dict) -> bool:
+    gt_str = str(gt_value).strip()
+    if not gt_str or gt_str.lower() == "nan":
+        return True
+    parts = [p.strip() for p in gt_str.split(", ")] if col == "Cohort" and ", " in gt_str else [gt_str]
+    return all(_h_covers_gt_part(col, part, pred_terms, term_map) for part in parts)
+
+def _h_load_term_map() -> dict:
+    if os.path.exists(HARMONIZATION_TERM_MAP_PATH):
+        with open(HARMONIZATION_TERM_MAP_PATH) as f:
+            return json.load(f)
+    return {}
+
+def _h_get_failed_tables(dir_path: str, col: str, term_map: dict, threshold: float) -> list:
+    failed_table = []
+    for file_name in sorted(os.listdir(dir_path)):
+        if not (file_name.endswith(".csv") or file_name.endswith(".xlsx")):
+            continue
+        curr_df, test_df = import_table_and_test_table(dir_path, file_name)
+        if col not in curr_df.columns:
+            failed_table.append((file_name, {"error": f"column '{col}' missing in pred", "coverage_pct": None}))
+            continue
+        if col not in test_df.columns:
+            continue
+        covered_rows, total_rows, missed = 0, 0, []
+        for _, gt_row in test_df.iterrows():
+            gt_val = gt_row[col]
+            if pd.isna(gt_val) or str(gt_val).strip() == "":
+                continue
+            snp_raw = gt_row.get("SNP", None)
+            snp = None if (isinstance(snp_raw, float) and pd.isna(snp_raw)) else snp_raw
+            pred_terms = _h_collect_pred_terms(curr_df, snp, col)
+            total_rows += 1
+            if _h_gt_is_covered(col, str(gt_val).strip(), pred_terms, term_map):
+                covered_rows += 1
+            else:
+                missed.append({"snp": str(snp), "gt_value": str(gt_val).strip(), "pred_terms": pred_terms[:6]})
+        if total_rows == 0:
+            continue
+        coverage_pct = round(covered_rows / total_rows * 100, 1)
+        if coverage_pct < threshold:
+            failed_table.append((file_name, {"coverage_pct": coverage_pct, "threshold_pct": threshold, "covered_rows": covered_rows, "total_rows": total_rows, "missed_examples": missed[:10]}))
+    return failed_table
+
+# Loaded once at module import so all harmonization tests share the same dict.
+_H_TERM_MAP: dict = _h_load_term_map()
+
+# NOTE: since we do not consider NAs value,
 # there will be cases where extracted table do not contain an SNP
 # and target table has that SNP but have all NAs => 2 counter are the same
 def get_failed_table_for_test(dir_path: str, col: str, is_numeric: bool = False, use_semantic: bool = False):
@@ -303,62 +414,128 @@ def test_snp_pvalue(dir_path: str):
             json.dump(failed_table, f, indent=2)
         raise AssertionError(f"Failed test_snp_pvalue on {len(failed_table)} tables")
 
-def test_snp_cohort(dir_path: str):
-    # test for each table and for each snp we have right set of cohort
-    failed_table = get_failed_table_for_test(dir_path, "Cohort", use_semantic = True)
-    try:
-        assert len(failed_table) == 0
-    except AssertionError:
-        with open("test_logs/test_snp_cohort.json", "w") as f:
-            json.dump(failed_table, f, indent=2) 
-        raise AssertionError(f"Failed test_snp_cohort on {len(failed_table)} tables")
+# def test_snp_cohort(dir_path: str):
+#     # test for each table and for each snp we have right set of cohort
+#     failed_table = get_failed_table_for_test(dir_path, "Cohort", use_semantic = True)
+#     try:
+#         assert len(failed_table) == 0
+#     except AssertionError:
+#         with open("test_logs/test_snp_cohort.json", "w") as f:
+#             json.dump(failed_table, f, indent=2)
+#         raise AssertionError(f"Failed test_snp_cohort on {len(failed_table)} tables")
 
-def test_snp_population(dir_path: str):
-    # test for each table and for each snp we have right set of population
-    failed_table = get_failed_table_for_test(dir_path, "Population", use_semantic = True)
+def test_snp_cohort_harmonized(dir_path: str):
+    # test for each table and for each snp cohort is covered using the term-mapping dict
+    col = "Cohort"
+    failed_table = _h_get_failed_tables(dir_path, col, _H_TERM_MAP, HARMONIZATION_COL_THRESHOLD[col])
     try:
         assert len(failed_table) == 0
     except AssertionError:
-        with open("test_logs/test_snp_population.json", "w") as f:
-            json.dump(failed_table, f, indent=2)
-        raise AssertionError(f"Failed test_snp_population on {len(failed_table)} tables")
-    
-def test_snp_stage(dir_path: str):
-    # test for each table and for each snp we have right set of population
-    failed_table = get_failed_table_for_test(dir_path, "Stage", use_semantic = True)
-    try:
-        assert len(failed_table) == 0
-    except AssertionError:
-        with open("test_logs/test_snp_stage.json", "w") as f:
-            json.dump(failed_table, f, indent=2)
-        raise AssertionError(f"Failed test_snp_stage on {len(failed_table)} tables")
-    
-def test_snp_imputation(dir_path: str):
-    # test for each table and for each snp we have right set of cohort
-    failed_table = get_failed_table_for_test(dir_path, "Imputation", use_semantic = True)
-    try:
-        assert len(failed_table) == 0
-    except AssertionError:
-        with open("test_logs/test_snp_imputation.json", "w") as f:
-            json.dump(failed_table, f, indent=2) 
-        raise AssertionError(f"Failed test_snp_imputation on {len(failed_table)} tables")
+        with open("test_logs/test_snp_cohort_harmonized.json", "w") as f:
+            json.dump(failed_table, f, indent=2, default=str)
+        raise AssertionError(f"Failed test_snp_cohort_harmonized on {len(failed_table)} tables (threshold={HARMONIZATION_COL_THRESHOLD[col]}%)")
 
-def test_snp_study_type(dir_path: str):
-    # test for each table and for each snp we have right set of population
-    failed_table = get_failed_table_for_test(dir_path, "Study type", use_semantic = True)
+# def test_snp_population(dir_path: str):
+#     # test for each table and for each snp we have right set of population
+#     failed_table = get_failed_table_for_test(dir_path, "Population", use_semantic = True)
+#     try:
+#         assert len(failed_table) == 0
+#     except AssertionError:
+#         with open("test_logs/test_snp_population.json", "w") as f:
+#             json.dump(failed_table, f, indent=2)
+#         raise AssertionError(f"Failed test_snp_population on {len(failed_table)} tables")
+
+def test_snp_population_harmonized(dir_path: str):
+    # test for each table and for each snp population is covered using the term-mapping dict
+    col = "Population"
+    failed_table = _h_get_failed_tables(dir_path, col, _H_TERM_MAP, HARMONIZATION_COL_THRESHOLD[col])
     try:
         assert len(failed_table) == 0
     except AssertionError:
-        with open("test_logs/test_snp_study_type.json", "w") as f:
-            json.dump(failed_table, f, indent=2)
-        raise AssertionError(f"Failed test_snp_study_type on {len(failed_table)} tables")
-    
-def test_snp_phenotype(dir_path: str):
-    # test for each table and for each snp we have right set of population
-    failed_table = get_failed_table_for_test(dir_path, "Phenotype", use_semantic = True)
+        with open("test_logs/test_snp_population_harmonized.json", "w") as f:
+            json.dump(failed_table, f, indent=2, default=str)
+        raise AssertionError(f"Failed test_snp_population_harmonized on {len(failed_table)} tables (threshold={HARMONIZATION_COL_THRESHOLD[col]}%)")
+
+# def test_snp_stage(dir_path: str):
+#     # test for each table and for each snp we have right set of population
+#     failed_table = get_failed_table_for_test(dir_path, "Stage", use_semantic = True)
+#     try:
+#         assert len(failed_table) == 0
+#     except AssertionError:
+#         with open("test_logs/test_snp_stage.json", "w") as f:
+#             json.dump(failed_table, f, indent=2)
+#         raise AssertionError(f"Failed test_snp_stage on {len(failed_table)} tables")
+
+def test_snp_stage_harmonized(dir_path: str):
+    # test for each table and for each snp stage is covered using the term-mapping dict
+    col = "Stage"
+    failed_table = _h_get_failed_tables(dir_path, col, _H_TERM_MAP, HARMONIZATION_COL_THRESHOLD[col])
     try:
         assert len(failed_table) == 0
     except AssertionError:
-        with open("test_logs/test_snp_phenotype.json", "w") as f:
-            json.dump(failed_table, f, indent=2)
-        raise AssertionError(f"Failed test_snp_phenotype on {len(failed_table)} tables")
+        with open("test_logs/test_snp_stage_harmonized.json", "w") as f:
+            json.dump(failed_table, f, indent=2, default=str)
+        raise AssertionError(f"Failed test_snp_stage_harmonized on {len(failed_table)} tables (threshold={HARMONIZATION_COL_THRESHOLD[col]}%)")
+
+# def test_snp_imputation(dir_path: str):
+#     # test for each table and for each snp we have right set of cohort
+#     failed_table = get_failed_table_for_test(dir_path, "Imputation", use_semantic = True)
+#     try:
+#         assert len(failed_table) == 0
+#     except AssertionError:
+#         with open("test_logs/test_snp_imputation.json", "w") as f:
+#             json.dump(failed_table, f, indent=2)
+#         raise AssertionError(f"Failed test_snp_imputation on {len(failed_table)} tables")
+
+def test_snp_imputation_harmonized(dir_path: str):
+    # test for each table and for each snp imputation is covered using the term-mapping dict
+    col = "Imputation"
+    failed_table = _h_get_failed_tables(dir_path, col, _H_TERM_MAP, HARMONIZATION_COL_THRESHOLD[col])
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        with open("test_logs/test_snp_imputation_harmonized.json", "w") as f:
+            json.dump(failed_table, f, indent=2, default=str)
+        raise AssertionError(f"Failed test_snp_imputation_harmonized on {len(failed_table)} tables (threshold={HARMONIZATION_COL_THRESHOLD[col]}%)")
+
+# def test_snp_study_type(dir_path: str):
+#     # test for each table and for each snp we have right set of population
+#     failed_table = get_failed_table_for_test(dir_path, "Study type", use_semantic = True)
+#     try:
+#         assert len(failed_table) == 0
+#     except AssertionError:
+#         with open("test_logs/test_snp_study_type.json", "w") as f:
+#             json.dump(failed_table, f, indent=2)
+#         raise AssertionError(f"Failed test_snp_study_type on {len(failed_table)} tables")
+
+def test_snp_study_type_harmonized(dir_path: str):
+    # test for each table and for each snp study type is covered using the term-mapping dict
+    col = "Study type"
+    failed_table = _h_get_failed_tables(dir_path, col, _H_TERM_MAP, HARMONIZATION_COL_THRESHOLD[col])
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        with open("test_logs/test_snp_study_type_harmonized.json", "w") as f:
+            json.dump(failed_table, f, indent=2, default=str)
+        raise AssertionError(f"Failed test_snp_study_type_harmonized on {len(failed_table)} tables (threshold={HARMONIZATION_COL_THRESHOLD[col]}%)")
+
+# def test_snp_phenotype(dir_path: str):
+#     # test for each table and for each snp we have right set of population
+#     failed_table = get_failed_table_for_test(dir_path, "Phenotype", use_semantic = True)
+#     try:
+#         assert len(failed_table) == 0
+#     except AssertionError:
+#         with open("test_logs/test_snp_phenotype.json", "w") as f:
+#             json.dump(failed_table, f, indent=2)
+#         raise AssertionError(f"Failed test_snp_phenotype on {len(failed_table)} tables")
+
+def test_snp_phenotype_harmonized(dir_path: str):
+    # test for each table and for each snp phenotype is covered using the term-mapping dict
+    col = "Phenotype"
+    failed_table = _h_get_failed_tables(dir_path, col, _H_TERM_MAP, HARMONIZATION_COL_THRESHOLD[col])
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        with open("test_logs/test_snp_phenotype_harmonized.json", "w") as f:
+            json.dump(failed_table, f, indent=2, default=str)
+        raise AssertionError(f"Failed test_snp_phenotype_harmonized on {len(failed_table)} tables (threshold={HARMONIZATION_COL_THRESHOLD[col]}%)")

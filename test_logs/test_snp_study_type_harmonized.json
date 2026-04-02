@@ -1,0 +1,403 @@
+[
+  [
+    "28560309_PMC5440281.csv",
+    {
+      "coverage_pct": 0.0,
+      "threshold_pct": 50.0,
+      "covered_rows": 0,
+      "total_rows": 7,
+      "missed_examples": [
+        {
+          "snp": "None",
+          "gt_value": "Interaction(SNP)",
+          "pred_terms": [
+            "genotype imputation",
+            "genome-wide association study",
+            "WGS platform",
+            "WGS",
+            "ADNI-1",
+            "ADNI-2"
+          ]
+        },
+        {
+          "snp": "None",
+          "gt_value": "Interaction(SNP)",
+          "pred_terms": [
+            "genotype imputation",
+            "genome-wide association study",
+            "WGS platform",
+            "WGS",
+            "ADNI-1",
+            "ADNI-2"
+          ]
+        },
+        {
+          "snp": "None",
+          "gt_value": "Interaction(SNP)",
+          "pred_terms": [
+            "genotype imputation",
+            "genome-wide association study",
+            "WGS platform",
+            "WGS",
+            "ADNI-1",
+            "ADNI-2"
+          ]
+        },
+        {
+          "snp": "None",
+          "gt_value": "Interaction(SNP)",
+          "pred_terms": [
+            "genotype imputation",
+            "genome-wide association study",
+            "WGS platform",
+            "WGS",
+            "ADNI-1",
+            "ADNI-2"
+          ]
+        },
+        {
+          "snp": "None",
+          "gt_value": "Interaction(SNP)",
+          "pred_terms": [
+            "genotype imputation",
+            "genome-wide association study",
+            "WGS platform",
+            "WGS",
+            "ADNI-1",
+            "ADNI-2"
+          ]
+        },
+        {
+          "snp": "None",
+          "gt_value": "Interaction(SNP)",
+          "pred_terms": [
+            "genotype imputation",
+            "genome-wide association study",
+            "WGS platform",
+            "WGS",
+            "ADNI-1",
+            "ADNI-2"
+          ]
+        },
+        {
+          "snp": "None",
+          "gt_value": "Interaction(SNP)",
+          "pred_terms": [
+            "genotype imputation",
+            "genome-wide association study",
+            "WGS platform",
+            "WGS",
+            "ADNI-1",
+            "ADNI-2"
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    "29458411_PMC5819208.csv",
+    {
+      "coverage_pct": 0.0,
+      "threshold_pct": 50.0,
+      "covered_rows": 0,
+      "total_rows": 32,
+      "missed_examples": [
+        {
+          "snp": "rs34487851",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs34487851",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs34487851",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs34487851",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs34487851",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs34487851",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs34487851",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs79524815",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs79524815",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs79524815",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        }
+      ]
+    }
+  ],
+  [
+    "29752348_PMC5976227.csv",
+    {
+      "coverage_pct": 0.0,
+      "threshold_pct": 50.0,
+      "covered_rows": 0,
+      "total_rows": 4,
+      "missed_examples": [
+        {
+          "snp": "rs13164785",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs146896516",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs3744020",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs67827860",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        }
+      ]
+    }
+  ],
+  [
+    "29967939_PMC6280657.csv",
+    {
+      "coverage_pct": 0.0,
+      "threshold_pct": 50.0,
+      "covered_rows": 0,
+      "total_rows": 55,
+      "missed_examples": [
+        {
+          "snp": "rs12961169",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12961169",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12961169",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs13115400",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs13115400",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs13115400",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs13115400",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs1393060",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs1393060",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs1393060",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        }
+      ]
+    }
+  ],
+  [
+    "30651383_PMC6369905.csv",
+    {
+      "coverage_pct": 0.0,
+      "threshold_pct": 50.0,
+      "covered_rows": 0,
+      "total_rows": 63,
+      "missed_examples": [
+        {
+          "snp": "rs12373108",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12373108",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12373108",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12373108",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12373108",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12373108",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12373108",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12373108",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12373108",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12373108",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        }
+      ]
+    }
+  ],
+  [
+    "30930738_PMC6425305.csv",
+    {
+      "coverage_pct": 0.0,
+      "threshold_pct": 50.0,
+      "covered_rows": 0,
+      "total_rows": 4,
+      "missed_examples": [
+        {
+          "snp": "rs10792421",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs10792421",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs11649476",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs11649476",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        }
+      ]
+    }
+  ],
+  [
+    "31426376_PMC6723529.csv",
+    {
+      "coverage_pct": 0.0,
+      "threshold_pct": 50.0,
+      "covered_rows": 0,
+      "total_rows": 35,
+      "missed_examples": [
+        {
+          "snp": "APOE-e3e4",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "APOE-e3e4",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "APOE-e3e4",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "APOE-e3e4",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "APOE-e3e4",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "APOE-e3e4",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "APOE-e3e4",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "APOE-e3e4",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "APOE-e3e4",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "APOE-e3e4",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        }
+      ]
+    }
+  ]
+]

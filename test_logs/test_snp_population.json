@@ -12,12 +12,20 @@
     "Table 30651383_PMC6369905.csv (0.0) does not contain right set of Population for SNP ['rs12373108', 'rs12583648', 'rs39938', 'rs74587705', 'rs75889566', 'rs9371194']"
   ],
   [
+    "30805717_PMC7193309.csv",
+    "Table 30805717_PMC7193309.csv (0.0) does not contain right set of Population for SNP ['rs10501320', 'rs12805422', 'rs1483121', 'rs17747324', 'rs2279590', 'rs4803750', 'rs6656401']"
+  ],
+  [
     "30979435_PMC6783343.csv",
     "Table 30979435_PMC6783343.csv (0.0) does not contain right set of Population for SNP ['rs12378268', 'rs1834550', 'rs184909761', 'rs3818361', 'rs4277762', 'rs429358', 'rs6002167', 'rs639012', 'rs6431219', 'rs73298734']"
   ],
   [
     "29107063_PMC5920782.csv",
     "Table 29107063_PMC5920782.csv (0.0) does not contain right set of Population for SNP ['rs115881343', 'rs12721046', 'rs157580', 'rs157582', 'rs2075650', 'rs283815', 'rs405509', 'rs439401', 'rs6859', 'rs71352238', 'rs76366838', 'rs769449', 'rs769450', 'rs8106922']"
+  ],
+  [
+    "29458411_PMC5819208.csv",
+    "Table 29458411_PMC5819208.csv (0.0) does not contain right set of Population for SNP ['rs34487851', 'rs79524815']"
   ],
   [
     "31426376_PMC6723529.csv",
@@ -37,7 +45,11 @@
   ],
   [
     "29967939_PMC6280657.csv",
-    "Table 29967939_PMC6280657.csv (66.67) does not contain right set of Population for SNP ['rs13115400', 'rs1393060', 'rs316341']"
+    "Table 29967939_PMC6280657.csv (0.0) does not contain right set of Population for SNP ['rs12961169', 'rs13115400', 'rs1393060', 'rs185031519', 'rs316341', 'rs35055419', 'rs514716', 'rs769449', 'rs9527039']"
+  ],
+  [
+    "30930738_PMC6425305.csv",
+    "Table 30930738_PMC6425305.csv (0.0) does not contain right set of Population for SNP ['rs10792421', 'rs11649476']"
   ],
   [
     "30617256_PMC6836675.csv",

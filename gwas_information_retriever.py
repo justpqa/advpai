@@ -67,10 +67,9 @@ class GWASInformationRetriever:
             self.model = AutoModelForCausalLM.from_pretrained(
                 llm_model_name,
                 # quantization_config = bnb_config,
-                device_map = "auto",
+                device_map = self.device,
                 # torch_dtype=torch.bfloat16,
             )
-            # self.model.to(self.device)
             self.model.eval()
             allowed_chars = list("01")
             allowed_token_ids = set()
@@ -82,7 +81,7 @@ class GWASInformationRetriever:
             self.use_hf = False
             self.llm = Llama(
                 model_path=llm_gguf_path,
-                n_ctx=8192,
+                n_ctx=16384,
                 n_gpu_layers=-1,
                 verbose=False,
             )
@@ -130,10 +129,7 @@ class GWASInformationRetriever:
         messages = [
             {
                 "role": "system", 
-                "content": """
-You are a strict biomedical information extraction engine.
-Only use the provided text. Never guess.
-Output must follow the required format exactly."""
+                "content": "You are a strict biomedical information extraction engine. Only use the provided text. Never guess. Output must follow the required format exactly."
             },
             {
                 "role": "user",
@@ -166,10 +162,9 @@ Output:"""
 
     def make_prompt(self, query: str, documents: List[str]) -> str:    
         messages = self.make_messages(query, documents)
-        prompt = self.tokenizer.apply_chat_template(messages, tokenize=False)
+        prompt = self.tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
         return prompt
     
-    from typing import List, Dict
 
 #     def make_messages_with_choice(self, query: str, documents: List[str], choice: str) -> List[Dict]:
 #         document_str = " ".join(documents).strip()
@@ -248,7 +243,8 @@ Output:"""
 
         for ref_col, ref_col_context in zip(self.referencing_col_lst, self.referencing_col_context_lst):
             # search for related context
-            query = f"{ref_col_context}"
+            # full_query = f"What kind of {ref_col} is in the paper, given that {ref_col_context}"
+            query = ref_col_context
             documents = self.vector_store.similarity_search_with_relevance_scores(
                 query = query, 
                 k = self.top_k,
@@ -266,19 +262,20 @@ Output:"""
             documents = documents[:self.top_k_rerank]
 
             # extract a list of possible info from llm
-            full_query = f"What kind of {ref_col} is in the paper, given that {ref_col_context}"
+            # full_query = f"What kind of {ref_col} is in the paper, given that {ref_col_context}"
             if self.use_hf:
-                prompt = self.make_prompt(full_query, documents)
+                prompt = self.make_prompt(query, documents)
+                inputs = self.tokenizer(prompt, return_tensors="pt").to(self.device)
                 outputs = self.model.generate(
-                    **self.tokenizer(prompt, return_tensors="pt").to(self.device),
+                    **inputs,
                     max_new_tokens=self.max_new_tokens,
                     do_sample=False,
                     temperature=self.temperature,
                     top_p=self.top_p,
                 )
-                response = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
+                response = self.tokenizer.decode(outputs[0][inputs["input_ids"].shape[-1]:], skip_special_tokens=True)
             else:
-                messages = self.make_messages(full_query, documents)
+                messages = self.make_messages(query, documents)
                 response = self.llm.create_chat_completion(
                     messages=messages,
                     max_tokens=self.max_new_tokens,
@@ -393,70 +390,70 @@ Output:"""
         
     #     return res
 
-    def extract_possible_info_from_paper_and_clues(self, pmid: int, pmcid: str, clues: List[str], batch_size: int = 16) -> Dict[str, Dict[str, List]]:
-        """
-        Given a paper, extract all possible answer for each category for each clue
-        """
-        res = {}
+    # def extract_possible_info_from_paper_and_clues(self, pmid: int, pmcid: str, clues: List[str], batch_size: int = 16) -> Dict[str, Dict[str, List]]:
+    #     """
+    #     Given a paper, extract all possible answer for each category for each clue
+    #     """
+    #     res = {}
 
-        for ref_col, ref_col_context in zip(self.referencing_col_lst, self.referencing_col_context_lst):
-            # search for related context
-            query = f"{ref_col_context}"
-            documents = self.vector_store.similarity_search_with_relevance_scores(
-                query = query, 
-                k = self.top_k,
-                filter = {"$and": [{"PMID": str(pmid)}, {"PMCID": pmcid}]},
-            )
-            documents = [d.page_content for d, score in documents if score >= self.similarity_score_threshold]
-            # if no docs can found => no useful info 
-            if len(documents) == 0:
-                res[ref_col] = []
-                continue
+    #     for ref_col, ref_col_context in zip(self.referencing_col_lst, self.referencing_col_context_lst):
+    #         # search for related context
+    #         query = f"{ref_col_context}"
+    #         documents = self.vector_store.similarity_search_with_relevance_scores(
+    #             query = query, 
+    #             k = self.top_k,
+    #             filter = {"$and": [{"PMID": str(pmid)}, {"PMCID": pmcid}]},
+    #         )
+    #         documents = [d.page_content for d, score in documents if score >= self.similarity_score_threshold]
+    #         # if no docs can found => no useful info 
+    #         if len(documents) == 0:
+    #             res[ref_col] = []
+    #             continue
 
-            # rerank
-            scores = self.reranker_model.predict([(query, d) for d in documents])
-            documents = [doc for _, doc in sorted(zip(scores, documents), key=lambda x: x[0], reverse=True)]
-            documents = documents[:self.top_k_rerank]
+    #         # rerank
+    #         scores = self.reranker_model.predict([(query, d) for d in documents])
+    #         documents = [doc for _, doc in sorted(zip(scores, documents), key=lambda x: x[0], reverse=True)]
+    #         documents = documents[:self.top_k_rerank]
 
-            # extract a list of possible info from llm
-            full_query_lst = [f"What kind of {ref_col} is in the paper, given that {ref_col_context}, and clue {clue}" for clue in clues]
-            if self.use_hf:
-                prompts = [self.make_prompt(full_query, documents) for full_query in full_query_lst]
-                clue_to_response = {}
-                for i in range(0, len(prompts), batch_size):
-                    prompts_batch = prompts[i: min(i + batch_size, len(prompts))]
-                    outputs_batch = self.model.generate(
-                        **self.tokenizer(prompts_batch, return_tensors="pt").to(self.device),
-                        max_new_tokens=self.max_new_tokens,
-                        do_sample=False,
-                        temperature=self.temperature,
-                        top_p=self.top_p,
-                    )
-                    responses_batch = self.tokenizer.batch_decode(outputs_batch, skip_special_tokens=True)
-                    for j, response in enumerate(responses_batch):
-                        clue_to_response[clues[i + j]] = self.extract_lst_from_llm_output(response)
-            else:
-                clue_to_response = {}
-                for i, full_query in enumerate(full_query_lst):
-                    messages = self.make_messages(full_query, documents)
-                    response = self.llm.create_chat_completion(
-                        messages=messages,
-                        max_tokens=self.max_new_tokens,
-                        temperature=self.temperature,
-                        top_p=self.top_p,
-                    )
-                    response = response["choices"][0]["message"]["content"]
-                    clue_to_response[clues[i]] = self.extract_lst_from_llm_output(response)
-            # prompt = self.make_prompt(full_query, documents)
-            # outputs = self.model.generate(
-            #     **self.tokenizer(prompt, return_tensors="pt").to(self.device),
-            #     max_new_tokens=self.max_new_tokens,
-            #     do_sample=False,
-            #     temperature=self.temperature,
-            #     top_p=self.top_p,
-            # )
-            # response = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
-            # extract list of possible info
-            res[ref_col] = deepcopy(clue_to_response)
+    #         # extract a list of possible info from llm
+    #         full_query_lst = [f"What kind of {ref_col} is in the paper, given that {ref_col_context}, and clue {clue}" for clue in clues]
+    #         if self.use_hf:
+    #             prompts = [self.make_prompt(full_query, documents) for full_query in full_query_lst]
+    #             clue_to_response = {}
+    #             for i in range(0, len(prompts), batch_size):
+    #                 prompts_batch = prompts[i: min(i + batch_size, len(prompts))]
+    #                 outputs_batch = self.model.generate(
+    #                     **self.tokenizer(prompts_batch, return_tensors="pt").to(self.device),
+    #                     max_new_tokens=self.max_new_tokens,
+    #                     do_sample=False,
+    #                     temperature=self.temperature,
+    #                     top_p=self.top_p,
+    #                 )
+    #                 responses_batch = self.tokenizer.batch_decode(outputs_batch, skip_special_tokens=True)
+    #                 for j, response in enumerate(responses_batch):
+    #                     clue_to_response[clues[i + j]] = self.extract_lst_from_llm_output(response)
+    #         else:
+    #             clue_to_response = {}
+    #             for i, full_query in enumerate(full_query_lst):
+    #                 messages = self.make_messages(full_query, documents)
+    #                 response = self.llm.create_chat_completion(
+    #                     messages=messages,
+    #                     max_tokens=self.max_new_tokens,
+    #                     temperature=self.temperature,
+    #                     top_p=self.top_p,
+    #                 )
+    #                 response = response["choices"][0]["message"]["content"]
+    #                 clue_to_response[clues[i]] = self.extract_lst_from_llm_output(response)
+    #         # prompt = self.make_prompt(full_query, documents)
+    #         # outputs = self.model.generate(
+    #         #     **self.tokenizer(prompt, return_tensors="pt").to(self.device),
+    #         #     max_new_tokens=self.max_new_tokens,
+    #         #     do_sample=False,
+    #         #     temperature=self.temperature,
+    #         #     top_p=self.top_p,
+    #         # )
+    #         # response = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
+    #         # extract list of possible info
+    #         res[ref_col] = deepcopy(clue_to_response)
     
-        return res
+    #     return res
