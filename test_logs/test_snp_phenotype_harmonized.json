@@ -2,129 +2,129 @@
   [
     "29274321_PMC5938137.csv",
     {
-      "coverage_pct": 16.7,
+      "coverage_pct": 0.0,
       "threshold_pct": 50.0,
-      "covered_rows": 2,
+      "covered_rows": 0,
       "total_rows": 12,
       "missed_examples": [
         {
           "snp": "rs10775009",
           "gt_value": "CSF T-tau",
           "pred_terms": [
-            "Cognitive impairment",
-            "Alzheimer disease",
+            "ADNI",
+            "BMI",
+            "Alzheimers disease",
             "MCI",
-            "AD",
-            "Beta-amyloid burden",
-            "Hippocampal volume"
+            "Alzheimer disease",
+            "AD"
           ]
         },
         {
           "snp": "rs111882035",
           "gt_value": "Logic memory delayed (LMdT) recall test",
           "pred_terms": [
-            "Cognitive impairment",
-            "Alzheimer disease",
+            "ADNI",
+            "BMI",
+            "Alzheimers disease",
             "MCI",
-            "AD",
-            "Beta-amyloid burden",
-            "Hippocampal volume"
+            "Alzheimer disease",
+            "AD"
           ]
         },
         {
           "snp": "rs118130881",
           "gt_value": "Logical memory immediate (LMiT) recall test",
           "pred_terms": [
-            "Cognitive impairment",
-            "Alzheimer disease",
+            "ADNI",
+            "BMI",
+            "Alzheimers disease",
             "MCI",
-            "AD",
-            "Beta-amyloid burden",
-            "Hippocampal volume"
+            "Alzheimer disease",
+            "AD"
           ]
         },
         {
           "snp": "rs12268753",
           "gt_value": "Logic memory delayed (LMdT) recall test",
           "pred_terms": [
-            "Cognitive impairment",
-            "Alzheimer disease",
+            "ADNI",
+            "BMI",
+            "Alzheimers disease",
             "MCI",
-            "AD",
-            "Beta-amyloid burden",
-            "Hippocampal volume"
+            "Alzheimer disease",
+            "AD"
           ]
         },
         {
           "snp": "rs2378873",
           "gt_value": "CSF Ab1-42",
           "pred_terms": [
-            "Cognitive impairment",
-            "Alzheimer disease",
+            "ADNI",
+            "BMI",
+            "Alzheimers disease",
             "MCI",
-            "AD",
-            "Beta-amyloid burden",
-            "Hippocampal volume"
+            "Alzheimer disease",
+            "AD"
           ]
         },
         {
           "snp": "rs2819438",
           "gt_value": "CSF T-tau",
           "pred_terms": [
-            "Cognitive impairment",
-            "Alzheimer disease",
+            "ADNI",
+            "BMI",
+            "Alzheimers disease",
             "MCI",
-            "AD",
-            "Beta-amyloid burden",
-            "Hippocampal volume"
+            "Alzheimer disease",
+            "AD"
+          ]
+        },
+        {
+          "snp": "rs4921790",
+          "gt_value": "Hippocampal volume (HPV)",
+          "pred_terms": [
+            "ADNI",
+            "BMI",
+            "Alzheimers disease",
+            "MCI",
+            "Alzheimer disease",
+            "AD"
           ]
         },
         {
           "snp": "rs55644114",
           "gt_value": "CSF Ab1-42",
           "pred_terms": [
-            "Cognitive impairment",
-            "Alzheimer disease",
+            "ADNI",
+            "BMI",
+            "Alzheimers disease",
             "MCI",
-            "AD",
-            "Beta-amyloid burden",
-            "Hippocampal volume"
+            "Alzheimer disease",
+            "AD"
           ]
         },
         {
           "snp": "rs73705514",
           "gt_value": "Logic memory delayed (LMdT) recall test",
           "pred_terms": [
-            "Cognitive impairment",
-            "Alzheimer disease",
+            "ADNI",
+            "BMI",
+            "Alzheimers disease",
             "MCI",
-            "AD",
-            "Beta-amyloid burden",
-            "Hippocampal volume"
+            "Alzheimer disease",
+            "AD"
           ]
         },
         {
           "snp": "rs74442473",
           "gt_value": "CSF Ab1-42",
           "pred_terms": [
-            "Cognitive impairment",
-            "Alzheimer disease",
+            "ADNI",
+            "BMI",
+            "Alzheimers disease",
             "MCI",
-            "AD",
-            "Beta-amyloid burden",
-            "Hippocampal volume"
-          ]
-        },
-        {
-          "snp": "rs74834332",
-          "gt_value": "Logic memory delayed (LMdT) recall test",
-          "pred_terms": [
-            "Cognitive impairment",
             "Alzheimer disease",
-            "MCI",
-            "AD",
-            "Beta-amyloid burden",
-            "Hippocampal volume"
+            "AD"
           ]
         }
       ]
@@ -243,67 +243,6 @@
     }
   ],
   [
-    "30413934_PMC6358498.csv",
-    {
-      "coverage_pct": 16.6,
-      "threshold_pct": 50.0,
-      "covered_rows": 62,
-      "total_rows": 374,
-      "missed_examples": [
-        {
-          "snp": "rs1048365",
-          "gt_value": "AD",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs1048365",
-          "gt_value": "Body-mass index (BMI)",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs1048365",
-          "gt_value": "AD",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10906257",
-          "gt_value": "AD",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10906257",
-          "gt_value": "AD",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10906257",
-          "gt_value": "Total cholesterol (TC)",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10906257",
-          "gt_value": "AD",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10906257",
-          "gt_value": "AD",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10991386",
-          "gt_value": "Total cholesterol (TC)",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10991386",
-          "gt_value": "AD",
-          "pred_terms": []
-        }
-      ]
-    }
-  ],
-  [
     "30448613_PMC6331247.csv",
     {
       "coverage_pct": 39.5,
@@ -315,8 +254,8 @@
           "snp": "rs10838725",
           "gt_value": "MYBPC3 (11725151_at) expression in blood",
           "pred_terms": [
-            "AD",
-            "Alzheimer\u2019s disease"
+            "Alzheimers disease",
+            "AD"
           ]
         },
         {
@@ -328,64 +267,64 @@
           "snp": "rs111418223",
           "gt_value": "AGPAT1 (11751668_a_at) expression in blood",
           "pred_terms": [
-            "AD",
-            "Alzheimer\u2019s disease"
+            "Alzheimers disease",
+            "AD"
           ]
         },
         {
           "snp": "rs111418223",
           "gt_value": "AGPAT1 (11750187_a_at)) expression in blood",
           "pred_terms": [
-            "AD",
-            "Alzheimer\u2019s disease"
+            "Alzheimers disease",
+            "AD"
           ]
         },
         {
           "snp": "rs111418223",
           "gt_value": "AGPAT1 (11730933_a_at) expression in blood",
           "pred_terms": [
-            "AD",
-            "Alzheimer\u2019s disease"
+            "Alzheimers disease",
+            "AD"
           ]
         },
         {
           "snp": "rs11771145",
           "gt_value": "LOC154761 (11755327 s at) expression in blood",
           "pred_terms": [
-            "AD",
-            "Alzheimer\u2019s disease"
+            "Alzheimers disease",
+            "AD"
           ]
         },
         {
           "snp": "rs1476679",
           "gt_value": "TRIM4 (11736388_a_at) expression in blood",
           "pred_terms": [
-            "AD",
-            "Alzheimer\u2019s disease"
+            "Alzheimers disease",
+            "AD"
           ]
         },
         {
           "snp": "rs1476679",
           "gt_value": "GATS (11722909_a_at) expression in blood",
           "pred_terms": [
-            "AD",
-            "Alzheimer\u2019s disease"
+            "Alzheimers disease",
+            "AD"
           ]
         },
         {
           "snp": "rs1476679",
           "gt_value": "PILRB (11730022_a_at) expression in blood",
           "pred_terms": [
-            "AD",
-            "Alzheimer\u2019s disease"
+            "Alzheimers disease",
+            "AD"
           ]
         },
         {
           "snp": "rs1476679",
           "gt_value": "ZKSCAN1 (11760665_at) expression in blood",
           "pred_terms": [
-            "AD",
-            "Alzheimer\u2019s disease"
+            "Alzheimers disease",
+            "AD"
           ]
         }
       ]
@@ -448,107 +387,6 @@
           "snp": "rs12373108",
           "gt_value": "Brain infarcts (BI)",
           "pred_terms": []
-        }
-      ]
-    }
-  ],
-  [
-    "30820047_PMC6463297.csv",
-    {
-      "coverage_pct": 0.0,
-      "threshold_pct": 50.0,
-      "covered_rows": 0,
-      "total_rows": 104,
-      "missed_examples": [
-        {
-          "snp": "rs10467994",
-          "gt_value": "Clinically diagnosed LOAD",
-          "pred_terms": [
-            "BMI",
-            "Blood pressure",
-            "Alzheimers disease"
-          ]
-        },
-        {
-          "snp": "rs10467994",
-          "gt_value": "Clinically diagnosed LOAD",
-          "pred_terms": [
-            "BMI",
-            "Blood pressure",
-            "Alzheimers disease"
-          ]
-        },
-        {
-          "snp": "rs10467994",
-          "gt_value": "Clinically diagnosed LOAD",
-          "pred_terms": [
-            "BMI",
-            "Blood pressure",
-            "Alzheimers disease"
-          ]
-        },
-        {
-          "snp": "rs10808026",
-          "gt_value": "Clinically diagnosed LOAD",
-          "pred_terms": [
-            "BMI",
-            "Blood pressure",
-            "Alzheimers disease"
-          ]
-        },
-        {
-          "snp": "rs10808026",
-          "gt_value": "Clinically diagnosed LOAD",
-          "pred_terms": [
-            "BMI",
-            "Blood pressure",
-            "Alzheimers disease"
-          ]
-        },
-        {
-          "snp": "rs10808026",
-          "gt_value": "Clinically diagnosed LOAD",
-          "pred_terms": [
-            "BMI",
-            "Blood pressure",
-            "Alzheimers disease"
-          ]
-        },
-        {
-          "snp": "rs10933431",
-          "gt_value": "Clinically diagnosed LOAD",
-          "pred_terms": [
-            "BMI",
-            "Blood pressure",
-            "Alzheimers disease"
-          ]
-        },
-        {
-          "snp": "rs10933431",
-          "gt_value": "Clinically diagnosed LOAD",
-          "pred_terms": [
-            "BMI",
-            "Blood pressure",
-            "Alzheimers disease"
-          ]
-        },
-        {
-          "snp": "rs10933431",
-          "gt_value": "Clinically diagnosed LOAD",
-          "pred_terms": [
-            "BMI",
-            "Blood pressure",
-            "Alzheimers disease"
-          ]
-        },
-        {
-          "snp": "rs11218343",
-          "gt_value": "Clinically diagnosed LOAD",
-          "pred_terms": [
-            "BMI",
-            "Blood pressure",
-            "Alzheimers disease"
-          ]
         }
       ]
     }

@@ -216,6 +216,9 @@ def _h_covers_gt_part(col: str, gt_part: str, pred_terms: list, term_map: dict) 
     gt_norm = _h_normalise(gt_part)
     if not gt_norm:
         return True
+    # Normalize gt through term_map to get its canonical form for cross-canonical comparison
+    gt_mapped = term_map.get(col, {}).get(gt_norm)
+    gt_canonical_norm = _h_normalise(gt_mapped) if gt_mapped else None
     for pt in pred_terms:
         pt_norm = _h_normalise(pt)
         if not pt_norm:
@@ -227,15 +230,25 @@ def _h_covers_gt_part(col: str, gt_part: str, pred_terms: list, term_map: dict) 
             mapped_norm = _h_normalise(mapped)
             if mapped_norm == gt_norm or gt_norm.startswith(mapped_norm) or mapped_norm.startswith(gt_norm):
                 return True
-        # if gt_norm in pt_norm or pt_norm in gt_norm:
-        #     return True
+            # Compare canonical forms: both pred and gt normalized through term_map
+            # Fixes cases like pred "Non-Hispanic White"→NHW vs gt "NHW"→NHW, or pred "Alzheimers disease"→AD vs gt "Clinically diagnosed LOAD"→AD
+            if gt_canonical_norm and mapped_norm == gt_canonical_norm:
+                return True
+            # For Imputation: any recognized imputation method covers the generic "Imputed" gt
+            if col == "Imputation" and gt_norm == "imputed":
+                return True
+        if gt_norm in pt_norm or pt_norm in gt_norm:
+            return True
     return False
 
 def _h_gt_is_covered(col: str, gt_value: str, pred_terms: list, term_map: dict) -> bool:
     gt_str = str(gt_value).strip()
     if not gt_str or gt_str.lower() == "nan":
         return True
-    parts = [p.strip() for p in gt_str.split(", ")] if col == "Cohort" and ", " in gt_str else [gt_str]
+    # Cohort, Population, and Imputation gt values can be comma-separated lists (e.g. "ADNI, IGAP", "East Asian, European", "HRC r1.1, 1000G Phase 3")
+    # Each part must be independently covered by pred_terms
+    _SPLIT_COLS = {"Cohort", "Population", "Imputation"}
+    parts = [p.strip() for p in gt_str.split(", ")] if col in _SPLIT_COLS and ", " in gt_str else [gt_str]
     return all(_h_covers_gt_part(col, part, pred_terms, term_map) for part in parts)
 
 def _h_load_term_map() -> dict:

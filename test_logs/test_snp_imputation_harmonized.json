@@ -1,86 +1,5 @@
 [
   [
-    "28780673_PMC5693762.csv",
-    {
-      "coverage_pct": 0.0,
-      "threshold_pct": 50.0,
-      "covered_rows": 0,
-      "total_rows": 44,
-      "missed_examples": [
-        {
-          "snp": "rs10896445",
-          "gt_value": "1000G",
-          "pred_terms": [
-            "1000 Genomes project"
-          ]
-        },
-        {
-          "snp": "rs10896445",
-          "gt_value": "1000G",
-          "pred_terms": [
-            "1000 Genomes project"
-          ]
-        },
-        {
-          "snp": "rs10896445",
-          "gt_value": "1000G",
-          "pred_terms": [
-            "1000 Genomes project"
-          ]
-        },
-        {
-          "snp": "rs10896445",
-          "gt_value": "1000G",
-          "pred_terms": [
-            "1000 Genomes project"
-          ]
-        },
-        {
-          "snp": "rs11249708",
-          "gt_value": "1000G",
-          "pred_terms": [
-            "1000 Genomes project"
-          ]
-        },
-        {
-          "snp": "rs11249708",
-          "gt_value": "1000G",
-          "pred_terms": [
-            "1000 Genomes project"
-          ]
-        },
-        {
-          "snp": "rs11249708",
-          "gt_value": "1000G",
-          "pred_terms": [
-            "1000 Genomes project"
-          ]
-        },
-        {
-          "snp": "rs11249708",
-          "gt_value": "1000G",
-          "pred_terms": [
-            "1000 Genomes project"
-          ]
-        },
-        {
-          "snp": "rs1568485",
-          "gt_value": "1000G",
-          "pred_terms": [
-            "1000 Genomes project"
-          ]
-        },
-        {
-          "snp": "rs1568485",
-          "gt_value": "1000G",
-          "pred_terms": [
-            "1000 Genomes project"
-          ]
-        }
-      ]
-    }
-  ],
-  [
     "29274321_PMC5938137.csv",
     {
       "coverage_pct": 0.0,
@@ -92,110 +11,90 @@
           "snp": "rs10775009",
           "gt_value": "1000G (release Mar 2012)",
           "pred_terms": [
-            "GLOBAL: imputation",
-            "ADNI-GO2",
+            "ADNI",
             "ADNI-1",
-            "imputation",
-            "ADNI"
+            "ADNI-GO2"
           ]
         },
         {
           "snp": "rs111882035",
           "gt_value": "1000G (release Mar 2012)",
           "pred_terms": [
-            "GLOBAL: imputation",
-            "ADNI-GO2",
+            "ADNI",
             "ADNI-1",
-            "imputation",
-            "ADNI"
+            "ADNI-GO2"
           ]
         },
         {
           "snp": "rs118130881",
           "gt_value": "1000G (release Mar 2012)",
           "pred_terms": [
-            "GLOBAL: imputation",
-            "ADNI-GO2",
+            "ADNI",
             "ADNI-1",
-            "imputation",
-            "ADNI"
+            "ADNI-GO2"
           ]
         },
         {
           "snp": "rs12268753",
           "gt_value": "1000G (release Mar 2012)",
           "pred_terms": [
-            "GLOBAL: imputation",
-            "ADNI-GO2",
+            "ADNI",
             "ADNI-1",
-            "imputation",
-            "ADNI"
+            "ADNI-GO2"
           ]
         },
         {
           "snp": "rs2378873",
           "gt_value": "1000G (release Mar 2012)",
           "pred_terms": [
-            "GLOBAL: imputation",
-            "ADNI-GO2",
+            "ADNI",
             "ADNI-1",
-            "imputation",
-            "ADNI"
+            "ADNI-GO2"
           ]
         },
         {
           "snp": "rs2819438",
           "gt_value": "1000G (release Mar 2012)",
           "pred_terms": [
-            "GLOBAL: imputation",
-            "ADNI-GO2",
+            "ADNI",
             "ADNI-1",
-            "imputation",
-            "ADNI"
+            "ADNI-GO2"
           ]
         },
         {
           "snp": "rs4921790",
           "gt_value": "1000G (release Mar 2012)",
           "pred_terms": [
-            "GLOBAL: imputation",
-            "ADNI-GO2",
+            "ADNI",
             "ADNI-1",
-            "imputation",
-            "ADNI"
+            "ADNI-GO2"
           ]
         },
         {
           "snp": "rs55644114",
           "gt_value": "1000G (release Mar 2012)",
           "pred_terms": [
-            "GLOBAL: imputation",
-            "ADNI-GO2",
+            "ADNI",
             "ADNI-1",
-            "imputation",
-            "ADNI"
+            "ADNI-GO2"
           ]
         },
         {
           "snp": "rs73705514",
           "gt_value": "1000G (release Mar 2012)",
           "pred_terms": [
-            "GLOBAL: imputation",
-            "ADNI-GO2",
+            "ADNI",
             "ADNI-1",
-            "imputation",
-            "ADNI"
+            "ADNI-GO2"
           ]
         },
         {
           "snp": "rs74442473",
           "gt_value": "1000G (release Mar 2012)",
           "pred_terms": [
-            "GLOBAL: imputation",
-            "ADNI-GO2",
+            "ADNI",
             "ADNI-1",
-            "imputation",
-            "ADNI"
+            "ADNI-GO2"
           ]
         }
       ]

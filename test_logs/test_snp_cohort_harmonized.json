@@ -240,6 +240,127 @@
     }
   ],
   [
+    "29458411_PMC5819208.csv",
+    {
+      "coverage_pct": 0.0,
+      "threshold_pct": 50.0,
+      "covered_rows": 0,
+      "total_rows": 32,
+      "missed_examples": [
+        {
+          "snp": "rs34487851",
+          "gt_value": "ADGC",
+          "pred_terms": [
+            "TCX",
+            "ADNI",
+            "CER",
+            "Mayo Clinic Brain eGWAS",
+            "VCX"
+          ]
+        },
+        {
+          "snp": "rs34487851",
+          "gt_value": "ADGC",
+          "pred_terms": [
+            "TCX",
+            "ADNI",
+            "CER",
+            "Mayo Clinic Brain eGWAS",
+            "VCX"
+          ]
+        },
+        {
+          "snp": "rs34487851",
+          "gt_value": "ADGC",
+          "pred_terms": [
+            "TCX",
+            "ADNI",
+            "CER",
+            "Mayo Clinic Brain eGWAS",
+            "VCX"
+          ]
+        },
+        {
+          "snp": "rs34487851",
+          "gt_value": "ADGC",
+          "pred_terms": [
+            "TCX",
+            "ADNI",
+            "CER",
+            "Mayo Clinic Brain eGWAS",
+            "VCX"
+          ]
+        },
+        {
+          "snp": "rs34487851",
+          "gt_value": "ADGC",
+          "pred_terms": [
+            "TCX",
+            "ADNI",
+            "CER",
+            "Mayo Clinic Brain eGWAS",
+            "VCX"
+          ]
+        },
+        {
+          "snp": "rs34487851",
+          "gt_value": "ADGC",
+          "pred_terms": [
+            "TCX",
+            "ADNI",
+            "CER",
+            "Mayo Clinic Brain eGWAS",
+            "VCX"
+          ]
+        },
+        {
+          "snp": "rs34487851",
+          "gt_value": "ADGC",
+          "pred_terms": [
+            "TCX",
+            "ADNI",
+            "CER",
+            "Mayo Clinic Brain eGWAS",
+            "VCX"
+          ]
+        },
+        {
+          "snp": "rs79524815",
+          "gt_value": "ADGC",
+          "pred_terms": [
+            "TCX",
+            "ADNI",
+            "CER",
+            "Mayo Clinic Brain eGWAS",
+            "VCX"
+          ]
+        },
+        {
+          "snp": "rs79524815",
+          "gt_value": "ADGC",
+          "pred_terms": [
+            "TCX",
+            "ADNI",
+            "CER",
+            "Mayo Clinic Brain eGWAS",
+            "VCX"
+          ]
+        },
+        {
+          "snp": "rs79524815",
+          "gt_value": "ADGC",
+          "pred_terms": [
+            "TCX",
+            "ADNI",
+            "CER",
+            "Mayo Clinic Brain eGWAS",
+            "VCX"
+          ]
+        }
+      ]
+    }
+  ],
+  [
     "29752348_PMC5976227.csv",
     {
       "coverage_pct": 0.0,
@@ -281,52 +402,112 @@
         {
           "snp": "rs12961169",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
-          "pred_terms": []
+          "pred_terms": [
+            "UW",
+            "ADNI",
+            "Knight ADRC",
+            "ADGC",
+            "Mattsson et al."
+          ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
-          "pred_terms": []
+          "pred_terms": [
+            "UW",
+            "ADNI",
+            "Knight ADRC",
+            "ADGC",
+            "Mattsson et al."
+          ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
-          "pred_terms": []
+          "pred_terms": [
+            "UW",
+            "ADNI",
+            "Knight ADRC",
+            "ADGC",
+            "Mattsson et al."
+          ]
         },
         {
           "snp": "rs13115400",
           "gt_value": "ROS/MAP",
-          "pred_terms": []
+          "pred_terms": [
+            "UW",
+            "ADNI",
+            "Knight ADRC",
+            "ADGC",
+            "Mattsson et al."
+          ]
         },
         {
           "snp": "rs13115400",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
-          "pred_terms": []
+          "pred_terms": [
+            "UW",
+            "ADNI",
+            "Knight ADRC",
+            "ADGC",
+            "Mattsson et al."
+          ]
         },
         {
           "snp": "rs13115400",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
-          "pred_terms": []
+          "pred_terms": [
+            "UW",
+            "ADNI",
+            "Knight ADRC",
+            "ADGC",
+            "Mattsson et al."
+          ]
         },
         {
           "snp": "rs13115400",
           "gt_value": "ROS/MAP",
-          "pred_terms": []
+          "pred_terms": [
+            "UW",
+            "ADNI",
+            "Knight ADRC",
+            "ADGC",
+            "Mattsson et al."
+          ]
         },
         {
           "snp": "rs1393060",
           "gt_value": "ROS/MAP",
-          "pred_terms": []
+          "pred_terms": [
+            "UW",
+            "ADNI",
+            "Knight ADRC",
+            "ADGC",
+            "Mattsson et al."
+          ]
         },
         {
           "snp": "rs1393060",
           "gt_value": "ROS/MAP",
-          "pred_terms": []
+          "pred_terms": [
+            "UW",
+            "ADNI",
+            "Knight ADRC",
+            "ADGC",
+            "Mattsson et al."
+          ]
         },
         {
           "snp": "rs1393060",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
-          "pred_terms": []
+          "pred_terms": [
+            "UW",
+            "ADNI",
+            "Knight ADRC",
+            "ADGC",
+            "Mattsson et al."
+          ]
         }
       ]
     }
@@ -343,9 +524,10 @@
           "snp": "rs10792832",
           "gt_value": "ADSP, IGAP, PGC-ALZ",
           "pred_terms": [
-            "IGAP",
-            "UK Biobank",
+            "ADNI",
             "ADSP",
+            "UK Biobank",
+            "IGAP",
             "ADGC"
           ]
         },
@@ -353,9 +535,10 @@
           "snp": "rs10933431",
           "gt_value": "ADSP, IGAP, PGC-ALZ, UKBB",
           "pred_terms": [
-            "IGAP",
-            "UK Biobank",
+            "ADNI",
             "ADSP",
+            "UK Biobank",
+            "IGAP",
             "ADGC"
           ]
         },
@@ -363,9 +546,10 @@
           "snp": "rs10933431",
           "gt_value": "ADSP, IGAP, PGC-ALZ",
           "pred_terms": [
-            "IGAP",
-            "UK Biobank",
+            "ADNI",
             "ADSP",
+            "UK Biobank",
+            "IGAP",
             "ADGC"
           ]
         },
@@ -373,9 +557,10 @@
           "snp": "rs111278892",
           "gt_value": "ADSP, IGAP, PGC-ALZ, UKBB",
           "pred_terms": [
-            "IGAP",
-            "UK Biobank",
+            "ADNI",
             "ADSP",
+            "UK Biobank",
+            "IGAP",
             "ADGC"
           ]
         },
@@ -383,9 +568,10 @@
           "snp": "rs11218343",
           "gt_value": "ADSP, IGAP, PGC-ALZ, UKBB",
           "pred_terms": [
-            "IGAP",
-            "UK Biobank",
+            "ADNI",
             "ADSP",
+            "UK Biobank",
+            "IGAP",
             "ADGC"
           ]
         },
@@ -393,9 +579,10 @@
           "snp": "rs11218343",
           "gt_value": "ADSP, IGAP, PGC-ALZ",
           "pred_terms": [
-            "IGAP",
-            "UK Biobank",
+            "ADNI",
             "ADSP",
+            "UK Biobank",
+            "IGAP",
             "ADGC"
           ]
         },
@@ -403,9 +590,10 @@
           "snp": "rs11257238",
           "gt_value": "ADSP, IGAP, PGC-ALZ, UKBB",
           "pred_terms": [
-            "IGAP",
-            "UK Biobank",
+            "ADNI",
             "ADSP",
+            "UK Biobank",
+            "IGAP",
             "ADGC"
           ]
         },
@@ -413,9 +601,10 @@
           "snp": "rs11257242",
           "gt_value": "ADSP, IGAP, PGC-ALZ",
           "pred_terms": [
-            "IGAP",
-            "UK Biobank",
+            "ADNI",
             "ADSP",
+            "UK Biobank",
+            "IGAP",
             "ADGC"
           ]
         },
@@ -423,9 +612,10 @@
           "snp": "rs113260531",
           "gt_value": "ADSP, IGAP, PGC-ALZ, UKBB",
           "pred_terms": [
-            "IGAP",
-            "UK Biobank",
+            "ADNI",
             "ADSP",
+            "UK Biobank",
+            "IGAP",
             "ADGC"
           ]
         },
@@ -433,141 +623,11 @@
           "snp": "rs113260531",
           "gt_value": "ADSP, IGAP, PGC-ALZ",
           "pred_terms": [
-            "IGAP",
-            "UK Biobank",
+            "ADNI",
             "ADSP",
+            "UK Biobank",
+            "IGAP",
             "ADGC"
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    "30636644_PMC6330399.csv",
-    {
-      "coverage_pct": 0.0,
-      "threshold_pct": 50.0,
-      "covered_rows": 0,
-      "total_rows": 141,
-      "missed_examples": [
-        {
-          "snp": "rs10111328",
-          "gt_value": "CHS, FHS, HRS, NIA-LOAD",
-          "pred_terms": [
-            "genetic architecture of AD",
-            "GLOBAL: genetic architecture of AD",
-            "Discovery",
-            "Replication",
-            "ADGC",
-            "CHARGE"
-          ]
-        },
-        {
-          "snp": "rs10111328",
-          "gt_value": "CHS, FHS, HRS, NIA-LOAD",
-          "pred_terms": [
-            "genetic architecture of AD",
-            "GLOBAL: genetic architecture of AD",
-            "Discovery",
-            "Replication",
-            "ADGC",
-            "CHARGE"
-          ]
-        },
-        {
-          "snp": "rs1046135",
-          "gt_value": "CHS, FHS, HRS, NIA-LOAD",
-          "pred_terms": [
-            "genetic architecture of AD",
-            "GLOBAL: genetic architecture of AD",
-            "Discovery",
-            "Replication",
-            "ADGC",
-            "CHARGE"
-          ]
-        },
-        {
-          "snp": "rs1046135",
-          "gt_value": "CHS, FHS, HRS, NIA-LOAD",
-          "pred_terms": [
-            "genetic architecture of AD",
-            "GLOBAL: genetic architecture of AD",
-            "Discovery",
-            "Replication",
-            "ADGC",
-            "CHARGE"
-          ]
-        },
-        {
-          "snp": "rs10794342",
-          "gt_value": "CHS, FHS, HRS, NIA-LOAD",
-          "pred_terms": [
-            "genetic architecture of AD",
-            "GLOBAL: genetic architecture of AD",
-            "Discovery",
-            "Replication",
-            "ADGC",
-            "CHARGE"
-          ]
-        },
-        {
-          "snp": "rs10947230",
-          "gt_value": "CHS, FHS, HRS, NIA-LOAD",
-          "pred_terms": [
-            "genetic architecture of AD",
-            "GLOBAL: genetic architecture of AD",
-            "Discovery",
-            "Replication",
-            "ADGC",
-            "CHARGE"
-          ]
-        },
-        {
-          "snp": "rs10953322",
-          "gt_value": "CHS, FHS, HRS, NIA-LOAD",
-          "pred_terms": [
-            "genetic architecture of AD",
-            "GLOBAL: genetic architecture of AD",
-            "Discovery",
-            "Replication",
-            "ADGC",
-            "CHARGE"
-          ]
-        },
-        {
-          "snp": "rs11089928",
-          "gt_value": "CHS, FHS, HRS, NIA-LOAD",
-          "pred_terms": [
-            "genetic architecture of AD",
-            "GLOBAL: genetic architecture of AD",
-            "Discovery",
-            "Replication",
-            "ADGC",
-            "CHARGE"
-          ]
-        },
-        {
-          "snp": "rs11089928",
-          "gt_value": "CHS, FHS, HRS, NIA-LOAD",
-          "pred_terms": [
-            "genetic architecture of AD",
-            "GLOBAL: genetic architecture of AD",
-            "Discovery",
-            "Replication",
-            "ADGC",
-            "CHARGE"
-          ]
-        },
-        {
-          "snp": "rs1172922",
-          "gt_value": "CHS, FHS, HRS, NIA-LOAD",
-          "pred_terms": [
-            "genetic architecture of AD",
-            "GLOBAL: genetic architecture of AD",
-            "Discovery",
-            "Replication",
-            "ADGC",
-            "CHARGE"
           ]
         }
       ]
@@ -647,10 +707,10 @@
           "gt_value": "ADGC, CHARGE, EADI, GERAD",
           "pred_terms": [
             "EADI",
-            "IGAP",
-            "GLOBAL: imputed to 1000 Genomes",
-            "imputed to 1000 Genomes",
+            "CHARGE",
             "UK Biobank",
+            "IGAP",
+            "Discovery",
             "ADGC"
           ]
         },
@@ -659,10 +719,10 @@
           "gt_value": "ADGC, CHARGE, EADI, GERAD",
           "pred_terms": [
             "EADI",
-            "IGAP",
-            "GLOBAL: imputed to 1000 Genomes",
-            "imputed to 1000 Genomes",
+            "CHARGE",
             "UK Biobank",
+            "IGAP",
+            "Discovery",
             "ADGC"
           ]
         },
@@ -671,10 +731,10 @@
           "gt_value": "ADGC, CHARGE, EADI, GERAD",
           "pred_terms": [
             "EADI",
-            "IGAP",
-            "GLOBAL: imputed to 1000 Genomes",
-            "imputed to 1000 Genomes",
+            "CHARGE",
             "UK Biobank",
+            "IGAP",
+            "Discovery",
             "ADGC"
           ]
         },
@@ -683,10 +743,10 @@
           "gt_value": "ADGC, CHARGE, EADI, GERAD",
           "pred_terms": [
             "EADI",
-            "IGAP",
-            "GLOBAL: imputed to 1000 Genomes",
-            "imputed to 1000 Genomes",
+            "CHARGE",
             "UK Biobank",
+            "IGAP",
+            "Discovery",
             "ADGC"
           ]
         },
@@ -695,10 +755,10 @@
           "gt_value": "ADGC, CHARGE, EADI, GERAD",
           "pred_terms": [
             "EADI",
-            "IGAP",
-            "GLOBAL: imputed to 1000 Genomes",
-            "imputed to 1000 Genomes",
+            "CHARGE",
             "UK Biobank",
+            "IGAP",
+            "Discovery",
             "ADGC"
           ]
         },
@@ -707,10 +767,10 @@
           "gt_value": "ADGC, CHARGE, EADI, GERAD",
           "pred_terms": [
             "EADI",
-            "IGAP",
-            "GLOBAL: imputed to 1000 Genomes",
-            "imputed to 1000 Genomes",
+            "CHARGE",
             "UK Biobank",
+            "IGAP",
+            "Discovery",
             "ADGC"
           ]
         },
@@ -719,10 +779,10 @@
           "gt_value": "ADGC, CHARGE, EADI, GERAD",
           "pred_terms": [
             "EADI",
-            "IGAP",
-            "GLOBAL: imputed to 1000 Genomes",
-            "imputed to 1000 Genomes",
+            "CHARGE",
             "UK Biobank",
+            "IGAP",
+            "Discovery",
             "ADGC"
           ]
         },
@@ -731,10 +791,10 @@
           "gt_value": "ADGC, CHARGE, EADI, GERAD",
           "pred_terms": [
             "EADI",
-            "IGAP",
-            "GLOBAL: imputed to 1000 Genomes",
-            "imputed to 1000 Genomes",
+            "CHARGE",
             "UK Biobank",
+            "IGAP",
+            "Discovery",
             "ADGC"
           ]
         },
@@ -743,10 +803,10 @@
           "gt_value": "ADGC, CHARGE, EADI, GERAD",
           "pred_terms": [
             "EADI",
-            "IGAP",
-            "GLOBAL: imputed to 1000 Genomes",
-            "imputed to 1000 Genomes",
+            "CHARGE",
             "UK Biobank",
+            "IGAP",
+            "Discovery",
             "ADGC"
           ]
         },
@@ -755,10 +815,10 @@
           "gt_value": "ADGC, CHARGE, EADI, GERAD",
           "pred_terms": [
             "EADI",
-            "IGAP",
-            "GLOBAL: imputed to 1000 Genomes",
-            "imputed to 1000 Genomes",
+            "CHARGE",
             "UK Biobank",
+            "IGAP",
+            "Discovery",
             "ADGC"
           ]
         }
