@@ -1,0 +1,46 @@
+{
+  "A_pathogenesis": {
+    "keywords": [
+      "amyloid", "Aβ", "beta-amyloid", "APP", "presenilin", "tau", "neurofibrillary", 
+      "aggregation", "oligomer", "plaque", "fibril", "inflammation", "microglia", 
+      "astrocyte", "oxidative stress", "mitochondri", "synaps", "neurogenesis",
+      "apoptosis", "autophagy", "lysosom", "endosom"
+    ]
+  },
+  "B_diagnosis": {
+    "keywords": [
+      "biomarker", "CSF", "plasma", "amyloid PET", "tau PET", "FDG PET", "MRI", 
+      "neuroimaging", "neurofilament", "NfL", "p-tau", "Aβ42", "diagnosis", 
+      "cognitive test", "MMSE", "ADAS", "MoCA", "neuropsycholog"
+    ]
+  },
+  "C_interventions": {
+    "keywords": [
+      "clinical trial", "phase I", "phase II", "phase III", "anti-amyloid", 
+      "anti-tau", "BACE inhibitor", "gamma secretase", "cholinesterase", 
+      "NMDA", "memantine", "drug", "therapy", "treatment", "vaccine"
+    ]
+  },
+  "D_epidemiology": {
+  "keywords": [
+    "GWAS", "genome-wide", "association", "risk", "cohort", "epidemiology", 
+    "APOE", "polygenic", "case-control", "linkage", "familial", "heritability",
+    "mutation", "gene", "genetic", "SNP", "variant", "locus"
+  ]},
+  "E_care_economics": {
+    "keywords": [
+      "caregiver", "quality of life", "QOL", "health economics", "cost", 
+      "burden", "dementia care", "nursing home", "behavioral", "BPSD"
+    ]
+  },
+  "F_resources": {
+    "keywords": [
+      "consortium", "biobank", "repository", "database", "model", "mouse model", 
+      "iPSC", "organoid", "ADSP", "NIAGADS", "AMP-AD"
+    ]
+  },
+  "uncategorized": {
+    "keywords": ["review", "meta-analysis", "editorial"]
+  }
+}
+

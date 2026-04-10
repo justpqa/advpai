@@ -1,0 +1,109 @@
+{
+  "categories": [
+    {
+      "id": "A",
+      "keywords": [
+        "amyloid", "aβ", "abeta", "tau", "ptau",
+        "neuroinflammation", "microglia", "astrocyte",
+        "synaptic", "neuron", "neurodegeneration",
+        "mitochondria", "oxidative stress",
+        "protein aggregation", "misfolded",
+        "pathway", "molecular mechanism",
+        "gene expression", "transcriptome", "proteome",
+        "epigenetic", "methylation",
+        "functional genomics", "systems biology"
+      ],
+      "phrases": [
+        "amyloid precursor protein",
+        "tau phosphorylation",
+        "neurofibrillary tangle",
+        "immune response in brain"
+      ]
+    },
+    {
+      "id": "B",
+      "keywords": [
+        "biomarker", "csf", "plasma", "serum",
+        "diagnostic", "prediction", "classification",
+        "mri", "pet", "fmri", "imaging",
+        "cognitive score", "mmse", "moca",
+        "endophenotype", "quantitative trait",
+        "digital biomarker"
+      ],
+      "phrases": [
+        "fluid biomarker",
+        "amyloid pet",
+        "tau pet",
+        "early detection",
+        "risk prediction model"
+      ]
+    },
+    {
+      "id": "C",
+      "keywords": [
+        "clinical trial", "trial", "treatment",
+        "therapy", "therapeutic", "drug",
+        "intervention", "randomized",
+        "phase i", "phase ii", "phase iii",
+        "antibody", "immunotherapy",
+        "drug repurposing",
+        "efficacy", "safety"
+      ],
+      "phrases": [
+        "randomized controlled trial",
+        "disease modifying therapy"
+      ]
+    },
+    {
+      "id": "D",
+      "keywords": [
+        "gwas", "genome-wide", "association study",
+        "meta-analysis", "meta analysis",
+        "polygenic", "polygenic risk",
+        "prs", "risk loci", "locus", "variant",
+        "snp", "genotype", "allele",
+        "heritability", "genetic architecture",
+        "mendelian randomization",
+        "cohort", "population", "incidence",
+        "prevalence", "epidemiology"
+      ],
+      "phrases": [
+        "genome-wide association study",
+        "genetic risk factor",
+        "risk prediction",
+        "population-based study"
+      ]
+    },
+    {
+      "id": "E",
+      "keywords": [
+        "caregiver", "caregiving",
+        "quality of life", "burden",
+        "health economics", "cost",
+        "healthcare utilization",
+        "long-term care", "support",
+        "care model"
+      ]
+    },
+    {
+      "id": "F",
+      "keywords": [
+        "dataset", "database", "resource",
+        "biobank", "repository",
+        "pipeline", "workflow",
+        "software", "tool",
+        "method", "protocol",
+        "data sharing", "infrastructure"
+      ]
+    },
+    {
+      "id": "G",
+      "keywords": [
+        "consortium", "adgc", "adni",
+        "initiative", "collaboration",
+        "multi-center", "multisite",
+        "public-private partnership"
+      ]
+    }
+  ]
+}
