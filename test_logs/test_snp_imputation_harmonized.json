@@ -11,8 +11,8 @@
           "snp": "rs10775009",
           "gt_value": "1000G (release Mar 2012)",
           "pred_terms": [
-            "ADNI",
             "ADNI-1",
+            "ADNI",
             "ADNI-GO2"
           ]
         },
@@ -20,8 +20,8 @@
           "snp": "rs111882035",
           "gt_value": "1000G (release Mar 2012)",
           "pred_terms": [
-            "ADNI",
             "ADNI-1",
+            "ADNI",
             "ADNI-GO2"
           ]
         },
@@ -29,8 +29,8 @@
           "snp": "rs118130881",
           "gt_value": "1000G (release Mar 2012)",
           "pred_terms": [
-            "ADNI",
             "ADNI-1",
+            "ADNI",
             "ADNI-GO2"
           ]
         },
@@ -38,8 +38,8 @@
           "snp": "rs12268753",
           "gt_value": "1000G (release Mar 2012)",
           "pred_terms": [
-            "ADNI",
             "ADNI-1",
+            "ADNI",
             "ADNI-GO2"
           ]
         },
@@ -47,8 +47,8 @@
           "snp": "rs2378873",
           "gt_value": "1000G (release Mar 2012)",
           "pred_terms": [
-            "ADNI",
             "ADNI-1",
+            "ADNI",
             "ADNI-GO2"
           ]
         },
@@ -56,8 +56,8 @@
           "snp": "rs2819438",
           "gt_value": "1000G (release Mar 2012)",
           "pred_terms": [
-            "ADNI",
             "ADNI-1",
+            "ADNI",
             "ADNI-GO2"
           ]
         },
@@ -65,8 +65,8 @@
           "snp": "rs4921790",
           "gt_value": "1000G (release Mar 2012)",
           "pred_terms": [
-            "ADNI",
             "ADNI-1",
+            "ADNI",
             "ADNI-GO2"
           ]
         },
@@ -74,8 +74,8 @@
           "snp": "rs55644114",
           "gt_value": "1000G (release Mar 2012)",
           "pred_terms": [
-            "ADNI",
             "ADNI-1",
+            "ADNI",
             "ADNI-GO2"
           ]
         },
@@ -83,8 +83,8 @@
           "snp": "rs73705514",
           "gt_value": "1000G (release Mar 2012)",
           "pred_terms": [
-            "ADNI",
             "ADNI-1",
+            "ADNI",
             "ADNI-GO2"
           ]
         },
@@ -92,8 +92,8 @@
           "snp": "rs74442473",
           "gt_value": "1000G (release Mar 2012)",
           "pred_terms": [
-            "ADNI",
             "ADNI-1",
+            "ADNI",
             "ADNI-GO2"
           ]
         }

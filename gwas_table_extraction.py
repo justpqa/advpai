@@ -15,7 +15,7 @@ from docling.datamodel.pipeline_options import PdfPipelineOptions, TableFormerMo
 from docling.document_converter import DocumentConverter, PdfFormatOption
 from docling.datamodel.document import DocumentStream
 from docling.pipeline.vlm_pipeline import VlmPipeline
-from table_link_to_excel import _curl_get_text, _extract_pmc_info, _try_pmc_direct_table_download, _flatten_columns, sanitize_sheet_name, fetch_html, fetch_pmc_fulltext_xml, pick_table, table_to_dataframe, _clean_text
+from table_link_to_excel import _try_pmc_direct_table_download, _flatten_columns, sanitize_sheet_name, fetch_html, fetch_pmc_fulltext_xml, pick_table, table_to_dataframe, _clean_text
 from bs4 import BeautifulSoup
 
 """

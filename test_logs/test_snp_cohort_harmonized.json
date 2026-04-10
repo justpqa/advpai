@@ -1,249 +1,9 @@
 [
   [
-    "28247064_PMC5613285.csv",
-    {
-      "coverage_pct": 0.0,
-      "threshold_pct": 50.0,
-      "covered_rows": 0,
-      "total_rows": 35,
-      "missed_examples": [
-        {
-          "snp": "rs12961169",
-          "gt_value": "ADNI, Knight-ADRC",
-          "pred_terms": [
-            "ADNI",
-            "ADGC"
-          ]
-        },
-        {
-          "snp": "rs12961169",
-          "gt_value": "ADNI1&2, BIOCARD, HB, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
-          "pred_terms": [
-            "ADNI",
-            "ADGC"
-          ]
-        },
-        {
-          "snp": "rs12961169",
-          "gt_value": "IGAP",
-          "pred_terms": [
-            "ADNI",
-            "ADGC"
-          ]
-        },
-        {
-          "snp": "rs12961169",
-          "gt_value": "ADNI1&2, BIOCARD, HB, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
-          "pred_terms": [
-            "ADNI",
-            "ADGC"
-          ]
-        },
-        {
-          "snp": "rs12961169",
-          "gt_value": "ADNI1&2, BIOCARD, HB, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
-          "pred_terms": [
-            "ADNI",
-            "ADGC"
-          ]
-        },
-        {
-          "snp": "rs185031519",
-          "gt_value": "ADNI, Knight-ADRC",
-          "pred_terms": [
-            "ADNI",
-            "ADGC"
-          ]
-        },
-        {
-          "snp": "rs185031519",
-          "gt_value": "IGAP",
-          "pred_terms": [
-            "ADNI",
-            "ADGC"
-          ]
-        },
-        {
-          "snp": "rs185031519",
-          "gt_value": "ADNI1&2, BIOCARD, HB, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
-          "pred_terms": [
-            "ADNI",
-            "ADGC"
-          ]
-        },
-        {
-          "snp": "rs185031519",
-          "gt_value": "ADNI1&2, BIOCARD, HB, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
-          "pred_terms": [
-            "ADNI",
-            "ADGC"
-          ]
-        },
-        {
-          "snp": "rs185031519",
-          "gt_value": "ADNI1&2, BIOCARD, HB, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
-          "pred_terms": [
-            "ADNI",
-            "ADGC"
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    "28780673_PMC5693762.csv",
-    {
-      "coverage_pct": 0.0,
-      "threshold_pct": 50.0,
-      "covered_rows": 0,
-      "total_rows": 44,
-      "missed_examples": [
-        {
-          "snp": "rs10896445",
-          "gt_value": "IGAP, GAME-ON",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10896445",
-          "gt_value": "IGAP",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10896445",
-          "gt_value": "GAME-ON",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10896445",
-          "gt_value": "GAME-ON",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs11249708",
-          "gt_value": "GAME-ON",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs11249708",
-          "gt_value": "IGAP, GAME-ON",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs11249708",
-          "gt_value": "IGAP",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs11249708",
-          "gt_value": "GAME-ON",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs1568485",
-          "gt_value": "GAME-ON",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs1568485",
-          "gt_value": "IGAP",
-          "pred_terms": []
-        }
-      ]
-    }
-  ],
-  [
-    "29107063_PMC5920782.csv",
-    {
-      "coverage_pct": 12.5,
-      "threshold_pct": 50.0,
-      "covered_rows": 4,
-      "total_rows": 32,
-      "missed_examples": [
-        {
-          "snp": "rs115881343",
-          "gt_value": "HRS",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs12721046",
-          "gt_value": "CHS",
-          "pred_terms": [
-            "FHS",
-            "ADGC"
-          ]
-        },
-        {
-          "snp": "rs157580",
-          "gt_value": "LOADFS",
-          "pred_terms": [
-            "FHS",
-            "ADGC"
-          ]
-        },
-        {
-          "snp": "rs157582",
-          "gt_value": "HRS",
-          "pred_terms": [
-            "FHS",
-            "ADGC"
-          ]
-        },
-        {
-          "snp": "rs157582",
-          "gt_value": "HRS",
-          "pred_terms": [
-            "FHS",
-            "ADGC"
-          ]
-        },
-        {
-          "snp": "rs2075650",
-          "gt_value": "LOADFS",
-          "pred_terms": [
-            "FHS",
-            "ADGC"
-          ]
-        },
-        {
-          "snp": "rs2075650",
-          "gt_value": "CHS",
-          "pred_terms": [
-            "FHS",
-            "ADGC"
-          ]
-        },
-        {
-          "snp": "rs2075650",
-          "gt_value": "CHS",
-          "pred_terms": [
-            "FHS",
-            "ADGC"
-          ]
-        },
-        {
-          "snp": "rs2075650",
-          "gt_value": "HRS",
-          "pred_terms": [
-            "FHS",
-            "ADGC"
-          ]
-        },
-        {
-          "snp": "rs2075650",
-          "gt_value": "HRS",
-          "pred_terms": [
-            "FHS",
-            "ADGC"
-          ]
-        }
-      ]
-    }
-  ],
-  [
     "29458411_PMC5819208.csv",
     {
       "coverage_pct": 0.0,
-      "threshold_pct": 50.0,
+      "threshold_pct": 70.0,
       "covered_rows": 0,
       "total_rows": 32,
       "missed_examples": [
@@ -251,110 +11,70 @@
           "snp": "rs34487851",
           "gt_value": "ADGC",
           "pred_terms": [
-            "TCX",
-            "ADNI",
-            "CER",
-            "Mayo Clinic Brain eGWAS",
-            "VCX"
+            "MAYO"
           ]
         },
         {
           "snp": "rs34487851",
           "gt_value": "ADGC",
           "pred_terms": [
-            "TCX",
-            "ADNI",
-            "CER",
-            "Mayo Clinic Brain eGWAS",
-            "VCX"
+            "MAYO"
           ]
         },
         {
           "snp": "rs34487851",
           "gt_value": "ADGC",
           "pred_terms": [
-            "TCX",
-            "ADNI",
-            "CER",
-            "Mayo Clinic Brain eGWAS",
-            "VCX"
+            "MAYO"
           ]
         },
         {
           "snp": "rs34487851",
           "gt_value": "ADGC",
           "pred_terms": [
-            "TCX",
-            "ADNI",
-            "CER",
-            "Mayo Clinic Brain eGWAS",
-            "VCX"
+            "MAYO"
           ]
         },
         {
           "snp": "rs34487851",
           "gt_value": "ADGC",
           "pred_terms": [
-            "TCX",
-            "ADNI",
-            "CER",
-            "Mayo Clinic Brain eGWAS",
-            "VCX"
+            "MAYO"
           ]
         },
         {
           "snp": "rs34487851",
           "gt_value": "ADGC",
           "pred_terms": [
-            "TCX",
-            "ADNI",
-            "CER",
-            "Mayo Clinic Brain eGWAS",
-            "VCX"
+            "MAYO"
           ]
         },
         {
           "snp": "rs34487851",
           "gt_value": "ADGC",
           "pred_terms": [
-            "TCX",
-            "ADNI",
-            "CER",
-            "Mayo Clinic Brain eGWAS",
-            "VCX"
+            "MAYO"
           ]
         },
         {
           "snp": "rs79524815",
           "gt_value": "ADGC",
           "pred_terms": [
-            "TCX",
-            "ADNI",
-            "CER",
-            "Mayo Clinic Brain eGWAS",
-            "VCX"
+            "MAYO"
           ]
         },
         {
           "snp": "rs79524815",
           "gt_value": "ADGC",
           "pred_terms": [
-            "TCX",
-            "ADNI",
-            "CER",
-            "Mayo Clinic Brain eGWAS",
-            "VCX"
+            "MAYO"
           ]
         },
         {
           "snp": "rs79524815",
           "gt_value": "ADGC",
           "pred_terms": [
-            "TCX",
-            "ADNI",
-            "CER",
-            "Mayo Clinic Brain eGWAS",
-            "VCX"
+            "MAYO"
           ]
         }
       ]
@@ -364,7 +84,7 @@
     "29752348_PMC5976227.csv",
     {
       "coverage_pct": 0.0,
-      "threshold_pct": 50.0,
+      "threshold_pct": 70.0,
       "covered_rows": 0,
       "total_rows": 4,
       "missed_examples": [
@@ -394,240 +114,129 @@
   [
     "29967939_PMC6280657.csv",
     {
-      "coverage_pct": 0.0,
-      "threshold_pct": 50.0,
-      "covered_rows": 0,
+      "coverage_pct": 16.4,
+      "threshold_pct": 70.0,
+      "covered_rows": 9,
       "total_rows": 55,
       "missed_examples": [
         {
           "snp": "rs12961169",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "UW",
+            "UPENN",
+            "IGAP",
             "ADNI",
-            "Knight ADRC",
-            "ADGC",
-            "Mattsson et al."
+            "ROS/MAP",
+            "HB",
+            "Knight-ADRC"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "UW",
+            "UPENN",
+            "IGAP",
             "ADNI",
-            "Knight ADRC",
-            "ADGC",
-            "Mattsson et al."
+            "ROS/MAP",
+            "HB",
+            "Knight-ADRC"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "UW",
+            "UPENN",
+            "IGAP",
             "ADNI",
-            "Knight ADRC",
-            "ADGC",
-            "Mattsson et al."
-          ]
-        },
-        {
-          "snp": "rs13115400",
-          "gt_value": "ROS/MAP",
-          "pred_terms": [
-            "UW",
-            "ADNI",
-            "Knight ADRC",
-            "ADGC",
-            "Mattsson et al."
+            "ROS/MAP",
+            "HB",
+            "Knight-ADRC"
           ]
         },
         {
           "snp": "rs13115400",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "UW",
+            "UPENN",
+            "IGAP",
             "ADNI",
-            "Knight ADRC",
-            "ADGC",
-            "Mattsson et al."
+            "ROS/MAP",
+            "HB",
+            "Knight-ADRC"
           ]
         },
         {
           "snp": "rs13115400",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "UW",
+            "UPENN",
+            "IGAP",
             "ADNI",
-            "Knight ADRC",
-            "ADGC",
-            "Mattsson et al."
-          ]
-        },
-        {
-          "snp": "rs13115400",
-          "gt_value": "ROS/MAP",
-          "pred_terms": [
-            "UW",
-            "ADNI",
-            "Knight ADRC",
-            "ADGC",
-            "Mattsson et al."
-          ]
-        },
-        {
-          "snp": "rs1393060",
-          "gt_value": "ROS/MAP",
-          "pred_terms": [
-            "UW",
-            "ADNI",
-            "Knight ADRC",
-            "ADGC",
-            "Mattsson et al."
-          ]
-        },
-        {
-          "snp": "rs1393060",
-          "gt_value": "ROS/MAP",
-          "pred_terms": [
-            "UW",
-            "ADNI",
-            "Knight ADRC",
-            "ADGC",
-            "Mattsson et al."
+            "ROS/MAP",
+            "HB",
+            "Knight-ADRC"
           ]
         },
         {
           "snp": "rs1393060",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "UW",
-            "ADNI",
-            "Knight ADRC",
-            "ADGC",
-            "Mattsson et al."
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    "30617256_PMC6836675.csv",
-    {
-      "coverage_pct": 35.6,
-      "threshold_pct": 50.0,
-      "covered_rows": 32,
-      "total_rows": 90,
-      "missed_examples": [
-        {
-          "snp": "rs10792832",
-          "gt_value": "ADSP, IGAP, PGC-ALZ",
-          "pred_terms": [
-            "ADNI",
-            "ADSP",
-            "UK Biobank",
+            "UPENN",
             "IGAP",
-            "ADGC"
+            "ADNI",
+            "ROS/MAP",
+            "HB",
+            "Knight-ADRC"
           ]
         },
         {
-          "snp": "rs10933431",
-          "gt_value": "ADSP, IGAP, PGC-ALZ, UKBB",
+          "snp": "rs1393060",
+          "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "ADNI",
-            "ADSP",
-            "UK Biobank",
+            "UPENN",
             "IGAP",
-            "ADGC"
+            "ADNI",
+            "ROS/MAP",
+            "HB",
+            "Knight-ADRC"
           ]
         },
         {
-          "snp": "rs10933431",
-          "gt_value": "ADSP, IGAP, PGC-ALZ",
+          "snp": "rs185031519",
+          "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "ADNI",
-            "ADSP",
-            "UK Biobank",
+            "UPENN",
             "IGAP",
-            "ADGC"
+            "ADNI",
+            "ROS/MAP",
+            "HB",
+            "Knight-ADRC"
           ]
         },
         {
-          "snp": "rs111278892",
-          "gt_value": "ADSP, IGAP, PGC-ALZ, UKBB",
+          "snp": "rs185031519",
+          "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "ADNI",
-            "ADSP",
-            "UK Biobank",
+            "UPENN",
             "IGAP",
-            "ADGC"
+            "ADNI",
+            "ROS/MAP",
+            "HB",
+            "Knight-ADRC"
           ]
         },
         {
-          "snp": "rs11218343",
-          "gt_value": "ADSP, IGAP, PGC-ALZ, UKBB",
+          "snp": "rs185031519",
+          "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "ADNI",
-            "ADSP",
-            "UK Biobank",
+            "UPENN",
             "IGAP",
-            "ADGC"
-          ]
-        },
-        {
-          "snp": "rs11218343",
-          "gt_value": "ADSP, IGAP, PGC-ALZ",
-          "pred_terms": [
             "ADNI",
-            "ADSP",
-            "UK Biobank",
-            "IGAP",
-            "ADGC"
-          ]
-        },
-        {
-          "snp": "rs11257238",
-          "gt_value": "ADSP, IGAP, PGC-ALZ, UKBB",
-          "pred_terms": [
-            "ADNI",
-            "ADSP",
-            "UK Biobank",
-            "IGAP",
-            "ADGC"
-          ]
-        },
-        {
-          "snp": "rs11257242",
-          "gt_value": "ADSP, IGAP, PGC-ALZ",
-          "pred_terms": [
-            "ADNI",
-            "ADSP",
-            "UK Biobank",
-            "IGAP",
-            "ADGC"
-          ]
-        },
-        {
-          "snp": "rs113260531",
-          "gt_value": "ADSP, IGAP, PGC-ALZ, UKBB",
-          "pred_terms": [
-            "ADNI",
-            "ADSP",
-            "UK Biobank",
-            "IGAP",
-            "ADGC"
-          ]
-        },
-        {
-          "snp": "rs113260531",
-          "gt_value": "ADSP, IGAP, PGC-ALZ",
-          "pred_terms": [
-            "ADNI",
-            "ADSP",
-            "UK Biobank",
-            "IGAP",
-            "ADGC"
+            "ROS/MAP",
+            "HB",
+            "Knight-ADRC"
           ]
         }
       ]
@@ -637,7 +246,7 @@
     "30651383_PMC6369905.csv",
     {
       "coverage_pct": 0.0,
-      "threshold_pct": 50.0,
+      "threshold_pct": 70.0,
       "covered_rows": 0,
       "total_rows": 63,
       "missed_examples": [
@@ -695,141 +304,10 @@
     }
   ],
   [
-    "30820047_PMC6463297.csv",
-    {
-      "coverage_pct": 0.0,
-      "threshold_pct": 50.0,
-      "covered_rows": 0,
-      "total_rows": 104,
-      "missed_examples": [
-        {
-          "snp": "rs10467994",
-          "gt_value": "ADGC, CHARGE, EADI, GERAD",
-          "pred_terms": [
-            "EADI",
-            "CHARGE",
-            "UK Biobank",
-            "IGAP",
-            "Discovery",
-            "ADGC"
-          ]
-        },
-        {
-          "snp": "rs10467994",
-          "gt_value": "ADGC, CHARGE, EADI, GERAD",
-          "pred_terms": [
-            "EADI",
-            "CHARGE",
-            "UK Biobank",
-            "IGAP",
-            "Discovery",
-            "ADGC"
-          ]
-        },
-        {
-          "snp": "rs10467994",
-          "gt_value": "ADGC, CHARGE, EADI, GERAD",
-          "pred_terms": [
-            "EADI",
-            "CHARGE",
-            "UK Biobank",
-            "IGAP",
-            "Discovery",
-            "ADGC"
-          ]
-        },
-        {
-          "snp": "rs10808026",
-          "gt_value": "ADGC, CHARGE, EADI, GERAD",
-          "pred_terms": [
-            "EADI",
-            "CHARGE",
-            "UK Biobank",
-            "IGAP",
-            "Discovery",
-            "ADGC"
-          ]
-        },
-        {
-          "snp": "rs10808026",
-          "gt_value": "ADGC, CHARGE, EADI, GERAD",
-          "pred_terms": [
-            "EADI",
-            "CHARGE",
-            "UK Biobank",
-            "IGAP",
-            "Discovery",
-            "ADGC"
-          ]
-        },
-        {
-          "snp": "rs10808026",
-          "gt_value": "ADGC, CHARGE, EADI, GERAD",
-          "pred_terms": [
-            "EADI",
-            "CHARGE",
-            "UK Biobank",
-            "IGAP",
-            "Discovery",
-            "ADGC"
-          ]
-        },
-        {
-          "snp": "rs10933431",
-          "gt_value": "ADGC, CHARGE, EADI, GERAD",
-          "pred_terms": [
-            "EADI",
-            "CHARGE",
-            "UK Biobank",
-            "IGAP",
-            "Discovery",
-            "ADGC"
-          ]
-        },
-        {
-          "snp": "rs10933431",
-          "gt_value": "ADGC, CHARGE, EADI, GERAD",
-          "pred_terms": [
-            "EADI",
-            "CHARGE",
-            "UK Biobank",
-            "IGAP",
-            "Discovery",
-            "ADGC"
-          ]
-        },
-        {
-          "snp": "rs10933431",
-          "gt_value": "ADGC, CHARGE, EADI, GERAD",
-          "pred_terms": [
-            "EADI",
-            "CHARGE",
-            "UK Biobank",
-            "IGAP",
-            "Discovery",
-            "ADGC"
-          ]
-        },
-        {
-          "snp": "rs11218343",
-          "gt_value": "ADGC, CHARGE, EADI, GERAD",
-          "pred_terms": [
-            "EADI",
-            "CHARGE",
-            "UK Biobank",
-            "IGAP",
-            "Discovery",
-            "ADGC"
-          ]
-        }
-      ]
-    }
-  ],
-  [
     "31426376_PMC6723529.csv",
     {
       "coverage_pct": 0.0,
-      "threshold_pct": 50.0,
+      "threshold_pct": 70.0,
       "covered_rows": 0,
       "total_rows": 35,
       "missed_examples": [

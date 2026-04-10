@@ -1,0 +1,304 @@
+{
+    "ADGC": [
+        "ADGC",
+        "Alzheimer's Disease Genetics Consortium",
+        "Alzheimer Disease Genetics Consortium"
+    ],
+    "ADNI": [
+        "ADNI",
+        "ADNI1",
+        "ADNI2",
+        "ADNI1&2",
+        "ADNI 1",
+        "ADNI 2",
+        "Alzheimer's Disease Neuroimaging Initiative",
+        "Alzheimer Disease Neuroimaging Initiative"
+    ],
+    "ADSP": [
+        "ADSP",
+        "Alzheimer's Disease Sequencing Project",
+        "Alzheimer Disease Sequencing Project"
+    ],
+    "IGAP": [
+        "IGAP",
+        "International Genomics of Alzheimer's Project",
+        "International Genomics of Alzheimer Project"
+    ],
+    "EADI": [
+        "EADI",
+        "European Alzheimer's Disease Initiative",
+        "European Alzheimer Disease Initiative"
+    ],
+    "GERAD": [
+        "GERAD",
+        "Genetic and Environmental Risk in Alzheimer's Disease",
+        "Genetic and Environmental Risk in Alzheimer Disease",
+        "GERAD/PERADES"
+    ],
+    "PGC-ALZ": [
+        "PGC-ALZ",
+        "PGC ALZ",
+        "Psychiatric Genomics Consortium Alzheimer",
+        "Psychiatric Genomics Consortium Alzheimer's Disease"
+    ],
+    "NIA-LOAD": [
+        "NIA-LOAD",
+        "NIA LOAD",
+        "National Institute on Aging Late-Onset Alzheimer's Disease",
+        "Late-Onset Alzheimer's Disease Family Study",
+        "LOAD Family Study"
+    ],
+    "LOADFS": [
+        "LOADFS",
+        "Late-Onset Alzheimer's Disease Family Study",
+        "LOAD Family Study"
+    ],
+    "Knight-ADRC": [
+        "Knight-ADRC",
+        "Knight ADRC",
+        "Knight Alzheimer's Disease Research Center",
+        "Knight Alzheimer Disease Research Center",
+        "Washington University ADRC"
+    ],
+    "BIOCARD": [
+        "BIOCARD",
+        "Biomarkers of Cognitive Decline Among Normal Individuals"
+    ],
+    "ROS/MAP": [
+        "ROS/MAP",
+        "ROS MAP",
+        "ROSMAP",
+        "Religious Orders Study",
+        "Memory and Aging Project",
+        "Rush Memory and Aging Project"
+    ],
+    "IFGC": [
+        "IFGC",
+        "International FTD-Genomics Consortium",
+        "International Frontotemporal Dementia Genomics Consortium",
+        "FTD Genomics Consortium"
+    ],
+    "CHARGE": [
+        "CHARGE",
+        "Cohorts for Heart and Aging Research in Genomic Epidemiology",
+        "Cohorts for Heart and Aging Research in Genome Epidemiology"
+    ],
+    "GIANT": [
+        "GIANT",
+        "Genetic Investigation of ANthropometric Traits",
+        "Genetic Investigation of Anthropometric Traits"
+    ],
+    "UKBB": [
+        "UKBB",
+        "UKB",
+        "UK Biobank",
+        "United Kingdom Biobank"
+    ],
+    "UKBEC": [
+        "UKBEC",
+        "UK Brain Expression Consortium",
+        "United Kingdom Brain Expression Consortium"
+    ],
+    "METASTROKE": [
+        "METASTROKE",
+        "META-STROKE",
+        "Meta-Stroke"
+    ],
+    "CARDIoGRAMplusC4D": [
+        "CARDIoGRAMplusC4D",
+        "CARDIoGRAM",
+        "C4D",
+        "Coronary ARtery DIsease Genome wide Replication and Meta-analysis",
+        "Coronary Artery Disease Genetics"
+    ],
+    "DIAGRAM": [
+        "DIAGRAM",
+        "DIAbetes Genetics Replication And Meta-analysis",
+        "Diabetes Genetics Replication and Meta-analysis"
+    ],
+    "MAGIC": [
+        "MAGIC",
+        "Meta-Analyses of Glucose and Insulin-related traits Consortium",
+        "Meta-Analyses of Glucose and Insulin Related Traits Consortium"
+    ],
+    "GAME-ON": [
+        "GAME-ON",
+        "GAME ON",
+        "Genetic Associations and Mechanisms in Oncology"
+    ],
+    "ENGAGE": [
+        "ENGAGE",
+        "European Network for Genetic and Genomic Epidemiology"
+    ],
+    "PGC2-BIP": [
+        "PGC2-BIP",
+        "PGC2 BIP",
+        "Psychiatric Genomics Consortium Bipolar",
+        "PGC Bipolar Disorder"
+    ],
+    "SiGN": [
+        "SiGN",
+        "Stroke Genetics Network",
+        "SIGN consortium"
+    ],
+    "FHS": [
+        "FHS",
+        "Framingham Heart Study",
+        "Framingham",
+        "Framingham Offspring Study",
+        "Framingham Original Cohort"
+    ],
+    "CHS": [
+        "CHS",
+        "Cardiovascular Health Study"
+    ],
+    "ARIC": [
+        "ARIC",
+        "Atherosclerosis Risk in Communities",
+        "Atherosclerosis Risk in Communities Study"
+    ],
+    "HRS": [
+        "HRS",
+        "Health and Retirement Study"
+    ],
+    "AGES+": [
+        "AGES",
+        "AGES+",
+        "Age Gene Environment Susceptibility",
+        "Age Gene/Environment Susceptibility",
+        "AGES-Reykjavik"
+    ],
+    "LBC1936": [
+        "LBC1936",
+        "LBC 1936",
+        "Lothian Birth Cohort 1936",
+        "Lothian Birth Cohort"
+    ],
+    "LLS": [
+        "LLS",
+        "Leiden Longevity Study"
+    ],
+    "PROSPER": [
+        "PROSPER",
+        "Prospective Study of Pravastatin in the Elderly at Risk",
+        "PROspective Study of Pravastatin in the Elderly at Risk"
+    ],
+    "SHIP": [
+        "SHIP",
+        "Study of Health in Pomerania"
+    ],
+    "ERF": [
+        "ERF",
+        "Erasmus Rucphen Family Study",
+        "Erasmus Rucphen Family"
+    ],
+    "ASPS": [
+        "ASPS",
+        "Austrian Stroke Prevention Study",
+        "Austrian Stroke Prevention Family Study",
+        "ASPS-Fam"
+    ],
+    "NOMAS": [
+        "NOMAS",
+        "Northern Manhattan Study",
+        "Northern Manhattan Stroke Study"
+    ],
+    "NABEC": [
+        "NABEC",
+        "North American Brain Expression Consortium"
+    ],
+    "3C-Dijon": [
+        "3C-Dijon",
+        "3C Dijon",
+        "Three-City Study",
+        "Three City Study",
+        "Three-City Dijon",
+        "Etude des Trois Cites"
+    ],
+    "EVA": [
+        "EVA",
+        "Etude du Vieillissement Arteriel",
+        "Epidemiology of Vascular Aging"
+    ],
+    "Gen3": [
+        "Gen3",
+        "Generation 3",
+        "Framingham Generation 3",
+        "Framingham Gen3"
+    ],
+    "MAYO": [
+        "MAYO",
+        "Mayo Clinic",
+        "Mayo Clinic Study",
+        "Mayo Clinic Biobank"
+    ],
+    "SWEDEN": [
+        "SWEDEN",
+        "Swedish cohort",
+        "Swedish population"
+    ],
+    "UPENN": [
+        "UPENN",
+        "University of Pennsylvania",
+        "Penn Memory Center"
+    ],
+    "UW": [
+        "UW",
+        "University of Washington"
+    ],
+    "HB": [
+        "HB"
+    ],
+    "CHAP": [
+        "CHAP",
+        "Chicago Health and Aging Project"
+    ],
+    "TASCOG": [
+        "TASCOG",
+        "Tasmanian Study of Cognition and Gait"
+    ],
+    "OATS": [
+        "OATS",
+        "Older Australian Twins Study"
+    ],
+    "SMART": [
+        "SMART",
+        "Second Manifestations of ARTerial disease",
+        "Second Manifestations of Arterial Disease"
+    ],
+    "ASCOG": [
+        "ASCOG",
+        "Aging Stroke and Cognition Study"
+    ],
+    "CAGE": [
+        "CAGE"
+    ],
+    "SCES": [
+        "SCES",
+        "Singapore Chinese Eye Study"
+    ],
+    "SiMES": [
+        "SiMES",
+        "Singapore Malay Eye Study"
+    ],
+    "YLSDR": [
+        "YLSDR"
+    ],
+    "East Asian Cohort": [
+        "East Asian Cohort",
+        "Korean National Research Center for Dementia",
+        "KNRCD"
+    ],
+    "Japanese Genetics Study Consortium": [
+        "Japanese Genetics Study Consortium",
+        "Japanese Genetics Study Consortium of Alzheimer's Disease",
+        "JGSCAD",
+        "Japanese Alzheimer's Disease Neuroimaging Initiative",
+        "J-ADNI"
+    ],
+    "Korean Genome and Epidemiology Study": [
+        "Korean Genome and Epidemiology Study",
+        "KoGES",
+        "Korean cohort"
+    ]
+}

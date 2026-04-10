@@ -1,0 +1,64 @@
+P-value,Effect,AF,SNP,Chr,Position,RA1,RA2,AF notes,Population,Stage,Imputation,Study type,Phenotype,Cohort
+,,,,,33328,,,,,,,,,
+,,,,,35259,,,,,,,,,
+,,,,,1329158,,,,,,,,,
+,,,,,551330,,,,,,,,,
+,,,rs2075650,,"(Harold et al., 2009; Deelen et al., 2011; Holliday et al., 2013; Abe et al., 2015)",,,,,,,,,
+,,,rs405509,,"(Wang et al., 2017; Lu et al., 2014; Ryu et al., 2016; Ma et al., 2016)",,,,,,,,,
+,,,rs8106922,,"(Lin et al., 2016; Salakhov et al., 2014)",,,,,,,,,
+,,,rs6859,,"(Logue et al., 2011)",,,,,,,,,
+,,,rs12721046,,"(Kettunen et al., 2012; Musunuru et al., 2012)",,,,,,,,,
+,,,rs769449,,"(Cruchaga et al., 2013; Zhang and Pierce, 2014; Kettunen et al., 2012)",,,,,,,,,
+,,,,,4434,,,,,,,,,
+,,,,,7968,,,,,,,,,
+,,,,,3894,,,,,,,,,
+9e-15,2.3,0.22,rs2075650,19.0,,G,,MAF case,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+1.31e-06,1.5,0.53,rs405509,19.0,,T,,MAF case,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+4.54e-05,0.7,0.3,rs8106922,19.0,,G,,MAF case,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+5.34e-05,1.4,0.49,rs6859,19.0,,A,,MAF case,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+0.000159,0.7,0.33,rs769450,19.0,,A,,MAF case,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+4.02e-09,2.3,0.17,rs2075650,19.0,,G,,MAF case,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+4.87e-09,2.2,0.18,rs12721046,19.0,,A,,MAF case,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+3e-12,1.9,0.15,rs769449,19.0,,A,,MAF case,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+3.32e-09,1.5,0.31,rs157582,19.0,,T,,MAF case,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+1.41e-08,1.5,0.31,rs283815,19.0,,G,,MAF case,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+7.54e-08,1.6,0.17,rs71352238,19.0,,C,,MAF case,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+1.65e-07,1.5,0.18,rs2075650,19.0,,G,,MAF case,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+0.0,3.6,0.34,rs2075650,19.0,,G,,MAF case,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+0.0,0.5,0.26,rs8106922,19.0,,G,,MAF case,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+0.0,0.5,0.23,rs157580,19.0,,G,,MAF case,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+0.0,1.7,0.59,rs405509,19.0,,T,,MAF case,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+0.0,1.7,0.52,rs6859,19.0,,A,,MAF case,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+0.0,0.6,0.26,rs439401,19.0,,T,,MAF case,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+9e-15,2.3,0.12,rs2075650,19.0,,G,,MAF contr,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+1.31e-06,1.5,0.43,rs405509,19.0,,T,,MAF contr,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+4.54e-05,0.7,0.39,rs8106922,19.0,,G,,MAF contr,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+5.34e-05,1.4,0.4,rs6859,19.0,,A,,MAF contr,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+0.000159,0.7,0.41,rs769450,19.0,,A,,MAF contr,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+4.02e-09,2.3,0.12,rs2075650,19.0,,G,,MAF contr,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+4.87e-09,2.2,0.12,rs12721046,19.0,,A,,MAF contr,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+3e-12,1.9,0.09,rs769449,19.0,,A,,MAF contr,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+3.32e-09,1.5,0.24,rs157582,19.0,,T,,MAF contr,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+1.41e-08,1.5,0.25,rs283815,19.0,,G,,MAF contr,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+7.54e-08,1.6,0.12,rs71352238,19.0,,C,,MAF contr,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+1.65e-07,1.5,0.13,rs2075650,19.0,,G,,MAF contr,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+0.0,3.6,0.18,rs2075650,19.0,,G,,MAF contr,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+0.0,0.5,0.37,rs8106922,19.0,,G,,MAF contr,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+0.0,0.5,0.33,rs157580,19.0,,G,,MAF contr,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+0.0,1.7,0.49,rs405509,19.0,,T,,MAF contr,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+0.0,1.7,0.42,rs6859,19.0,,A,,MAF contr,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+0.0,0.6,0.33,rs439401,19.0,,T,,MAF contr,Chinese + African American,,,GWAS + FHS + HRS + CHS + LOADFS,Alzheimer's disease + T2D + AD + Type 2 diabetes,HB + FHS + HRS + CHS + LOADFS
+2e-15,2.3,0.12,rs2075650,19.0,,G,,,,,,,,
+2.4e-14,2.2,0.08,rs12721046,19.0,,A,,,,,,,,
+1.16e-05,1.4,0.47,rs405509,19.0,,G,,,,,,,,
+2.87e-05,1.4,0.37,rs6859,19.0,,G,,,,,,,,
+8.34e-05,0.7,0.3,rs8106922,19.0,,G,,,,,,,,
+2.93e-09,2.0,0.08,rs12721046,19.0,,A,,,,,,,,
+1.46e-05,1.7,0.12,rs2075650,19.0,,G,,,,,,,,
+2.03e-09,0.5,0.03,rs115881343,19.0,,"G,T",,,,,,,,
+1.71e-08,0.4,0.03,rs76366838,19.0,,A,,,,,,,,
+3.12e-08,1.7,0.06,rs769449,19.0,,A,,,,,,,,
+1.68e-07,0.7,0.29,rs157582,19.0,,T,,,,,,,,
+3.07e-07,0.7,0.3,rs283815,19.0,,G,,,,,,,,
+5.17e-07,1.5,0.12,rs2075650,19.0,,G,,,,,,,,
+3.19e-06,1.5,0.09,rs71352238,19.0,,C,,,,,,,,

@@ -11,120 +11,120 @@
           "snp": "rs10775009",
           "gt_value": "CSF T-tau",
           "pred_terms": [
+            "AD",
             "ADNI",
-            "BMI",
-            "Alzheimers disease",
-            "MCI",
             "Alzheimer disease",
-            "AD"
+            "Alzheimers disease",
+            "BMI",
+            "MCI"
           ]
         },
         {
           "snp": "rs111882035",
           "gt_value": "Logic memory delayed (LMdT) recall test",
           "pred_terms": [
+            "AD",
             "ADNI",
-            "BMI",
-            "Alzheimers disease",
-            "MCI",
             "Alzheimer disease",
-            "AD"
+            "Alzheimers disease",
+            "BMI",
+            "MCI"
           ]
         },
         {
           "snp": "rs118130881",
           "gt_value": "Logical memory immediate (LMiT) recall test",
           "pred_terms": [
+            "AD",
             "ADNI",
-            "BMI",
-            "Alzheimers disease",
-            "MCI",
             "Alzheimer disease",
-            "AD"
+            "Alzheimers disease",
+            "BMI",
+            "MCI"
           ]
         },
         {
           "snp": "rs12268753",
           "gt_value": "Logic memory delayed (LMdT) recall test",
           "pred_terms": [
+            "AD",
             "ADNI",
-            "BMI",
-            "Alzheimers disease",
-            "MCI",
             "Alzheimer disease",
-            "AD"
+            "Alzheimers disease",
+            "BMI",
+            "MCI"
           ]
         },
         {
           "snp": "rs2378873",
           "gt_value": "CSF Ab1-42",
           "pred_terms": [
+            "AD",
             "ADNI",
-            "BMI",
-            "Alzheimers disease",
-            "MCI",
             "Alzheimer disease",
-            "AD"
+            "Alzheimers disease",
+            "BMI",
+            "MCI"
           ]
         },
         {
           "snp": "rs2819438",
           "gt_value": "CSF T-tau",
           "pred_terms": [
+            "AD",
             "ADNI",
-            "BMI",
-            "Alzheimers disease",
-            "MCI",
             "Alzheimer disease",
-            "AD"
+            "Alzheimers disease",
+            "BMI",
+            "MCI"
           ]
         },
         {
           "snp": "rs4921790",
           "gt_value": "Hippocampal volume (HPV)",
           "pred_terms": [
+            "AD",
             "ADNI",
-            "BMI",
-            "Alzheimers disease",
-            "MCI",
             "Alzheimer disease",
-            "AD"
+            "Alzheimers disease",
+            "BMI",
+            "MCI"
           ]
         },
         {
           "snp": "rs55644114",
           "gt_value": "CSF Ab1-42",
           "pred_terms": [
+            "AD",
             "ADNI",
-            "BMI",
-            "Alzheimers disease",
-            "MCI",
             "Alzheimer disease",
-            "AD"
+            "Alzheimers disease",
+            "BMI",
+            "MCI"
           ]
         },
         {
           "snp": "rs73705514",
           "gt_value": "Logic memory delayed (LMdT) recall test",
           "pred_terms": [
+            "AD",
             "ADNI",
-            "BMI",
-            "Alzheimers disease",
-            "MCI",
             "Alzheimer disease",
-            "AD"
+            "Alzheimers disease",
+            "BMI",
+            "MCI"
           ]
         },
         {
           "snp": "rs74442473",
           "gt_value": "CSF Ab1-42",
           "pred_terms": [
+            "AD",
             "ADNI",
-            "BMI",
-            "Alzheimers disease",
-            "MCI",
             "Alzheimer disease",
-            "AD"
+            "Alzheimers disease",
+            "BMI",
+            "MCI"
           ]
         }
       ]
@@ -254,8 +254,8 @@
           "snp": "rs10838725",
           "gt_value": "MYBPC3 (11725151_at) expression in blood",
           "pred_terms": [
-            "Alzheimers disease",
-            "AD"
+            "AD",
+            "Alzheimers disease"
           ]
         },
         {
@@ -267,64 +267,64 @@
           "snp": "rs111418223",
           "gt_value": "AGPAT1 (11751668_a_at) expression in blood",
           "pred_terms": [
-            "Alzheimers disease",
-            "AD"
+            "AD",
+            "Alzheimers disease"
           ]
         },
         {
           "snp": "rs111418223",
           "gt_value": "AGPAT1 (11750187_a_at)) expression in blood",
           "pred_terms": [
-            "Alzheimers disease",
-            "AD"
+            "AD",
+            "Alzheimers disease"
           ]
         },
         {
           "snp": "rs111418223",
           "gt_value": "AGPAT1 (11730933_a_at) expression in blood",
           "pred_terms": [
-            "Alzheimers disease",
-            "AD"
+            "AD",
+            "Alzheimers disease"
           ]
         },
         {
           "snp": "rs11771145",
           "gt_value": "LOC154761 (11755327 s at) expression in blood",
           "pred_terms": [
-            "Alzheimers disease",
-            "AD"
+            "AD",
+            "Alzheimers disease"
           ]
         },
         {
           "snp": "rs1476679",
           "gt_value": "TRIM4 (11736388_a_at) expression in blood",
           "pred_terms": [
-            "Alzheimers disease",
-            "AD"
+            "AD",
+            "Alzheimers disease"
           ]
         },
         {
           "snp": "rs1476679",
           "gt_value": "GATS (11722909_a_at) expression in blood",
           "pred_terms": [
-            "Alzheimers disease",
-            "AD"
+            "AD",
+            "Alzheimers disease"
           ]
         },
         {
           "snp": "rs1476679",
           "gt_value": "PILRB (11730022_a_at) expression in blood",
           "pred_terms": [
-            "Alzheimers disease",
-            "AD"
+            "AD",
+            "Alzheimers disease"
           ]
         },
         {
           "snp": "rs1476679",
           "gt_value": "ZKSCAN1 (11760665_at) expression in blood",
           "pred_terms": [
-            "Alzheimers disease",
-            "AD"
+            "AD",
+            "Alzheimers disease"
           ]
         }
       ]

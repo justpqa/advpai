@@ -1,0 +1,4 @@
+P-value,Effect,AF,SNP,Chr,Position,RA1,RA2,Population,Stage,Imputation,Study type,Phenotype,Cohort
+6.2e-11,1.06,0.69,rs593742,15,58873555,,A,,Stage 1 + Stage 2 + Meta-analysis,HRC + 1000G + UK Biobank,GWAS,Alzheimers disease + Dementia + IGAP + UK Biobank + ADNI + AD,IGAP + UKBB + HRS
+3.2e-08,0.95,0.29,rs889555,16,30916129,,T,,Stage 1 + Stage 2 + Meta-analysis,HRC + 1000G + UK Biobank,GWAS,Alzheimers disease + Dementia + IGAP + UK Biobank + ADNI + AD,IGAP + UKBB + HRS
+5.4e-09,1.05,0.63,rs6504163,17,61545779,,T,,Stage 1 + Stage 2 + Meta-analysis,HRC + 1000G + UK Biobank,GWAS,Alzheimers disease + Dementia + IGAP + UK Biobank + ADNI + AD,IGAP + UKBB + HRS

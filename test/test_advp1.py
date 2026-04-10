@@ -19,7 +19,7 @@ from transformers import AutoModel, AutoTokenizer, PreTrainedModel, PreTrainedTo
 HARMONIZATION_TERM_MAP_PATH = "term_mapping_dict.json"
 HARMONIZATION_COL_THRESHOLD: dict = {
     "Population": 50.0,
-    "Cohort":     50.0,
+    "Cohort":     70.0,
     "Stage":      50.0,
     "Imputation": 50.0,
     "Study type": 50.0,

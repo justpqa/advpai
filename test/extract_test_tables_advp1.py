@@ -74,7 +74,7 @@ def safe_int(x) -> Optional[float]:
         return None
 
 def create_test_tables_from_advp():
-    advp1 = pd.read_csv("test_tables/advp.variant.records.hg38.tsv", sep = "\t")
+    advp1 = pd.read_csv("../test_tables/advp.variant.records.hg38.tsv", sep = "\t")
     advp1 = advp1.replace("NR", pd.NA)
 
     # modify column name of those used to test
@@ -100,10 +100,10 @@ def create_test_tables_from_advp():
         advp1_with_pmid = advp1[advp1["Pubmed ID"] == pmid]
         # sort by snp
         advp1_with_pmid = advp1_with_pmid.sort_values("SNP").reset_index().drop("index", axis = 1)
-        advp1_with_pmid.to_csv(f"test_tables/{pmid}_{pmcid}_old.csv", index = False)
+        advp1_with_pmid.to_csv(f"../test_tables/{pmid}_{pmcid}_old.csv", index = False)
 
 def create_test_tables_from_advp_v2():
-    advp1 = pd.read_csv("test_tables/ADVP_1026_v3p8_extracted.txt", sep = "\t", encoding="cp1252")
+    advp1 = pd.read_csv("../test_tables/ADVP_1026_v3p8_extracted.txt", sep = "\t", encoding="cp1252")
     advp1 = advp1.replace("NR", pd.NA)
     # modify column name of those used to test
     advp1 = advp1.rename({
@@ -130,11 +130,11 @@ def create_test_tables_from_advp_v2():
         advp1_with_pmid = advp1[advp1["Pubmed ID"] == pmid]
         # sort by snp
         advp1_with_pmid = advp1_with_pmid.sort_values("SNP").reset_index().drop("index", axis = 1)
-        advp1_with_pmid.to_csv(f"test_tables/{pmid}_{pmcid}.csv", index = False)
+        advp1_with_pmid.to_csv(f"../test_tables/{pmid}_{pmcid}.csv", index = False)
     
 def create_test_tables_from_advp_v3():
     # NOTE: unstable version of tables for testing, skip for now
-    advp1_1 = pd.read_csv("test_tables/advp.variant.records.hg38.tsv", sep = "\t")
+    advp1_1 = pd.read_csv("../test_tables/advp.variant.records.hg38.tsv", sep = "\t")
     advp1_1 = advp1_1.replace("NR", pd.NA)
     advp1_1 = advp1_1.rename({
         "Pubmed PMID": "Pubmed ID",
@@ -151,7 +151,7 @@ def create_test_tables_from_advp_v3():
     advp1_1["P-value"] = advp1_1["P-value"].apply(lambda x: safe_float(x))
     advp1_1["row_num"] = advp1_1.sort_values(["SNP", "P-value"]).groupby("SNP").cumcount() + 1
 
-    advp1_2 = pd.read_csv("test_tables/ADVP_1026_v3p8_extracted.txt", sep = "\t", encoding="cp1252")
+    advp1_2 = pd.read_csv("../test_tables/ADVP_1026_v3p8_extracted.txt", sep = "\t", encoding="cp1252")
     advp1_2 = advp1_2.replace("NR", pd.NA)
     # modify column name of those used to test
     advp1_2 = advp1_2.rename({
@@ -180,7 +180,7 @@ def create_test_tables_from_advp_v3():
         advp1_with_pmid = advp1_with_pmid_1.merge(advp1_with_pmid_2, how = "inner", on = ["Pubmed ID", "SNP", "P-value", "row_num"])
         # sort by snp
         advp1_with_pmid = advp1_with_pmid.sort_values("SNP").reset_index().drop("index", axis = 1)
-        advp1_with_pmid.to_csv(f"test_tables/{pmid}_{pmcid}.csv", index = False)
+        advp1_with_pmid.to_csv(f"../test_tables/{pmid}_{pmcid}.csv", index = False)
 
 
 if __name__ == "__main__":

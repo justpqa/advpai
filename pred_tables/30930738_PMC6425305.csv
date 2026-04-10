@@ -1,0 +1,13 @@
+P-value,Effect,AF,SNP,Chr,Position,RA1,RA2,P-value notes,Effect notes,Population,Stage,Imputation,Study type,Phenotype,Cohort
+6.68e-05,0.0302,,rs10792421,,63605177,,G/A,P-value(AD),conjFDR(AD&BIP),European ancestry,Stage 1 + Stage 2,1000 Genomes (1000G),,AD + Bipolar disorder + Alzheimer disease,HB + ADGC + IGAP + CHARGE + PGC2-BIP
+6.68e-05,,,rs10792421,,63605177,,G/A,P-value(AD),Direction of effect in AD/BIP,European ancestry,Stage 1 + Stage 2,1000 Genomes (1000G),,AD + Bipolar disorder + Alzheimer disease,HB + ADGC + IGAP + CHARGE + PGC2-BIP
+1.35e-05,0.0218,,rs11649476,,70736752,,T/C,P-value(AD),conjFDR(AD&BIP),European ancestry,Stage 1 + Stage 2,1000 Genomes (1000G),,AD + Bipolar disorder + Alzheimer disease,HB + ADGC + IGAP + CHARGE + PGC2-BIP
+1.35e-05,,,rs11649476,,70736752,,T/C,P-value(AD),Direction of effect in AD/BIP,European ancestry,Stage 1 + Stage 2,1000 Genomes (1000G),,AD + Bipolar disorder + Alzheimer disease,HB + ADGC + IGAP + CHARGE + PGC2-BIP
+1.35e-05,0.0218,,rs11649476,,70736752,,T/C,P-value(AD),conjFDR(AD&BIP),European ancestry,Stage 1 + Stage 2,1000 Genomes (1000G),,AD + Bipolar disorder + Alzheimer disease,HB + ADGC + IGAP + CHARGE + PGC2-BIP
+1.35e-05,,,rs11649476,,70736752,,T/C,P-value(AD),Direction of effect in AD/BIP,European ancestry,Stage 1 + Stage 2,1000 Genomes (1000G),,AD + Bipolar disorder + Alzheimer disease,HB + ADGC + IGAP + CHARGE + PGC2-BIP
+2.16e-05,0.0302,,rs10792421,,63605177,,G/A,P-value(BIP),conjFDR(AD&BIP),European ancestry,Stage 1 + Stage 2,1000 Genomes (1000G),,AD + Bipolar disorder + Alzheimer disease,HB + ADGC + IGAP + CHARGE + PGC2-BIP
+2.16e-05,,,rs10792421,,63605177,,G/A,P-value(BIP),Direction of effect in AD/BIP,European ancestry,Stage 1 + Stage 2,1000 Genomes (1000G),,AD + Bipolar disorder + Alzheimer disease,HB + ADGC + IGAP + CHARGE + PGC2-BIP
+2.98e-05,0.0218,,rs11649476,,70736752,,T/C,P-value(BIP),conjFDR(AD&BIP),European ancestry,Stage 1 + Stage 2,1000 Genomes (1000G),,AD + Bipolar disorder + Alzheimer disease,HB + ADGC + IGAP + CHARGE + PGC2-BIP
+2.98e-05,,,rs11649476,,70736752,,T/C,P-value(BIP),Direction of effect in AD/BIP,European ancestry,Stage 1 + Stage 2,1000 Genomes (1000G),,AD + Bipolar disorder + Alzheimer disease,HB + ADGC + IGAP + CHARGE + PGC2-BIP
+2.98e-05,0.0218,,rs11649476,,70736752,,T/C,P-value(BIP),conjFDR(AD&BIP),European ancestry,Stage 1 + Stage 2,1000 Genomes (1000G),,AD + Bipolar disorder + Alzheimer disease,HB + ADGC + IGAP + CHARGE + PGC2-BIP
+2.98e-05,,,rs11649476,,70736752,,T/C,P-value(BIP),Direction of effect in AD/BIP,European ancestry,Stage 1 + Stage 2,1000 Genomes (1000G),,AD + Bipolar disorder + Alzheimer disease,HB + ADGC + IGAP + CHARGE + PGC2-BIP
