@@ -8,10 +8,6 @@ from transformers import PreTrainedModel, PreTrainedTokenizer
 """
 This files is for general multi-purpose utils function
 """
-
-def combine_possible_info(lst: List[str]):
-    return " + ".join([x for x in list(set(lst)) if len(x) > 0])
-
 # extra func to convert to float
 def safe_float(x) -> Optional[float]:
     try:
