@@ -79,7 +79,8 @@
     "non-european ancestry": "Non-European ancestry",
     "non-european": "Non-European ancestry",
     "global: european ancestry population from the 1000 genomes project": "European",
-    "global: european ancestry": "European"
+    "global: european ancestry": "European",
+    "african americans": "African American"
   },
   "Cohort": {
     "adgc (alzheimer disease genetics consortium)": "ADGC",
@@ -157,7 +158,18 @@
     "nia load": "NIA-LOAD",
     "metastroke": "METASTROKE",
     "pgc2-alz": "PGC2-ALZ",
-    "hb": "HB"
+    "hb": "HB",
+    "knight-adrc": "Knight-ADRC",
+    "engage": "ENGAGE",
+    "giant": "GIANT",
+    "diagram": "DIAGRAM",
+    "magic": "MAGIC",
+    "ages+": "AGES+",
+    "cage": "CAGE",
+    "smart": "SMART",
+    "lbc1936": "LBC1936",
+    "korean genome and epidemiology study": "KoGES",
+    "koges": "KoGES"
   },
   "Stage": {
     "discovery": "Discovery",
@@ -198,7 +210,14 @@
     "phase 2": "Stage 2",
     "adgc combined phase 1 and 2": "Joint-analysis",
     "global: discovery": "Discovery",
-    "global: meta-analysis": "Meta-analysis"
+    "global: meta-analysis": "Meta-analysis",
+    "meta-analytic": "Meta-analysis",
+    "ifgc phase i": "Stage 1",
+    "ifgc phase ii": "Stage 2",
+    "discovery stage 1": "Stage 1",
+    "discovery stage 2": "Stage 2",
+    "discovery stage 3 a": "Stage 3A",
+    "discovery stage 3 b": "Stage 3B (Stage 2 + Stage 3A)"
   },
   "Imputation": {
     "imputed to 1000 genomes": "1000G",
@@ -264,7 +283,9 @@
     "1000g phase 3 (release oct 2014)": "1000G Phase 3",
     "1000 genomes phase 3 (release oct 2014)": "1000G Phase 3",
     "1000 genome phase 3 v5": "1000G Phase 3 v5",
-    "1000g phase 3 v5": "1000G Phase 3 v5"
+    "1000g phase 3 v5": "1000G Phase 3 v5",
+    "haplotype reference consortium": "HRC",
+    "uk10k": "UK10K"
   },
   "Study type": {
     "gwas": "SNP-based",
@@ -308,7 +329,8 @@
     "skat": "Gene-based",
     "skat-o": "Gene-based",
     "magma": "Gene-based",
-    "pascal": "Gene-based"
+    "pascal": "Gene-based",
+    "gwa": "SNP-based"
   },
   "Phenotype": {
     "alzheimer's disease": "AD",
@@ -445,6 +467,23 @@
     "body mass index": "Body-mass index (BMI)",
     "obesity": "Body-mass index (BMI)",
     "overweight": "Body-mass index (BMI)",
-    "cancer": "AD + Breast cancer + Lung Cancer"
+    "cancer": "AD + Breast cancer + Lung Cancer",
+    "parkinsons disease": "Parkinson's disease",
+    "hdl cholesterol": "High-density lipoprotein (HDL)",
+    "blood pressure": "Blood pressure",
+    "hypertension": "Hypertension",
+    "vascular dementia": "Vascular dementia",
+    "depression": "Depression",
+    "diabetes": "Type 2 diabetes (T2D)",
+    "breast overall": "Breast Cancer",
+    "breast er-negative": "Breast Cancer",
+    "ovarian": "Ovarian Cancer",
+    "ovarian cancer": "Ovarian Cancer",
+    "all colon": "Colon Cancer",
+    "colon cancer": "Colon Cancer",
+    "any cancer": "Cancer",
+    "prostate overall": "Prostate Cancer",
+    "prostate aggressive": "Prostate Cancer",
+    "prostate cancer": "Prostate Cancer"
   }
 }

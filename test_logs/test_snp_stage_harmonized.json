@@ -61,67 +61,6 @@
     }
   ],
   [
-    "30413934_PMC6358498.csv",
-    {
-      "coverage_pct": 17.5,
-      "threshold_pct": 50.0,
-      "covered_rows": 34,
-      "total_rows": 194,
-      "missed_examples": [
-        {
-          "snp": "rs1048365",
-          "gt_value": "Replication/Validation",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10906257",
-          "gt_value": "Joint-analysis",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10906257",
-          "gt_value": "Meta-analysis",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10906257",
-          "gt_value": "Replication/Validation",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10991386",
-          "gt_value": "Replication/Validation",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs11039131",
-          "gt_value": "Replication/Validation",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs11039131",
-          "gt_value": "Replication/Validation",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs11039131",
-          "gt_value": "Meta-analysis",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs11039131",
-          "gt_value": "Joint-analysis",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs11039297",
-          "gt_value": "Replication/Validation",
-          "pred_terms": []
-        }
-      ]
-    }
-  ],
-  [
     "30448613_PMC6331247.csv",
     {
       "coverage_pct": 0.0,
@@ -133,80 +72,120 @@
           "snp": "rs10838725",
           "gt_value": "Joint-analysis",
           "pred_terms": [
-            "discovery",
-            "replication"
+            "Meta-analysis",
+            "IGAP",
+            "Alzheimers Disease",
+            "ADSP",
+            "Eqtl",
+            "Discovery"
           ]
         },
         {
           "snp": "rs12453",
           "gt_value": "Joint-analysis",
           "pred_terms": [
-            "discovery",
-            "replication"
+            "Meta-analysis",
+            "IGAP",
+            "Alzheimers Disease",
+            "ADSP",
+            "Eqtl",
+            "Discovery"
           ]
         },
         {
           "snp": "rs12459419",
           "gt_value": "Joint-analysis",
           "pred_terms": [
-            "discovery",
-            "replication"
+            "Meta-analysis",
+            "IGAP",
+            "Alzheimers Disease",
+            "ADSP",
+            "Eqtl",
+            "Discovery"
           ]
         },
         {
           "snp": "rs1476679",
           "gt_value": "Joint-analysis",
           "pred_terms": [
-            "discovery",
-            "replication"
+            "Meta-analysis",
+            "IGAP",
+            "Alzheimers Disease",
+            "ADSP",
+            "Eqtl",
+            "Discovery"
           ]
         },
         {
           "snp": "rs1859788",
           "gt_value": "Joint-analysis",
           "pred_terms": [
-            "discovery",
-            "replication"
+            "Meta-analysis",
+            "IGAP",
+            "Alzheimers Disease",
+            "ADSP",
+            "Eqtl",
+            "Discovery"
           ]
         },
         {
           "snp": "rs2293576",
           "gt_value": "Joint-analysis",
           "pred_terms": [
-            "discovery",
-            "replication"
+            "Meta-analysis",
+            "IGAP",
+            "Alzheimers Disease",
+            "ADSP",
+            "Eqtl",
+            "Discovery"
           ]
         },
         {
           "snp": "rs2296160",
           "gt_value": "Joint-analysis",
           "pred_terms": [
-            "discovery",
-            "replication"
+            "Meta-analysis",
+            "IGAP",
+            "Alzheimers Disease",
+            "ADSP",
+            "Eqtl",
+            "Discovery"
           ]
         },
         {
           "snp": "rs2405442",
           "gt_value": "Joint-analysis",
           "pred_terms": [
-            "discovery",
-            "replication"
+            "Meta-analysis",
+            "IGAP",
+            "Alzheimers Disease",
+            "ADSP",
+            "Eqtl",
+            "Discovery"
           ]
         },
         {
           "snp": "rs3752246",
           "gt_value": "Joint-analysis",
           "pred_terms": [
-            "discovery",
-            "replication"
+            "Meta-analysis",
+            "IGAP",
+            "Alzheimers Disease",
+            "ADSP",
+            "Eqtl",
+            "Discovery"
           ]
         },
         {
           "snp": "rs3865444",
           "gt_value": "Joint-analysis",
           "pred_terms": [
-            "discovery",
-            "replication"
+            "Meta-analysis",
+            "IGAP",
+            "Alzheimers Disease",
+            "ADSP",
+            "Eqtl",
+            "Discovery"
           ]
         }
       ]
@@ -224,8 +203,8 @@
           "snp": "rs12378268",
           "gt_value": "Joint-analysis",
           "pred_terms": [
-            "Phase 1",
             "Phase 2",
+            "Phase 1",
             "Combined"
           ]
         },
@@ -233,8 +212,8 @@
           "snp": "rs12378268",
           "gt_value": "Joint-analysis",
           "pred_terms": [
-            "Phase 1",
             "Phase 2",
+            "Phase 1",
             "Combined"
           ]
         },
@@ -242,8 +221,8 @@
           "snp": "rs1834550",
           "gt_value": "Joint-analysis",
           "pred_terms": [
-            "Phase 1",
             "Phase 2",
+            "Phase 1",
             "Combined"
           ]
         },
@@ -251,8 +230,8 @@
           "snp": "rs1834550",
           "gt_value": "Joint-analysis",
           "pred_terms": [
-            "Phase 1",
             "Phase 2",
+            "Phase 1",
             "Combined"
           ]
         },
@@ -260,8 +239,8 @@
           "snp": "rs184909761",
           "gt_value": "Joint-analysis",
           "pred_terms": [
-            "Phase 1",
             "Phase 2",
+            "Phase 1",
             "Combined"
           ]
         },
@@ -269,8 +248,8 @@
           "snp": "rs184909761",
           "gt_value": "Joint-analysis",
           "pred_terms": [
-            "Phase 1",
             "Phase 2",
+            "Phase 1",
             "Combined"
           ]
         },
@@ -278,8 +257,8 @@
           "snp": "rs3818361",
           "gt_value": "Joint-analysis",
           "pred_terms": [
-            "Phase 1",
             "Phase 2",
+            "Phase 1",
             "Combined"
           ]
         },
@@ -287,8 +266,8 @@
           "snp": "rs3818361",
           "gt_value": "Joint-analysis",
           "pred_terms": [
-            "Phase 1",
             "Phase 2",
+            "Phase 1",
             "Combined"
           ]
         },
@@ -296,8 +275,8 @@
           "snp": "rs4277762",
           "gt_value": "Joint-analysis",
           "pred_terms": [
-            "Phase 1",
             "Phase 2",
+            "Phase 1",
             "Combined"
           ]
         },
@@ -305,8 +284,8 @@
           "snp": "rs4277762",
           "gt_value": "Joint-analysis",
           "pred_terms": [
-            "Phase 1",
             "Phase 2",
+            "Phase 1",
             "Combined"
           ]
         }

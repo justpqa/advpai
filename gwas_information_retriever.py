@@ -40,7 +40,7 @@ class AllowedTokensProcessorLlamaCpp:
     
 class GWASInformationRetriever:
     def __init__(self, referencing_col_df: pd.DataFrame, chroma_db_path: str = "./chroma_db", chroma_db_collection_name: str = "gwas_paper_collection", 
-                 embeddings_model_name: str = "NeuML/pubmedbert-base-embeddings", reranker_model_name: str = "jinaai/jina-reranker-v1-turbo-en",
+                 embeddings_model_name: str = "NeuML/pubmedbert-base-embeddings", reranker_model_name: str = "BAAI/bge-reranker-base",
                  llm_model_name: Optional[str] = "Qwen/Qwen2.5-1.5B-Instruct", llm_gguf_path: Optional[str] = "./qwen2.5-7b-instruct-q4/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
                  use_hf: bool = True, device: Optional[str] = None):
         # load ref col df
@@ -139,7 +139,7 @@ class GWASInformationRetriever:
 
         # NOTE: config for search and generate, add it as params later
         self.top_k = 20
-        self.top_k_rerank = 5
+        self.top_k_rerank = 10
         self.max_new_tokens = 1024
         self.similarity_score_threshold = 0.0
         self.temperature = 0
@@ -318,9 +318,9 @@ Output: """
                 continue
 
             # rerank
-            scores = self.reranker_model.predict([(query, d) for d in documents])
-            documents = [doc for _, doc in sorted(zip(scores, documents), key=lambda x: x[0], reverse=True)]
-            documents = documents[:self.top_k_rerank]
+            # scores = self.reranker_model.predict([(query, d) for d in documents])
+            # documents = [doc for _, doc in sorted(zip(scores, documents), key=lambda x: x[0], reverse=True)]
+            # documents = documents[:self.top_k_rerank]
 
             # extract a list of possible info from llm
             # full_query = f"What kind of {ref_col} is in the paper, given that {ref_col_context}"

@@ -1,0 +1,3 @@
+SNP,Chr. region,Position,Closest gene,Location relative to the closest gene,P -value . AD /,P -value . BIP /,conjFDR . AD & BIP /,Effective/ other allele,Direction of effect in AD/BIP
+rs10792421,11q13.1,63605177,MARK2,Upstream,6.68E-05,2.16E-05,3.02E-02,G/A,C / C
+rs11649476,16q22.2,70736752,VAC14,Intronic,1.35E-05,2.98E-05,2.18E-02,T/C,GLYPH<0> / C

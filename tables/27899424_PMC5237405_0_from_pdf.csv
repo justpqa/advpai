@@ -1,0 +1,10 @@
+SNP,Position,Chr,Location; nearest gene,Associated phenotype,Min Conj FDR,FTD p-value,Associated phenotype p-value,Direction of effect
+rs7664889,77 087 704,4,Intronic; SCARB2,PD,4.84E - 02,1.75E - 04,8.88E - 04,++++
+rs9268877,32 431 147,6,Intergenic; HLA-DRA,PD,4.84E - 02,1.04E - 10,7.41E - 04,++++
+rs676768,116 030 773,10,Intronic; VWA2,PD,4.27E - 02,3.12E - 04,6.14E - 04,++++
+rs10784359,40 445 750,12,Intronic; SLC2A13,PD,3.26E - 02,1.58E - 04,7.47E - 05,++++
+rs2893253,107 067 203,13,Intergenic; EFNB2,PD,3.55E - 02,2.02E - 04,1.11E - 04,++++
+rs199528,44 843 136,17,Intronic; WNT3,PD,1.80E - 02,4.09E - 05,9.82E - 16,++++
+rs1358071,43 803 189,17,Intronic; CRHR1,PD,2.02E - 02,4.96E - 05,7.76E - 15,++++
+rs12964543,56 543 095,18,Intronic; ZNF532,PD,2.73E - 02,1.12E - 04,3.08E - 04,++++
+rs405509,45 408 836,19,Intergenic; APOE,AD,5.22E - 03,1.25E - 05,6.16E - 70,++++

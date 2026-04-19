@@ -1,0 +1,4 @@
+SNP,Chr,Gene +,Function,CSF A β 42.Male β (SE),CSF A β 42.Male P,CSF A β 42.Female β (SE),CSF A β 42.Female P,CSF A β 42.Interaction β (SE),CSF A β 42.Interaction P
+rs13115400,4,LINC00290,Intergenic,0.01 (0.01),0.20,0.03 (0.01),3.97×10 -8,0.03 (0.01),0.002 *
+rs316341,6,SERPINB1,Intronic,-0.02 (0.01),0.009,- 0.03 (0.01),4.25×10 -8,-0.02 (0.01),0.04 *
+rs1393060,3,GMNC,Intergenic,0.02 (0.01),0.03,0.05 (0.01),4.57×10 -10,0.03 (0.01),0.004 *

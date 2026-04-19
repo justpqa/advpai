@@ -1,5 +1,51 @@
 [
   [
+    "28560309_PMC5440281.csv",
+    {
+      "coverage_pct": 0.0,
+      "threshold_pct": 50.0,
+      "covered_rows": 0,
+      "total_rows": 7,
+      "missed_examples": [
+        {
+          "snp": "None",
+          "gt_value": "1000G",
+          "pred_terms": []
+        },
+        {
+          "snp": "None",
+          "gt_value": "1000G",
+          "pred_terms": []
+        },
+        {
+          "snp": "None",
+          "gt_value": "1000G",
+          "pred_terms": []
+        },
+        {
+          "snp": "None",
+          "gt_value": "1000G",
+          "pred_terms": []
+        },
+        {
+          "snp": "None",
+          "gt_value": "1000G",
+          "pred_terms": []
+        },
+        {
+          "snp": "None",
+          "gt_value": "1000G",
+          "pred_terms": []
+        },
+        {
+          "snp": "None",
+          "gt_value": "1000G",
+          "pred_terms": []
+        }
+      ]
+    }
+  ],
+  [
     "29274321_PMC5938137.csv",
     {
       "coverage_pct": 0.0,
@@ -101,6 +147,67 @@
     }
   ],
   [
+    "29458411_PMC5819208.csv",
+    {
+      "coverage_pct": 0.0,
+      "threshold_pct": 50.0,
+      "covered_rows": 0,
+      "total_rows": 32,
+      "missed_examples": [
+        {
+          "snp": "rs34487851",
+          "gt_value": "1000G",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs34487851",
+          "gt_value": "1000G",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs34487851",
+          "gt_value": "1000G",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs34487851",
+          "gt_value": "1000G",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs34487851",
+          "gt_value": "1000G",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs34487851",
+          "gt_value": "1000G",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs34487851",
+          "gt_value": "1000G",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs79524815",
+          "gt_value": "1000G",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs79524815",
+          "gt_value": "1000G",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs79524815",
+          "gt_value": "1000G",
+          "pred_terms": []
+        }
+      ]
+    }
+  ],
+  [
     "29752348_PMC5976227.csv",
     {
       "coverage_pct": 0.0,
@@ -127,148 +234,6 @@
           "snp": "rs67827860",
           "gt_value": "HRC",
           "pred_terms": []
-        }
-      ]
-    }
-  ],
-  [
-    "30413934_PMC6358498.csv",
-    {
-      "coverage_pct": 0.0,
-      "threshold_pct": 50.0,
-      "covered_rows": 0,
-      "total_rows": 90,
-      "missed_examples": [
-        {
-          "snp": "rs1048365",
-          "gt_value": "1000G Phase 3 (release Oct 2014)",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10906257",
-          "gt_value": "1000G Phase 3 (release Oct 2014)",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10991386",
-          "gt_value": "1000G Phase 3 (release Oct 2014)",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs11039131",
-          "gt_value": "1000G Phase 3 (release Oct 2014)",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs11039297",
-          "gt_value": "1000G Phase 3 (release Oct 2014)",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs11144711",
-          "gt_value": "1000G Phase 3 (release Oct 2014)",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs114465688",
-          "gt_value": "1000G Phase 3 (release Oct 2014)",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs115674098",
-          "gt_value": "1000G Phase 3 (release Oct 2014)",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs115785781",
-          "gt_value": "1000G Phase 3 (release Oct 2014)",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs115795926",
-          "gt_value": "1000G Phase 3 (release Oct 2014)",
-          "pred_terms": []
-        }
-      ]
-    }
-  ],
-  [
-    "30617256_PMC6836675.csv",
-    {
-      "coverage_pct": 0.0,
-      "threshold_pct": 50.0,
-      "covered_rows": 0,
-      "total_rows": 90,
-      "missed_examples": [
-        {
-          "snp": "rs10792832",
-          "gt_value": "Imputed",
-          "pred_terms": [
-            "UK Biobank"
-          ]
-        },
-        {
-          "snp": "rs10933431",
-          "gt_value": "Imputed",
-          "pred_terms": [
-            "UK Biobank"
-          ]
-        },
-        {
-          "snp": "rs10933431",
-          "gt_value": "Imputed",
-          "pred_terms": [
-            "UK Biobank"
-          ]
-        },
-        {
-          "snp": "rs10933431",
-          "gt_value": "Imputed",
-          "pred_terms": [
-            "UK Biobank"
-          ]
-        },
-        {
-          "snp": "rs111278892",
-          "gt_value": "Imputed",
-          "pred_terms": [
-            "UK Biobank"
-          ]
-        },
-        {
-          "snp": "rs11218343",
-          "gt_value": "Imputed",
-          "pred_terms": [
-            "UK Biobank"
-          ]
-        },
-        {
-          "snp": "rs11218343",
-          "gt_value": "Imputed",
-          "pred_terms": [
-            "UK Biobank"
-          ]
-        },
-        {
-          "snp": "rs11218343",
-          "gt_value": "Imputed",
-          "pred_terms": [
-            "UK Biobank"
-          ]
-        },
-        {
-          "snp": "rs11257238",
-          "gt_value": "Imputed",
-          "pred_terms": [
-            "UK Biobank"
-          ]
-        },
-        {
-          "snp": "rs11257238",
-          "gt_value": "Imputed",
-          "pred_terms": [
-            "UK Biobank"
-          ]
         }
       ]
     }
@@ -329,6 +294,67 @@
         {
           "snp": "rs12373108",
           "gt_value": "1000G Phase 3 (release Oct 2014)",
+          "pred_terms": []
+        }
+      ]
+    }
+  ],
+  [
+    "30805717_PMC7193309.csv",
+    {
+      "coverage_pct": 0.0,
+      "threshold_pct": 50.0,
+      "covered_rows": 0,
+      "total_rows": 14,
+      "missed_examples": [
+        {
+          "snp": "rs10501320",
+          "gt_value": "1000G",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs10501320",
+          "gt_value": "HapMap2",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12805422",
+          "gt_value": "1000G",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12805422",
+          "gt_value": "HapMap2",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs1483121",
+          "gt_value": "1000G",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs1483121",
+          "gt_value": "HapMap2",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs17747324",
+          "gt_value": "1000G",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs17747324",
+          "gt_value": "HapMap2",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs2279590",
+          "gt_value": "HapMap2",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs2279590",
+          "gt_value": "1000G",
           "pred_terms": []
         }
       ]
