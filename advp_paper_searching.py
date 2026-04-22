@@ -17,18 +17,58 @@ load_dotenv()
 ENTREZ_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
 ENTREZ_ELINK_URL = f"{ENTREZ_URL}/elink.fcgi"
 NCBI_IDCONV_URL = "https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/"
-GWAS_MESH_FILTER = '"Genome-Wide Association Study"[MeSH] OR "Genetic Association Studies"[MeSH] OR Polymorphism, Single Nucleotide[MeSH]'
-GWAS_TIAB_FILTER = '(GWAS[tiab] OR "genome-wide association"[tiab] OR "polygenic risk"[tiab] OR "polygenic score"[tiab] OR "genetic variant"[tiab] OR "genetic risk"[tiab] OR "SNP"[tiab] OR "single nucleotide polymorphism"[tiab] OR "risk loci"[tiab] OR "genetic association"[tiab] OR "meta-analysis"[tiab] OR "Mendelian randomization"[tiab] OR "whole genome sequencing"[tiab] OR "whole exome sequencing"[tiab] OR "copy number variant"[tiab] OR "heritability"[tiab] OR "gene expression"[tiab] OR "transcriptome"[tiab] OR "eQTL"[tiab] OR "epigenome"[tiab] OR "DNA methylation"[tiab])'
+
+# GWAS term
+# MeSH
+GWAS_MESH_TERMS = [
+    'Genome-Wide Association Study', 'Genetic Association Studies', 'Polymorphism, Single Nucleotide'
+]
+GWAS_MESH_FILTER = " OR ".join([term + "[MeSH]" for term in GWAS_MESH_TERMS])
+# title and abstract
+GWAS_TIAB_TERMS = [
+    'GWAS', 'genome-wide association', "polygenic risk", "polygenic score", "genetic variant",
+    "genetic risk", "SNP", "single nucleotide polymorphism", "risk loci", "genetic association",
+    "meta-analysis", "Mendelian randomization", "whole genome sequencing", "whole exome sequencing",
+    "copy number variant", "heritability", "gene expression", "transcriptome", "eQTL",
+    "epigenome", "DNA methylation", "Genetic Predisposition to Disease", "Genetic Loci", 
+    "Aged", "Humans", "Risk Factors"
+]
+GWAS_TIAB_FILTER = " OR ".join([term + "[tiab]" for term in GWAS_TIAB_TERMS])
+# final filter
 GWAS_FILTER = f'({GWAS_MESH_FILTER}) AND ({GWAS_TIAB_FILTER})'
-AD_MESH_FILTER = '"Alzheimer Disease"[MeSH]'
-AD_TIAB_FILTER = '"Alzheimer"[tiab] OR "dementia"[tiab] OR "cognitive impairment"[tiab] OR "neurodegeneration"[tiab]'
+
+# Alzheimer's Disease term
+# MeSH
+AD_MESH_TERMS = [
+    "Alzheimer Disease/genetics", "Frontotemporal Dementia/genetics", "Parkinson Disease/genetics",
+    "Amyotrophic Lateral Sclerosis/genetics", "tau Proteins/genetics", "Apolipoproteins E/genetics",
+    "Microtubule-Associated Protein Tau", "Progressive Supranuclear Palsy/genetics",
+    "Corticobasal Degeneration/genetics", "Dementia, Vascular/genetics"
+]
+AD_MESH_FILTER = " OR ".join([term + "[MeSH]" for term in AD_MESH_TERMS])
+# title and abstract
+AD_TIAB_TERMS = [
+    "Alzheimer", "dementia", "cognitive impairment", "neurodegeneration", "Frontotemporal dementia", 
+    "Parkinson Disease", "Amyotrophic Lateral Sclerosis", "Progressive Supranuclear Palsy", 
+    "Corticobasal Degeneration", "Vascular dementia"
+]
+AD_TIAB_FILTER = " OR ".join([term + "[tiab]" for term in AD_TIAB_TERMS])
+# final filter
 AD_FILTER = f'({AD_MESH_FILTER}) AND ({AD_TIAB_FILTER})'
+
+# article filter
 ARTICLE_FILTER = '(Journal Article[pt])'
 # AND (Meta-Analysis[pt] OR Comparative Study[pt] OR Multicenter Study[pt] OR Evaluation Study[pt] OR Validation Study[pt])
+
+# free text filter
 FREE_TEXT_FILTER = '(free full text[sb])'
-# filter unnecessary pmids
+
+# known pmids
 ADVP1 = pd.read_csv("test_tables/ADVP_1026_v3p8_extracted.txt", sep = "\t", encoding="cp1252")
 ADVP1_ALL_PMID = ADVP1["Pubmed ID"].apply(lambda x: str(int(x)) if not pd.isna(x) else "").unique()
+
+# list of mesh terms used
+ALL_MESH_TERMS = GWAS_MESH_TERMS + AD_MESH_TERMS
 
 def make_session():
     s = requests.Session()
@@ -107,7 +147,7 @@ def verify_paper_with_gwas_table(pmcid: str) -> bool:
                         if item.get("infons", "").get("type", "").lower() == "table" and "text" in item:
                             table_str = item["text"]
                             snp_filter = re.search(r"rs\d+", table_str) is not None
-                            chr_filter = (re.search(r"[Cc][Hh][Rr]", table_str) is not None) and (re.search('(?<![A-Za-z.])\b\d+\b(?![A-Za-z.])', table_str) is not None)
+                            chr_filter = (re.search(r"[Cc][Hh][Rr]", table_str) is not None) and (re.search('(?<![A-Za-z.])\d+(?![A-Za-z.])', table_str) is not None)
                             p_value_filter = (re.search(r"\d+\.\d+", table_str) is not None) and (re.search(r"(?<![A-Za-z])[Pp](?![A-Za-z])", table_str) is not None)
                             if (snp_filter or chr_filter) and p_value_filter:
                                 has_gwas_table = True
@@ -187,24 +227,46 @@ def extract_papers_by_year(year: int) -> List[dict]:
         for article in ET.fromstring(r.content).findall(".//PubmedArticle"):
             art = article.find(".//Article")
             title_el = art.find(".//ArticleTitle")
+            # get mesh terms and all qualifiers
+            mesh_terms = []
+            for mh in article.findall(".//MedlineCitation/MeshHeadingList/MeshHeading"):
+                descriptor_el = mh.find("DescriptorName")
+                if descriptor_el is None:
+                    continue
+                descriptor = "".join(descriptor_el.itertext()).strip()
+                qualifiers = [
+                    "".join(q.itertext()).strip()
+                    for q in mh.findall("QualifierName")
+                ]
+                if qualifiers:
+                    for q in qualifiers:
+                        mesh_terms.append(f"{descriptor}/{q}")
+                mesh_terms.append(descriptor) # also keep this for those that we filter without qualifiers
+            # filter for only those in the the filter
+            mesh_terms_used = [term for term in mesh_terms if term in ALL_MESH_TERMS]
+            try:
+                year = int((
+                        art.findtext(".//Journal/JournalIssue/PubDate/Year")
+                        or art.findtext(".//Journal/JournalIssue/PubDate/MedlineDate", "")[:4]
+                ))
+            except:
+                year = None
             papers.append({
                 "pmid": article.findtext(".//MedlineCitation/PMID", ""),
                 "pmcid": pmids_to_pmcids[article.findtext(".//MedlineCitation/PMID", "")],
+                "year": year,
                 "title": "".join(title_el.itertext()) if title_el is not None else "",
                 "abstract": " ".join(
                     "".join(el.itertext())
                     for el in art.findall(".//AbstractText")
                 ),
                 "journal": art.findtext(".//Journal/Title", ""),
-                "year": (
-                    art.findtext(".//Journal/JournalIssue/PubDate/Year")
-                    or art.findtext(".//Journal/JournalIssue/PubDate/MedlineDate", "")[:4]
-                ),
                 "authors": [
                     f"{a.findtext('LastName', '')}, {a.findtext('ForeName', '')}".strip(", ")
                     for a in art.findall(".//AuthorList/Author")
                     if a.findtext("LastName")
                 ],
+                "MeSH terms used": mesh_terms_used
             })
 
         time.sleep(2)
@@ -221,4 +283,5 @@ if __name__ == "__main__":
         print()
 
     papers = pd.DataFrame(papers)
+    papers = papers.sort_values(["year", "pmid"]).reset_index().drop("index", axis = 1)
     papers.to_csv("new_gwas_ad_paper.csv", index = False)
