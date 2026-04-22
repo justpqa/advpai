@@ -16,10 +16,6 @@
     "Table 29107063_PMC5920782.csv (0.0) does not contain right set of Effect for SNP ['rs115881343', 'rs12721046', 'rs157580', 'rs157582', 'rs2075650', 'rs283815', 'rs405509', 'rs439401', 'rs6859', 'rs71352238', 'rs76366838', 'rs769449', 'rs769450', 'rs8106922']"
   ],
   [
-    "29458411_PMC5819208.csv",
-    "Table 29458411_PMC5819208.csv (0.0) does not contain right set of Effect for SNP ['rs34487851', 'rs79524815']"
-  ],
-  [
     "31426376_PMC6723529.csv",
     "Table 31426376_PMC6723529.csv (0.0) does not contain right set of Effect for SNP ['APOE-e3e4', 'APOE-e4e4']"
   ],
@@ -28,12 +24,12 @@
     "Table 30636644_PMC6330399.csv (49.09) does not contain right set of Effect for SNP ['rs10794342', 'rs10947230', 'rs10953322', 'rs1172922', 'rs11969759', 'rs12386284', 'rs1497197', 'rs17675640', 'rs1783012', 'rs1783013', 'rs2226326', 'rs2282079', 'rs2298369', 'rs2829803', 'rs2829832', 'rs35242772', 'rs4961664', 'rs6838792', 'rs726411', 'rs73156187', 'rs76252969', 'rs7774197', 'rs8070114', 'rs895681', 'rs926963', 'rs9555561', 'rs9862849', 'rs9918162']"
   ],
   [
-    "30617256_PMC6836675.csv",
-    "Table 30617256_PMC6836675.csv (68.75) does not contain right set of Effect for SNP ['rs10933431', 'rs11218343', 'rs12590654', 'rs1859788', 'rs2081545', 'rs2632516', 'rs3865444', 'rs4236673', 'rs442495', 'rs59735493', 'rs6014724', 'rs6931277', 'rs7810606', 'rs8093731', 'rs867611']"
+    "29967939_PMC6280657.csv",
+    "Table 29967939_PMC6280657.csv (33.33) does not contain right set of Effect for SNP ['rs1393060', 'rs185031519', 'rs316341', 'rs514716', 'rs769449', 'rs9527039']"
   ],
   [
     "30448613_PMC6331247.csv",
-    "Table 30448613_PMC6331247.csv (52.17) does not contain right set of Effect for SNP ['rs10838725', 'rs10948363', 'rs111418223', 'rs11771145', 'rs1476679', 'rs28834970', 'rs3865444', 'rs4147929', 'rs6733839', 'rs8093731', 'rs983392']"
+    "Table 30448613_PMC6331247.csv (69.57) does not contain right set of Effect for SNP ['rs111418223', 'rs11771145', 'rs1476679', 'rs28834970', 'rs3865444', 'rs6733839', 'rs983392']"
   ],
   [
     "28247064_PMC5613285.csv",
@@ -42,9 +38,5 @@
   [
     "29752348_PMC5976227.csv",
     "Table 29752348_PMC5976227.csv (0.0) does not contain right set of Effect for SNP ['rs13164785', 'rs146896516', 'rs3744020', 'rs67827860']"
-  ],
-  [
-    "30820047_PMC6463297.csv",
-    "Table 30820047_PMC6463297.csv (61.76) does not contain right set of Effect for SNP ['rs10467994', 'rs114812713', 'rs138190086', 'rs2632516', 'rs2830500', 'rs35868327', 'rs4735340', 'rs593742', 'rs62039712', 'rs71618613', 'rs7185636', 'rs7295246', 'rs7920721']"
   ]
 ]

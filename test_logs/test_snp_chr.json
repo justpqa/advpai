@@ -1,23 +1,15 @@
 [
   [
     "30413934_PMC6358498.csv",
-    "Table 30413934_PMC6358498.csv (55.56) does not contain right set of Chr for SNP ['rs10906257', 'rs11039131', 'rs12056620', 'rs12188460', 'rs1263170', 'rs12784561', 'rs13114818', 'rs1534576', 'rs1635142', 'rs16953089', 'rs17125924', 'rs2071305', 'rs2176298', 'rs2298428', 'rs246174', 'rs2597283', 'rs28670348', 'rs3131575', 'rs35991721', 'rs3844143', 'rs4821116', 'rs4912851', 'rs4985556', 'rs4985557', 'rs536810', 'rs55819441', 'rs61963560', 'rs6733839', 'rs6852075', 'rs7014168', 'rs702483', 'rs72796734', 'rs7421448', 'rs78363635', 'rs7981577', 'rs8070572', 'rs8071250', 'rs858952', 'rs9931998', 'rs9941245']"
+    "Table 30413934_PMC6358498.csv (97.78) does not contain right set of Chr for SNP ['rs10906257', 'rs11039131']"
   ],
   [
     "30651383_PMC6369905.csv",
     "Table 30651383_PMC6369905.csv (0.0) does not contain right set of Chr for SNP ['rs12373108', 'rs12583648', 'rs39938', 'rs74587705', 'rs75889566', 'rs9371194']"
   ],
   [
-    "30805717_PMC7193309.csv",
-    "Table 30805717_PMC7193309.csv (0.0) does not contain right set of Chr for SNP ['rs10501320', 'rs12805422', 'rs1483121', 'rs17747324', 'rs2279590', 'rs4803750', 'rs6656401']"
-  ],
-  [
     "29107063_PMC5920782.csv",
     "Table 29107063_PMC5920782.csv (0.0) does not contain right set of Chr for SNP ['rs115881343', 'rs12721046', 'rs157580', 'rs157582', 'rs2075650', 'rs283815', 'rs405509', 'rs439401', 'rs6859', 'rs71352238', 'rs76366838', 'rs769449', 'rs769450', 'rs8106922']"
-  ],
-  [
-    "29458411_PMC5819208.csv",
-    "Table 29458411_PMC5819208.csv (0.0) does not contain right set of Chr for SNP ['rs34487851', 'rs79524815']"
   ],
   [
     "30636644_PMC6330399.csv",
@@ -29,14 +21,10 @@
   ],
   [
     "27899424_PMC5237405.csv",
-    "Table 27899424_PMC5237405.csv (85.71) does not contain right set of Chr for SNP ['rs12964543', 'rs1358071']"
+    "Table 27899424_PMC5237405.csv (92.86) does not contain right set of Chr for SNP ['rs12964543']"
   ],
   [
     "29752348_PMC5976227.csv",
     "Table 29752348_PMC5976227.csv (0.0) does not contain right set of Chr for SNP ['rs13164785', 'rs146896516', 'rs3744020', 'rs67827860']"
-  ],
-  [
-    "30820047_PMC6463297.csv",
-    "Table 30820047_PMC6463297.csv (67.65) does not contain right set of Chr for SNP ['rs10467994', 'rs114812713', 'rs2632516', 'rs2830500', 'rs35868327', 'rs4735340', 'rs593742', 'rs62039712', 'rs71618613', 'rs7185636', 'rs7295246']"
   ]
 ]

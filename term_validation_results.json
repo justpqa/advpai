@@ -20,47 +20,58 @@
         "unknown_terms": []
       },
       "Stage": {
-        "valid_count": 5,
+        "valid_count": 4,
         "unknown_count": 0,
         "valid_pct": 100.0,
         "valid_terms": [
+          "combined",
           "discovery",
-          "ifgc phase i",
-          "ifgc phase ii",
-          "meta-analysis",
+          "meta",
           "replication"
         ],
         "unknown_terms": []
       },
       "Imputation": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
-      },
-      "Study type": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
-      },
-      "Phenotype": {
-        "valid_count": 6,
-        "unknown_count": 1,
-        "valid_pct": 85.7,
+        "valid_count": 4,
+        "unknown_count": 7,
+        "valid_pct": 36.4,
         "valid_terms": [
-          "AD",
-          "Alzheimer disease",
-          "Alzheimers disease",
-          "FTD",
-          "PD",
-          "Parkinsons disease"
+          "1000 Genomes (1000G)",
+          "Haplotype Reference Consortium (HRC)",
+          "TOPMed",
+          "UK10K"
         ],
         "unknown_terms": [
-          "ADNI"
+          "IFGC",
+          "IFGC phase i",
+          "IFGC phase ii",
+          "International FTD Genomics Consortium",
+          "International Genomics of AD Project",
+          "International PD Genetics Consortium",
+          "ifgc"
         ]
+      },
+      "Study type": {
+        "valid_count": 4,
+        "unknown_count": 2,
+        "valid_pct": 66.7,
+        "valid_terms": [
+          "Array genotyping",
+          "GWAS",
+          "Whole Exome Sequencing (WES)",
+          "Whole Genome Sequencing (WGS)"
+        ],
+        "unknown_terms": [
+          "International Genomics of AD Project (IGAP)",
+          "International Parkinson Disease Genomics Consortium (IPDGC)"
+        ]
+      },
+      "Phenotype": {
+        "valid_count": 0,
+        "unknown_count": 0,
+        "valid_pct": null,
+        "valid_terms": [],
+        "unknown_terms": []
       }
     }
   },
@@ -68,10 +79,14 @@
     "file": "28247064_PMC5613285.csv",
     "cols": {
       "Population": {
-        "valid_count": 0,
+        "valid_count": 3,
         "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
+        "valid_pct": 100.0,
+        "valid_terms": [
+          "African American (AA)",
+          "East Asian (EAS)",
+          "European (EUR)"
+        ],
         "unknown_terms": []
       },
       "Cohort": {
@@ -93,41 +108,44 @@
         "unknown_terms": []
       },
       "Stage": {
-        "valid_count": 2,
+        "valid_count": 4,
         "unknown_count": 0,
         "valid_pct": 100.0,
         "valid_terms": [
-          "meta-analyses",
-          "meta-analysis"
+          "combined",
+          "discovery",
+          "meta-analysis",
+          "replication"
         ],
         "unknown_terms": []
       },
       "Imputation": {
-        "valid_count": 3,
+        "valid_count": 4,
         "unknown_count": 0,
         "valid_pct": 100.0,
         "valid_terms": [
-          "1000G",
+          "1000 Genomes (1000G)",
           "Haplotype Reference Consortium (HRC)",
-          "impute2"
+          "TOPMed",
+          "UK10K"
         ],
         "unknown_terms": []
       },
       "Study type": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
-      },
-      "Phenotype": {
         "valid_count": 2,
         "unknown_count": 0,
         "valid_pct": 100.0,
         "valid_terms": [
-          "AD",
-          "Alzheimer's disease"
+          "Genotyping",
+          "Sequencing"
         ],
+        "unknown_terms": []
+      },
+      "Phenotype": {
+        "valid_count": 0,
+        "unknown_count": 0,
+        "valid_pct": null,
+        "valid_terms": [],
         "unknown_terms": []
       }
     }
@@ -136,10 +154,14 @@
     "file": "28560309_PMC5440281.csv",
     "cols": {
       "Population": {
-        "valid_count": 0,
+        "valid_count": 3,
         "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
+        "valid_pct": 100.0,
+        "valid_terms": [
+          "African American (AA)",
+          "Asian (EAS)",
+          "White"
+        ],
         "unknown_terms": []
       },
       "Cohort": {
@@ -152,36 +174,52 @@
         "unknown_terms": []
       },
       "Stage": {
-        "valid_count": 0,
+        "valid_count": 3,
         "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
+        "valid_pct": 100.0,
+        "valid_terms": [
+          "discovery",
+          "meta-analysis",
+          "replication"
+        ],
         "unknown_terms": []
       },
       "Imputation": {
-        "valid_count": 1,
+        "valid_count": 4,
+        "unknown_count": 6,
+        "valid_pct": 40.0,
+        "valid_terms": [
+          "1000 Genomes (1000G)",
+          "Haplotype Reference Consortium (HRC)",
+          "TOPMed",
+          "UK10K"
+        ],
+        "unknown_terms": [
+          "ADNI",
+          "ADNI-1",
+          "ADNI-2",
+          "ADNI-go",
+          "PDS5B",
+          "Womens Health Initiative"
+        ]
+      },
+      "Study type": {
+        "valid_count": 4,
         "unknown_count": 0,
         "valid_pct": 100.0,
         "valid_terms": [
-          "1000 Genomes"
+          "Array genotyping",
+          "GWAS",
+          "WGS",
+          "Whole Exome Sequencing (WES)"
         ],
         "unknown_terms": []
       },
-      "Study type": {
+      "Phenotype": {
         "valid_count": 0,
         "unknown_count": 0,
         "valid_pct": null,
         "valid_terms": [],
-        "unknown_terms": []
-      },
-      "Phenotype": {
-        "valid_count": 2,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "AD",
-          "Alzheimer disease"
-        ],
         "unknown_terms": []
       }
     }
@@ -190,77 +228,22 @@
     "file": "28780673_PMC5693762.csv",
     "cols": {
       "Population": {
-        "valid_count": 1,
-        "unknown_count": 1,
-        "valid_pct": 50.0,
-        "valid_terms": [
-          "EUR"
-        ],
-        "unknown_terms": [
-          "IGAP"
-        ]
+        "note": "column 'Population' missing"
       },
       "Cohort": {
-        "valid_count": 8,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "ADGC",
-          "ADNI",
-          "CHARGE",
-          "EADI",
-          "FHS",
-          "GAME-ON",
-          "GERAD",
-          "IGAP"
-        ],
-        "unknown_terms": []
+        "note": "column 'Cohort' missing"
       },
       "Stage": {
-        "valid_count": 3,
-        "unknown_count": 1,
-        "valid_pct": 75.0,
-        "valid_terms": [
-          "Meta-analysis",
-          "Stage 1",
-          "Stage 2"
-        ],
-        "unknown_terms": [
-          "IGAP"
-        ]
+        "note": "column 'Stage' missing"
       },
       "Imputation": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Imputation' missing"
       },
       "Study type": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Study type' missing"
       },
       "Phenotype": {
-        "valid_count": 8,
-        "unknown_count": 2,
-        "valid_pct": 80.0,
-        "valid_terms": [
-          "AD",
-          "All colon",
-          "Alzheimers disease",
-          "Any cancer",
-          "Breast er-negative",
-          "Breast overall",
-          "Cancer",
-          "Ovarian"
-        ],
-        "unknown_terms": [
-          "Prostate aggressive",
-          "Prostate overall"
-        ]
+        "note": "column 'Phenotype' missing"
       }
     }
   },
@@ -268,13 +251,14 @@
     "file": "29107063_PMC5920782.csv",
     "cols": {
       "Population": {
-        "valid_count": 3,
+        "valid_count": 4,
         "unknown_count": 0,
         "valid_pct": 100.0,
         "valid_terms": [
-          "african american",
-          "hispanic",
-          "white"
+          "African American (AA)",
+          "Asian (EAS)",
+          "Hispanic (HIS)",
+          "White (EUR)"
         ],
         "unknown_terms": []
       },
@@ -292,37 +276,52 @@
         "unknown_terms": []
       },
       "Stage": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
-      },
-      "Imputation": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
-      },
-      "Study type": {
-        "valid_count": 1,
+        "valid_count": 4,
         "unknown_count": 0,
         "valid_pct": 100.0,
         "valid_terms": [
-          "GWAS"
+          "combined",
+          "discovery",
+          "meta-analysis",
+          "replication"
+        ],
+        "unknown_terms": []
+      },
+      "Imputation": {
+        "valid_count": 6,
+        "unknown_count": 3,
+        "valid_pct": 66.7,
+        "valid_terms": [
+          "1000 Genomes (1000G)",
+          "Haplotype Reference Consortium (HRC)",
+          "TOPMed",
+          "UK10K",
+          "illumina ibc chip",
+          "illumina platform"
+        ],
+        "unknown_terms": [
+          "UK Biobank",
+          "discovery",
+          "replication"
+        ]
+      },
+      "Study type": {
+        "valid_count": 4,
+        "unknown_count": 0,
+        "valid_pct": 100.0,
+        "valid_terms": [
+          "Array genotyping",
+          "GWAS",
+          "Whole Exome Sequencing (WES)",
+          "Whole Genome Sequencing (WGS)"
         ],
         "unknown_terms": []
       },
       "Phenotype": {
-        "valid_count": 3,
+        "valid_count": 0,
         "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "Alzheimer's disease",
-          "Cancer",
-          "Type 2 diabetes"
-        ],
+        "valid_pct": null,
+        "valid_terms": [],
         "unknown_terms": []
       }
     }
@@ -332,15 +331,13 @@
     "cols": {
       "Population": {
         "valid_count": 2,
-        "unknown_count": 1,
-        "valid_pct": 66.7,
+        "unknown_count": 0,
+        "valid_pct": 100.0,
         "valid_terms": [
-          "African Americans",
-          "European Ancestry"
+          "African American (AA)",
+          "European (EUR)"
         ],
-        "unknown_terms": [
-          "ADNI"
-        ]
+        "unknown_terms": []
       },
       "Cohort": {
         "valid_count": 2,
@@ -353,11 +350,14 @@
         "unknown_terms": []
       },
       "Stage": {
-        "valid_count": 1,
+        "valid_count": 4,
         "unknown_count": 0,
         "valid_pct": 100.0,
         "valid_terms": [
-          "Meta-analysis"
+          "combined",
+          "discovery",
+          "meta-analysis",
+          "replication"
         ],
         "unknown_terms": []
       },
@@ -369,29 +369,36 @@
         "unknown_terms": []
       },
       "Study type": {
-        "valid_count": 5,
-        "unknown_count": 1,
-        "valid_pct": 83.3,
-        "valid_terms": [
-          "GWAS",
-          "WES",
-          "WGS",
-          "Whole Exome Sequencing",
-          "Whole Genome Sequencing"
-        ],
-        "unknown_terms": [
-          "ADNI"
-        ]
-      },
-      "Phenotype": {
-        "valid_count": 2,
+        "valid_count": 4,
         "unknown_count": 0,
         "valid_pct": 100.0,
         "valid_terms": [
-          "AD",
-          "Alzheimer disease"
+          "Array genotyping",
+          "GWAS",
+          "WES",
+          "WGS"
         ],
         "unknown_terms": []
+      },
+      "Phenotype": {
+        "valid_count": 5,
+        "unknown_count": 6,
+        "valid_pct": 45.5,
+        "valid_terms": [
+          "a42",
+          "ad",
+          "alzheimers disease",
+          "hpv",
+          "lmdt"
+        ],
+        "unknown_terms": [
+          "bri1",
+          "brip1",
+          "grin2b",
+          "mtus1",
+          "nrg1",
+          "pde7b"
+        ]
       }
     }
   },
@@ -399,11 +406,13 @@
     "file": "29458411_PMC5819208.csv",
     "cols": {
       "Population": {
-        "valid_count": 1,
+        "valid_count": 3,
         "unknown_count": 0,
         "valid_pct": 100.0,
         "valid_terms": [
-          "European ancestry"
+          "AA",
+          "EAS",
+          "EUR"
         ],
         "unknown_terms": []
       },
@@ -417,39 +426,65 @@
         "unknown_terms": []
       },
       "Stage": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "valid_count": 3,
+        "unknown_count": 1,
+        "valid_pct": 75.0,
+        "valid_terms": [
+          "discovery",
+          "meta",
+          "replication"
+        ],
+        "unknown_terms": [
+          "pleiotropy"
+        ]
       },
       "Imputation": {
-        "valid_count": 1,
+        "valid_count": 6,
         "unknown_count": 0,
         "valid_pct": 100.0,
         "valid_terms": [
-          "1000 Genomes Project"
+          "1000 Genomes",
+          "1000G",
+          "HRC",
+          "Haplotype Reference Consortium",
+          "TOPMed",
+          "UK10K"
         ],
         "unknown_terms": []
       },
       "Study type": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "valid_count": 7,
+        "unknown_count": 6,
+        "valid_pct": 53.8,
+        "valid_terms": [
+          "Array genotyping",
+          "GWAS",
+          "WES",
+          "WGS",
+          "eqtls",
+          "gene-based",
+          "gene-based tests"
+        ],
+        "unknown_terms": [
+          "gene-wide significant",
+          "pleiotropic",
+          "pleiotropic effect",
+          "pleiotropy",
+          "pleiotropy analysis",
+          "trivariate pleiotropy"
+        ]
       },
       "Phenotype": {
-        "valid_count": 4,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
+        "valid_count": 1,
+        "unknown_count": 2,
+        "valid_pct": 33.3,
         "valid_terms": [
-          "Alzheimer's disease",
-          "CAA",
-          "NFT",
-          "np"
+          "alzheimers disease"
         ],
-        "unknown_terms": []
+        "unknown_terms": [
+          "neuropathological traits",
+          "pleiotropy"
+        ]
       }
     }
   },
@@ -504,10 +539,15 @@
     "file": "29777097_PMC5959890.csv",
     "cols": {
       "Population": {
-        "valid_count": 0,
+        "valid_count": 4,
         "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
+        "valid_pct": 100.0,
+        "valid_terms": [
+          "African American (AA)",
+          "Caribbean Hispanic",
+          "East Asian (EAS)",
+          "European (EUR)"
+        ],
         "unknown_terms": []
       },
       "Cohort": {
@@ -522,52 +562,60 @@
         "unknown_terms": []
       },
       "Stage": {
-        "valid_count": 6,
+        "valid_count": 4,
         "unknown_count": 0,
         "valid_pct": 100.0,
         "valid_terms": [
-          "Joint analysis",
-          "Meta",
-          "Meta-analysis",
-          "Meta-analytic",
-          "Stage 1",
-          "Stage 2"
+          "combined",
+          "discovery",
+          "meta-analysis",
+          "replication"
         ],
         "unknown_terms": []
       },
       "Imputation": {
-        "valid_count": 2,
+        "valid_count": 4,
         "unknown_count": 1,
-        "valid_pct": 66.7,
+        "valid_pct": 80.0,
         "valid_terms": [
-          "1000 Genomes",
-          "Haplotype Reference Consortium"
+          "1000G",
+          "HRC",
+          "TOPMed",
+          "UK10K"
         ],
         "unknown_terms": [
-          "UK Biobank"
+          "IGAP"
         ]
       },
       "Study type": {
-        "valid_count": 2,
-        "unknown_count": 1,
-        "valid_pct": 66.7,
+        "valid_count": 4,
+        "unknown_count": 4,
+        "valid_pct": 50.0,
         "valid_terms": [
+          "Array genotyping",
           "GWAS",
-          "genotyping"
+          "Whole Exome Sequencing (WES)",
+          "Whole Genome Sequencing (WGS)"
         ],
         "unknown_terms": [
-          "1000 genomes phase 3"
+          "IGAP",
+          "UK Biobank",
+          "discovery",
+          "replication"
         ]
       },
       "Phenotype": {
-        "valid_count": 2,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
+        "valid_count": 3,
+        "unknown_count": 1,
+        "valid_pct": 75.0,
         "valid_terms": [
-          "AD",
-          "Alzheimers disease"
+          "ad",
+          "alzheimers disease",
+          "dementia"
         ],
-        "unknown_terms": []
+        "unknown_terms": [
+          "uk biobank"
+        ]
       }
     }
   },
@@ -579,7 +627,7 @@
         "unknown_count": 0,
         "valid_pct": 100.0,
         "valid_terms": [
-          "European ancestry"
+          "European (EUR)"
         ],
         "unknown_terms": []
       },
@@ -603,43 +651,51 @@
         "unknown_terms": []
       },
       "Stage": {
-        "valid_count": 2,
+        "valid_count": 4,
         "unknown_count": 0,
         "valid_pct": 100.0,
         "valid_terms": [
-          "Joint analysis",
-          "Meta-analyses"
+          "combined",
+          "discovery",
+          "meta",
+          "replication"
         ],
         "unknown_terms": []
       },
       "Imputation": {
-        "valid_count": 1,
+        "valid_count": 4,
+        "unknown_count": 4,
+        "valid_pct": 50.0,
+        "valid_terms": [
+          "1000 Genomes (1000G)",
+          "Haplotype Reference Consortium (HRC)",
+          "TOPMed",
+          "UK10K"
+        ],
+        "unknown_terms": [
+          "ADNI",
+          "GTEx",
+          "IGAP",
+          "RosMap"
+        ]
+      },
+      "Study type": {
+        "valid_count": 3,
         "unknown_count": 0,
         "valid_pct": 100.0,
         "valid_terms": [
-          "1000 Genomes Project"
+          "GWAS",
+          "Genotyping",
+          "Whole Exome Sequencing (WES)"
         ],
         "unknown_terms": []
       },
-      "Study type": {
+      "Phenotype": {
         "valid_count": 0,
         "unknown_count": 0,
         "valid_pct": null,
         "valid_terms": [],
         "unknown_terms": []
-      },
-      "Phenotype": {
-        "valid_count": 3,
-        "unknown_count": 1,
-        "valid_pct": 75.0,
-        "valid_terms": [
-          "AD",
-          "Alzheimer disease",
-          "Alzheimers disease"
-        ],
-        "unknown_terms": [
-          "ADNI"
-        ]
       }
     }
   },
@@ -648,12 +704,22 @@
     "cols": {
       "Population": {
         "valid_count": 1,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
+        "unknown_count": 9,
+        "valid_pct": 10.0,
         "valid_terms": [
-          "European ancestry"
+          "EUR"
         ],
-        "unknown_terms": []
+        "unknown_terms": [
+          "AD",
+          "ADGC2",
+          "BMI",
+          "HDL",
+          "HDL-C",
+          "LDL",
+          "TC",
+          "TG",
+          "UK Biobank"
+        ]
       },
       "Cohort": {
         "valid_count": 9,
@@ -673,50 +739,71 @@
         "unknown_terms": []
       },
       "Stage": {
-        "valid_count": 5,
+        "valid_count": 4,
         "unknown_count": 0,
         "valid_pct": 100.0,
         "valid_terms": [
-          "ADGC Phase 2",
-          "Adgc2",
-          "Igap Stage 1",
-          "Igap Stage 2",
-          "Meta-analysis"
+          "combined",
+          "discovery",
+          "meta-analysis",
+          "replication"
         ],
         "unknown_terms": []
       },
       "Imputation": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "valid_count": 6,
+        "unknown_count": 1,
+        "valid_pct": 85.7,
+        "valid_terms": [
+          "1000 genomes",
+          "1000G",
+          "HRC",
+          "Haplotype Reference Consortium",
+          "TOPMed",
+          "UK10K"
+        ],
+        "unknown_terms": [
+          "UK Biobank"
+        ]
       },
       "Study type": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "valid_count": 5,
+        "unknown_count": 3,
+        "valid_pct": 62.5,
+        "valid_terms": [
+          "Array genotyping",
+          "GWAS",
+          "Whole Exome Sequencing (WES)",
+          "Whole Genome Sequencing (WGS)",
+          "cis-eqtls"
+        ],
+        "unknown_terms": [
+          "UK Biobank",
+          "conjunction false discovery rate",
+          "pleiotropic"
+        ]
       },
       "Phenotype": {
         "valid_count": 11,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
+        "unknown_count": 2,
+        "valid_pct": 84.6,
         "valid_terms": [
-          "AD",
           "Alzheimer disease",
-          "Alzheimer's disease",
           "BMI",
-          "CAD",
-          "HDL",
-          "LDL",
+          "Cardiovascular disease",
+          "Coronary artery disease",
+          "Dementia",
+          "High-density lipoprotein",
+          "Low-density lipoprotein",
           "Total cholesterol",
           "Triglycerides",
           "Type 2 diabetes",
           "Waist hip ratio"
         ],
-        "unknown_terms": []
+        "unknown_terms": [
+          "Disease",
+          "Outcome"
+        ]
       }
     }
   },
@@ -724,18 +811,11 @@
     "file": "30448613_PMC6331247.csv",
     "cols": {
       "Population": {
-        "valid_count": 1,
-        "unknown_count": 4,
-        "valid_pct": 20.0,
-        "valid_terms": [
-          "European"
-        ],
-        "unknown_terms": [
-          "1000 Genomes EUR",
-          "ADGC",
-          "ADSP",
-          "IGAP"
-        ]
+        "valid_count": 0,
+        "unknown_count": 0,
+        "valid_pct": null,
+        "valid_terms": [],
+        "unknown_terms": []
       },
       "Cohort": {
         "valid_count": 8,
@@ -754,60 +834,64 @@
         "unknown_terms": []
       },
       "Stage": {
-        "valid_count": 2,
-        "unknown_count": 3,
-        "valid_pct": 40.0,
-        "valid_terms": [
-          "Discovery",
-          "Meta-analysis"
-        ],
-        "unknown_terms": [
-          "ADGC",
-          "ADSP",
-          "IGAP"
-        ]
-      },
-      "Imputation": {
-        "valid_count": 7,
-        "unknown_count": 4,
-        "valid_pct": 63.6,
-        "valid_terms": [
-          "1000 Genomes",
-          "1000G",
-          "HRC",
-          "Haplotype Reference Consortium",
-          "Michigan Imputation Server",
-          "TOPMed",
-          "UK10K"
-        ],
-        "unknown_terms": [
-          "ADGC",
-          "ADNI",
-          "IGAP",
-          "UK Biobank"
-        ]
-      },
-      "Study type": {
-        "valid_count": 0,
-        "unknown_count": 4,
-        "valid_pct": 0.0,
-        "valid_terms": [],
-        "unknown_terms": [
-          "ADGC",
-          "ADNI",
-          "ADSP",
-          "IGAP"
-        ]
-      },
-      "Phenotype": {
-        "valid_count": 2,
+        "valid_count": 4,
         "unknown_count": 0,
         "valid_pct": 100.0,
         "valid_terms": [
-          "AD",
-          "Alzheimer's disease"
+          "combined",
+          "discovery",
+          "meta-analysis",
+          "replication"
         ],
         "unknown_terms": []
+      },
+      "Imputation": {
+        "valid_count": 0,
+        "unknown_count": 0,
+        "valid_pct": null,
+        "valid_terms": [],
+        "unknown_terms": []
+      },
+      "Study type": {
+        "valid_count": 4,
+        "unknown_count": 0,
+        "valid_pct": 100.0,
+        "valid_terms": [
+          "Array genotyping",
+          "GWAS",
+          "WES",
+          "WGS"
+        ],
+        "unknown_terms": []
+      },
+      "Phenotype": {
+        "valid_count": 1,
+        "unknown_count": 19,
+        "valid_pct": 5.0,
+        "valid_terms": [
+          "alzheimers disease"
+        ],
+        "unknown_terms": [
+          "abca7",
+          "ak9",
+          "app",
+          "bin1",
+          "cd2ap",
+          "cd33",
+          "celf1",
+          "clu",
+          "cr1",
+          "dlgap1",
+          "dsg2",
+          "eid2b",
+          "fermt2",
+          "ier2",
+          "ms4a6a",
+          "mybpc3",
+          "neto1",
+          "picalm",
+          "sorl1"
+        ]
       }
     }
   },
@@ -815,14 +899,14 @@
     "file": "30617256_PMC6836675.csv",
     "cols": {
       "Population": {
-        "valid_count": 0,
-        "unknown_count": 3,
-        "valid_pct": 0.0,
-        "valid_terms": [],
+        "valid_count": 1,
+        "unknown_count": 1,
+        "valid_pct": 50.0,
+        "valid_terms": [
+          "EUR"
+        ],
         "unknown_terms": [
-          "ADSP",
-          "PGC-ALZ",
-          "UK Biobank"
+          "UKB"
         ]
       },
       "Cohort": {
@@ -839,54 +923,71 @@
         "unknown_terms": []
       },
       "Stage": {
-        "valid_count": 3,
-        "unknown_count": 2,
-        "valid_pct": 60.0,
-        "valid_terms": [
-          "meta-analysis",
-          "phase 1",
-          "replication"
-        ],
-        "unknown_terms": [
-          "phase 3",
-          "ukb"
-        ]
-      },
-      "Imputation": {
-        "valid_count": 0,
-        "unknown_count": 3,
-        "valid_pct": 0.0,
-        "valid_terms": [],
-        "unknown_terms": [
-          "ADSP",
-          "IGAP",
-          "UKB"
-        ]
-      },
-      "Study type": {
-        "valid_count": 1,
-        "unknown_count": 5,
-        "valid_pct": 16.7,
-        "valid_terms": [
-          "Whole-exome sequencing"
-        ],
-        "unknown_terms": [
-          "ADSP",
-          "Decode",
-          "IGAP",
-          "PGC-ALZ",
-          "UKB"
-        ]
-      },
-      "Phenotype": {
-        "valid_count": 2,
+        "valid_count": 4,
         "unknown_count": 0,
         "valid_pct": 100.0,
         "valid_terms": [
-          "AD",
-          "Alzheimer's disease"
+          "Combined",
+          "Discovery",
+          "Meta-analysis",
+          "Replication"
         ],
         "unknown_terms": []
+      },
+      "Imputation": {
+        "valid_count": 4,
+        "unknown_count": 8,
+        "valid_pct": 33.3,
+        "valid_terms": [
+          "1000 Genomes (1000G)",
+          "Haplotype Reference Consortium (HRC)",
+          "TOPMed",
+          "UK10K"
+        ],
+        "unknown_terms": [
+          "ADSP",
+          "FM-Summary",
+          "IGAP",
+          "LDScore",
+          "MAGMA",
+          "PGC-Alz",
+          "PRSICE",
+          "UK Biobank"
+        ]
+      },
+      "Study type": {
+        "valid_count": 4,
+        "unknown_count": 4,
+        "valid_pct": 50.0,
+        "valid_terms": [
+          "Array genotyping",
+          "GWAS",
+          "Whole Exome Sequencing (WES)",
+          "Whole Genome Sequencing (WGS)"
+        ],
+        "unknown_terms": [
+          "adsp",
+          "igap",
+          "pgc-alz",
+          "ukb"
+        ]
+      },
+      "Phenotype": {
+        "valid_count": 6,
+        "unknown_count": 2,
+        "valid_pct": 75.0,
+        "valid_terms": [
+          "ad",
+          "alzheimers disease",
+          "amyloid",
+          "cognitive reserve",
+          "education",
+          "height"
+        ],
+        "unknown_terms": [
+          "amyloidogenic pathway",
+          "lipid metabolism"
+        ]
       }
     }
   },
@@ -894,11 +995,14 @@
     "file": "30636644_PMC6330399.csv",
     "cols": {
       "Population": {
-        "valid_count": 1,
+        "valid_count": 4,
         "unknown_count": 0,
         "valid_pct": 100.0,
         "valid_terms": [
-          "Caucasian"
+          "AA",
+          "CEU",
+          "EAS",
+          "EUR"
         ],
         "unknown_terms": []
       },
@@ -928,43 +1032,51 @@
         "unknown_terms": []
       },
       "Imputation": {
-        "valid_count": 3,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
+        "valid_count": 5,
+        "unknown_count": 9,
+        "valid_pct": 35.7,
         "valid_terms": [
-          "1000 Genomes",
+          "1000 genomes",
           "minimac3",
-          "shapeit2"
+          "shapeit2",
+          "topmed",
+          "uk10k"
         ],
-        "unknown_terms": []
+        "unknown_terms": [
+          "fhs",
+          "haplotype",
+          "hrs",
+          "igap",
+          "ldlink",
+          "loadfs",
+          "pid",
+          "smr",
+          "stampeed"
+        ]
       },
       "Study type": {
-        "valid_count": 2,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
+        "valid_count": 8,
+        "unknown_count": 1,
+        "valid_pct": 88.9,
         "valid_terms": [
+          "Array genotyping",
+          "GCTA",
           "GWA",
-          "GWAS"
+          "GWA analyses",
+          "GWA analysis",
+          "GWAMA",
+          "GWAS",
+          "Gene-based"
         ],
-        "unknown_terms": []
+        "unknown_terms": [
+          "Pathway-based"
+        ]
       },
       "Phenotype": {
-        "valid_count": 11,
+        "valid_count": 0,
         "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "Alzheimer's disease",
-          "BMI",
-          "Blood pressure",
-          "Coronary artery disease",
-          "Depression",
-          "HDL cholesterol",
-          "Hypertension",
-          "LDL cholesterol",
-          "Parkinson's disease",
-          "Type 2 diabetes",
-          "Vascular dementia"
-        ],
+        "valid_pct": null,
+        "valid_terms": [],
         "unknown_terms": []
       }
     }
@@ -1021,10 +1133,26 @@
     "cols": {
       "Population": {
         "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
+        "unknown_count": 15,
+        "valid_pct": 0.0,
         "valid_terms": [],
-        "unknown_terms": []
+        "unknown_terms": [
+          "ad",
+          "apoc1",
+          "apoc2",
+          "apoe",
+          "bin1",
+          "bmi",
+          "cccd116",
+          "dgf",
+          "fg-fins",
+          "h3k27ac",
+          "h3k9ac",
+          "hdl",
+          "ldl",
+          "t2d",
+          "whr"
+        ]
       },
       "Cohort": {
         "valid_count": 7,
@@ -1042,46 +1170,61 @@
         "unknown_terms": []
       },
       "Stage": {
-        "valid_count": 1,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "meta-analysis"
-        ],
-        "unknown_terms": []
-      },
-      "Imputation": {
-        "valid_count": 3,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "1000 Genomes (1000G)",
-          "1000 genome",
-          "Haplotype Reference Consortium (HRC)"
-        ],
-        "unknown_terms": []
-      },
-      "Study type": {
         "valid_count": 0,
         "unknown_count": 0,
         "valid_pct": null,
         "valid_terms": [],
         "unknown_terms": []
       },
-      "Phenotype": {
-        "valid_count": 9,
+      "Imputation": {
+        "valid_count": 5,
         "unknown_count": 0,
         "valid_pct": 100.0,
         "valid_terms": [
-          "Alzheimers disease",
-          "BMI",
-          "Fasting glucose",
-          "Fasting insulin",
-          "HDL",
-          "LDL",
-          "T2D",
-          "Tg",
-          "Whr"
+          "1000G",
+          "HRC",
+          "TOPMed",
+          "UK10K",
+          "hapmap 2"
+        ],
+        "unknown_terms": []
+      },
+      "Study type": {
+        "valid_count": 7,
+        "unknown_count": 8,
+        "valid_pct": 46.7,
+        "valid_terms": [
+          "Array genotyping",
+          "Cross-Phenotype Meta-Analysis",
+          "Cross-Trait Meta-Analysis",
+          "GWAS",
+          "Mendelian Randomization",
+          "Whole Exome Sequencing (WES)",
+          "Whole Genome Sequencing (WGS)"
+        ],
+        "unknown_terms": [
+          "1000 Genome",
+          "Genetic Correlation",
+          "Hapmap 2",
+          "Hapmap 3",
+          "Integrative Approaches",
+          "LD Score Regression",
+          "Meta-Analysis of Correlated Traits",
+          "Shet"
+        ]
+      },
+      "Phenotype": {
+        "valid_count": 7,
+        "unknown_count": 0,
+        "valid_pct": 100.0,
+        "valid_terms": [
+          "alzheimers disease",
+          "bmi",
+          "fasting glucose",
+          "fasting insulin",
+          "hdl",
+          "ldl",
+          "t2d"
         ],
         "unknown_terms": []
       }
@@ -1091,18 +1234,18 @@
     "file": "30820047_PMC6463297.csv",
     "cols": {
       "Population": {
-        "valid_count": 6,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
+        "valid_count": 3,
+        "unknown_count": 2,
+        "valid_pct": 60.0,
         "valid_terms": [
-          "CEU",
-          "European",
-          "FIN",
-          "GBR",
-          "IBS",
-          "TSI"
+          "AA",
+          "EAS",
+          "EUR"
         ],
-        "unknown_terms": []
+        "unknown_terms": [
+          "discovery",
+          "replication"
+        ]
       },
       "Cohort": {
         "valid_count": 14,
@@ -1127,47 +1270,99 @@
         "unknown_terms": []
       },
       "Stage": {
-        "valid_count": 6,
+        "valid_count": 7,
         "unknown_count": 0,
         "valid_pct": 100.0,
         "valid_terms": [
-          "discovery stage 1",
-          "discovery stage 2",
-          "discovery stage 3 a",
-          "discovery stage 3 b",
-          "meta-analyses",
-          "meta-analysis"
+          "discovery",
+          "meta-analysis",
+          "replication",
+          "stage 1",
+          "stage 2",
+          "stage 3",
+          "stage 3b"
         ],
         "unknown_terms": []
       },
       "Imputation": {
-        "valid_count": 1,
+        "valid_count": 2,
         "unknown_count": 0,
         "valid_pct": 100.0,
         "valid_terms": [
-          "1000 Genomes"
+          "1000 Genomes (1000G)",
+          "Haplotype Reference Consortium (HRC)"
         ],
         "unknown_terms": []
       },
       "Study type": {
-        "valid_count": 1,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
+        "valid_count": 6,
+        "unknown_count": 12,
+        "valid_pct": 33.3,
         "valid_terms": [
-          "Whole Exome Sequencing (WES)"
+          "Array genotyping",
+          "GWAF",
+          "GWAS",
+          "WES",
+          "WGS",
+          "eqtl"
         ],
-        "unknown_terms": []
+        "unknown_terms": [
+          "adamts1",
+          "adgc",
+          "adsp",
+          "apoe",
+          "charge",
+          "hla-drb1",
+          "inpp5d",
+          "ld",
+          "mhc",
+          "picalm",
+          "suclg2p4",
+          "trem2"
+        ]
       },
       "Phenotype": {
-        "valid_count": 3,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
+        "valid_count": 5,
+        "unknown_count": 29,
+        "valid_pct": 14.7,
         "valid_terms": [
-          "Alzheimer's disease",
-          "Blood pressure",
-          "Diabetes"
+          "alzheimers disease",
+          "blood pressure",
+          "body mass index",
+          "diabetes",
+          "parkinsons disease"
         ],
-        "unknown_terms": []
+        "unknown_terms": [
+          "autoimmune and neurodegenerative risk alleles",
+          "brain-related traits",
+          "epigenomic signals",
+          "eqtls",
+          "family history",
+          "gene regulation",
+          "gene regulation in whole blood",
+          "gene targets",
+          "gene-set analysis",
+          "genetic architecture",
+          "heart disease",
+          "high blood pressure",
+          "hyperlipidemia",
+          "hyperthyroidism",
+          "immune pathways",
+          "ld-score regression",
+          "lewy bodies",
+          "lipid metabolism",
+          "magma",
+          "maternal genetic correlation",
+          "microglia",
+          "microgliamacrophages",
+          "monocytes",
+          "monocytes and microglia",
+          "neurons",
+          "oligodendrocytes",
+          "tauopathies",
+          "transcriptomic and methylomic data",
+          "vascular problems"
+        ]
       }
     }
   },
@@ -1175,48 +1370,31 @@
     "file": "30930738_PMC6425305.csv",
     "cols": {
       "Population": {
-        "valid_count": 1,
-        "unknown_count": 1,
-        "valid_pct": 50.0,
-        "valid_terms": [
-          "European ancestry"
-        ],
-        "unknown_terms": [
-          "IGAP"
-        ]
+        "valid_count": 0,
+        "unknown_count": 0,
+        "valid_pct": null,
+        "valid_terms": [],
+        "unknown_terms": []
       },
       "Cohort": {
-        "valid_count": 5,
+        "valid_count": 0,
         "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "ADGC",
-          "CHARGE",
-          "HB",
-          "IGAP",
-          "PGC2-BIP"
-        ],
+        "valid_pct": null,
+        "valid_terms": [],
         "unknown_terms": []
       },
       "Stage": {
-        "valid_count": 4,
+        "valid_count": 0,
         "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "Meta-analysis",
-          "Replication",
-          "Stage 1",
-          "Stage 2"
-        ],
+        "valid_pct": null,
+        "valid_terms": [],
         "unknown_terms": []
       },
       "Imputation": {
-        "valid_count": 1,
+        "valid_count": 0,
         "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "1000 Genomes (1000G)"
-        ],
+        "valid_pct": null,
+        "valid_terms": [],
         "unknown_terms": []
       },
       "Study type": {
@@ -1227,13 +1405,10 @@
         "unknown_terms": []
       },
       "Phenotype": {
-        "valid_count": 2,
+        "valid_count": 0,
         "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "Alzheimers disease",
-          "Bipolar disorder"
-        ],
+        "valid_pct": null,
+        "valid_terms": [],
         "unknown_terms": []
       }
     }
@@ -1242,12 +1417,15 @@
     "file": "30979435_PMC6783343.csv",
     "cols": {
       "Population": {
-        "valid_count": 0,
-        "unknown_count": 1,
-        "valid_pct": 0.0,
-        "valid_terms": [],
+        "valid_count": 1,
+        "unknown_count": 2,
+        "valid_pct": 33.3,
+        "valid_terms": [
+          "EUR"
+        ],
         "unknown_terms": [
-          "ADGC"
+          "ethnic",
+          "race"
         ]
       },
       "Cohort": {
@@ -1262,43 +1440,51 @@
         "unknown_terms": []
       },
       "Stage": {
-        "valid_count": 3,
+        "valid_count": 5,
         "unknown_count": 0,
         "valid_pct": 100.0,
         "valid_terms": [
-          "Combined",
-          "Phase 1",
-          "Phase 2"
+          "combined",
+          "discovery",
+          "phase 1",
+          "phase 2",
+          "replication"
         ],
         "unknown_terms": []
       },
       "Imputation": {
-        "valid_count": 1,
+        "valid_count": 6,
         "unknown_count": 0,
         "valid_pct": 100.0,
         "valid_terms": [
-          "1000 Genomes"
+          "1000 Genomes",
+          "1000G",
+          "HRC",
+          "Haplotype Reference Consortium",
+          "TOPMed",
+          "UK10K"
         ],
         "unknown_terms": []
       },
       "Study type": {
-        "valid_count": 2,
+        "valid_count": 6,
         "unknown_count": 0,
         "valid_pct": 100.0,
         "valid_terms": [
           "GWAS",
-          "Whole Genome Sequencing (WGS)"
+          "gene-based",
+          "gene-based genome-wide association analyses",
+          "gene-based gwas",
+          "stratified gene-based genome-wide analyses",
+          "stratified gwas"
         ],
         "unknown_terms": []
       },
       "Phenotype": {
-        "valid_count": 2,
+        "valid_count": 0,
         "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "AD",
-          "Alzheimer's disease"
-        ],
+        "valid_pct": null,
+        "valid_terms": [],
         "unknown_terms": []
       }
     }
@@ -1311,9 +1497,9 @@
         "unknown_count": 0,
         "valid_pct": 100.0,
         "valid_terms": [
-          "African ancestry",
-          "East Asian",
-          "European ancestry"
+          "AA",
+          "EAS",
+          "EUR"
         ],
         "unknown_terms": []
       },
@@ -1332,46 +1518,49 @@
         "unknown_terms": []
       },
       "Stage": {
-        "valid_count": 1,
+        "valid_count": 4,
         "unknown_count": 0,
         "valid_pct": 100.0,
         "valid_terms": [
-          "Meta-analysis"
+          "combined",
+          "discovery",
+          "meta",
+          "replication"
         ],
         "unknown_terms": []
       },
       "Imputation": {
-        "valid_count": 3,
+        "valid_count": 4,
         "unknown_count": 0,
         "valid_pct": 100.0,
         "valid_terms": [
           "1000G",
           "HRC",
+          "TOPMed",
           "UK10K"
         ],
         "unknown_terms": []
       },
       "Study type": {
+        "valid_count": 6,
+        "unknown_count": 0,
+        "valid_pct": 100.0,
+        "valid_terms": [
+          "Affymetrix genotyping",
+          "Array genotyping",
+          "GWAS",
+          "Sequencing",
+          "Whole Exome Sequencing",
+          "Whole Genome Sequencing"
+        ],
+        "unknown_terms": []
+      },
+      "Phenotype": {
         "valid_count": 0,
         "unknown_count": 0,
         "valid_pct": null,
         "valid_terms": [],
         "unknown_terms": []
-      },
-      "Phenotype": {
-        "valid_count": 3,
-        "unknown_count": 3,
-        "valid_pct": 50.0,
-        "valid_terms": [
-          "AD",
-          "Alzheimer disease",
-          "Alzheimers disease"
-        ],
-        "unknown_terms": [
-          "ADGC",
-          "APOE",
-          "apolipoprotein e"
-        ]
       }
     }
   }

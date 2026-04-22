@@ -41,7 +41,7 @@ class AllowedTokensProcessorLlamaCpp:
 class GWASInformationRetriever:
     def __init__(self, referencing_col_df: pd.DataFrame, chroma_db_path: str = "./chroma_db", chroma_db_collection_name: str = "gwas_paper_collection", 
                  embeddings_model_name: str = "NeuML/pubmedbert-base-embeddings", reranker_model_name: str = "BAAI/bge-reranker-base",
-                 llm_model_name: Optional[str] = "Qwen/Qwen2.5-1.5B-Instruct", llm_gguf_path: Optional[str] = "./qwen2.5-7b-instruct-q4/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+                 llm_model_name: Optional[str] = "Qwen/Qwen2.5-1.5B-Instruct", llm_gguf_path: Optional[str] = "./qwen2.5-3b-instruct-q8/qwen2.5-3b-instruct-q8_0.gguf",
                  use_hf: bool = True, device: Optional[str] = None):
         # load ref col df
         self.referencing_col_lst = referencing_col_df["column"].to_list()

@@ -46,121 +46,60 @@
     }
   ],
   [
-    "29107063_PMC5920782.csv",
+    "28780673_PMC5693762.csv",
     {
       "coverage_pct": 0.0,
       "threshold_pct": 50.0,
       "covered_rows": 0,
-      "total_rows": 32,
+      "total_rows": 44,
       "missed_examples": [
         {
-          "snp": "rs115881343",
+          "snp": "rs10896445",
           "gt_value": "SNP-based",
           "pred_terms": []
         },
         {
-          "snp": "rs12721046",
+          "snp": "rs10896445",
           "gt_value": "SNP-based",
           "pred_terms": []
         },
         {
-          "snp": "rs12721046",
+          "snp": "rs10896445",
           "gt_value": "SNP-based",
           "pred_terms": []
         },
         {
-          "snp": "rs12721046",
+          "snp": "rs10896445",
           "gt_value": "SNP-based",
           "pred_terms": []
         },
         {
-          "snp": "rs157580",
+          "snp": "rs11249708",
           "gt_value": "SNP-based",
           "pred_terms": []
         },
         {
-          "snp": "rs157582",
+          "snp": "rs11249708",
           "gt_value": "SNP-based",
           "pred_terms": []
         },
         {
-          "snp": "rs157582",
+          "snp": "rs11249708",
           "gt_value": "SNP-based",
           "pred_terms": []
         },
         {
-          "snp": "rs2075650",
+          "snp": "rs11249708",
           "gt_value": "SNP-based",
           "pred_terms": []
         },
         {
-          "snp": "rs2075650",
+          "snp": "rs1568485",
           "gt_value": "SNP-based",
           "pred_terms": []
         },
         {
-          "snp": "rs2075650",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        }
-      ]
-    }
-  ],
-  [
-    "29458411_PMC5819208.csv",
-    {
-      "coverage_pct": 0.0,
-      "threshold_pct": 50.0,
-      "covered_rows": 0,
-      "total_rows": 32,
-      "missed_examples": [
-        {
-          "snp": "rs34487851",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs34487851",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs34487851",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs34487851",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs34487851",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs34487851",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs34487851",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs79524815",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs79524815",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs79524815",
+          "snp": "rs1568485",
           "gt_value": "SNP-based",
           "pred_terms": []
         }
@@ -194,178 +133,6 @@
           "snp": "rs67827860",
           "gt_value": "SNP-based",
           "pred_terms": []
-        }
-      ]
-    }
-  ],
-  [
-    "30413934_PMC6358498.csv",
-    {
-      "coverage_pct": 0.0,
-      "threshold_pct": 50.0,
-      "covered_rows": 0,
-      "total_rows": 374,
-      "missed_examples": [
-        {
-          "snp": "rs1048365",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs1048365",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs1048365",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10906257",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10906257",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10906257",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10906257",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10906257",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10991386",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10991386",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        }
-      ]
-    }
-  ],
-  [
-    "30617256_PMC6836675.csv",
-    {
-      "coverage_pct": 0.0,
-      "threshold_pct": 50.0,
-      "covered_rows": 0,
-      "total_rows": 90,
-      "missed_examples": [
-        {
-          "snp": "rs10792832",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "UKB",
-            "PGC-ALZ",
-            "IGAP",
-            "ADSP"
-          ]
-        },
-        {
-          "snp": "rs10933431",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "UKB",
-            "PGC-ALZ",
-            "IGAP",
-            "ADSP"
-          ]
-        },
-        {
-          "snp": "rs10933431",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "UKB",
-            "PGC-ALZ",
-            "IGAP",
-            "ADSP"
-          ]
-        },
-        {
-          "snp": "rs10933431",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "UKB",
-            "PGC-ALZ",
-            "IGAP",
-            "ADSP"
-          ]
-        },
-        {
-          "snp": "rs111278892",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "UKB",
-            "PGC-ALZ",
-            "IGAP",
-            "ADSP"
-          ]
-        },
-        {
-          "snp": "rs11218343",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "UKB",
-            "PGC-ALZ",
-            "IGAP",
-            "ADSP"
-          ]
-        },
-        {
-          "snp": "rs11218343",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "UKB",
-            "PGC-ALZ",
-            "IGAP",
-            "ADSP"
-          ]
-        },
-        {
-          "snp": "rs11218343",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "UKB",
-            "PGC-ALZ",
-            "IGAP",
-            "ADSP"
-          ]
-        },
-        {
-          "snp": "rs11257238",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "UKB",
-            "PGC-ALZ",
-            "IGAP",
-            "ADSP"
-          ]
-        },
-        {
-          "snp": "rs11257238",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "UKB",
-            "PGC-ALZ",
-            "IGAP",
-            "ADSP"
-          ]
         }
       ]
     }
@@ -425,67 +192,6 @@
         },
         {
           "snp": "rs12373108",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        }
-      ]
-    }
-  ],
-  [
-    "30805717_PMC7193309.csv",
-    {
-      "coverage_pct": 0.0,
-      "threshold_pct": 50.0,
-      "covered_rows": 0,
-      "total_rows": 14,
-      "missed_examples": [
-        {
-          "snp": "rs10501320",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10501320",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs12805422",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs12805422",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs1483121",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs1483121",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs17747324",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs17747324",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs2279590",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs2279590",
           "gt_value": "SNP-based",
           "pred_terms": []
         }

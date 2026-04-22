@@ -71,52 +71,92 @@
         {
           "snp": "rs12961169",
           "gt_value": "NHW",
-          "pred_terms": []
+          "pred_terms": [
+            "African American (AA)",
+            "European (EUR)",
+            "East Asian (EAS)"
+          ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "NHW",
-          "pred_terms": []
+          "pred_terms": [
+            "African American (AA)",
+            "European (EUR)",
+            "East Asian (EAS)"
+          ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "NHW",
-          "pred_terms": []
+          "pred_terms": [
+            "African American (AA)",
+            "European (EUR)",
+            "East Asian (EAS)"
+          ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "NHW",
-          "pred_terms": []
+          "pred_terms": [
+            "African American (AA)",
+            "European (EUR)",
+            "East Asian (EAS)"
+          ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "NHW",
-          "pred_terms": []
+          "pred_terms": [
+            "African American (AA)",
+            "European (EUR)",
+            "East Asian (EAS)"
+          ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "NHW",
-          "pred_terms": []
+          "pred_terms": [
+            "African American (AA)",
+            "European (EUR)",
+            "East Asian (EAS)"
+          ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "NHW",
-          "pred_terms": []
+          "pred_terms": [
+            "African American (AA)",
+            "European (EUR)",
+            "East Asian (EAS)"
+          ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "NHW",
-          "pred_terms": []
+          "pred_terms": [
+            "African American (AA)",
+            "European (EUR)",
+            "East Asian (EAS)"
+          ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "NHW",
-          "pred_terms": []
+          "pred_terms": [
+            "African American (AA)",
+            "European (EUR)",
+            "East Asian (EAS)"
+          ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "NHW",
-          "pred_terms": []
+          "pred_terms": [
+            "African American (AA)",
+            "European (EUR)",
+            "East Asian (EAS)"
+          ]
         }
       ]
     }
@@ -183,17 +223,32 @@
         {
           "snp": "rs12721046",
           "gt_value": "NHW",
-          "pred_terms": []
+          "pred_terms": [
+            "White (EUR)",
+            "Asian (EAS)",
+            "Hispanic (HIS)",
+            "African American (AA)"
+          ]
         },
         {
           "snp": "rs12721046",
           "gt_value": "White, black, other",
-          "pred_terms": []
+          "pred_terms": [
+            "White (EUR)",
+            "Asian (EAS)",
+            "Hispanic (HIS)",
+            "African American (AA)"
+          ]
         },
         {
           "snp": "rs12721046",
           "gt_value": "NHW",
-          "pred_terms": []
+          "pred_terms": [
+            "White (EUR)",
+            "Asian (EAS)",
+            "Hispanic (HIS)",
+            "African American (AA)"
+          ]
         },
         {
           "snp": "rs157580",
@@ -213,78 +268,32 @@
         {
           "snp": "rs2075650",
           "gt_value": "NHW",
-          "pred_terms": []
+          "pred_terms": [
+            "White (EUR)",
+            "Asian (EAS)",
+            "Hispanic (HIS)",
+            "African American (AA)"
+          ]
         },
         {
           "snp": "rs2075650",
           "gt_value": "White, black, other",
-          "pred_terms": []
+          "pred_terms": [
+            "White (EUR)",
+            "Asian (EAS)",
+            "Hispanic (HIS)",
+            "African American (AA)"
+          ]
         },
         {
           "snp": "rs2075650",
           "gt_value": "White, black, other",
-          "pred_terms": []
-        }
-      ]
-    }
-  ],
-  [
-    "29458411_PMC5819208.csv",
-    {
-      "coverage_pct": 0.0,
-      "threshold_pct": 50.0,
-      "covered_rows": 0,
-      "total_rows": 32,
-      "missed_examples": [
-        {
-          "snp": "rs34487851",
-          "gt_value": "European ancestry",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs34487851",
-          "gt_value": "European ancestry",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs34487851",
-          "gt_value": "European ancestry",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs34487851",
-          "gt_value": "European ancestry",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs34487851",
-          "gt_value": "European ancestry",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs34487851",
-          "gt_value": "European ancestry",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs34487851",
-          "gt_value": "European ancestry",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs79524815",
-          "gt_value": "European ancestry",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs79524815",
-          "gt_value": "European ancestry",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs79524815",
-          "gt_value": "European ancestry",
-          "pred_terms": []
+          "pred_terms": [
+            "White (EUR)",
+            "Asian (EAS)",
+            "Hispanic (HIS)",
+            "African American (AA)"
+          ]
         }
       ]
     }
@@ -332,24 +341,30 @@
           "snp": "rs593742",
           "gt_value": "NHW",
           "pred_terms": [
-            "IGAP",
-            "UK Biobank"
+            "African American (AA)",
+            "Caribbean Hispanic",
+            "European (EUR)",
+            "East Asian (EAS)"
           ]
         },
         {
           "snp": "rs6504163",
           "gt_value": "NHW",
           "pred_terms": [
-            "IGAP",
-            "UK Biobank"
+            "African American (AA)",
+            "Caribbean Hispanic",
+            "European (EUR)",
+            "East Asian (EAS)"
           ]
         },
         {
           "snp": "rs889555",
           "gt_value": "NHW",
           "pred_terms": [
-            "IGAP",
-            "UK Biobank"
+            "African American (AA)",
+            "Caribbean Hispanic",
+            "European (EUR)",
+            "East Asian (EAS)"
           ]
         }
       ]
@@ -366,20 +381,12 @@
         {
           "snp": "rs10838725",
           "gt_value": "NHW",
-          "pred_terms": [
-            "IGAP",
-            "ADGC",
-            "ADSP"
-          ]
+          "pred_terms": []
         },
         {
           "snp": "rs10838725",
           "gt_value": "European",
-          "pred_terms": [
-            "IGAP",
-            "ADGC",
-            "ADSP"
-          ]
+          "pred_terms": []
         },
         {
           "snp": "rs10948363",
@@ -409,160 +416,17 @@
         {
           "snp": "rs12453",
           "gt_value": "European",
-          "pred_terms": [
-            "IGAP",
-            "ADGC",
-            "ADSP"
-          ]
+          "pred_terms": []
         },
         {
           "snp": "rs12459419",
           "gt_value": "European",
-          "pred_terms": [
-            "IGAP",
-            "ADGC",
-            "ADSP"
-          ]
+          "pred_terms": []
         },
         {
           "snp": "rs1476679",
           "gt_value": "NHW",
-          "pred_terms": [
-            "IGAP",
-            "ADGC",
-            "ADSP"
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    "30617256_PMC6836675.csv",
-    {
-      "coverage_pct": 0.0,
-      "threshold_pct": 50.0,
-      "covered_rows": 0,
-      "total_rows": 90,
-      "missed_examples": [
-        {
-          "snp": "rs10792832",
-          "gt_value": "European ancestry",
-          "pred_terms": [
-            "UKB",
-            "PGC-ALZ",
-            "IGAP",
-            "Psychiatric Genomics Consortium Alzheimers Project",
-            "Alzheimers Disease Sequencing Project",
-            "ADSP"
-          ]
-        },
-        {
-          "snp": "rs10933431",
-          "gt_value": "European ancestry",
-          "pred_terms": [
-            "UKB",
-            "PGC-ALZ",
-            "IGAP",
-            "Psychiatric Genomics Consortium Alzheimers Project",
-            "Alzheimers Disease Sequencing Project",
-            "ADSP"
-          ]
-        },
-        {
-          "snp": "rs10933431",
-          "gt_value": "European ancestry",
-          "pred_terms": [
-            "UKB",
-            "PGC-ALZ",
-            "IGAP",
-            "Psychiatric Genomics Consortium Alzheimers Project",
-            "Alzheimers Disease Sequencing Project",
-            "ADSP"
-          ]
-        },
-        {
-          "snp": "rs10933431",
-          "gt_value": "European ancestry",
-          "pred_terms": [
-            "UKB",
-            "PGC-ALZ",
-            "IGAP",
-            "Psychiatric Genomics Consortium Alzheimers Project",
-            "Alzheimers Disease Sequencing Project",
-            "ADSP"
-          ]
-        },
-        {
-          "snp": "rs111278892",
-          "gt_value": "European ancestry",
-          "pred_terms": [
-            "UKB",
-            "PGC-ALZ",
-            "IGAP",
-            "Psychiatric Genomics Consortium Alzheimers Project",
-            "Alzheimers Disease Sequencing Project",
-            "ADSP"
-          ]
-        },
-        {
-          "snp": "rs11218343",
-          "gt_value": "European ancestry",
-          "pred_terms": [
-            "UKB",
-            "PGC-ALZ",
-            "IGAP",
-            "Psychiatric Genomics Consortium Alzheimers Project",
-            "Alzheimers Disease Sequencing Project",
-            "ADSP"
-          ]
-        },
-        {
-          "snp": "rs11218343",
-          "gt_value": "European ancestry",
-          "pred_terms": [
-            "UKB",
-            "PGC-ALZ",
-            "IGAP",
-            "Psychiatric Genomics Consortium Alzheimers Project",
-            "Alzheimers Disease Sequencing Project",
-            "ADSP"
-          ]
-        },
-        {
-          "snp": "rs11218343",
-          "gt_value": "European ancestry",
-          "pred_terms": [
-            "UKB",
-            "PGC-ALZ",
-            "IGAP",
-            "Psychiatric Genomics Consortium Alzheimers Project",
-            "Alzheimers Disease Sequencing Project",
-            "ADSP"
-          ]
-        },
-        {
-          "snp": "rs11257238",
-          "gt_value": "European ancestry",
-          "pred_terms": [
-            "UKB",
-            "PGC-ALZ",
-            "IGAP",
-            "Psychiatric Genomics Consortium Alzheimers Project",
-            "Alzheimers Disease Sequencing Project",
-            "ADSP"
-          ]
-        },
-        {
-          "snp": "rs11257238",
-          "gt_value": "European ancestry",
-          "pred_terms": [
-            "UKB",
-            "PGC-ALZ",
-            "IGAP",
-            "Psychiatric Genomics Consortium Alzheimers Project",
-            "Alzheimers Disease Sequencing Project",
-            "ADSP"
-          ]
+          "pred_terms": []
         }
       ]
     }
@@ -579,70 +443,100 @@
           "snp": "rs10111328",
           "gt_value": "NHW",
           "pred_terms": [
-            "European population (EUR)"
+            "AA",
+            "EAS",
+            "EUR",
+            "CEU"
           ]
         },
         {
           "snp": "rs10111328",
           "gt_value": "NHW",
           "pred_terms": [
-            "European population (EUR)"
+            "AA",
+            "EAS",
+            "EUR",
+            "CEU"
           ]
         },
         {
           "snp": "rs1046135",
           "gt_value": "NHW",
           "pred_terms": [
-            "European population (EUR)"
+            "AA",
+            "EAS",
+            "EUR",
+            "CEU"
           ]
         },
         {
           "snp": "rs1046135",
           "gt_value": "NHW",
           "pred_terms": [
-            "European population (EUR)"
+            "AA",
+            "EAS",
+            "EUR",
+            "CEU"
           ]
         },
         {
           "snp": "rs10794342",
           "gt_value": "NHW",
           "pred_terms": [
-            "European population (EUR)"
+            "AA",
+            "EAS",
+            "EUR",
+            "CEU"
           ]
         },
         {
           "snp": "rs10947230",
           "gt_value": "NHW",
           "pred_terms": [
-            "European population (EUR)"
+            "AA",
+            "EAS",
+            "EUR",
+            "CEU"
           ]
         },
         {
           "snp": "rs10953322",
           "gt_value": "NHW",
           "pred_terms": [
-            "European population (EUR)"
+            "AA",
+            "EAS",
+            "EUR",
+            "CEU"
           ]
         },
         {
           "snp": "rs11089928",
           "gt_value": "NHW",
           "pred_terms": [
-            "European population (EUR)"
+            "AA",
+            "EAS",
+            "EUR",
+            "CEU"
           ]
         },
         {
           "snp": "rs11089928",
           "gt_value": "NHW",
           "pred_terms": [
-            "European population (EUR)"
+            "AA",
+            "EAS",
+            "EUR",
+            "CEU"
           ]
         },
         {
           "snp": "rs1172922",
           "gt_value": "NHW",
           "pred_terms": [
-            "European population (EUR)"
+            "AA",
+            "EAS",
+            "EUR",
+            "CEU"
           ]
         }
       ]
@@ -720,52 +614,122 @@
         {
           "snp": "rs10501320",
           "gt_value": "European",
-          "pred_terms": []
+          "pred_terms": [
+            "bin1",
+            "apoc2",
+            "apoe",
+            "apoc1",
+            "bmi",
+            "fg-fins"
+          ]
         },
         {
           "snp": "rs10501320",
           "gt_value": "European",
-          "pred_terms": []
+          "pred_terms": [
+            "bin1",
+            "apoc2",
+            "apoe",
+            "apoc1",
+            "bmi",
+            "fg-fins"
+          ]
         },
         {
           "snp": "rs12805422",
           "gt_value": "European",
-          "pred_terms": []
+          "pred_terms": [
+            "bin1",
+            "apoc2",
+            "apoe",
+            "apoc1",
+            "bmi",
+            "fg-fins"
+          ]
         },
         {
           "snp": "rs12805422",
           "gt_value": "European",
-          "pred_terms": []
+          "pred_terms": [
+            "bin1",
+            "apoc2",
+            "apoe",
+            "apoc1",
+            "bmi",
+            "fg-fins"
+          ]
         },
         {
           "snp": "rs1483121",
           "gt_value": "European",
-          "pred_terms": []
+          "pred_terms": [
+            "bin1",
+            "apoc2",
+            "apoe",
+            "apoc1",
+            "bmi",
+            "fg-fins"
+          ]
         },
         {
           "snp": "rs1483121",
           "gt_value": "European",
-          "pred_terms": []
+          "pred_terms": [
+            "bin1",
+            "apoc2",
+            "apoe",
+            "apoc1",
+            "bmi",
+            "fg-fins"
+          ]
         },
         {
           "snp": "rs17747324",
           "gt_value": "European",
-          "pred_terms": []
+          "pred_terms": [
+            "bin1",
+            "apoc2",
+            "apoe",
+            "apoc1",
+            "bmi",
+            "fg-fins"
+          ]
         },
         {
           "snp": "rs17747324",
           "gt_value": "European",
-          "pred_terms": []
+          "pred_terms": [
+            "bin1",
+            "apoc2",
+            "apoe",
+            "apoc1",
+            "bmi",
+            "fg-fins"
+          ]
         },
         {
           "snp": "rs2279590",
           "gt_value": "European",
-          "pred_terms": []
+          "pred_terms": [
+            "bin1",
+            "apoc2",
+            "apoe",
+            "apoc1",
+            "bmi",
+            "fg-fins"
+          ]
         },
         {
           "snp": "rs2279590",
           "gt_value": "European",
-          "pred_terms": []
+          "pred_terms": [
+            "bin1",
+            "apoc2",
+            "apoe",
+            "apoc1",
+            "bmi",
+            "fg-fins"
+          ]
         }
       ]
     }
@@ -781,86 +745,111 @@
         {
           "snp": "rs10467994",
           "gt_value": "Non-Hispanic White",
-          "pred_terms": []
+          "pred_terms": [
+            "EUR",
+            "discovery",
+            "AA",
+            "replication",
+            "EAS"
+          ]
         },
         {
           "snp": "rs10467994",
           "gt_value": "Non-Hispanic White",
-          "pred_terms": []
+          "pred_terms": [
+            "EUR",
+            "discovery",
+            "AA",
+            "replication",
+            "EAS"
+          ]
         },
         {
           "snp": "rs10467994",
           "gt_value": "Non-Hispanic White",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10808026",
-          "gt_value": "Non-Hispanic White",
           "pred_terms": [
-            "GERAD",
-            "EADI",
-            "UK Biobank",
-            "ADGC"
+            "EUR",
+            "discovery",
+            "AA",
+            "replication",
+            "EAS"
           ]
         },
         {
           "snp": "rs10808026",
           "gt_value": "Non-Hispanic White",
           "pred_terms": [
-            "GERAD",
-            "EADI",
-            "UK Biobank",
-            "ADGC"
+            "EUR",
+            "discovery",
+            "AA",
+            "replication",
+            "EAS"
           ]
         },
         {
           "snp": "rs10808026",
           "gt_value": "Non-Hispanic White",
           "pred_terms": [
-            "GERAD",
-            "EADI",
-            "UK Biobank",
-            "ADGC"
+            "EUR",
+            "discovery",
+            "AA",
+            "replication",
+            "EAS"
+          ]
+        },
+        {
+          "snp": "rs10808026",
+          "gt_value": "Non-Hispanic White",
+          "pred_terms": [
+            "EUR",
+            "discovery",
+            "AA",
+            "replication",
+            "EAS"
           ]
         },
         {
           "snp": "rs10933431",
           "gt_value": "Non-Hispanic White",
           "pred_terms": [
-            "GERAD",
-            "EADI",
-            "UK Biobank",
-            "ADGC"
+            "EUR",
+            "discovery",
+            "AA",
+            "replication",
+            "EAS"
           ]
         },
         {
           "snp": "rs10933431",
           "gt_value": "Non-Hispanic White",
           "pred_terms": [
-            "GERAD",
-            "EADI",
-            "UK Biobank",
-            "ADGC"
+            "EUR",
+            "discovery",
+            "AA",
+            "replication",
+            "EAS"
           ]
         },
         {
           "snp": "rs10933431",
           "gt_value": "Non-Hispanic White",
           "pred_terms": [
-            "GERAD",
-            "EADI",
-            "UK Biobank",
-            "ADGC"
+            "EUR",
+            "discovery",
+            "AA",
+            "replication",
+            "EAS"
           ]
         },
         {
           "snp": "rs11218343",
           "gt_value": "Non-Hispanic White",
           "pred_terms": [
-            "GERAD",
-            "EADI",
-            "UK Biobank",
-            "ADGC"
+            "EUR",
+            "discovery",
+            "AA",
+            "replication",
+            "EAS"
           ]
         }
       ]

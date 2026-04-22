@@ -1,42 +1,18 @@
 [
   [
-    "30413934_PMC6358498.csv",
-    "Table 30413934_PMC6358498.csv (90.0) does not have the enough number of row for SNP ['rs2298428', 'rs246174', 'rs4821116', 'rs4985557', 'rs7421448', 'rs8070572', 'rs8071250', 'rs9931998', 'rs9941245']"
-  ],
-  [
     "30651383_PMC6369905.csv",
     "Table 30651383_PMC6369905.csv (0.0) does not have the enough number of row for SNP ['rs12373108', 'rs12583648', 'rs39938', 'rs74587705', 'rs75889566', 'rs9371194']"
-  ],
-  [
-    "30805717_PMC7193309.csv",
-    "Table 30805717_PMC7193309.csv (0.0) does not have the enough number of row for SNP ['rs10501320', 'rs12805422', 'rs1483121', 'rs17747324', 'rs2279590', 'rs4803750', 'rs6656401']"
   ],
   [
     "29107063_PMC5920782.csv",
     "Table 29107063_PMC5920782.csv (0.0) does not have the enough number of row for SNP ['rs115881343', 'rs12721046', 'rs157580', 'rs157582', 'rs2075650', 'rs283815', 'rs405509', 'rs439401', 'rs6859', 'rs71352238', 'rs76366838', 'rs769449', 'rs769450', 'rs8106922']"
   ],
   [
-    "29458411_PMC5819208.csv",
-    "Table 29458411_PMC5819208.csv (0.0) does not have the enough number of row for SNP ['rs34487851', 'rs79524815']"
-  ],
-  [
     "31426376_PMC6723529.csv",
     "Table 31426376_PMC6723529.csv (0.0) does not have the enough number of row for SNP ['APOE-e3e4', 'APOE-e4e4']"
   ],
   [
-    "30448613_PMC6331247.csv",
-    "Table 30448613_PMC6331247.csv (73.91) does not have the enough number of row for SNP ['rs10948363', 'rs111418223', 'rs11771145', 'rs28834970', 'rs6733839', 'rs8093731']"
-  ],
-  [
-    "27899424_PMC5237405.csv",
-    "Table 27899424_PMC5237405.csv (92.86) does not have the enough number of row for SNP ['rs1358071']"
-  ],
-  [
     "29752348_PMC5976227.csv",
     "Table 29752348_PMC5976227.csv (0.0) does not have the enough number of row for SNP ['rs13164785', 'rs146896516', 'rs3744020', 'rs67827860']"
-  ],
-  [
-    "30820047_PMC6463297.csv",
-    "Table 30820047_PMC6463297.csv (67.65) does not have the enough number of row for SNP ['rs10467994', 'rs114812713', 'rs2632516', 'rs2830500', 'rs35868327', 'rs4735340', 'rs593742', 'rs62039712', 'rs71618613', 'rs7185636', 'rs7295246']"
   ]
 ]

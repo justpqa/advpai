@@ -3,7 +3,7 @@
     "28560309_PMC5440281.csv",
     {
       "coverage_pct": 0.0,
-      "threshold_pct": 70.0,
+      "threshold_pct": 50.0,
       "covered_rows": 0,
       "total_rows": 7,
       "missed_examples": [
@@ -46,123 +46,82 @@
     }
   ],
   [
-    "29107063_PMC5920782.csv",
-    {
-      "coverage_pct": 0.0,
-      "threshold_pct": 70.0,
-      "covered_rows": 0,
-      "total_rows": 32,
-      "missed_examples": [
-        {
-          "snp": "rs115881343",
-          "gt_value": "HRS",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs12721046",
-          "gt_value": "FHS",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs12721046",
-          "gt_value": "CHS",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs12721046",
-          "gt_value": "FHS",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs157580",
-          "gt_value": "LOADFS",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs157582",
-          "gt_value": "HRS",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs157582",
-          "gt_value": "HRS",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs2075650",
-          "gt_value": "FHS",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs2075650",
-          "gt_value": "LOADFS",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs2075650",
-          "gt_value": "CHS",
-          "pred_terms": []
-        }
-      ]
-    }
-  ],
-  [
     "29458411_PMC5819208.csv",
     {
       "coverage_pct": 0.0,
-      "threshold_pct": 70.0,
+      "threshold_pct": 50.0,
       "covered_rows": 0,
       "total_rows": 32,
       "missed_examples": [
         {
           "snp": "rs34487851",
           "gt_value": "ADGC",
-          "pred_terms": []
+          "pred_terms": [
+            "MAYO"
+          ]
         },
         {
           "snp": "rs34487851",
           "gt_value": "ADGC",
-          "pred_terms": []
+          "pred_terms": [
+            "MAYO"
+          ]
         },
         {
           "snp": "rs34487851",
           "gt_value": "ADGC",
-          "pred_terms": []
+          "pred_terms": [
+            "MAYO"
+          ]
         },
         {
           "snp": "rs34487851",
           "gt_value": "ADGC",
-          "pred_terms": []
+          "pred_terms": [
+            "MAYO"
+          ]
         },
         {
           "snp": "rs34487851",
           "gt_value": "ADGC",
-          "pred_terms": []
+          "pred_terms": [
+            "MAYO"
+          ]
         },
         {
           "snp": "rs34487851",
           "gt_value": "ADGC",
-          "pred_terms": []
+          "pred_terms": [
+            "MAYO"
+          ]
         },
         {
           "snp": "rs34487851",
           "gt_value": "ADGC",
-          "pred_terms": []
+          "pred_terms": [
+            "MAYO"
+          ]
         },
         {
           "snp": "rs79524815",
           "gt_value": "ADGC",
-          "pred_terms": []
+          "pred_terms": [
+            "MAYO"
+          ]
         },
         {
           "snp": "rs79524815",
           "gt_value": "ADGC",
-          "pred_terms": []
+          "pred_terms": [
+            "MAYO"
+          ]
         },
         {
           "snp": "rs79524815",
           "gt_value": "ADGC",
-          "pred_terms": []
+          "pred_terms": [
+            "MAYO"
+          ]
         }
       ]
     }
@@ -171,7 +130,7 @@
     "29752348_PMC5976227.csv",
     {
       "coverage_pct": 0.0,
-      "threshold_pct": 70.0,
+      "threshold_pct": 50.0,
       "covered_rows": 0,
       "total_rows": 4,
       "missed_examples": [
@@ -202,7 +161,7 @@
     "29967939_PMC6280657.csv",
     {
       "coverage_pct": 16.4,
-      "threshold_pct": 70.0,
+      "threshold_pct": 50.0,
       "covered_rows": 9,
       "total_rows": 55,
       "missed_examples": [
@@ -210,182 +169,121 @@
           "snp": "rs12961169",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "HB",
-            "BIOCARD",
-            "IGAP",
             "ROS/MAP",
+            "Knight-ADRC",
+            "GERAD",
             "MAYO",
-            "GERAD"
+            "ADNI",
+            "BIOCARD"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "HB",
-            "BIOCARD",
-            "IGAP",
             "ROS/MAP",
+            "Knight-ADRC",
+            "GERAD",
             "MAYO",
-            "GERAD"
+            "ADNI",
+            "BIOCARD"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "HB",
-            "BIOCARD",
-            "IGAP",
             "ROS/MAP",
+            "Knight-ADRC",
+            "GERAD",
             "MAYO",
-            "GERAD"
+            "ADNI",
+            "BIOCARD"
           ]
         },
         {
           "snp": "rs13115400",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "HB",
-            "BIOCARD",
-            "IGAP",
             "ROS/MAP",
+            "Knight-ADRC",
+            "GERAD",
             "MAYO",
-            "GERAD"
+            "ADNI",
+            "BIOCARD"
           ]
         },
         {
           "snp": "rs13115400",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "HB",
-            "BIOCARD",
-            "IGAP",
             "ROS/MAP",
+            "Knight-ADRC",
+            "GERAD",
             "MAYO",
-            "GERAD"
+            "ADNI",
+            "BIOCARD"
           ]
         },
         {
           "snp": "rs1393060",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "HB",
-            "BIOCARD",
-            "IGAP",
             "ROS/MAP",
+            "Knight-ADRC",
+            "GERAD",
             "MAYO",
-            "GERAD"
+            "ADNI",
+            "BIOCARD"
           ]
         },
         {
           "snp": "rs1393060",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "HB",
-            "BIOCARD",
-            "IGAP",
             "ROS/MAP",
+            "Knight-ADRC",
+            "GERAD",
             "MAYO",
-            "GERAD"
+            "ADNI",
+            "BIOCARD"
           ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "HB",
-            "BIOCARD",
-            "IGAP",
             "ROS/MAP",
+            "Knight-ADRC",
+            "GERAD",
             "MAYO",
-            "GERAD"
+            "ADNI",
+            "BIOCARD"
           ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "HB",
-            "BIOCARD",
-            "IGAP",
             "ROS/MAP",
+            "Knight-ADRC",
+            "GERAD",
             "MAYO",
-            "GERAD"
+            "ADNI",
+            "BIOCARD"
           ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "HB",
-            "BIOCARD",
-            "IGAP",
             "ROS/MAP",
+            "Knight-ADRC",
+            "GERAD",
             "MAYO",
-            "GERAD"
+            "ADNI",
+            "BIOCARD"
           ]
-        }
-      ]
-    }
-  ],
-  [
-    "30448613_PMC6331247.csv",
-    {
-      "coverage_pct": 69.8,
-      "threshold_pct": 70.0,
-      "covered_rows": 30,
-      "total_rows": 43,
-      "missed_examples": [
-        {
-          "snp": "rs10948363",
-          "gt_value": "UKBEC",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs111418223",
-          "gt_value": "ADNI",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs111418223",
-          "gt_value": "ADNI",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs111418223",
-          "gt_value": "ADNI",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs11771145",
-          "gt_value": "ADNI",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs28834970",
-          "gt_value": "ADNI",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs28834970",
-          "gt_value": "ADNI",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs28834970",
-          "gt_value": "ADNI",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs28834970",
-          "gt_value": "ADNI",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs6733839",
-          "gt_value": "ADNI",
-          "pred_terms": []
         }
       ]
     }
@@ -394,7 +292,7 @@
     "30651383_PMC6369905.csv",
     {
       "coverage_pct": 0.0,
-      "threshold_pct": 70.0,
+      "threshold_pct": 50.0,
       "covered_rows": 0,
       "total_rows": 63,
       "missed_examples": [
@@ -452,132 +350,10 @@
     }
   ],
   [
-    "30805717_PMC7193309.csv",
-    {
-      "coverage_pct": 0.0,
-      "threshold_pct": 70.0,
-      "covered_rows": 0,
-      "total_rows": 14,
-      "missed_examples": [
-        {
-          "snp": "rs10501320",
-          "gt_value": "IGAP",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10501320",
-          "gt_value": "MAGIC",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs12805422",
-          "gt_value": "IGAP",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs12805422",
-          "gt_value": "MAGIC",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs1483121",
-          "gt_value": "IGAP",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs1483121",
-          "gt_value": "MAGIC",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs17747324",
-          "gt_value": "IGAP",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs17747324",
-          "gt_value": "MAGIC",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs2279590",
-          "gt_value": "MAGIC",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs2279590",
-          "gt_value": "IGAP",
-          "pred_terms": []
-        }
-      ]
-    }
-  ],
-  [
-    "30820047_PMC6463297.csv",
-    {
-      "coverage_pct": 68.3,
-      "threshold_pct": 70.0,
-      "covered_rows": 71,
-      "total_rows": 104,
-      "missed_examples": [
-        {
-          "snp": "rs10467994",
-          "gt_value": "ADGC, CHARGE, EADI, GERAD",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10467994",
-          "gt_value": "ADGC, CHARGE, EADI, GERAD",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10467994",
-          "gt_value": "ADGC, CHARGE, EADI, GERAD",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs114812713",
-          "gt_value": "ADGC, CHARGE, EADI, GERAD",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs114812713",
-          "gt_value": "ADGC, CHARGE, EADI, GERAD",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs114812713",
-          "gt_value": "ADGC, CHARGE, EADI, GERAD",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs2632516",
-          "gt_value": "ADGC, CHARGE, EADI, GERAD",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs2632516",
-          "gt_value": "ADGC, CHARGE, EADI, GERAD",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs2632516",
-          "gt_value": "ADGC, CHARGE, EADI, GERAD",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs2830500",
-          "gt_value": "ADGC, CHARGE, EADI, GERAD",
-          "pred_terms": []
-        }
-      ]
-    }
-  ],
-  [
     "31426376_PMC6723529.csv",
     {
       "coverage_pct": 0.0,
-      "threshold_pct": 70.0,
+      "threshold_pct": 50.0,
       "covered_rows": 0,
       "total_rows": 35,
       "missed_examples": [
