@@ -82,7 +82,7 @@ def make_session():
     s.mount("https://", adapter)
     return s
 
-def pmids_to_pmcids_map(batch_pmids: List[str]) -> dict:
+def pmids_to_pmcids_map(batch_pmids: List[str], session: requests.sessions.Session) -> dict:
     """Map PubMed IDs to PMC IDs. Tries elink first, falls back to NCBI ID converter."""
     result = {}
     try:
@@ -160,7 +160,7 @@ def verify_paper_with_gwas_table(pmcid: str) -> bool:
     except Exception as e:
         return False
 
-def extract_papers_by_year(year: int) -> List[dict]:
+def extract_papers_by_year(year: int, session: requests.sessions.Session) -> pd.DataFrame:
     # 1. Search for PMIDs
     params = {
         "db": "pubmed",
@@ -194,7 +194,7 @@ def extract_papers_by_year(year: int) -> List[dict]:
         batch_pmids = pmids[i:min(i + 10, len(pmids))]
         batch_pmids = [str(pmid) for pmid in batch_pmids]
         # fetch pubmed id -> pmcid
-        pmids_to_pmcids = pmids_to_pmcids_map(batch_pmids)
+        pmids_to_pmcids = pmids_to_pmcids_map(batch_pmids, session)
 
         time.sleep(2)
 
@@ -225,8 +225,22 @@ def extract_papers_by_year(year: int) -> List[dict]:
         r.raise_for_status()
 
         for article in ET.fromstring(r.content).findall(".//PubmedArticle"):
+            # get article
             art = article.find(".//Article")
+
+            # get title
             title_el = art.find(".//ArticleTitle")
+            title = "".join(title_el.itertext()) if title_el is not None else ""
+
+            # get abstract and search for term that is in there
+            abstract = " ".join("".join(el.itertext()) for el in art.findall(".//AbstractText"))
+            title_and_abstract = f"{title}\n{abstract}"
+            tiab_terms_used = set()
+            for term in GWAS_TIAB_TERMS + AD_TIAB_TERMS:
+                if term.lower() in title_and_abstract.lower():
+                    tiab_terms_used.add(term)
+            tiab_terms_used = list(tiab_terms_used)
+
             # get mesh terms and all qualifiers
             mesh_terms = []
             for mh in article.findall(".//MedlineCitation/MeshHeadingList/MeshHeading"):
@@ -244,6 +258,7 @@ def extract_papers_by_year(year: int) -> List[dict]:
                 mesh_terms.append(descriptor) # also keep this for those that we filter without qualifiers
             # filter for only those in the the filter
             mesh_terms_used = [term for term in mesh_terms if term in ALL_MESH_TERMS]
+
             try:
                 year = int((
                         art.findtext(".//Journal/JournalIssue/PubDate/Year")
@@ -255,33 +270,52 @@ def extract_papers_by_year(year: int) -> List[dict]:
                 "pmid": article.findtext(".//MedlineCitation/PMID", ""),
                 "pmcid": pmids_to_pmcids[article.findtext(".//MedlineCitation/PMID", "")],
                 "year": year,
-                "title": "".join(title_el.itertext()) if title_el is not None else "",
-                "abstract": " ".join(
-                    "".join(el.itertext())
-                    for el in art.findall(".//AbstractText")
-                ),
+                "title": title,
+                "abstract": abstract,
                 "journal": art.findtext(".//Journal/Title", ""),
-                "authors": [
+                "authors": ",".join([
                     f"{a.findtext('LastName', '')}, {a.findtext('ForeName', '')}".strip(", ")
                     for a in art.findall(".//AuthorList/Author")
                     if a.findtext("LastName")
-                ],
-                "MeSH terms used": mesh_terms_used
+                ]),
+                "MeSH terms used": ",".join(mesh_terms_used),
+                "Title & Abstract terms used": ",".join(tiab_terms_used)
             })
 
         time.sleep(2)
 
+    papers = pd.DataFrame(papers)
     return papers
 
-if __name__ == "__main__":
+def main():
     session = make_session()
-    papers = []
+    all_papers = pd.DataFrame()
     for year in range(2009, 2027):
         print(year)
-        papers.extend(extract_papers_by_year(year))
-        print(f"Total paper found until {year}: {len(papers)}")
+        papers = extract_papers_by_year(year, session)
+        all_papers = pd.concat([all_papers, papers], ignore_index = True)
+        all_papers = all_papers.drop_duplicates() # prevent the case of getting duplicates due to difference in epub and actual publish date
+        print(f"Total paper found until {year}: {all_papers.shape[0]}")
         print()
 
-    papers = pd.DataFrame(papers)
-    papers = papers.sort_values(["year", "pmid"]).reset_index().drop("index", axis = 1)
-    papers.to_csv("new_gwas_ad_paper.csv", index = False)
+    all_papers = all_papers.sort_values(["year", "pmid"]).reset_index().drop("index", axis = 1)
+    all_papers.to_csv("new_gwas_ad_paper.csv", index = False)
+    all_papers.to_excel("new_gwas_ad_paper.xlsx", index = False)
+
+    # now count paper based on disease
+    all_papers["MeSH terms used list"] = all_papers['MeSH terms used'].str.split(",")
+    all_papers_exploded = all_papers.explode(column = "MeSH terms used list") # 1 row per paper and mesh term
+    all_papers_exploded["Disease"] = all_papers_exploded["MeSH terms used list"].apply(
+        lambda x: x.split("/")[0] if x in [
+            "Alzheimer Disease/genetics", "Frontotemporal Dementia/genetics", 
+            "Parkinson Disease/genetics", "Amyotrophic Lateral Sclerosis/genetics"
+        ] else "Other ADRD"
+    )
+
+    count_new_paper_by_disease = all_papers_exploded.groupby("Disease", as_index = False)["pmid"].nunique().rename({"pmid": "Count papers"}, axis = 1)
+    count_new_paper_by_disease = count_new_paper_by_disease.sort_values("Count papers", ascending = False).reset_index().drop("index", axis = 1)
+    count_new_paper_by_disease.to_csv("count_new_paper_by_disease.csv", index = False)
+    count_new_paper_by_disease.to_excel("count_new_paper_by_disease.xlsx", index = False)
+
+if __name__ == "__main__":
+    main()
