@@ -45,8 +45,26 @@ class GWASInformationRetriever:
                  use_hf: bool = True, device: Optional[str] = None):
         # load ref col df
         self.referencing_col_lst = referencing_col_df["column"].to_list()
-        self.referencing_col_context_lst = referencing_col_df.apply(lambda x: x["column"] if pd.isna(x["description"]) else x["column"] + ": " + x["description"], axis = 1).to_list()
-        self.referencing_col_choices_lst = referencing_col_df["choices"].apply(lambda x: x.split(";") if isinstance(x, str) and ";" in x else []).to_list()
+        # Definition-only context (no examples) — safe to show to the LLM.
+        self.referencing_col_context_lst = referencing_col_df.apply(
+            lambda x: x["column"] if pd.isna(x["description"]) else x["column"] + ": " + x["description"],
+            axis=1,
+        ).to_list()
+        # Examples kept separate; used ONLY to strengthen retrieval and as a
+        # labeled, anti-leakage hint block inside the prompt.
+        if "examples" in referencing_col_df.columns:
+            self.referencing_col_examples_lst = referencing_col_df["examples"].apply(
+                lambda x: x.strip() if isinstance(x, str) and x.strip() else ""
+            ).to_list()
+        else:
+            self.referencing_col_examples_lst = ["" for _ in self.referencing_col_lst]
+        self.referencing_col_use_examples_in_llm_lst = referencing_col_df["use_examples_in_llm"]
+        # Retrieval query = definition + examples (examples help embedding recall,
+        # but will NOT be shown verbatim to the LLM in the generation prompt).
+        self.referencing_col_retrieval_query_lst = [
+            ctx if not ex else f"{ctx} Examples: {ex}."
+            for ctx, ex in zip(self.referencing_col_context_lst, self.referencing_col_examples_lst)
+        ]
 
         # load vector store
         self.vector_store = Chroma(
@@ -175,46 +193,50 @@ class GWASInformationRetriever:
     #     print(best_score_by_choice)
     #     return [c for i, c in enumerate(choices_lst) if best_score_by_choice[i] >= threshold]
     
-    def make_messages(self, query: str, documents: List[str]) -> List[Dict]:
+    def make_messages(self, query: str, documents: List[str], examples: str = "", use_examples_in_llm: bool = True) -> List[Dict]:
         document_str = "\n\n".join([f"EXCERPT {i + 1}:\n{d}" for i, d in enumerate(documents)])
-        # Example:
-        # Question: What kind of study is in the paper? (Allowed values: "SNP-based", "gene-based")
-        # Document: We performed both variant-level and gene-level association analyses. First, SNP-based GWAS summary statistics were computed in each ancestry group (EUR, EAS, AFR) and then combined via fixed-effect meta-analysis. In addition, we conducted a gene-based test aggregating rare variants per gene to prioritize candidate genes. The workflow included three stages: (i) discovery in EUR, (ii) validation in EAS and AFR, and (iii) trans-ancestry meta-analysis.
-        # Output: ["gene-based", "SNP-based"]
-        # - If the field value applies to the entire paper (not tied to a specific cohort/stage), prefix it with GLOBAL: (e.g., GLOBAL: imputed to 1000 Genomes).
 
-        # Now do the same:
+        # Examples from the CSV are quarantined in a clearly labeled block and
+        # explicitly forbidden unless they also appear in the EXCERPTs. This
+        # keeps them available as weak context without encouraging the model
+        # to regurgitate them as extractions.
+        hints_block = (
+            f"\nRetrieval hints (DO NOT output any of these unless they appear verbatim in the EXCERPTs above):\n{examples}\n"
+            if examples and use_examples_in_llm else ""
+        )
 
         messages = [
             {
-                "role": "system", 
-                "content": "You are a strict biomedical information extraction engine. Only use the provided text. Never guess. Output must follow the required format exactly."
+                "role": "system",
+                "content": (
+                    "You are a strict biomedical information extraction engine. "
+                    "Only output values that appear verbatim in the provided EXCERPTs. "
+                    "Do not copy any term from the field definition, from retrieval hints, "
+                    "or from your own domain knowledge if it is not literally present in the EXCERPTs. "
+                    "If the EXCERPTs do not support a value, return an empty list. "
+                    "Respond with a single JSON object and nothing else."
+                ),
             },
             {
                 "role": "user",
-                "content": f"""
-Goal: extract candidate values for a field that will later be matched to table column headers.
+                "content": f"""Goal: extract candidate values for a field, grounded strictly in the EXCERPTs.
 
 Field:
 {query}
-
-Important:
-- The output will be mapped to rows by matching against column names/headers.
-- Therefore, prefer short “header-like” labels exactly as written (e.g., ADNI, IGAP, UK Biobank, discovery, replication).
-- If both a long name and an abbreviation/alias appear, include BOTH as separate items (exact casing).
-
-Evidence text:
+{hints_block}
+EXCERPTs:
 {document_str}
 
 Rules:
-- Return exactly one Python list literal of strings and nothing else.
-- Only include items explicitly supported by the excerpts.
-- No paraphrasing; copy exact phrases/labels from the excerpts.
+- Only include items that appear literally in the EXCERPTs (exact casing, exact spelling).
+- No paraphrasing, no expansions, no translations.
+- If a long name and an abbreviation both appear in the EXCERPTs, include BOTH.
 - De-duplicate items.
-- If insufficient evidence, return [].
+- If nothing in the EXCERPTs supports the field, return {{"items": []}}.
 
-Output:"""
-            }
+Respond with a single JSON object only, no prose, no markdown fence:
+{{"items": ["<verbatim string from EXCERPT>", ...]}}"""
+            },
         ]
         return messages
 
@@ -270,13 +292,28 @@ Output: """
         return prompt_lst
     
     def extract_lst_from_llm_output(self, text: str) -> List[str]:
-        text = text.replace("```", "").strip()
+        text = text.replace("```json", "").replace("```", "").strip()
+        # Prefer the structured JSON object produced by the new prompt.
+        json_match = re.search(r"\{.*\}", text, re.DOTALL)
+        if json_match:
+            import json
+            try:
+                obj = json.loads(json_match.group(0))
+                items = obj.get("items", []) if isinstance(obj, dict) else []
+                if isinstance(items, list):
+                    lst = [str(x) for x in items if isinstance(x, (str, int, float))]
+                    lst = list(set([item.lower() for item in lst]))
+                    return lst
+            except Exception:
+                pass
+        # Backward-compatible fallback for bare Python list outputs.
         matches = re.findall(r"\[.*?\]", text, re.DOTALL)
-        if not matches or len(matches) < 1:
+        if not matches:
             return []
-        list_str = matches[-1]
         try:
-            return ast.literal_eval(list_str)
+            lst = ast.literal_eval(matches[-1])
+            lst = list(set([item.lower() for item in lst]))
+            return lst
         except Exception:
             return []
         
@@ -302,12 +339,19 @@ Output: """
         """
         res = {}
 
-        for ref_col, ref_col_context in zip(self.referencing_col_lst, self.referencing_col_context_lst):
-            # search for related context
-            # full_query = f"What kind of {ref_col} is in the paper, given that {ref_col_context}"
+        for ref_col, ref_col_context, ref_col_examples, ref_col_use_examples_in_llm, ref_col_retrieval_query in zip(
+            self.referencing_col_lst,
+            self.referencing_col_context_lst,
+            self.referencing_col_examples_lst,
+            self.referencing_col_use_examples_in_llm_lst,
+            self.referencing_col_retrieval_query_lst,
+        ):
+            # Retrieval uses definition + examples (better recall); the LLM
+            # prompt sees only the definition, with examples in a quarantined block.
             query = ref_col_context
+            retrieval_query = ref_col_retrieval_query
             documents = self.vector_store.similarity_search_with_relevance_scores(
-                query = query, 
+                query = retrieval_query,
                 k = self.top_k,
                 filter = {"$and": [{"PMID": str(pmid)}, {"PMCID": pmcid}]},
             )
@@ -318,44 +362,33 @@ Output: """
                 continue
 
             # rerank
-            # scores = self.reranker_model.predict([(query, d) for d in documents])
-            # documents = [doc for _, doc in sorted(zip(scores, documents), key=lambda x: x[0], reverse=True)]
-            # documents = documents[:self.top_k_rerank]
+            scores = self.reranker_model.predict([(retrieval_query, d) for d in documents])
+            documents = [doc for _, doc in sorted(zip(scores, documents), key=lambda x: x[0], reverse=True)]
+            documents = documents[:self.top_k_rerank]
 
-            # extract a list of possible info from llm
-            # full_query = f"What kind of {ref_col} is in the paper, given that {ref_col_context}"
-            if self.use_hf:
-                prompt = self.make_prompt(query, documents)
-                inputs = self.tokenizer(prompt, return_tensors="pt").to(self.device)
-                outputs = self.model.generate(
-                    **inputs,
-                    max_new_tokens=self.max_new_tokens,
-                    do_sample=False,
-                    temperature=self.temperature,
-                    top_p=self.top_p,
-                )
-                response = self.tokenizer.decode(outputs[0][inputs["input_ids"].shape[-1]:], skip_special_tokens=True)
-            else:
-                messages = self.make_messages(query, documents)
-                response = self.llm.create_chat_completion(
-                    messages=messages,
-                    max_tokens=self.max_new_tokens,
-                    temperature=self.temperature,
-                    top_p=self.top_p,
-                )
-                response = response["choices"][0]["message"]["content"]
-            # prompt = self.make_prompt(full_query, documents)
-            # outputs = self.model.generate(
-            #     **self.tokenizer(prompt, return_tensors="pt").to(self.device),
-            #     max_new_tokens=self.max_new_tokens,
-            #     do_sample=False,
-            #     temperature=self.temperature,
-            #     top_p=self.top_p,
-            # )
-            # response = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
-            # extract list of possible info
+            messages = self.make_messages(query, documents, examples=ref_col_examples, use_examples_in_llm=ref_col_use_examples_in_llm)
+            response = self.llm.create_chat_completion(
+                messages=messages,
+                max_tokens=self.max_new_tokens,
+                temperature=self.temperature,
+                top_p=self.top_p,
+                response_format={
+                    "type": "json_object",
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "items": {
+                                "type": "array",
+                                "items": {"type": "string"},
+                            },
+                        },
+                        "required": ["items"],
+                    },
+                },
+            )
+            response = response["choices"][0]["message"]["content"]
             res[ref_col] = self.extract_lst_from_llm_output(response)
-    
+
         return res
     
     def extract_possible_info_from_paper_with_choices(self, pmid: int, pmcid: str) -> Dict[str, List]:

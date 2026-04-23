@@ -1,51 +1,5 @@
 [
   [
-    "28560309_PMC5440281.csv",
-    {
-      "coverage_pct": 0.0,
-      "threshold_pct": 50.0,
-      "covered_rows": 0,
-      "total_rows": 7,
-      "missed_examples": [
-        {
-          "snp": "None",
-          "gt_value": "1000G",
-          "pred_terms": []
-        },
-        {
-          "snp": "None",
-          "gt_value": "1000G",
-          "pred_terms": []
-        },
-        {
-          "snp": "None",
-          "gt_value": "1000G",
-          "pred_terms": []
-        },
-        {
-          "snp": "None",
-          "gt_value": "1000G",
-          "pred_terms": []
-        },
-        {
-          "snp": "None",
-          "gt_value": "1000G",
-          "pred_terms": []
-        },
-        {
-          "snp": "None",
-          "gt_value": "1000G",
-          "pred_terms": []
-        },
-        {
-          "snp": "None",
-          "gt_value": "1000G",
-          "pred_terms": []
-        }
-      ]
-    }
-  ],
-  [
     "29274321_PMC5938137.csv",
     {
       "coverage_pct": 0.0,
@@ -56,52 +10,82 @@
         {
           "snp": "rs10775009",
           "gt_value": "1000G (release Mar 2012)",
-          "pred_terms": []
+          "pred_terms": [
+            "haplotype reference consortium (hrc)",
+            "topmed"
+          ]
         },
         {
           "snp": "rs111882035",
           "gt_value": "1000G (release Mar 2012)",
-          "pred_terms": []
+          "pred_terms": [
+            "haplotype reference consortium (hrc)",
+            "topmed"
+          ]
         },
         {
           "snp": "rs118130881",
           "gt_value": "1000G (release Mar 2012)",
-          "pred_terms": []
+          "pred_terms": [
+            "haplotype reference consortium (hrc)",
+            "topmed"
+          ]
         },
         {
           "snp": "rs12268753",
           "gt_value": "1000G (release Mar 2012)",
-          "pred_terms": []
+          "pred_terms": [
+            "haplotype reference consortium (hrc)",
+            "topmed"
+          ]
         },
         {
           "snp": "rs2378873",
           "gt_value": "1000G (release Mar 2012)",
-          "pred_terms": []
+          "pred_terms": [
+            "haplotype reference consortium (hrc)",
+            "topmed"
+          ]
         },
         {
           "snp": "rs2819438",
           "gt_value": "1000G (release Mar 2012)",
-          "pred_terms": []
+          "pred_terms": [
+            "haplotype reference consortium (hrc)",
+            "topmed"
+          ]
         },
         {
           "snp": "rs4921790",
           "gt_value": "1000G (release Mar 2012)",
-          "pred_terms": []
+          "pred_terms": [
+            "haplotype reference consortium (hrc)",
+            "topmed"
+          ]
         },
         {
           "snp": "rs55644114",
           "gt_value": "1000G (release Mar 2012)",
-          "pred_terms": []
+          "pred_terms": [
+            "haplotype reference consortium (hrc)",
+            "topmed"
+          ]
         },
         {
           "snp": "rs73705514",
           "gt_value": "1000G (release Mar 2012)",
-          "pred_terms": []
+          "pred_terms": [
+            "haplotype reference consortium (hrc)",
+            "topmed"
+          ]
         },
         {
           "snp": "rs74442473",
           "gt_value": "1000G (release Mar 2012)",
-          "pred_terms": []
+          "pred_terms": [
+            "haplotype reference consortium (hrc)",
+            "topmed"
+          ]
         }
       ]
     }
@@ -132,67 +116,6 @@
         {
           "snp": "rs67827860",
           "gt_value": "HRC",
-          "pred_terms": []
-        }
-      ]
-    }
-  ],
-  [
-    "30448613_PMC6331247.csv",
-    {
-      "coverage_pct": 0.0,
-      "threshold_pct": 50.0,
-      "covered_rows": 0,
-      "total_rows": 19,
-      "missed_examples": [
-        {
-          "snp": "rs10838725",
-          "gt_value": "Imputed",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs12453",
-          "gt_value": "Imputed",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs12459419",
-          "gt_value": "Imputed",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs1476679",
-          "gt_value": "Imputed",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs1859788",
-          "gt_value": "Imputed",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs2293576",
-          "gt_value": "Imputed",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs2296160",
-          "gt_value": "Imputed",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs2405442",
-          "gt_value": "Imputed",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs3752246",
-          "gt_value": "Imputed",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs3865444",
-          "gt_value": "Imputed",
           "pred_terms": []
         }
       ]
@@ -254,6 +177,67 @@
         {
           "snp": "rs12373108",
           "gt_value": "1000G Phase 3 (release Oct 2014)",
+          "pred_terms": []
+        }
+      ]
+    }
+  ],
+  [
+    "30805717_PMC7193309.csv",
+    {
+      "coverage_pct": 0.0,
+      "threshold_pct": 50.0,
+      "covered_rows": 0,
+      "total_rows": 14,
+      "missed_examples": [
+        {
+          "snp": "rs10501320",
+          "gt_value": "1000G",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs10501320",
+          "gt_value": "HapMap2",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12805422",
+          "gt_value": "1000G",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12805422",
+          "gt_value": "HapMap2",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs1483121",
+          "gt_value": "1000G",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs1483121",
+          "gt_value": "HapMap2",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs17747324",
+          "gt_value": "1000G",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs17747324",
+          "gt_value": "HapMap2",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs2279590",
+          "gt_value": "HapMap2",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs2279590",
+          "gt_value": "1000G",
           "pred_terms": []
         }
       ]

@@ -391,7 +391,24 @@
     "colocalisation": "Gene-based",
     "colocalization": "Gene-based",
     "mendelian randomization": "MR",
-    "mr": "MR"
+    "mr": "MR",
+    "pleiotropy": "Pleiotropy",
+    "pleiotropic": "Pleiotropy",
+    "pleiotropic effect": "Pleiotropy",
+    "pleiotropy analysis": "Pleiotropy",
+    "trivariate pleiotropy": "Pleiotropy",
+    "conjunction false discovery rate": "Pleiotropy",
+    "conjfdr": "Pleiotropy",
+    "condfdr": "Pleiotropy",
+    "pathway-based": "Pathway-based",
+    "pathway based": "Pathway-based",
+    "pathway analysis": "Pathway-based",
+    "ld score regression": "Genetic Correlation",
+    "ldsc": "Genetic Correlation",
+    "ld-score regression": "Genetic Correlation",
+    "genetic correlation": "Genetic Correlation",
+    "meta-analysis of correlated traits": "Genetic Correlation",
+    "integrative approaches": "Integrative"
   },
   "Phenotype": {
     "alzheimer's disease": "AD",
@@ -597,6 +614,17 @@
     "intracranial volume": "Brain volume",
     "icv": "Brain volume",
     "gray matter volume": "Brain volume",
-    "white matter volume": "Brain volume"
+    "white matter volume": "Brain volume",
+    "high blood pressure": "Hypertension",
+    "heart disease": "Cardiovascular disease",
+    "family history": "AD-by-proxy",
+    "family history of ad": "AD-by-proxy",
+    "parental history of ad": "AD-by-proxy",
+    "hyperlipidemia": "Hyperlipidemia",
+    "dyslipidemia": "Hyperlipidemia",
+    "lipid metabolism": "Lipid metabolism",
+    "lipid levels": "Lipid metabolism",
+    "hyperthyroidism": "Hyperthyroidism",
+    "thyroid": "Hyperthyroidism"
   }
 }

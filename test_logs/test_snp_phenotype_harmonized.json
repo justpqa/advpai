@@ -1,168 +1,121 @@
 [
   [
-    "27899424_PMC5237405.csv",
-    {
-      "coverage_pct": 0.0,
-      "threshold_pct": 50.0,
-      "covered_rows": 0,
-      "total_rows": 57,
-      "missed_examples": [
-        {
-          "snp": "rs10784359",
-          "gt_value": "Frontotemporal Dementia",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs12964543",
-          "gt_value": "Frontotemporal Dementia",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs12964543",
-          "gt_value": "Frontotemporal Dementia",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs12964543",
-          "gt_value": "Frontotemporal Dementia",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs12964543",
-          "gt_value": "Frontotemporal Dementia",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs1328032",
-          "gt_value": "Frontotemporal Dementia",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs1328032",
-          "gt_value": "Frontotemporal Dementia",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs1328032",
-          "gt_value": "Frontotemporal Dementia",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs1358071",
-          "gt_value": "CRHR1 expression in Medulla",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs1358071",
-          "gt_value": "Frontotemporal Dementia",
-          "pred_terms": []
-        }
-      ]
-    }
-  ],
-  [
     "28247064_PMC5613285.csv",
     {
-      "coverage_pct": 0.0,
+      "coverage_pct": 33.3,
       "threshold_pct": 50.0,
-      "covered_rows": 0,
+      "covered_rows": 14,
       "total_rows": 42,
       "missed_examples": [
         {
           "snp": "rs12961169",
           "gt_value": "Age at onset",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs12961169",
-          "gt_value": "AD Progression (based on CDR Score)",
-          "pred_terms": []
+          "pred_terms": [
+            "blood pressure",
+            "type 2 diabetes",
+            "ldl cholesterol",
+            "alzheimers disease",
+            "bmi"
+          ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "CSF Ab1-42",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs12961169",
-          "gt_value": "AD risk",
-          "pred_terms": []
+          "pred_terms": [
+            "blood pressure",
+            "type 2 diabetes",
+            "ldl cholesterol",
+            "alzheimers disease",
+            "bmi"
+          ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "CSF T-tau",
-          "pred_terms": []
+          "pred_terms": [
+            "blood pressure",
+            "type 2 diabetes",
+            "ldl cholesterol",
+            "alzheimers disease",
+            "bmi"
+          ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "CSF P-tau181p",
-          "pred_terms": []
+          "pred_terms": [
+            "blood pressure",
+            "type 2 diabetes",
+            "ldl cholesterol",
+            "alzheimers disease",
+            "bmi"
+          ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "Age at onset",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs185031519",
-          "gt_value": "AD Progression (based on CDR Score)",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs185031519",
-          "gt_value": "AD risk",
-          "pred_terms": []
+          "pred_terms": [
+            "blood pressure",
+            "type 2 diabetes",
+            "ldl cholesterol",
+            "alzheimers disease",
+            "bmi"
+          ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "CSF T-tau",
-          "pred_terms": []
-        }
-      ]
-    }
-  ],
-  [
-    "28560309_PMC5440281.csv",
-    {
-      "coverage_pct": 0.0,
-      "threshold_pct": 50.0,
-      "covered_rows": 0,
-      "total_rows": 7,
-      "missed_examples": [
-        {
-          "snp": "None",
-          "gt_value": "ADAS-Cog scores (Longitudinal Alzheimer's Disease Assessment Scale-Cognition scores)",
-          "pred_terms": []
+          "pred_terms": [
+            "blood pressure",
+            "type 2 diabetes",
+            "ldl cholesterol",
+            "alzheimers disease",
+            "bmi"
+          ]
         },
         {
-          "snp": "None",
-          "gt_value": "ADAS-Cog scores (Longitudinal Alzheimer's Disease Assessment Scale-Cognition scores)",
-          "pred_terms": []
+          "snp": "rs185031519",
+          "gt_value": "CSF Ab1-42",
+          "pred_terms": [
+            "blood pressure",
+            "type 2 diabetes",
+            "ldl cholesterol",
+            "alzheimers disease",
+            "bmi"
+          ]
         },
         {
-          "snp": "None",
-          "gt_value": "ADAS-Cog scores (Longitudinal Alzheimer's Disease Assessment Scale-Cognition scores)",
-          "pred_terms": []
+          "snp": "rs185031519",
+          "gt_value": "CSF P-tau181p",
+          "pred_terms": [
+            "blood pressure",
+            "type 2 diabetes",
+            "ldl cholesterol",
+            "alzheimers disease",
+            "bmi"
+          ]
         },
         {
-          "snp": "None",
-          "gt_value": "ADAS-Cog scores (Longitudinal Alzheimer's Disease Assessment Scale-Cognition scores)",
-          "pred_terms": []
+          "snp": "rs316341",
+          "gt_value": "CSF P-tau181p",
+          "pred_terms": [
+            "blood pressure",
+            "type 2 diabetes",
+            "ldl cholesterol",
+            "alzheimers disease",
+            "bmi"
+          ]
         },
         {
-          "snp": "None",
-          "gt_value": "ADAS-Cog scores (Longitudinal Alzheimer's Disease Assessment Scale-Cognition scores)",
-          "pred_terms": []
-        },
-        {
-          "snp": "None",
-          "gt_value": "ADAS-Cog scores (Longitudinal Alzheimer's Disease Assessment Scale-Cognition scores)",
-          "pred_terms": []
-        },
-        {
-          "snp": "None",
-          "gt_value": "ADAS-Cog scores (Longitudinal Alzheimer's Disease Assessment Scale-Cognition scores)",
-          "pred_terms": []
+          "snp": "rs316341",
+          "gt_value": "CSF T-tau",
+          "pred_terms": [
+            "blood pressure",
+            "type 2 diabetes",
+            "ldl cholesterol",
+            "alzheimers disease",
+            "bmi"
+          ]
         }
       ]
     }
@@ -170,30 +123,34 @@
   [
     "29107063_PMC5920782.csv",
     {
-      "coverage_pct": 0.0,
+      "coverage_pct": 46.9,
       "threshold_pct": 50.0,
-      "covered_rows": 0,
+      "covered_rows": 15,
       "total_rows": 32,
       "missed_examples": [
         {
           "snp": "rs115881343",
           "gt_value": "Age at onset",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs12721046",
-          "gt_value": "AD",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs12721046",
-          "gt_value": "Age at onset",
-          "pred_terms": []
+          "pred_terms": [
+            "type 2 diabetes",
+            "alzheimers disease"
+          ]
         },
         {
           "snp": "rs12721046",
           "gt_value": "Age at onset",
-          "pred_terms": []
+          "pred_terms": [
+            "type 2 diabetes",
+            "alzheimers disease"
+          ]
+        },
+        {
+          "snp": "rs12721046",
+          "gt_value": "Age at onset",
+          "pred_terms": [
+            "type 2 diabetes",
+            "alzheimers disease"
+          ]
         },
         {
           "snp": "rs157580",
@@ -203,127 +160,180 @@
         {
           "snp": "rs157582",
           "gt_value": "Age at onset",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs157582",
-          "gt_value": "AD",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs2075650",
-          "gt_value": "AD",
-          "pred_terms": []
+          "pred_terms": [
+            "type 2 diabetes",
+            "alzheimers disease"
+          ]
         },
         {
           "snp": "rs2075650",
-          "gt_value": "AD",
-          "pred_terms": []
+          "gt_value": "Age at onset",
+          "pred_terms": [
+            "type 2 diabetes",
+            "alzheimers disease"
+          ]
         },
         {
           "snp": "rs2075650",
-          "gt_value": "AD",
-          "pred_terms": []
+          "gt_value": "Age at onset",
+          "pred_terms": [
+            "type 2 diabetes",
+            "alzheimers disease"
+          ]
+        },
+        {
+          "snp": "rs2075650",
+          "gt_value": "Age at onset",
+          "pred_terms": [
+            "type 2 diabetes",
+            "alzheimers disease"
+          ]
+        },
+        {
+          "snp": "rs283815",
+          "gt_value": "Age at onset",
+          "pred_terms": [
+            "type 2 diabetes",
+            "alzheimers disease"
+          ]
+        },
+        {
+          "snp": "rs405509",
+          "gt_value": "Age at onset",
+          "pred_terms": [
+            "type 2 diabetes",
+            "alzheimers disease"
+          ]
         }
       ]
     }
   ],
   [
-    "29458411_PMC5819208.csv",
+    "29274321_PMC5938137.csv",
     {
-      "coverage_pct": 6.2,
+      "coverage_pct": 0.0,
       "threshold_pct": 50.0,
-      "covered_rows": 2,
-      "total_rows": 32,
+      "covered_rows": 0,
+      "total_rows": 12,
       "missed_examples": [
         {
-          "snp": "rs34487851",
-          "gt_value": "Neuritic plaque (NP)",
+          "snp": "rs10775009",
+          "gt_value": "CSF T-tau",
           "pred_terms": [
-            "neuropathological traits",
-            "pleiotropy",
-            "alzheimers disease"
+            "mci",
+            "adni",
+            "alzheimers disease",
+            "alzheimer disease",
+            "ad",
+            "cn"
           ]
         },
         {
-          "snp": "rs34487851",
-          "gt_value": "Neurofibrillary tangles (NFT)",
+          "snp": "rs111882035",
+          "gt_value": "Logic memory delayed (LMdT) recall test",
           "pred_terms": [
-            "neuropathological traits",
-            "pleiotropy",
-            "alzheimers disease"
+            "mci",
+            "adni",
+            "alzheimers disease",
+            "alzheimer disease",
+            "ad",
+            "cn"
           ]
         },
         {
-          "snp": "rs34487851",
-          "gt_value": "Cerebral amyloid angiopathy (CAA)",
+          "snp": "rs118130881",
+          "gt_value": "Logical memory immediate (LMiT) recall test",
           "pred_terms": [
-            "neuropathological traits",
-            "pleiotropy",
-            "alzheimers disease"
+            "mci",
+            "adni",
+            "alzheimers disease",
+            "alzheimer disease",
+            "ad",
+            "cn"
           ]
         },
         {
-          "snp": "rs34487851",
-          "gt_value": "Neuritic plaque (NP)+Neurofibrillary tangles (NFT)",
+          "snp": "rs12268753",
+          "gt_value": "Logic memory delayed (LMdT) recall test",
           "pred_terms": [
-            "neuropathological traits",
-            "pleiotropy",
-            "alzheimers disease"
+            "mci",
+            "adni",
+            "alzheimers disease",
+            "alzheimer disease",
+            "ad",
+            "cn"
           ]
         },
         {
-          "snp": "rs34487851",
-          "gt_value": "Neuritic plaque (NP)+Cerebral amyloid angiopathy (CAA)",
+          "snp": "rs2378873",
+          "gt_value": "CSF Ab1-42",
           "pred_terms": [
-            "neuropathological traits",
-            "pleiotropy",
-            "alzheimers disease"
+            "mci",
+            "adni",
+            "alzheimers disease",
+            "alzheimer disease",
+            "ad",
+            "cn"
           ]
         },
         {
-          "snp": "rs34487851",
-          "gt_value": "Neurofibrillary tangles (NFT)+Cerebral amyloid angiopathy (CAA)",
+          "snp": "rs2819438",
+          "gt_value": "CSF T-tau",
           "pred_terms": [
-            "neuropathological traits",
-            "pleiotropy",
-            "alzheimers disease"
+            "mci",
+            "adni",
+            "alzheimers disease",
+            "alzheimer disease",
+            "ad",
+            "cn"
           ]
         },
         {
-          "snp": "rs79524815",
-          "gt_value": "Neuritic plaque (NP)",
+          "snp": "rs4921790",
+          "gt_value": "Hippocampal volume (HPV)",
           "pred_terms": [
-            "neuropathological traits",
-            "pleiotropy",
-            "alzheimers disease"
+            "mci",
+            "adni",
+            "alzheimers disease",
+            "alzheimer disease",
+            "ad",
+            "cn"
           ]
         },
         {
-          "snp": "rs79524815",
-          "gt_value": "Neurofibrillary tangles (NFT)",
+          "snp": "rs55644114",
+          "gt_value": "CSF Ab1-42",
           "pred_terms": [
-            "neuropathological traits",
-            "pleiotropy",
-            "alzheimers disease"
+            "mci",
+            "adni",
+            "alzheimers disease",
+            "alzheimer disease",
+            "ad",
+            "cn"
           ]
         },
         {
-          "snp": "rs79524815",
-          "gt_value": "Cerebral amyloid angiopathy (CAA)",
+          "snp": "rs73705514",
+          "gt_value": "Logic memory delayed (LMdT) recall test",
           "pred_terms": [
-            "neuropathological traits",
-            "pleiotropy",
-            "alzheimers disease"
+            "mci",
+            "adni",
+            "alzheimers disease",
+            "alzheimer disease",
+            "ad",
+            "cn"
           ]
         },
         {
-          "snp": "rs79524815",
-          "gt_value": "Neuritic plaque (NP)+Neurofibrillary tangles (NFT)",
+          "snp": "rs74442473",
+          "gt_value": "CSF Ab1-42",
           "pred_terms": [
-            "neuropathological traits",
-            "pleiotropy",
-            "alzheimers disease"
+            "mci",
+            "adni",
+            "alzheimers disease",
+            "alzheimer disease",
+            "ad",
+            "cn"
           ]
         }
       ]
@@ -371,112 +381,233 @@
         {
           "snp": "rs12961169",
           "gt_value": "CSF P-tau181p",
-          "pred_terms": []
+          "pred_terms": [
+            "adgc",
+            "alzheimers disease",
+            "vascular dementia",
+            "ad"
+          ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "CSF P-tau181p",
-          "pred_terms": []
+          "pred_terms": [
+            "adgc",
+            "alzheimers disease",
+            "vascular dementia",
+            "ad"
+          ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "CSF P-tau181p",
-          "pred_terms": []
+          "pred_terms": [
+            "adgc",
+            "alzheimers disease",
+            "vascular dementia",
+            "ad"
+          ]
         },
         {
           "snp": "rs13115400",
           "gt_value": "Amyloid Burden",
-          "pred_terms": []
+          "pred_terms": [
+            "adgc",
+            "alzheimers disease",
+            "vascular dementia",
+            "ad"
+          ]
         },
         {
           "snp": "rs13115400",
           "gt_value": "CSF Ab1-42",
-          "pred_terms": []
+          "pred_terms": [
+            "adgc",
+            "alzheimers disease",
+            "vascular dementia",
+            "ad"
+          ]
         },
         {
           "snp": "rs13115400",
           "gt_value": "CSF Ab1-42",
-          "pred_terms": []
+          "pred_terms": [
+            "adgc",
+            "alzheimers disease",
+            "vascular dementia",
+            "ad"
+          ]
         },
         {
           "snp": "rs13115400",
           "gt_value": "Amyloid Burden",
-          "pred_terms": []
+          "pred_terms": [
+            "adgc",
+            "alzheimers disease",
+            "vascular dementia",
+            "ad"
+          ]
         },
         {
           "snp": "rs1393060",
           "gt_value": "Neuronal Neurofibrillary Tangles",
-          "pred_terms": []
+          "pred_terms": [
+            "adgc",
+            "alzheimers disease",
+            "vascular dementia",
+            "ad"
+          ]
         },
         {
           "snp": "rs1393060",
           "gt_value": "Neuronal Neurofibrillary Tangles",
-          "pred_terms": []
+          "pred_terms": [
+            "adgc",
+            "alzheimers disease",
+            "vascular dementia",
+            "ad"
+          ]
         },
         {
           "snp": "rs1393060",
           "gt_value": "CSF T-tau",
-          "pred_terms": []
+          "pred_terms": [
+            "adgc",
+            "alzheimers disease",
+            "vascular dementia",
+            "ad"
+          ]
         }
       ]
     }
   ],
   [
-    "30636644_PMC6330399.csv",
+    "30448613_PMC6331247.csv",
+    {
+      "coverage_pct": 39.5,
+      "threshold_pct": 50.0,
+      "covered_rows": 17,
+      "total_rows": 43,
+      "missed_examples": [
+        {
+          "snp": "rs10838725",
+          "gt_value": "MYBPC3 (11725151_at) expression in blood",
+          "pred_terms": [
+            "alzheimers disease"
+          ]
+        },
+        {
+          "snp": "rs10948363",
+          "gt_value": "AK9 (t2969159) expression in frontal cortex",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs111418223",
+          "gt_value": "AGPAT1 (11751668_a_at) expression in blood",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs111418223",
+          "gt_value": "AGPAT1 (11750187_a_at)) expression in blood",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs111418223",
+          "gt_value": "AGPAT1 (11730933_a_at) expression in blood",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs11771145",
+          "gt_value": "LOC154761 (11755327 s at) expression in blood",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs1476679",
+          "gt_value": "TRIM4 (11736388_a_at) expression in blood",
+          "pred_terms": [
+            "alzheimers disease"
+          ]
+        },
+        {
+          "snp": "rs1476679",
+          "gt_value": "GATS (11722909_a_at) expression in blood",
+          "pred_terms": [
+            "alzheimers disease"
+          ]
+        },
+        {
+          "snp": "rs1476679",
+          "gt_value": "PILRB (11730022_a_at) expression in blood",
+          "pred_terms": [
+            "alzheimers disease"
+          ]
+        },
+        {
+          "snp": "rs1476679",
+          "gt_value": "ZKSCAN1 (11760665_at) expression in blood",
+          "pred_terms": [
+            "alzheimers disease"
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    "30617256_PMC6836675.csv",
     {
       "coverage_pct": 0.0,
       "threshold_pct": 50.0,
       "covered_rows": 0,
-      "total_rows": 141,
+      "total_rows": 90,
       "missed_examples": [
         {
-          "snp": "rs10111328",
+          "snp": "rs10792832",
           "gt_value": "AD",
           "pred_terms": []
         },
         {
-          "snp": "rs10111328",
-          "gt_value": "MED30 (ILMN_1671603) expression in peripheral blood",
+          "snp": "rs10933431",
+          "gt_value": "AD + AD-by-proxy",
           "pred_terms": []
         },
         {
-          "snp": "rs1046135",
+          "snp": "rs10933431",
           "gt_value": "AD",
           "pred_terms": []
         },
         {
-          "snp": "rs1046135",
-          "gt_value": "TRA2A (ILMN_1731043) expression in peripheral blood",
+          "snp": "rs10933431",
+          "gt_value": "AD-by-proxy",
           "pred_terms": []
         },
         {
-          "snp": "rs10794342",
+          "snp": "rs111278892",
+          "gt_value": "AD + AD-by-proxy",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs11218343",
+          "gt_value": "AD + AD-by-proxy",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs11218343",
           "gt_value": "AD",
           "pred_terms": []
         },
         {
-          "snp": "rs10947230",
-          "gt_value": "AD",
+          "snp": "rs11218343",
+          "gt_value": "AD-by-proxy",
           "pred_terms": []
         },
         {
-          "snp": "rs10953322",
-          "gt_value": "AD",
+          "snp": "rs11257238",
+          "gt_value": "AD-by-proxy",
           "pred_terms": []
         },
         {
-          "snp": "rs11089928",
-          "gt_value": "APOBEC3F (ILMN_2296950) expression",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs11089928",
-          "gt_value": "AD",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs1172922",
-          "gt_value": "AD",
+          "snp": "rs11257238",
+          "gt_value": "AD + AD-by-proxy",
           "pred_terms": []
         }
       ]
@@ -544,30 +675,60 @@
     }
   ],
   [
-    "30930738_PMC6425305.csv",
+    "30805717_PMC7193309.csv",
     {
       "coverage_pct": 0.0,
       "threshold_pct": 50.0,
       "covered_rows": 0,
-      "total_rows": 4,
+      "total_rows": 14,
       "missed_examples": [
         {
-          "snp": "rs10792421",
-          "gt_value": "Bipolar disorder (BIP)",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10792421",
+          "snp": "rs10501320",
           "gt_value": "AD",
           "pred_terms": []
         },
         {
-          "snp": "rs11649476",
-          "gt_value": "Bipolar disorder (BIP)",
+          "snp": "rs10501320",
+          "gt_value": "Fasting Glucose",
           "pred_terms": []
         },
         {
-          "snp": "rs11649476",
+          "snp": "rs12805422",
+          "gt_value": "AD",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12805422",
+          "gt_value": "Fasting Glucose",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs1483121",
+          "gt_value": "AD",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs1483121",
+          "gt_value": "Fasting Glucose",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs17747324",
+          "gt_value": "AD",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs17747324",
+          "gt_value": "Fasting Glucose",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs2279590",
+          "gt_value": "Fasting Insulin",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs2279590",
           "gt_value": "AD",
           "pred_terms": []
         }
@@ -575,61 +736,61 @@
     }
   ],
   [
-    "30979435_PMC6783343.csv",
+    "30820047_PMC6463297.csv",
     {
       "coverage_pct": 0.0,
       "threshold_pct": 50.0,
       "covered_rows": 0,
-      "total_rows": 31,
+      "total_rows": 104,
       "missed_examples": [
         {
-          "snp": "rs12378268",
-          "gt_value": "AD",
+          "snp": "rs10467994",
+          "gt_value": "Clinically diagnosed LOAD",
           "pred_terms": []
         },
         {
-          "snp": "rs12378268",
-          "gt_value": "AD",
+          "snp": "rs10467994",
+          "gt_value": "Clinically diagnosed LOAD",
           "pred_terms": []
         },
         {
-          "snp": "rs1834550",
-          "gt_value": "AD",
+          "snp": "rs10467994",
+          "gt_value": "Clinically diagnosed LOAD",
           "pred_terms": []
         },
         {
-          "snp": "rs1834550",
-          "gt_value": "AD",
+          "snp": "rs10808026",
+          "gt_value": "Clinically diagnosed LOAD",
           "pred_terms": []
         },
         {
-          "snp": "rs184909761",
-          "gt_value": "AD",
+          "snp": "rs10808026",
+          "gt_value": "Clinically diagnosed LOAD",
           "pred_terms": []
         },
         {
-          "snp": "rs184909761",
-          "gt_value": "AD",
+          "snp": "rs10808026",
+          "gt_value": "Clinically diagnosed LOAD",
           "pred_terms": []
         },
         {
-          "snp": "rs3818361",
-          "gt_value": "AD",
+          "snp": "rs10933431",
+          "gt_value": "Clinically diagnosed LOAD",
           "pred_terms": []
         },
         {
-          "snp": "rs3818361",
-          "gt_value": "AD",
+          "snp": "rs10933431",
+          "gt_value": "Clinically diagnosed LOAD",
           "pred_terms": []
         },
         {
-          "snp": "rs4277762",
-          "gt_value": "AD",
+          "snp": "rs10933431",
+          "gt_value": "Clinically diagnosed LOAD",
           "pred_terms": []
         },
         {
-          "snp": "rs4277762",
-          "gt_value": "AD",
+          "snp": "rs11218343",
+          "gt_value": "Clinically diagnosed LOAD",
           "pred_terms": []
         }
       ]

@@ -4,12 +4,20 @@
     "Table 30651383_PMC6369905.csv (0.0) does not have the enough number of row for SNP ['rs12373108', 'rs12583648', 'rs39938', 'rs74587705', 'rs75889566', 'rs9371194']"
   ],
   [
+    "30805717_PMC7193309.csv",
+    "Table 30805717_PMC7193309.csv (0.0) does not have the enough number of row for SNP ['rs10501320', 'rs12805422', 'rs1483121', 'rs17747324', 'rs2279590', 'rs4803750', 'rs6656401']"
+  ],
+  [
     "29107063_PMC5920782.csv",
-    "Table 29107063_PMC5920782.csv (0.0) does not have the enough number of row for SNP ['rs115881343', 'rs12721046', 'rs157580', 'rs157582', 'rs2075650', 'rs283815', 'rs405509', 'rs439401', 'rs6859', 'rs71352238', 'rs76366838', 'rs769449', 'rs769450', 'rs8106922']"
+    "Table 29107063_PMC5920782.csv (14.29) does not have the enough number of row for SNP ['rs12721046', 'rs157580', 'rs157582', 'rs2075650', 'rs283815', 'rs405509', 'rs439401', 'rs6859', 'rs71352238', 'rs769449', 'rs769450', 'rs8106922']"
   ],
   [
     "31426376_PMC6723529.csv",
     "Table 31426376_PMC6723529.csv (0.0) does not have the enough number of row for SNP ['APOE-e3e4', 'APOE-e4e4']"
+  ],
+  [
+    "30448613_PMC6331247.csv",
+    "Table 30448613_PMC6331247.csv (82.61) does not have the enough number of row for SNP ['rs111418223', 'rs11771145', 'rs28834970', 'rs6733839']"
   ],
   [
     "29752348_PMC5976227.csv",

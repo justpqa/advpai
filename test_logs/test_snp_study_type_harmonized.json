@@ -10,98 +10,166 @@
         {
           "snp": "None",
           "gt_value": "Interaction(SNP)",
-          "pred_terms": []
+          "pred_terms": [
+            "array genotyping",
+            "wes",
+            "wgs"
+          ]
         },
         {
           "snp": "None",
           "gt_value": "Interaction(SNP)",
-          "pred_terms": []
+          "pred_terms": [
+            "array genotyping",
+            "wes",
+            "wgs"
+          ]
         },
         {
           "snp": "None",
           "gt_value": "Interaction(SNP)",
-          "pred_terms": []
+          "pred_terms": [
+            "array genotyping",
+            "wes",
+            "wgs"
+          ]
         },
         {
           "snp": "None",
           "gt_value": "Interaction(SNP)",
-          "pred_terms": []
+          "pred_terms": [
+            "array genotyping",
+            "wes",
+            "wgs"
+          ]
         },
         {
           "snp": "None",
           "gt_value": "Interaction(SNP)",
-          "pred_terms": []
+          "pred_terms": [
+            "array genotyping",
+            "wes",
+            "wgs"
+          ]
         },
         {
           "snp": "None",
           "gt_value": "Interaction(SNP)",
-          "pred_terms": []
+          "pred_terms": [
+            "array genotyping",
+            "wes",
+            "wgs"
+          ]
         },
         {
           "snp": "None",
           "gt_value": "Interaction(SNP)",
-          "pred_terms": []
+          "pred_terms": [
+            "array genotyping",
+            "wes",
+            "wgs"
+          ]
         }
       ]
     }
   ],
   [
-    "28780673_PMC5693762.csv",
+    "29458411_PMC5819208.csv",
     {
-      "coverage_pct": 0.0,
+      "coverage_pct": 43.8,
       "threshold_pct": 50.0,
-      "covered_rows": 0,
-      "total_rows": 44,
+      "covered_rows": 14,
+      "total_rows": 32,
       "missed_examples": [
         {
-          "snp": "rs10896445",
-          "gt_value": "SNP-based",
-          "pred_terms": []
+          "snp": "None",
+          "gt_value": "Gene-based",
+          "pred_terms": [
+            "array genotyping",
+            "gtex",
+            "egwas"
+          ]
         },
         {
-          "snp": "rs10896445",
-          "gt_value": "SNP-based",
-          "pred_terms": []
+          "snp": "None",
+          "gt_value": "Gene-based",
+          "pred_terms": [
+            "array genotyping",
+            "gtex",
+            "egwas"
+          ]
         },
         {
-          "snp": "rs10896445",
-          "gt_value": "SNP-based",
-          "pred_terms": []
+          "snp": "None",
+          "gt_value": "Gene-based",
+          "pred_terms": [
+            "array genotyping",
+            "gtex",
+            "egwas"
+          ]
         },
         {
-          "snp": "rs10896445",
-          "gt_value": "SNP-based",
-          "pred_terms": []
+          "snp": "None",
+          "gt_value": "Gene-based",
+          "pred_terms": [
+            "array genotyping",
+            "gtex",
+            "egwas"
+          ]
         },
         {
-          "snp": "rs11249708",
-          "gt_value": "SNP-based",
-          "pred_terms": []
+          "snp": "None",
+          "gt_value": "Gene-based",
+          "pred_terms": [
+            "array genotyping",
+            "gtex",
+            "egwas"
+          ]
         },
         {
-          "snp": "rs11249708",
-          "gt_value": "SNP-based",
-          "pred_terms": []
+          "snp": "None",
+          "gt_value": "Gene-based",
+          "pred_terms": [
+            "array genotyping",
+            "gtex",
+            "egwas"
+          ]
         },
         {
-          "snp": "rs11249708",
-          "gt_value": "SNP-based",
-          "pred_terms": []
+          "snp": "None",
+          "gt_value": "Gene-based",
+          "pred_terms": [
+            "array genotyping",
+            "gtex",
+            "egwas"
+          ]
         },
         {
-          "snp": "rs11249708",
-          "gt_value": "SNP-based",
-          "pred_terms": []
+          "snp": "None",
+          "gt_value": "Gene-based",
+          "pred_terms": [
+            "array genotyping",
+            "gtex",
+            "egwas"
+          ]
         },
         {
-          "snp": "rs1568485",
-          "gt_value": "SNP-based",
-          "pred_terms": []
+          "snp": "None",
+          "gt_value": "Gene-based",
+          "pred_terms": [
+            "array genotyping",
+            "gtex",
+            "egwas"
+          ]
         },
         {
-          "snp": "rs1568485",
-          "gt_value": "SNP-based",
-          "pred_terms": []
+          "snp": "None",
+          "gt_value": "Gene-based",
+          "pred_terms": [
+            "array genotyping",
+            "gtex",
+            "egwas"
+          ]
         }
       ]
     }
@@ -192,6 +260,67 @@
         },
         {
           "snp": "rs12373108",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        }
+      ]
+    }
+  ],
+  [
+    "30805717_PMC7193309.csv",
+    {
+      "coverage_pct": 0.0,
+      "threshold_pct": 50.0,
+      "covered_rows": 0,
+      "total_rows": 14,
+      "missed_examples": [
+        {
+          "snp": "rs10501320",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs10501320",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12805422",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12805422",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs1483121",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs1483121",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs17747324",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs17747324",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs2279590",
+          "gt_value": "SNP-based",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs2279590",
           "gt_value": "SNP-based",
           "pred_terms": []
         }

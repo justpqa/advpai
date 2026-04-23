@@ -72,227 +72,171 @@
           "snp": "rs12961169",
           "gt_value": "NHW",
           "pred_terms": [
-            "African American (AA)",
-            "European (EUR)",
-            "East Asian (EAS)"
+            "eur",
+            "aa",
+            "eas"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "NHW",
           "pred_terms": [
-            "African American (AA)",
-            "European (EUR)",
-            "East Asian (EAS)"
+            "eur",
+            "aa",
+            "eas"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "NHW",
           "pred_terms": [
-            "African American (AA)",
-            "European (EUR)",
-            "East Asian (EAS)"
+            "eur",
+            "aa",
+            "eas"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "NHW",
           "pred_terms": [
-            "African American (AA)",
-            "European (EUR)",
-            "East Asian (EAS)"
+            "eur",
+            "aa",
+            "eas"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "NHW",
           "pred_terms": [
-            "African American (AA)",
-            "European (EUR)",
-            "East Asian (EAS)"
+            "eur",
+            "aa",
+            "eas"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "NHW",
           "pred_terms": [
-            "African American (AA)",
-            "European (EUR)",
-            "East Asian (EAS)"
+            "eur",
+            "aa",
+            "eas"
           ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "NHW",
           "pred_terms": [
-            "African American (AA)",
-            "European (EUR)",
-            "East Asian (EAS)"
+            "eur",
+            "aa",
+            "eas"
           ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "NHW",
           "pred_terms": [
-            "African American (AA)",
-            "European (EUR)",
-            "East Asian (EAS)"
+            "eur",
+            "aa",
+            "eas"
           ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "NHW",
           "pred_terms": [
-            "African American (AA)",
-            "European (EUR)",
-            "East Asian (EAS)"
+            "eur",
+            "aa",
+            "eas"
           ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "NHW",
           "pred_terms": [
-            "African American (AA)",
-            "European (EUR)",
-            "East Asian (EAS)"
+            "eur",
+            "aa",
+            "eas"
           ]
         }
       ]
     }
   ],
   [
-    "28560309_PMC5440281.csv",
+    "29274321_PMC5938137.csv",
     {
       "coverage_pct": 0.0,
       "threshold_pct": 50.0,
       "covered_rows": 0,
-      "total_rows": 7,
+      "total_rows": 12,
       "missed_examples": [
         {
-          "snp": "None",
-          "gt_value": "white",
-          "pred_terms": []
-        },
-        {
-          "snp": "None",
-          "gt_value": "white",
-          "pred_terms": []
-        },
-        {
-          "snp": "None",
-          "gt_value": "white",
-          "pred_terms": []
-        },
-        {
-          "snp": "None",
-          "gt_value": "white",
-          "pred_terms": []
-        },
-        {
-          "snp": "None",
-          "gt_value": "white",
-          "pred_terms": []
-        },
-        {
-          "snp": "None",
-          "gt_value": "white",
-          "pred_terms": []
-        },
-        {
-          "snp": "None",
-          "gt_value": "white",
-          "pred_terms": []
-        }
-      ]
-    }
-  ],
-  [
-    "29107063_PMC5920782.csv",
-    {
-      "coverage_pct": 0.0,
-      "threshold_pct": 50.0,
-      "covered_rows": 0,
-      "total_rows": 32,
-      "missed_examples": [
-        {
-          "snp": "rs115881343",
-          "gt_value": "White, black, other",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs12721046",
-          "gt_value": "NHW",
+          "snp": "rs10775009",
+          "gt_value": "European ancestry",
           "pred_terms": [
-            "White (EUR)",
-            "Asian (EAS)",
-            "Hispanic (HIS)",
-            "African American (AA)"
+            "african american (aa)"
           ]
         },
         {
-          "snp": "rs12721046",
-          "gt_value": "White, black, other",
+          "snp": "rs111882035",
+          "gt_value": "European ancestry",
           "pred_terms": [
-            "White (EUR)",
-            "Asian (EAS)",
-            "Hispanic (HIS)",
-            "African American (AA)"
+            "african american (aa)"
           ]
         },
         {
-          "snp": "rs12721046",
-          "gt_value": "NHW",
+          "snp": "rs118130881",
+          "gt_value": "European ancestry",
           "pred_terms": [
-            "White (EUR)",
-            "Asian (EAS)",
-            "Hispanic (HIS)",
-            "African American (AA)"
+            "african american (aa)"
           ]
         },
         {
-          "snp": "rs157580",
-          "gt_value": "White, black, other",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs157582",
-          "gt_value": "White, black, other",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs157582",
-          "gt_value": "White, black, other",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs2075650",
-          "gt_value": "NHW",
+          "snp": "rs12268753",
+          "gt_value": "European ancestry",
           "pred_terms": [
-            "White (EUR)",
-            "Asian (EAS)",
-            "Hispanic (HIS)",
-            "African American (AA)"
+            "african american (aa)"
           ]
         },
         {
-          "snp": "rs2075650",
-          "gt_value": "White, black, other",
+          "snp": "rs2378873",
+          "gt_value": "European ancestry",
           "pred_terms": [
-            "White (EUR)",
-            "Asian (EAS)",
-            "Hispanic (HIS)",
-            "African American (AA)"
+            "african american (aa)"
           ]
         },
         {
-          "snp": "rs2075650",
-          "gt_value": "White, black, other",
+          "snp": "rs2819438",
+          "gt_value": "European ancestry",
           "pred_terms": [
-            "White (EUR)",
-            "Asian (EAS)",
-            "Hispanic (HIS)",
-            "African American (AA)"
+            "african american (aa)"
+          ]
+        },
+        {
+          "snp": "rs4921790",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "african american (aa)"
+          ]
+        },
+        {
+          "snp": "rs55644114",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "african american (aa)"
+          ]
+        },
+        {
+          "snp": "rs73705514",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "african american (aa)"
+          ]
+        },
+        {
+          "snp": "rs74442473",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "african american (aa)"
           ]
         }
       ]
@@ -341,30 +285,21 @@
           "snp": "rs593742",
           "gt_value": "NHW",
           "pred_terms": [
-            "African American (AA)",
-            "Caribbean Hispanic",
-            "European (EUR)",
-            "East Asian (EAS)"
+            "african american (aa)"
           ]
         },
         {
           "snp": "rs6504163",
           "gt_value": "NHW",
           "pred_terms": [
-            "African American (AA)",
-            "Caribbean Hispanic",
-            "European (EUR)",
-            "East Asian (EAS)"
+            "african american (aa)"
           ]
         },
         {
           "snp": "rs889555",
           "gt_value": "NHW",
           "pred_terms": [
-            "African American (AA)",
-            "Caribbean Hispanic",
-            "European (EUR)",
-            "East Asian (EAS)"
+            "african american (aa)"
           ]
         }
       ]
@@ -373,20 +308,19 @@
   [
     "30448613_PMC6331247.csv",
     {
-      "coverage_pct": 0.0,
+      "coverage_pct": 39.5,
       "threshold_pct": 50.0,
-      "covered_rows": 0,
+      "covered_rows": 17,
       "total_rows": 43,
       "missed_examples": [
         {
           "snp": "rs10838725",
           "gt_value": "NHW",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10838725",
-          "gt_value": "European",
-          "pred_terms": []
+          "pred_terms": [
+            "eur",
+            "aa",
+            "eas"
+          ]
         },
         {
           "snp": "rs10948363",
@@ -414,19 +348,40 @@
           "pred_terms": []
         },
         {
-          "snp": "rs12453",
-          "gt_value": "European",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs12459419",
-          "gt_value": "European",
-          "pred_terms": []
+          "snp": "rs1476679",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "eur",
+            "aa",
+            "eas"
+          ]
         },
         {
           "snp": "rs1476679",
           "gt_value": "NHW",
-          "pred_terms": []
+          "pred_terms": [
+            "eur",
+            "aa",
+            "eas"
+          ]
+        },
+        {
+          "snp": "rs1476679",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "eur",
+            "aa",
+            "eas"
+          ]
+        },
+        {
+          "snp": "rs1476679",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "eur",
+            "aa",
+            "eas"
+          ]
         }
       ]
     }
@@ -443,100 +398,90 @@
           "snp": "rs10111328",
           "gt_value": "NHW",
           "pred_terms": [
-            "AA",
-            "EAS",
-            "EUR",
-            "CEU"
+            "eur",
+            "aa",
+            "eas"
           ]
         },
         {
           "snp": "rs10111328",
           "gt_value": "NHW",
           "pred_terms": [
-            "AA",
-            "EAS",
-            "EUR",
-            "CEU"
+            "eur",
+            "aa",
+            "eas"
           ]
         },
         {
           "snp": "rs1046135",
           "gt_value": "NHW",
           "pred_terms": [
-            "AA",
-            "EAS",
-            "EUR",
-            "CEU"
+            "eur",
+            "aa",
+            "eas"
           ]
         },
         {
           "snp": "rs1046135",
           "gt_value": "NHW",
           "pred_terms": [
-            "AA",
-            "EAS",
-            "EUR",
-            "CEU"
+            "eur",
+            "aa",
+            "eas"
           ]
         },
         {
           "snp": "rs10794342",
           "gt_value": "NHW",
           "pred_terms": [
-            "AA",
-            "EAS",
-            "EUR",
-            "CEU"
+            "eur",
+            "aa",
+            "eas"
           ]
         },
         {
           "snp": "rs10947230",
           "gt_value": "NHW",
           "pred_terms": [
-            "AA",
-            "EAS",
-            "EUR",
-            "CEU"
+            "eur",
+            "aa",
+            "eas"
           ]
         },
         {
           "snp": "rs10953322",
           "gt_value": "NHW",
           "pred_terms": [
-            "AA",
-            "EAS",
-            "EUR",
-            "CEU"
+            "eur",
+            "aa",
+            "eas"
           ]
         },
         {
           "snp": "rs11089928",
           "gt_value": "NHW",
           "pred_terms": [
-            "AA",
-            "EAS",
-            "EUR",
-            "CEU"
+            "eur",
+            "aa",
+            "eas"
           ]
         },
         {
           "snp": "rs11089928",
           "gt_value": "NHW",
           "pred_terms": [
-            "AA",
-            "EAS",
-            "EUR",
-            "CEU"
+            "eur",
+            "aa",
+            "eas"
           ]
         },
         {
           "snp": "rs1172922",
           "gt_value": "NHW",
           "pred_terms": [
-            "AA",
-            "EAS",
-            "EUR",
-            "CEU"
+            "eur",
+            "aa",
+            "eas"
           ]
         }
       ]
@@ -614,122 +559,52 @@
         {
           "snp": "rs10501320",
           "gt_value": "European",
-          "pred_terms": [
-            "bin1",
-            "apoc2",
-            "apoe",
-            "apoc1",
-            "bmi",
-            "fg-fins"
-          ]
+          "pred_terms": []
         },
         {
           "snp": "rs10501320",
           "gt_value": "European",
-          "pred_terms": [
-            "bin1",
-            "apoc2",
-            "apoe",
-            "apoc1",
-            "bmi",
-            "fg-fins"
-          ]
+          "pred_terms": []
         },
         {
           "snp": "rs12805422",
           "gt_value": "European",
-          "pred_terms": [
-            "bin1",
-            "apoc2",
-            "apoe",
-            "apoc1",
-            "bmi",
-            "fg-fins"
-          ]
+          "pred_terms": []
         },
         {
           "snp": "rs12805422",
           "gt_value": "European",
-          "pred_terms": [
-            "bin1",
-            "apoc2",
-            "apoe",
-            "apoc1",
-            "bmi",
-            "fg-fins"
-          ]
+          "pred_terms": []
         },
         {
           "snp": "rs1483121",
           "gt_value": "European",
-          "pred_terms": [
-            "bin1",
-            "apoc2",
-            "apoe",
-            "apoc1",
-            "bmi",
-            "fg-fins"
-          ]
+          "pred_terms": []
         },
         {
           "snp": "rs1483121",
           "gt_value": "European",
-          "pred_terms": [
-            "bin1",
-            "apoc2",
-            "apoe",
-            "apoc1",
-            "bmi",
-            "fg-fins"
-          ]
+          "pred_terms": []
         },
         {
           "snp": "rs17747324",
           "gt_value": "European",
-          "pred_terms": [
-            "bin1",
-            "apoc2",
-            "apoe",
-            "apoc1",
-            "bmi",
-            "fg-fins"
-          ]
+          "pred_terms": []
         },
         {
           "snp": "rs17747324",
           "gt_value": "European",
-          "pred_terms": [
-            "bin1",
-            "apoc2",
-            "apoe",
-            "apoc1",
-            "bmi",
-            "fg-fins"
-          ]
+          "pred_terms": []
         },
         {
           "snp": "rs2279590",
           "gt_value": "European",
-          "pred_terms": [
-            "bin1",
-            "apoc2",
-            "apoe",
-            "apoc1",
-            "bmi",
-            "fg-fins"
-          ]
+          "pred_terms": []
         },
         {
           "snp": "rs2279590",
           "gt_value": "European",
-          "pred_terms": [
-            "bin1",
-            "apoc2",
-            "apoe",
-            "apoc1",
-            "bmi",
-            "fg-fins"
-          ]
+          "pred_terms": []
         }
       ]
     }
@@ -746,110 +621,120 @@
           "snp": "rs10467994",
           "gt_value": "Non-Hispanic White",
           "pred_terms": [
-            "EUR",
-            "discovery",
-            "AA",
-            "replication",
-            "EAS"
+            "fin",
+            "eur",
+            "ibs",
+            "gbr",
+            "eas",
+            "tsi"
           ]
         },
         {
           "snp": "rs10467994",
           "gt_value": "Non-Hispanic White",
           "pred_terms": [
-            "EUR",
-            "discovery",
-            "AA",
-            "replication",
-            "EAS"
+            "fin",
+            "eur",
+            "ibs",
+            "gbr",
+            "eas",
+            "tsi"
           ]
         },
         {
           "snp": "rs10467994",
           "gt_value": "Non-Hispanic White",
           "pred_terms": [
-            "EUR",
-            "discovery",
-            "AA",
-            "replication",
-            "EAS"
+            "fin",
+            "eur",
+            "ibs",
+            "gbr",
+            "eas",
+            "tsi"
           ]
         },
         {
           "snp": "rs10808026",
           "gt_value": "Non-Hispanic White",
           "pred_terms": [
-            "EUR",
-            "discovery",
-            "AA",
-            "replication",
-            "EAS"
+            "fin",
+            "eur",
+            "ibs",
+            "gbr",
+            "eas",
+            "tsi"
           ]
         },
         {
           "snp": "rs10808026",
           "gt_value": "Non-Hispanic White",
           "pred_terms": [
-            "EUR",
-            "discovery",
-            "AA",
-            "replication",
-            "EAS"
+            "fin",
+            "eur",
+            "ibs",
+            "gbr",
+            "eas",
+            "tsi"
           ]
         },
         {
           "snp": "rs10808026",
           "gt_value": "Non-Hispanic White",
           "pred_terms": [
-            "EUR",
-            "discovery",
-            "AA",
-            "replication",
-            "EAS"
+            "fin",
+            "eur",
+            "ibs",
+            "gbr",
+            "eas",
+            "tsi"
           ]
         },
         {
           "snp": "rs10933431",
           "gt_value": "Non-Hispanic White",
           "pred_terms": [
-            "EUR",
-            "discovery",
-            "AA",
-            "replication",
-            "EAS"
+            "fin",
+            "eur",
+            "ibs",
+            "gbr",
+            "eas",
+            "tsi"
           ]
         },
         {
           "snp": "rs10933431",
           "gt_value": "Non-Hispanic White",
           "pred_terms": [
-            "EUR",
-            "discovery",
-            "AA",
-            "replication",
-            "EAS"
+            "fin",
+            "eur",
+            "ibs",
+            "gbr",
+            "eas",
+            "tsi"
           ]
         },
         {
           "snp": "rs10933431",
           "gt_value": "Non-Hispanic White",
           "pred_terms": [
-            "EUR",
-            "discovery",
-            "AA",
-            "replication",
-            "EAS"
+            "fin",
+            "eur",
+            "ibs",
+            "gbr",
+            "eas",
+            "tsi"
           ]
         },
         {
           "snp": "rs11218343",
           "gt_value": "Non-Hispanic White",
           "pred_terms": [
-            "EUR",
-            "discovery",
-            "AA",
-            "replication",
-            "EAS"
+            "fin",
+            "eur",
+            "ibs",
+            "gbr",
+            "eas",
+            "tsi"
           ]
         }
       ]

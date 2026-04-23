@@ -1,18 +1,26 @@
 [
   [
     "30651383_PMC6369905.csv",
-    "Table 30651383_PMC6369905.csv do not contain all snp, missing: {'rs9371194', 'rs12373108', 'rs12583648', 'rs75889566', 'rs39938', 'rs74587705'}"
+    "Table 30651383_PMC6369905.csv do not contain all snp, missing: {'rs9371194', 'rs75889566', 'rs74587705', 'rs39938', 'rs12583648', 'rs12373108'}"
+  ],
+  [
+    "30805717_PMC7193309.csv",
+    "Table 30805717_PMC7193309.csv do not contain all snp, missing: {'rs12805422', 'rs10501320', 'rs6656401', 'rs2279590', 'rs1483121', 'rs17747324', 'rs4803750'}"
   ],
   [
     "29107063_PMC5920782.csv",
-    "Table 29107063_PMC5920782.csv do not contain all snp, missing: {'rs115881343', 'rs283815', 'rs439401', 'rs157580', 'rs157582', 'rs71352238', 'rs769450', 'rs76366838'}"
+    "Table 29107063_PMC5920782.csv do not contain all snp, missing: {'rs769450', 'rs439401', 'rs157580'}"
   ],
   [
     "31426376_PMC6723529.csv",
     "Table 31426376_PMC6723529.csv do not contain all snp, missing: {'APOE-e3e4', 'APOE-e4e4'}"
   ],
   [
+    "30448613_PMC6331247.csv",
+    "Table 30448613_PMC6331247.csv do not contain all snp, missing: {'rs11771145', 'rs111418223', 'rs28834970', 'rs6733839'}"
+  ],
+  [
     "29752348_PMC5976227.csv",
-    "Table 29752348_PMC5976227.csv do not contain all snp, missing: {'rs3744020', 'rs146896516', 'rs67827860', 'rs13164785'}"
+    "Table 29752348_PMC5976227.csv do not contain all snp, missing: {'rs13164785', 'rs67827860', 'rs3744020', 'rs146896516'}"
   ]
 ]
