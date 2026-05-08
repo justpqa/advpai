@@ -3,6 +3,7 @@ from typing import List
 from xml.etree import ElementTree as ET
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import re
 import json
 import time
@@ -31,11 +32,14 @@ GWAS_TIAB_TERMS = [
     "meta-analysis", "Mendelian randomization", "whole genome sequencing", "whole exome sequencing",
     "copy number variant", "heritability", "gene expression", "transcriptome", "eQTL",
     "epigenome", "DNA methylation", "Genetic Predisposition to Disease", "Genetic Loci", 
-    "Aged", "Humans", "Risk Factors"
+    "Aged", "Humans", "Risk Factors", "genome-wide", "apoe", "late-onset", "polymorphisms", "genotype",
+    "pathogenesis", "pathology", "biomarkers", "haplotype", "allete", "chromosome", "methylation", "ε4", 
+    "phenotype", "linkage", "neuroimaging", "polygenic", "quantitative trait", "epigenetic"
 ]
 GWAS_TIAB_FILTER = " OR ".join([term + "[tiab]" for term in GWAS_TIAB_TERMS])
 # final filter
-GWAS_FILTER = f'({GWAS_MESH_FILTER}) AND ({GWAS_TIAB_FILTER})'
+# GWAS_FILTER = f'({GWAS_MESH_FILTER}) AND ({GWAS_TIAB_FILTER})'
+GWAS_FILTER = f'({GWAS_TIAB_FILTER})'
 
 # Alzheimer's Disease term
 # MeSH
@@ -50,11 +54,13 @@ AD_MESH_FILTER = " OR ".join([term + "[MeSH]" for term in AD_MESH_TERMS])
 AD_TIAB_TERMS = [
     "Alzheimer", "dementia", "cognitive impairment", "neurodegeneration", "Frontotemporal dementia", 
     "Parkinson Disease", "Amyotrophic Lateral Sclerosis", "Progressive Supranuclear Palsy", 
-    "Corticobasal Degeneration", "Vascular dementia"
+    "Corticobasal Degeneration", "Vascular dementia", "AD", "neurodegenerative", "parkinson", "cognitive",
+    "amyloid", "sclerosis", "cognitive decline", "cerebrospinal", "hippocampal"
 ]
 AD_TIAB_FILTER = " OR ".join([term + "[tiab]" for term in AD_TIAB_TERMS])
 # final filter
-AD_FILTER = f'({AD_MESH_FILTER}) AND ({AD_TIAB_FILTER})'
+# AD_FILTER = f'({AD_MESH_FILTER}) AND ({AD_TIAB_FILTER})'
+AD_FILTER = f'({AD_TIAB_FILTER})'
 
 # article filter
 ARTICLE_FILTER = '(Journal Article[pt])'
@@ -66,6 +72,8 @@ FREE_TEXT_FILTER = '(free full text[sb])'
 # known pmids
 ADVP1 = pd.read_csv("test_tables/ADVP_1026_v3p8_extracted.txt", sep = "\t", encoding="cp1252")
 ADVP1_ALL_PMID = ADVP1["Pubmed ID"].apply(lambda x: str(int(x)) if not pd.isna(x) else "").unique()
+CURR_ADVP2 = pd.read_csv("new_gwas_ad_paper_only_tiab_extended.csv")
+CURR_ADVP2_ALL_PMID = CURR_ADVP2["pmid"].apply(lambda x: str(int(x)) if not pd.isna(x) else "").unique()
 
 # list of mesh terms used
 ALL_MESH_TERMS = GWAS_MESH_TERMS + AD_MESH_TERMS
@@ -146,9 +154,10 @@ def verify_paper_with_gwas_table(pmcid: str) -> bool:
                     for item in passage:
                         if item.get("infons", "").get("type", "").lower() == "table" and "text" in item:
                             table_str = item["text"]
+                            table_header_str = table_str.split("\t \t")[0]
                             snp_filter = re.search(r"rs\d+", table_str) is not None
-                            chr_filter = (re.search(r"[Cc][Hh][Rr]", table_str) is not None) and (re.search('(?<![A-Za-z.])\d+(?![A-Za-z.])', table_str) is not None)
-                            p_value_filter = (re.search(r"\d+\.\d+", table_str) is not None) and (re.search(r"(?<![A-Za-z])[Pp](?![A-Za-z])", table_str) is not None)
+                            chr_filter = (re.search(r"(?<![A-Za-z.])[Cc][Hh][Rr](?![A-Za-z.])", table_str) is not None) and (re.search('(?<![A-Za-z.])\d+(?![A-Za-z.])', table_str) is not None)
+                            p_value_filter = (re.search(r"\d+\.\d+", table_str) is not None) and (re.search(r"(?<![A-Za-z])[Pp](?![A-Za-z])", table_header_str) is not None)
                             if (snp_filter or chr_filter) and p_value_filter:
                                 has_gwas_table = True
                                 break
@@ -179,24 +188,32 @@ def extract_papers_by_year(year: int, session: requests.sessions.Session) -> pd.
         pmid for pmid in pmids
         if pmid in ADVP1_ALL_PMID
     ]
+    pmids_in_advp2 = [
+        pmid for pmid in pmids
+        if pmid in CURR_ADVP2_ALL_PMID
+    ]
     if len(pmids_in_advp1) > 0:
         print(f"Found {len(pmids_in_advp1)} papers that was in ADVP1")
+    if len(pmids_in_advp2) > 0:
+        print(f"Found {len(pmids_in_advp2)} papers that was in current ADVP2")
     pmids = [
         pmid for pmid in pmids
-        if pmid not in ADVP1_ALL_PMID
+        if pmid not in ADVP1_ALL_PMID and pmid not in CURR_ADVP2_ALL_PMID
     ]
     if not pmids:
         return []
-    time.sleep(2)
+    print(len(pmids))
+    time.sleep(0.5)
     # 2. Fetch metadata in batches
     papers = []
-    for i in range(0, len(pmids), 10):
-        batch_pmids = pmids[i:min(i + 10, len(pmids))]
+    batch_size = 20
+    for i in tqdm(range(0, len(pmids), batch_size)):
+        batch_pmids = pmids[i:min(i + batch_size, len(pmids))]
         batch_pmids = [str(pmid) for pmid in batch_pmids]
         # fetch pubmed id -> pmcid
         pmids_to_pmcids = pmids_to_pmcids_map(batch_pmids, session)
 
-        time.sleep(2)
+        time.sleep(0.5)
 
         removed_pmid = []
         for pmid in pmids_to_pmcids:
@@ -208,7 +225,6 @@ def extract_papers_by_year(year: int, session: requests.sessions.Session) -> pd.
         batch_pmids_to_pmcids = list(pmids_to_pmcids.keys())
         batch_pmids_to_pmcids = [str(pmid) for pmid in batch_pmids_to_pmcids if pmid not in removed_pmid]
         if not batch_pmids_to_pmcids:
-            time.sleep(2)
             continue
         # fetch other metadata
         r = session.get(
@@ -282,25 +298,43 @@ def extract_papers_by_year(year: int, session: requests.sessions.Session) -> pd.
                 "Title & Abstract terms used": ",".join(tiab_terms_used)
             })
 
-        time.sleep(2)
+        time.sleep(0.5)
 
     papers = pd.DataFrame(papers)
     return papers
 
 def main():
-    session = make_session()
     all_papers = pd.DataFrame()
-    for year in range(2009, 2027):
-        print(year)
-        papers = extract_papers_by_year(year, session)
-        all_papers = pd.concat([all_papers, papers], ignore_index = True)
+    years = list(range(2009, 2012))
+    batch_size = 3
+    for batch_start in range(0, len(years), batch_size):
+        batch_years = years[batch_start:batch_start + batch_size]
+        print(f"Processing years: {batch_years}")
+        with ThreadPoolExecutor(max_workers=len(batch_years)) as executor:
+            future_to_year = {
+                executor.submit(extract_papers_by_year, year, make_session()): year
+                for year in batch_years
+            }
+            batch_results = {}
+            for future in as_completed(future_to_year):
+                year = future_to_year[future]
+                try:
+                    batch_results[year] = future.result()
+                except Exception as e:
+                    print(f"Year {year} failed: {e}")
+                    batch_results[year] = pd.DataFrame()
+        for year in batch_years:
+            papers = batch_results[year]
+            if isinstance(papers, list) or papers is None or (hasattr(papers, "empty") and papers.empty):
+                continue
+            all_papers = pd.concat([all_papers, papers], ignore_index=True)
         all_papers = all_papers.drop_duplicates() # prevent the case of getting duplicates due to difference in epub and actual publish date
-        print(f"Total paper found until {year}: {all_papers.shape[0]}")
+        print(f"Total paper found until {batch_years[-1]}: {all_papers.shape[0]}")
         print()
 
     all_papers = all_papers.sort_values(["year", "pmid"]).reset_index().drop("index", axis = 1)
-    all_papers.to_csv("new_gwas_ad_paper.csv", index = False)
-    all_papers.to_excel("new_gwas_ad_paper.xlsx", index = False)
+    all_papers.to_csv("new_gwas_ad_paper_only_tiab_extended_1_0.csv", index = False)
+    all_papers.to_excel("new_gwas_ad_paper_only_tiab_extended_1_0.xlsx", index = False)
 
     # now count paper based on disease
     all_papers["MeSH terms used list"] = all_papers['MeSH terms used'].str.split(",")
@@ -313,9 +347,16 @@ def main():
     )
 
     count_new_paper_by_disease = all_papers_exploded.groupby("Disease", as_index = False)["pmid"].nunique().rename({"pmid": "Count papers"}, axis = 1)
+    all_papers_exploded_with_main_disease = all_papers_exploded[all_papers_exploded["Disease"].isin([
+        "Alzheimer Disease", "Frontotemporal Dementia", 
+        "Parkinson Disease", "Amyotrophic Lateral Sclerosis"
+    ])]
+    # num paper with other adrd = # papers - # unique paper with main disease
+    count_paper_without_main_disease = all_papers.shape[0] - all_papers_exploded_with_main_disease["pmid"].nunique()
+    count_new_paper_by_disease.loc[count_new_paper_by_disease["Disease"] == "Other ADRD", "Count papers"] = count_paper_without_main_disease
     count_new_paper_by_disease = count_new_paper_by_disease.sort_values("Count papers", ascending = False).reset_index().drop("index", axis = 1)
-    count_new_paper_by_disease.to_csv("count_new_paper_by_disease.csv", index = False)
-    count_new_paper_by_disease.to_excel("count_new_paper_by_disease.xlsx", index = False)
+    count_new_paper_by_disease.to_csv("count_new_paper_by_disease_only_tiab_extended_1_0.csv", index = False)
+    count_new_paper_by_disease.to_excel("count_new_paper_by_disease_only_tiab_extended_1_0.xlsx", index = False)
 
 if __name__ == "__main__":
     main()

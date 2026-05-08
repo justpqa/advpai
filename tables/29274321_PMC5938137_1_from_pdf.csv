@@ -1,5 +1,0 @@
-eQTL.,EA.,RA.,Gene.,eSNP Association Summary.Hippocampus.P-value ( β ),eSNP Association Summary.Other brain region.P-value ( β ),eSNP Association Summary.Other brain region.Region
-rs10775009,T,C,SRRM4,0.09 (0.09),0.16 (0.10),Frontal Cortex
-rs2819438,A,C,PLD4 AHNAK2 C14orf79,0.47 (0.12) 0.15 (0.23) 3.8×10 -4 (0.44),0.10 (0.42) 0.06 (-0.28) 3.9×10 -3 (0.31) 6.0×10 -3 (0.44),Anterior cingulate cortex Cerebellar Hemisphere Cortex Cerebellum
-rs4921790,C,A,PLD4 AHNAK2 C14orf79,1.0 (0.0),0.09 (-0.16),Caudate
-rs55653268,T,G,MTUS1,0.8 (0.04),9.7×10 -3 (-0.33) 0.02 (-0.41),Caudate Nucleus accumbens

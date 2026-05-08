@@ -8,7 +8,15 @@
     "Table 30636644_PMC6330399.csv (69.09) does not contain right set of AF for SNP ['rs10111328', 'rs1046135', 'rs11089928', 'rs11748868', 'rs117856560', 'rs1436849', 'rs2282240', 'rs2301229', 'rs2425062', 'rs2600667', 'rs41174', 'rs55746218', 'rs641760', 'rs7108663', 'rs718444', 'rs720201', 'rs7928565']"
   ],
   [
+    "30617256_PMC6836675.csv",
+    "Table 30617256_PMC6836675.csv (97.92) does not contain right set of AF for SNP ['rs114360492']"
+  ],
+  [
     "29752348_PMC5976227.csv",
     "Table 29752348_PMC5976227.csv (0.0) does not contain right set of AF for SNP ['rs13164785', 'rs146896516', 'rs3744020', 'rs67827860']"
+  ],
+  [
+    "30820047_PMC6463297.csv",
+    "Table 30820047_PMC6463297.csv (64.71) does not contain right set of AF for SNP ['rs10467994', 'rs114812713', 'rs2632516', 'rs2830500', 'rs35868327', 'rs4735340', 'rs593742', 'rs62039712', 'rs71618613', 'rs7185636', 'rs7295246', 'rs7920721']"
   ]
 ]

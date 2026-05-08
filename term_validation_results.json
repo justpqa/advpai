@@ -3,75 +3,22 @@
     "file": "27899424_PMC5237405.csv",
     "cols": {
       "Population": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Population' missing"
       },
       "Cohort": {
-        "valid_count": 2,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "IFGC",
-          "IGAP"
-        ],
-        "unknown_terms": []
+        "note": "column 'Cohort' missing"
       },
       "Stage": {
-        "valid_count": 4,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "combined",
-          "discovery",
-          "meta",
-          "replication"
-        ],
-        "unknown_terms": []
+        "note": "column 'Stage' missing"
       },
       "Imputation": {
-        "valid_count": 4,
-        "unknown_count": 7,
-        "valid_pct": 36.4,
-        "valid_terms": [
-          "1000 Genomes (1000G)",
-          "Haplotype Reference Consortium (HRC)",
-          "TOPMed",
-          "UK10K"
-        ],
-        "unknown_terms": [
-          "IFGC",
-          "IFGC phase i",
-          "IFGC phase ii",
-          "International FTD Genomics Consortium",
-          "International Genomics of AD Project",
-          "International PD Genetics Consortium",
-          "ifgc"
-        ]
+        "note": "column 'Imputation' missing"
       },
       "Study type": {
-        "valid_count": 4,
-        "unknown_count": 2,
-        "valid_pct": 66.7,
-        "valid_terms": [
-          "Array genotyping",
-          "GWAS",
-          "Whole Exome Sequencing (WES)",
-          "Whole Genome Sequencing (WGS)"
-        ],
-        "unknown_terms": [
-          "International Genomics of AD Project (IGAP)",
-          "International Parkinson Disease Genomics Consortium (IPDGC)"
-        ]
+        "note": "column 'Study type' missing"
       },
       "Phenotype": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Phenotype' missing"
       }
     }
   },
@@ -79,74 +26,22 @@
     "file": "28247064_PMC5613285.csv",
     "cols": {
       "Population": {
-        "valid_count": 3,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "African American (AA)",
-          "East Asian (EAS)",
-          "European (EUR)"
-        ],
-        "unknown_terms": []
+        "note": "column 'Population' missing"
       },
       "Cohort": {
-        "valid_count": 10,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "ADGC",
-          "ADNI",
-          "BIOCARD",
-          "HB",
-          "IGAP",
-          "Knight-ADRC",
-          "MAYO",
-          "SWEDEN",
-          "UPENN",
-          "UW"
-        ],
-        "unknown_terms": []
+        "note": "column 'Cohort' missing"
       },
       "Stage": {
-        "valid_count": 4,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "combined",
-          "discovery",
-          "meta-analysis",
-          "replication"
-        ],
-        "unknown_terms": []
+        "note": "column 'Stage' missing"
       },
       "Imputation": {
-        "valid_count": 4,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "1000 Genomes (1000G)",
-          "Haplotype Reference Consortium (HRC)",
-          "TOPMed",
-          "UK10K"
-        ],
-        "unknown_terms": []
+        "note": "column 'Imputation' missing"
       },
       "Study type": {
-        "valid_count": 2,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "Genotyping",
-          "Sequencing"
-        ],
-        "unknown_terms": []
+        "note": "column 'Study type' missing"
       },
       "Phenotype": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Phenotype' missing"
       }
     }
   },
@@ -154,73 +49,22 @@
     "file": "28560309_PMC5440281.csv",
     "cols": {
       "Population": {
-        "valid_count": 3,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "African American (AA)",
-          "Asian (EAS)",
-          "White"
-        ],
-        "unknown_terms": []
+        "note": "column 'Population' missing"
       },
       "Cohort": {
-        "valid_count": 1,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "ADNI"
-        ],
-        "unknown_terms": []
+        "note": "column 'Cohort' missing"
       },
       "Stage": {
-        "valid_count": 3,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "discovery",
-          "meta-analysis",
-          "replication"
-        ],
-        "unknown_terms": []
+        "note": "column 'Stage' missing"
       },
       "Imputation": {
-        "valid_count": 4,
-        "unknown_count": 6,
-        "valid_pct": 40.0,
-        "valid_terms": [
-          "1000 Genomes (1000G)",
-          "Haplotype Reference Consortium (HRC)",
-          "TOPMed",
-          "UK10K"
-        ],
-        "unknown_terms": [
-          "ADNI",
-          "ADNI-1",
-          "ADNI-2",
-          "ADNI-go",
-          "PDS5B",
-          "Womens Health Initiative"
-        ]
+        "note": "column 'Imputation' missing"
       },
       "Study type": {
-        "valid_count": 4,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "Array genotyping",
-          "GWAS",
-          "WGS",
-          "Whole Exome Sequencing (WES)"
-        ],
-        "unknown_terms": []
+        "note": "column 'Study type' missing"
       },
       "Phenotype": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Phenotype' missing"
       }
     }
   },
@@ -251,78 +95,22 @@
     "file": "29107063_PMC5920782.csv",
     "cols": {
       "Population": {
-        "valid_count": 4,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "African American (AA)",
-          "Asian (EAS)",
-          "Hispanic (HIS)",
-          "White (EUR)"
-        ],
-        "unknown_terms": []
+        "note": "column 'Population' missing"
       },
       "Cohort": {
-        "valid_count": 5,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "CHS",
-          "FHS",
-          "HB",
-          "HRS",
-          "LOADFS"
-        ],
-        "unknown_terms": []
+        "note": "column 'Cohort' missing"
       },
       "Stage": {
-        "valid_count": 4,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "combined",
-          "discovery",
-          "meta-analysis",
-          "replication"
-        ],
-        "unknown_terms": []
+        "note": "column 'Stage' missing"
       },
       "Imputation": {
-        "valid_count": 6,
-        "unknown_count": 3,
-        "valid_pct": 66.7,
-        "valid_terms": [
-          "1000 Genomes (1000G)",
-          "Haplotype Reference Consortium (HRC)",
-          "TOPMed",
-          "UK10K",
-          "illumina ibc chip",
-          "illumina platform"
-        ],
-        "unknown_terms": [
-          "UK Biobank",
-          "discovery",
-          "replication"
-        ]
+        "note": "column 'Imputation' missing"
       },
       "Study type": {
-        "valid_count": 4,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "Array genotyping",
-          "GWAS",
-          "Whole Exome Sequencing (WES)",
-          "Whole Genome Sequencing (WGS)"
-        ],
-        "unknown_terms": []
+        "note": "column 'Study type' missing"
       },
       "Phenotype": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Phenotype' missing"
       }
     }
   },
@@ -330,75 +118,22 @@
     "file": "29274321_PMC5938137.csv",
     "cols": {
       "Population": {
-        "valid_count": 2,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "African American (AA)",
-          "European (EUR)"
-        ],
-        "unknown_terms": []
+        "note": "column 'Population' missing"
       },
       "Cohort": {
-        "valid_count": 2,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "ADNI",
-          "HB"
-        ],
-        "unknown_terms": []
+        "note": "column 'Cohort' missing"
       },
       "Stage": {
-        "valid_count": 4,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "combined",
-          "discovery",
-          "meta-analysis",
-          "replication"
-        ],
-        "unknown_terms": []
+        "note": "column 'Stage' missing"
       },
       "Imputation": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Imputation' missing"
       },
       "Study type": {
-        "valid_count": 4,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "Array genotyping",
-          "GWAS",
-          "WES",
-          "WGS"
-        ],
-        "unknown_terms": []
+        "note": "column 'Study type' missing"
       },
       "Phenotype": {
-        "valid_count": 5,
-        "unknown_count": 6,
-        "valid_pct": 45.5,
-        "valid_terms": [
-          "a42",
-          "ad",
-          "alzheimers disease",
-          "hpv",
-          "lmdt"
-        ],
-        "unknown_terms": [
-          "bri1",
-          "brip1",
-          "grin2b",
-          "mtus1",
-          "nrg1",
-          "pde7b"
-        ]
+        "note": "column 'Phenotype' missing"
       }
     }
   },
@@ -406,85 +141,22 @@
     "file": "29458411_PMC5819208.csv",
     "cols": {
       "Population": {
-        "valid_count": 3,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "AA",
-          "EAS",
-          "EUR"
-        ],
-        "unknown_terms": []
+        "note": "column 'Population' missing"
       },
       "Cohort": {
-        "valid_count": 1,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "MAYO"
-        ],
-        "unknown_terms": []
+        "note": "column 'Cohort' missing"
       },
       "Stage": {
-        "valid_count": 3,
-        "unknown_count": 1,
-        "valid_pct": 75.0,
-        "valid_terms": [
-          "discovery",
-          "meta",
-          "replication"
-        ],
-        "unknown_terms": [
-          "pleiotropy"
-        ]
+        "note": "column 'Stage' missing"
       },
       "Imputation": {
-        "valid_count": 6,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "1000 Genomes",
-          "1000G",
-          "HRC",
-          "Haplotype Reference Consortium",
-          "TOPMed",
-          "UK10K"
-        ],
-        "unknown_terms": []
+        "note": "column 'Imputation' missing"
       },
       "Study type": {
-        "valid_count": 7,
-        "unknown_count": 6,
-        "valid_pct": 53.8,
-        "valid_terms": [
-          "Array genotyping",
-          "GWAS",
-          "WES",
-          "WGS",
-          "eqtls",
-          "gene-based",
-          "gene-based tests"
-        ],
-        "unknown_terms": [
-          "gene-wide significant",
-          "pleiotropic",
-          "pleiotropic effect",
-          "pleiotropy",
-          "pleiotropy analysis",
-          "trivariate pleiotropy"
-        ]
+        "note": "column 'Study type' missing"
       },
       "Phenotype": {
-        "valid_count": 1,
-        "unknown_count": 2,
-        "valid_pct": 33.3,
-        "valid_terms": [
-          "alzheimers disease"
-        ],
-        "unknown_terms": [
-          "neuropathological traits",
-          "pleiotropy"
-        ]
+        "note": "column 'Phenotype' missing"
       }
     }
   },
@@ -492,46 +164,22 @@
     "file": "29752348_PMC5976227.csv",
     "cols": {
       "Population": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Population' missing"
       },
       "Cohort": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Cohort' missing"
       },
       "Stage": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Stage' missing"
       },
       "Imputation": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Imputation' missing"
       },
       "Study type": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Study type' missing"
       },
       "Phenotype": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Phenotype' missing"
       }
     }
   },
@@ -539,83 +187,22 @@
     "file": "29777097_PMC5959890.csv",
     "cols": {
       "Population": {
-        "valid_count": 4,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "African American (AA)",
-          "Caribbean Hispanic",
-          "East Asian (EAS)",
-          "European (EUR)"
-        ],
-        "unknown_terms": []
+        "note": "column 'Population' missing"
       },
       "Cohort": {
-        "valid_count": 3,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "HRS",
-          "IGAP",
-          "UKBB"
-        ],
-        "unknown_terms": []
+        "note": "column 'Cohort' missing"
       },
       "Stage": {
-        "valid_count": 4,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "combined",
-          "discovery",
-          "meta-analysis",
-          "replication"
-        ],
-        "unknown_terms": []
+        "note": "column 'Stage' missing"
       },
       "Imputation": {
-        "valid_count": 4,
-        "unknown_count": 1,
-        "valid_pct": 80.0,
-        "valid_terms": [
-          "1000G",
-          "HRC",
-          "TOPMed",
-          "UK10K"
-        ],
-        "unknown_terms": [
-          "IGAP"
-        ]
+        "note": "column 'Imputation' missing"
       },
       "Study type": {
-        "valid_count": 4,
-        "unknown_count": 4,
-        "valid_pct": 50.0,
-        "valid_terms": [
-          "Array genotyping",
-          "GWAS",
-          "Whole Exome Sequencing (WES)",
-          "Whole Genome Sequencing (WGS)"
-        ],
-        "unknown_terms": [
-          "IGAP",
-          "UK Biobank",
-          "discovery",
-          "replication"
-        ]
+        "note": "column 'Study type' missing"
       },
       "Phenotype": {
-        "valid_count": 3,
-        "unknown_count": 1,
-        "valid_pct": 75.0,
-        "valid_terms": [
-          "ad",
-          "alzheimers disease",
-          "dementia"
-        ],
-        "unknown_terms": [
-          "uk biobank"
-        ]
+        "note": "column 'Phenotype' missing"
       }
     }
   },
@@ -623,79 +210,22 @@
     "file": "29967939_PMC6280657.csv",
     "cols": {
       "Population": {
-        "valid_count": 1,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "European (EUR)"
-        ],
-        "unknown_terms": []
+        "note": "column 'Population' missing"
       },
       "Cohort": {
-        "valid_count": 11,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "ADGC",
-          "ADNI",
-          "BIOCARD",
-          "GERAD",
-          "HB",
-          "IGAP",
-          "Knight-ADRC",
-          "MAYO",
-          "ROS/MAP",
-          "UPENN",
-          "UW"
-        ],
-        "unknown_terms": []
+        "note": "column 'Cohort' missing"
       },
       "Stage": {
-        "valid_count": 4,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "combined",
-          "discovery",
-          "meta",
-          "replication"
-        ],
-        "unknown_terms": []
+        "note": "column 'Stage' missing"
       },
       "Imputation": {
-        "valid_count": 4,
-        "unknown_count": 4,
-        "valid_pct": 50.0,
-        "valid_terms": [
-          "1000 Genomes (1000G)",
-          "Haplotype Reference Consortium (HRC)",
-          "TOPMed",
-          "UK10K"
-        ],
-        "unknown_terms": [
-          "ADNI",
-          "GTEx",
-          "IGAP",
-          "RosMap"
-        ]
+        "note": "column 'Imputation' missing"
       },
       "Study type": {
-        "valid_count": 3,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "GWAS",
-          "Genotyping",
-          "Whole Exome Sequencing (WES)"
-        ],
-        "unknown_terms": []
+        "note": "column 'Study type' missing"
       },
       "Phenotype": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Phenotype' missing"
       }
     }
   },
@@ -703,107 +233,22 @@
     "file": "30413934_PMC6358498.csv",
     "cols": {
       "Population": {
-        "valid_count": 1,
-        "unknown_count": 9,
-        "valid_pct": 10.0,
-        "valid_terms": [
-          "EUR"
-        ],
-        "unknown_terms": [
-          "AD",
-          "ADGC2",
-          "BMI",
-          "HDL",
-          "HDL-C",
-          "LDL",
-          "TC",
-          "TG",
-          "UK Biobank"
-        ]
+        "note": "column 'Population' missing"
       },
       "Cohort": {
-        "valid_count": 9,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "ADGC",
-          "CHS",
-          "ENGAGE",
-          "GIANT",
-          "HB",
-          "IGAP",
-          "MAYO",
-          "UKBB",
-          "UKBEC"
-        ],
-        "unknown_terms": []
+        "note": "column 'Cohort' missing"
       },
       "Stage": {
-        "valid_count": 4,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "combined",
-          "discovery",
-          "meta-analysis",
-          "replication"
-        ],
-        "unknown_terms": []
+        "note": "column 'Stage' missing"
       },
       "Imputation": {
-        "valid_count": 6,
-        "unknown_count": 1,
-        "valid_pct": 85.7,
-        "valid_terms": [
-          "1000 genomes",
-          "1000G",
-          "HRC",
-          "Haplotype Reference Consortium",
-          "TOPMed",
-          "UK10K"
-        ],
-        "unknown_terms": [
-          "UK Biobank"
-        ]
+        "note": "column 'Imputation' missing"
       },
       "Study type": {
-        "valid_count": 5,
-        "unknown_count": 3,
-        "valid_pct": 62.5,
-        "valid_terms": [
-          "Array genotyping",
-          "GWAS",
-          "Whole Exome Sequencing (WES)",
-          "Whole Genome Sequencing (WGS)",
-          "cis-eqtls"
-        ],
-        "unknown_terms": [
-          "UK Biobank",
-          "conjunction false discovery rate",
-          "pleiotropic"
-        ]
+        "note": "column 'Study type' missing"
       },
       "Phenotype": {
-        "valid_count": 11,
-        "unknown_count": 2,
-        "valid_pct": 84.6,
-        "valid_terms": [
-          "Alzheimer disease",
-          "BMI",
-          "Cardiovascular disease",
-          "Coronary artery disease",
-          "Dementia",
-          "High-density lipoprotein",
-          "Low-density lipoprotein",
-          "Total cholesterol",
-          "Triglycerides",
-          "Type 2 diabetes",
-          "Waist hip ratio"
-        ],
-        "unknown_terms": [
-          "Disease",
-          "Outcome"
-        ]
+        "note": "column 'Phenotype' missing"
       }
     }
   },
@@ -811,87 +256,22 @@
     "file": "30448613_PMC6331247.csv",
     "cols": {
       "Population": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Population' missing"
       },
       "Cohort": {
-        "valid_count": 8,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "ADGC",
-          "ADNI",
-          "ADSP",
-          "CHARGE",
-          "IGAP",
-          "NABEC",
-          "UKBB",
-          "UKBEC"
-        ],
-        "unknown_terms": []
+        "note": "column 'Cohort' missing"
       },
       "Stage": {
-        "valid_count": 4,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "combined",
-          "discovery",
-          "meta-analysis",
-          "replication"
-        ],
-        "unknown_terms": []
+        "note": "column 'Stage' missing"
       },
       "Imputation": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Imputation' missing"
       },
       "Study type": {
-        "valid_count": 4,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "Array genotyping",
-          "GWAS",
-          "WES",
-          "WGS"
-        ],
-        "unknown_terms": []
+        "note": "column 'Study type' missing"
       },
       "Phenotype": {
-        "valid_count": 1,
-        "unknown_count": 19,
-        "valid_pct": 5.0,
-        "valid_terms": [
-          "alzheimers disease"
-        ],
-        "unknown_terms": [
-          "abca7",
-          "ak9",
-          "app",
-          "bin1",
-          "cd2ap",
-          "cd33",
-          "celf1",
-          "clu",
-          "cr1",
-          "dlgap1",
-          "dsg2",
-          "eid2b",
-          "fermt2",
-          "ier2",
-          "ms4a6a",
-          "mybpc3",
-          "neto1",
-          "picalm",
-          "sorl1"
-        ]
+        "note": "column 'Phenotype' missing"
       }
     }
   },
@@ -899,95 +279,22 @@
     "file": "30617256_PMC6836675.csv",
     "cols": {
       "Population": {
-        "valid_count": 1,
-        "unknown_count": 1,
-        "valid_pct": 50.0,
-        "valid_terms": [
-          "EUR"
-        ],
-        "unknown_terms": [
-          "UKB"
-        ]
+        "note": "column 'Population' missing"
       },
       "Cohort": {
-        "valid_count": 5,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "ADSP",
-          "FHS",
-          "IGAP",
-          "PGC-ALZ",
-          "UKBB"
-        ],
-        "unknown_terms": []
+        "note": "column 'Cohort' missing"
       },
       "Stage": {
-        "valid_count": 4,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "Combined",
-          "Discovery",
-          "Meta-analysis",
-          "Replication"
-        ],
-        "unknown_terms": []
+        "note": "column 'Stage' missing"
       },
       "Imputation": {
-        "valid_count": 4,
-        "unknown_count": 8,
-        "valid_pct": 33.3,
-        "valid_terms": [
-          "1000 Genomes (1000G)",
-          "Haplotype Reference Consortium (HRC)",
-          "TOPMed",
-          "UK10K"
-        ],
-        "unknown_terms": [
-          "ADSP",
-          "FM-Summary",
-          "IGAP",
-          "LDScore",
-          "MAGMA",
-          "PGC-Alz",
-          "PRSICE",
-          "UK Biobank"
-        ]
+        "note": "column 'Imputation' missing"
       },
       "Study type": {
-        "valid_count": 4,
-        "unknown_count": 4,
-        "valid_pct": 50.0,
-        "valid_terms": [
-          "Array genotyping",
-          "GWAS",
-          "Whole Exome Sequencing (WES)",
-          "Whole Genome Sequencing (WGS)"
-        ],
-        "unknown_terms": [
-          "adsp",
-          "igap",
-          "pgc-alz",
-          "ukb"
-        ]
+        "note": "column 'Study type' missing"
       },
       "Phenotype": {
-        "valid_count": 6,
-        "unknown_count": 2,
-        "valid_pct": 75.0,
-        "valid_terms": [
-          "ad",
-          "alzheimers disease",
-          "amyloid",
-          "cognitive reserve",
-          "education",
-          "height"
-        ],
-        "unknown_terms": [
-          "amyloidogenic pathway",
-          "lipid metabolism"
-        ]
+        "note": "column 'Phenotype' missing"
       }
     }
   },
@@ -995,89 +302,22 @@
     "file": "30636644_PMC6330399.csv",
     "cols": {
       "Population": {
-        "valid_count": 4,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "AA",
-          "CEU",
-          "EAS",
-          "EUR"
-        ],
-        "unknown_terms": []
+        "note": "column 'Population' missing"
       },
       "Cohort": {
-        "valid_count": 5,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "CHS",
-          "FHS",
-          "HRS",
-          "LOADFS",
-          "NIA-LOAD"
-        ],
-        "unknown_terms": []
+        "note": "column 'Cohort' missing"
       },
       "Stage": {
-        "valid_count": 4,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "combined",
-          "discovery",
-          "meta-analysis",
-          "replication"
-        ],
-        "unknown_terms": []
+        "note": "column 'Stage' missing"
       },
       "Imputation": {
-        "valid_count": 5,
-        "unknown_count": 9,
-        "valid_pct": 35.7,
-        "valid_terms": [
-          "1000 genomes",
-          "minimac3",
-          "shapeit2",
-          "topmed",
-          "uk10k"
-        ],
-        "unknown_terms": [
-          "fhs",
-          "haplotype",
-          "hrs",
-          "igap",
-          "ldlink",
-          "loadfs",
-          "pid",
-          "smr",
-          "stampeed"
-        ]
+        "note": "column 'Imputation' missing"
       },
       "Study type": {
-        "valid_count": 8,
-        "unknown_count": 1,
-        "valid_pct": 88.9,
-        "valid_terms": [
-          "Array genotyping",
-          "GCTA",
-          "GWA",
-          "GWA analyses",
-          "GWA analysis",
-          "GWAMA",
-          "GWAS",
-          "Gene-based"
-        ],
-        "unknown_terms": [
-          "Pathway-based"
-        ]
+        "note": "column 'Study type' missing"
       },
       "Phenotype": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Phenotype' missing"
       }
     }
   },
@@ -1085,46 +325,22 @@
     "file": "30651383_PMC6369905.csv",
     "cols": {
       "Population": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Population' missing"
       },
       "Cohort": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Cohort' missing"
       },
       "Stage": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Stage' missing"
       },
       "Imputation": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Imputation' missing"
       },
       "Study type": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Study type' missing"
       },
       "Phenotype": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Phenotype' missing"
       }
     }
   },
@@ -1132,101 +348,22 @@
     "file": "30805717_PMC7193309.csv",
     "cols": {
       "Population": {
-        "valid_count": 0,
-        "unknown_count": 15,
-        "valid_pct": 0.0,
-        "valid_terms": [],
-        "unknown_terms": [
-          "ad",
-          "apoc1",
-          "apoc2",
-          "apoe",
-          "bin1",
-          "bmi",
-          "cccd116",
-          "dgf",
-          "fg-fins",
-          "h3k27ac",
-          "h3k9ac",
-          "hdl",
-          "ldl",
-          "t2d",
-          "whr"
-        ]
+        "note": "column 'Population' missing"
       },
       "Cohort": {
-        "valid_count": 7,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "CHARGE",
-          "DIAGRAM",
-          "ENGAGE",
-          "GIANT",
-          "IGAP",
-          "MAGIC",
-          "UKBB"
-        ],
-        "unknown_terms": []
+        "note": "column 'Cohort' missing"
       },
       "Stage": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Stage' missing"
       },
       "Imputation": {
-        "valid_count": 5,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "1000G",
-          "HRC",
-          "TOPMed",
-          "UK10K",
-          "hapmap 2"
-        ],
-        "unknown_terms": []
+        "note": "column 'Imputation' missing"
       },
       "Study type": {
-        "valid_count": 7,
-        "unknown_count": 8,
-        "valid_pct": 46.7,
-        "valid_terms": [
-          "Array genotyping",
-          "Cross-Phenotype Meta-Analysis",
-          "Cross-Trait Meta-Analysis",
-          "GWAS",
-          "Mendelian Randomization",
-          "Whole Exome Sequencing (WES)",
-          "Whole Genome Sequencing (WGS)"
-        ],
-        "unknown_terms": [
-          "1000 Genome",
-          "Genetic Correlation",
-          "Hapmap 2",
-          "Hapmap 3",
-          "Integrative Approaches",
-          "LD Score Regression",
-          "Meta-Analysis of Correlated Traits",
-          "Shet"
-        ]
+        "note": "column 'Study type' missing"
       },
       "Phenotype": {
-        "valid_count": 7,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "alzheimers disease",
-          "bmi",
-          "fasting glucose",
-          "fasting insulin",
-          "hdl",
-          "ldl",
-          "t2d"
-        ],
-        "unknown_terms": []
+        "note": "column 'Phenotype' missing"
       }
     }
   },
@@ -1234,135 +371,22 @@
     "file": "30820047_PMC6463297.csv",
     "cols": {
       "Population": {
-        "valid_count": 3,
-        "unknown_count": 2,
-        "valid_pct": 60.0,
-        "valid_terms": [
-          "AA",
-          "EAS",
-          "EUR"
-        ],
-        "unknown_terms": [
-          "discovery",
-          "replication"
-        ]
+        "note": "column 'Population' missing"
       },
       "Cohort": {
-        "valid_count": 14,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "ADGC",
-          "ADSP",
-          "AGES+",
-          "CAGE",
-          "CHARGE",
-          "CHS",
-          "EADI",
-          "FHS",
-          "GERAD",
-          "IGAP",
-          "ROS/MAP",
-          "SMART",
-          "UKBB",
-          "UPENN"
-        ],
-        "unknown_terms": []
+        "note": "column 'Cohort' missing"
       },
       "Stage": {
-        "valid_count": 7,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "discovery",
-          "meta-analysis",
-          "replication",
-          "stage 1",
-          "stage 2",
-          "stage 3",
-          "stage 3b"
-        ],
-        "unknown_terms": []
+        "note": "column 'Stage' missing"
       },
       "Imputation": {
-        "valid_count": 2,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "1000 Genomes (1000G)",
-          "Haplotype Reference Consortium (HRC)"
-        ],
-        "unknown_terms": []
+        "note": "column 'Imputation' missing"
       },
       "Study type": {
-        "valid_count": 6,
-        "unknown_count": 12,
-        "valid_pct": 33.3,
-        "valid_terms": [
-          "Array genotyping",
-          "GWAF",
-          "GWAS",
-          "WES",
-          "WGS",
-          "eqtl"
-        ],
-        "unknown_terms": [
-          "adamts1",
-          "adgc",
-          "adsp",
-          "apoe",
-          "charge",
-          "hla-drb1",
-          "inpp5d",
-          "ld",
-          "mhc",
-          "picalm",
-          "suclg2p4",
-          "trem2"
-        ]
+        "note": "column 'Study type' missing"
       },
       "Phenotype": {
-        "valid_count": 5,
-        "unknown_count": 29,
-        "valid_pct": 14.7,
-        "valid_terms": [
-          "alzheimers disease",
-          "blood pressure",
-          "body mass index",
-          "diabetes",
-          "parkinsons disease"
-        ],
-        "unknown_terms": [
-          "autoimmune and neurodegenerative risk alleles",
-          "brain-related traits",
-          "epigenomic signals",
-          "eqtls",
-          "family history",
-          "gene regulation",
-          "gene regulation in whole blood",
-          "gene targets",
-          "gene-set analysis",
-          "genetic architecture",
-          "heart disease",
-          "high blood pressure",
-          "hyperlipidemia",
-          "hyperthyroidism",
-          "immune pathways",
-          "ld-score regression",
-          "lewy bodies",
-          "lipid metabolism",
-          "magma",
-          "maternal genetic correlation",
-          "microglia",
-          "microgliamacrophages",
-          "monocytes",
-          "monocytes and microglia",
-          "neurons",
-          "oligodendrocytes",
-          "tauopathies",
-          "transcriptomic and methylomic data",
-          "vascular problems"
-        ]
+        "note": "column 'Phenotype' missing"
       }
     }
   },
@@ -1370,46 +394,22 @@
     "file": "30930738_PMC6425305.csv",
     "cols": {
       "Population": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Population' missing"
       },
       "Cohort": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Cohort' missing"
       },
       "Stage": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Stage' missing"
       },
       "Imputation": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Imputation' missing"
       },
       "Study type": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Study type' missing"
       },
       "Phenotype": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Phenotype' missing"
       }
     }
   },
@@ -1417,75 +417,22 @@
     "file": "30979435_PMC6783343.csv",
     "cols": {
       "Population": {
-        "valid_count": 1,
-        "unknown_count": 2,
-        "valid_pct": 33.3,
-        "valid_terms": [
-          "EUR"
-        ],
-        "unknown_terms": [
-          "ethnic",
-          "race"
-        ]
+        "note": "column 'Population' missing"
       },
       "Cohort": {
-        "valid_count": 3,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "ADGC",
-          "FHS",
-          "LBC1936"
-        ],
-        "unknown_terms": []
+        "note": "column 'Cohort' missing"
       },
       "Stage": {
-        "valid_count": 5,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "combined",
-          "discovery",
-          "phase 1",
-          "phase 2",
-          "replication"
-        ],
-        "unknown_terms": []
+        "note": "column 'Stage' missing"
       },
       "Imputation": {
-        "valid_count": 6,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "1000 Genomes",
-          "1000G",
-          "HRC",
-          "Haplotype Reference Consortium",
-          "TOPMed",
-          "UK10K"
-        ],
-        "unknown_terms": []
+        "note": "column 'Imputation' missing"
       },
       "Study type": {
-        "valid_count": 6,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "GWAS",
-          "gene-based",
-          "gene-based genome-wide association analyses",
-          "gene-based gwas",
-          "stratified gene-based genome-wide analyses",
-          "stratified gwas"
-        ],
-        "unknown_terms": []
+        "note": "column 'Study type' missing"
       },
       "Phenotype": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Phenotype' missing"
       }
     }
   },
@@ -1493,74 +440,22 @@
     "file": "31426376_PMC6723529.csv",
     "cols": {
       "Population": {
-        "valid_count": 3,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "AA",
-          "EAS",
-          "EUR"
-        ],
-        "unknown_terms": []
+        "note": "column 'Population' missing"
       },
       "Cohort": {
-        "valid_count": 6,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "ADGC",
-          "ADNI",
-          "FHS",
-          "Korean Genome and Epidemiology Study",
-          "ROS/MAP",
-          "UPENN"
-        ],
-        "unknown_terms": []
+        "note": "column 'Cohort' missing"
       },
       "Stage": {
-        "valid_count": 4,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "combined",
-          "discovery",
-          "meta",
-          "replication"
-        ],
-        "unknown_terms": []
+        "note": "column 'Stage' missing"
       },
       "Imputation": {
-        "valid_count": 4,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "1000G",
-          "HRC",
-          "TOPMed",
-          "UK10K"
-        ],
-        "unknown_terms": []
+        "note": "column 'Imputation' missing"
       },
       "Study type": {
-        "valid_count": 6,
-        "unknown_count": 0,
-        "valid_pct": 100.0,
-        "valid_terms": [
-          "Affymetrix genotyping",
-          "Array genotyping",
-          "GWAS",
-          "Sequencing",
-          "Whole Exome Sequencing",
-          "Whole Genome Sequencing"
-        ],
-        "unknown_terms": []
+        "note": "column 'Study type' missing"
       },
       "Phenotype": {
-        "valid_count": 0,
-        "unknown_count": 0,
-        "valid_pct": null,
-        "valid_terms": [],
-        "unknown_terms": []
+        "note": "column 'Phenotype' missing"
       }
     }
   }

@@ -11,181 +11,166 @@
           "snp": "rs12961169",
           "gt_value": "ADNI1&2, BIOCARD, HB, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
+            "adni.loni.usc.edu",
+            "ag",
             "biocard",
-            "sk",
-            "gl",
-            "pldj",
-            "jqt",
-            "map-v"
+            "adgc",
+            "adni1",
+            "adni2"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "IGAP",
           "pred_terms": [
+            "adni.loni.usc.edu",
+            "ag",
             "biocard",
-            "sk",
-            "gl",
-            "pldj",
-            "jqt",
-            "map-v"
+            "adgc",
+            "adni1",
+            "adni2"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "ADNI1&2, BIOCARD, HB, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
+            "adni.loni.usc.edu",
+            "ag",
             "biocard",
-            "sk",
-            "gl",
-            "pldj",
-            "jqt",
-            "map-v"
+            "adgc",
+            "adni1",
+            "adni2"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "ADNI1&2, BIOCARD, HB, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
+            "adni.loni.usc.edu",
+            "ag",
             "biocard",
-            "sk",
-            "gl",
-            "pldj",
-            "jqt",
-            "map-v"
+            "adgc",
+            "adni1",
+            "adni2"
           ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "IGAP",
           "pred_terms": [
+            "adni.loni.usc.edu",
+            "ag",
             "biocard",
-            "sk",
-            "gl",
-            "pldj",
-            "jqt",
-            "map-v"
+            "adgc",
+            "adni1",
+            "adni2"
           ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "ADNI1&2, BIOCARD, HB, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
+            "adni.loni.usc.edu",
+            "ag",
             "biocard",
-            "sk",
-            "gl",
-            "pldj",
-            "jqt",
-            "map-v"
+            "adgc",
+            "adni1",
+            "adni2"
           ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "ADNI1&2, BIOCARD, HB, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
+            "adni.loni.usc.edu",
+            "ag",
             "biocard",
-            "sk",
-            "gl",
-            "pldj",
-            "jqt",
-            "map-v"
+            "adgc",
+            "adni1",
+            "adni2"
           ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "ADNI1&2, BIOCARD, HB, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
+            "adni.loni.usc.edu",
+            "ag",
             "biocard",
-            "sk",
-            "gl",
-            "pldj",
-            "jqt",
-            "map-v"
+            "adgc",
+            "adni1",
+            "adni2"
           ]
         },
         {
           "snp": "rs316341",
           "gt_value": "ADNI1&2, BIOCARD, HB, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
+            "adni.loni.usc.edu",
+            "ag",
             "biocard",
-            "sk",
-            "gl",
-            "pldj",
-            "jqt",
-            "map-v"
+            "adgc",
+            "adni1",
+            "adni2"
           ]
         },
         {
           "snp": "rs316341",
           "gt_value": "ADNI1&2, BIOCARD, HB, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
+            "adni.loni.usc.edu",
+            "ag",
             "biocard",
-            "sk",
-            "gl",
-            "pldj",
-            "jqt",
-            "map-v"
+            "adgc",
+            "adni1",
+            "adni2"
           ]
         }
       ]
     }
   ],
   [
-    "29458411_PMC5819208.csv",
+    "28560309_PMC5440281.csv",
     {
       "coverage_pct": 0.0,
       "threshold_pct": 50.0,
       "covered_rows": 0,
-      "total_rows": 32,
+      "total_rows": 7,
       "missed_examples": [
         {
-          "snp": "rs34487851",
-          "gt_value": "ADGC",
+          "snp": "None",
+          "gt_value": "ADNI",
           "pred_terms": []
         },
         {
-          "snp": "rs34487851",
-          "gt_value": "ADGC",
+          "snp": "None",
+          "gt_value": "ADNI",
           "pred_terms": []
         },
         {
-          "snp": "rs34487851",
-          "gt_value": "ADGC",
+          "snp": "None",
+          "gt_value": "ADNI",
           "pred_terms": []
         },
         {
-          "snp": "rs34487851",
-          "gt_value": "ADGC",
+          "snp": "None",
+          "gt_value": "ADNI",
           "pred_terms": []
         },
         {
-          "snp": "rs34487851",
-          "gt_value": "ADGC",
+          "snp": "None",
+          "gt_value": "ADNI",
           "pred_terms": []
         },
         {
-          "snp": "rs34487851",
-          "gt_value": "ADGC",
+          "snp": "None",
+          "gt_value": "ADNI",
           "pred_terms": []
         },
         {
-          "snp": "rs34487851",
-          "gt_value": "ADGC",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs79524815",
-          "gt_value": "ADGC",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs79524815",
-          "gt_value": "ADGC",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs79524815",
-          "gt_value": "ADGC",
+          "snp": "None",
+          "gt_value": "ADNI",
           "pred_terms": []
         }
       ]
@@ -234,11 +219,11 @@
           "snp": "rs12961169",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
+            "igap",
+            "dataset",
+            "study",
             "mci",
-            "adgc",
-            "adni",
             "uw",
-            "ad",
             "elderly cognitively normal controls"
           ]
         },
@@ -246,11 +231,11 @@
           "snp": "rs12961169",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
+            "igap",
+            "dataset",
+            "study",
             "mci",
-            "adgc",
-            "adni",
             "uw",
-            "ad",
             "elderly cognitively normal controls"
           ]
         },
@@ -258,11 +243,11 @@
           "snp": "rs12961169",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
+            "igap",
+            "dataset",
+            "study",
             "mci",
-            "adgc",
-            "adni",
             "uw",
-            "ad",
             "elderly cognitively normal controls"
           ]
         },
@@ -270,23 +255,11 @@
           "snp": "rs13115400",
           "gt_value": "ROS/MAP",
           "pred_terms": [
+            "igap",
+            "dataset",
+            "study",
             "mci",
-            "adgc",
-            "adni",
             "uw",
-            "ad",
-            "elderly cognitively normal controls"
-          ]
-        },
-        {
-          "snp": "rs13115400",
-          "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
-          "pred_terms": [
-            "mci",
-            "adgc",
-            "adni",
-            "uw",
-            "ad",
             "elderly cognitively normal controls"
           ]
         },
@@ -294,11 +267,23 @@
           "snp": "rs13115400",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
+            "igap",
+            "dataset",
+            "study",
             "mci",
-            "adgc",
-            "adni",
             "uw",
-            "ad",
+            "elderly cognitively normal controls"
+          ]
+        },
+        {
+          "snp": "rs13115400",
+          "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
+          "pred_terms": [
+            "igap",
+            "dataset",
+            "study",
+            "mci",
+            "uw",
             "elderly cognitively normal controls"
           ]
         },
@@ -306,11 +291,11 @@
           "snp": "rs13115400",
           "gt_value": "ROS/MAP",
           "pred_terms": [
+            "igap",
+            "dataset",
+            "study",
             "mci",
-            "adgc",
-            "adni",
             "uw",
-            "ad",
             "elderly cognitively normal controls"
           ]
         },
@@ -318,11 +303,11 @@
           "snp": "rs1393060",
           "gt_value": "ROS/MAP",
           "pred_terms": [
+            "igap",
+            "dataset",
+            "study",
             "mci",
-            "adgc",
-            "adni",
             "uw",
-            "ad",
             "elderly cognitively normal controls"
           ]
         },
@@ -330,11 +315,11 @@
           "snp": "rs1393060",
           "gt_value": "ROS/MAP",
           "pred_terms": [
+            "igap",
+            "dataset",
+            "study",
             "mci",
-            "adgc",
-            "adni",
             "uw",
-            "ad",
             "elderly cognitively normal controls"
           ]
         },
@@ -342,11 +327,11 @@
           "snp": "rs1393060",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
+            "igap",
+            "dataset",
+            "study",
             "mci",
-            "adgc",
-            "adni",
             "uw",
-            "ad",
             "elderly cognitively normal controls"
           ]
         }
@@ -409,67 +394,6 @@
         {
           "snp": "rs12373108",
           "gt_value": "3C-Dijon, AGES+, ARIC, ASPS, CHAP, CHS, ERF, FHS, LBC1936, LLS, NOMAS, PROSPER, RSI, RSII, RSIII, SCES, SHIP, SiMES",
-          "pred_terms": []
-        }
-      ]
-    }
-  ],
-  [
-    "30805717_PMC7193309.csv",
-    {
-      "coverage_pct": 0.0,
-      "threshold_pct": 50.0,
-      "covered_rows": 0,
-      "total_rows": 14,
-      "missed_examples": [
-        {
-          "snp": "rs10501320",
-          "gt_value": "IGAP",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10501320",
-          "gt_value": "MAGIC",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs12805422",
-          "gt_value": "IGAP",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs12805422",
-          "gt_value": "MAGIC",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs1483121",
-          "gt_value": "IGAP",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs1483121",
-          "gt_value": "MAGIC",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs17747324",
-          "gt_value": "IGAP",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs17747324",
-          "gt_value": "MAGIC",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs2279590",
-          "gt_value": "MAGIC",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs2279590",
-          "gt_value": "IGAP",
           "pred_terms": []
         }
       ]

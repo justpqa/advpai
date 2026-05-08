@@ -1,11 +1,15 @@
 [
   [
+    "30413934_PMC6358498.csv",
+    "Table 30413934_PMC6358498.csv (90.0) does not have the enough number of row for SNP ['rs2298428', 'rs246174', 'rs4821116', 'rs4985557', 'rs7421448', 'rs8070572', 'rs8071250', 'rs9931998', 'rs9941245']"
+  ],
+  [
     "30651383_PMC6369905.csv",
     "Table 30651383_PMC6369905.csv (0.0) does not have the enough number of row for SNP ['rs12373108', 'rs12583648', 'rs39938', 'rs74587705', 'rs75889566', 'rs9371194']"
   ],
   [
     "30805717_PMC7193309.csv",
-    "Table 30805717_PMC7193309.csv (0.0) does not have the enough number of row for SNP ['rs10501320', 'rs12805422', 'rs1483121', 'rs17747324', 'rs2279590', 'rs4803750', 'rs6656401']"
+    "Table 30805717_PMC7193309.csv (57.14) does not have the enough number of row for SNP ['rs2279590', 'rs4803750', 'rs6656401']"
   ],
   [
     "29107063_PMC5920782.csv",
@@ -17,10 +21,14 @@
   ],
   [
     "30448613_PMC6331247.csv",
-    "Table 30448613_PMC6331247.csv (82.61) does not have the enough number of row for SNP ['rs111418223', 'rs11771145', 'rs28834970', 'rs6733839']"
+    "Table 30448613_PMC6331247.csv (30.43) does not have the enough number of row for SNP ['rs10948363', 'rs12453', 'rs12459419', 'rs1859788', 'rs2293576', 'rs2296160', 'rs2405442', 'rs3752246', 'rs3865444', 'rs4147929', 'rs4844600', 'rs6656401', 'rs7982', 'rs8093731', 'rs9271192', 'rs9331896']"
   ],
   [
     "29752348_PMC5976227.csv",
     "Table 29752348_PMC5976227.csv (0.0) does not have the enough number of row for SNP ['rs13164785', 'rs146896516', 'rs3744020', 'rs67827860']"
+  ],
+  [
+    "30820047_PMC6463297.csv",
+    "Table 30820047_PMC6463297.csv (67.65) does not have the enough number of row for SNP ['rs10467994', 'rs114812713', 'rs2632516', 'rs2830500', 'rs35868327', 'rs4735340', 'rs593742', 'rs62039712', 'rs71618613', 'rs7185636', 'rs7295246']"
   ]
 ]

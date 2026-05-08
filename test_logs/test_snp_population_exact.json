@@ -1,0 +1,1617 @@
+[
+  [
+    "27899424_PMC5237405.csv",
+    {
+      "match_pct": 0.0,
+      "threshold_pct": 25.0,
+      "matched_rows": 0,
+      "total_rows": 57,
+      "missed_examples": [
+        {
+          "snp": "rs10784359",
+          "gt_value": "NHW",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12964543",
+          "gt_value": "NHW",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12964543",
+          "gt_value": "NHW",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12964543",
+          "gt_value": "NHW",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12964543",
+          "gt_value": "NHW",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs1328032",
+          "gt_value": "NHW",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs1328032",
+          "gt_value": "NHW",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs1328032",
+          "gt_value": "NHW",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs1358071",
+          "gt_value": "NHW",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs1358071",
+          "gt_value": "NHW",
+          "pred_terms": []
+        }
+      ]
+    }
+  ],
+  [
+    "28247064_PMC5613285.csv",
+    {
+      "match_pct": 0.0,
+      "threshold_pct": 25.0,
+      "matched_rows": 0,
+      "total_rows": 42,
+      "missed_examples": [
+        {
+          "snp": "rs12961169",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs12961169",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs12961169",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs12961169",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs12961169",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs12961169",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs185031519",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs185031519",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs185031519",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs185031519",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    "28560309_PMC5440281.csv",
+    {
+      "match_pct": 0.0,
+      "threshold_pct": 25.0,
+      "matched_rows": 0,
+      "total_rows": 7,
+      "missed_examples": [
+        {
+          "snp": "None",
+          "gt_value": "white",
+          "pred_terms": []
+        },
+        {
+          "snp": "None",
+          "gt_value": "white",
+          "pred_terms": []
+        },
+        {
+          "snp": "None",
+          "gt_value": "white",
+          "pred_terms": []
+        },
+        {
+          "snp": "None",
+          "gt_value": "white",
+          "pred_terms": []
+        },
+        {
+          "snp": "None",
+          "gt_value": "white",
+          "pred_terms": []
+        },
+        {
+          "snp": "None",
+          "gt_value": "white",
+          "pred_terms": []
+        },
+        {
+          "snp": "None",
+          "gt_value": "white",
+          "pred_terms": []
+        }
+      ]
+    }
+  ],
+  [
+    "28780673_PMC5693762.csv",
+    {
+      "match_pct": 0.0,
+      "threshold_pct": 25.0,
+      "matched_rows": 0,
+      "total_rows": 44,
+      "missed_examples": [
+        {
+          "snp": "rs10896445",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs10896445",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs10896445",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs10896445",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs11249708",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs11249708",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs11249708",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs11249708",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs1568485",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs1568485",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    "29107063_PMC5920782.csv",
+    {
+      "match_pct": 0.0,
+      "threshold_pct": 25.0,
+      "matched_rows": 0,
+      "total_rows": 32,
+      "missed_examples": [
+        {
+          "snp": "rs115881343",
+          "gt_value": "White, black, other",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs12721046",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs12721046",
+          "gt_value": "White, black, other",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs12721046",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs157580",
+          "gt_value": "White, black, other",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs157582",
+          "gt_value": "White, black, other",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs157582",
+          "gt_value": "White, black, other",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs2075650",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs2075650",
+          "gt_value": "White, black, other",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs2075650",
+          "gt_value": "White, black, other",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    "29274321_PMC5938137.csv",
+    {
+      "match_pct": 0.0,
+      "threshold_pct": 25.0,
+      "matched_rows": 0,
+      "total_rows": 12,
+      "missed_examples": [
+        {
+          "snp": "rs10775009",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs111882035",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs118130881",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs12268753",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs2378873",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs2819438",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs4921790",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs55644114",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs73705514",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs74442473",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    "29458411_PMC5819208.csv",
+    {
+      "match_pct": 0.0,
+      "threshold_pct": 25.0,
+      "matched_rows": 0,
+      "total_rows": 32,
+      "missed_examples": [
+        {
+          "snp": "rs34487851",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs34487851",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs34487851",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs34487851",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs34487851",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs34487851",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs34487851",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs79524815",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs79524815",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs79524815",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    "29752348_PMC5976227.csv",
+    {
+      "match_pct": 0.0,
+      "threshold_pct": 25.0,
+      "matched_rows": 0,
+      "total_rows": 4,
+      "missed_examples": [
+        {
+          "snp": "rs13164785",
+          "gt_value": "NHW",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs146896516",
+          "gt_value": "NHW",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs3744020",
+          "gt_value": "NHW",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs67827860",
+          "gt_value": "NHW",
+          "pred_terms": []
+        }
+      ]
+    }
+  ],
+  [
+    "29777097_PMC5959890.csv",
+    {
+      "match_pct": 0.0,
+      "threshold_pct": 25.0,
+      "matched_rows": 0,
+      "total_rows": 3,
+      "missed_examples": [
+        {
+          "snp": "rs593742",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs6504163",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs889555",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    "29967939_PMC6280657.csv",
+    {
+      "match_pct": 0.0,
+      "threshold_pct": 25.0,
+      "matched_rows": 0,
+      "total_rows": 55,
+      "missed_examples": [
+        {
+          "snp": "rs12961169",
+          "gt_value": "European",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs12961169",
+          "gt_value": "European",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs12961169",
+          "gt_value": "European",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs13115400",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs13115400",
+          "gt_value": "European",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs13115400",
+          "gt_value": "European",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs13115400",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs1393060",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs1393060",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs1393060",
+          "gt_value": "European",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    "30448613_PMC6331247.csv",
+    {
+      "match_pct": 0.0,
+      "threshold_pct": 25.0,
+      "matched_rows": 0,
+      "total_rows": 43,
+      "missed_examples": [
+        {
+          "snp": "rs10838725",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs10838725",
+          "gt_value": "European",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs10948363",
+          "gt_value": "NHW",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs111418223",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs111418223",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs111418223",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs11771145",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs12453",
+          "gt_value": "European",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12459419",
+          "gt_value": "European",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs1476679",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    "30636644_PMC6330399.csv",
+    {
+      "match_pct": 0.0,
+      "threshold_pct": 25.0,
+      "matched_rows": 0,
+      "total_rows": 141,
+      "missed_examples": [
+        {
+          "snp": "rs10111328",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs10111328",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs1046135",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs1046135",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs10794342",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs10947230",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs10953322",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs11089928",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs11089928",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs1172922",
+          "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    "30651383_PMC6369905.csv",
+    {
+      "match_pct": 0.0,
+      "threshold_pct": 25.0,
+      "matched_rows": 0,
+      "total_rows": 63,
+      "missed_examples": [
+        {
+          "snp": "rs12373108",
+          "gt_value": "European",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12373108",
+          "gt_value": "East Asian, European",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12373108",
+          "gt_value": "East Asian, European",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12373108",
+          "gt_value": "European",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12373108",
+          "gt_value": "African American, Chinese, European, Hispanic, Malay",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12373108",
+          "gt_value": "African American, Chinese, European, Hispanic, Malay",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12373108",
+          "gt_value": "European",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12373108",
+          "gt_value": "African American, Chinese, East-Asian, European, Hispanic, Malay",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12373108",
+          "gt_value": "African American, Chinese, East-Asian, European, Hispanic, Malay",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12373108",
+          "gt_value": "African American, Chinese, European, Hispanic, Malay",
+          "pred_terms": []
+        }
+      ]
+    }
+  ],
+  [
+    "30805717_PMC7193309.csv",
+    {
+      "match_pct": 0.0,
+      "threshold_pct": 25.0,
+      "matched_rows": 0,
+      "total_rows": 14,
+      "missed_examples": [
+        {
+          "snp": "rs10501320",
+          "gt_value": "European",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs10501320",
+          "gt_value": "European",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs12805422",
+          "gt_value": "European",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs12805422",
+          "gt_value": "European",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs1483121",
+          "gt_value": "European",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs1483121",
+          "gt_value": "European",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs17747324",
+          "gt_value": "European",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs17747324",
+          "gt_value": "European",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs2279590",
+          "gt_value": "European",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs2279590",
+          "gt_value": "European",
+          "pred_terms": []
+        }
+      ]
+    }
+  ],
+  [
+    "30820047_PMC6463297.csv",
+    {
+      "match_pct": 0.0,
+      "threshold_pct": 25.0,
+      "matched_rows": 0,
+      "total_rows": 104,
+      "missed_examples": [
+        {
+          "snp": "rs10467994",
+          "gt_value": "Non-Hispanic White",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs10467994",
+          "gt_value": "Non-Hispanic White",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs10467994",
+          "gt_value": "Non-Hispanic White",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs10808026",
+          "gt_value": "Non-Hispanic White",
+          "pred_terms": [
+            "African American",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs10808026",
+          "gt_value": "Non-Hispanic White",
+          "pred_terms": [
+            "African American",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs10808026",
+          "gt_value": "Non-Hispanic White",
+          "pred_terms": [
+            "African American",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs10933431",
+          "gt_value": "Non-Hispanic White",
+          "pred_terms": [
+            "African American",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs10933431",
+          "gt_value": "Non-Hispanic White",
+          "pred_terms": [
+            "African American",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs10933431",
+          "gt_value": "Non-Hispanic White",
+          "pred_terms": [
+            "African American",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs11218343",
+          "gt_value": "Non-Hispanic White",
+          "pred_terms": [
+            "African American",
+            "Caucasian"
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    "30930738_PMC6425305.csv",
+    {
+      "match_pct": 0.0,
+      "threshold_pct": 25.0,
+      "matched_rows": 0,
+      "total_rows": 4,
+      "missed_examples": [
+        {
+          "snp": "rs10792421",
+          "gt_value": "European",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs10792421",
+          "gt_value": "European",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs11649476",
+          "gt_value": "European",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs11649476",
+          "gt_value": "European",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    "30979435_PMC6783343.csv",
+    {
+      "match_pct": 0.0,
+      "threshold_pct": 25.0,
+      "matched_rows": 0,
+      "total_rows": 31,
+      "missed_examples": [
+        {
+          "snp": "rs12378268",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs12378268",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs1834550",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs1834550",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs184909761",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs184909761",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs3818361",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs3818361",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs4277762",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs4277762",
+          "gt_value": "European ancestry",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    "31426376_PMC6723529.csv",
+    {
+      "match_pct": 0.0,
+      "threshold_pct": 25.0,
+      "matched_rows": 0,
+      "total_rows": 35,
+      "missed_examples": [
+        {
+          "snp": "APOE-e3e4",
+          "gt_value": "African ancestry",
+          "pred_terms": []
+        },
+        {
+          "snp": "APOE-e3e4",
+          "gt_value": "European ancestry",
+          "pred_terms": []
+        },
+        {
+          "snp": "APOE-e3e4",
+          "gt_value": "European ancestry",
+          "pred_terms": []
+        },
+        {
+          "snp": "APOE-e3e4",
+          "gt_value": "European ancestry",
+          "pred_terms": []
+        },
+        {
+          "snp": "APOE-e3e4",
+          "gt_value": "European ancestry",
+          "pred_terms": []
+        },
+        {
+          "snp": "APOE-e3e4",
+          "gt_value": "East Asian, European ancestry",
+          "pred_terms": []
+        },
+        {
+          "snp": "APOE-e3e4",
+          "gt_value": "East Asian, European ancestry",
+          "pred_terms": []
+        },
+        {
+          "snp": "APOE-e3e4",
+          "gt_value": "European ancestry",
+          "pred_terms": []
+        },
+        {
+          "snp": "APOE-e3e4",
+          "gt_value": "East Asian",
+          "pred_terms": []
+        },
+        {
+          "snp": "APOE-e3e4",
+          "gt_value": "European ancestry",
+          "pred_terms": []
+        }
+      ]
+    }
+  ]
+]

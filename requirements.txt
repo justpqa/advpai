@@ -34,3 +34,7 @@ langchain-text-splitters
 PyMuPDF
 python-dotenv
 # pip install llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/metal
+ollama
+# install ollama for macos curl -fsSL https://ollama.com/install.sh | sh
+langextract
+nltk

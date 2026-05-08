@@ -72,171 +72,271 @@
           "snp": "rs12961169",
           "gt_value": "NHW",
           "pred_terms": [
-            "eur",
-            "aa",
-            "eas"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "NHW",
           "pred_terms": [
-            "eur",
-            "aa",
-            "eas"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "NHW",
           "pred_terms": [
-            "eur",
-            "aa",
-            "eas"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "NHW",
           "pred_terms": [
-            "eur",
-            "aa",
-            "eas"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "NHW",
           "pred_terms": [
-            "eur",
-            "aa",
-            "eas"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "NHW",
           "pred_terms": [
-            "eur",
-            "aa",
-            "eas"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "NHW",
           "pred_terms": [
-            "eur",
-            "aa",
-            "eas"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "NHW",
           "pred_terms": [
-            "eur",
-            "aa",
-            "eas"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "NHW",
           "pred_terms": [
-            "eur",
-            "aa",
-            "eas"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "NHW",
           "pred_terms": [
-            "eur",
-            "aa",
-            "eas"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         }
       ]
     }
   ],
   [
-    "29274321_PMC5938137.csv",
+    "28560309_PMC5440281.csv",
     {
       "coverage_pct": 0.0,
       "threshold_pct": 50.0,
       "covered_rows": 0,
-      "total_rows": 12,
+      "total_rows": 7,
       "missed_examples": [
         {
-          "snp": "rs10775009",
-          "gt_value": "European ancestry",
+          "snp": "None",
+          "gt_value": "white",
+          "pred_terms": []
+        },
+        {
+          "snp": "None",
+          "gt_value": "white",
+          "pred_terms": []
+        },
+        {
+          "snp": "None",
+          "gt_value": "white",
+          "pred_terms": []
+        },
+        {
+          "snp": "None",
+          "gt_value": "white",
+          "pred_terms": []
+        },
+        {
+          "snp": "None",
+          "gt_value": "white",
+          "pred_terms": []
+        },
+        {
+          "snp": "None",
+          "gt_value": "white",
+          "pred_terms": []
+        },
+        {
+          "snp": "None",
+          "gt_value": "white",
+          "pred_terms": []
+        }
+      ]
+    }
+  ],
+  [
+    "29107063_PMC5920782.csv",
+    {
+      "coverage_pct": 0.0,
+      "threshold_pct": 50.0,
+      "covered_rows": 0,
+      "total_rows": 32,
+      "missed_examples": [
+        {
+          "snp": "rs115881343",
+          "gt_value": "White, black, other",
           "pred_terms": [
-            "african american (aa)"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         },
         {
-          "snp": "rs111882035",
-          "gt_value": "European ancestry",
+          "snp": "rs12721046",
+          "gt_value": "NHW",
           "pred_terms": [
-            "african american (aa)"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         },
         {
-          "snp": "rs118130881",
-          "gt_value": "European ancestry",
+          "snp": "rs12721046",
+          "gt_value": "White, black, other",
           "pred_terms": [
-            "african american (aa)"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         },
         {
-          "snp": "rs12268753",
-          "gt_value": "European ancestry",
+          "snp": "rs12721046",
+          "gt_value": "NHW",
           "pred_terms": [
-            "african american (aa)"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         },
         {
-          "snp": "rs2378873",
-          "gt_value": "European ancestry",
+          "snp": "rs157580",
+          "gt_value": "White, black, other",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs157582",
+          "gt_value": "White, black, other",
           "pred_terms": [
-            "african american (aa)"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         },
         {
-          "snp": "rs2819438",
-          "gt_value": "European ancestry",
+          "snp": "rs157582",
+          "gt_value": "White, black, other",
           "pred_terms": [
-            "african american (aa)"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         },
         {
-          "snp": "rs4921790",
-          "gt_value": "European ancestry",
+          "snp": "rs2075650",
+          "gt_value": "NHW",
           "pred_terms": [
-            "african american (aa)"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         },
         {
-          "snp": "rs55644114",
-          "gt_value": "European ancestry",
+          "snp": "rs2075650",
+          "gt_value": "White, black, other",
           "pred_terms": [
-            "african american (aa)"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         },
         {
-          "snp": "rs73705514",
-          "gt_value": "European ancestry",
+          "snp": "rs2075650",
+          "gt_value": "White, black, other",
           "pred_terms": [
-            "african american (aa)"
-          ]
-        },
-        {
-          "snp": "rs74442473",
-          "gt_value": "European ancestry",
-          "pred_terms": [
-            "african american (aa)"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         }
       ]
@@ -285,21 +385,33 @@
           "snp": "rs593742",
           "gt_value": "NHW",
           "pred_terms": [
-            "african american (aa)"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         },
         {
           "snp": "rs6504163",
           "gt_value": "NHW",
           "pred_terms": [
-            "african american (aa)"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         },
         {
           "snp": "rs889555",
           "gt_value": "NHW",
           "pred_terms": [
-            "african american (aa)"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         }
       ]
@@ -308,18 +420,20 @@
   [
     "30448613_PMC6331247.csv",
     {
-      "coverage_pct": 39.5,
+      "coverage_pct": 7.0,
       "threshold_pct": 50.0,
-      "covered_rows": 17,
+      "covered_rows": 3,
       "total_rows": 43,
       "missed_examples": [
         {
           "snp": "rs10838725",
           "gt_value": "NHW",
           "pred_terms": [
-            "eur",
-            "aa",
-            "eas"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         },
         {
@@ -330,57 +444,77 @@
         {
           "snp": "rs111418223",
           "gt_value": "NHW",
-          "pred_terms": []
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
         },
         {
           "snp": "rs111418223",
           "gt_value": "NHW",
-          "pred_terms": []
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
         },
         {
           "snp": "rs111418223",
           "gt_value": "NHW",
-          "pred_terms": []
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
         },
         {
           "snp": "rs11771145",
           "gt_value": "NHW",
+          "pred_terms": [
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
+          ]
+        },
+        {
+          "snp": "rs12453",
+          "gt_value": "European",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs12459419",
+          "gt_value": "European",
           "pred_terms": []
         },
         {
           "snp": "rs1476679",
           "gt_value": "NHW",
           "pred_terms": [
-            "eur",
-            "aa",
-            "eas"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         },
         {
           "snp": "rs1476679",
           "gt_value": "NHW",
           "pred_terms": [
-            "eur",
-            "aa",
-            "eas"
-          ]
-        },
-        {
-          "snp": "rs1476679",
-          "gt_value": "NHW",
-          "pred_terms": [
-            "eur",
-            "aa",
-            "eas"
-          ]
-        },
-        {
-          "snp": "rs1476679",
-          "gt_value": "NHW",
-          "pred_terms": [
-            "eur",
-            "aa",
-            "eas"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         }
       ]
@@ -398,90 +532,110 @@
           "snp": "rs10111328",
           "gt_value": "NHW",
           "pred_terms": [
-            "eur",
-            "aa",
-            "eas"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         },
         {
           "snp": "rs10111328",
           "gt_value": "NHW",
           "pred_terms": [
-            "eur",
-            "aa",
-            "eas"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         },
         {
           "snp": "rs1046135",
           "gt_value": "NHW",
           "pred_terms": [
-            "eur",
-            "aa",
-            "eas"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         },
         {
           "snp": "rs1046135",
           "gt_value": "NHW",
           "pred_terms": [
-            "eur",
-            "aa",
-            "eas"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         },
         {
           "snp": "rs10794342",
           "gt_value": "NHW",
           "pred_terms": [
-            "eur",
-            "aa",
-            "eas"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         },
         {
           "snp": "rs10947230",
           "gt_value": "NHW",
           "pred_terms": [
-            "eur",
-            "aa",
-            "eas"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         },
         {
           "snp": "rs10953322",
           "gt_value": "NHW",
           "pred_terms": [
-            "eur",
-            "aa",
-            "eas"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         },
         {
           "snp": "rs11089928",
           "gt_value": "NHW",
           "pred_terms": [
-            "eur",
-            "aa",
-            "eas"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         },
         {
           "snp": "rs11089928",
           "gt_value": "NHW",
           "pred_terms": [
-            "eur",
-            "aa",
-            "eas"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         },
         {
           "snp": "rs1172922",
           "gt_value": "NHW",
           "pred_terms": [
-            "eur",
-            "aa",
-            "eas"
+            "Asian",
+            "Multi-ethnic",
+            "African American",
+            "Caribbean Hispanic",
+            "Caucasian"
           ]
         }
       ]
@@ -549,67 +703,6 @@
     }
   ],
   [
-    "30805717_PMC7193309.csv",
-    {
-      "coverage_pct": 0.0,
-      "threshold_pct": 50.0,
-      "covered_rows": 0,
-      "total_rows": 14,
-      "missed_examples": [
-        {
-          "snp": "rs10501320",
-          "gt_value": "European",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs10501320",
-          "gt_value": "European",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs12805422",
-          "gt_value": "European",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs12805422",
-          "gt_value": "European",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs1483121",
-          "gt_value": "European",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs1483121",
-          "gt_value": "European",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs17747324",
-          "gt_value": "European",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs17747324",
-          "gt_value": "European",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs2279590",
-          "gt_value": "European",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs2279590",
-          "gt_value": "European",
-          "pred_terms": []
-        }
-      ]
-    }
-  ],
-  [
     "30820047_PMC6463297.csv",
     {
       "coverage_pct": 0.0,
@@ -620,121 +713,72 @@
         {
           "snp": "rs10467994",
           "gt_value": "Non-Hispanic White",
-          "pred_terms": [
-            "fin",
-            "eur",
-            "ibs",
-            "gbr",
-            "eas",
-            "tsi"
-          ]
+          "pred_terms": []
         },
         {
           "snp": "rs10467994",
           "gt_value": "Non-Hispanic White",
-          "pred_terms": [
-            "fin",
-            "eur",
-            "ibs",
-            "gbr",
-            "eas",
-            "tsi"
-          ]
+          "pred_terms": []
         },
         {
           "snp": "rs10467994",
           "gt_value": "Non-Hispanic White",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs10808026",
+          "gt_value": "Non-Hispanic White",
           "pred_terms": [
-            "fin",
-            "eur",
-            "ibs",
-            "gbr",
-            "eas",
-            "tsi"
+            "African American",
+            "Caucasian"
           ]
         },
         {
           "snp": "rs10808026",
           "gt_value": "Non-Hispanic White",
           "pred_terms": [
-            "fin",
-            "eur",
-            "ibs",
-            "gbr",
-            "eas",
-            "tsi"
+            "African American",
+            "Caucasian"
           ]
         },
         {
           "snp": "rs10808026",
           "gt_value": "Non-Hispanic White",
           "pred_terms": [
-            "fin",
-            "eur",
-            "ibs",
-            "gbr",
-            "eas",
-            "tsi"
-          ]
-        },
-        {
-          "snp": "rs10808026",
-          "gt_value": "Non-Hispanic White",
-          "pred_terms": [
-            "fin",
-            "eur",
-            "ibs",
-            "gbr",
-            "eas",
-            "tsi"
+            "African American",
+            "Caucasian"
           ]
         },
         {
           "snp": "rs10933431",
           "gt_value": "Non-Hispanic White",
           "pred_terms": [
-            "fin",
-            "eur",
-            "ibs",
-            "gbr",
-            "eas",
-            "tsi"
+            "African American",
+            "Caucasian"
           ]
         },
         {
           "snp": "rs10933431",
           "gt_value": "Non-Hispanic White",
           "pred_terms": [
-            "fin",
-            "eur",
-            "ibs",
-            "gbr",
-            "eas",
-            "tsi"
+            "African American",
+            "Caucasian"
           ]
         },
         {
           "snp": "rs10933431",
           "gt_value": "Non-Hispanic White",
           "pred_terms": [
-            "fin",
-            "eur",
-            "ibs",
-            "gbr",
-            "eas",
-            "tsi"
+            "African American",
+            "Caucasian"
           ]
         },
         {
           "snp": "rs11218343",
           "gt_value": "Non-Hispanic White",
           "pred_terms": [
-            "fin",
-            "eur",
-            "ibs",
-            "gbr",
-            "eas",
-            "tsi"
+            "African American",
+            "Caucasian"
           ]
         }
       ]

@@ -25,6 +25,14 @@ HARMONIZATION_COL_THRESHOLD: dict = {
     "Study type": 50.0,
     "Phenotype":  50.0,
 }
+HARMONIZATION_COL_THRESHOLD_EXACT: dict = {
+    "Population": 25.0,
+    "Cohort":     25.0,
+    "Stage":      25.0,
+    "Imputation": 25.0,
+    "Study type": 25.0,
+    "Phenotype":  25.0,
+}
 
 def import_table_and_test_table(dir_path: str, file_name: str):
     if ".csv" in file_name:
@@ -251,6 +259,56 @@ def _h_gt_is_covered(col: str, gt_value: str, pred_terms: list, term_map: dict) 
     parts = [p.strip() for p in gt_str.split(", ")] if col in _SPLIT_COLS and ", " in gt_str else [gt_str]
     return all(_h_covers_gt_part(col, part, pred_terms, term_map) for part in parts)
 
+def _h_gt_is_exact_match(col: str, gt_value: str, pred_terms: list, term_map: dict) -> bool:
+    """Like _h_gt_is_covered but bidirectional: every pred term must also map to some gt part."""
+    gt_str = str(gt_value).strip()
+    if not gt_str or gt_str.lower() == "nan":
+        return True
+    _SPLIT_COLS = {"Cohort", "Population", "Imputation"}
+    gt_parts = [p.strip() for p in gt_str.split(", ")] if col in _SPLIT_COLS and ", " in gt_str else [gt_str]
+    gt_parts = [p for p in gt_parts if p]
+    # All gt parts must be covered by pred (same as _h_gt_is_covered)
+    if not all(_h_covers_gt_part(col, part, pred_terms, term_map) for part in gt_parts):
+        return False
+    # Every pred term must cover at least one gt part (no extra terms)
+    for pt in pred_terms:
+        if not _h_normalise(pt):
+            continue
+        if not any(_h_covers_gt_part(col, gt_part, [pt], term_map) for gt_part in gt_parts):
+            return False
+    return True
+
+def _h_get_failed_tables_exact(dir_path: str, col: str, term_map: dict, threshold: float) -> list:
+    failed_table = []
+    for file_name in sorted(os.listdir(dir_path)):
+        if not (file_name.endswith(".csv") or file_name.endswith(".xlsx")):
+            continue
+        curr_df, test_df = import_table_and_test_table(dir_path, file_name)
+        if col not in curr_df.columns:
+            failed_table.append((file_name, {"error": f"column '{col}' missing in pred", "match_pct": None}))
+            continue
+        if col not in test_df.columns:
+            continue
+        matched_rows, total_rows, missed = 0, 0, []
+        for _, gt_row in test_df.iterrows():
+            gt_val = gt_row[col]
+            if pd.isna(gt_val) or str(gt_val).strip() == "":
+                continue
+            snp_raw = gt_row.get("SNP", None)
+            snp = None if (isinstance(snp_raw, float) and pd.isna(snp_raw)) else snp_raw
+            pred_terms = _h_collect_pred_terms(curr_df, snp, col)
+            total_rows += 1
+            if _h_gt_is_exact_match(col, str(gt_val).strip(), pred_terms, term_map):
+                matched_rows += 1
+            else:
+                missed.append({"snp": str(snp), "gt_value": str(gt_val).strip(), "pred_terms": pred_terms[:6]})
+        if total_rows == 0:
+            continue
+        match_pct = round(matched_rows / total_rows * 100, 1)
+        if match_pct < threshold:
+            failed_table.append((file_name, {"match_pct": match_pct, "threshold_pct": threshold, "matched_rows": matched_rows, "total_rows": total_rows, "missed_examples": missed[:10]}))
+    return failed_table
+
 def _h_load_term_map() -> dict:
     if os.path.exists(HARMONIZATION_TERM_MAP_PATH):
         with open(HARMONIZATION_TERM_MAP_PATH) as f:
@@ -458,6 +516,16 @@ def test_snp_cohort_harmonized(dir_path: str):
 #             json.dump(failed_table, f, indent=2)
 #         raise AssertionError(f"Failed test_snp_population on {len(failed_table)} tables")
 
+def test_snp_cohort_exact(dir_path: str):
+    col = "Cohort"
+    failed_table = _h_get_failed_tables_exact(dir_path, col, _H_TERM_MAP, HARMONIZATION_COL_THRESHOLD_EXACT[col])
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        with open("test_logs/test_snp_cohort_exact.json", "w") as f:
+            json.dump(failed_table, f, indent=2, default=str)
+        raise AssertionError(f"Failed test_snp_cohort_exact on {len(failed_table)} tables (threshold={HARMONIZATION_COL_THRESHOLD_EXACT[col]}%)")
+
 def test_snp_population_harmonized(dir_path: str):
     # test for each table and for each snp population is covered using the term-mapping dict
     col = "Population"
@@ -478,6 +546,16 @@ def test_snp_population_harmonized(dir_path: str):
 #         with open("test_logs/test_snp_stage.json", "w") as f:
 #             json.dump(failed_table, f, indent=2)
 #         raise AssertionError(f"Failed test_snp_stage on {len(failed_table)} tables")
+
+def test_snp_population_exact(dir_path: str):
+    col = "Population"
+    failed_table = _h_get_failed_tables_exact(dir_path, col, _H_TERM_MAP, HARMONIZATION_COL_THRESHOLD_EXACT[col])
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        with open("test_logs/test_snp_population_exact.json", "w") as f:
+            json.dump(failed_table, f, indent=2, default=str)
+        raise AssertionError(f"Failed test_snp_population_exact on {len(failed_table)} tables (threshold={HARMONIZATION_COL_THRESHOLD_EXACT[col]}%)")
 
 def test_snp_stage_harmonized(dir_path: str):
     # test for each table and for each snp stage is covered using the term-mapping dict
@@ -500,6 +578,16 @@ def test_snp_stage_harmonized(dir_path: str):
 #             json.dump(failed_table, f, indent=2)
 #         raise AssertionError(f"Failed test_snp_imputation on {len(failed_table)} tables")
 
+def test_snp_stage_exact(dir_path: str):
+    col = "Stage"
+    failed_table = _h_get_failed_tables_exact(dir_path, col, _H_TERM_MAP, HARMONIZATION_COL_THRESHOLD_EXACT[col])
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        with open("test_logs/test_snp_stage_exact.json", "w") as f:
+            json.dump(failed_table, f, indent=2, default=str)
+        raise AssertionError(f"Failed test_snp_stage_exact on {len(failed_table)} tables (threshold={HARMONIZATION_COL_THRESHOLD_EXACT[col]}%)")
+
 def test_snp_imputation_harmonized(dir_path: str):
     # test for each table and for each snp imputation is covered using the term-mapping dict
     col = "Imputation"
@@ -520,6 +608,16 @@ def test_snp_imputation_harmonized(dir_path: str):
 #         with open("test_logs/test_snp_study_type.json", "w") as f:
 #             json.dump(failed_table, f, indent=2)
 #         raise AssertionError(f"Failed test_snp_study_type on {len(failed_table)} tables")
+
+def test_snp_imputation_exact(dir_path: str):
+    col = "Imputation"
+    failed_table = _h_get_failed_tables_exact(dir_path, col, _H_TERM_MAP, HARMONIZATION_COL_THRESHOLD_EXACT[col])
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        with open("test_logs/test_snp_imputation_exact.json", "w") as f:
+            json.dump(failed_table, f, indent=2, default=str)
+        raise AssertionError(f"Failed test_snp_imputation_exact on {len(failed_table)} tables (threshold={HARMONIZATION_COL_THRESHOLD_EXACT[col]}%)")
 
 def test_snp_study_type_harmonized(dir_path: str):
     # test for each table and for each snp study type is covered using the term-mapping dict
@@ -542,6 +640,16 @@ def test_snp_study_type_harmonized(dir_path: str):
 #             json.dump(failed_table, f, indent=2)
 #         raise AssertionError(f"Failed test_snp_phenotype on {len(failed_table)} tables")
 
+def test_snp_study_type_exact(dir_path: str):
+    col = "Study type"
+    failed_table = _h_get_failed_tables_exact(dir_path, col, _H_TERM_MAP, HARMONIZATION_COL_THRESHOLD_EXACT[col])
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        with open("test_logs/test_snp_study_type_exact.json", "w") as f:
+            json.dump(failed_table, f, indent=2, default=str)
+        raise AssertionError(f"Failed test_snp_study_type_exact on {len(failed_table)} tables (threshold={HARMONIZATION_COL_THRESHOLD_EXACT[col]}%)")
+
 def test_snp_phenotype_harmonized(dir_path: str):
     # test for each table and for each snp phenotype is covered using the term-mapping dict
     col = "Phenotype"
@@ -552,3 +660,13 @@ def test_snp_phenotype_harmonized(dir_path: str):
         with open("test_logs/test_snp_phenotype_harmonized.json", "w") as f:
             json.dump(failed_table, f, indent=2, default=str)
         raise AssertionError(f"Failed test_snp_phenotype_harmonized on {len(failed_table)} tables (threshold={HARMONIZATION_COL_THRESHOLD[col]}%)")
+
+def test_snp_phenotype_exact(dir_path: str):
+    col = "Phenotype"
+    failed_table = _h_get_failed_tables_exact(dir_path, col, _H_TERM_MAP, HARMONIZATION_COL_THRESHOLD_EXACT[col])
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        with open("test_logs/test_snp_phenotype_exact.json", "w") as f:
+            json.dump(failed_table, f, indent=2, default=str)
+        raise AssertionError(f"Failed test_snp_phenotype_exact on {len(failed_table)} tables (threshold={HARMONIZATION_COL_THRESHOLD_EXACT[col]}%)")

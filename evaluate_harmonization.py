@@ -31,6 +31,7 @@ def normalise(s: str) -> str:
     s = s.replace("\u2019", "'").replace("\u2018", "'")
     s = s.replace("\u201c", '"').replace("\u201d", '"')
     s = s.replace("\u2013", "-").replace("\u2014", "-")
+    s = s.replace("'", "")
     return re.sub(r"\s+", " ", s.lower().strip())
 
 
@@ -113,7 +114,8 @@ def run(pred_dir: str, dict_path: str, results_path: str) -> list[dict]:
         raise FileNotFoundError(f"term_mapping_dict not found: {dict_path}")
 
     with open(dict_path) as f:
-        term_map = json.load(f)
+        raw_map = json.load(f)
+    term_map = {col: {normalise(k): v for k, v in mapping.items()} for col, mapping in raw_map.items()}
     print(f"[term_map] Loaded {dict_path}")
 
     files = sorted(

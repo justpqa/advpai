@@ -1,4 +1,4 @@
-P-value,Effect,AF,SNP,Chr,Position,RA1,RA2,Population,Stage,Imputation,Study type,Phenotype,Cohort
-6.2e-11,1.06,0.69,rs593742,15,58873555,,A,african american (aa),meta-analysis + meta-analytic,haplotype reference consortium hrc + 1000 genomes phase 3,whole exome sequencing (wes) + whole genome sequencing (wgs) + gwas + array genotyping,alzheimers dementia + alzheimers disease,uk biobank + igap
-3.2e-08,0.95,0.29,rs889555,16,30916129,,T,african american (aa),meta-analysis + meta-analytic,haplotype reference consortium hrc + 1000 genomes phase 3,whole exome sequencing (wes) + whole genome sequencing (wgs) + gwas + array genotyping,alzheimers dementia + alzheimers disease,uk biobank + igap
-5.4e-09,1.05,0.63,rs6504163,17,61545779,,T,african american (aa),meta-analysis + meta-analytic,haplotype reference consortium hrc + 1000 genomes phase 3,whole exome sequencing (wes) + whole genome sequencing (wgs) + gwas + array genotyping,alzheimers dementia + alzheimers disease,uk biobank + igap
+P-value,Effect,AF,SNP,Chr,Position,RA1,RA2
+6.2e-11,1.06,0.69,rs593742,15,58873555,,A
+3.2e-08,0.95,0.29,rs889555,16,30916129,,T
+5.4e-09,1.05,0.63,rs6504163,17,61545779,,T

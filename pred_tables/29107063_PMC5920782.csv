@@ -1,18 +1,15 @@
-P-value,Effect,AF,SNP,Chr,Position,RA1,RA2,Population,Stage,Imputation,Study type,Phenotype,Cohort
-,,,,,4434.0,,,white + loadfs + others + chs + hrs + black,stage 1 + meta-analysis + stage 2 + stage,fhs + hrs + chs,gwas + array genotyping,alzheimers disease + type 2 diabetes,fhs + chs + hrs + loadfs
-,,,,,7968.0,,,white + loadfs + others + chs + hrs + black,stage 1 + meta-analysis + stage 2 + stage,fhs + hrs + chs,gwas + array genotyping,alzheimers disease + type 2 diabetes,fhs + chs + hrs + loadfs
-,,,,,3894.0,,,white + loadfs + others + chs + hrs + black,stage 1 + meta-analysis + stage 2 + stage,fhs + hrs + chs,gwas + array genotyping,alzheimers disease + type 2 diabetes,fhs + chs + hrs + loadfs
-2e-15,2.3,0.12,rs2075650,19.0,,G,,white + loadfs + others + chs + hrs + black,stage 1 + meta-analysis + stage 2 + stage,fhs + hrs + chs,gwas + array genotyping,alzheimers disease + type 2 diabetes,fhs + chs + hrs + loadfs
-2.4e-14,2.2,0.08,rs12721046,19.0,,A,,white + loadfs + others + chs + hrs + black,stage 1 + meta-analysis + stage 2 + stage,fhs + hrs + chs,gwas + array genotyping,alzheimers disease + type 2 diabetes,fhs + chs + hrs + loadfs
-1.16e-05,1.4,0.47,rs405509,19.0,,G,,white + loadfs + others + chs + hrs + black,stage 1 + meta-analysis + stage 2 + stage,fhs + hrs + chs,gwas + array genotyping,alzheimers disease + type 2 diabetes,fhs + chs + hrs + loadfs
-2.87e-05,1.4,0.37,rs6859,19.0,,G,,white + loadfs + others + chs + hrs + black,stage 1 + meta-analysis + stage 2 + stage,fhs + hrs + chs,gwas + array genotyping,alzheimers disease + type 2 diabetes,fhs + chs + hrs + loadfs
-8.34e-05,0.7,0.3,rs8106922,19.0,,G,,white + loadfs + others + chs + hrs + black,stage 1 + meta-analysis + stage 2 + stage,fhs + hrs + chs,gwas + array genotyping,alzheimers disease + type 2 diabetes,fhs + chs + hrs + loadfs
-2.93e-09,2.0,0.08,rs12721046,19.0,,A,,white + loadfs + others + chs + hrs + black,stage 1 + meta-analysis + stage 2 + stage,fhs + hrs + chs,gwas + array genotyping,alzheimers disease + type 2 diabetes,fhs + chs + hrs + loadfs
-1.46e-05,1.7,0.12,rs2075650,19.0,,G,,white + loadfs + others + chs + hrs + black,stage 1 + meta-analysis + stage 2 + stage,fhs + hrs + chs,gwas + array genotyping,alzheimers disease + type 2 diabetes,fhs + chs + hrs + loadfs
-2.03e-09,0.5,0.03,rs115881343,19.0,,"G,T",,white + loadfs + others + chs + hrs + black,stage 1 + meta-analysis + stage 2 + stage,fhs + hrs + chs,gwas + array genotyping,alzheimers disease + type 2 diabetes,fhs + chs + hrs + loadfs
-1.71e-08,0.4,0.03,rs76366838,19.0,,A,,white + loadfs + others + chs + hrs + black,stage 1 + meta-analysis + stage 2 + stage,fhs + hrs + chs,gwas + array genotyping,alzheimers disease + type 2 diabetes,fhs + chs + hrs + loadfs
-3.12e-08,1.7,0.06,rs769449,19.0,,A,,white + loadfs + others + chs + hrs + black,stage 1 + meta-analysis + stage 2 + stage,fhs + hrs + chs,gwas + array genotyping,alzheimers disease + type 2 diabetes,fhs + chs + hrs + loadfs
-1.68e-07,0.7,0.29,rs157582,19.0,,T,,white + loadfs + others + chs + hrs + black,stage 1 + meta-analysis + stage 2 + stage,fhs + hrs + chs,gwas + array genotyping,alzheimers disease + type 2 diabetes,fhs + chs + hrs + loadfs
-3.07e-07,0.7,0.3,rs283815,19.0,,G,,white + loadfs + others + chs + hrs + black,stage 1 + meta-analysis + stage 2 + stage,fhs + hrs + chs,gwas + array genotyping,alzheimers disease + type 2 diabetes,fhs + chs + hrs + loadfs
-5.17e-07,1.5,0.12,rs2075650,19.0,,G,,white + loadfs + others + chs + hrs + black,stage 1 + meta-analysis + stage 2 + stage,fhs + hrs + chs,gwas + array genotyping,alzheimers disease + type 2 diabetes,fhs + chs + hrs + loadfs
-3.19e-06,1.5,0.09,rs71352238,19.0,,C,,white + loadfs + others + chs + hrs + black,stage 1 + meta-analysis + stage 2 + stage,fhs + hrs + chs,gwas + array genotyping,alzheimers disease + type 2 diabetes,fhs + chs + hrs + loadfs
+P-value,Effect,AF,SNP,Chr,Position,RA1,RA2
+2e-15,2.3,0.12,rs2075650,19,,G,
+2.4e-14,2.2,0.08,rs12721046,19,,A,
+1.16e-05,1.4,0.47,rs405509,19,,G,
+2.87e-05,1.4,0.37,rs6859,19,,G,
+8.34e-05,0.7,0.3,rs8106922,19,,G,
+2.93e-09,2.0,0.08,rs12721046,19,,A,
+1.46e-05,1.7,0.12,rs2075650,19,,G,
+2.03e-09,0.5,0.03,rs115881343,19,,"G,T",
+1.71e-08,0.4,0.03,rs76366838,19,,A,
+3.12e-08,1.7,0.06,rs769449,19,,A,
+1.68e-07,0.7,0.29,rs157582,19,,T,
+3.07e-07,0.7,0.3,rs283815,19,,G,
+5.17e-07,1.5,0.12,rs2075650,19,,G,
+3.19e-06,1.5,0.09,rs71352238,19,,C,
