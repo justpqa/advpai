@@ -71,9 +71,11 @@ FREE_TEXT_FILTER = '(free full text[sb])'
 
 # known pmids
 ADVP1 = pd.read_csv("test_tables/ADVP_1026_v3p8_extracted.txt", sep = "\t", encoding="cp1252")
-ADVP1_ALL_PMID = ADVP1["Pubmed ID"].apply(lambda x: str(int(x)) if not pd.isna(x) else "").unique()
+ADVP1_ALL_PMID = set(ADVP1["Pubmed ID"].apply(lambda x: str(int(x)) if not pd.isna(x) else "").unique())
 CURR_ADVP2 = pd.read_csv("new_gwas_ad_paper_only_tiab_extended.csv")
-CURR_ADVP2_ALL_PMID = CURR_ADVP2["pmid"].apply(lambda x: str(int(x)) if not pd.isna(x) else "").unique()
+CURR_ADVP2_ALL_PMID = set(CURR_ADVP2["pmid"].apply(lambda x: str(int(x)) if not pd.isna(x) else "").unique())
+# CURR_ADVP2_1 = pd.read_csv("new_gwas_ad_paper_only_tiab_extended_1.csv")
+# CURR_ADVP2_1_ALL_PMID = set(CURR_ADVP2_1["pmid"].apply(lambda x: str(int(x)) if not pd.isna(x) else "").unique())
 
 # list of mesh terms used
 ALL_MESH_TERMS = GWAS_MESH_TERMS + AD_MESH_TERMS
@@ -93,58 +95,73 @@ def make_session():
 def pmids_to_pmcids_map(batch_pmids: List[str], session: requests.sessions.Session) -> dict:
     """Map PubMed IDs to PMC IDs. Tries elink first, falls back to NCBI ID converter."""
     result = {}
-    try:
-        r = session.post(
-            ENTREZ_ELINK_URL,
-            data=[
-                ("dbfrom", "pubmed"),
-                ("db", "pmc"),
-                ("linkname", "pubmed_pmc"),
-                ("retmode", "xml"),
-                ("api_key", os.environ.get("ENTREZ_API_KEY", "")),
-                *[("id", pmid) for pmid in batch_pmids],
-            ],
-            timeout=60,
-        )
-        r.raise_for_status()
-        root = ET.fromstring(r.content)
-        if root.find("ERROR") is not None:
-            raise ValueError(f"elink error: {root.findtext('ERROR')}")
-        for linkset in root.findall("./LinkSet"):
-            pmid_elems = linkset.findall("./IdList/Id")
-            if not pmid_elems:
-                continue
-            pmid = pmid_elems[0].text
-            pmcids = []
-            for db in linkset.findall("./LinkSetDb"):
-                dbto = db.find("DbTo")
-                if dbto is not None and dbto.text == "pmc":
-                    pmcids.extend([x.text for x in db.findall("./Link/Id")])
-            if pmcids:
-                result[pmid] = f"PMC{pmcids[0]}"
-    except Exception as e:
-        print(f"elink failed ({e}), falling back to NCBI ID converter")
-        r = session.get(
-            NCBI_IDCONV_URL,
-            params={
-                "ids": ",".join(batch_pmids),
-                "format": "json",
-                "tool": "gwas_extractor",
-                "email": os.environ.get("ENTREZ_EMAIL", ""),
-            },
-            timeout=60,
-        )
-        r.raise_for_status()
-        for record in r.json().get("records", []):
-            if "pmcid" in record and "errmsg" not in record:
-                result[str(record["pmid"])] = record["pmcid"]
+    # NOTE: majority of time elink failed => no need it
+    # try:
+    #     r = session.post(
+    #         ENTREZ_ELINK_URL,
+    #         data=[
+    #             ("dbfrom", "pubmed"),
+    #             ("db", "pmc"),
+    #             ("linkname", "pubmed_pmc"),
+    #             ("retmode", "xml"),
+    #             ("api_key", os.environ.get("ENTREZ_API_KEY", "")),
+    #             *[("id", pmid) for pmid in batch_pmids],
+    #         ],
+    #         timeout=60,
+    #     )
+    #     r.raise_for_status()
+    #     root = ET.fromstring(r.content)
+    #     if root.find("ERROR") is not None:
+    #         raise ValueError(f"elink error: {root.findtext('ERROR')}")
+    #     for linkset in root.findall("./LinkSet"):
+    #         pmid_elems = linkset.findall("./IdList/Id")
+    #         if not pmid_elems:
+    #             continue
+    #         pmid = pmid_elems[0].text
+    #         pmcids = []
+    #         for db in linkset.findall("./LinkSetDb"):
+    #             dbto = db.find("DbTo")
+    #             if dbto is not None and dbto.text == "pmc":
+    #                 pmcids.extend([x.text for x in db.findall("./Link/Id")])
+    #         if pmcids:
+    #             result[pmid] = f"PMC{pmcids[0]}"
+    # except Exception as e:
+    #     print(f"elink failed ({e}), falling back to NCBI ID converter")
+    #     r = session.get(
+    #         NCBI_IDCONV_URL,
+    #         params={
+    #             "ids": ",".join(batch_pmids),
+    #             "format": "json",
+    #             "tool": "gwas_extractor",
+    #             "email": os.environ.get("ENTREZ_EMAIL", ""),
+    #         },
+    #         timeout=60,
+    #     )
+    #     r.raise_for_status()
+    #     for record in r.json().get("records", []):
+    #         if "pmcid" in record and "errmsg" not in record:
+    #             result[str(record["pmid"])] = record["pmcid"]
+    r = session.get(
+        NCBI_IDCONV_URL,
+        params={
+            "ids": ",".join(batch_pmids),
+            "format": "json",
+            "tool": "gwas_extractor",
+            "email": os.environ.get("ENTREZ_EMAIL", ""),
+        },
+        timeout=60,
+    )
+    r.raise_for_status()
+    for record in r.json().get("records", []):
+        if "pmcid" in record and "errmsg" not in record:
+            result[str(record["pmid"])] = record["pmcid"]
     return result
 
-def verify_paper_with_gwas_table(pmcid: str) -> bool:
+def verify_paper_with_gwas_table(pmcid: str, session: requests.sessions.Session) -> bool:
     try:
         has_gwas_table = False
         url = f"https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/{pmcid}/unicode"
-        response = requests.get(url)
+        response = session.get(url, timeout=60)
         if response.status_code == 200:
             data = response.json()
             for d in data:
@@ -198,12 +215,12 @@ def extract_papers_by_year(year: int, session: requests.sessions.Session) -> pd.
         print(f"Found {len(pmids_in_advp2)} papers that was in current ADVP2")
     pmids = [
         pmid for pmid in pmids
-        if pmid not in ADVP1_ALL_PMID and pmid not in CURR_ADVP2_ALL_PMID
+        if pmid not in ADVP1_ALL_PMID.union(CURR_ADVP2_ALL_PMID)
     ]
     if not pmids:
         return []
     print(len(pmids))
-    time.sleep(0.5)
+    # time.sleep(0.5)
     # 2. Fetch metadata in batches
     papers = []
     batch_size = 20
@@ -213,14 +230,21 @@ def extract_papers_by_year(year: int, session: requests.sessions.Session) -> pd.
         # fetch pubmed id -> pmcid
         pmids_to_pmcids = pmids_to_pmcids_map(batch_pmids, session)
 
-        time.sleep(0.5)
+        # time.sleep(0.5)
 
         removed_pmid = []
-        for pmid in pmids_to_pmcids:
-            pmcid = pmids_to_pmcids[pmid]
-            if not verify_paper_with_gwas_table(pmcid):
-                removed_pmid.append(pmid)
-            time.sleep(0.33)
+        with ThreadPoolExecutor(max_workers=5) as verify_executor:
+            future_to_pmid = {
+                verify_executor.submit(verify_paper_with_gwas_table, pmids_to_pmcids[pmid], session): pmid
+                for pmid in pmids_to_pmcids
+            }
+            for future in as_completed(future_to_pmid):
+                pmid = future_to_pmid[future]
+                try:
+                    if not future.result():
+                        removed_pmid.append(pmid)
+                except Exception:
+                    removed_pmid.append(pmid)
 
         batch_pmids_to_pmcids = list(pmids_to_pmcids.keys())
         batch_pmids_to_pmcids = [str(pmid) for pmid in batch_pmids_to_pmcids if pmid not in removed_pmid]
@@ -298,15 +322,15 @@ def extract_papers_by_year(year: int, session: requests.sessions.Session) -> pd.
                 "Title & Abstract terms used": ",".join(tiab_terms_used)
             })
 
-        time.sleep(0.5)
+        # time.sleep(0.5)
 
     papers = pd.DataFrame(papers)
     return papers
 
 def main():
     all_papers = pd.DataFrame()
-    years = list(range(2009, 2012))
-    batch_size = 3
+    years = list(range(2009, 2026))
+    batch_size = 3 # can keep 1 * 5 thread = 5 threads to be safe, can increase on stronger machine
     for batch_start in range(0, len(years), batch_size):
         batch_years = years[batch_start:batch_start + batch_size]
         print(f"Processing years: {batch_years}")
@@ -333,8 +357,8 @@ def main():
         print()
 
     all_papers = all_papers.sort_values(["year", "pmid"]).reset_index().drop("index", axis = 1)
-    all_papers.to_csv("new_gwas_ad_paper_only_tiab_extended_1_0.csv", index = False)
-    all_papers.to_excel("new_gwas_ad_paper_only_tiab_extended_1_0.xlsx", index = False)
+    all_papers.to_csv("new_gwas_ad_paper_only_tiab_extended_1.csv", index = False)
+    all_papers.to_excel("new_gwas_ad_paper_only_tiab_extended_1.xlsx", index = False)
 
     # now count paper based on disease
     all_papers["MeSH terms used list"] = all_papers['MeSH terms used'].str.split(",")
@@ -355,8 +379,8 @@ def main():
     count_paper_without_main_disease = all_papers.shape[0] - all_papers_exploded_with_main_disease["pmid"].nunique()
     count_new_paper_by_disease.loc[count_new_paper_by_disease["Disease"] == "Other ADRD", "Count papers"] = count_paper_without_main_disease
     count_new_paper_by_disease = count_new_paper_by_disease.sort_values("Count papers", ascending = False).reset_index().drop("index", axis = 1)
-    count_new_paper_by_disease.to_csv("count_new_paper_by_disease_only_tiab_extended_1_0.csv", index = False)
-    count_new_paper_by_disease.to_excel("count_new_paper_by_disease_only_tiab_extended_1_0.xlsx", index = False)
+    count_new_paper_by_disease.to_csv("count_new_paper_by_disease_only_tiab_extended_1.csv", index = False)
+    count_new_paper_by_disease.to_excel("count_new_paper_by_disease_only_tiab_extended_1.xlsx", index = False)
 
 if __name__ == "__main__":
     main()
