@@ -1,136 +1,5 @@
 [
   [
-    "28247064_PMC5613285.csv",
-    {
-      "coverage_pct": 33.3,
-      "threshold_pct": 50.0,
-      "covered_rows": 14,
-      "total_rows": 42,
-      "missed_examples": [
-        {
-          "snp": "rs12961169",
-          "gt_value": "Age at onset",
-          "pred_terms": [
-            "disease progression",
-            "ad risk",
-            "late-onset alzheimers disease",
-            "alzheimer disease",
-            "mild cognitive impairment",
-            "alzheimers disease"
-          ]
-        },
-        {
-          "snp": "rs12961169",
-          "gt_value": "CSF Ab1-42",
-          "pred_terms": [
-            "disease progression",
-            "ad risk",
-            "late-onset alzheimers disease",
-            "alzheimer disease",
-            "mild cognitive impairment",
-            "alzheimers disease"
-          ]
-        },
-        {
-          "snp": "rs12961169",
-          "gt_value": "CSF T-tau",
-          "pred_terms": [
-            "disease progression",
-            "ad risk",
-            "late-onset alzheimers disease",
-            "alzheimer disease",
-            "mild cognitive impairment",
-            "alzheimers disease"
-          ]
-        },
-        {
-          "snp": "rs12961169",
-          "gt_value": "CSF P-tau181p",
-          "pred_terms": [
-            "disease progression",
-            "ad risk",
-            "late-onset alzheimers disease",
-            "alzheimer disease",
-            "mild cognitive impairment",
-            "alzheimers disease"
-          ]
-        },
-        {
-          "snp": "rs185031519",
-          "gt_value": "Age at onset",
-          "pred_terms": [
-            "disease progression",
-            "ad risk",
-            "late-onset alzheimers disease",
-            "alzheimer disease",
-            "mild cognitive impairment",
-            "alzheimers disease"
-          ]
-        },
-        {
-          "snp": "rs185031519",
-          "gt_value": "CSF T-tau",
-          "pred_terms": [
-            "disease progression",
-            "ad risk",
-            "late-onset alzheimers disease",
-            "alzheimer disease",
-            "mild cognitive impairment",
-            "alzheimers disease"
-          ]
-        },
-        {
-          "snp": "rs185031519",
-          "gt_value": "CSF Ab1-42",
-          "pred_terms": [
-            "disease progression",
-            "ad risk",
-            "late-onset alzheimers disease",
-            "alzheimer disease",
-            "mild cognitive impairment",
-            "alzheimers disease"
-          ]
-        },
-        {
-          "snp": "rs185031519",
-          "gt_value": "CSF P-tau181p",
-          "pred_terms": [
-            "disease progression",
-            "ad risk",
-            "late-onset alzheimers disease",
-            "alzheimer disease",
-            "mild cognitive impairment",
-            "alzheimers disease"
-          ]
-        },
-        {
-          "snp": "rs316341",
-          "gt_value": "CSF P-tau181p",
-          "pred_terms": [
-            "disease progression",
-            "ad risk",
-            "late-onset alzheimers disease",
-            "alzheimer disease",
-            "mild cognitive impairment",
-            "alzheimers disease"
-          ]
-        },
-        {
-          "snp": "rs316341",
-          "gt_value": "CSF T-tau",
-          "pred_terms": [
-            "disease progression",
-            "ad risk",
-            "late-onset alzheimers disease",
-            "alzheimer disease",
-            "mild cognitive impairment",
-            "alzheimers disease"
-          ]
-        }
-      ]
-    }
-  ],
-  [
     "28560309_PMC5440281.csv",
     {
       "coverage_pct": 0.0,
@@ -188,36 +57,36 @@
           "snp": "rs115881343",
           "gt_value": "Age at onset",
           "pred_terms": [
-            "t2d",
-            "cardiovascular risk",
-            "type 2 diabetes",
             "health disorder",
-            "inflammation",
-            "cancer"
+            "infectious diseases",
+            "cancer",
+            "disease",
+            "alzheimers disease (ad)",
+            "trait"
           ]
         },
         {
           "snp": "rs12721046",
           "gt_value": "Age at onset",
           "pred_terms": [
-            "t2d",
-            "cardiovascular risk",
-            "type 2 diabetes",
             "health disorder",
-            "inflammation",
-            "cancer"
+            "infectious diseases",
+            "cancer",
+            "disease",
+            "alzheimers disease (ad)",
+            "trait"
           ]
         },
         {
           "snp": "rs12721046",
           "gt_value": "Age at onset",
           "pred_terms": [
-            "t2d",
-            "cardiovascular risk",
-            "type 2 diabetes",
             "health disorder",
-            "inflammation",
-            "cancer"
+            "infectious diseases",
+            "cancer",
+            "disease",
+            "alzheimers disease (ad)",
+            "trait"
           ]
         },
         {
@@ -229,72 +98,72 @@
           "snp": "rs157582",
           "gt_value": "Age at onset",
           "pred_terms": [
-            "t2d",
-            "cardiovascular risk",
-            "type 2 diabetes",
             "health disorder",
-            "inflammation",
-            "cancer"
+            "infectious diseases",
+            "cancer",
+            "disease",
+            "alzheimers disease (ad)",
+            "trait"
           ]
         },
         {
           "snp": "rs2075650",
           "gt_value": "Age at onset",
           "pred_terms": [
-            "t2d",
-            "cardiovascular risk",
-            "type 2 diabetes",
             "health disorder",
-            "inflammation",
-            "cancer"
+            "infectious diseases",
+            "cancer",
+            "disease",
+            "alzheimers disease (ad)",
+            "trait"
           ]
         },
         {
           "snp": "rs2075650",
           "gt_value": "Age at onset",
           "pred_terms": [
-            "t2d",
-            "cardiovascular risk",
-            "type 2 diabetes",
             "health disorder",
-            "inflammation",
-            "cancer"
+            "infectious diseases",
+            "cancer",
+            "disease",
+            "alzheimers disease (ad)",
+            "trait"
           ]
         },
         {
           "snp": "rs2075650",
           "gt_value": "Age at onset",
           "pred_terms": [
-            "t2d",
-            "cardiovascular risk",
-            "type 2 diabetes",
             "health disorder",
-            "inflammation",
-            "cancer"
+            "infectious diseases",
+            "cancer",
+            "disease",
+            "alzheimers disease (ad)",
+            "trait"
           ]
         },
         {
           "snp": "rs283815",
           "gt_value": "Age at onset",
           "pred_terms": [
-            "t2d",
-            "cardiovascular risk",
-            "type 2 diabetes",
             "health disorder",
-            "inflammation",
-            "cancer"
+            "infectious diseases",
+            "cancer",
+            "disease",
+            "alzheimers disease (ad)",
+            "trait"
           ]
         },
         {
           "snp": "rs405509",
           "gt_value": "Age at onset",
           "pred_terms": [
-            "t2d",
-            "cardiovascular risk",
-            "type 2 diabetes",
             "health disorder",
-            "inflammation",
-            "cancer"
+            "infectious diseases",
+            "cancer",
+            "disease",
+            "alzheimers disease (ad)",
+            "trait"
           ]
         }
       ]
@@ -303,129 +172,129 @@
   [
     "29274321_PMC5938137.csv",
     {
-      "coverage_pct": 0.0,
+      "coverage_pct": 16.7,
       "threshold_pct": 50.0,
-      "covered_rows": 0,
+      "covered_rows": 2,
       "total_rows": 12,
       "missed_examples": [
         {
           "snp": "rs10775009",
           "gt_value": "CSF T-tau",
           "pred_terms": [
-            "trait",
-            "alzheimer disease",
-            "alzheimers disease",
-            "disease",
+            "vcx",
+            "cer",
             "phenotypic evaluation",
-            "outcome"
+            "dlpfc",
+            "alzheimer disease",
+            "hipp"
           ]
         },
         {
           "snp": "rs111882035",
           "gt_value": "Logic memory delayed (LMdT) recall test",
           "pred_terms": [
-            "trait",
-            "alzheimer disease",
-            "alzheimers disease",
-            "disease",
+            "vcx",
+            "cer",
             "phenotypic evaluation",
-            "outcome"
+            "dlpfc",
+            "alzheimer disease",
+            "hipp"
           ]
         },
         {
           "snp": "rs118130881",
           "gt_value": "Logical memory immediate (LMiT) recall test",
           "pred_terms": [
-            "trait",
-            "alzheimer disease",
-            "alzheimers disease",
-            "disease",
+            "vcx",
+            "cer",
             "phenotypic evaluation",
-            "outcome"
+            "dlpfc",
+            "alzheimer disease",
+            "hipp"
           ]
         },
         {
           "snp": "rs12268753",
           "gt_value": "Logic memory delayed (LMdT) recall test",
           "pred_terms": [
-            "trait",
-            "alzheimer disease",
-            "alzheimers disease",
-            "disease",
+            "vcx",
+            "cer",
             "phenotypic evaluation",
-            "outcome"
+            "dlpfc",
+            "alzheimer disease",
+            "hipp"
           ]
         },
         {
           "snp": "rs2378873",
           "gt_value": "CSF Ab1-42",
           "pred_terms": [
-            "trait",
-            "alzheimer disease",
-            "alzheimers disease",
-            "disease",
+            "vcx",
+            "cer",
             "phenotypic evaluation",
-            "outcome"
+            "dlpfc",
+            "alzheimer disease",
+            "hipp"
           ]
         },
         {
           "snp": "rs2819438",
           "gt_value": "CSF T-tau",
           "pred_terms": [
-            "trait",
-            "alzheimer disease",
-            "alzheimers disease",
-            "disease",
+            "vcx",
+            "cer",
             "phenotypic evaluation",
-            "outcome"
-          ]
-        },
-        {
-          "snp": "rs4921790",
-          "gt_value": "Hippocampal volume (HPV)",
-          "pred_terms": [
-            "trait",
+            "dlpfc",
             "alzheimer disease",
-            "alzheimers disease",
-            "disease",
-            "phenotypic evaluation",
-            "outcome"
+            "hipp"
           ]
         },
         {
           "snp": "rs55644114",
           "gt_value": "CSF Ab1-42",
           "pred_terms": [
-            "trait",
-            "alzheimer disease",
-            "alzheimers disease",
-            "disease",
+            "vcx",
+            "cer",
             "phenotypic evaluation",
-            "outcome"
+            "dlpfc",
+            "alzheimer disease",
+            "hipp"
           ]
         },
         {
           "snp": "rs73705514",
           "gt_value": "Logic memory delayed (LMdT) recall test",
           "pred_terms": [
-            "trait",
-            "alzheimer disease",
-            "alzheimers disease",
-            "disease",
+            "vcx",
+            "cer",
             "phenotypic evaluation",
-            "outcome"
+            "dlpfc",
+            "alzheimer disease",
+            "hipp"
           ]
         },
         {
           "snp": "rs74442473",
           "gt_value": "CSF Ab1-42",
           "pred_terms": [
-            "trait",
-            "alzheimer disease",
-            "alzheimers disease",
-            "disease",
+            "vcx",
+            "cer",
             "phenotypic evaluation",
-            "outcome"
+            "dlpfc",
+            "alzheimer disease",
+            "hipp"
+          ]
+        },
+        {
+          "snp": "rs74834332",
+          "gt_value": "Logic memory delayed (LMdT) recall test",
+          "pred_terms": [
+            "vcx",
+            "cer",
+            "phenotypic evaluation",
+            "dlpfc",
+            "alzheimer disease",
+            "hipp"
           ]
         }
       ]
@@ -474,120 +343,120 @@
           "snp": "rs12961169",
           "gt_value": "CSF P-tau181p",
           "pred_terms": [
-            "trait",
-            "late-onset alzheimers disease",
-            "alzheimer disease ad",
             "alzheimer disease",
+            "disease",
+            "vascular dementia",
+            "serpins",
             "alzheimers disease",
-            "disease"
+            "alzheimers"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "CSF P-tau181p",
           "pred_terms": [
-            "trait",
-            "late-onset alzheimers disease",
-            "alzheimer disease ad",
             "alzheimer disease",
+            "disease",
+            "vascular dementia",
+            "serpins",
             "alzheimers disease",
-            "disease"
+            "alzheimers"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "CSF P-tau181p",
           "pred_terms": [
-            "trait",
-            "late-onset alzheimers disease",
-            "alzheimer disease ad",
             "alzheimer disease",
+            "disease",
+            "vascular dementia",
+            "serpins",
             "alzheimers disease",
-            "disease"
+            "alzheimers"
           ]
         },
         {
           "snp": "rs13115400",
           "gt_value": "Amyloid Burden",
           "pred_terms": [
-            "trait",
-            "late-onset alzheimers disease",
-            "alzheimer disease ad",
             "alzheimer disease",
+            "disease",
+            "vascular dementia",
+            "serpins",
             "alzheimers disease",
-            "disease"
+            "alzheimers"
           ]
         },
         {
           "snp": "rs13115400",
           "gt_value": "CSF Ab1-42",
           "pred_terms": [
-            "trait",
-            "late-onset alzheimers disease",
-            "alzheimer disease ad",
             "alzheimer disease",
+            "disease",
+            "vascular dementia",
+            "serpins",
             "alzheimers disease",
-            "disease"
+            "alzheimers"
           ]
         },
         {
           "snp": "rs13115400",
           "gt_value": "CSF Ab1-42",
           "pred_terms": [
-            "trait",
-            "late-onset alzheimers disease",
-            "alzheimer disease ad",
             "alzheimer disease",
+            "disease",
+            "vascular dementia",
+            "serpins",
             "alzheimers disease",
-            "disease"
+            "alzheimers"
           ]
         },
         {
           "snp": "rs13115400",
           "gt_value": "Amyloid Burden",
           "pred_terms": [
-            "trait",
-            "late-onset alzheimers disease",
-            "alzheimer disease ad",
             "alzheimer disease",
+            "disease",
+            "vascular dementia",
+            "serpins",
             "alzheimers disease",
-            "disease"
+            "alzheimers"
           ]
         },
         {
           "snp": "rs1393060",
           "gt_value": "Neuronal Neurofibrillary Tangles",
           "pred_terms": [
-            "trait",
-            "late-onset alzheimers disease",
-            "alzheimer disease ad",
             "alzheimer disease",
+            "disease",
+            "vascular dementia",
+            "serpins",
             "alzheimers disease",
-            "disease"
+            "alzheimers"
           ]
         },
         {
           "snp": "rs1393060",
           "gt_value": "Neuronal Neurofibrillary Tangles",
           "pred_terms": [
-            "trait",
-            "late-onset alzheimers disease",
-            "alzheimer disease ad",
             "alzheimer disease",
+            "disease",
+            "vascular dementia",
+            "serpins",
             "alzheimers disease",
-            "disease"
+            "alzheimers"
           ]
         },
         {
           "snp": "rs1393060",
           "gt_value": "CSF T-tau",
           "pred_terms": [
-            "trait",
-            "late-onset alzheimers disease",
-            "alzheimer disease ad",
             "alzheimer disease",
+            "disease",
+            "vascular dementia",
+            "serpins",
             "alzheimers disease",
-            "disease"
+            "alzheimers"
           ]
         }
       ]
@@ -605,11 +474,12 @@
           "snp": "rs10838725",
           "gt_value": "MYBPC3 (11725151_at) expression in blood",
           "pred_terms": [
+            "amyloid beta peptide",
             "alzheimer disease",
-            "alzheimers disease phenotype",
-            "alzheimers disease",
-            "alzheimer disease genetics consortium",
-            "alzheimers disease sequencing project"
+            "ms4a6a snps",
+            "cancer",
+            "synonymous mutations",
+            "hippocampal sclerosis of aging"
           ]
         },
         {
@@ -621,44 +491,48 @@
           "snp": "rs111418223",
           "gt_value": "AGPAT1 (11751668_a_at) expression in blood",
           "pred_terms": [
+            "amyloid beta peptide",
             "alzheimer disease",
-            "alzheimers disease phenotype",
-            "alzheimers disease",
-            "alzheimer disease genetics consortium",
-            "alzheimers disease sequencing project"
+            "ms4a6a snps",
+            "cancer",
+            "synonymous mutations",
+            "hippocampal sclerosis of aging"
           ]
         },
         {
           "snp": "rs111418223",
           "gt_value": "AGPAT1 (11750187_a_at)) expression in blood",
           "pred_terms": [
+            "amyloid beta peptide",
             "alzheimer disease",
-            "alzheimers disease phenotype",
-            "alzheimers disease",
-            "alzheimer disease genetics consortium",
-            "alzheimers disease sequencing project"
+            "ms4a6a snps",
+            "cancer",
+            "synonymous mutations",
+            "hippocampal sclerosis of aging"
           ]
         },
         {
           "snp": "rs111418223",
           "gt_value": "AGPAT1 (11730933_a_at) expression in blood",
           "pred_terms": [
+            "amyloid beta peptide",
             "alzheimer disease",
-            "alzheimers disease phenotype",
-            "alzheimers disease",
-            "alzheimer disease genetics consortium",
-            "alzheimers disease sequencing project"
+            "ms4a6a snps",
+            "cancer",
+            "synonymous mutations",
+            "hippocampal sclerosis of aging"
           ]
         },
         {
           "snp": "rs11771145",
           "gt_value": "LOC154761 (11755327 s at) expression in blood",
           "pred_terms": [
+            "amyloid beta peptide",
             "alzheimer disease",
-            "alzheimers disease phenotype",
-            "alzheimers disease",
-            "alzheimer disease genetics consortium",
-            "alzheimers disease sequencing project"
+            "ms4a6a snps",
+            "cancer",
+            "synonymous mutations",
+            "hippocampal sclerosis of aging"
           ]
         },
         {
@@ -675,22 +549,135 @@
           "snp": "rs1476679",
           "gt_value": "TRIM4 (11736388_a_at) expression in blood",
           "pred_terms": [
+            "amyloid beta peptide",
             "alzheimer disease",
-            "alzheimers disease phenotype",
-            "alzheimers disease",
-            "alzheimer disease genetics consortium",
-            "alzheimers disease sequencing project"
+            "ms4a6a snps",
+            "cancer",
+            "synonymous mutations",
+            "hippocampal sclerosis of aging"
           ]
         },
         {
           "snp": "rs1476679",
           "gt_value": "GATS (11722909_a_at) expression in blood",
           "pred_terms": [
+            "amyloid beta peptide",
             "alzheimer disease",
-            "alzheimers disease phenotype",
-            "alzheimers disease",
-            "alzheimer disease genetics consortium",
-            "alzheimers disease sequencing project"
+            "ms4a6a snps",
+            "cancer",
+            "synonymous mutations",
+            "hippocampal sclerosis of aging"
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    "30636644_PMC6330399.csv",
+    {
+      "coverage_pct": 0.0,
+      "threshold_pct": 50.0,
+      "covered_rows": 0,
+      "total_rows": 141,
+      "missed_examples": [
+        {
+          "snp": "rs10111328",
+          "gt_value": "AD",
+          "pred_terms": [
+            "ld",
+            "outcome",
+            "trait",
+            "disease"
+          ]
+        },
+        {
+          "snp": "rs10111328",
+          "gt_value": "MED30 (ILMN_1671603) expression in peripheral blood",
+          "pred_terms": [
+            "ld",
+            "outcome",
+            "trait",
+            "disease"
+          ]
+        },
+        {
+          "snp": "rs1046135",
+          "gt_value": "AD",
+          "pred_terms": [
+            "ld",
+            "outcome",
+            "trait",
+            "disease"
+          ]
+        },
+        {
+          "snp": "rs1046135",
+          "gt_value": "TRA2A (ILMN_1731043) expression in peripheral blood",
+          "pred_terms": [
+            "ld",
+            "outcome",
+            "trait",
+            "disease"
+          ]
+        },
+        {
+          "snp": "rs10794342",
+          "gt_value": "AD",
+          "pred_terms": [
+            "ld",
+            "outcome",
+            "trait",
+            "disease"
+          ]
+        },
+        {
+          "snp": "rs10947230",
+          "gt_value": "AD",
+          "pred_terms": [
+            "ld",
+            "outcome",
+            "trait",
+            "disease"
+          ]
+        },
+        {
+          "snp": "rs10953322",
+          "gt_value": "AD",
+          "pred_terms": [
+            "ld",
+            "outcome",
+            "trait",
+            "disease"
+          ]
+        },
+        {
+          "snp": "rs11089928",
+          "gt_value": "APOBEC3F (ILMN_2296950) expression",
+          "pred_terms": [
+            "ld",
+            "outcome",
+            "trait",
+            "disease"
+          ]
+        },
+        {
+          "snp": "rs11089928",
+          "gt_value": "AD",
+          "pred_terms": [
+            "ld",
+            "outcome",
+            "trait",
+            "disease"
+          ]
+        },
+        {
+          "snp": "rs1172922",
+          "gt_value": "AD",
+          "pred_terms": [
+            "ld",
+            "outcome",
+            "trait",
+            "disease"
           ]
         }
       ]
@@ -753,6 +740,205 @@
           "snp": "rs12373108",
           "gt_value": "Brain infarcts (BI)",
           "pred_terms": []
+        }
+      ]
+    }
+  ],
+  [
+    "30805717_PMC7193309.csv",
+    {
+      "coverage_pct": 28.6,
+      "threshold_pct": 50.0,
+      "covered_rows": 4,
+      "total_rows": 14,
+      "missed_examples": [
+        {
+          "snp": "rs10501320",
+          "gt_value": "Fasting Glucose",
+          "pred_terms": [
+            "chr",
+            "diseases",
+            "t2d",
+            "language and behavior",
+            "traits",
+            "cognitive function"
+          ]
+        },
+        {
+          "snp": "rs12805422",
+          "gt_value": "Fasting Glucose",
+          "pred_terms": [
+            "chr",
+            "diseases",
+            "t2d",
+            "language and behavior",
+            "traits",
+            "cognitive function"
+          ]
+        },
+        {
+          "snp": "rs1483121",
+          "gt_value": "Fasting Glucose",
+          "pred_terms": [
+            "chr",
+            "diseases",
+            "t2d",
+            "language and behavior",
+            "traits",
+            "cognitive function"
+          ]
+        },
+        {
+          "snp": "rs17747324",
+          "gt_value": "Fasting Glucose",
+          "pred_terms": [
+            "chr",
+            "diseases",
+            "t2d",
+            "language and behavior",
+            "traits",
+            "cognitive function"
+          ]
+        },
+        {
+          "snp": "rs2279590",
+          "gt_value": "Fasting Insulin",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs2279590",
+          "gt_value": "AD",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs4803750",
+          "gt_value": "Fasting Insulin",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs4803750",
+          "gt_value": "AD",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs6656401",
+          "gt_value": "Fasting Insulin",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs6656401",
+          "gt_value": "AD",
+          "pred_terms": []
+        }
+      ]
+    }
+  ],
+  [
+    "30820047_PMC6463297.csv",
+    {
+      "coverage_pct": 0.0,
+      "threshold_pct": 50.0,
+      "covered_rows": 0,
+      "total_rows": 104,
+      "missed_examples": [
+        {
+          "snp": "rs10467994",
+          "gt_value": "Clinically diagnosed LOAD",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs10467994",
+          "gt_value": "Clinically diagnosed LOAD",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs10467994",
+          "gt_value": "Clinically diagnosed LOAD",
+          "pred_terms": []
+        },
+        {
+          "snp": "rs10808026",
+          "gt_value": "Clinically diagnosed LOAD",
+          "pred_terms": [
+            "pittsburgh compound b",
+            "apoptosis",
+            "multiple sclerosis",
+            "complex traits",
+            "parkinson disease",
+            "cognitive decline"
+          ]
+        },
+        {
+          "snp": "rs10808026",
+          "gt_value": "Clinically diagnosed LOAD",
+          "pred_terms": [
+            "pittsburgh compound b",
+            "apoptosis",
+            "multiple sclerosis",
+            "complex traits",
+            "parkinson disease",
+            "cognitive decline"
+          ]
+        },
+        {
+          "snp": "rs10808026",
+          "gt_value": "Clinically diagnosed LOAD",
+          "pred_terms": [
+            "pittsburgh compound b",
+            "apoptosis",
+            "multiple sclerosis",
+            "complex traits",
+            "parkinson disease",
+            "cognitive decline"
+          ]
+        },
+        {
+          "snp": "rs10933431",
+          "gt_value": "Clinically diagnosed LOAD",
+          "pred_terms": [
+            "pittsburgh compound b",
+            "apoptosis",
+            "multiple sclerosis",
+            "complex traits",
+            "parkinson disease",
+            "cognitive decline"
+          ]
+        },
+        {
+          "snp": "rs10933431",
+          "gt_value": "Clinically diagnosed LOAD",
+          "pred_terms": [
+            "pittsburgh compound b",
+            "apoptosis",
+            "multiple sclerosis",
+            "complex traits",
+            "parkinson disease",
+            "cognitive decline"
+          ]
+        },
+        {
+          "snp": "rs10933431",
+          "gt_value": "Clinically diagnosed LOAD",
+          "pred_terms": [
+            "pittsburgh compound b",
+            "apoptosis",
+            "multiple sclerosis",
+            "complex traits",
+            "parkinson disease",
+            "cognitive decline"
+          ]
+        },
+        {
+          "snp": "rs11218343",
+          "gt_value": "Clinically diagnosed LOAD",
+          "pred_terms": [
+            "pittsburgh compound b",
+            "apoptosis",
+            "multiple sclerosis",
+            "complex traits",
+            "parkinson disease",
+            "cognitive decline"
+          ]
         }
       ]
     }

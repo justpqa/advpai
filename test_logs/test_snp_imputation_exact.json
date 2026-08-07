@@ -3,7 +3,7 @@
     "28247064_PMC5613285.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 42,
       "missed_examples": [
@@ -11,11 +11,11 @@
           "snp": "rs12961169",
           "gt_value": "1000G Phase 3 (release Oct 2014)",
           "pred_terms": [
-            "reference panel",
-            "haplotype reference panel",
-            "phasing",
+            "rs12961169t",
+            "gcta-greml power calculator",
             "genotyping",
-            "impute2",
+            "greml-ldms",
+            "maf",
             "imputation"
           ]
         },
@@ -23,11 +23,11 @@
           "snp": "rs12961169",
           "gt_value": "1000G Phase 3 (release Oct 2014)",
           "pred_terms": [
-            "reference panel",
-            "haplotype reference panel",
-            "phasing",
+            "rs12961169t",
+            "gcta-greml power calculator",
             "genotyping",
-            "impute2",
+            "greml-ldms",
+            "maf",
             "imputation"
           ]
         },
@@ -35,11 +35,11 @@
           "snp": "rs12961169",
           "gt_value": "1000G Phase 3 (release Oct 2014)",
           "pred_terms": [
-            "reference panel",
-            "haplotype reference panel",
-            "phasing",
+            "rs12961169t",
+            "gcta-greml power calculator",
             "genotyping",
-            "impute2",
+            "greml-ldms",
+            "maf",
             "imputation"
           ]
         },
@@ -47,11 +47,11 @@
           "snp": "rs12961169",
           "gt_value": "1000G Phase 3 (release Oct 2014)",
           "pred_terms": [
-            "reference panel",
-            "haplotype reference panel",
-            "phasing",
+            "rs12961169t",
+            "gcta-greml power calculator",
             "genotyping",
-            "impute2",
+            "greml-ldms",
+            "maf",
             "imputation"
           ]
         },
@@ -59,11 +59,11 @@
           "snp": "rs12961169",
           "gt_value": "1000G Phase 3 (release Oct 2014)",
           "pred_terms": [
-            "reference panel",
-            "haplotype reference panel",
-            "phasing",
+            "rs12961169t",
+            "gcta-greml power calculator",
             "genotyping",
-            "impute2",
+            "greml-ldms",
+            "maf",
             "imputation"
           ]
         },
@@ -71,11 +71,11 @@
           "snp": "rs12961169",
           "gt_value": "1000G Phase 3 (release Oct 2014)",
           "pred_terms": [
-            "reference panel",
-            "haplotype reference panel",
-            "phasing",
+            "rs12961169t",
+            "gcta-greml power calculator",
             "genotyping",
-            "impute2",
+            "greml-ldms",
+            "maf",
             "imputation"
           ]
         },
@@ -83,11 +83,11 @@
           "snp": "rs185031519",
           "gt_value": "1000G Phase 3 (release Oct 2014)",
           "pred_terms": [
-            "reference panel",
-            "haplotype reference panel",
-            "phasing",
+            "rs12961169t",
+            "gcta-greml power calculator",
             "genotyping",
-            "impute2",
+            "greml-ldms",
+            "maf",
             "imputation"
           ]
         },
@@ -95,11 +95,11 @@
           "snp": "rs185031519",
           "gt_value": "1000G Phase 3 (release Oct 2014)",
           "pred_terms": [
-            "reference panel",
-            "haplotype reference panel",
-            "phasing",
+            "rs12961169t",
+            "gcta-greml power calculator",
             "genotyping",
-            "impute2",
+            "greml-ldms",
+            "maf",
             "imputation"
           ]
         },
@@ -107,11 +107,11 @@
           "snp": "rs185031519",
           "gt_value": "1000G Phase 3 (release Oct 2014)",
           "pred_terms": [
-            "reference panel",
-            "haplotype reference panel",
-            "phasing",
+            "rs12961169t",
+            "gcta-greml power calculator",
             "genotyping",
-            "impute2",
+            "greml-ldms",
+            "maf",
             "imputation"
           ]
         },
@@ -119,11 +119,11 @@
           "snp": "rs185031519",
           "gt_value": "1000G Phase 3 (release Oct 2014)",
           "pred_terms": [
-            "reference panel",
-            "haplotype reference panel",
-            "phasing",
+            "rs12961169t",
+            "gcta-greml power calculator",
             "genotyping",
-            "impute2",
+            "greml-ldms",
+            "maf",
             "imputation"
           ]
         }
@@ -134,7 +134,7 @@
     "28560309_PMC5440281.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 7,
       "missed_examples": [
@@ -180,7 +180,7 @@
     "28780673_PMC5693762.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 44,
       "missed_examples": [
@@ -188,120 +188,120 @@
           "snp": "rs10896445",
           "gt_value": "1000G",
           "pred_terms": [
-            "mach",
-            "1000 genomes project",
-            "impute2",
-            "minimac",
-            "gcta",
-            "meta-analysis"
+            "reference panel",
+            "charge",
+            "eadi",
+            "gerad",
+            "adgc",
+            "imputation"
           ]
         },
         {
           "snp": "rs10896445",
           "gt_value": "1000G",
           "pred_terms": [
-            "mach",
-            "1000 genomes project",
-            "impute2",
-            "minimac",
-            "gcta",
-            "meta-analysis"
+            "reference panel",
+            "charge",
+            "eadi",
+            "gerad",
+            "adgc",
+            "imputation"
           ]
         },
         {
           "snp": "rs10896445",
           "gt_value": "1000G",
           "pred_terms": [
-            "mach",
-            "1000 genomes project",
-            "impute2",
-            "minimac",
-            "gcta",
-            "meta-analysis"
+            "reference panel",
+            "charge",
+            "eadi",
+            "gerad",
+            "adgc",
+            "imputation"
           ]
         },
         {
           "snp": "rs10896445",
           "gt_value": "1000G",
           "pred_terms": [
-            "mach",
-            "1000 genomes project",
-            "impute2",
-            "minimac",
-            "gcta",
-            "meta-analysis"
+            "reference panel",
+            "charge",
+            "eadi",
+            "gerad",
+            "adgc",
+            "imputation"
           ]
         },
         {
           "snp": "rs11249708",
           "gt_value": "1000G",
           "pred_terms": [
-            "mach",
-            "1000 genomes project",
-            "impute2",
-            "minimac",
-            "gcta",
-            "meta-analysis"
+            "reference panel",
+            "charge",
+            "eadi",
+            "gerad",
+            "adgc",
+            "imputation"
           ]
         },
         {
           "snp": "rs11249708",
           "gt_value": "1000G",
           "pred_terms": [
-            "mach",
-            "1000 genomes project",
-            "impute2",
-            "minimac",
-            "gcta",
-            "meta-analysis"
+            "reference panel",
+            "charge",
+            "eadi",
+            "gerad",
+            "adgc",
+            "imputation"
           ]
         },
         {
           "snp": "rs11249708",
           "gt_value": "1000G",
           "pred_terms": [
-            "mach",
-            "1000 genomes project",
-            "impute2",
-            "minimac",
-            "gcta",
-            "meta-analysis"
+            "reference panel",
+            "charge",
+            "eadi",
+            "gerad",
+            "adgc",
+            "imputation"
           ]
         },
         {
           "snp": "rs11249708",
           "gt_value": "1000G",
           "pred_terms": [
-            "mach",
-            "1000 genomes project",
-            "impute2",
-            "minimac",
-            "gcta",
-            "meta-analysis"
+            "reference panel",
+            "charge",
+            "eadi",
+            "gerad",
+            "adgc",
+            "imputation"
           ]
         },
         {
           "snp": "rs1568485",
           "gt_value": "1000G",
           "pred_terms": [
-            "mach",
-            "1000 genomes project",
-            "impute2",
-            "minimac",
-            "gcta",
-            "meta-analysis"
+            "reference panel",
+            "charge",
+            "eadi",
+            "gerad",
+            "adgc",
+            "imputation"
           ]
         },
         {
           "snp": "rs1568485",
           "gt_value": "1000G",
           "pred_terms": [
-            "mach",
-            "1000 genomes project",
-            "impute2",
-            "minimac",
-            "gcta",
-            "meta-analysis"
+            "reference panel",
+            "charge",
+            "eadi",
+            "gerad",
+            "adgc",
+            "imputation"
           ]
         }
       ]
@@ -311,7 +311,7 @@
     "29274321_PMC5938137.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 12,
       "missed_examples": [
@@ -319,9 +319,8 @@
           "snp": "rs10775009",
           "gt_value": "1000G (release Mar 2012)",
           "pred_terms": [
-            "reference panel",
-            "deming et al.",
             "imputation",
+            "reference panel",
             "pc",
             "imputed genotype probabilities"
           ]
@@ -330,9 +329,8 @@
           "snp": "rs111882035",
           "gt_value": "1000G (release Mar 2012)",
           "pred_terms": [
-            "reference panel",
-            "deming et al.",
             "imputation",
+            "reference panel",
             "pc",
             "imputed genotype probabilities"
           ]
@@ -341,9 +339,8 @@
           "snp": "rs118130881",
           "gt_value": "1000G (release Mar 2012)",
           "pred_terms": [
-            "reference panel",
-            "deming et al.",
             "imputation",
+            "reference panel",
             "pc",
             "imputed genotype probabilities"
           ]
@@ -352,9 +349,8 @@
           "snp": "rs12268753",
           "gt_value": "1000G (release Mar 2012)",
           "pred_terms": [
-            "reference panel",
-            "deming et al.",
             "imputation",
+            "reference panel",
             "pc",
             "imputed genotype probabilities"
           ]
@@ -363,9 +359,8 @@
           "snp": "rs2378873",
           "gt_value": "1000G (release Mar 2012)",
           "pred_terms": [
-            "reference panel",
-            "deming et al.",
             "imputation",
+            "reference panel",
             "pc",
             "imputed genotype probabilities"
           ]
@@ -374,9 +369,8 @@
           "snp": "rs2819438",
           "gt_value": "1000G (release Mar 2012)",
           "pred_terms": [
-            "reference panel",
-            "deming et al.",
             "imputation",
+            "reference panel",
             "pc",
             "imputed genotype probabilities"
           ]
@@ -385,9 +379,8 @@
           "snp": "rs4921790",
           "gt_value": "1000G (release Mar 2012)",
           "pred_terms": [
-            "reference panel",
-            "deming et al.",
             "imputation",
+            "reference panel",
             "pc",
             "imputed genotype probabilities"
           ]
@@ -396,9 +389,8 @@
           "snp": "rs55644114",
           "gt_value": "1000G (release Mar 2012)",
           "pred_terms": [
-            "reference panel",
-            "deming et al.",
             "imputation",
+            "reference panel",
             "pc",
             "imputed genotype probabilities"
           ]
@@ -407,9 +399,8 @@
           "snp": "rs73705514",
           "gt_value": "1000G (release Mar 2012)",
           "pred_terms": [
-            "reference panel",
-            "deming et al.",
             "imputation",
+            "reference panel",
             "pc",
             "imputed genotype probabilities"
           ]
@@ -418,9 +409,8 @@
           "snp": "rs74442473",
           "gt_value": "1000G (release Mar 2012)",
           "pred_terms": [
-            "reference panel",
-            "deming et al.",
             "imputation",
+            "reference panel",
             "pc",
             "imputed genotype probabilities"
           ]
@@ -432,7 +422,7 @@
     "29458411_PMC5819208.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 32,
       "missed_examples": [
@@ -440,110 +430,120 @@
           "snp": "rs34487851",
           "gt_value": "1000G",
           "pred_terms": [
+            "pleiotropy",
+            "mayo clinic brain egwas",
+            "summary data",
             "grch37",
-            "1000 genomes project",
-            "gtex",
-            "gtex portal",
-            "egwas"
+            "genotype imputation",
+            "1000 genomes project reference panel"
           ]
         },
         {
           "snp": "rs34487851",
           "gt_value": "1000G",
           "pred_terms": [
+            "pleiotropy",
+            "mayo clinic brain egwas",
+            "summary data",
             "grch37",
-            "1000 genomes project",
-            "gtex",
-            "gtex portal",
-            "egwas"
+            "genotype imputation",
+            "1000 genomes project reference panel"
           ]
         },
         {
           "snp": "rs34487851",
           "gt_value": "1000G",
           "pred_terms": [
+            "pleiotropy",
+            "mayo clinic brain egwas",
+            "summary data",
             "grch37",
-            "1000 genomes project",
-            "gtex",
-            "gtex portal",
-            "egwas"
+            "genotype imputation",
+            "1000 genomes project reference panel"
           ]
         },
         {
           "snp": "rs34487851",
           "gt_value": "1000G",
           "pred_terms": [
+            "pleiotropy",
+            "mayo clinic brain egwas",
+            "summary data",
             "grch37",
-            "1000 genomes project",
-            "gtex",
-            "gtex portal",
-            "egwas"
+            "genotype imputation",
+            "1000 genomes project reference panel"
           ]
         },
         {
           "snp": "rs34487851",
           "gt_value": "1000G",
           "pred_terms": [
+            "pleiotropy",
+            "mayo clinic brain egwas",
+            "summary data",
             "grch37",
-            "1000 genomes project",
-            "gtex",
-            "gtex portal",
-            "egwas"
+            "genotype imputation",
+            "1000 genomes project reference panel"
           ]
         },
         {
           "snp": "rs34487851",
           "gt_value": "1000G",
           "pred_terms": [
+            "pleiotropy",
+            "mayo clinic brain egwas",
+            "summary data",
             "grch37",
-            "1000 genomes project",
-            "gtex",
-            "gtex portal",
-            "egwas"
+            "genotype imputation",
+            "1000 genomes project reference panel"
           ]
         },
         {
           "snp": "rs34487851",
           "gt_value": "1000G",
           "pred_terms": [
+            "pleiotropy",
+            "mayo clinic brain egwas",
+            "summary data",
             "grch37",
-            "1000 genomes project",
-            "gtex",
-            "gtex portal",
-            "egwas"
+            "genotype imputation",
+            "1000 genomes project reference panel"
           ]
         },
         {
           "snp": "rs79524815",
           "gt_value": "1000G",
           "pred_terms": [
+            "pleiotropy",
+            "mayo clinic brain egwas",
+            "summary data",
             "grch37",
-            "1000 genomes project",
-            "gtex",
-            "gtex portal",
-            "egwas"
+            "genotype imputation",
+            "1000 genomes project reference panel"
           ]
         },
         {
           "snp": "rs79524815",
           "gt_value": "1000G",
           "pred_terms": [
+            "pleiotropy",
+            "mayo clinic brain egwas",
+            "summary data",
             "grch37",
-            "1000 genomes project",
-            "gtex",
-            "gtex portal",
-            "egwas"
+            "genotype imputation",
+            "1000 genomes project reference panel"
           ]
         },
         {
           "snp": "rs79524815",
           "gt_value": "1000G",
           "pred_terms": [
+            "pleiotropy",
+            "mayo clinic brain egwas",
+            "summary data",
             "grch37",
-            "1000 genomes project",
-            "gtex",
-            "gtex portal",
-            "egwas"
+            "genotype imputation",
+            "1000 genomes project reference panel"
           ]
         }
       ]
@@ -553,7 +553,7 @@
     "29752348_PMC5976227.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 4,
       "missed_examples": [
@@ -584,7 +584,7 @@
     "29777097_PMC5959890.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 3,
       "missed_examples": [
@@ -592,36 +592,36 @@
           "snp": "rs593742",
           "gt_value": "HRC",
           "pred_terms": [
-            "reference panel",
-            "ldlink",
-            "uk biobank axiom array",
-            "haplotype reference consortium hrc",
-            "1000 genomes phase 1 reference panel",
-            "health and retirement study"
+            "kinship table",
+            "nature",
+            "1000 genomes project consortium",
+            "rs889555",
+            "uk bileve axiom array",
+            "uk biobank axiom array"
           ]
         },
         {
           "snp": "rs6504163",
           "gt_value": "HRC",
           "pred_terms": [
-            "reference panel",
-            "ldlink",
-            "uk biobank axiom array",
-            "haplotype reference consortium hrc",
-            "1000 genomes phase 1 reference panel",
-            "health and retirement study"
+            "kinship table",
+            "nature",
+            "1000 genomes project consortium",
+            "rs889555",
+            "uk bileve axiom array",
+            "uk biobank axiom array"
           ]
         },
         {
           "snp": "rs889555",
           "gt_value": "HRC",
           "pred_terms": [
-            "reference panel",
-            "ldlink",
-            "uk biobank axiom array",
-            "haplotype reference consortium hrc",
-            "1000 genomes phase 1 reference panel",
-            "health and retirement study"
+            "kinship table",
+            "nature",
+            "1000 genomes project consortium",
+            "rs889555",
+            "uk bileve axiom array",
+            "uk biobank axiom array"
           ]
         }
       ]
@@ -631,7 +631,7 @@
     "29967939_PMC6280657.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 46,
       "missed_examples": [
@@ -639,120 +639,100 @@
           "snp": "rs12961169",
           "gt_value": "1000G Phase 3",
           "pred_terms": [
-            "hardy-weinberg equilibrium p1106",
-            "maf",
-            "1000 genomes project",
-            "information score",
+            "hardy-weinberg equilibrium",
+            "taqman assay",
             "impute2",
-            "taqman assay"
+            "1000 genomes project phase 3"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "1000G Phase 3",
           "pred_terms": [
-            "hardy-weinberg equilibrium p1106",
-            "maf",
-            "1000 genomes project",
-            "information score",
+            "hardy-weinberg equilibrium",
+            "taqman assay",
             "impute2",
-            "taqman assay"
+            "1000 genomes project phase 3"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "1000G Phase 3",
           "pred_terms": [
-            "hardy-weinberg equilibrium p1106",
-            "maf",
-            "1000 genomes project",
-            "information score",
+            "hardy-weinberg equilibrium",
+            "taqman assay",
             "impute2",
-            "taqman assay"
+            "1000 genomes project phase 3"
           ]
         },
         {
           "snp": "rs13115400",
           "gt_value": "1000G Phase 3",
           "pred_terms": [
-            "hardy-weinberg equilibrium p1106",
-            "maf",
-            "1000 genomes project",
-            "information score",
+            "hardy-weinberg equilibrium",
+            "taqman assay",
             "impute2",
-            "taqman assay"
+            "1000 genomes project phase 3"
           ]
         },
         {
           "snp": "rs13115400",
           "gt_value": "1000G Phase 3",
           "pred_terms": [
-            "hardy-weinberg equilibrium p1106",
-            "maf",
-            "1000 genomes project",
-            "information score",
+            "hardy-weinberg equilibrium",
+            "taqman assay",
             "impute2",
-            "taqman assay"
+            "1000 genomes project phase 3"
           ]
         },
         {
           "snp": "rs1393060",
           "gt_value": "1000G Phase 3",
           "pred_terms": [
-            "hardy-weinberg equilibrium p1106",
-            "maf",
-            "1000 genomes project",
-            "information score",
+            "hardy-weinberg equilibrium",
+            "taqman assay",
             "impute2",
-            "taqman assay"
+            "1000 genomes project phase 3"
           ]
         },
         {
           "snp": "rs1393060",
           "gt_value": "1000G Phase 3",
           "pred_terms": [
-            "hardy-weinberg equilibrium p1106",
-            "maf",
-            "1000 genomes project",
-            "information score",
+            "hardy-weinberg equilibrium",
+            "taqman assay",
             "impute2",
-            "taqman assay"
+            "1000 genomes project phase 3"
           ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "1000G Phase 3",
           "pred_terms": [
-            "hardy-weinberg equilibrium p1106",
-            "maf",
-            "1000 genomes project",
-            "information score",
+            "hardy-weinberg equilibrium",
+            "taqman assay",
             "impute2",
-            "taqman assay"
+            "1000 genomes project phase 3"
           ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "1000G Phase 3",
           "pred_terms": [
-            "hardy-weinberg equilibrium p1106",
-            "maf",
-            "1000 genomes project",
-            "information score",
+            "hardy-weinberg equilibrium",
+            "taqman assay",
             "impute2",
-            "taqman assay"
+            "1000 genomes project phase 3"
           ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "1000G Phase 3",
           "pred_terms": [
-            "hardy-weinberg equilibrium p1106",
-            "maf",
-            "1000 genomes project",
-            "information score",
+            "hardy-weinberg equilibrium",
+            "taqman assay",
             "impute2",
-            "taqman assay"
+            "1000 genomes project phase 3"
           ]
         }
       ]
@@ -762,7 +742,7 @@
     "30413934_PMC6358498.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 90,
       "missed_examples": [
@@ -771,11 +751,11 @@
           "gt_value": "1000G Phase 3 (release Oct 2014)",
           "pred_terms": [
             "reference panel",
-            "six axes of genetic variation",
             "1000 genomes project",
-            "phasing",
+            "conditional false discovery rate",
+            "independent samples",
             "ld",
-            "conditional false discovery rate"
+            "pleiotropy"
           ]
         },
         {
@@ -783,11 +763,11 @@
           "gt_value": "1000G Phase 3 (release Oct 2014)",
           "pred_terms": [
             "reference panel",
-            "six axes of genetic variation",
             "1000 genomes project",
-            "phasing",
+            "conditional false discovery rate",
+            "independent samples",
             "ld",
-            "conditional false discovery rate"
+            "pleiotropy"
           ]
         },
         {
@@ -795,11 +775,11 @@
           "gt_value": "1000G Phase 3 (release Oct 2014)",
           "pred_terms": [
             "reference panel",
-            "six axes of genetic variation",
             "1000 genomes project",
-            "phasing",
+            "conditional false discovery rate",
+            "independent samples",
             "ld",
-            "conditional false discovery rate"
+            "pleiotropy"
           ]
         },
         {
@@ -807,11 +787,11 @@
           "gt_value": "1000G Phase 3 (release Oct 2014)",
           "pred_terms": [
             "reference panel",
-            "six axes of genetic variation",
             "1000 genomes project",
-            "phasing",
+            "conditional false discovery rate",
+            "independent samples",
             "ld",
-            "conditional false discovery rate"
+            "pleiotropy"
           ]
         },
         {
@@ -819,11 +799,11 @@
           "gt_value": "1000G Phase 3 (release Oct 2014)",
           "pred_terms": [
             "reference panel",
-            "six axes of genetic variation",
             "1000 genomes project",
-            "phasing",
+            "conditional false discovery rate",
+            "independent samples",
             "ld",
-            "conditional false discovery rate"
+            "pleiotropy"
           ]
         },
         {
@@ -831,11 +811,11 @@
           "gt_value": "1000G Phase 3 (release Oct 2014)",
           "pred_terms": [
             "reference panel",
-            "six axes of genetic variation",
             "1000 genomes project",
-            "phasing",
+            "conditional false discovery rate",
+            "independent samples",
             "ld",
-            "conditional false discovery rate"
+            "pleiotropy"
           ]
         },
         {
@@ -843,11 +823,11 @@
           "gt_value": "1000G Phase 3 (release Oct 2014)",
           "pred_terms": [
             "reference panel",
-            "six axes of genetic variation",
             "1000 genomes project",
-            "phasing",
+            "conditional false discovery rate",
+            "independent samples",
             "ld",
-            "conditional false discovery rate"
+            "pleiotropy"
           ]
         },
         {
@@ -855,11 +835,11 @@
           "gt_value": "1000G Phase 3 (release Oct 2014)",
           "pred_terms": [
             "reference panel",
-            "six axes of genetic variation",
             "1000 genomes project",
-            "phasing",
+            "conditional false discovery rate",
+            "independent samples",
             "ld",
-            "conditional false discovery rate"
+            "pleiotropy"
           ]
         },
         {
@@ -867,11 +847,11 @@
           "gt_value": "1000G Phase 3 (release Oct 2014)",
           "pred_terms": [
             "reference panel",
-            "six axes of genetic variation",
             "1000 genomes project",
-            "phasing",
+            "conditional false discovery rate",
+            "independent samples",
             "ld",
-            "conditional false discovery rate"
+            "pleiotropy"
           ]
         },
         {
@@ -879,11 +859,11 @@
           "gt_value": "1000G Phase 3 (release Oct 2014)",
           "pred_terms": [
             "reference panel",
-            "six axes of genetic variation",
             "1000 genomes project",
-            "phasing",
+            "conditional false discovery rate",
+            "independent samples",
             "ld",
-            "conditional false discovery rate"
+            "pleiotropy"
           ]
         }
       ]
@@ -893,7 +873,7 @@
     "30448613_PMC6331247.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 19,
       "missed_examples": [
@@ -901,12 +881,12 @@
           "snp": "rs10838725",
           "gt_value": "Imputed",
           "pred_terms": [
-            "charge consortium",
-            "imputed",
-            "adsp",
+            "genetic",
+            "igap",
+            "datasets",
             "adgc",
-            "1000 genomes eur",
-            "1000 genome phase 3 v5 reference panel"
+            "1000 genome phase 3 v5 reference panel",
+            "gerp++"
           ]
         },
         {
@@ -923,12 +903,12 @@
           "snp": "rs1476679",
           "gt_value": "Imputed",
           "pred_terms": [
-            "charge consortium",
-            "imputed",
-            "adsp",
+            "genetic",
+            "igap",
+            "datasets",
             "adgc",
-            "1000 genomes eur",
-            "1000 genome phase 3 v5 reference panel"
+            "1000 genome phase 3 v5 reference panel",
+            "gerp++"
           ]
         },
         {
@@ -968,7 +948,7 @@
     "30617256_PMC6836675.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 90,
       "missed_examples": [
@@ -976,120 +956,120 @@
           "snp": "rs10792832",
           "gt_value": "Imputed",
           "pred_terms": [
+            "genotype single nucleotide polymorphism (snp)",
+            "reference panel",
             "igap",
-            "imputed",
+            "ukb",
             "pgc-alz",
-            "adsp",
-            "fm-summary",
-            "uk biobank genotype data"
+            "imputed"
           ]
         },
         {
           "snp": "rs10933431",
           "gt_value": "Imputed",
           "pred_terms": [
+            "genotype single nucleotide polymorphism (snp)",
+            "reference panel",
             "igap",
-            "imputed",
+            "ukb",
             "pgc-alz",
-            "adsp",
-            "fm-summary",
-            "uk biobank genotype data"
+            "imputed"
           ]
         },
         {
           "snp": "rs10933431",
           "gt_value": "Imputed",
           "pred_terms": [
+            "genotype single nucleotide polymorphism (snp)",
+            "reference panel",
             "igap",
-            "imputed",
+            "ukb",
             "pgc-alz",
-            "adsp",
-            "fm-summary",
-            "uk biobank genotype data"
+            "imputed"
           ]
         },
         {
           "snp": "rs10933431",
           "gt_value": "Imputed",
           "pred_terms": [
+            "genotype single nucleotide polymorphism (snp)",
+            "reference panel",
             "igap",
-            "imputed",
+            "ukb",
             "pgc-alz",
-            "adsp",
-            "fm-summary",
-            "uk biobank genotype data"
+            "imputed"
           ]
         },
         {
           "snp": "rs111278892",
           "gt_value": "Imputed",
           "pred_terms": [
+            "genotype single nucleotide polymorphism (snp)",
+            "reference panel",
             "igap",
-            "imputed",
+            "ukb",
             "pgc-alz",
-            "adsp",
-            "fm-summary",
-            "uk biobank genotype data"
+            "imputed"
           ]
         },
         {
           "snp": "rs11218343",
           "gt_value": "Imputed",
           "pred_terms": [
+            "genotype single nucleotide polymorphism (snp)",
+            "reference panel",
             "igap",
-            "imputed",
+            "ukb",
             "pgc-alz",
-            "adsp",
-            "fm-summary",
-            "uk biobank genotype data"
+            "imputed"
           ]
         },
         {
           "snp": "rs11218343",
           "gt_value": "Imputed",
           "pred_terms": [
+            "genotype single nucleotide polymorphism (snp)",
+            "reference panel",
             "igap",
-            "imputed",
+            "ukb",
             "pgc-alz",
-            "adsp",
-            "fm-summary",
-            "uk biobank genotype data"
+            "imputed"
           ]
         },
         {
           "snp": "rs11218343",
           "gt_value": "Imputed",
           "pred_terms": [
+            "genotype single nucleotide polymorphism (snp)",
+            "reference panel",
             "igap",
-            "imputed",
+            "ukb",
             "pgc-alz",
-            "adsp",
-            "fm-summary",
-            "uk biobank genotype data"
+            "imputed"
           ]
         },
         {
           "snp": "rs11257238",
           "gt_value": "Imputed",
           "pred_terms": [
+            "genotype single nucleotide polymorphism (snp)",
+            "reference panel",
             "igap",
-            "imputed",
+            "ukb",
             "pgc-alz",
-            "adsp",
-            "fm-summary",
-            "uk biobank genotype data"
+            "imputed"
           ]
         },
         {
           "snp": "rs11257238",
           "gt_value": "Imputed",
           "pred_terms": [
+            "genotype single nucleotide polymorphism (snp)",
+            "reference panel",
             "igap",
-            "imputed",
+            "ukb",
             "pgc-alz",
-            "adsp",
-            "fm-summary",
-            "uk biobank genotype data"
+            "imputed"
           ]
         }
       ]
@@ -1099,7 +1079,7 @@
     "30636644_PMC6330399.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 141,
       "missed_examples": [
@@ -1107,120 +1087,120 @@
           "snp": "rs10111328",
           "gt_value": "1000G Phase 3 (release Oct 2014)",
           "pred_terms": [
-            "haplotypes",
-            "reference panel",
             "phasing",
+            "1000 genomes phase 3",
+            "eur",
+            "genesis r package",
             "imputation",
-            "shapeit2",
-            "minimac3"
+            "plink software"
           ]
         },
         {
           "snp": "rs10111328",
           "gt_value": "1000G Phase 3 (release Oct 2014)",
           "pred_terms": [
-            "haplotypes",
-            "reference panel",
             "phasing",
+            "1000 genomes phase 3",
+            "eur",
+            "genesis r package",
             "imputation",
-            "shapeit2",
-            "minimac3"
+            "plink software"
           ]
         },
         {
           "snp": "rs1046135",
           "gt_value": "1000G Phase 3 (release Oct 2014)",
           "pred_terms": [
-            "haplotypes",
-            "reference panel",
             "phasing",
+            "1000 genomes phase 3",
+            "eur",
+            "genesis r package",
             "imputation",
-            "shapeit2",
-            "minimac3"
+            "plink software"
           ]
         },
         {
           "snp": "rs1046135",
           "gt_value": "1000G Phase 3 (release Oct 2014)",
           "pred_terms": [
-            "haplotypes",
-            "reference panel",
             "phasing",
+            "1000 genomes phase 3",
+            "eur",
+            "genesis r package",
             "imputation",
-            "shapeit2",
-            "minimac3"
+            "plink software"
           ]
         },
         {
           "snp": "rs10794342",
           "gt_value": "1000G Phase 3 (release Oct 2014)",
           "pred_terms": [
-            "haplotypes",
+            "shapeit2",
             "reference panel",
             "phasing",
-            "imputation",
-            "shapeit2",
-            "minimac3"
+            "minimac3",
+            "eur",
+            "imputation"
           ]
         },
         {
           "snp": "rs10947230",
           "gt_value": "1000G Phase 3 (release Oct 2014)",
           "pred_terms": [
-            "haplotypes",
+            "shapeit2",
             "reference panel",
             "phasing",
-            "imputation",
-            "shapeit2",
-            "minimac3"
+            "minimac3",
+            "eur",
+            "imputation"
           ]
         },
         {
           "snp": "rs10953322",
           "gt_value": "1000G Phase 3 (release Oct 2014)",
           "pred_terms": [
-            "haplotypes",
+            "shapeit2",
             "reference panel",
             "phasing",
-            "imputation",
-            "shapeit2",
-            "minimac3"
+            "minimac3",
+            "eur",
+            "imputation"
           ]
         },
         {
           "snp": "rs11089928",
           "gt_value": "1000G Phase 3 (release Oct 2014)",
           "pred_terms": [
-            "haplotypes",
-            "reference panel",
             "phasing",
+            "1000 genomes phase 3",
+            "eur",
+            "genesis r package",
             "imputation",
-            "shapeit2",
-            "minimac3"
+            "plink software"
           ]
         },
         {
           "snp": "rs11089928",
           "gt_value": "1000G Phase 3 (release Oct 2014)",
           "pred_terms": [
-            "haplotypes",
-            "reference panel",
             "phasing",
+            "1000 genomes phase 3",
+            "eur",
+            "genesis r package",
             "imputation",
-            "shapeit2",
-            "minimac3"
+            "plink software"
           ]
         },
         {
           "snp": "rs1172922",
           "gt_value": "1000G Phase 3 (release Oct 2014)",
           "pred_terms": [
-            "haplotypes",
+            "shapeit2",
             "reference panel",
             "phasing",
-            "imputation",
-            "shapeit2",
-            "minimac3"
+            "minimac3",
+            "eur",
+            "imputation"
           ]
         }
       ]
@@ -1230,7 +1210,7 @@
     "30651383_PMC6369905.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 63,
       "missed_examples": [
@@ -1291,7 +1271,7 @@
     "30805717_PMC7193309.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 14,
       "missed_examples": [
@@ -1299,88 +1279,96 @@
           "snp": "rs10501320",
           "gt_value": "1000G",
           "pred_terms": [
-            "reference panel",
-            "imputation",
             "principal components",
-            "ldsc",
-            "-hess"
+            "1000 genome",
+            "chr",
+            "hapmap 2",
+            "impg",
+            "snp"
           ]
         },
         {
           "snp": "rs10501320",
           "gt_value": "HapMap2",
           "pred_terms": [
-            "reference panel",
-            "imputation",
             "principal components",
-            "ldsc",
-            "-hess"
+            "1000 genome",
+            "chr",
+            "hapmap 2",
+            "impg",
+            "snp"
           ]
         },
         {
           "snp": "rs12805422",
           "gt_value": "1000G",
           "pred_terms": [
-            "reference panel",
-            "imputation",
             "principal components",
-            "ldsc",
-            "-hess"
+            "1000 genome",
+            "chr",
+            "hapmap 2",
+            "impg",
+            "snp"
           ]
         },
         {
           "snp": "rs12805422",
           "gt_value": "HapMap2",
           "pred_terms": [
-            "reference panel",
-            "imputation",
             "principal components",
-            "ldsc",
-            "-hess"
+            "1000 genome",
+            "chr",
+            "hapmap 2",
+            "impg",
+            "snp"
           ]
         },
         {
           "snp": "rs1483121",
           "gt_value": "1000G",
           "pred_terms": [
-            "reference panel",
-            "imputation",
             "principal components",
-            "ldsc",
-            "-hess"
+            "1000 genome",
+            "chr",
+            "hapmap 2",
+            "impg",
+            "snp"
           ]
         },
         {
           "snp": "rs1483121",
           "gt_value": "HapMap2",
           "pred_terms": [
-            "reference panel",
-            "imputation",
             "principal components",
-            "ldsc",
-            "-hess"
+            "1000 genome",
+            "chr",
+            "hapmap 2",
+            "impg",
+            "snp"
           ]
         },
         {
           "snp": "rs17747324",
           "gt_value": "1000G",
           "pred_terms": [
-            "reference panel",
-            "imputation",
             "principal components",
-            "ldsc",
-            "-hess"
+            "1000 genome",
+            "chr",
+            "hapmap 2",
+            "impg",
+            "snp"
           ]
         },
         {
           "snp": "rs17747324",
           "gt_value": "HapMap2",
           "pred_terms": [
-            "reference panel",
-            "imputation",
             "principal components",
-            "ldsc",
-            "-hess"
+            "1000 genome",
+            "chr",
+            "hapmap 2",
+            "impg",
+            "snp"
           ]
         },
         {
@@ -1400,7 +1388,7 @@
     "30820047_PMC6463297.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 104,
       "missed_examples": [
@@ -1423,84 +1411,84 @@
           "snp": "rs10808026",
           "gt_value": "1000G",
           "pred_terms": [
-            "a-related gene sets",
-            "fast",
-            "gcta cojo",
             "reference panel",
-            "mach",
-            "haplotypes"
+            "machminimac",
+            "phasing",
+            "pre-phasing",
+            "pre-analysis quality control",
+            "imputation"
           ]
         },
         {
           "snp": "rs10808026",
           "gt_value": "1000G",
           "pred_terms": [
-            "a-related gene sets",
-            "fast",
-            "gcta cojo",
             "reference panel",
-            "mach",
-            "haplotypes"
+            "machminimac",
+            "phasing",
+            "pre-phasing",
+            "pre-analysis quality control",
+            "imputation"
           ]
         },
         {
           "snp": "rs10808026",
           "gt_value": "1000G",
           "pred_terms": [
-            "a-related gene sets",
-            "fast",
-            "gcta cojo",
             "reference panel",
-            "mach",
-            "haplotypes"
+            "machminimac",
+            "phasing",
+            "pre-phasing",
+            "pre-analysis quality control",
+            "imputation"
           ]
         },
         {
           "snp": "rs10933431",
           "gt_value": "1000G",
           "pred_terms": [
-            "a-related gene sets",
-            "fast",
-            "gcta cojo",
             "reference panel",
-            "mach",
-            "haplotypes"
+            "machminimac",
+            "phasing",
+            "pre-phasing",
+            "pre-analysis quality control",
+            "imputation"
           ]
         },
         {
           "snp": "rs10933431",
           "gt_value": "1000G",
           "pred_terms": [
-            "a-related gene sets",
-            "fast",
-            "gcta cojo",
             "reference panel",
-            "mach",
-            "haplotypes"
+            "machminimac",
+            "phasing",
+            "pre-phasing",
+            "pre-analysis quality control",
+            "imputation"
           ]
         },
         {
           "snp": "rs10933431",
           "gt_value": "1000G",
           "pred_terms": [
-            "a-related gene sets",
-            "fast",
-            "gcta cojo",
             "reference panel",
-            "mach",
-            "haplotypes"
+            "machminimac",
+            "phasing",
+            "pre-phasing",
+            "pre-analysis quality control",
+            "imputation"
           ]
         },
         {
           "snp": "rs11218343",
           "gt_value": "1000G",
           "pred_terms": [
-            "a-related gene sets",
-            "fast",
-            "gcta cojo",
             "reference panel",
-            "mach",
-            "haplotypes"
+            "machminimac",
+            "phasing",
+            "pre-phasing",
+            "pre-analysis quality control",
+            "imputation"
           ]
         }
       ]
@@ -1510,7 +1498,7 @@
     "30930738_PMC6425305.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 4,
       "missed_examples": [
@@ -1518,48 +1506,48 @@
           "snp": "rs10792421",
           "gt_value": "1000G",
           "pred_terms": [
-            "reference panel",
-            "phasing",
-            "impute2",
-            "imputation",
-            "shapeit2",
-            "machminimac"
+            "ad cases",
+            "conditional qq-plots",
+            "conditional fdr method",
+            "bip",
+            "ad",
+            "bip cases"
           ]
         },
         {
           "snp": "rs10792421",
           "gt_value": "1000G",
           "pred_terms": [
-            "reference panel",
-            "phasing",
-            "impute2",
-            "imputation",
-            "shapeit2",
-            "machminimac"
+            "ad cases",
+            "conditional qq-plots",
+            "conditional fdr method",
+            "bip",
+            "ad",
+            "bip cases"
           ]
         },
         {
           "snp": "rs11649476",
           "gt_value": "1000G",
           "pred_terms": [
-            "reference panel",
-            "phasing",
-            "impute2",
-            "imputation",
-            "shapeit2",
-            "machminimac"
+            "ad cases",
+            "conditional qq-plots",
+            "conditional fdr method",
+            "bip",
+            "ad",
+            "bip cases"
           ]
         },
         {
           "snp": "rs11649476",
           "gt_value": "1000G",
           "pred_terms": [
-            "reference panel",
-            "phasing",
-            "impute2",
-            "imputation",
-            "shapeit2",
-            "machminimac"
+            "ad cases",
+            "conditional qq-plots",
+            "conditional fdr method",
+            "bip",
+            "ad",
+            "bip cases"
           ]
         }
       ]
@@ -1569,7 +1557,7 @@
     "30979435_PMC6783343.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 31,
       "missed_examples": [
@@ -1577,120 +1565,120 @@
           "snp": "rs12378268",
           "gt_value": "1000G",
           "pred_terms": [
-            "genetic variation",
+            "principal components",
+            "reference panel",
+            "locus",
             "1000 genomes project",
-            "plink 1.9",
-            "18,334 loci genes",
-            "common snps",
-            "european reference panel"
+            "grm",
+            "adgc"
           ]
         },
         {
           "snp": "rs12378268",
           "gt_value": "1000G",
           "pred_terms": [
-            "genetic variation",
+            "principal components",
+            "reference panel",
+            "locus",
             "1000 genomes project",
-            "plink 1.9",
-            "18,334 loci genes",
-            "common snps",
-            "european reference panel"
+            "grm",
+            "adgc"
           ]
         },
         {
           "snp": "rs1834550",
           "gt_value": "1000G",
           "pred_terms": [
-            "genetic variation",
+            "principal components",
+            "reference panel",
+            "locus",
             "1000 genomes project",
-            "plink 1.9",
-            "18,334 loci genes",
-            "common snps",
-            "european reference panel"
+            "grm",
+            "adgc"
           ]
         },
         {
           "snp": "rs1834550",
           "gt_value": "1000G",
           "pred_terms": [
-            "genetic variation",
+            "principal components",
+            "reference panel",
+            "locus",
             "1000 genomes project",
-            "plink 1.9",
-            "18,334 loci genes",
-            "common snps",
-            "european reference panel"
+            "grm",
+            "adgc"
           ]
         },
         {
           "snp": "rs184909761",
           "gt_value": "1000G",
           "pred_terms": [
-            "genetic variation",
+            "principal components",
+            "reference panel",
+            "locus",
             "1000 genomes project",
-            "plink 1.9",
-            "18,334 loci genes",
-            "common snps",
-            "european reference panel"
+            "grm",
+            "adgc"
           ]
         },
         {
           "snp": "rs184909761",
           "gt_value": "1000G",
           "pred_terms": [
-            "genetic variation",
+            "principal components",
+            "reference panel",
+            "locus",
             "1000 genomes project",
-            "plink 1.9",
-            "18,334 loci genes",
-            "common snps",
-            "european reference panel"
+            "grm",
+            "adgc"
           ]
         },
         {
           "snp": "rs3818361",
           "gt_value": "1000G",
           "pred_terms": [
-            "genetic variation",
+            "principal components",
+            "reference panel",
+            "locus",
             "1000 genomes project",
-            "plink 1.9",
-            "18,334 loci genes",
-            "common snps",
-            "european reference panel"
+            "grm",
+            "adgc"
           ]
         },
         {
           "snp": "rs3818361",
           "gt_value": "1000G",
           "pred_terms": [
-            "genetic variation",
+            "principal components",
+            "reference panel",
+            "locus",
             "1000 genomes project",
-            "plink 1.9",
-            "18,334 loci genes",
-            "common snps",
-            "european reference panel"
+            "grm",
+            "adgc"
           ]
         },
         {
           "snp": "rs4277762",
           "gt_value": "1000G",
           "pred_terms": [
-            "genetic variation",
+            "principal components",
+            "reference panel",
+            "locus",
             "1000 genomes project",
-            "plink 1.9",
-            "18,334 loci genes",
-            "common snps",
-            "european reference panel"
+            "grm",
+            "adgc"
           ]
         },
         {
           "snp": "rs4277762",
           "gt_value": "1000G",
           "pred_terms": [
-            "genetic variation",
+            "principal components",
+            "reference panel",
+            "locus",
             "1000 genomes project",
-            "plink 1.9",
-            "18,334 loci genes",
-            "common snps",
-            "european reference panel"
+            "grm",
+            "adgc"
           ]
         }
       ]
@@ -1700,7 +1688,7 @@
     "31426376_PMC6723529.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 23,
       "missed_examples": [

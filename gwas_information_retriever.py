@@ -3,6 +3,9 @@ import re
 import ast
 import os
 from copy import deepcopy
+from itertools import chain
+from lxml import etree
+from xml.etree import ElementTree as ET
 import requests
 import pandas as pd
 from langchain_core.documents import Document
@@ -15,10 +18,62 @@ from sentence_transformers import CrossEncoder
 from llama_cpp import Llama, LogitsProcessorList
 from huggingface_hub import login
 from utils import *
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+import nest_asyncio
+import asyncio
+from openai import OpenAI, AsyncOpenAI
 import langextract as lx
-from langextract.providers import ollama
+from langextract.providers.openai import OpenAILanguageModel
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
+import torch
 from dotenv import load_dotenv
 load_dotenv()
+
+LLAMA_CLIENT = OpenAI(base_url=f"http://localhost:{os.environ.get('LLAMA_URL_PORT', 0)}/v1", api_key="none")
+# ASYNC_LLAMA_CLIENT = AsyncOpenAI(base_url=f"http://localhost:{os.environ.get('LLAMA_URL_PORT', 0)}/v1", api_key="none")
+
+ENTREZ_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
+
+class MedCPTArticleEmbeddings:
+    """Chroma-compatible embedding function using MedCPT Article Encoder."""
+    def __init__(self, model_name="ncbi/MedCPT-Article-Encoder", device="mps"):
+        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
+        self.model = AutoModel.from_pretrained(model_name).to(device).eval()
+        self.device = device
+
+    def embed_documents(self, texts: List[str]) -> List[List[float]]:
+        # Article encoder expects [title, abstract] pairs.
+        # We have chunks with no separate title, so pass "" as title.
+        pairs = [["", t] for t in texts]
+        with torch.no_grad():
+            enc = self.tokenizer(pairs, truncation=True, padding=True,
+                                 return_tensors="pt", max_length=512)
+            enc = {k: v.to(self.device) for k, v in enc.items()}
+            embeds = self.model(**enc).last_hidden_state[:, 0, :]
+        return embeds.cpu().tolist()
+
+    def embed_query(self, text: str) -> List[float]:
+        # This should not be called for article encoder, but Chroma requires it.
+        return self.embed_documents([text])[0]
+
+class MedCPTQueryEmbeddings:
+    """Chroma-compatible embedding function using MedCPT Query Encoder."""
+    def __init__(self, model_name="ncbi/MedCPT-Query-Encoder", device="mps"):
+        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
+        self.model = AutoModel.from_pretrained(model_name).to(device).eval()
+        self.device = device
+
+    def embed_documents(self, texts: List[str]) -> List[List[float]]:
+        with torch.no_grad():
+            enc = self.tokenizer(texts, truncation=True, padding=True,
+                                 return_tensors="pt", max_length=64)
+            enc = {k: v.to(self.device) for k, v in enc.items()}
+            embeds = self.model(**enc).last_hidden_state[:, 0, :]
+        return embeds.cpu().tolist()
+
+    def embed_query(self, text: str) -> List[float]:
+        return self.embed_documents([text])[0]
+
 
 class AllowedTokensProcessor(LogitsProcessor):
     def __init__(self, allowed_token_ids):
@@ -39,11 +94,379 @@ class AllowedTokensProcessorLlamaCpp:
         for token_id in self.allowed_token_ids:
             mask[token_id] = 0
         return scores + mask
+
+def clean_text(text: str) -> str:
+    # Lowercase
+    text = text.lower()
+    # Remove URLs
+    text = re.sub(r'http\S+|www\S+', '', text)
+    # Remove tabs and newlines
+    text = text.replace('\n', ' ').replace('\r', ' ').replace('\t', ' ')
+    # Normalise unicode minus/dash variants to ASCII hyphen before stripping
+    text = text.replace('−', '-').replace('–', '-').replace('—', '-')
+    # Remove special characters; keep punctuation needed for numeric/scientific values
+    text = re.sub(r'[^a-z0-9\s\.\,\-\+\%\(\)\<\>\=\:]', '', text)
+    # Replace multiple spaces with single space
+    text = re.sub(r'\s+', ' ', text).strip()
+    return text
+
+def clean_document(document: Document) -> Document:
+    cleaned_text = clean_text(document.page_content)
+    cleaned_document = Document(page_content=cleaned_text, metadata=document.metadata)
+    return cleaned_document
+
+def ingest_doc_from_pmc(pmid: int, pmcid: str, embedding_model_name: str = "abhinand/MedEmbed-large-v0.1", 
+                        chroma_db_path: str = "./chroma_db", chroma_db_collection_name: str = "advp2", 
+                        chunk_size: int = 500, chunk_overlap: int = 50):
+    documents = []
+    metadata = []
+    try:
+        curr_doc = ""
+        url = f"https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/{pmcid}/unicode"
+        response = requests.get(url)
+        if response.status_code == 200:
+            data = response.json()
+            for d in data:
+                doc = d["documents"]
+                for p in doc:
+                    passage = p["passages"]
+                    for item in passage:
+                        if "text" in item:
+                            curr_doc += "\n\n" + item["text"]
+        documents.append(curr_doc)
+        metadata.append({"PMID": str(pmid), "PMCID": pmcid})
+    except:
+        return 0
+        # raise Exception(f"Failed to extract paper {pmid}_{pmcid} from PMC with error {e}")
     
+
+    # split documents into chunks
+    try:
+        text_splitter = RecursiveCharacterTextSplitter(
+            chunk_size=chunk_size, 
+            chunk_overlap=chunk_overlap,
+            separators=["\n\n", "\n", " ", ""]
+        )
+        splitted_documents = text_splitter.create_documents(texts=documents, metadatas=metadata)
+        splitted_documents = [clean_document(doc) for doc in splitted_documents]
+    except:
+        return 0
+    
+
+    # create Chroma vector store
+    try:
+        chroma_db = Chroma(
+            persist_directory=chroma_db_path,
+            # embedding_function=MedCPTArticleEmbeddings(),
+            embedding_function=HuggingFaceEmbeddings(model_name=embedding_model_name),
+            collection_name=chroma_db_collection_name,
+            collection_metadata={"hnsw:space": "cosine"}
+        )
+        # delete current collection contents before adding new documents
+        collection = chroma_db._collection
+        all_docs = collection.get(include=[])
+        all_ids = all_docs["ids"]
+        if all_ids:
+            collection.delete(ids=all_ids)
+        # add documents to Chroma vector store
+        chroma_db.add_documents(splitted_documents)
+        return len(splitted_documents)
+    except:
+        return 0
+    
+EUTILS = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
+ 
+ 
+def fetch_pmc_xml(pmcid: str) -> bytes:
+    """Fetch full-text JATS XML for a PMC article."""
+    pmcid = pmcid.replace("PMC", "")
+    url = f"{EUTILS}/efetch.fcgi"
+    params = {"db": "pmc", "id": pmcid, "rettype": "xml"}
+    r = requests.get(url, params=params, timeout=30)
+    r.raise_for_status()
+    return r.content
+ 
+ 
+def get_text_with_offsets(elem) -> tuple:
+    """
+    Flatten an element to plain text while tracking, for each <xref ref-type='bibr'>,
+    (rid, start_char, end_char, marker_text) in the flat string.
+    """
+    parts = []
+    xrefs = []  # (rid, start, end, marker)
+    pos = [0]
+ 
+    def walk(node):
+        if node.text:
+            parts.append(node.text)
+            pos[0] += len(node.text)
+        for child in node:
+            if child.tag == "xref" and child.get("ref-type") == "bibr":
+                start = pos[0]
+                marker = "".join(child.itertext())
+                parts.append(marker)
+                pos[0] += len(marker)
+                end = pos[0]
+                rid = child.get("rid", "")
+                # rid can be space-separated for grouped citations
+                for r in rid.split():
+                    xrefs.append((r, start, end, marker))
+            else:
+                walk(child)
+            if child.tail:
+                parts.append(child.tail)
+                pos[0] += len(child.tail)
+ 
+    walk(elem)
+    return "".join(parts), xrefs
+ 
+ 
+def extract_context(
+    text: str,
+    start: int,
+    end: int,
+    mode: str = "sentence",
+    window: int = 500,
+) -> str:
+    """
+    Extract context around a citation at [start, end) in text.
+ 
+    mode options:
+      "chars"    — raw character window of size `window` on each side; no snapping
+      "sentence" — (default) expand to nearest sentence boundaries within `window` chars
+      "sentences"— N full sentences before+after; pass window=N (default 1)
+      "paragraph"— the entire containing paragraph (ignores `window`)
+    """
+    if mode == "chars":
+        left = max(0, start - window)
+        right = min(len(text), end + window)
+ 
+    elif mode == "sentence":
+        left = max(0, start - window)
+        right = min(len(text), end + window)
+        m = re.search(r"[.!?]\s+[A-Z]", text[left:start])
+        if m:
+            left = left + m.end() - 1
+        m = re.search(r"[.!?](?:\s|$)", text[end:right])
+        if m:
+            right = end + m.end()
+ 
+    elif mode == "sentences":
+        n = max(1, window)
+        # Split on sentence-ending punctuation followed by space+capital
+        sentence_ends = [0] + [
+            m.end() for m in re.finditer(r"[.!?]\s+(?=[A-Z])", text)
+        ] + [len(text)]
+        # Find which sentence the citation lives in
+        cite_sentence = next(
+            (i for i, e in enumerate(sentence_ends) if e > start), 1
+        ) - 1
+        left_idx = max(0, cite_sentence - n)
+        right_idx = min(len(sentence_ends) - 1, cite_sentence + n + 1)
+        left = sentence_ends[left_idx]
+        right = sentence_ends[right_idx]
+ 
+    elif mode == "paragraph":
+        left_m = text.rfind("\n\n", 0, start)
+        left = left_m + 2 if left_m != -1 else 0
+        right_m = text.find("\n\n", end)
+        right = right_m if right_m != -1 else len(text)
+ 
+    else:
+        raise ValueError(f"Unknown mode '{mode}'. Use: chars | sentence | sentences | paragraph")
+ 
+    return text[left:right].strip().replace("\n", " ")
+ 
+ 
+def parse_reference(ref_elem) -> Dict:
+    """Pull title, PMID, PMCID, DOI, authors from a <ref> element."""
+    out = {"pmid": None, "pmcid": None, "doi": None, "title": None, "authors": None}
+ 
+    for pi in ref_elem.findall(".//pub-id"):
+        t = pi.get("pub-id-type")
+        if t == "pmid":
+            out["pmid"] = (pi.text or "").strip()
+        elif t == "pmcid" or t == "pmc":
+            out["pmcid"] = (pi.text or "").strip()
+        elif t == "doi":
+            out["doi"] = (pi.text or "").strip()
+ 
+    title_el = ref_elem.find(".//article-title")
+    if title_el is not None:
+        out["title"] = " ".join(title_el.itertext()).strip()
+ 
+    authors = []
+    for name in ref_elem.findall(".//name"):
+        surname = name.findtext("surname", "").strip()
+        given = name.findtext("given-names", "").strip()
+        if surname:
+            authors.append(f"{surname} {given}".strip())
+    if authors:
+        out["authors"] = authors
+ 
+    return out
+ 
+ 
+def resolve_missing_ids(refs: Dict[str, Dict]) -> None:
+    """For refs missing PMID/PMCID, try NCBI's ID converter using DOI."""
+    needs = [(rid, r) for rid, r in refs.items()
+             if r.get("doi") and not (r.get("pmid") and r.get("pmcid"))]
+    for rid, r in needs:
+        try:
+            url = "https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/"
+            params = {"ids": r["doi"], "format": "json", "tool": "pmc_cite", "email": "you@example.com"}
+            resp = requests.get(url, params=params, timeout=15).json()
+            rec = resp.get("records", [{}])[0]
+            r["pmid"] = r.get("pmid") or rec.get("pmid")
+            r["pmcid"] = r.get("pmcid") or rec.get("pmcid")
+            # time.sleep(0.34)  # NCBI rate limit: 3 req/s without API key
+        except Exception:
+            pass
+ 
+ 
+def get_citations_with_context(
+    pmcid: str,
+    mode: str = "sentences",
+    window: int = 500,
+) -> List[Dict]:
+    xml_bytes = fetch_pmc_xml(pmcid)
+    root = etree.fromstring(xml_bytes)
+ 
+    # Build reference dictionary keyed by ref id
+    refs: Dict[str, Dict] = {}
+    for ref in root.findall(".//ref-list//ref"):
+        rid = ref.get("id")
+        if rid:
+            refs[rid] = parse_reference(ref)
+ 
+    resolve_missing_ids(refs)
+ 
+    # Walk body paragraphs, capture each xref + context
+    results = []
+    body = root.find(".//body")
+    if body is None:
+        return results
+ 
+    for p in body.iter("p"):
+        flat, xrefs = get_text_with_offsets(p)
+        if not xrefs:
+            continue
+        # Section name if available
+        section = None
+        parent = p.getparent()
+        while parent is not None:
+            title = parent.find("title")
+            if title is not None and title.text:
+                section = title.text.strip()
+                break
+            parent = parent.getparent()
+ 
+        for rid, start, end, marker in xrefs:
+            ref = refs.get(rid, {})
+            if ref.get("pmid", None):
+                results.append({
+                    "pmid": int(ref.get("pmid")),
+                    "pmcid": ref.get("pmcid"),
+                    "title": ref.get("title"),
+                    "doi": ref.get("doi"),
+                    "citation_marker": marker,
+                    "section": section,
+                    "context": extract_context(flat, start, end, mode=mode, window=window),
+                })
+    
+    # remove duplicate paper
+    results_no_duplicate = {}
+    for res in results:
+        if res["pmid"] not in results_no_duplicate:
+            results_no_duplicate[res["pmid"]] = [res["pmcid"], res["title"], "", [res["context"]]]
+        else:
+            results_no_duplicate[res["pmid"]][-1].append(res["context"])
+    
+    # also extract abstract
+    results_all_pmids = list(results_no_duplicate.keys())
+    for i in range(0, len(results_all_pmids), 20):
+        batch_pmids = results_all_pmids[i: min(i + 20, len(results_all_pmids))]
+        batch_pmids = [str(pmid) for pmid in batch_pmids]
+        r = requests.get(
+            f"{ENTREZ_URL}/efetch.fcgi",
+            params={
+                "db": "pubmed",
+                "id": ",".join(batch_pmids),
+                "rettype": "xml",
+                "retmode": "xml",
+                "api_key": os.environ.get("ENTREZ_API_KEY", ""),
+            },
+            timeout=60,
+        )
+        r.raise_for_status()
+
+        for article in ET.fromstring(r.content).findall(".//PubmedArticle"):
+            # get article
+            art = article.find(".//Article")
+            # get abstract and search for term that is in there
+            abstract = " ".join("".join(el.itertext()) for el in art.findall(".//AbstractText"))
+            try:
+                pmid = int(article.findtext(".//MedlineCitation/PMID", ""))
+                if pmid in results_all_pmids:
+                    results_no_duplicate[pmid][2] = abstract
+            except:
+                continue
+
+    # # back to normal format
+    results = []
+    for pmid in results_no_duplicate:
+        results.append({
+            "pmid": pmid,
+            "pmcid": results_no_duplicate[pmid][0],
+            "title": results_no_duplicate[pmid][1],
+            "abstract": results_no_duplicate[pmid][2],
+            "context_lst": results_no_duplicate[pmid][3]
+        })
+    # # extract 
+    return results
+
+
+GWAS_TIAB_TERMS = [
+    'GWAS', 'genome-wide association', "polygenic risk", "polygenic score", "genetic variant",
+    "genetic risk", "SNP", "single nucleotide polymorphism", "risk loci", "genetic association",
+    "meta-analysis", "Mendelian randomization", "whole genome sequencing", "whole exome sequencing",
+    "copy number variant", "heritability", "gene expression", "transcriptome", "eQTL",
+    "epigenome", "DNA methylation", "Genetic Predisposition to Disease", "Genetic Loci", 
+    "Aged", "Humans", "Risk Factors", "genome-wide", "apoe", "late-onset", "polymorphisms", "genotype",
+    "pathogenesis", "pathology", "biomarkers", "haplotype", "allete", "chromosome", "methylation", "ε4", 
+    "phenotype", "linkage", "neuroimaging", "polygenic", "quantitative trait", "epigenetic"
+]
+AD_TIAB_TERMS = [
+    "Alzheimer", "dementia", "cognitive impairment", "neurodegeneration", "Frontotemporal dementia", 
+    "Parkinson Disease", "Amyotrophic Lateral Sclerosis", "Progressive Supranuclear Palsy", 
+    "Corticobasal Degeneration", "Vascular dementia", "AD", "neurodegenerative", "parkinson", "cognitive",
+    "amyloid", "sclerosis", "cognitive decline", "cerebrospinal", "hippocampal"
+]
+
+def get_gwas_ad_citations_with_context(
+    pmcid: str,
+    mode: str = "sentences",
+    window: int = 500,
+) -> List[Dict]:
+    res = get_citations_with_context(pmcid, mode, window)
+    gwas_ad_res = []
+    for item in res:
+        is_gwas = (
+            any((term.lower() in str(item["title"]).lower() for term in GWAS_TIAB_TERMS)) or
+            any((term.lower() in str(item["abstract"]).lower() for term in GWAS_TIAB_TERMS))
+        )
+        is_ad = (
+            any((term.lower() in str(item["title"]).lower() for term in AD_TIAB_TERMS)) or
+            any((term.lower() in str(item["abstract"]).lower() for term in AD_TIAB_TERMS))
+        )
+        if is_gwas and is_ad:
+            gwas_ad_res.append(item)
+    return gwas_ad_res
+
 class GWASInformationRetriever:
-    def __init__(self, referencing_col_df: pd.DataFrame, referencing_col_with_choice_df: Optional[pd.DataFrame] = None, 
-                 chroma_db_path: str = "./chroma_db", chroma_db_collection_name: str = "gwas_paper_collection", 
-                 embeddings_model_name: str = "NeuML/pubmedbert-base-embeddings", reranker_model_name: str = "BAAI/bge-reranker-base",
+    def __init__(self, referencing_col_df: pd.DataFrame,
+                 chroma_db_path: str = "./chroma_db", chroma_db_collection_name: str = "advp2", 
+                 embeddings_model_name: str = "abhinand/MedEmbed-large-v0.1", reranker_model_name: str = "BAAI/bge-reranker-base",
                  llm_model_name: Optional[str] = "Qwen/Qwen2.5-1.5B-Instruct", llm_gguf_path: Optional[str] = "./qwen2.5-3b-instruct-q8/qwen2.5-3b-instruct-q8_0.gguf",
                  use_hf: bool = True, device: Optional[str] = None):
         # load ref col df
@@ -72,6 +495,7 @@ class GWASInformationRetriever:
         # load vector store
         self.vector_store = Chroma(
             persist_directory=chroma_db_path,
+            # embedding_function=MedCPTQueryEmbeddings(),
             embedding_function=HuggingFaceEmbeddings(model_name=embeddings_model_name),
             collection_name=chroma_db_collection_name,
             collection_metadata={"hnsw:space": "cosine"}
@@ -81,18 +505,20 @@ class GWASInformationRetriever:
         self.device = device if device is not None else "cpu"
         
         # load the embeddings
-        # self.embeddings_model_tokenizer = AutoTokenizer.from_pretrained(embeddings_model_name)
-        # self.embeddings_model = AutoModel.from_pretrained(
-        #     embeddings_model_name,
-        #     device_map = self.device,
-        # )
+        self.embeddings_model_tokenizer = AutoTokenizer.from_pretrained(embeddings_model_name)
+        self.embeddings_model = AutoModel.from_pretrained(
+            embeddings_model_name
+        )
 
         # load the reranker
-        self.reranker_model = CrossEncoder(
-            model_name_or_path=reranker_model_name, 
-            device = self.device,
-            trust_remote_code = True
-        ) 
+        # self.reranker_model = CrossEncoder(
+        #     model_name_or_path=reranker_model_name, 
+        #     device = self.device,
+        #     trust_remote_code = True
+        # ) 
+        self.reranker_model_tokenizer = AutoTokenizer.from_pretrained(reranker_model_name)
+        self.reranker_model = AutoModelForSequenceClassification.from_pretrained(reranker_model_name)
+        self.reranker_model.eval()
 
         # load the llm
         # bnb_config = BitsAndBytesConfig(
@@ -195,6 +621,27 @@ class GWASInformationRetriever:
     #     best_score_by_choice = torch.max(similarity_score, dim=0).values
     #     print(best_score_by_choice)
     #     return [c for i, c in enumerate(choices_lst) if best_score_by_choice[i] >= threshold]
+
+    def rerank(self, query: str, chunks: list[str]) -> list[str]:
+        pairs = [[query, chunk] for chunk in chunks]
+        inputs = self.reranker_model_tokenizer(
+            pairs,
+            return_tensors="pt",
+            truncation=True,
+            max_length=512,
+            padding=True
+        )
+        with torch.no_grad():
+            scores = self.reranker_model(**inputs).logits.squeeze(-1)
+        
+        ranked = sorted(
+            zip(chunks, scores.tolist()),
+            key=lambda x: x[1],
+            reverse=True
+        )
+        
+        ranked_docs = [chunk for chunk, _ in ranked]
+        return ranked_docs[:self.top_k_rerank] if self.top_k_rerank else ranked_docs
     
     def make_messages(self, query: str, documents: List[str], examples: str = "", use_examples_in_llm: bool = True) -> List[Dict]:
         document_str = "\n\n".join([f"EXCERPT {i + 1}:\n{d}" for i, d in enumerate(documents)])
@@ -335,13 +782,143 @@ Output: """
         numbers = re.findall(r"\d+", list_str)
 
         return [int(n) for n in numbers]
+    
+    def extract_possible_info_from_paper_specified(
+        self, pmid: int, pmcid: str, mode: str = "chunk",
+        ref_col_lst: List = [], ref_col_context_lst: List = [],
+        ref_col_examples_lst: List = [], ref_col_use_examples_in_llm_lst: List = [],
+        ref_col_retrieval_query_lst: List = []
+    ):
+        """
+        Given a paper, extract all possible answer for each category, this is the version that require you to specify the list
+        """
+        res = {}
 
-    def extract_possible_info_from_paper(self, pmid: int, pmcid: str) -> Dict[str, List]:
+        num_docs = ingest_doc_from_pmc(pmid, pmcid)
+        if num_docs == 0:
+            return {ref_col: [] for ref_col in ref_col_lst}
+        
+        for ref_col, ref_col_context, ref_col_examples, ref_col_use_examples_in_llm, ref_col_retrieval_query in zip(
+            ref_col_lst,
+            ref_col_context_lst,
+            ref_col_examples_lst,
+            ref_col_use_examples_in_llm_lst,
+            ref_col_retrieval_query_lst,
+        ):
+            # Retrieval uses definition + examples (better recall); the LLM
+            # prompt sees only the definition, with examples in a quarantined block.
+            query = ref_col_context
+            retrieval_query = ref_col_retrieval_query
+            documents = self.vector_store.similarity_search_with_relevance_scores(
+                query = retrieval_query,
+                k = self.top_k,
+                filter = {"$and": [{"PMID": str(pmid)}, {"PMCID": pmcid}]},
+            )
+            documents = [d.page_content for d, score in documents if score >= self.similarity_score_threshold]
+            # if no docs can found => no useful info 
+            if len(documents) == 0:
+                res[ref_col] = []
+                continue
+
+            # rerank
+            # scores = self.reranker_model.predict([(retrieval_query, d) for d in documents])
+            # documents = [doc for _, doc in sorted(zip(scores, documents), key=lambda x: x[0], reverse=True)]
+            # documents = documents[:self.top_k_rerank]
+            documents = self.rerank(retrieval_query, documents)
+            messages = self.make_messages(query, documents, examples=ref_col_examples, use_examples_in_llm=ref_col_use_examples_in_llm)
+            response = LLAMA_CLIENT.chat.completions.create(
+                model="local",
+                messages=messages, max_tokens=self.max_new_tokens,
+                temperature=self.temperature, top_p=self.top_p,
+                response_format={
+                    "type": "json_object",
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "items": {
+                                "type": "array",
+                                "items": {"type": "string"},
+                            },
+                        },
+                        "required": ["items"],
+                    },
+                },
+            )
+            content = response.choices[0].message.content
+            if ref_col not in res:
+                res[ref_col] = []
+            new_info = self.extract_lst_from_llm_output(content)
+            new_info = list(map(lambda x: x.lower(), new_info))
+            res[ref_col] = list(set(res[ref_col] + new_info))
+            if mode == "all":
+                messages = self.make_messages(query, [documents], examples=ref_col_examples, use_examples_in_llm=ref_col_use_examples_in_llm)
+                response = LLAMA_CLIENT.chat.completions.create(
+                    model="local",
+                    messages=messages, max_tokens=self.max_new_tokens,
+                    temperature=self.temperature, top_p=self.top_p,
+                    response_format={
+                        "type": "json_object",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "items": {
+                                    "type": "array",
+                                    "items": {"type": "string"},
+                                },
+                            },
+                            "required": ["items"],
+                        },
+                    },
+                )
+                content = response.choices[0].message.content
+                # content = response["choices"][0]["message"]["content"]
+                if ref_col not in res:
+                    res[ref_col] = []
+                new_info = self.extract_lst_from_llm_output(content)
+                new_info = list(map(lambda x: x.lower(), new_info))
+                res[ref_col] = list(set(res[ref_col] + new_info))
+            elif mode == "chunk":
+                for doc in documents:
+                    messages = self.make_messages(query, [doc], examples=ref_col_examples, use_examples_in_llm=ref_col_use_examples_in_llm)
+                    response = LLAMA_CLIENT.chat.completions.create(
+                        model="local",
+                        messages=messages, max_tokens=self.max_new_tokens,
+                        temperature=self.temperature, top_p=self.top_p,
+                        response_format={
+                            "type": "json_object",
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "items": {
+                                        "type": "array",
+                                        "items": {"type": "string"},
+                                    },
+                                },
+                                "required": ["items"],
+                            },
+                        },
+                    )
+                    content = response.choices[0].message.content
+                    # content = response["choices"][0]["message"]["content"]
+                    if ref_col not in res:
+                        res[ref_col] = []
+                    new_info = self.extract_lst_from_llm_output(content)
+                    new_info = list(map(lambda x: x.lower(), new_info))
+                    res[ref_col] = list(set(res[ref_col] + new_info))
+
+        return res
+
+    def extract_possible_info_from_paper(self, pmid: int, pmcid: str, mode: str = "chunk") -> Dict[str, List]:
         """
         Given a paper, extract all possible answer for each category
         """
         res = {}
 
+        num_docs = ingest_doc_from_pmc(pmid, pmcid)
+        if num_docs == 0:
+            return {ref_col: [] for ref_col in self.referencing_col_lst}
+
+        # nest_asyncio.apply() 
         for ref_col, ref_col_context, ref_col_examples, ref_col_use_examples_in_llm, ref_col_retrieval_query in zip(
             self.referencing_col_lst,
             self.referencing_col_context_lst,
@@ -365,16 +942,60 @@ Output: """
                 continue
 
             # rerank
-            scores = self.reranker_model.predict([(retrieval_query, d) for d in documents])
-            documents = [doc for _, doc in sorted(zip(scores, documents), key=lambda x: x[0], reverse=True)]
-            documents = documents[:self.top_k_rerank]
-            for doc in documents:
-                messages = self.make_messages(query, [doc], examples=ref_col_examples, use_examples_in_llm=ref_col_use_examples_in_llm)
-                response = self.llm.create_chat_completion(
-                    messages=messages,
-                    max_tokens=self.max_new_tokens,
-                    temperature=self.temperature,
-                    top_p=self.top_p,
+            # scores = self.reranker_model.predict([(retrieval_query, d) for d in documents])
+            # documents = [doc for _, doc in sorted(zip(scores, documents), key=lambda x: x[0], reverse=True)]
+            # documents = documents[:self.top_k_rerank]
+            documents = self.rerank(retrieval_query, documents)
+            messages = self.make_messages(query, documents, examples=ref_col_examples, use_examples_in_llm=ref_col_use_examples_in_llm)
+            response = LLAMA_CLIENT.chat.completions.create(
+                model="local",
+                messages=messages, max_tokens=self.max_new_tokens,
+                temperature=self.temperature, top_p=self.top_p,
+                response_format={
+                    "type": "json_object",
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "items": {
+                                "type": "array",
+                                "items": {"type": "string"},
+                            },
+                        },
+                        "required": ["items"],
+                    },
+                },
+            )
+            content = response.choices[0].message.content
+            if ref_col not in res:
+                res[ref_col] = []
+            new_info = self.extract_lst_from_llm_output(content)
+            new_info = list(map(lambda x: x.lower(), new_info))
+            res[ref_col] = list(set(res[ref_col] + new_info))
+            if mode == "all":
+                messages = self.make_messages(query, [documents], examples=ref_col_examples, use_examples_in_llm=ref_col_use_examples_in_llm)
+                # response = self.llm.create_chat_completion(
+                #     messages=messages,
+                #     max_tokens=self.max_new_tokens,
+                #     temperature=self.temperature,
+                #     top_p=self.top_p,
+                #     response_format={
+                #         "type": "json_object",
+                #         "schema": {
+                #             "type": "object",
+                #             "properties": {
+                #                 "items": {
+                #                     "type": "array",
+                #                     "items": {"type": "string"},
+                #                 },
+                #             },
+                #             "required": ["items"],
+                #         },
+                #     },
+                # )
+                response = LLAMA_CLIENT.chat.completions.create(
+                    model="local",
+                    messages=messages, max_tokens=self.max_new_tokens,
+                    temperature=self.temperature, top_p=self.top_p,
                     response_format={
                         "type": "json_object",
                         "schema": {
@@ -389,12 +1010,183 @@ Output: """
                         },
                     },
                 )
-                response = response["choices"][0]["message"]["content"]
+                content = response.choices[0].message.content
+                # content = response["choices"][0]["message"]["content"]
                 if ref_col not in res:
                     res[ref_col] = []
-                new_info = self.extract_lst_from_llm_output(response)
+                new_info = self.extract_lst_from_llm_output(content)
                 new_info = list(map(lambda x: x.lower(), new_info))
                 res[ref_col] = list(set(res[ref_col] + new_info))
+            elif mode == "chunk":
+                for doc in documents:
+                    messages = self.make_messages(query, [doc], examples=ref_col_examples, use_examples_in_llm=ref_col_use_examples_in_llm)
+                    # response = self.llm.create_chat_completion(
+                    #     messages=messages,
+                    #     max_tokens=self.max_new_tokens,
+                    #     temperature=self.temperature,
+                    #     top_p=self.top_p,
+                    #     response_format={
+                    #         "type": "json_object",
+                    #         "schema": {
+                    #             "type": "object",
+                    #             "properties": {
+                    #                 "items": {
+                    #                     "type": "array",
+                    #                     "items": {"type": "string"},
+                    #                 },
+                    #             },
+                    #             "required": ["items"],
+                    #         },
+                    #     },
+                    # )
+                    response = LLAMA_CLIENT.chat.completions.create(
+                        model="local",
+                        messages=messages, max_tokens=self.max_new_tokens,
+                        temperature=self.temperature, top_p=self.top_p,
+                        response_format={
+                            "type": "json_object",
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "items": {
+                                        "type": "array",
+                                        "items": {"type": "string"},
+                                    },
+                                },
+                                "required": ["items"],
+                            },
+                        },
+                    )
+                    content = response.choices[0].message.content
+                    # content = response["choices"][0]["message"]["content"]
+                    if ref_col not in res:
+                        res[ref_col] = []
+                    new_info = self.extract_lst_from_llm_output(content)
+                    new_info = list(map(lambda x: x.lower(), new_info))
+                    res[ref_col] = list(set(res[ref_col] + new_info))
+
+
+            # all_messages = []
+            # for doc in documents:
+            #     messages = self.make_messages(
+            #         query, [doc],
+            #         examples=ref_col_examples,
+            #         use_examples_in_llm=ref_col_use_examples_in_llm
+            #     )
+            #     all_messages.append(messages)
+
+            # Single LLM call
+            # async def call_llm(doc):
+            #     messages = self.make_messages(
+            #         query, [doc],
+            #         examples=ref_col_examples,
+            #         use_examples_in_llm=ref_col_use_examples_in_llm
+            #     )
+            #     response = await ASYNC_LLAMA_CLIENT.chat.completions.create(
+            #         model="local",
+            #         messages=messages,
+            #         max_tokens=self.max_new_tokens,
+            #         temperature=self.temperature,
+            #         top_p=self.top_p,
+            #         response_format={"type": "json_object"},
+            #     )
+            #     return response.choices[0].message.content
+
+            # # Run in parallel, chunk_size should match --parallel on server
+            # async def call_all(documents, chunk_size=4):
+            #     results = []
+            #     for i in range(0, len(documents), chunk_size):
+            #         chunk = documents[i:min(i + chunk_size, len(documents))]
+            #         tasks = [call_llm(m) for m in chunk]
+            #         chunk_results = await asyncio.gather(*tasks)
+            #         results.extend(chunk_results)
+            #     return results
+
+            # # Blocks until all done
+            # contents = asyncio.run(call_all(documents, chunk_size=4))
+
+            # # contents = []
+            # # for i in range(0, len(all_messages), 2):
+            # #     batch_messages = all_messages[i: min(i + 2, len(all_messages))]
+            # #     batch_contents = asyncio.run(call_all(batch_messages))
+            # #     contents.extend(batch_contents)
+            # for content in contents:
+            #     if ref_col not in res:
+            #         res[ref_col] = []
+            #     new_info = self.extract_lst_from_llm_output(content)
+            #     new_info = list(map(lambda x: x.lower(), new_info))
+            #     res[ref_col] = list(set(res[ref_col] + new_info))
+
+            # for doc in documents:
+            #     messages = self.make_messages(
+            #         query, [doc],
+            #         examples=ref_col_examples,
+            #         use_examples_in_llm=ref_col_use_examples_in_llm,
+            #     )
+            #     response = LLAMA_CLIENT.chat.completions.create(
+            #         model="local",
+            #         messages=messages,
+            #         max_tokens=self.max_new_tokens,
+            #         temperature=self.temperature,
+            #         top_p=self.top_p,
+            #         response_format={"type": "json_object"},
+            #     )
+            #     content = response.choices[0].message.content
+
+            #     if ref_col not in res:
+            #         res[ref_col] = []
+            #     new_info = self.extract_lst_from_llm_output(content)
+            #     new_info = list(map(lambda x: x.lower(), new_info))
+            #     res[ref_col] = list(set(res[ref_col] + new_info))
+
+        return res
+    
+    def extract_possible_info_from_paper_and_citations(self, pmid: int, pmcid: str) -> Dict[str, List]:
+        """
+        Given a paper, extract all possible answer for each category
+        """
+        res = self.extract_possible_info_from_paper(pmid, pmcid, mode = "chunk")   
+
+        # now search from citations — only keep those with a resolvable pmcid
+        possible_citations = get_gwas_ad_citations_with_context(pmcid)
+        possible_citations = [c for c in possible_citations if c.get("pmcid")]
+        if len(possible_citations) > 0:
+            pmid_pmcid_to_params_lst = {}
+            threshold = 0.5
+            for ref_col, ref_col_context, ref_col_examples, ref_col_use_examples_in_llm, ref_col_retrieval_query in zip(
+                self.referencing_col_lst,
+                self.referencing_col_context_lst,
+                self.referencing_col_examples_lst,
+                self.referencing_col_use_examples_in_llm_lst,
+                self.referencing_col_retrieval_query_lst,
+            ):
+                for citation in possible_citations:
+                    context_lst = citation["context_lst"]
+                    context_query_similarity = calculate_similarity_scores(context_lst, [ref_col_retrieval_query], self.embeddings_model, self.embeddings_model_tokenizer)
+                    if torch.max(context_query_similarity).item() >= threshold:
+                        pmid, pmcid = citation["pmid"], citation["pmcid"]
+                        if (pmid, pmcid) not in pmid_pmcid_to_params_lst:
+                            pmid_pmcid_to_params_lst[(pmid, pmcid)] = {
+                                "ref_col_lst": [], "ref_col_context_lst": [], "ref_col_examples_lst": [],
+                                "ref_col_use_examples_in_llm_lst": [], "ref_col_retrieval_query_lst": []
+                            }
+                        pmid_pmcid_to_params_lst[(pmid, pmcid)]["ref_col_lst"].append(ref_col)
+                        pmid_pmcid_to_params_lst[(pmid, pmcid)]["ref_col_context_lst"].append(ref_col_context)
+                        pmid_pmcid_to_params_lst[(pmid, pmcid)]["ref_col_examples_lst"].append(ref_col_examples)
+                        pmid_pmcid_to_params_lst[(pmid, pmcid)]["ref_col_use_examples_in_llm_lst"].append(ref_col_use_examples_in_llm)
+                        pmid_pmcid_to_params_lst[(pmid, pmcid)]["ref_col_retrieval_query_lst"].append(ref_col_retrieval_query)
+            
+            print(f"Number of extra papers used: {len(pmid_pmcid_to_params_lst)}")
+            for pmid, pmcid in pmid_pmcid_to_params_lst:
+                try:
+                    new_res = self.extract_possible_info_from_paper_specified(
+                        pmid = pmid, pmcid = pmcid, mode = "chunk",
+                        **pmid_pmcid_to_params_lst[(pmid, pmcid)]
+                    )
+                    for ref_col in new_res:
+                        res[ref_col] = list(set(res[ref_col] + new_res[ref_col]))
+                except Exception as e:
+                    continue
 
         return res
     
@@ -615,459 +1407,494 @@ Output: """
     #     return res
 
 
-class GWASInformationRetrieverKeyword:
-    def __init__(self, info_type: str, keyword_dict: Dict[str, List]):
-        if keyword_dict is None:
-            raise Exception("Please include a keyword dictionary")
-        self.info_type = info_type
-        self.keyword_dict = keyword_dict
+# class GWASInformationRetrieverLX:
+#     """
+#     Same input/output interface as GWASInformationRetriever, but
+#     `extract_possible_info_from_paper` uses langextract (`lx.extract`) instead
+#     of a direct chat-completion call. Generation still goes through the local
+#     llama.cpp OpenAI-compatible server (LLAMA_CLIENT base_url), only the
+#     prompting/parsing layer is replaced by langextract.
+#     """
+
+#     def __init__(self, referencing_col_df: pd.DataFrame,
+#                  chroma_db_path: str = "./chroma_db", chroma_db_collection_name: str = "advp2",
+#                  embeddings_model_name: str = "NeuML/pubmedbert-base-embeddings", reranker_model_name: str = "BAAI/bge-reranker-base",
+#                  llm_model_name: Optional[str] = "Qwen/Qwen2.5-1.5B-Instruct", llm_gguf_path: Optional[str] = "./qwen2.5-3b-instruct-q8/qwen2.5-3b-instruct-q8_0.gguf",
+#                  use_hf: bool = True, device: Optional[str] = None):
+#         # load ref col df
+#         self.referencing_col_lst = referencing_col_df["column"].to_list()
+#         self.referencing_col_context_lst = referencing_col_df.apply(
+#             lambda x: x["column"] if pd.isna(x["description"]) else x["column"] + ": " + x["description"],
+#             axis=1,
+#         ).to_list()
+#         if "examples" in referencing_col_df.columns:
+#             self.referencing_col_examples_lst = referencing_col_df["examples"].apply(
+#                 lambda x: x.strip() if isinstance(x, str) and x.strip() else ""
+#             ).to_list()
+#         else:
+#             self.referencing_col_examples_lst = ["" for _ in self.referencing_col_lst]
+#         self.referencing_col_use_examples_in_llm_lst = referencing_col_df["use_examples_in_llm"]
+#         self.referencing_col_retrieval_query_lst = [
+#             ctx if not ex else f"{ctx} Examples: {ex}."
+#             for ctx, ex in zip(self.referencing_col_context_lst, self.referencing_col_examples_lst)
+#         ]
+
+#         # vector store
+#         self.vector_store = Chroma(
+#             persist_directory=chroma_db_path,
+#             embedding_function=HuggingFaceEmbeddings(model_name=embeddings_model_name),
+#             collection_name=chroma_db_collection_name,
+#             collection_metadata={"hnsw:space": "cosine"}
+#         )
+
+#         self.device = device if device is not None else "cpu"
+
+#         # embeddings (used by downstream code paths that share this interface)
+#         self.embeddings_model_tokenizer = AutoTokenizer.from_pretrained(embeddings_model_name)
+#         self.embeddings_model = AutoModel.from_pretrained(embeddings_model_name)
+
+#         # reranker
+#         self.reranker_model = CrossEncoder(
+#             model_name_or_path=reranker_model_name,
+#             device=self.device,
+#             trust_remote_code=True,
+#         )
+
+#         # LLM backend kept the same as GWASInformationRetriever so other methods
+#         # (e.g. choice-mode extraction if added later) continue to work.
+#         if use_hf and llm_model_name is not None:
+#             self.use_hf = True
+#             login(os.environ.get("HF_TOKEN", ""))
+#             self.tokenizer = AutoTokenizer.from_pretrained(llm_model_name)
+#             self.model = AutoModelForCausalLM.from_pretrained(
+#                 llm_model_name,
+#                 device_map=self.device,
+#             )
+#             self.model.eval()
+#             allowed_chars = list("01")
+#             allowed_token_ids = set()
+#             for token, token_id in self.tokenizer.get_vocab().items():
+#                 if all(c in allowed_chars for c in token):
+#                     allowed_token_ids.add(token_id)
+#             self.allowed_tokens_processor = AllowedTokensProcessor(allowed_token_ids)
+#         elif not use_hf and llm_gguf_path is not None:
+#             self.use_hf = False
+#             self.llm = Llama(
+#                 model_path=llm_gguf_path,
+#                 n_ctx=16384,
+#                 n_gpu_layers=-1,
+#                 verbose=False,
+#             )
+#             allowed_token_ids = set()
+#             for token_id in range(self.llm.n_vocab()):
+#                 token_bytes = self.llm.detokenize([token_id])
+#                 token_str = token_bytes.decode("utf-8", errors="replace")
+#                 if all(c in "01" for c in token_str) and len(token_str) > 0:
+#                     allowed_token_ids.add(token_id)
+#             self.allowed_tokens_processor = AllowedTokensProcessorLlamaCpp(allowed_token_ids)
+#         else:
+#             raise Exception("Missing either llm_model_name (if use_hf=True) or llm_gguf_path (if use_hf=False)")
+
+#         # config
+#         self.top_k = 20
+#         self.top_k_rerank = 5
+#         self.max_new_tokens = 32
+#         self.similarity_score_threshold = 0.0
+#         self.temperature = 0
+#         self.top_p = 1
+
+#         # langextract model wrapping the same local llama.cpp OpenAI-compatible
+#         # server LLAMA_CLIENT uses — the underlying model is unchanged.
+#         self.lx_model = OpenAILanguageModel(
+#             model_id="local",
+#             api_key="none",
+#             base_url=f"http://localhost:{os.environ.get('LLAMA_URL_PORT', 0)}/v1",
+#             temperature=self.temperature,
+#             max_workers=1,
+#         )
+
+#     def _build_lx_examples(self, ref_col: str, ref_col_examples: str) -> List[lx.data.ExampleData]:
+#         """
+#         Build a minimal langextract example. langextract requires at least one
+#         ExampleData. We synthesize one from the column's `examples` string when
+#         available; otherwise fall back to a generic shape example.
+#         """
+#         extraction_class = re.sub(r"[^a-zA-Z0-9_]", "_", ref_col).strip("_").lower() or "value"
+
+#         sample_terms: List[str] = []
+#         if ref_col_examples:
+#             for tok in re.split(r"[,;\n]", ref_col_examples):
+#                 tok = tok.strip()
+#                 if tok:
+#                     sample_terms.append(tok)
+#                 if len(sample_terms) >= 3:
+#                     break
+#         if not sample_terms:
+#             sample_terms = ["example value"]
+
+#         example_text = "Illustrative sentence mentioning " + ", ".join(sample_terms) + "."
+#         extractions = [
+#             lx.data.Extraction(extraction_class=extraction_class, extraction_text=t)
+#             for t in sample_terms
+#             if t in example_text
+#         ]
+#         if not extractions:
+#             extractions = [
+#                 lx.data.Extraction(extraction_class=extraction_class, extraction_text=sample_terms[0])
+#             ]
+#             example_text = f"Illustrative sentence mentioning {sample_terms[0]}."
+
+#         return [lx.data.ExampleData(text=example_text, extractions=extractions)]
+
+#     def extract_possible_info_from_paper(self, pmid: int, pmcid: str) -> Dict[str, List]:
+#         """
+#         Same contract as GWASInformationRetriever.extract_possible_info_from_paper,
+#         but each per-document extraction is performed via langextract.
+#         """
+#         res: Dict[str, List[str]] = {}
+
+#         num_docs = ingest_doc_from_pmc(pmid, pmcid)
+#         if num_docs == 0:
+#             return {ref_col: [] for ref_col in self.referencing_col_lst}
+
+#         for ref_col, ref_col_context, ref_col_examples, ref_col_use_examples_in_llm, ref_col_retrieval_query in zip(
+#             self.referencing_col_lst,
+#             self.referencing_col_context_lst,
+#             self.referencing_col_examples_lst,
+#             self.referencing_col_use_examples_in_llm_lst,
+#             self.referencing_col_retrieval_query_lst,
+#         ):
+#             query = ref_col_context
+#             retrieval_query = ref_col_retrieval_query
+#             documents = self.vector_store.similarity_search_with_relevance_scores(
+#                 query=retrieval_query,
+#                 k=self.top_k,
+#                 filter={"$and": [{"PMID": str(pmid)}, {"PMCID": pmcid}]},
+#             )
+#             documents = [d.page_content for d, score in documents if score >= self.similarity_score_threshold]
+#             if len(documents) == 0:
+#                 res[ref_col] = []
+#                 continue
+
+#             scores = self.reranker_model.predict([(retrieval_query, d) for d in documents])
+#             documents = [doc for _, doc in sorted(zip(scores, documents), key=lambda x: x[0], reverse=True)]
+#             documents = documents[:self.top_k_rerank]
+
+#             extraction_class = re.sub(r"[^a-zA-Z0-9_]", "_", ref_col).strip("_").lower() or "value"
+#             hints = (
+#                 f" Retrieval hints (do NOT output unless they appear verbatim in the text): {ref_col_examples}."
+#                 if ref_col_examples and ref_col_use_examples_in_llm else ""
+#             )
+#             prompt_description = (
+#                 f"Extract spans for the field defined as: {query}. "
+#                 f"Only return text that appears verbatim in the input (exact casing, exact spelling). "
+#                 f"Do not paraphrase, translate, or expand. If a long form and an abbreviation both appear, "
+#                 f"include BOTH as separate extractions. Use extraction_class='{extraction_class}'."
+#                 f"{hints}"
+#             )
+#             examples = self._build_lx_examples(ref_col, ref_col_examples)
+
+#             res[ref_col] = []
+#             for doc in documents:
+#                 try:
+#                     annotated = lx.extract(
+#                         text_or_documents=doc,
+#                         prompt_description=prompt_description,
+#                         examples=examples,
+#                         model=self.lx_model,
+#                         fence_output=True,
+#                         use_schema_constraints=False,
+#                         max_char_buffer=max(len(doc), 1000),
+#                         show_progress=False,
+#                         prompt_validation_level=lx.prompt_validation.PromptValidationLevel.OFF if hasattr(lx, "prompt_validation") else None,
+#                     )
+#                 except TypeError:
+#                     annotated = lx.extract(
+#                         text_or_documents=doc,
+#                         prompt_description=prompt_description,
+#                         examples=examples,
+#                         model=self.lx_model,
+#                         fence_output=True,
+#                         use_schema_constraints=False,
+#                         max_char_buffer=max(len(doc), 1000),
+#                         show_progress=False,
+#                     )
+#                 except Exception:
+#                     continue
+
+#                 new_info = []
+#                 for ext in getattr(annotated, "extractions", []) or []:
+#                     text = getattr(ext, "extraction_text", None)
+#                     if text:
+#                         new_info.append(str(text).lower())
+#                 res[ref_col] = list(set(res[ref_col] + new_info))
+
+#         return res
+
+
+# class GWASInformationRetrieverGoLLIE:
+#     """
+#     Same input/output interface as GWASInformationRetriever but uses GoLLIE-style
+#     structured generation: entity types are defined as Python dataclasses (the
+#     "guidelines"), the model is prompted to fill in a `result = [...]` list, and
+#     the output is parsed with eval().
+
+#     Uses llama-cpp (Llama) with a GGUF model instead of HuggingFace transformers.
+#     Retrieval (vector search + cross-encoder reranking) is kept identical to the
+#     original class.  GoLLIE generation is run once per unique top-ranked chunk,
+#     extracting values for all columns simultaneously.
+#     """
+
+#     def __init__(
+#         self,
+#         referencing_col_df: pd.DataFrame,
+#         chroma_db_path: str = "./chroma_db",
+#         chroma_db_collection_name: str = "gwas_paper_collection",
+#         embeddings_model_name: str = "NeuML/pubmedbert-base-embeddings",
+#         reranker_model_name: str = "BAAI/bge-reranker-base",
+#         gollie_gguf_path: str = "./gollie-7b-q4/HiTZ-GoLLIE-7B.Q4_K_M.gguf",
+#         device: Optional[str] = None,
+#     ):
+#         # --- column metadata (mirrors GWASInformationRetriever) ---
+#         self.referencing_col_lst = referencing_col_df["column"].to_list()
+#         self.referencing_col_context_lst = referencing_col_df.apply(
+#             lambda x: x["column"] if pd.isna(x["description"]) else x["column"] + ": " + x["description"],
+#             axis=1,
+#         ).to_list()
+#         if "examples" in referencing_col_df.columns:
+#             self.referencing_col_examples_lst = referencing_col_df["examples"].apply(
+#                 lambda x: x.strip() if isinstance(x, str) and x.strip() else ""
+#             ).to_list()
+#         else:
+#             self.referencing_col_examples_lst = ["" for _ in self.referencing_col_lst]
+#         self.referencing_col_retrieval_query_lst = [
+#             ctx if not ex else f"{ctx} Examples: {ex}."
+#             for ctx, ex in zip(self.referencing_col_context_lst, self.referencing_col_examples_lst)
+#         ]
+
+#         # --- column name → Python class name mapping ---
+#         self.col_to_class_name: Dict[str, str] = {}
+#         self.class_name_to_col: Dict[str, str] = {}
+#         seen_names: Dict[str, int] = {}
+#         for col in self.referencing_col_lst:
+#             name = self._sanitize_class_name(col)
+#             if name in seen_names:
+#                 seen_names[name] += 1
+#                 name = f"{name}{seen_names[name]}"
+#             else:
+#                 seen_names[name] = 0
+#             self.col_to_class_name[col] = name
+#             self.class_name_to_col[name] = col
+
+#         # build runtime entity classes used by the output parser
+#         self._entity_classes = self._build_entity_classes()
+
+#         # --- vector store ---
+#         self.vector_store = Chroma(
+#             persist_directory=chroma_db_path,
+#             embedding_function=HuggingFaceEmbeddings(model_name=embeddings_model_name),
+#             collection_name=chroma_db_collection_name,
+#             collection_metadata={"hnsw:space": "cosine"},
+#         )
+
+#         # --- reranker ---
+#         self.device = device if device is not None else "cpu"
+#         self.reranker_model = CrossEncoder(
+#             model_name_or_path=reranker_model_name,
+#             device=self.device,
+#             trust_remote_code=True,
+#         )
+
+#         # --- GoLLIE GGUF model via llama-cpp ---
+#         self.llm = Llama(
+#             model_path=gollie_gguf_path,
+#             n_ctx=8192,
+#             n_gpu_layers=-1,
+#             verbose=False,
+#         )
+
+#         # --- search / generation config ---
+#         self.top_k = 20
+#         self.top_k_rerank = 5
+#         self.max_new_tokens = 256
+#         self.similarity_score_threshold = 0.0
+
+#     # ------------------------------------------------------------------
+#     # Helpers
+#     # ------------------------------------------------------------------
+
+#     @staticmethod
+#     def _sanitize_class_name(col: str) -> str:
+#         """Convert an arbitrary column name to a valid CamelCase Python identifier."""
+#         parts = re.sub(r"[^a-zA-Z0-9 ]", " ", col).split()
+#         name = "".join(p.capitalize() for p in parts)
+#         if not name or not name[0].isalpha():
+#             name = "Col" + name
+#         return name
+
+#     def _build_entity_classes(self) -> Dict[str, type]:
+#         """Dynamically create dataclass types for every column, used by the output parser."""
+#         from dataclasses import dataclass as _dc
+
+#         Entity = _dc(type("Entity", (), {"__annotations__": {"span": str}}))
+#         classes: Dict[str, type] = {"Entity": Entity}
+#         for col, context in zip(self.referencing_col_lst, self.referencing_col_context_lst):
+#             class_name = self.col_to_class_name[col]
+#             cls = _dc(
+#                 type(
+#                     class_name,
+#                     (Entity,),
+#                     {"__annotations__": {"span": str}, "__doc__": context},
+#                 )
+#             )
+#             classes[class_name] = cls
+#         return classes
+
+#     def _build_guidelines_str(self, class_name: str, context: str) -> str:
+#         """Return the GoLLIE guidelines block for a single entity class."""
+#         lines = [
+#             "from dataclasses import dataclass",
+#             "",
+#             "",
+#             "@dataclass",
+#             "class Entity:",
+#             '    """A general class to represent entities."""',
+#             "    span: str",
+#             "",
+#             "",
+#             "@dataclass",
+#             f"class {class_name}(Entity):",
+#             f'    """{context}"""',
+#             "    span: str",
+#         ]
+#         return "\n".join(lines)
+
+#     def _build_prompt(self, text: str, class_name: str, context: str) -> str:
+#         """Build the GoLLIE-style completion prompt for one column and one text chunk."""
+#         guidelines = self._build_guidelines_str(class_name, context)
+#         instruction = (
+#             "# Strict biomedical span extraction.\n"
+#             "# Rules:\n"
+#             "# - Only instantiate spans that appear VERBATIM in `text` (exact casing, exact spelling).\n"
+#             "# - Do NOT copy terms from the class definition, docstring, or your own knowledge.\n"
+#             "# - If a long name and its abbreviation both appear in `text`, include BOTH as separate instances.\n"
+#             "# - If `text` does not support any value, leave `result` as an empty list.\n"
+#             "# - Output only valid Python: a list of dataclass instantiations, nothing else."
+#         )
+#         return f"{instruction}\n\n{guidelines}\n\n\ntext = {repr(text)}\nresult = [\n"
+
+#     def _parse_output(self, full_output: str, class_name: str) -> List[str]:
+#         """
+#         Parse the full output string (prompt + generated text) for a single column.
+
+#         Splits on the last `result = `, evals the bracketed list in the context of
+#         the target entity class, and returns lowercased extracted spans.
+#         """
+#         result_part = full_output.split("result = ")[-1].strip()
+#         if not result_part.startswith("["):
+#             result_part = "[" + result_part
+#         open_brackets = result_part.count("[") - result_part.count("]")
+#         result_part += "]" * max(0, open_brackets)
+
+#         eval_ctx = {
+#             "__builtins__": {},
+#             "Entity": self._entity_classes["Entity"],
+#             class_name: self._entity_classes[class_name],
+#         }
+#         try:
+#             result = eval(result_part, eval_ctx)  # noqa: S307
+#             return [
+#                 item.span.lower()
+#                 for item in result
+#                 if type(item).__name__ == class_name and hasattr(item, "span") and item.span
+#             ]
+#         except Exception:
+#             return []
+
+#     # ------------------------------------------------------------------
+#     # Public API (mirrors GWASInformationRetriever)
+#     # ------------------------------------------------------------------
+
+#     def extract_possible_info_from_paper(self, pmid: int, pmcid: str) -> Dict[str, List]:
+#         """
+#         For each column: retrieve relevant chunks, rerank, then run GoLLIE generation
+#         on each top chunk independently with only that column's dataclass in the prompt.
+
+#         Returns the same Dict[column_name -> list_of_values] format as
+#         GWASInformationRetriever.extract_possible_info_from_paper.
+#         """
+#         res: Dict[str, List[str]] = {}
+
+#         for ref_col, ref_col_context, ref_col_retrieval_query in zip(
+#             self.referencing_col_lst,
+#             self.referencing_col_context_lst,
+#             self.referencing_col_retrieval_query_lst,
+#         ):
+#             class_name = self.col_to_class_name[ref_col]
+
+#             documents = self.vector_store.similarity_search_with_relevance_scores(
+#                 query=ref_col_retrieval_query,
+#                 k=self.top_k,
+#                 filter={"$and": [{"PMID": str(pmid)}, {"PMCID": pmcid}]},
+#             )
+#             documents = [d.page_content for d, score in documents if score >= self.similarity_score_threshold]
+#             if not documents:
+#                 res[ref_col] = []
+#                 continue
+
+#             scores = self.reranker_model.predict([(ref_col_retrieval_query, d) for d in documents])
+#             documents = [doc for _, doc in sorted(zip(scores, documents), key=lambda x: x[0], reverse=True)]
+#             documents = documents[: self.top_k_rerank]
+
+#             col_vals: List[str] = []
+#             for doc in documents:
+#                 prompt = self._build_prompt(doc, class_name, ref_col_context)
+#                 output = self.llm(
+#                     prompt,
+#                     max_tokens=self.max_new_tokens,
+#                     temperature=0,
+#                     top_p=1,
+#                     echo=False,
+#                     stop=["\n]", "]"],
+#                 )
+#                 generated_text = output["choices"][0]["text"]
+#                 full_output = prompt + generated_text
+#                 new_vals = self._parse_output(full_output, class_name)
+#                 col_vals = list(set(col_vals + new_vals))
+
+#             res[ref_col] = col_vals
+
+#         return res
+
+
+# class GWASInformationRetrieverKeyword:
+#     def __init__(self, info_type: str, keyword_dict: Dict[str, List]):
+#         if keyword_dict is None:
+#             raise Exception("Please include a keyword dictionary")
+#         self.info_type = info_type
+#         self.keyword_dict = keyword_dict
     
-    def extract_possible_info_from_paper(self, pmid: int, pmcid: str) -> List[str]:
-        curr_doc = ""
-        url = f"https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/{pmcid}/unicode"
-        response = requests.get(url)
-        if response.status_code == 200:
-            data = response.json()
-            for d in data:
-                doc = d["documents"]
-                for p in doc:
-                    passage = p["passages"]
-                    for item in passage:
-                        if "text" in item:
-                            curr_doc += "\n\n" + item["text"]
-        possible_info = []
-        for keyword in self.keyword_dict:
-            for keyword_variation in self.keyword_dict[keyword]:
-                if keyword_variation in curr_doc:
-                    print(keyword, keyword_variation)
-                    possible_info.append(keyword)
-                    break
-        return possible_info
-    
-class GWASInformationRetrieverV2:
-    def __init__(self, referencing_col_df: pd.DataFrame, reranker_model_name: str = "BAAI/bge-reranker-base",
-                 llm_model_name: Optional[str] = "Qwen/Qwen2.5-1.5B-Instruct", llm_gguf_path: Optional[str] = "./qwen2.5-3b-instruct-q8/qwen2.5-3b-instruct-q8_0.gguf",
-                 use_hf: bool = True, device: Optional[str] = None):
-        # load ref col df
-        self.referencing_col_lst = referencing_col_df["column"].to_list()
-        # Definition-only context (no examples) — safe to show to the LLM.
-        self.referencing_col_context_lst = referencing_col_df.apply(
-            lambda x: x["column"] if pd.isna(x["description"]) else x["column"] + ": " + x["description"],
-            axis=1,
-        ).to_list()
-        # Examples kept separate; used ONLY to strengthen retrieval and as a
-        # labeled, anti-leakage hint block inside the prompt.
-        if "examples" in referencing_col_df.columns:
-            self.referencing_col_examples_lst = referencing_col_df["examples"].apply(
-                lambda x: x.strip() if isinstance(x, str) and x.strip() else ""
-            ).to_list()
-        else:
-            self.referencing_col_examples_lst = ["" for _ in self.referencing_col_lst]
-        self.referencing_col_use_examples_in_llm_lst = referencing_col_df["use_examples_in_llm"]
-        # Retrieval query = definition + examples (examples help embedding recall,
-        # but will NOT be shown verbatim to the LLM in the generation prompt).
-        self.referencing_col_retrieval_query_lst = [
-            ctx if not ex else f"{ctx} Examples: {ex}."
-            for ctx, ex in zip(self.referencing_col_context_lst, self.referencing_col_examples_lst)
-        ]
-        # load keyword
-        self.referencing_col_keywords_lst = [
-            [k.strip() for k in s.split(";") if k.strip()]
-            for s in referencing_col_df["search_keywords"]
-        ]
-
-        # load the device
-        self.device = device if device is not None else "cpu"
-
-        # load the reranker
-        self.reranker_model = CrossEncoder(
-            model_name_or_path=reranker_model_name, 
-            device = self.device,
-            trust_remote_code = True
-        ) 
-
-        if use_hf and llm_model_name is not None:
-            self.use_hf = True
-            login(os.environ.get("HF_TOKEN", ""))
-            self.tokenizer = AutoTokenizer.from_pretrained(llm_model_name)
-            self.model = AutoModelForCausalLM.from_pretrained(
-                llm_model_name,
-                # quantization_config = bnb_config,
-                device_map = self.device,
-                # torch_dtype=torch.bfloat16,
-            )
-            self.model.eval()
-            allowed_chars = list("01")
-            allowed_token_ids = set()
-            for token, token_id in self.tokenizer.get_vocab().items():
-                if all(c in allowed_chars for c in token):
-                    allowed_token_ids.add(token_id)
-            self.allowed_tokens_processor = AllowedTokensProcessor(allowed_token_ids)
-        elif not use_hf and llm_gguf_path is not None:
-            self.use_hf = False
-            self.llm = Llama(
-                model_path=llm_gguf_path,
-                n_ctx=16384,
-                n_gpu_layers=-1,
-                verbose=False,
-            )
-            allowed_token_ids = set()
-            for token_id in range(self.llm.n_vocab()):
-                token_bytes = self.llm.detokenize([token_id])
-                token_str = token_bytes.decode("utf-8", errors="replace")
-                if all(c in "01" for c in token_str) and len(token_str) > 0:
-                    allowed_token_ids.add(token_id)
-            self.allowed_tokens_processor = AllowedTokensProcessorLlamaCpp(allowed_token_ids)
-        else:
-            raise Exception("Missing either llm_model_name (if use_hf=True) or llm_gguf_path (if use_hf=False)")
-
-        # NOTE: config for search and generate, add it as params later
-        self.top_k = 20
-        self.top_k_rerank = 5
-        self.max_new_tokens = 128
-        self.similarity_score_threshold = 0.0
-        self.temperature = 0
-        self.top_p = 1
-    
-    def make_messages(self, query: str, documents: List[str], examples: str = "", use_examples_in_llm: bool = True) -> List[Dict]:
-        document_str = "\n\n".join([f"EXCERPT {i + 1}:\n{d}" for i, d in enumerate(documents)])
-
-        # Examples from the CSV are quarantined in a clearly labeled block and
-        # explicitly forbidden unless they also appear in the EXCERPTs. This
-        # keeps them available as weak context without encouraging the model
-        # to regurgitate them as extractions.
-        hints_block = (
-            f"\nRetrieval hints (DO NOT output any of these unless they appear verbatim in the EXCERPTs above):\n{examples}\n"
-            if examples and use_examples_in_llm else ""
-        )
-
-        messages = [
-            {
-                "role": "system",
-                "content": (
-                    "You are a strict biomedical information extraction engine. "
-                    "Only output values that appear verbatim in the provided EXCERPTs. "
-                    "Do not copy any term from the field definition, from retrieval hints, "
-                    "or from your own domain knowledge if it is not literally present in the EXCERPTs. "
-                    "If the EXCERPTs do not support a value, return an empty list. "
-                    "Respond with a single JSON object and nothing else."
-                ),
-            },
-            {
-                "role": "user",
-                "content": f"""Goal: extract candidate values for a field, grounded strictly in the EXCERPTs.
-
-Field:
-{query}
-{hints_block}
-EXCERPTs:
-{document_str}
-
-Rules:
-- Only include items that appear literally in the EXCERPTs (exact casing, exact spelling).
-- No paraphrasing, no expansions, no translations.
-- If a long name and an abbreviation both appear in the EXCERPTs, include BOTH.
-- De-duplicate items.
-- If nothing in the EXCERPTs supports the field, return {{"items": []}}.
-
-Respond with a single JSON object only, no prose, no markdown fence:
-{{"items": ["<verbatim string from EXCERPT>", ...]}}"""
-            },
-        ]
-        return messages
-
-    def make_prompt(self, query: str, documents: List[str]) -> str:    
-        messages = self.make_messages(query, documents)
-        prompt = self.tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
-        return prompt
-    
-    def extract_lst_from_llm_output(self, text: str) -> List[str]:
-        text = text.replace("```json", "").replace("```", "").strip()
-        # Prefer the structured JSON object produced by the new prompt.
-        json_match = re.search(r"\{.*\}", text, re.DOTALL)
-        if json_match:
-            import json
-            try:
-                obj = json.loads(json_match.group(0))
-                items = obj.get("items", []) if isinstance(obj, dict) else []
-                if isinstance(items, list):
-                    lst = [str(x) for x in items if isinstance(x, (str, int, float))]
-                    lst = list(set([item.lower() for item in lst]))
-                    return lst
-            except Exception:
-                pass
-        # Backward-compatible fallback for bare Python list outputs.
-        matches = re.findall(r"\[.*?\]", text, re.DOTALL)
-        if not matches:
-            return []
-        try:
-            lst = ast.literal_eval(matches[-1])
-            lst = list(set([item.lower() for item in lst]))
-            return lst
-        except Exception:
-            return []
-
-    def _get_chunk_span_around_position(
-        self,
-        text: str,
-        match_start: int,
-        match_end: int,
-        min_tokens: int = 450,
-        max_tokens: int = 550,
-        target_tokens: int = 500,
-    ) -> Tuple[int, int, str]:
-        """
-        Expand outward from a keyword hit through paragraph > sentence > word
-        boundaries. Returns (start_idx, end_idx, chunk_text).
-        Approx 1 token ~= 4 chars.
-        """
-        approx_char_budget = target_tokens * 4
-        half = approx_char_budget // 2
-        left = max(0, match_start - half)
-        right = min(len(text), match_end + half)
-
-        def snap_left(pos: int, sep: str) -> int:
-            matches = list(re.finditer(sep, text[:pos]))
-            return matches[-1].end() if matches else 0
-
-        def snap_right(pos: int, sep: str) -> int:
-            m = re.search(sep, text[pos:])
-            return pos + m.start() if m else len(text)
-
-        separators = [r"\n\s*\n", r"(?<=[.!?])\s+", r"\s+"]
-
-        for i, sep in enumerate(separators):
-            new_left = snap_left(left, sep)
-            new_right = snap_right(right, sep)
-            chunk = text[new_left:new_right].strip()
-            n_tokens = len(chunk) // 4
-            if min_tokens <= n_tokens <= max_tokens:
-                return new_left, new_right, chunk
-            if i == 0 and n_tokens < min_tokens:
-                new_left = snap_left(max(0, new_left - 1), sep)
-                new_right = snap_right(min(len(text), new_right + 1), sep)
-                chunk = text[new_left:new_right].strip()
-                if len(chunk) // 4 <= max_tokens:
-                    return new_left, new_right, chunk
-
-        left = snap_left(left, r"\s+")
-        right = snap_right(right, r"\s+")
-        return left, right, text[left:right].strip()
-
-    def get_chunk_around_position(
-        self,
-        text: str,
-        match_start: int,
-        match_end: int,
-        min_tokens: int = 450,
-        max_tokens: int = 550,
-        target_tokens: int = 500,
-    ) -> str:
-        _, _, chunk = self._get_chunk_span_around_position(
-            text, match_start, match_end,
-            min_tokens=min_tokens,
-            max_tokens=max_tokens,
-            target_tokens=target_tokens,
-        )
-        return chunk
-
-    def get_documents_by_keyword(
-        self,
-        text: str,
-        keyword: str,
-        min_tokens: int = 450,
-        max_tokens: int = 550,
-        target_tokens: int = 500,
-    ) -> List[str]:
-        """
-        Find all occurrences of `keyword` (case-insensitive, word-boundary aware
-        for alphabetic keywords) and return a coherent chunk around each.
-        Overlapping chunks are merged.
-        """
-        if not keyword:
-            return []
-
-        if re.fullmatch(r"[A-Za-z][A-Za-z0-9\s\-]*", keyword):
-            pattern = r"\b" + re.escape(keyword) + r"\b"
-        else:
-            pattern = re.escape(keyword)
-
-        spans = []
-        for m in re.finditer(pattern, text, flags=re.IGNORECASE):
-            spans.append((m.start(), m.end()))
-        if not spans:
-            return []
-
-        # Track chunk spans directly from the snapping logic (case-independent).
-        chunks = []
-        for s, e in spans:
-            start_idx, end_idx, chunk = self._get_chunk_span_around_position(
-                text, s, e,
-                min_tokens=min_tokens,
-                max_tokens=max_tokens,
-                target_tokens=target_tokens,
-            )
-            chunks.append((start_idx, end_idx, chunk))
-
-        # Merge overlapping chunks by span
-        chunks.sort(key=lambda x: x[0])
-        merged = []
-        for start_idx, end_idx, chunk in chunks:
-            if merged and start_idx <= merged[-1][1]:
-                prev_s, prev_e, _ = merged[-1]
-                new_e = max(prev_e, end_idx)
-                merged[-1] = (prev_s, new_e, text[prev_s:new_e].strip())
-            else:
-                merged.append((start_idx, end_idx, chunk))
-        return [c for _, _, c in merged if c]
-
-    def extract_possible_info_from_paper(self, pmid: int, pmcid: str) -> Dict[str, List]:
-        """
-        Given a paper, extract all possible answer for each category
-        """
-        res = {}
-
-        curr_doc = ""
-        url = f"https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/{pmcid}/unicode"
-        response = requests.get(url)
-        if response.status_code == 200:
-            data = response.json()
-            for d in data:
-                doc = d["documents"]
-                for p in doc:
-                    passage = p["passages"]
-                    for item in passage:
-                        if "text" in item:
-                            curr_doc += "\n\n" + item["text"]
-
-        for ref_col, ref_col_context, ref_col_examples, ref_col_use_examples_in_llm, ref_col_retrieval_query, ref_col_keywords in zip(
-            self.referencing_col_lst,
-            self.referencing_col_context_lst,
-            self.referencing_col_examples_lst,
-            self.referencing_col_use_examples_in_llm_lst,
-            self.referencing_col_retrieval_query_lst,
-            self.referencing_col_keywords_lst
-        ):
-            # Retrieval uses definition + examples (better recall); the LLM
-            # prompt sees only the definition, with examples in a quarantined block.
-            query = ref_col_context
-            retrieval_query = ref_col_retrieval_query
-            
-            documents = []
-            seen = set()
-            for keyword in ref_col_keywords:
-                for chunk in self.get_documents_by_keyword(curr_doc, keyword):
-                    key = chunk.lower()
-                    if key not in seen:
-                        seen.add(key)
-                        documents.append(chunk)
-
-            if not documents:
-                res[ref_col] = []
-                continue
-
-            # rerank
-            scores = self.reranker_model.predict([(retrieval_query, d) for d in documents])
-            documents = [doc for _, doc in sorted(zip(scores, documents), key=lambda x: x[0], reverse=True)]
-            documents = documents[:min(self.top_k_rerank, len(documents))]
-
-            messages = self.make_messages(query, documents, examples=ref_col_examples, use_examples_in_llm=ref_col_use_examples_in_llm)
-            response = self.llm.create_chat_completion(
-                messages=messages,
-                max_tokens=self.max_new_tokens,
-                temperature=self.temperature,
-                top_p=self.top_p,
-                response_format={
-                    "type": "json_object",
-                    "schema": {
-                        "type": "object",
-                        "properties": {
-                            "items": {
-                                "type": "array",
-                                "items": {"type": "string"},
-                            },
-                        },
-                        "required": ["items"],
-                    },
-                },
-            )
-            response = response["choices"][0]["message"]["content"]
-            res[ref_col] = self.extract_lst_from_llm_output(response)
-
-        return res
-
-class GWASInformationRetrieverV3:
-    def __init__(self, referencing_col_df: pd.DataFrame, refencing_col_example_dict_lst: List[Dict],
-                 ollama_model_id: str = "qwen2.5-3b-instruct-q8"):
-        # col lst
-        self.referencing_col_lst = referencing_col_df["column"].to_list()
-        # context lst
-        self.referencing_col_context_lst = referencing_col_df.apply(
-            lambda x: x["column"] if pd.isna(x["description"]) else x["column"] + ": " + x["description"],
-            axis=1,
-        ).to_list()
-
-        # set up examples
-        self.ref_col_examples = []
-        for example_dict in refencing_col_example_dict_lst:
-            extraction_lst = []
-            for key in example_dict:
-                if key in self.referencing_col_lst:
-                    for info in example_dict[key]:
-                        extraction_lst.append(
-                            lx.data.Extraction(extraction_class=key, extraction_text=info)
-                        )
-            self.ref_col_examples.append(
-                lx.data.ExampleData(text = example_dict["text"], extractions=extraction_lst)
-            )
-        
-        self.ollama_model_id = ollama_model_id
-
-    def extract_possible_info_from_paper(self, pmid: int, pmcid: str) -> Dict[str, List]:
-        # get text
-        curr_doc = ""
-        url = f"https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/{pmcid}/unicode"
-        response = requests.get(url)
-        if response.status_code == 200:
-            data = response.json()
-            for d in data:
-                doc = d["documents"]
-                for p in doc:
-                    passage = p["passages"]
-                    for item in passage:
-                        if "text" in item:
-                            curr_doc += "\n\n" + item["text"]
-
-        # prompt 
-        referencing_col_context_str = "\n".join([f"-{c}" for c in self.referencing_col_context_lst])
-        prompt = f"""Extract these info:\n{referencing_col_context_str}"""
-
-        # extract
-        result = lx.extract(
-            text_or_documents=curr_doc,
-            prompt_description=prompt,
-            examples=self.ref_col_examples,
-            model_id=self.ollama_model_id,                 # your ollama model
-            model_url="http://localhost:11434",
-            max_char_buffer=500,
-            context_window_chars=100,
-            temperature=0,
-            resolver_params={
-                "format_handler": ollama.OLLAMA_FORMAT_HANDLER
-            },
-        )
-        res = {}
-        for col in self.referencing_col_lst:
-            res[col] = []
-        for extract in result.extractions:
-            if extract.extraction_class not in res:
-                res[extract.extraction_class] = []
-            extracted_text = extract.extraction_text.lower()
-            if extracted_text not in res[extract.extraction_class]:
-                res[extract.extraction_class].append(extracted_text)
-        return res
-
-        
+#     def extract_possible_info_from_paper(self, pmid: int, pmcid: str) -> List[str]:
+#         curr_doc = ""
+#         url = f"https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/{pmcid}/unicode"
+#         response = requests.get(url)
+#         if response.status_code == 200:
+#             data = response.json()
+#             for d in data:
+#                 doc = d["documents"]
+#                 for p in doc:
+#                     passage = p["passages"]
+#                     for item in passage:
+#                         if "text" in item:
+#                             curr_doc += "\n\n" + item["text"]
+#         possible_info = []
+#         for keyword in self.keyword_dict:
+#             for keyword_variation in self.keyword_dict[keyword]:
+#                 if keyword_variation in curr_doc:
+#                     print(keyword, keyword_variation)
+#                     possible_info.append(keyword)
+#                     break
+#         return possible_info
 
 def match_possible_info_to_df(df: pd.DataFrame, col_to_possible_info: Dict, 
                               embeddings_model: PreTrainedModel, embeddings_model_tokenizer: PreTrainedTokenizer,
@@ -1095,7 +1922,8 @@ def match_possible_info_to_df(df: pd.DataFrame, col_to_possible_info: Dict,
                     unique_value_to_possible_info = {}
                     if torch.min(torch.max(similarity_score, dim = 0).values) <= threshold:
                         for i, u in enumerate(unique_value):
-                            unique_value_to_possible_info[u] = combine_possible_info(col_to_possible_info[col])
+                            # unique_value_to_possible_info[u] = combine_possible_info(col_to_possible_info[col])
+                            unique_value_to_possible_info[u] = col_to_possible_info[col]
                     else:
                         # best_inx = torch.argmax(similarity_score, dim = 0)
                         # unique_value_to_possible_info = {}
@@ -1103,10 +1931,17 @@ def match_possible_info_to_df(df: pd.DataFrame, col_to_possible_info: Dict,
                         #     unique_value_to_possible_info[u] = col_to_possible_info[col][best_inx[i]]
                         for i, u in enumerate(unique_value):
                             valid_info = [col_to_possible_info[col][inx] for inx in range(similarity_score.shape[0]) if similarity_score[inx, i] >= threshold]
-                            unique_value_to_possible_info[u] = combine_possible_info(valid_info)
-                    df[f"{col} from {n_col}"] = df[n_col].apply(lambda x: unique_value_to_possible_info.get(x, ""))
+                            # unique_value_to_possible_info[u] = combine_possible_info(valid_info)
+                            unique_value_to_possible_info[u] = valid_info
+                    # for i, u in enumerate(unique_value):
+                    #     for j, possible_value in enumerate(col_to_possible_info[col]):
+                    #         if similarity_score[j, i] >= threshold:
+                    #             if u not in unique_value_to_possible_info:
+                    #                 unique_value_to_possible_info[u] = []
+                    #             unique_value_to_possible_info[u].append(possible_value)
+                    df[f"{col} from {n_col}"] = df[n_col].apply(lambda x: unique_value_to_possible_info.get(x, []))
                     used_col.append(f"{col} from {n_col}")
-                df[col] = df[used_col].apply(lambda x: combine_possible_info(x), axis = 1)
+                df[col] = df[used_col].apply(lambda x: combine_possible_info(list(set(chain.from_iterable(x)))), axis = 1)
                 df[col] = df[col].apply(lambda x: pd.NA if len(x) == 0 else x)
                 df = df.drop(used_col, axis = 1)
     return df

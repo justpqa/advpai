@@ -1,4 +1,5 @@
 .DS_Store
+.claude
 venv/
 __pycache__/
 .pytest_cache/
@@ -9,5 +10,7 @@ test_tables/ADVP_1026_v3p8_extracted.txt
 chroma_db/
 .env
 *.gguf
+pred_tables
 pred_tables_v2
+pred_tables_with_text_col
 gwas_pmid_pmcid.txt

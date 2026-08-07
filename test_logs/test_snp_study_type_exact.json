@@ -3,7 +3,7 @@
     "28247064_PMC5613285.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 42,
       "missed_examples": [
@@ -11,110 +11,100 @@
           "snp": "rs12961169",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
-            "imputation",
-            "two-stage gwas",
+            "gwas",
             "sequencing",
-            "gwas"
+            "genotyping",
+            "two-stage gwas"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
-            "imputation",
-            "two-stage gwas",
+            "gwas",
             "sequencing",
-            "gwas"
+            "genotyping",
+            "two-stage gwas"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
-            "imputation",
-            "two-stage gwas",
+            "gwas",
             "sequencing",
-            "gwas"
+            "genotyping",
+            "two-stage gwas"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
-            "imputation",
-            "two-stage gwas",
+            "gwas",
             "sequencing",
-            "gwas"
+            "genotyping",
+            "two-stage gwas"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
-            "imputation",
-            "two-stage gwas",
+            "gwas",
             "sequencing",
-            "gwas"
+            "genotyping",
+            "two-stage gwas"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
-            "imputation",
-            "two-stage gwas",
+            "gwas",
             "sequencing",
-            "gwas"
+            "genotyping",
+            "two-stage gwas"
           ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
-            "imputation",
-            "two-stage gwas",
+            "gwas",
             "sequencing",
-            "gwas"
+            "genotyping",
+            "two-stage gwas"
           ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
-            "imputation",
-            "two-stage gwas",
+            "gwas",
             "sequencing",
-            "gwas"
+            "genotyping",
+            "two-stage gwas"
           ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
-            "imputation",
-            "two-stage gwas",
+            "gwas",
             "sequencing",
-            "gwas"
+            "genotyping",
+            "two-stage gwas"
           ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
-            "imputation",
-            "two-stage gwas",
+            "gwas",
             "sequencing",
-            "gwas"
+            "genotyping",
+            "two-stage gwas"
           ]
         }
       ]
@@ -124,7 +114,7 @@
     "28560309_PMC5440281.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 7,
       "missed_examples": [
@@ -170,7 +160,7 @@
     "28780673_PMC5693762.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 44,
       "missed_examples": [
@@ -178,9 +168,10 @@
           "snp": "rs10896445",
           "gt_value": "SNP-based",
           "pred_terms": [
+            "gwas",
             "igap",
-            "genotyping",
             "sequencing",
+            "genotyping",
             "ldsc"
           ]
         },
@@ -188,9 +179,10 @@
           "snp": "rs10896445",
           "gt_value": "SNP-based",
           "pred_terms": [
+            "gwas",
             "igap",
-            "genotyping",
             "sequencing",
+            "genotyping",
             "ldsc"
           ]
         },
@@ -198,9 +190,10 @@
           "snp": "rs10896445",
           "gt_value": "SNP-based",
           "pred_terms": [
+            "gwas",
             "igap",
-            "genotyping",
             "sequencing",
+            "genotyping",
             "ldsc"
           ]
         },
@@ -208,9 +201,10 @@
           "snp": "rs10896445",
           "gt_value": "SNP-based",
           "pred_terms": [
+            "gwas",
             "igap",
-            "genotyping",
             "sequencing",
+            "genotyping",
             "ldsc"
           ]
         },
@@ -218,9 +212,10 @@
           "snp": "rs11249708",
           "gt_value": "SNP-based",
           "pred_terms": [
+            "gwas",
             "igap",
-            "genotyping",
             "sequencing",
+            "genotyping",
             "ldsc"
           ]
         },
@@ -228,9 +223,10 @@
           "snp": "rs11249708",
           "gt_value": "SNP-based",
           "pred_terms": [
+            "gwas",
             "igap",
-            "genotyping",
             "sequencing",
+            "genotyping",
             "ldsc"
           ]
         },
@@ -238,9 +234,10 @@
           "snp": "rs11249708",
           "gt_value": "SNP-based",
           "pred_terms": [
+            "gwas",
             "igap",
-            "genotyping",
             "sequencing",
+            "genotyping",
             "ldsc"
           ]
         },
@@ -248,9 +245,10 @@
           "snp": "rs11249708",
           "gt_value": "SNP-based",
           "pred_terms": [
+            "gwas",
             "igap",
-            "genotyping",
             "sequencing",
+            "genotyping",
             "ldsc"
           ]
         },
@@ -258,9 +256,10 @@
           "snp": "rs1568485",
           "gt_value": "SNP-based",
           "pred_terms": [
+            "gwas",
             "igap",
-            "genotyping",
             "sequencing",
+            "genotyping",
             "ldsc"
           ]
         },
@@ -268,9 +267,10 @@
           "snp": "rs1568485",
           "gt_value": "SNP-based",
           "pred_terms": [
+            "gwas",
             "igap",
-            "genotyping",
             "sequencing",
+            "genotyping",
             "ldsc"
           ]
         }
@@ -281,7 +281,7 @@
     "29107063_PMC5920782.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 32,
       "missed_examples": [
@@ -289,48 +289,48 @@
           "snp": "rs115881343",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "hrs",
-            "chs",
+            "gwas",
+            "sequencing",
             "genotyping",
             "fhs",
-            "loadfs",
-            "sequencing"
+            "chs",
+            "loadfs"
           ]
         },
         {
           "snp": "rs12721046",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "hrs",
-            "chs",
+            "gwas",
+            "sequencing",
             "genotyping",
             "fhs",
-            "loadfs",
-            "sequencing"
+            "chs",
+            "loadfs"
           ]
         },
         {
           "snp": "rs12721046",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "hrs",
-            "chs",
+            "gwas",
+            "sequencing",
             "genotyping",
             "fhs",
-            "loadfs",
-            "sequencing"
+            "chs",
+            "loadfs"
           ]
         },
         {
           "snp": "rs12721046",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "hrs",
-            "chs",
+            "gwas",
+            "sequencing",
             "genotyping",
             "fhs",
-            "loadfs",
-            "sequencing"
+            "chs",
+            "loadfs"
           ]
         },
         {
@@ -342,191 +342,60 @@
           "snp": "rs157582",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "hrs",
-            "chs",
+            "gwas",
+            "sequencing",
             "genotyping",
             "fhs",
-            "loadfs",
-            "sequencing"
+            "chs",
+            "loadfs"
           ]
         },
         {
           "snp": "rs157582",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "hrs",
-            "chs",
+            "gwas",
+            "sequencing",
             "genotyping",
             "fhs",
-            "loadfs",
-            "sequencing"
+            "chs",
+            "loadfs"
           ]
         },
         {
           "snp": "rs2075650",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "hrs",
-            "chs",
+            "gwas",
+            "sequencing",
             "genotyping",
             "fhs",
-            "loadfs",
-            "sequencing"
+            "chs",
+            "loadfs"
           ]
         },
         {
           "snp": "rs2075650",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "hrs",
-            "chs",
+            "gwas",
+            "sequencing",
             "genotyping",
             "fhs",
-            "loadfs",
-            "sequencing"
+            "chs",
+            "loadfs"
           ]
         },
         {
           "snp": "rs2075650",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "hrs",
-            "chs",
+            "gwas",
+            "sequencing",
             "genotyping",
             "fhs",
-            "loadfs",
-            "sequencing"
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    "29274321_PMC5938137.csv",
-    {
-      "match_pct": 0.0,
-      "threshold_pct": 25.0,
-      "matched_rows": 0,
-      "total_rows": 12,
-      "missed_examples": [
-        {
-          "snp": "rs10775009",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "genotyping",
-            "whole-exome sequencing",
-            "rna-seq",
-            "ad-related",
-            "sequencing",
-            "ad"
-          ]
-        },
-        {
-          "snp": "rs111882035",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "genotyping",
-            "whole-exome sequencing",
-            "rna-seq",
-            "ad-related",
-            "sequencing",
-            "ad"
-          ]
-        },
-        {
-          "snp": "rs118130881",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "genotyping",
-            "whole-exome sequencing",
-            "rna-seq",
-            "ad-related",
-            "sequencing",
-            "ad"
-          ]
-        },
-        {
-          "snp": "rs12268753",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "genotyping",
-            "whole-exome sequencing",
-            "rna-seq",
-            "ad-related",
-            "sequencing",
-            "ad"
-          ]
-        },
-        {
-          "snp": "rs2378873",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "genotyping",
-            "whole-exome sequencing",
-            "rna-seq",
-            "ad-related",
-            "sequencing",
-            "ad"
-          ]
-        },
-        {
-          "snp": "rs2819438",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "genotyping",
-            "whole-exome sequencing",
-            "rna-seq",
-            "ad-related",
-            "sequencing",
-            "ad"
-          ]
-        },
-        {
-          "snp": "rs4921790",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "genotyping",
-            "whole-exome sequencing",
-            "rna-seq",
-            "ad-related",
-            "sequencing",
-            "ad"
-          ]
-        },
-        {
-          "snp": "rs55644114",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "genotyping",
-            "whole-exome sequencing",
-            "rna-seq",
-            "ad-related",
-            "sequencing",
-            "ad"
-          ]
-        },
-        {
-          "snp": "rs73705514",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "genotyping",
-            "whole-exome sequencing",
-            "rna-seq",
-            "ad-related",
-            "sequencing",
-            "ad"
-          ]
-        },
-        {
-          "snp": "rs74442473",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "genotyping",
-            "whole-exome sequencing",
-            "rna-seq",
-            "ad-related",
-            "sequencing",
-            "ad"
+            "chs",
+            "loadfs"
           ]
         }
       ]
@@ -536,7 +405,7 @@
     "29458411_PMC5819208.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 32,
       "missed_examples": [
@@ -544,100 +413,100 @@
           "snp": "rs34487851",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
-            "gene-based association",
+            "genome-wide",
+            "summary data",
             "sequencing",
-            "eqtl"
+            "genotyping"
           ]
         },
         {
           "snp": "rs34487851",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
-            "gene-based association",
+            "genome-wide",
+            "summary data",
             "sequencing",
-            "eqtl"
+            "genotyping"
           ]
         },
         {
           "snp": "rs34487851",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
-            "gene-based association",
+            "genome-wide",
+            "summary data",
             "sequencing",
-            "eqtl"
+            "genotyping"
           ]
         },
         {
           "snp": "rs34487851",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
-            "gene-based association",
+            "genome-wide",
+            "summary data",
             "sequencing",
-            "eqtl"
+            "genotyping"
           ]
         },
         {
           "snp": "rs34487851",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
-            "gene-based association",
+            "genome-wide",
+            "summary data",
             "sequencing",
-            "eqtl"
+            "genotyping"
           ]
         },
         {
           "snp": "rs34487851",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
-            "gene-based association",
+            "genome-wide",
+            "summary data",
             "sequencing",
-            "eqtl"
+            "genotyping"
           ]
         },
         {
           "snp": "rs34487851",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
-            "gene-based association",
+            "genome-wide",
+            "summary data",
             "sequencing",
-            "eqtl"
+            "genotyping"
           ]
         },
         {
           "snp": "rs79524815",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
-            "gene-based association",
+            "genome-wide",
+            "summary data",
             "sequencing",
-            "eqtl"
+            "genotyping"
           ]
         },
         {
           "snp": "rs79524815",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
-            "gene-based association",
+            "genome-wide",
+            "summary data",
             "sequencing",
-            "eqtl"
+            "genotyping"
           ]
         },
         {
           "snp": "rs79524815",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
-            "gene-based association",
+            "genome-wide",
+            "summary data",
             "sequencing",
-            "eqtl"
+            "genotyping"
           ]
         }
       ]
@@ -647,7 +516,7 @@
     "29752348_PMC5976227.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 4,
       "missed_examples": [
@@ -678,7 +547,7 @@
     "29777097_PMC5959890.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 3,
       "missed_examples": [
@@ -686,154 +555,147 @@
           "snp": "rs593742",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "uk biobank axiom array",
-            "genotyping",
             "genome-wide association study",
+            "gwas",
             "sequencing",
-            "uk bileve axiom array"
+            "genotyping",
+            "uk bileve axiom array",
+            "uk biobank axiom array"
           ]
         },
         {
           "snp": "rs6504163",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "uk biobank axiom array",
-            "genotyping",
             "genome-wide association study",
+            "gwas",
             "sequencing",
-            "uk bileve axiom array"
+            "genotyping",
+            "uk bileve axiom array",
+            "uk biobank axiom array"
           ]
         },
         {
           "snp": "rs889555",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "uk biobank axiom array",
-            "genotyping",
             "genome-wide association study",
+            "gwas",
             "sequencing",
-            "uk bileve axiom array"
+            "genotyping",
+            "uk bileve axiom array",
+            "uk biobank axiom array"
           ]
         }
       ]
     }
   ],
   [
-    "30413934_PMC6358498.csv",
+    "29967939_PMC6280657.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
-      "total_rows": 374,
+      "total_rows": 55,
       "missed_examples": [
         {
-          "snp": "rs1048365",
+          "snp": "rs12961169",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
+            "genotype",
             "sequencing",
-            "gwass",
-            "proxy phenotype",
-            "gwas"
+            "alzheimer disease neuroimaging initiative",
+            "genotyping"
           ]
         },
         {
-          "snp": "rs1048365",
+          "snp": "rs12961169",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
+            "genotype",
             "sequencing",
-            "gwass",
-            "proxy phenotype",
-            "gwas"
+            "alzheimer disease neuroimaging initiative",
+            "genotyping"
           ]
         },
         {
-          "snp": "rs1048365",
+          "snp": "rs12961169",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
+            "genotype",
             "sequencing",
-            "gwass",
-            "proxy phenotype",
-            "gwas"
+            "alzheimer disease neuroimaging initiative",
+            "genotyping"
           ]
         },
         {
-          "snp": "rs10906257",
+          "snp": "rs13115400",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
+            "genotype",
             "sequencing",
-            "gwass",
-            "proxy phenotype",
-            "gwas"
+            "alzheimer disease neuroimaging initiative",
+            "genotyping"
           ]
         },
         {
-          "snp": "rs10906257",
+          "snp": "rs13115400",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
+            "genotype",
             "sequencing",
-            "gwass",
-            "proxy phenotype",
-            "gwas"
+            "alzheimer disease neuroimaging initiative",
+            "genotyping"
           ]
         },
         {
-          "snp": "rs10906257",
+          "snp": "rs13115400",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
+            "genotype",
             "sequencing",
-            "gwass",
-            "proxy phenotype",
-            "gwas"
+            "alzheimer disease neuroimaging initiative",
+            "genotyping"
           ]
         },
         {
-          "snp": "rs10906257",
+          "snp": "rs13115400",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
+            "genotype",
             "sequencing",
-            "gwass",
-            "proxy phenotype",
-            "gwas"
+            "alzheimer disease neuroimaging initiative",
+            "genotyping"
           ]
         },
         {
-          "snp": "rs10906257",
+          "snp": "rs1393060",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
+            "genotype",
             "sequencing",
-            "gwass",
-            "proxy phenotype",
-            "gwas"
+            "alzheimer disease neuroimaging initiative",
+            "genotyping"
           ]
         },
         {
-          "snp": "rs10991386",
+          "snp": "rs1393060",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
+            "genotype",
             "sequencing",
-            "gwass",
-            "proxy phenotype",
-            "gwas"
+            "alzheimer disease neuroimaging initiative",
+            "genotyping"
           ]
         },
         {
-          "snp": "rs10991386",
+          "snp": "rs1393060",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
+            "genotype",
             "sequencing",
-            "gwass",
-            "proxy phenotype",
-            "gwas"
+            "alzheimer disease neuroimaging initiative",
+            "genotyping"
           ]
         }
       ]
@@ -843,7 +705,7 @@
     "30448613_PMC6331247.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 43,
       "missed_examples": [
@@ -851,24 +713,22 @@
           "snp": "rs10838725",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "charge consortium",
+            "sequencing",
             "genotyping",
-            "adsp",
-            "wes",
             "adgc",
-            "genetic datasets"
+            "genetic datasets",
+            "adsp"
           ]
         },
         {
           "snp": "rs10838725",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "charge consortium",
+            "sequencing",
             "genotyping",
-            "adsp",
-            "wes",
             "adgc",
-            "genetic datasets"
+            "genetic datasets",
+            "adsp"
           ]
         },
         {
@@ -880,48 +740,44 @@
           "snp": "rs111418223",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "charge consortium",
+            "sequencing",
             "genotyping",
-            "adsp",
-            "wes",
             "adgc",
-            "genetic datasets"
+            "genetic datasets",
+            "adsp"
           ]
         },
         {
           "snp": "rs111418223",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "charge consortium",
+            "sequencing",
             "genotyping",
-            "adsp",
-            "wes",
             "adgc",
-            "genetic datasets"
+            "genetic datasets",
+            "adsp"
           ]
         },
         {
           "snp": "rs111418223",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "charge consortium",
+            "sequencing",
             "genotyping",
-            "adsp",
-            "wes",
             "adgc",
-            "genetic datasets"
+            "genetic datasets",
+            "adsp"
           ]
         },
         {
           "snp": "rs11771145",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "charge consortium",
+            "sequencing",
             "genotyping",
-            "adsp",
-            "wes",
             "adgc",
-            "genetic datasets"
+            "genetic datasets",
+            "adsp"
           ]
         },
         {
@@ -938,12 +794,11 @@
           "snp": "rs1476679",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "charge consortium",
+            "sequencing",
             "genotyping",
-            "adsp",
-            "wes",
             "adgc",
-            "genetic datasets"
+            "genetic datasets",
+            "adsp"
           ]
         }
       ]
@@ -953,7 +808,7 @@
     "30617256_PMC6836675.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 90,
       "missed_examples": [
@@ -961,251 +816,120 @@
           "snp": "rs10792832",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotype array pgc-alz",
-            "igap",
+            "sequencing",
             "genotyping",
-            "adsp",
-            "whole exome sequencing",
-            "whole-exome sequencing"
+            "genotype array",
+            "whole-exome sequencing",
+            "gwass",
+            "ad"
           ]
         },
         {
           "snp": "rs10933431",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotype array pgc-alz",
-            "igap",
+            "sequencing",
             "genotyping",
-            "adsp",
-            "whole exome sequencing",
-            "whole-exome sequencing"
+            "genotype array",
+            "whole-exome sequencing",
+            "gwass",
+            "ad"
           ]
         },
         {
           "snp": "rs10933431",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotype array pgc-alz",
-            "igap",
+            "sequencing",
             "genotyping",
-            "adsp",
-            "whole exome sequencing",
-            "whole-exome sequencing"
+            "genotype array",
+            "whole-exome sequencing",
+            "gwass",
+            "ad"
           ]
         },
         {
           "snp": "rs10933431",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotype array pgc-alz",
-            "igap",
+            "sequencing",
             "genotyping",
-            "adsp",
-            "whole exome sequencing",
-            "whole-exome sequencing"
+            "genotype array",
+            "whole-exome sequencing",
+            "gwass",
+            "ad"
           ]
         },
         {
           "snp": "rs111278892",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotype array pgc-alz",
-            "igap",
+            "sequencing",
             "genotyping",
-            "adsp",
-            "whole exome sequencing",
-            "whole-exome sequencing"
+            "genotype array",
+            "whole-exome sequencing",
+            "gwass",
+            "ad"
           ]
         },
         {
           "snp": "rs11218343",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotype array pgc-alz",
-            "igap",
+            "sequencing",
             "genotyping",
-            "adsp",
-            "whole exome sequencing",
-            "whole-exome sequencing"
+            "genotype array",
+            "whole-exome sequencing",
+            "gwass",
+            "ad"
           ]
         },
         {
           "snp": "rs11218343",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotype array pgc-alz",
-            "igap",
+            "sequencing",
             "genotyping",
-            "adsp",
-            "whole exome sequencing",
-            "whole-exome sequencing"
+            "genotype array",
+            "whole-exome sequencing",
+            "gwass",
+            "ad"
           ]
         },
         {
           "snp": "rs11218343",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotype array pgc-alz",
-            "igap",
+            "sequencing",
             "genotyping",
-            "adsp",
-            "whole exome sequencing",
-            "whole-exome sequencing"
+            "genotype array",
+            "whole-exome sequencing",
+            "gwass",
+            "ad"
           ]
         },
         {
           "snp": "rs11257238",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotype array pgc-alz",
-            "igap",
+            "sequencing",
             "genotyping",
-            "adsp",
-            "whole exome sequencing",
-            "whole-exome sequencing"
+            "genotype array",
+            "whole-exome sequencing",
+            "gwass",
+            "ad"
           ]
         },
         {
           "snp": "rs11257238",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotype array pgc-alz",
-            "igap",
+            "sequencing",
             "genotyping",
-            "adsp",
-            "whole exome sequencing",
-            "whole-exome sequencing"
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    "30636644_PMC6330399.csv",
-    {
-      "match_pct": 0.0,
-      "threshold_pct": 25.0,
-      "matched_rows": 0,
-      "total_rows": 141,
-      "missed_examples": [
-        {
-          "snp": "rs10111328",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "health and retirement study hrs",
-            "gene-based",
-            "pathway-based",
-            "genotyping",
-            "gwa analysis",
-            "gwa"
-          ]
-        },
-        {
-          "snp": "rs10111328",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "health and retirement study hrs",
-            "gene-based",
-            "pathway-based",
-            "genotyping",
-            "gwa analysis",
-            "gwa"
-          ]
-        },
-        {
-          "snp": "rs1046135",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "health and retirement study hrs",
-            "gene-based",
-            "pathway-based",
-            "genotyping",
-            "gwa analysis",
-            "gwa"
-          ]
-        },
-        {
-          "snp": "rs1046135",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "health and retirement study hrs",
-            "gene-based",
-            "pathway-based",
-            "genotyping",
-            "gwa analysis",
-            "gwa"
-          ]
-        },
-        {
-          "snp": "rs10794342",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "health and retirement study hrs",
-            "gene-based",
-            "pathway-based",
-            "genotyping",
-            "gwa analysis",
-            "gwa"
-          ]
-        },
-        {
-          "snp": "rs10947230",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "health and retirement study hrs",
-            "gene-based",
-            "pathway-based",
-            "genotyping",
-            "gwa analysis",
-            "gwa"
-          ]
-        },
-        {
-          "snp": "rs10953322",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "health and retirement study hrs",
-            "gene-based",
-            "pathway-based",
-            "genotyping",
-            "gwa analysis",
-            "gwa"
-          ]
-        },
-        {
-          "snp": "rs11089928",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "health and retirement study hrs",
-            "gene-based",
-            "pathway-based",
-            "genotyping",
-            "gwa analysis",
-            "gwa"
-          ]
-        },
-        {
-          "snp": "rs11089928",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "health and retirement study hrs",
-            "gene-based",
-            "pathway-based",
-            "genotyping",
-            "gwa analysis",
-            "gwa"
-          ]
-        },
-        {
-          "snp": "rs1172922",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "health and retirement study hrs",
-            "gene-based",
-            "pathway-based",
-            "genotyping",
-            "gwa analysis",
-            "gwa"
+            "genotype array",
+            "whole-exome sequencing",
+            "gwass",
+            "ad"
           ]
         }
       ]
@@ -1215,7 +939,7 @@
     "30651383_PMC6369905.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 63,
       "missed_examples": [
@@ -1273,127 +997,10 @@
     }
   ],
   [
-    "30805717_PMC7193309.csv",
-    {
-      "match_pct": 0.0,
-      "threshold_pct": 25.0,
-      "matched_rows": 0,
-      "total_rows": 14,
-      "missed_examples": [
-        {
-          "snp": "rs10501320",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "magic",
-            "genotyping",
-            "diagram",
-            "sequencing",
-            "twas",
-            "mr"
-          ]
-        },
-        {
-          "snp": "rs10501320",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "magic",
-            "genotyping",
-            "diagram",
-            "sequencing",
-            "twas",
-            "mr"
-          ]
-        },
-        {
-          "snp": "rs12805422",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "magic",
-            "genotyping",
-            "diagram",
-            "sequencing",
-            "twas",
-            "mr"
-          ]
-        },
-        {
-          "snp": "rs12805422",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "magic",
-            "genotyping",
-            "diagram",
-            "sequencing",
-            "twas",
-            "mr"
-          ]
-        },
-        {
-          "snp": "rs1483121",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "magic",
-            "genotyping",
-            "diagram",
-            "sequencing",
-            "twas",
-            "mr"
-          ]
-        },
-        {
-          "snp": "rs1483121",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "magic",
-            "genotyping",
-            "diagram",
-            "sequencing",
-            "twas",
-            "mr"
-          ]
-        },
-        {
-          "snp": "rs17747324",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "magic",
-            "genotyping",
-            "diagram",
-            "sequencing",
-            "twas",
-            "mr"
-          ]
-        },
-        {
-          "snp": "rs17747324",
-          "gt_value": "SNP-based",
-          "pred_terms": [
-            "magic",
-            "genotyping",
-            "diagram",
-            "sequencing",
-            "twas",
-            "mr"
-          ]
-        },
-        {
-          "snp": "rs2279590",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        },
-        {
-          "snp": "rs2279590",
-          "gt_value": "SNP-based",
-          "pred_terms": []
-        }
-      ]
-    }
-  ],
-  [
     "30930738_PMC6425305.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 4,
       "missed_examples": [
@@ -1401,36 +1008,36 @@
           "snp": "rs10792421",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
             "genotype",
-            "sequencing"
+            "sequencing",
+            "genotyping"
           ]
         },
         {
           "snp": "rs10792421",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
             "genotype",
-            "sequencing"
+            "sequencing",
+            "genotyping"
           ]
         },
         {
           "snp": "rs11649476",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
             "genotype",
-            "sequencing"
+            "sequencing",
+            "genotyping"
           ]
         },
         {
           "snp": "rs11649476",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "genotyping",
             "genotype",
-            "sequencing"
+            "sequencing",
+            "genotyping"
           ]
         }
       ]
@@ -1440,7 +1047,7 @@
     "30979435_PMC6783343.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 31,
       "missed_examples": [
@@ -1448,120 +1055,120 @@
           "snp": "rs12378268",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "gene-based",
-            "genotyping",
-            "snp-based",
-            "polygenic",
+            "gwas",
             "sequencing",
-            "gwas"
+            "genotyping",
+            "gene-based",
+            "alzheimers disease genetics consortium",
+            "snp-based"
           ]
         },
         {
           "snp": "rs12378268",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "gene-based",
-            "genotyping",
-            "snp-based",
-            "polygenic",
+            "gwas",
             "sequencing",
-            "gwas"
+            "genotyping",
+            "gene-based",
+            "alzheimers disease genetics consortium",
+            "snp-based"
           ]
         },
         {
           "snp": "rs1834550",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "gene-based",
-            "genotyping",
-            "snp-based",
-            "polygenic",
+            "gwas",
             "sequencing",
-            "gwas"
+            "genotyping",
+            "gene-based",
+            "alzheimers disease genetics consortium",
+            "snp-based"
           ]
         },
         {
           "snp": "rs1834550",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "gene-based",
-            "genotyping",
-            "snp-based",
-            "polygenic",
+            "gwas",
             "sequencing",
-            "gwas"
+            "genotyping",
+            "gene-based",
+            "alzheimers disease genetics consortium",
+            "snp-based"
           ]
         },
         {
           "snp": "rs184909761",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "gene-based",
-            "genotyping",
-            "snp-based",
-            "polygenic",
+            "gwas",
             "sequencing",
-            "gwas"
+            "genotyping",
+            "gene-based",
+            "alzheimers disease genetics consortium",
+            "snp-based"
           ]
         },
         {
           "snp": "rs184909761",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "gene-based",
-            "genotyping",
-            "snp-based",
-            "polygenic",
+            "gwas",
             "sequencing",
-            "gwas"
+            "genotyping",
+            "gene-based",
+            "alzheimers disease genetics consortium",
+            "snp-based"
           ]
         },
         {
           "snp": "rs3818361",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "gene-based",
-            "genotyping",
-            "snp-based",
-            "polygenic",
+            "gwas",
             "sequencing",
-            "gwas"
+            "genotyping",
+            "gene-based",
+            "alzheimers disease genetics consortium",
+            "snp-based"
           ]
         },
         {
           "snp": "rs3818361",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "gene-based",
-            "genotyping",
-            "snp-based",
-            "polygenic",
+            "gwas",
             "sequencing",
-            "gwas"
+            "genotyping",
+            "gene-based",
+            "alzheimers disease genetics consortium",
+            "snp-based"
           ]
         },
         {
           "snp": "rs4277762",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "gene-based",
-            "genotyping",
-            "snp-based",
-            "polygenic",
+            "gwas",
             "sequencing",
-            "gwas"
+            "genotyping",
+            "gene-based",
+            "alzheimers disease genetics consortium",
+            "snp-based"
           ]
         },
         {
           "snp": "rs4277762",
           "gt_value": "SNP-based",
           "pred_terms": [
-            "gene-based",
-            "genotyping",
-            "snp-based",
-            "polygenic",
+            "gwas",
             "sequencing",
-            "gwas"
+            "genotyping",
+            "gene-based",
+            "alzheimers disease genetics consortium",
+            "snp-based"
           ]
         }
       ]
@@ -1571,7 +1178,7 @@
     "31426376_PMC6723529.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 35,
       "missed_examples": [

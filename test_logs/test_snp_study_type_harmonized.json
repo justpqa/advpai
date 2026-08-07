@@ -46,6 +46,127 @@
     }
   ],
   [
+    "29458411_PMC5819208.csv",
+    {
+      "coverage_pct": 43.8,
+      "threshold_pct": 50.0,
+      "covered_rows": 14,
+      "total_rows": 32,
+      "missed_examples": [
+        {
+          "snp": "None",
+          "gt_value": "Gene-based",
+          "pred_terms": [
+            "genome-wide",
+            "sequencing",
+            "genotyping",
+            "summary data",
+            "egwas"
+          ]
+        },
+        {
+          "snp": "None",
+          "gt_value": "Gene-based",
+          "pred_terms": [
+            "genome-wide",
+            "sequencing",
+            "genotyping",
+            "summary data",
+            "egwas"
+          ]
+        },
+        {
+          "snp": "None",
+          "gt_value": "Gene-based",
+          "pred_terms": [
+            "genome-wide",
+            "sequencing",
+            "genotyping",
+            "summary data",
+            "egwas"
+          ]
+        },
+        {
+          "snp": "None",
+          "gt_value": "Gene-based",
+          "pred_terms": [
+            "genome-wide",
+            "sequencing",
+            "genotyping",
+            "summary data",
+            "egwas"
+          ]
+        },
+        {
+          "snp": "None",
+          "gt_value": "Gene-based",
+          "pred_terms": [
+            "genome-wide",
+            "sequencing",
+            "genotyping",
+            "summary data",
+            "egwas"
+          ]
+        },
+        {
+          "snp": "None",
+          "gt_value": "Gene-based",
+          "pred_terms": [
+            "genome-wide",
+            "sequencing",
+            "genotyping",
+            "summary data",
+            "egwas"
+          ]
+        },
+        {
+          "snp": "None",
+          "gt_value": "Gene-based",
+          "pred_terms": [
+            "genome-wide",
+            "sequencing",
+            "genotyping",
+            "summary data",
+            "egwas"
+          ]
+        },
+        {
+          "snp": "None",
+          "gt_value": "Gene-based",
+          "pred_terms": [
+            "genome-wide",
+            "sequencing",
+            "genotyping",
+            "summary data",
+            "egwas"
+          ]
+        },
+        {
+          "snp": "None",
+          "gt_value": "Gene-based",
+          "pred_terms": [
+            "genome-wide",
+            "sequencing",
+            "genotyping",
+            "summary data",
+            "egwas"
+          ]
+        },
+        {
+          "snp": "None",
+          "gt_value": "Gene-based",
+          "pred_terms": [
+            "genome-wide",
+            "sequencing",
+            "genotyping",
+            "summary data",
+            "egwas"
+          ]
+        }
+      ]
+    }
+  ],
+  [
     "29752348_PMC5976227.csv",
     {
       "coverage_pct": 0.0,

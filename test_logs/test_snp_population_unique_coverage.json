@@ -1,0 +1,168 @@
+[
+  [
+    "27899424_PMC5237405.csv",
+    {
+      "uncovered": [
+        "NHW"
+      ],
+      "pred_terms": [
+        "Caucasian",
+        "Multi-ethnic",
+        "Caribbean Hispanic",
+        "Asian",
+        "African American"
+      ]
+    }
+  ],
+  [
+    "28247064_PMC5613285.csv",
+    {
+      "uncovered": [
+        "NHW"
+      ],
+      "pred_terms": [
+        "Caucasian",
+        "Multi-ethnic",
+        "Caribbean Hispanic",
+        "Asian",
+        "African American"
+      ]
+    }
+  ],
+  [
+    "28560309_PMC5440281.csv",
+    {
+      "uncovered": [
+        "white"
+      ],
+      "pred_terms": []
+    }
+  ],
+  [
+    "29107063_PMC5920782.csv",
+    {
+      "uncovered": [
+        "White, black, other",
+        "NHW"
+      ],
+      "pred_terms": [
+        "Caucasian",
+        "Multi-ethnic",
+        "Caribbean Hispanic",
+        "Asian",
+        "African American"
+      ]
+    }
+  ],
+  [
+    "29752348_PMC5976227.csv",
+    {
+      "uncovered": [
+        "NHW"
+      ],
+      "pred_terms": []
+    }
+  ],
+  [
+    "29777097_PMC5959890.csv",
+    {
+      "uncovered": [
+        "NHW"
+      ],
+      "pred_terms": [
+        "Caucasian",
+        "Multi-ethnic",
+        "Caribbean Hispanic",
+        "Asian",
+        "African American"
+      ]
+    }
+  ],
+  [
+    "29967939_PMC6280657.csv",
+    {
+      "uncovered": [
+        "NHW"
+      ],
+      "pred_terms": [
+        "Caucasian",
+        "Multi-ethnic",
+        "Caribbean Hispanic",
+        "Asian",
+        "African American"
+      ]
+    }
+  ],
+  [
+    "30448613_PMC6331247.csv",
+    {
+      "uncovered": [
+        "NHW"
+      ],
+      "pred_terms": [
+        "Caucasian",
+        "Multi-ethnic",
+        "Caribbean Hispanic",
+        "Asian",
+        "African American"
+      ]
+    }
+  ],
+  [
+    "30636644_PMC6330399.csv",
+    {
+      "uncovered": [
+        "NHW"
+      ],
+      "pred_terms": [
+        "Caucasian",
+        "Multi-ethnic",
+        "Caribbean Hispanic",
+        "Asian",
+        "African American"
+      ]
+    }
+  ],
+  [
+    "30651383_PMC6369905.csv",
+    {
+      "uncovered": [
+        "European",
+        "East Asian, European",
+        "African American, Chinese, European, Hispanic, Malay",
+        "African American, Chinese, East-Asian, European, Hispanic, Malay"
+      ],
+      "pred_terms": []
+    }
+  ],
+  [
+    "30820047_PMC6463297.csv",
+    {
+      "uncovered": [
+        "Non-Hispanic White"
+      ],
+      "pred_terms": [
+        "Caucasian",
+        "Multi-ethnic",
+        "Caribbean Hispanic",
+        "Asian",
+        "African American"
+      ]
+    }
+  ],
+  [
+    "31426376_PMC6723529.csv",
+    {
+      "uncovered": [
+        "African ancestry"
+      ],
+      "pred_terms": [
+        "Caucasian",
+        "Multi-ethnic",
+        "Caribbean Hispanic",
+        "Asian",
+        "African American"
+      ]
+    }
+  ]
+]

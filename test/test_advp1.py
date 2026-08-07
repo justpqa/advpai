@@ -26,12 +26,12 @@ HARMONIZATION_COL_THRESHOLD: dict = {
     "Phenotype":  50.0,
 }
 HARMONIZATION_COL_THRESHOLD_EXACT: dict = {
-    "Population": 25.0,
-    "Cohort":     25.0,
-    "Stage":      25.0,
-    "Imputation": 25.0,
-    "Study type": 25.0,
-    "Phenotype":  25.0,
+    "Population": 50.0,
+    "Cohort":     50.0,
+    "Stage":      50.0,
+    "Imputation": 50.0,
+    "Study type": 50.0,
+    "Phenotype":  50.0,
 }
 
 def import_table_and_test_table(dir_path: str, file_name: str):
@@ -670,3 +670,86 @@ def test_snp_phenotype_exact(dir_path: str):
         with open("test_logs/test_snp_phenotype_exact.json", "w") as f:
             json.dump(failed_table, f, indent=2, default=str)
         raise AssertionError(f"Failed test_snp_phenotype_exact on {len(failed_table)} tables (threshold={HARMONIZATION_COL_THRESHOLD_EXACT[col]}%)")
+
+def _h_get_failed_tables_unique_coverage(dir_path: str, col: str, term_map: dict) -> list:
+    failed_table = []
+    for file_name in sorted(os.listdir(dir_path)):
+        if not (file_name.endswith(".csv") or file_name.endswith(".xlsx")):
+            continue
+        curr_df, test_df = import_table_and_test_table(dir_path, file_name)
+        if col not in curr_df.columns:
+            failed_table.append((file_name, {"error": f"column '{col}' missing in pred", "uncovered": None}))
+            continue
+        if col not in test_df.columns:
+            continue
+        gt_unique = [v for v in test_df[col].dropna().unique() if str(v).strip() and str(v).strip().lower() != "nan"]
+        if not gt_unique:
+            continue
+        pred_terms: list = []
+        for val in curr_df[col].dropna():
+            pred_terms.extend(_h_parse_pred_terms(val))
+        pred_terms = list(set(t for t in pred_terms if t))
+        uncovered = [str(v) for v in gt_unique if not _h_gt_is_covered(col, str(v).strip(), pred_terms, term_map)]
+        if uncovered:
+            failed_table.append((file_name, {"uncovered": uncovered, "pred_terms": pred_terms[:20]}))
+    return failed_table
+
+def test_snp_cohort_unique_coverage(dir_path: str):
+    col = "Cohort"
+    failed_table = _h_get_failed_tables_unique_coverage(dir_path, col, _H_TERM_MAP)
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        with open("test_logs/test_snp_cohort_unique_coverage.json", "w") as f:
+            json.dump(failed_table, f, indent=2, default=str)
+        raise AssertionError(f"Failed test_snp_cohort_unique_coverage on {len(failed_table)} tables")
+
+def test_snp_population_unique_coverage(dir_path: str):
+    col = "Population"
+    failed_table = _h_get_failed_tables_unique_coverage(dir_path, col, _H_TERM_MAP)
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        with open("test_logs/test_snp_population_unique_coverage.json", "w") as f:
+            json.dump(failed_table, f, indent=2, default=str)
+        raise AssertionError(f"Failed test_snp_population_unique_coverage on {len(failed_table)} tables")
+
+def test_snp_stage_unique_coverage(dir_path: str):
+    col = "Stage"
+    failed_table = _h_get_failed_tables_unique_coverage(dir_path, col, _H_TERM_MAP)
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        with open("test_logs/test_snp_stage_unique_coverage.json", "w") as f:
+            json.dump(failed_table, f, indent=2, default=str)
+        raise AssertionError(f"Failed test_snp_stage_unique_coverage on {len(failed_table)} tables")
+
+def test_snp_imputation_unique_coverage(dir_path: str):
+    col = "Imputation"
+    failed_table = _h_get_failed_tables_unique_coverage(dir_path, col, _H_TERM_MAP)
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        with open("test_logs/test_snp_imputation_unique_coverage.json", "w") as f:
+            json.dump(failed_table, f, indent=2, default=str)
+        raise AssertionError(f"Failed test_snp_imputation_unique_coverage on {len(failed_table)} tables")
+
+def test_snp_study_type_unique_coverage(dir_path: str):
+    col = "Study type"
+    failed_table = _h_get_failed_tables_unique_coverage(dir_path, col, _H_TERM_MAP)
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        with open("test_logs/test_snp_study_type_unique_coverage.json", "w") as f:
+            json.dump(failed_table, f, indent=2, default=str)
+        raise AssertionError(f"Failed test_snp_study_type_unique_coverage on {len(failed_table)} tables")
+
+def test_snp_phenotype_unique_coverage(dir_path: str):
+    col = "Phenotype"
+    failed_table = _h_get_failed_tables_unique_coverage(dir_path, col, _H_TERM_MAP)
+    try:
+        assert len(failed_table) == 0
+    except AssertionError:
+        with open("test_logs/test_snp_phenotype_unique_coverage.json", "w") as f:
+            json.dump(failed_table, f, indent=2, default=str)
+        raise AssertionError(f"Failed test_snp_phenotype_unique_coverage on {len(failed_table)} tables")

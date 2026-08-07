@@ -1,0 +1,30 @@
+[
+  [
+    "30617256_PMC6836675.csv",
+    {
+      "uncovered": [
+        "Stage 2"
+      ],
+      "pred_terms": [
+        "Joint-analysis",
+        "Replication",
+        "Meta-analysis"
+      ]
+    }
+  ],
+  [
+    "30820047_PMC6463297.csv",
+    {
+      "uncovered": [
+        "Stage 3B (Stage 2 + Stage 3A)",
+        "Stage 1, Stage 3B (Stage 2 + Stage 3A)"
+      ],
+      "pred_terms": [
+        "Discovery",
+        "Replication",
+        "Joint-analysis",
+        "Meta-analysis"
+      ]
+    }
+  ]
+]

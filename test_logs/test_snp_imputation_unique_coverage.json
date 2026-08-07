@@ -1,0 +1,137 @@
+[
+  [
+    "28247064_PMC5613285.csv",
+    {
+      "uncovered": [
+        "1000G Phase 3 (release Oct 2014)"
+      ],
+      "pred_terms": [
+        "rs12961169t",
+        "gcta-greml power calculator",
+        "genotyping",
+        "greml-ldms",
+        "maf",
+        "imputation",
+        "impute2 v2.3.2",
+        "rs9527039c",
+        "gcta",
+        "shapeit v2.790"
+      ]
+    }
+  ],
+  [
+    "28560309_PMC5440281.csv",
+    {
+      "uncovered": [
+        "1000G"
+      ],
+      "pred_terms": []
+    }
+  ],
+  [
+    "28780673_PMC5693762.csv",
+    {
+      "uncovered": [
+        "1000G "
+      ],
+      "pred_terms": [
+        "reference panel",
+        "charge",
+        "eadi",
+        "gerad",
+        "adgc",
+        "imputation",
+        "cancer types",
+        "mach",
+        "large-scale gwas summary results",
+        "impute2"
+      ]
+    }
+  ],
+  [
+    "29274321_PMC5938137.csv",
+    {
+      "uncovered": [
+        "1000G (release Mar 2012)"
+      ],
+      "pred_terms": [
+        "imputation",
+        "reference panel",
+        "pc",
+        "imputed genotype probabilities"
+      ]
+    }
+  ],
+  [
+    "29458411_PMC5819208.csv",
+    {
+      "uncovered": [
+        "1000G "
+      ],
+      "pred_terms": [
+        "pleiotropy",
+        "mayo clinic brain egwas",
+        "summary data",
+        "grch37",
+        "egwas",
+        "genotype imputation",
+        "1000 genomes project reference panel"
+      ]
+    }
+  ],
+  [
+    "29752348_PMC5976227.csv",
+    {
+      "uncovered": [
+        "HRC"
+      ],
+      "pred_terms": []
+    }
+  ],
+  [
+    "30651383_PMC6369905.csv",
+    {
+      "uncovered": [
+        "1000G Phase 3 (release Oct 2014)"
+      ],
+      "pred_terms": []
+    }
+  ],
+  [
+    "30820047_PMC6463297.csv",
+    {
+      "uncovered": [
+        "1000G"
+      ],
+      "pred_terms": [
+        "reference panel",
+        "machminimac",
+        "phasing",
+        "pre-phasing",
+        "pre-analysis quality control",
+        "imputation",
+        "thousands of genomes",
+        "1,000 genomes project",
+        "1,000 genomes",
+        "shapeitimpute2"
+      ]
+    }
+  ],
+  [
+    "30930738_PMC6425305.csv",
+    {
+      "uncovered": [
+        "1000G"
+      ],
+      "pred_terms": [
+        "ad cases",
+        "conditional qq-plots",
+        "conditional fdr method",
+        "bip",
+        "ad",
+        "bip cases",
+        "mach:"
+      ]
+    }
+  ]
+]

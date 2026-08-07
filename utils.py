@@ -98,8 +98,8 @@ def clean_snp(s) -> str:
     except Exception:
         return None
     
-def make_embeddings(sentences: str | List[str], embeddings_model: PreTrainedModel, embeddings_model_tokenizer: PreTrainedTokenizer) -> torch.Tensor:
-    input = embeddings_model_tokenizer(sentences, padding=True, truncation=True, return_tensors='pt')
+def make_embeddings(sentences: str | List[str], embeddings_model: PreTrainedModel, embeddings_model_tokenizer: PreTrainedTokenizer, normalize: bool = True) -> torch.Tensor:
+    input = embeddings_model_tokenizer(sentences, padding=True, truncation=True, max_length=512, return_tensors='pt')
 
     # get token embeddings
     with torch.no_grad():
@@ -111,13 +111,18 @@ def make_embeddings(sentences: str | List[str], embeddings_model: PreTrainedMode
     embeddings = torch.sum(token_embeddings * input_mask_expanded, 1) / torch.clamp(input_mask_expanded.sum(1), min=1e-9)
 
     # final normalization
-    embeddings = F.normalize(embeddings, p=2, dim=1)
+    if normalize:
+        embeddings = F.normalize(embeddings, p=2, dim=1)
 
     # size (# senetences, # dim)
     return embeddings
 
 def calculate_similarity_scores(sentences_1: str | List[str], sentences_2: str | List[str], embeddings_model: PreTrainedModel, embeddings_model_tokenizer: PreTrainedTokenizer) -> torch.Tensor:
     embeddings_1, embeddings_2 = make_embeddings(sentences_1, embeddings_model, embeddings_model_tokenizer), make_embeddings(sentences_2, embeddings_model, embeddings_model_tokenizer)
+    return embeddings_1 @ embeddings_2.T 
+
+def calculate_similarity_scores_ip(sentences_1: str | List[str], sentences_2: str | List[str], embeddings_model: PreTrainedModel, embeddings_model_tokenizer: PreTrainedTokenizer) -> torch.Tensor:
+    embeddings_1, embeddings_2 = make_embeddings(sentences_1, embeddings_model, embeddings_model_tokenizer, normalize = False), make_embeddings(sentences_2, embeddings_model, embeddings_model_tokenizer, normalize = False)
     return embeddings_1 @ embeddings_2.T 
 
 def combine_possible_info(lst: List[str]):

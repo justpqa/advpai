@@ -3,7 +3,7 @@
     "27899424_PMC5237405.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 57,
       "missed_examples": [
@@ -11,120 +11,120 @@
           "snp": "rs10784359",
           "gt_value": "IFGC",
           "pred_terms": [
-            "ifgc phase i",
+            "rs6857",
             "discovery",
-            "original study cohort",
-            "ifgc",
-            "ad",
-            "gwas"
+            "dataset",
+            "ipdgc",
+            "first large-scale study",
+            "haplotype a"
           ]
         },
         {
           "snp": "rs12964543",
           "gt_value": "IFGC",
           "pred_terms": [
-            "ifgc phase i",
+            "rs6857",
             "discovery",
-            "original study cohort",
-            "ifgc",
-            "ad",
-            "gwas"
+            "dataset",
+            "ipdgc",
+            "first large-scale study",
+            "haplotype a"
           ]
         },
         {
           "snp": "rs12964543",
           "gt_value": "IFGC",
           "pred_terms": [
-            "ifgc phase i",
+            "rs6857",
             "discovery",
-            "original study cohort",
-            "ifgc",
-            "ad",
-            "gwas"
+            "dataset",
+            "ipdgc",
+            "first large-scale study",
+            "haplotype a"
           ]
         },
         {
           "snp": "rs12964543",
           "gt_value": "IFGC",
           "pred_terms": [
-            "ifgc phase i",
+            "rs6857",
             "discovery",
-            "original study cohort",
-            "ifgc",
-            "ad",
-            "gwas"
+            "dataset",
+            "ipdgc",
+            "first large-scale study",
+            "haplotype a"
           ]
         },
         {
           "snp": "rs12964543",
           "gt_value": "IFGC",
           "pred_terms": [
-            "ifgc phase i",
+            "rs6857",
             "discovery",
-            "original study cohort",
-            "ifgc",
-            "ad",
-            "gwas"
+            "dataset",
+            "ipdgc",
+            "first large-scale study",
+            "haplotype a"
           ]
         },
         {
           "snp": "rs1328032",
           "gt_value": "IFGC",
           "pred_terms": [
-            "ifgc phase i",
+            "rs6857",
             "discovery",
-            "original study cohort",
-            "ifgc",
-            "ad",
-            "gwas"
+            "dataset",
+            "ipdgc",
+            "first large-scale study",
+            "haplotype a"
           ]
         },
         {
           "snp": "rs1328032",
           "gt_value": "IFGC",
           "pred_terms": [
-            "ifgc phase i",
+            "rs6857",
             "discovery",
-            "original study cohort",
-            "ifgc",
-            "ad",
-            "gwas"
+            "dataset",
+            "ipdgc",
+            "first large-scale study",
+            "haplotype a"
           ]
         },
         {
           "snp": "rs1328032",
           "gt_value": "IFGC",
           "pred_terms": [
-            "ifgc phase i",
+            "rs6857",
             "discovery",
-            "original study cohort",
-            "ifgc",
-            "ad",
-            "gwas"
+            "dataset",
+            "ipdgc",
+            "first large-scale study",
+            "haplotype a"
           ]
         },
         {
           "snp": "rs1358071",
           "gt_value": "UKBEC",
           "pred_terms": [
-            "ifgc phase i",
+            "rs6857",
             "discovery",
-            "original study cohort",
-            "ifgc",
-            "ad",
-            "gwas"
+            "dataset",
+            "ipdgc",
+            "first large-scale study",
+            "haplotype a"
           ]
         },
         {
           "snp": "rs1358071",
           "gt_value": "IFGC",
           "pred_terms": [
-            "ifgc phase i",
+            "rs6857",
             "discovery",
-            "original study cohort",
-            "ifgc",
-            "ad",
-            "gwas"
+            "dataset",
+            "ipdgc",
+            "first large-scale study",
+            "haplotype a"
           ]
         }
       ]
@@ -134,7 +134,7 @@
     "28247064_PMC5613285.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 35,
       "missed_examples": [
@@ -142,120 +142,120 @@
           "snp": "rs12961169",
           "gt_value": "ADNI, Knight-ADRC",
           "pred_terms": [
-            "adni.loni.usc.edu",
-            "ag",
-            "biocard",
-            "adgc",
-            "adni1",
-            "adni2"
+            "cohort demographics",
+            "adrc",
+            "datasets",
+            "cohort descriptions",
+            "larger study",
+            "dataset"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "ADNI1&2, BIOCARD, HB, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "adni.loni.usc.edu",
-            "ag",
-            "biocard",
-            "adgc",
-            "adni1",
-            "adni2"
+            "cohort demographics",
+            "adrc",
+            "datasets",
+            "cohort descriptions",
+            "larger study",
+            "dataset"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "IGAP",
           "pred_terms": [
-            "adni.loni.usc.edu",
-            "ag",
-            "biocard",
-            "adgc",
-            "adni1",
-            "adni2"
+            "cohort demographics",
+            "adrc",
+            "datasets",
+            "cohort descriptions",
+            "larger study",
+            "dataset"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "ADNI1&2, BIOCARD, HB, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "adni.loni.usc.edu",
-            "ag",
-            "biocard",
-            "adgc",
-            "adni1",
-            "adni2"
+            "cohort demographics",
+            "adrc",
+            "datasets",
+            "cohort descriptions",
+            "larger study",
+            "dataset"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "ADNI1&2, BIOCARD, HB, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "adni.loni.usc.edu",
-            "ag",
-            "biocard",
-            "adgc",
-            "adni1",
-            "adni2"
+            "cohort demographics",
+            "adrc",
+            "datasets",
+            "cohort descriptions",
+            "larger study",
+            "dataset"
           ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "ADNI, Knight-ADRC",
           "pred_terms": [
-            "adni.loni.usc.edu",
-            "ag",
-            "biocard",
-            "adgc",
-            "adni1",
-            "adni2"
+            "cohort demographics",
+            "adrc",
+            "datasets",
+            "cohort descriptions",
+            "larger study",
+            "dataset"
           ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "IGAP",
           "pred_terms": [
-            "adni.loni.usc.edu",
-            "ag",
-            "biocard",
-            "adgc",
-            "adni1",
-            "adni2"
+            "cohort demographics",
+            "adrc",
+            "datasets",
+            "cohort descriptions",
+            "larger study",
+            "dataset"
           ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "ADNI1&2, BIOCARD, HB, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "adni.loni.usc.edu",
-            "ag",
-            "biocard",
-            "adgc",
-            "adni1",
-            "adni2"
+            "cohort demographics",
+            "adrc",
+            "datasets",
+            "cohort descriptions",
+            "larger study",
+            "dataset"
           ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "ADNI1&2, BIOCARD, HB, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "adni.loni.usc.edu",
-            "ag",
-            "biocard",
-            "adgc",
-            "adni1",
-            "adni2"
+            "cohort demographics",
+            "adrc",
+            "datasets",
+            "cohort descriptions",
+            "larger study",
+            "dataset"
           ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "ADNI1&2, BIOCARD, HB, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "adni.loni.usc.edu",
-            "ag",
-            "biocard",
-            "adgc",
-            "adni1",
-            "adni2"
+            "cohort demographics",
+            "adrc",
+            "datasets",
+            "cohort descriptions",
+            "larger study",
+            "dataset"
           ]
         }
       ]
@@ -265,7 +265,7 @@
     "28560309_PMC5440281.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 7,
       "missed_examples": [
@@ -311,7 +311,7 @@
     "28780673_PMC5693762.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 44,
       "missed_examples": [
@@ -319,120 +319,120 @@
           "snp": "rs10896445",
           "gt_value": "IGAP, GAME-ON",
           "pred_terms": [
+            "international genomics of alzheimers project (igap)",
             "igap",
-            "eadi",
-            "game-on",
-            "adgc",
+            "studya",
             "charge",
-            "gerad"
+            "adni",
+            "eadi"
           ]
         },
         {
           "snp": "rs10896445",
           "gt_value": "IGAP",
           "pred_terms": [
+            "international genomics of alzheimers project (igap)",
             "igap",
-            "eadi",
-            "game-on",
-            "adgc",
+            "studya",
             "charge",
-            "gerad"
+            "adni",
+            "eadi"
           ]
         },
         {
           "snp": "rs10896445",
           "gt_value": "GAME-ON",
           "pred_terms": [
+            "international genomics of alzheimers project (igap)",
             "igap",
-            "eadi",
-            "game-on",
-            "adgc",
+            "studya",
             "charge",
-            "gerad"
+            "adni",
+            "eadi"
           ]
         },
         {
           "snp": "rs10896445",
           "gt_value": "GAME-ON",
           "pred_terms": [
+            "international genomics of alzheimers project (igap)",
             "igap",
-            "eadi",
-            "game-on",
-            "adgc",
+            "studya",
             "charge",
-            "gerad"
+            "adni",
+            "eadi"
           ]
         },
         {
           "snp": "rs11249708",
           "gt_value": "GAME-ON",
           "pred_terms": [
+            "international genomics of alzheimers project (igap)",
             "igap",
-            "eadi",
-            "game-on",
-            "adgc",
+            "studya",
             "charge",
-            "gerad"
+            "adni",
+            "eadi"
           ]
         },
         {
           "snp": "rs11249708",
           "gt_value": "IGAP, GAME-ON",
           "pred_terms": [
+            "international genomics of alzheimers project (igap)",
             "igap",
-            "eadi",
-            "game-on",
-            "adgc",
+            "studya",
             "charge",
-            "gerad"
+            "adni",
+            "eadi"
           ]
         },
         {
           "snp": "rs11249708",
           "gt_value": "IGAP",
           "pred_terms": [
+            "international genomics of alzheimers project (igap)",
             "igap",
-            "eadi",
-            "game-on",
-            "adgc",
+            "studya",
             "charge",
-            "gerad"
+            "adni",
+            "eadi"
           ]
         },
         {
           "snp": "rs11249708",
           "gt_value": "GAME-ON",
           "pred_terms": [
+            "international genomics of alzheimers project (igap)",
             "igap",
-            "eadi",
-            "game-on",
-            "adgc",
+            "studya",
             "charge",
-            "gerad"
+            "adni",
+            "eadi"
           ]
         },
         {
           "snp": "rs1568485",
           "gt_value": "GAME-ON",
           "pred_terms": [
+            "international genomics of alzheimers project (igap)",
             "igap",
-            "eadi",
-            "game-on",
-            "adgc",
+            "studya",
             "charge",
-            "gerad"
+            "adni",
+            "eadi"
           ]
         },
         {
           "snp": "rs1568485",
           "gt_value": "IGAP",
           "pred_terms": [
+            "international genomics of alzheimers project (igap)",
             "igap",
-            "eadi",
-            "game-on",
-            "adgc",
+            "studya",
             "charge",
-            "gerad"
+            "adni",
+            "eadi"
           ]
         }
       ]
@@ -442,7 +442,7 @@
     "29107063_PMC5920782.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 32,
       "missed_examples": [
@@ -450,44 +450,48 @@
           "snp": "rs115881343",
           "gt_value": "HRS",
           "pred_terms": [
-            "hrs",
-            "chs",
-            "datasets",
             "fhs",
-            "loadfs"
+            "chs",
+            "hrs",
+            "discovery",
+            "loadfs",
+            "dataset"
           ]
         },
         {
           "snp": "rs12721046",
           "gt_value": "FHS",
           "pred_terms": [
-            "hrs",
-            "chs",
-            "datasets",
             "fhs",
-            "loadfs"
+            "chs",
+            "hrs",
+            "discovery",
+            "loadfs",
+            "dataset"
           ]
         },
         {
           "snp": "rs12721046",
           "gt_value": "CHS",
           "pred_terms": [
-            "hrs",
-            "chs",
-            "datasets",
             "fhs",
-            "loadfs"
+            "chs",
+            "hrs",
+            "discovery",
+            "loadfs",
+            "dataset"
           ]
         },
         {
           "snp": "rs12721046",
           "gt_value": "FHS",
           "pred_terms": [
-            "hrs",
-            "chs",
-            "datasets",
             "fhs",
-            "loadfs"
+            "chs",
+            "hrs",
+            "discovery",
+            "loadfs",
+            "dataset"
           ]
         },
         {
@@ -499,55 +503,191 @@
           "snp": "rs157582",
           "gt_value": "HRS",
           "pred_terms": [
-            "hrs",
-            "chs",
-            "datasets",
             "fhs",
-            "loadfs"
+            "chs",
+            "hrs",
+            "discovery",
+            "loadfs",
+            "dataset"
           ]
         },
         {
           "snp": "rs157582",
           "gt_value": "HRS",
           "pred_terms": [
-            "hrs",
-            "chs",
-            "datasets",
             "fhs",
-            "loadfs"
+            "chs",
+            "hrs",
+            "discovery",
+            "loadfs",
+            "dataset"
           ]
         },
         {
           "snp": "rs2075650",
           "gt_value": "FHS",
           "pred_terms": [
-            "hrs",
-            "chs",
-            "datasets",
             "fhs",
-            "loadfs"
+            "chs",
+            "hrs",
+            "discovery",
+            "loadfs",
+            "dataset"
           ]
         },
         {
           "snp": "rs2075650",
           "gt_value": "LOADFS",
           "pred_terms": [
-            "hrs",
-            "chs",
-            "datasets",
             "fhs",
-            "loadfs"
+            "chs",
+            "hrs",
+            "discovery",
+            "loadfs",
+            "dataset"
           ]
         },
         {
           "snp": "rs2075650",
           "gt_value": "CHS",
           "pred_terms": [
-            "hrs",
-            "chs",
-            "datasets",
             "fhs",
-            "loadfs"
+            "chs",
+            "hrs",
+            "discovery",
+            "loadfs",
+            "dataset"
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    "29274321_PMC5938137.csv",
+    {
+      "match_pct": 0.0,
+      "threshold_pct": 50.0,
+      "matched_rows": 0,
+      "total_rows": 12,
+      "missed_examples": [
+        {
+          "snp": "rs10775009",
+          "gt_value": "ADNI",
+          "pred_terms": [
+            "eisai bio bank data",
+            "gse44772",
+            "adni-1",
+            "geo: gse44772",
+            "adni-2",
+            "adni-go2"
+          ]
+        },
+        {
+          "snp": "rs111882035",
+          "gt_value": "ADNI",
+          "pred_terms": [
+            "eisai bio bank data",
+            "gse44772",
+            "adni-1",
+            "geo: gse44772",
+            "adni-2",
+            "adni-go2"
+          ]
+        },
+        {
+          "snp": "rs118130881",
+          "gt_value": "ADNI",
+          "pred_terms": [
+            "eisai bio bank data",
+            "gse44772",
+            "adni-1",
+            "geo: gse44772",
+            "adni-2",
+            "adni-go2"
+          ]
+        },
+        {
+          "snp": "rs12268753",
+          "gt_value": "ADNI",
+          "pred_terms": [
+            "eisai bio bank data",
+            "gse44772",
+            "adni-1",
+            "geo: gse44772",
+            "adni-2",
+            "adni-go2"
+          ]
+        },
+        {
+          "snp": "rs2378873",
+          "gt_value": "ADNI",
+          "pred_terms": [
+            "eisai bio bank data",
+            "gse44772",
+            "adni-1",
+            "geo: gse44772",
+            "adni-2",
+            "adni-go2"
+          ]
+        },
+        {
+          "snp": "rs2819438",
+          "gt_value": "ADNI",
+          "pred_terms": [
+            "eisai bio bank data",
+            "gse44772",
+            "adni-1",
+            "geo: gse44772",
+            "adni-2",
+            "adni-go2"
+          ]
+        },
+        {
+          "snp": "rs4921790",
+          "gt_value": "ADNI",
+          "pred_terms": [
+            "eisai bio bank data",
+            "gse44772",
+            "adni-1",
+            "geo: gse44772",
+            "adni-2",
+            "adni-go2"
+          ]
+        },
+        {
+          "snp": "rs55644114",
+          "gt_value": "ADNI",
+          "pred_terms": [
+            "eisai bio bank data",
+            "gse44772",
+            "adni-1",
+            "geo: gse44772",
+            "adni-2",
+            "adni-go2"
+          ]
+        },
+        {
+          "snp": "rs73705514",
+          "gt_value": "ADNI",
+          "pred_terms": [
+            "eisai bio bank data",
+            "gse44772",
+            "adni-1",
+            "geo: gse44772",
+            "adni-2",
+            "adni-go2"
+          ]
+        },
+        {
+          "snp": "rs74442473",
+          "gt_value": "ADNI",
+          "pred_terms": [
+            "eisai bio bank data",
+            "gse44772",
+            "adni-1",
+            "geo: gse44772",
+            "adni-2",
+            "adni-go2"
           ]
         }
       ]
@@ -557,7 +697,7 @@
     "29458411_PMC5819208.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 32,
       "missed_examples": [
@@ -565,120 +705,120 @@
           "snp": "rs34487851",
           "gt_value": "ADGC",
           "pred_terms": [
-            "discovery",
-            "vcx",
-            "ca",
-            "alzheimers disease",
-            "nft",
-            "np"
+            "study population",
+            "beecham et al. study",
+            "mayo clinic brain egwas data",
+            "dataset",
+            "mayo clinic late-onset ad gwas",
+            "ad"
           ]
         },
         {
           "snp": "rs34487851",
           "gt_value": "ADGC",
           "pred_terms": [
-            "discovery",
-            "vcx",
-            "ca",
-            "alzheimers disease",
-            "nft",
-            "np"
+            "study population",
+            "beecham et al. study",
+            "mayo clinic brain egwas data",
+            "dataset",
+            "mayo clinic late-onset ad gwas",
+            "ad"
           ]
         },
         {
           "snp": "rs34487851",
           "gt_value": "ADGC",
           "pred_terms": [
-            "discovery",
-            "vcx",
-            "ca",
-            "alzheimers disease",
-            "nft",
-            "np"
+            "study population",
+            "beecham et al. study",
+            "mayo clinic brain egwas data",
+            "dataset",
+            "mayo clinic late-onset ad gwas",
+            "ad"
           ]
         },
         {
           "snp": "rs34487851",
           "gt_value": "ADGC",
           "pred_terms": [
-            "discovery",
-            "vcx",
-            "ca",
-            "alzheimers disease",
-            "nft",
-            "np"
+            "study population",
+            "beecham et al. study",
+            "mayo clinic brain egwas data",
+            "dataset",
+            "mayo clinic late-onset ad gwas",
+            "ad"
           ]
         },
         {
           "snp": "rs34487851",
           "gt_value": "ADGC",
           "pred_terms": [
-            "discovery",
-            "vcx",
-            "ca",
-            "alzheimers disease",
-            "nft",
-            "np"
+            "study population",
+            "beecham et al. study",
+            "mayo clinic brain egwas data",
+            "dataset",
+            "mayo clinic late-onset ad gwas",
+            "ad"
           ]
         },
         {
           "snp": "rs34487851",
           "gt_value": "ADGC",
           "pred_terms": [
-            "discovery",
-            "vcx",
-            "ca",
-            "alzheimers disease",
-            "nft",
-            "np"
+            "study population",
+            "beecham et al. study",
+            "mayo clinic brain egwas data",
+            "dataset",
+            "mayo clinic late-onset ad gwas",
+            "ad"
           ]
         },
         {
           "snp": "rs34487851",
           "gt_value": "ADGC",
           "pred_terms": [
-            "discovery",
-            "vcx",
-            "ca",
-            "alzheimers disease",
-            "nft",
-            "np"
+            "study population",
+            "beecham et al. study",
+            "mayo clinic brain egwas data",
+            "dataset",
+            "mayo clinic late-onset ad gwas",
+            "ad"
           ]
         },
         {
           "snp": "rs79524815",
           "gt_value": "ADGC",
           "pred_terms": [
-            "discovery",
-            "vcx",
-            "ca",
-            "alzheimers disease",
-            "nft",
-            "np"
+            "study population",
+            "beecham et al. study",
+            "mayo clinic brain egwas data",
+            "dataset",
+            "mayo clinic late-onset ad gwas",
+            "ad"
           ]
         },
         {
           "snp": "rs79524815",
           "gt_value": "ADGC",
           "pred_terms": [
-            "discovery",
-            "vcx",
-            "ca",
-            "alzheimers disease",
-            "nft",
-            "np"
+            "study population",
+            "beecham et al. study",
+            "mayo clinic brain egwas data",
+            "dataset",
+            "mayo clinic late-onset ad gwas",
+            "ad"
           ]
         },
         {
           "snp": "rs79524815",
           "gt_value": "ADGC",
           "pred_terms": [
-            "discovery",
-            "vcx",
-            "ca",
-            "alzheimers disease",
-            "nft",
-            "np"
+            "study population",
+            "beecham et al. study",
+            "mayo clinic brain egwas data",
+            "dataset",
+            "mayo clinic late-onset ad gwas",
+            "ad"
           ]
         }
       ]
@@ -688,7 +828,7 @@
     "29752348_PMC5976227.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 4,
       "missed_examples": [
@@ -719,7 +859,7 @@
     "29777097_PMC5959890.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 3,
       "missed_examples": [
@@ -727,33 +867,36 @@
           "snp": "rs593742",
           "gt_value": "UKBB",
           "pred_terms": [
+            "uk bileve",
             "igap",
-            "igap stage 2",
             "uk biobank",
             "uk biobank cohort",
-            "igap stage 1"
+            "uk biobank data",
+            "uk biobank paternal and maternal meta-analysis"
           ]
         },
         {
           "snp": "rs6504163",
           "gt_value": "UKBB",
           "pred_terms": [
+            "uk bileve",
             "igap",
-            "igap stage 2",
             "uk biobank",
             "uk biobank cohort",
-            "igap stage 1"
+            "uk biobank data",
+            "uk biobank paternal and maternal meta-analysis"
           ]
         },
         {
           "snp": "rs889555",
           "gt_value": "UKBB",
           "pred_terms": [
+            "uk bileve",
             "igap",
-            "igap stage 2",
             "uk biobank",
             "uk biobank cohort",
-            "igap stage 1"
+            "uk biobank data",
+            "uk biobank paternal and maternal meta-analysis"
           ]
         }
       ]
@@ -763,7 +906,7 @@
     "29967939_PMC6280657.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 55,
       "missed_examples": [
@@ -771,120 +914,97 @@
           "snp": "rs12961169",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "igap",
-            "dataset",
+            "alzheimer disease neuroimaging initiative (adni)",
             "study",
-            "mci",
-            "uw",
-            "elderly cognitively normal controls"
+            "age-of-onset analysis of ad"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "igap",
-            "dataset",
+            "alzheimer disease neuroimaging initiative (adni)",
             "study",
-            "mci",
-            "uw",
-            "elderly cognitively normal controls"
+            "age-of-onset analysis of ad"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "igap",
-            "dataset",
+            "alzheimer disease neuroimaging initiative (adni)",
             "study",
-            "mci",
-            "uw",
-            "elderly cognitively normal controls"
+            "age-of-onset analysis of ad"
           ]
         },
         {
           "snp": "rs13115400",
           "gt_value": "ROS/MAP",
           "pred_terms": [
-            "igap",
-            "dataset",
+            "adni cohort",
+            "alzheimer disease neuroimaging initiative (adni)",
             "study",
-            "mci",
-            "uw",
-            "elderly cognitively normal controls"
+            "age-of-onset analysis of ad"
           ]
         },
         {
           "snp": "rs13115400",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "igap",
-            "dataset",
+            "adni cohort",
+            "alzheimer disease neuroimaging initiative (adni)",
             "study",
-            "mci",
-            "uw",
-            "elderly cognitively normal controls"
+            "age-of-onset analysis of ad"
           ]
         },
         {
           "snp": "rs13115400",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "igap",
-            "dataset",
+            "adni cohort",
+            "alzheimer disease neuroimaging initiative (adni)",
             "study",
-            "mci",
-            "uw",
-            "elderly cognitively normal controls"
+            "age-of-onset analysis of ad"
           ]
         },
         {
           "snp": "rs13115400",
           "gt_value": "ROS/MAP",
           "pred_terms": [
-            "igap",
-            "dataset",
+            "adni cohort",
+            "alzheimer disease neuroimaging initiative (adni)",
             "study",
-            "mci",
-            "uw",
-            "elderly cognitively normal controls"
+            "age-of-onset analysis of ad"
           ]
         },
         {
           "snp": "rs1393060",
           "gt_value": "ROS/MAP",
           "pred_terms": [
-            "igap",
-            "dataset",
+            "adni cohort",
+            "alzheimer disease neuroimaging initiative (adni)",
             "study",
-            "mci",
-            "uw",
-            "elderly cognitively normal controls"
+            "age-of-onset analysis of ad"
           ]
         },
         {
           "snp": "rs1393060",
           "gt_value": "ROS/MAP",
           "pred_terms": [
-            "igap",
-            "dataset",
+            "adni cohort",
+            "alzheimer disease neuroimaging initiative (adni)",
             "study",
-            "mci",
-            "uw",
-            "elderly cognitively normal controls"
+            "age-of-onset analysis of ad"
           ]
         },
         {
           "snp": "rs1393060",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "igap",
-            "dataset",
+            "adni cohort",
+            "alzheimer disease neuroimaging initiative (adni)",
             "study",
-            "mci",
-            "uw",
-            "elderly cognitively normal controls"
+            "age-of-onset analysis of ad"
           ]
         }
       ]
@@ -894,7 +1014,7 @@
     "30413934_PMC6358498.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 374,
       "missed_examples": [
@@ -903,11 +1023,10 @@
           "gt_value": "IGAP",
           "pred_terms": [
             "igap",
-            "uk biobank ukb",
-            "adgc",
-            "uk biobank",
+            "ukb",
             "adgc2",
-            "igap stage 1"
+            "igap stage 1",
+            "uk biobank"
           ]
         },
         {
@@ -915,11 +1034,10 @@
           "gt_value": "GIANT",
           "pred_terms": [
             "igap",
-            "uk biobank ukb",
-            "adgc",
-            "uk biobank",
+            "ukb",
             "adgc2",
-            "igap stage 1"
+            "igap stage 1",
+            "uk biobank"
           ]
         },
         {
@@ -927,11 +1045,10 @@
           "gt_value": "UKBB",
           "pred_terms": [
             "igap",
-            "uk biobank ukb",
-            "adgc",
-            "uk biobank",
+            "ukb",
             "adgc2",
-            "igap stage 1"
+            "igap stage 1",
+            "uk biobank"
           ]
         },
         {
@@ -939,11 +1056,10 @@
           "gt_value": "IGAP",
           "pred_terms": [
             "igap",
-            "uk biobank ukb",
-            "adgc",
-            "uk biobank",
+            "ukb",
             "adgc2",
-            "igap stage 1"
+            "igap stage 1",
+            "uk biobank"
           ]
         },
         {
@@ -951,11 +1067,10 @@
           "gt_value": "ADGC, IGAP",
           "pred_terms": [
             "igap",
-            "uk biobank ukb",
-            "adgc",
-            "uk biobank",
+            "ukb",
             "adgc2",
-            "igap stage 1"
+            "igap stage 1",
+            "uk biobank"
           ]
         },
         {
@@ -963,11 +1078,10 @@
           "gt_value": "ENGAGE",
           "pred_terms": [
             "igap",
-            "uk biobank ukb",
-            "adgc",
-            "uk biobank",
+            "ukb",
             "adgc2",
-            "igap stage 1"
+            "igap stage 1",
+            "uk biobank"
           ]
         },
         {
@@ -975,11 +1089,10 @@
           "gt_value": "ADGC",
           "pred_terms": [
             "igap",
-            "uk biobank ukb",
-            "adgc",
-            "uk biobank",
+            "ukb",
             "adgc2",
-            "igap stage 1"
+            "igap stage 1",
+            "uk biobank"
           ]
         },
         {
@@ -987,11 +1100,10 @@
           "gt_value": "IGAP",
           "pred_terms": [
             "igap",
-            "uk biobank ukb",
-            "adgc",
-            "uk biobank",
+            "ukb",
             "adgc2",
-            "igap stage 1"
+            "igap stage 1",
+            "uk biobank"
           ]
         },
         {
@@ -999,11 +1111,10 @@
           "gt_value": "ENGAGE",
           "pred_terms": [
             "igap",
-            "uk biobank ukb",
-            "adgc",
-            "uk biobank",
+            "ukb",
             "adgc2",
-            "igap stage 1"
+            "igap stage 1",
+            "uk biobank"
           ]
         },
         {
@@ -1011,11 +1122,10 @@
           "gt_value": "UKBB",
           "pred_terms": [
             "igap",
-            "uk biobank ukb",
-            "adgc",
-            "uk biobank",
+            "ukb",
             "adgc2",
-            "igap stage 1"
+            "igap stage 1",
+            "uk biobank"
           ]
         }
       ]
@@ -1025,7 +1135,7 @@
     "30448613_PMC6331247.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 43,
       "missed_examples": [
@@ -1033,22 +1143,24 @@
           "snp": "rs10838725",
           "gt_value": "ADNI",
           "pred_terms": [
+            "international genomics of alzheimers project (igap)",
             "igap",
-            "adsp",
+            "adni.loni.usc.edu",
             "adgc",
-            "adni",
-            "eqtl"
+            "genetic datasets",
+            "igap snps"
           ]
         },
         {
           "snp": "rs10838725",
           "gt_value": "ADGC",
           "pred_terms": [
+            "international genomics of alzheimers project (igap)",
             "igap",
-            "adsp",
+            "adni.loni.usc.edu",
             "adgc",
-            "adni",
-            "eqtl"
+            "genetic datasets",
+            "igap snps"
           ]
         },
         {
@@ -1060,44 +1172,48 @@
           "snp": "rs111418223",
           "gt_value": "ADNI",
           "pred_terms": [
+            "international genomics of alzheimers project (igap)",
             "igap",
-            "adsp",
+            "adni.loni.usc.edu",
             "adgc",
-            "adni",
-            "eqtl"
+            "genetic datasets",
+            "igap snps"
           ]
         },
         {
           "snp": "rs111418223",
           "gt_value": "ADNI",
           "pred_terms": [
+            "international genomics of alzheimers project (igap)",
             "igap",
-            "adsp",
+            "adni.loni.usc.edu",
             "adgc",
-            "adni",
-            "eqtl"
+            "genetic datasets",
+            "igap snps"
           ]
         },
         {
           "snp": "rs111418223",
           "gt_value": "ADNI",
           "pred_terms": [
+            "international genomics of alzheimers project (igap)",
             "igap",
-            "adsp",
+            "adni.loni.usc.edu",
             "adgc",
-            "adni",
-            "eqtl"
+            "genetic datasets",
+            "igap snps"
           ]
         },
         {
           "snp": "rs11771145",
           "gt_value": "ADNI",
           "pred_terms": [
+            "international genomics of alzheimers project (igap)",
             "igap",
-            "adsp",
+            "adni.loni.usc.edu",
             "adgc",
-            "adni",
-            "eqtl"
+            "genetic datasets",
+            "igap snps"
           ]
         },
         {
@@ -1114,11 +1230,12 @@
           "snp": "rs1476679",
           "gt_value": "ADNI",
           "pred_terms": [
+            "international genomics of alzheimers project (igap)",
             "igap",
-            "adsp",
+            "adni.loni.usc.edu",
             "adgc",
-            "adni",
-            "eqtl"
+            "genetic datasets",
+            "igap snps"
           ]
         }
       ]
@@ -1128,7 +1245,7 @@
     "30617256_PMC6836675.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 90,
       "missed_examples": [
@@ -1138,10 +1255,9 @@
           "pred_terms": [
             "igap",
             "pgc-alz",
-            "adsp",
             "uk biobank",
-            "decode",
-            "dbgap"
+            "dbgap",
+            "adsp"
           ]
         },
         {
@@ -1150,10 +1266,9 @@
           "pred_terms": [
             "igap",
             "pgc-alz",
-            "adsp",
             "uk biobank",
-            "decode",
-            "dbgap"
+            "dbgap",
+            "adsp"
           ]
         },
         {
@@ -1162,10 +1277,9 @@
           "pred_terms": [
             "igap",
             "pgc-alz",
-            "adsp",
             "uk biobank",
-            "decode",
-            "dbgap"
+            "dbgap",
+            "adsp"
           ]
         },
         {
@@ -1174,10 +1288,9 @@
           "pred_terms": [
             "igap",
             "pgc-alz",
-            "adsp",
             "uk biobank",
-            "decode",
-            "dbgap"
+            "dbgap",
+            "adsp"
           ]
         },
         {
@@ -1186,10 +1299,9 @@
           "pred_terms": [
             "igap",
             "pgc-alz",
-            "adsp",
             "uk biobank",
-            "decode",
-            "dbgap"
+            "dbgap",
+            "adsp"
           ]
         },
         {
@@ -1198,10 +1310,9 @@
           "pred_terms": [
             "igap",
             "pgc-alz",
-            "adsp",
             "uk biobank",
-            "decode",
-            "dbgap"
+            "dbgap",
+            "adsp"
           ]
         },
         {
@@ -1210,10 +1321,9 @@
           "pred_terms": [
             "igap",
             "pgc-alz",
-            "adsp",
             "uk biobank",
-            "decode",
-            "dbgap"
+            "dbgap",
+            "adsp"
           ]
         },
         {
@@ -1222,10 +1332,9 @@
           "pred_terms": [
             "igap",
             "pgc-alz",
-            "adsp",
             "uk biobank",
-            "decode",
-            "dbgap"
+            "dbgap",
+            "adsp"
           ]
         },
         {
@@ -1234,10 +1343,9 @@
           "pred_terms": [
             "igap",
             "pgc-alz",
-            "adsp",
             "uk biobank",
-            "decode",
-            "dbgap"
+            "dbgap",
+            "adsp"
           ]
         },
         {
@@ -1246,10 +1354,9 @@
           "pred_terms": [
             "igap",
             "pgc-alz",
-            "adsp",
             "uk biobank",
-            "decode",
-            "dbgap"
+            "dbgap",
+            "adsp"
           ]
         }
       ]
@@ -1259,7 +1366,7 @@
     "30636644_PMC6330399.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 141,
       "missed_examples": [
@@ -1267,120 +1374,120 @@
           "snp": "rs10111328",
           "gt_value": "CHS, FHS, HRS, NIA-LOAD",
           "pred_terms": [
-            "study",
-            "chs",
-            "hrs",
-            "discovery",
-            "discovery phase",
-            "datasets"
+            "stampeed",
+            "datasets",
+            "fhs",
+            "discovery dataset",
+            "epistasis",
+            "chs"
           ]
         },
         {
           "snp": "rs10111328",
           "gt_value": "CHS, FHS, HRS, NIA-LOAD",
           "pred_terms": [
-            "study",
-            "chs",
-            "hrs",
-            "discovery",
-            "discovery phase",
-            "datasets"
+            "stampeed",
+            "datasets",
+            "fhs",
+            "discovery dataset",
+            "epistasis",
+            "chs"
           ]
         },
         {
           "snp": "rs1046135",
           "gt_value": "CHS, FHS, HRS, NIA-LOAD",
           "pred_terms": [
-            "study",
-            "chs",
-            "hrs",
-            "discovery",
-            "discovery phase",
-            "datasets"
+            "stampeed",
+            "datasets",
+            "fhs",
+            "discovery dataset",
+            "epistasis",
+            "chs"
           ]
         },
         {
           "snp": "rs1046135",
           "gt_value": "CHS, FHS, HRS, NIA-LOAD",
           "pred_terms": [
-            "study",
-            "chs",
-            "hrs",
-            "discovery",
-            "discovery phase",
-            "datasets"
+            "stampeed",
+            "datasets",
+            "fhs",
+            "discovery dataset",
+            "epistasis",
+            "chs"
           ]
         },
         {
           "snp": "rs10794342",
           "gt_value": "CHS, FHS, HRS, NIA-LOAD",
           "pred_terms": [
-            "study",
-            "chs",
-            "hrs",
-            "discovery",
-            "discovery phase",
-            "datasets"
+            "stampeed",
+            "datasets",
+            "fhs",
+            "discovery dataset",
+            "epistasis",
+            "chs"
           ]
         },
         {
           "snp": "rs10947230",
           "gt_value": "CHS, FHS, HRS, NIA-LOAD",
           "pred_terms": [
-            "study",
-            "chs",
-            "hrs",
-            "discovery",
-            "discovery phase",
-            "datasets"
+            "stampeed",
+            "datasets",
+            "fhs",
+            "discovery dataset",
+            "epistasis",
+            "chs"
           ]
         },
         {
           "snp": "rs10953322",
           "gt_value": "CHS, FHS, HRS, NIA-LOAD",
           "pred_terms": [
-            "study",
-            "chs",
-            "hrs",
-            "discovery",
-            "discovery phase",
-            "datasets"
+            "stampeed",
+            "datasets",
+            "fhs",
+            "discovery dataset",
+            "epistasis",
+            "chs"
           ]
         },
         {
           "snp": "rs11089928",
           "gt_value": "CHS, FHS, HRS, NIA-LOAD",
           "pred_terms": [
-            "study",
-            "chs",
-            "hrs",
-            "discovery",
-            "discovery phase",
-            "datasets"
+            "stampeed",
+            "datasets",
+            "fhs",
+            "discovery dataset",
+            "epistasis",
+            "chs"
           ]
         },
         {
           "snp": "rs11089928",
           "gt_value": "CHS, FHS, HRS, NIA-LOAD",
           "pred_terms": [
-            "study",
-            "chs",
-            "hrs",
-            "discovery",
-            "discovery phase",
-            "datasets"
+            "stampeed",
+            "datasets",
+            "fhs",
+            "discovery dataset",
+            "epistasis",
+            "chs"
           ]
         },
         {
           "snp": "rs1172922",
           "gt_value": "CHS, FHS, HRS, NIA-LOAD",
           "pred_terms": [
-            "study",
-            "chs",
-            "hrs",
-            "discovery",
-            "discovery phase",
-            "datasets"
+            "stampeed",
+            "datasets",
+            "fhs",
+            "discovery dataset",
+            "epistasis",
+            "chs"
           ]
         }
       ]
@@ -1390,7 +1497,7 @@
     "30651383_PMC6369905.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 63,
       "missed_examples": [
@@ -1451,7 +1558,7 @@
     "30805717_PMC7193309.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 14,
       "missed_examples": [
@@ -1459,96 +1566,96 @@
           "snp": "rs10501320",
           "gt_value": "IGAP",
           "pred_terms": [
-            "igap consortium",
-            "heart and aging research in genomic epidemiology charge consortium",
-            "gwas data",
-            "ad igap consortium",
-            "magic consortium",
-            "diagram consortium"
+            "magic",
+            "igap",
+            "charge",
+            "uk biobank",
+            "dataset",
+            "study"
           ]
         },
         {
           "snp": "rs10501320",
           "gt_value": "MAGIC",
           "pred_terms": [
-            "igap consortium",
-            "heart and aging research in genomic epidemiology charge consortium",
-            "gwas data",
-            "ad igap consortium",
-            "magic consortium",
-            "diagram consortium"
+            "magic",
+            "igap",
+            "charge",
+            "uk biobank",
+            "dataset",
+            "study"
           ]
         },
         {
           "snp": "rs12805422",
           "gt_value": "IGAP",
           "pred_terms": [
-            "igap consortium",
-            "heart and aging research in genomic epidemiology charge consortium",
-            "gwas data",
-            "ad igap consortium",
-            "magic consortium",
-            "diagram consortium"
+            "magic",
+            "igap",
+            "charge",
+            "uk biobank",
+            "dataset",
+            "study"
           ]
         },
         {
           "snp": "rs12805422",
           "gt_value": "MAGIC",
           "pred_terms": [
-            "igap consortium",
-            "heart and aging research in genomic epidemiology charge consortium",
-            "gwas data",
-            "ad igap consortium",
-            "magic consortium",
-            "diagram consortium"
+            "magic",
+            "igap",
+            "charge",
+            "uk biobank",
+            "dataset",
+            "study"
           ]
         },
         {
           "snp": "rs1483121",
           "gt_value": "IGAP",
           "pred_terms": [
-            "igap consortium",
-            "heart and aging research in genomic epidemiology charge consortium",
-            "gwas data",
-            "ad igap consortium",
-            "magic consortium",
-            "diagram consortium"
+            "magic",
+            "igap",
+            "charge",
+            "uk biobank",
+            "dataset",
+            "study"
           ]
         },
         {
           "snp": "rs1483121",
           "gt_value": "MAGIC",
           "pred_terms": [
-            "igap consortium",
-            "heart and aging research in genomic epidemiology charge consortium",
-            "gwas data",
-            "ad igap consortium",
-            "magic consortium",
-            "diagram consortium"
+            "magic",
+            "igap",
+            "charge",
+            "uk biobank",
+            "dataset",
+            "study"
           ]
         },
         {
           "snp": "rs17747324",
           "gt_value": "IGAP",
           "pred_terms": [
-            "igap consortium",
-            "heart and aging research in genomic epidemiology charge consortium",
-            "gwas data",
-            "ad igap consortium",
-            "magic consortium",
-            "diagram consortium"
+            "magic",
+            "igap",
+            "charge",
+            "uk biobank",
+            "dataset",
+            "study"
           ]
         },
         {
           "snp": "rs17747324",
           "gt_value": "MAGIC",
           "pred_terms": [
-            "igap consortium",
-            "heart and aging research in genomic epidemiology charge consortium",
-            "gwas data",
-            "ad igap consortium",
-            "magic consortium",
-            "diagram consortium"
+            "magic",
+            "igap",
+            "charge",
+            "uk biobank",
+            "dataset",
+            "study"
           ]
         },
         {
@@ -1568,7 +1675,7 @@
     "30820047_PMC6463297.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 104,
       "missed_examples": [
@@ -1591,11 +1698,11 @@
           "snp": "rs10808026",
           "gt_value": "ADGC, CHARGE, EADI, GERAD",
           "pred_terms": [
-            "igap",
-            "eadi",
-            "stage 1 meta-analysis",
-            "adsp",
             "geradperades",
+            "international genomics of alzheimers project",
+            "igap",
+            "charge",
+            "eadi",
             "adgc"
           ]
         },
@@ -1603,11 +1710,11 @@
           "snp": "rs10808026",
           "gt_value": "ADGC, CHARGE, EADI, GERAD",
           "pred_terms": [
-            "igap",
-            "eadi",
-            "stage 1 meta-analysis",
-            "adsp",
             "geradperades",
+            "international genomics of alzheimers project",
+            "igap",
+            "charge",
+            "eadi",
             "adgc"
           ]
         },
@@ -1615,11 +1722,11 @@
           "snp": "rs10808026",
           "gt_value": "ADGC, CHARGE, EADI, GERAD",
           "pred_terms": [
-            "igap",
-            "eadi",
-            "stage 1 meta-analysis",
-            "adsp",
             "geradperades",
+            "international genomics of alzheimers project",
+            "igap",
+            "charge",
+            "eadi",
             "adgc"
           ]
         },
@@ -1627,11 +1734,11 @@
           "snp": "rs10933431",
           "gt_value": "ADGC, CHARGE, EADI, GERAD",
           "pred_terms": [
-            "igap",
-            "eadi",
-            "stage 1 meta-analysis",
-            "adsp",
             "geradperades",
+            "international genomics of alzheimers project",
+            "igap",
+            "charge",
+            "eadi",
             "adgc"
           ]
         },
@@ -1639,11 +1746,11 @@
           "snp": "rs10933431",
           "gt_value": "ADGC, CHARGE, EADI, GERAD",
           "pred_terms": [
-            "igap",
-            "eadi",
-            "stage 1 meta-analysis",
-            "adsp",
             "geradperades",
+            "international genomics of alzheimers project",
+            "igap",
+            "charge",
+            "eadi",
             "adgc"
           ]
         },
@@ -1651,11 +1758,11 @@
           "snp": "rs10933431",
           "gt_value": "ADGC, CHARGE, EADI, GERAD",
           "pred_terms": [
-            "igap",
-            "eadi",
-            "stage 1 meta-analysis",
-            "adsp",
             "geradperades",
+            "international genomics of alzheimers project",
+            "igap",
+            "charge",
+            "eadi",
             "adgc"
           ]
         },
@@ -1663,11 +1770,11 @@
           "snp": "rs11218343",
           "gt_value": "ADGC, CHARGE, EADI, GERAD",
           "pred_terms": [
-            "igap",
-            "eadi",
-            "stage 1 meta-analysis",
-            "adsp",
             "geradperades",
+            "international genomics of alzheimers project",
+            "igap",
+            "charge",
+            "eadi",
             "adgc"
           ]
         }
@@ -1678,7 +1785,7 @@
     "30930738_PMC6425305.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 4,
       "missed_examples": [
@@ -1686,161 +1793,44 @@
           "snp": "rs10792421",
           "gt_value": "PGC2-BIP",
           "pred_terms": [
-            "igap",
-            "igap2",
-            "pgc2-bip3",
-            "pgc2-bip"
+            "cohorts for heart and aging research in genomic epidemiology consortium",
+            "charge",
+            "dataset",
+            "study",
+            "charge consortium"
           ]
         },
         {
           "snp": "rs10792421",
           "gt_value": "IGAP",
           "pred_terms": [
-            "igap",
-            "igap2",
-            "pgc2-bip3",
-            "pgc2-bip"
+            "cohorts for heart and aging research in genomic epidemiology consortium",
+            "charge",
+            "dataset",
+            "study",
+            "charge consortium"
           ]
         },
         {
           "snp": "rs11649476",
           "gt_value": "PGC2-BIP",
           "pred_terms": [
-            "igap",
-            "igap2",
-            "pgc2-bip3",
-            "pgc2-bip"
+            "cohorts for heart and aging research in genomic epidemiology consortium",
+            "charge",
+            "dataset",
+            "study",
+            "charge consortium"
           ]
         },
         {
           "snp": "rs11649476",
           "gt_value": "IGAP",
           "pred_terms": [
-            "igap",
-            "igap2",
-            "pgc2-bip3",
-            "pgc2-bip"
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    "30979435_PMC6783343.csv",
-    {
-      "match_pct": 0.0,
-      "threshold_pct": 25.0,
-      "matched_rows": 0,
-      "total_rows": 31,
-      "missed_examples": [
-        {
-          "snp": "rs12378268",
-          "gt_value": "ADGC",
-          "pred_terms": [
+            "cohorts for heart and aging research in genomic epidemiology consortium",
+            "charge",
+            "dataset",
             "study",
-            "adgc",
-            "phase 2",
-            "phase 1",
-            "ad"
-          ]
-        },
-        {
-          "snp": "rs12378268",
-          "gt_value": "ADGC",
-          "pred_terms": [
-            "study",
-            "adgc",
-            "phase 2",
-            "phase 1",
-            "ad"
-          ]
-        },
-        {
-          "snp": "rs1834550",
-          "gt_value": "ADGC",
-          "pred_terms": [
-            "study",
-            "adgc",
-            "phase 2",
-            "phase 1",
-            "ad"
-          ]
-        },
-        {
-          "snp": "rs1834550",
-          "gt_value": "ADGC",
-          "pred_terms": [
-            "study",
-            "adgc",
-            "phase 2",
-            "phase 1",
-            "ad"
-          ]
-        },
-        {
-          "snp": "rs184909761",
-          "gt_value": "ADGC",
-          "pred_terms": [
-            "study",
-            "adgc",
-            "phase 2",
-            "phase 1",
-            "ad"
-          ]
-        },
-        {
-          "snp": "rs184909761",
-          "gt_value": "ADGC",
-          "pred_terms": [
-            "study",
-            "adgc",
-            "phase 2",
-            "phase 1",
-            "ad"
-          ]
-        },
-        {
-          "snp": "rs3818361",
-          "gt_value": "ADGC",
-          "pred_terms": [
-            "study",
-            "adgc",
-            "phase 2",
-            "phase 1",
-            "ad"
-          ]
-        },
-        {
-          "snp": "rs3818361",
-          "gt_value": "ADGC",
-          "pred_terms": [
-            "study",
-            "adgc",
-            "phase 2",
-            "phase 1",
-            "ad"
-          ]
-        },
-        {
-          "snp": "rs4277762",
-          "gt_value": "ADGC",
-          "pred_terms": [
-            "study",
-            "adgc",
-            "phase 2",
-            "phase 1",
-            "ad"
-          ]
-        },
-        {
-          "snp": "rs4277762",
-          "gt_value": "ADGC",
-          "pred_terms": [
-            "study",
-            "adgc",
-            "phase 2",
-            "phase 1",
-            "ad"
+            "charge consortium"
           ]
         }
       ]
@@ -1850,7 +1840,7 @@
     "31426376_PMC6723529.csv",
     {
       "match_pct": 0.0,
-      "threshold_pct": 25.0,
+      "threshold_pct": 50.0,
       "matched_rows": 0,
       "total_rows": 35,
       "missed_examples": [

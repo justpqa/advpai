@@ -1,0 +1,334 @@
+[
+  [
+    "27899424_PMC5237405.csv",
+    {
+      "uncovered": [
+        "CRHR1 expression in Medulla",
+        "LRRC37A4 expression in Cerebellum",
+        "LRRC37A4 expression in Hippocampus",
+        "LRRC37A4 expression in Medulla",
+        "LRRC37A4 expression in Occipital cortex",
+        "LRRC37A4 expression in Putamen",
+        "LRRC37A4 expression in Substantia nigra",
+        "LRRC37A4 expression in Temporal cortex",
+        "LRRC37A4 expression in Thalamus",
+        "LRRC37A4 expression in White matter",
+        "LRRC37A4 expression in Frontal cortex",
+        "KANSL1 expression in Hippocampus",
+        "LRRC37A2 expression in Temporal cortex",
+        "HLA-DPA1 expression in Frontal cortex"
+      ],
+      "pred_terms": [
+        "frontotemporal dementia",
+        "outcome",
+        "ftdp-17",
+        "neurodegenerative disease",
+        "diseases",
+        "phenotype",
+        "disease",
+        "traits",
+        "dementia",
+        "trait",
+        "alzheimers disease",
+        "secondary phenotype"
+      ]
+    }
+  ],
+  [
+    "28247064_PMC5613285.csv",
+    {
+      "uncovered": [
+        "Age at onset",
+        "CSF Ab1-42"
+      ],
+      "pred_terms": [
+        "tau",
+        "pathology",
+        "neurodegenerative disease",
+        "trem2",
+        "alzheimer disease",
+        "disease",
+        "alzheimers disease (ad)",
+        "trait",
+        "alzheimers disease",
+        "ad"
+      ]
+    }
+  ],
+  [
+    "28560309_PMC5440281.csv",
+    {
+      "uncovered": [
+        "ADAS-Cog scores (Longitudinal Alzheimer's Disease Assessment Scale-Cognition scores)"
+      ],
+      "pred_terms": []
+    }
+  ],
+  [
+    "29107063_PMC5920782.csv",
+    {
+      "uncovered": [
+        "Age at onset"
+      ],
+      "pred_terms": [
+        "health disorder",
+        "infectious diseases",
+        "cancer",
+        "disease",
+        "alzheimers disease (ad)",
+        "trait",
+        "alzheimers disease",
+        "ad",
+        "hallmarks",
+        "type 2 diabetes"
+      ]
+    }
+  ],
+  [
+    "29274321_PMC5938137.csv",
+    {
+      "uncovered": [
+        "CSF T-tau",
+        "Logic memory delayed (LMdT) recall test",
+        "Logical memory immediate (LMiT) recall test",
+        "CSF Ab1-42"
+      ],
+      "pred_terms": [
+        "vcx",
+        "cer",
+        "phenotypic evaluation",
+        "dlpfc",
+        "alzheimer disease",
+        "hipp",
+        "alzheimers disease (ad)",
+        "dementia",
+        "ad",
+        "early changes for alzheimer disease",
+        "braak stages"
+      ]
+    }
+  ],
+  [
+    "29458411_PMC5819208.csv",
+    {
+      "uncovered": [
+        "AD"
+      ],
+      "pred_terms": [
+        "outcome",
+        "caa",
+        "nft",
+        "diseases",
+        "np",
+        "disease",
+        "traits",
+        "brain disease",
+        "trait"
+      ]
+    }
+  ],
+  [
+    "29752348_PMC5976227.csv",
+    {
+      "uncovered": [
+        "Mean Diffusivity",
+        "White Matter Hyperintensity Volume",
+        "Fractional Anisotropy"
+      ],
+      "pred_terms": []
+    }
+  ],
+  [
+    "29967939_PMC6280657.csv",
+    {
+      "uncovered": [
+        "CSF P-tau181p",
+        "Amyloid Burden",
+        "CSF Ab1-42",
+        "Neuronal Neurofibrillary Tangles",
+        "CSF T-tau"
+      ],
+      "pred_terms": [
+        "alzheimer disease",
+        "disease",
+        "vascular dementia",
+        "serpins",
+        "alzheimers disease",
+        "alzheimers",
+        "endophenotypes"
+      ]
+    }
+  ],
+  [
+    "30413934_PMC6358498.csv",
+    {
+      "uncovered": [
+        "Waist-to-hip ratio (WHR)"
+      ],
+      "pred_terms": [
+        "ldl",
+        "amyloidosis",
+        "t2d",
+        "body mass index",
+        "phenotype",
+        "cognitive performance",
+        "rf",
+        "ad",
+        "alzheimers disease",
+        "hdl",
+        "tg",
+        "tc",
+        "cad",
+        "dyslipidemia"
+      ]
+    }
+  ],
+  [
+    "30448613_PMC6331247.csv",
+    {
+      "uncovered": [
+        "MYBPC3 (11725151_at) expression in blood",
+        "AK9 (t2969159) expression in frontal cortex",
+        "AGPAT1 (11751668_a_at) expression in blood",
+        "AGPAT1 (11750187_a_at)) expression in blood",
+        "AGPAT1 (11730933_a_at) expression in blood",
+        "LOC154761 (11755327 s at) expression in blood",
+        "TRIM4 (11736388_a_at) expression in blood",
+        "GATS (11722909_a_at) expression in blood",
+        "PILRB (11730022_a_at) expression in blood",
+        "ZKSCAN1 (11760665_at) expression in blood",
+        "PVRIG (11730247_a_at) expression in blood",
+        "PILRB (11743311_a_at) expression in blood",
+        "PILRB (11730023 s at) expression in blood",
+        "PTK2B (11720981_a_at) expression in blood",
+        "PTK2B (11720982 s at) expression in blood",
+        "PTK2B (11720980_a_at) expression in blood",
+        "TRIM35 (11723344_at) expression in blood",
+        "IER2 (t3822216) expression in temporal cortex",
+        "EID2B (t3862068) expression in frontal cortex",
+        "BIN1 (11719631_s_at) expression in blood",
+        "BIN1 (11746895_a_at) expression in blood",
+        "DLGAP1 (ILMN_2380779) expression in frontal cortex",
+        "NETO1 (ILMN_1783168) expression in frontal cortex",
+        "MS4A6A (11716846_a_at) expression in blood",
+        "MS4A4A (11751570_a_at) expression in blood",
+        "MS4A4A (11732865_a_at) expression in blood"
+      ],
+      "pred_terms": [
+        "amyloid beta peptide",
+        "alzheimer disease",
+        "ms4a6a snps",
+        "cancer",
+        "synonymous mutations",
+        "hippocampal sclerosis of aging",
+        "dementia",
+        "alzheimers disease (ad)",
+        "alzheimers disease",
+        "amyloid (a)",
+        "ad",
+        "adsp",
+        "alzheimers disease phenotype",
+        "presenilin 2"
+      ]
+    }
+  ],
+  [
+    "30636644_PMC6330399.csv",
+    {
+      "uncovered": [
+        "AD",
+        "MED30 (ILMN_1671603) expression in peripheral blood",
+        "TRA2A (ILMN_1731043) expression in peripheral blood",
+        "APOBEC3F (ILMN_2296950) expression",
+        "ATG10 (ILMN_2206098) expression",
+        "ATG10 expression in Nucleus accumbens",
+        "ATG10 expression in Putamen basal ganglia",
+        "ZNF815 (ILMN_1700307) expression in peripheral blood",
+        "ESPN (ILMN_1806710) expression",
+        "IRAK3 (ILMN_1913678) expression in peripheral blood",
+        "C9orf72 (ILMN_1741881) expression",
+        "GNAI3 (ILMN_1696003) expression",
+        "UQCC (ILMN_1724734) expression in peripheral blood",
+        "AHSA2 expression in Putamen basal ganglia",
+        "AHSA2 expression in Nucleus accumbens",
+        "AHSA2 expression in Cerebellum",
+        "AHSA2 expression in Caudate basal ganglia",
+        "AHSA2 expression in Cortex",
+        "AHSA2 expression in Substantia nigra",
+        "AHSA2 expression in Hypothalamus",
+        "SFN (ILMN_1806607) expression",
+        "CRIPAK expression in Hippocampus",
+        "MTMR3 (ILMN_1803925) expression",
+        "PRDM10 expression in Cerebellar hemisphere",
+        "ABCB9 (ILMN_2343047) expression",
+        "MS4A6A (ILMN_2359800) expression",
+        "N4BP2L2 (ILMN_1737561) expression in peripheral blood",
+        "C2orf74 (ILMN_1754501) expression",
+        "LPXN (ILMN_1742789) expression in peripheral blood"
+      ],
+      "pred_terms": [
+        "ld",
+        "outcome",
+        "trait",
+        "disease"
+      ]
+    }
+  ],
+  [
+    "30651383_PMC6369905.csv",
+    {
+      "uncovered": [
+        "Ischemic stroke (IS)",
+        "Brain infarcts (BI)",
+        "Small sub-cortical brain infarcts (SSBI)",
+        "Ischemic stroke due to small vessel disease (IS-SVD)",
+        "Pathologically defined infarcts"
+      ],
+      "pred_terms": []
+    }
+  ],
+  [
+    "30805717_PMC7193309.csv",
+    {
+      "uncovered": [
+        "Fasting Glucose",
+        "Fasting Insulin"
+      ],
+      "pred_terms": [
+        "chr",
+        "diseases",
+        "t2d",
+        "language and behavior",
+        "traits",
+        "cognitive function",
+        "alzheimers disease (ad)",
+        "alzheimers disease",
+        "cpassoc",
+        "ad",
+        "pqtl",
+        "snp",
+        "memory"
+      ]
+    }
+  ],
+  [
+    "31426376_PMC6723529.csv",
+    {
+      "uncovered": [
+        "Cortical atrophy in Medial temporal cortex",
+        "Cortical atrophy in Hippocampal Volume",
+        "Cortical atrophy in Precuneus"
+      ],
+      "pred_terms": [
+        "outcome",
+        "memory loss",
+        "disease",
+        "alzheimers disease (ad)",
+        "dementia",
+        "alzheimers disease",
+        "trait",
+        "cerebral cortical thickness"
+      ]
+    }
+  ]
+]

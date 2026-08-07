@@ -1,5 +1,136 @@
 [
   [
+    "27899424_PMC5237405.csv",
+    {
+      "coverage_pct": 0.0,
+      "threshold_pct": 50.0,
+      "covered_rows": 0,
+      "total_rows": 57,
+      "missed_examples": [
+        {
+          "snp": "rs10784359",
+          "gt_value": "IFGC",
+          "pred_terms": [
+            "rs6857",
+            "discovery",
+            "dataset",
+            "ipdgc",
+            "first large-scale study",
+            "haplotype a"
+          ]
+        },
+        {
+          "snp": "rs12964543",
+          "gt_value": "IFGC",
+          "pred_terms": [
+            "rs6857",
+            "discovery",
+            "dataset",
+            "ipdgc",
+            "first large-scale study",
+            "haplotype a"
+          ]
+        },
+        {
+          "snp": "rs12964543",
+          "gt_value": "IFGC",
+          "pred_terms": [
+            "rs6857",
+            "discovery",
+            "dataset",
+            "ipdgc",
+            "first large-scale study",
+            "haplotype a"
+          ]
+        },
+        {
+          "snp": "rs12964543",
+          "gt_value": "IFGC",
+          "pred_terms": [
+            "rs6857",
+            "discovery",
+            "dataset",
+            "ipdgc",
+            "first large-scale study",
+            "haplotype a"
+          ]
+        },
+        {
+          "snp": "rs12964543",
+          "gt_value": "IFGC",
+          "pred_terms": [
+            "rs6857",
+            "discovery",
+            "dataset",
+            "ipdgc",
+            "first large-scale study",
+            "haplotype a"
+          ]
+        },
+        {
+          "snp": "rs1328032",
+          "gt_value": "IFGC",
+          "pred_terms": [
+            "rs6857",
+            "discovery",
+            "dataset",
+            "ipdgc",
+            "first large-scale study",
+            "haplotype a"
+          ]
+        },
+        {
+          "snp": "rs1328032",
+          "gt_value": "IFGC",
+          "pred_terms": [
+            "rs6857",
+            "discovery",
+            "dataset",
+            "ipdgc",
+            "first large-scale study",
+            "haplotype a"
+          ]
+        },
+        {
+          "snp": "rs1328032",
+          "gt_value": "IFGC",
+          "pred_terms": [
+            "rs6857",
+            "discovery",
+            "dataset",
+            "ipdgc",
+            "first large-scale study",
+            "haplotype a"
+          ]
+        },
+        {
+          "snp": "rs1358071",
+          "gt_value": "UKBEC",
+          "pred_terms": [
+            "rs6857",
+            "discovery",
+            "dataset",
+            "ipdgc",
+            "first large-scale study",
+            "haplotype a"
+          ]
+        },
+        {
+          "snp": "rs1358071",
+          "gt_value": "IFGC",
+          "pred_terms": [
+            "rs6857",
+            "discovery",
+            "dataset",
+            "ipdgc",
+            "first large-scale study",
+            "haplotype a"
+          ]
+        }
+      ]
+    }
+  ],
+  [
     "28247064_PMC5613285.csv",
     {
       "coverage_pct": 20.0,
@@ -11,120 +142,120 @@
           "snp": "rs12961169",
           "gt_value": "ADNI1&2, BIOCARD, HB, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "adni.loni.usc.edu",
-            "ag",
-            "biocard",
-            "adgc",
-            "adni1",
-            "adni2"
+            "cohort demographics",
+            "adrc",
+            "datasets",
+            "cohort descriptions",
+            "larger study",
+            "dataset"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "IGAP",
           "pred_terms": [
-            "adni.loni.usc.edu",
-            "ag",
-            "biocard",
-            "adgc",
-            "adni1",
-            "adni2"
+            "cohort demographics",
+            "adrc",
+            "datasets",
+            "cohort descriptions",
+            "larger study",
+            "dataset"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "ADNI1&2, BIOCARD, HB, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "adni.loni.usc.edu",
-            "ag",
-            "biocard",
-            "adgc",
-            "adni1",
-            "adni2"
+            "cohort demographics",
+            "adrc",
+            "datasets",
+            "cohort descriptions",
+            "larger study",
+            "dataset"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "ADNI1&2, BIOCARD, HB, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "adni.loni.usc.edu",
-            "ag",
-            "biocard",
-            "adgc",
-            "adni1",
-            "adni2"
+            "cohort demographics",
+            "adrc",
+            "datasets",
+            "cohort descriptions",
+            "larger study",
+            "dataset"
           ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "IGAP",
           "pred_terms": [
-            "adni.loni.usc.edu",
-            "ag",
-            "biocard",
-            "adgc",
-            "adni1",
-            "adni2"
+            "cohort demographics",
+            "adrc",
+            "datasets",
+            "cohort descriptions",
+            "larger study",
+            "dataset"
           ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "ADNI1&2, BIOCARD, HB, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "adni.loni.usc.edu",
-            "ag",
-            "biocard",
-            "adgc",
-            "adni1",
-            "adni2"
+            "cohort demographics",
+            "adrc",
+            "datasets",
+            "cohort descriptions",
+            "larger study",
+            "dataset"
           ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "ADNI1&2, BIOCARD, HB, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "adni.loni.usc.edu",
-            "ag",
-            "biocard",
-            "adgc",
-            "adni1",
-            "adni2"
+            "cohort demographics",
+            "adrc",
+            "datasets",
+            "cohort descriptions",
+            "larger study",
+            "dataset"
           ]
         },
         {
           "snp": "rs185031519",
           "gt_value": "ADNI1&2, BIOCARD, HB, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "adni.loni.usc.edu",
-            "ag",
-            "biocard",
-            "adgc",
-            "adni1",
-            "adni2"
+            "cohort demographics",
+            "adrc",
+            "datasets",
+            "cohort descriptions",
+            "larger study",
+            "dataset"
           ]
         },
         {
           "snp": "rs316341",
           "gt_value": "ADNI1&2, BIOCARD, HB, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "adni.loni.usc.edu",
-            "ag",
-            "biocard",
-            "adgc",
-            "adni1",
-            "adni2"
+            "cohort demographics",
+            "adrc",
+            "datasets",
+            "cohort descriptions",
+            "larger study",
+            "dataset"
           ]
         },
         {
           "snp": "rs316341",
           "gt_value": "ADNI1&2, BIOCARD, HB, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "adni.loni.usc.edu",
-            "ag",
-            "biocard",
-            "adgc",
-            "adni1",
-            "adni2"
+            "cohort demographics",
+            "adrc",
+            "datasets",
+            "cohort descriptions",
+            "larger study",
+            "dataset"
           ]
         }
       ]
@@ -219,120 +350,97 @@
           "snp": "rs12961169",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "igap",
-            "dataset",
+            "alzheimer disease neuroimaging initiative (adni)",
             "study",
-            "mci",
-            "uw",
-            "elderly cognitively normal controls"
+            "age-of-onset analysis of ad"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "igap",
-            "dataset",
+            "alzheimer disease neuroimaging initiative (adni)",
             "study",
-            "mci",
-            "uw",
-            "elderly cognitively normal controls"
+            "age-of-onset analysis of ad"
           ]
         },
         {
           "snp": "rs12961169",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "igap",
-            "dataset",
+            "alzheimer disease neuroimaging initiative (adni)",
             "study",
-            "mci",
-            "uw",
-            "elderly cognitively normal controls"
+            "age-of-onset analysis of ad"
           ]
         },
         {
           "snp": "rs13115400",
           "gt_value": "ROS/MAP",
           "pred_terms": [
-            "igap",
-            "dataset",
+            "adni cohort",
+            "alzheimer disease neuroimaging initiative (adni)",
             "study",
-            "mci",
-            "uw",
-            "elderly cognitively normal controls"
+            "age-of-onset analysis of ad"
           ]
         },
         {
           "snp": "rs13115400",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "igap",
-            "dataset",
+            "adni cohort",
+            "alzheimer disease neuroimaging initiative (adni)",
             "study",
-            "mci",
-            "uw",
-            "elderly cognitively normal controls"
+            "age-of-onset analysis of ad"
           ]
         },
         {
           "snp": "rs13115400",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "igap",
-            "dataset",
+            "adni cohort",
+            "alzheimer disease neuroimaging initiative (adni)",
             "study",
-            "mci",
-            "uw",
-            "elderly cognitively normal controls"
+            "age-of-onset analysis of ad"
           ]
         },
         {
           "snp": "rs13115400",
           "gt_value": "ROS/MAP",
           "pred_terms": [
-            "igap",
-            "dataset",
+            "adni cohort",
+            "alzheimer disease neuroimaging initiative (adni)",
             "study",
-            "mci",
-            "uw",
-            "elderly cognitively normal controls"
+            "age-of-onset analysis of ad"
           ]
         },
         {
           "snp": "rs1393060",
           "gt_value": "ROS/MAP",
           "pred_terms": [
-            "igap",
-            "dataset",
+            "adni cohort",
+            "alzheimer disease neuroimaging initiative (adni)",
             "study",
-            "mci",
-            "uw",
-            "elderly cognitively normal controls"
+            "age-of-onset analysis of ad"
           ]
         },
         {
           "snp": "rs1393060",
           "gt_value": "ROS/MAP",
           "pred_terms": [
-            "igap",
-            "dataset",
+            "adni cohort",
+            "alzheimer disease neuroimaging initiative (adni)",
             "study",
-            "mci",
-            "uw",
-            "elderly cognitively normal controls"
+            "age-of-onset analysis of ad"
           ]
         },
         {
           "snp": "rs1393060",
           "gt_value": "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
           "pred_terms": [
-            "igap",
-            "dataset",
+            "adni cohort",
+            "alzheimer disease neuroimaging initiative (adni)",
             "study",
-            "mci",
-            "uw",
-            "elderly cognitively normal controls"
+            "age-of-onset analysis of ad"
           ]
         }
       ]
@@ -395,6 +503,61 @@
           "snp": "rs12373108",
           "gt_value": "3C-Dijon, AGES+, ARIC, ASPS, CHAP, CHS, ERF, FHS, LBC1936, LLS, NOMAS, PROSPER, RSI, RSII, RSIII, SCES, SHIP, SiMES",
           "pred_terms": []
+        }
+      ]
+    }
+  ],
+  [
+    "30930738_PMC6425305.csv",
+    {
+      "coverage_pct": 0.0,
+      "threshold_pct": 50.0,
+      "covered_rows": 0,
+      "total_rows": 4,
+      "missed_examples": [
+        {
+          "snp": "rs10792421",
+          "gt_value": "PGC2-BIP",
+          "pred_terms": [
+            "cohorts for heart and aging research in genomic epidemiology consortium",
+            "charge",
+            "dataset",
+            "study",
+            "charge consortium"
+          ]
+        },
+        {
+          "snp": "rs10792421",
+          "gt_value": "IGAP",
+          "pred_terms": [
+            "cohorts for heart and aging research in genomic epidemiology consortium",
+            "charge",
+            "dataset",
+            "study",
+            "charge consortium"
+          ]
+        },
+        {
+          "snp": "rs11649476",
+          "gt_value": "PGC2-BIP",
+          "pred_terms": [
+            "cohorts for heart and aging research in genomic epidemiology consortium",
+            "charge",
+            "dataset",
+            "study",
+            "charge consortium"
+          ]
+        },
+        {
+          "snp": "rs11649476",
+          "gt_value": "IGAP",
+          "pred_terms": [
+            "cohorts for heart and aging research in genomic epidemiology consortium",
+            "charge",
+            "dataset",
+            "study",
+            "charge consortium"
+          ]
         }
       ]
     }

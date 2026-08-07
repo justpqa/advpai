@@ -1,0 +1,70 @@
+[
+  [
+    "28560309_PMC5440281.csv",
+    {
+      "uncovered": [
+        "Interaction(SNP)"
+      ],
+      "pred_terms": []
+    }
+  ],
+  [
+    "29458411_PMC5819208.csv",
+    {
+      "uncovered": [
+        "Gene-based"
+      ],
+      "pred_terms": [
+        "genome-wide",
+        "sequencing",
+        "genotyping",
+        "summary data",
+        "egwas"
+      ]
+    }
+  ],
+  [
+    "29752348_PMC5976227.csv",
+    {
+      "uncovered": [
+        "SNP-based"
+      ],
+      "pred_terms": []
+    }
+  ],
+  [
+    "29967939_PMC6280657.csv",
+    {
+      "uncovered": [
+        "Interaction(SNP)"
+      ],
+      "pred_terms": [
+        "genotype",
+        "sequencing",
+        "alzheimer disease neuroimaging initiative",
+        "genotyping"
+      ]
+    }
+  ],
+  [
+    "30636644_PMC6330399.csv",
+    {
+      "uncovered": [
+        "Gene-based"
+      ],
+      "pred_terms": [
+        "sequencing",
+        "genotyping"
+      ]
+    }
+  ],
+  [
+    "30651383_PMC6369905.csv",
+    {
+      "uncovered": [
+        "SNP-based"
+      ],
+      "pred_terms": []
+    }
+  ]
+]

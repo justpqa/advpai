@@ -1,0 +1,158 @@
+[
+  [
+    "27899424_PMC5237405.csv",
+    {
+      "uncovered": [
+        "IFGC",
+        "UKBEC"
+      ],
+      "pred_terms": [
+        "rs6857",
+        "discovery",
+        "dataset",
+        "ipdgc",
+        "first large-scale study",
+        "haplotype a",
+        "study",
+        "sporadic ftd"
+      ]
+    }
+  ],
+  [
+    "28247064_PMC5613285.csv",
+    {
+      "uncovered": [
+        "ADNI1&2, BIOCARD, HB, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
+        "IGAP"
+      ],
+      "pred_terms": [
+        "cohort demographics",
+        "adrc",
+        "datasets",
+        "cohort descriptions",
+        "larger study",
+        "dataset",
+        "study",
+        "adni",
+        "cohort"
+      ]
+    }
+  ],
+  [
+    "28560309_PMC5440281.csv",
+    {
+      "uncovered": [
+        "ADNI"
+      ],
+      "pred_terms": []
+    }
+  ],
+  [
+    "29752348_PMC5976227.csv",
+    {
+      "uncovered": [
+        "UKBB"
+      ],
+      "pred_terms": []
+    }
+  ],
+  [
+    "29967939_PMC6280657.csv",
+    {
+      "uncovered": [
+        "ADNI, BIOCARD, Knight-ADRC, MAYO, SWEDEN, UPENN, UW",
+        "ROS/MAP"
+      ],
+      "pred_terms": [
+        "adni cohort",
+        "alzheimer disease neuroimaging initiative (adni)",
+        "study",
+        "age-of-onset analysis of ad"
+      ]
+    }
+  ],
+  [
+    "30413934_PMC6358498.csv",
+    {
+      "uncovered": [
+        "GIANT",
+        "ENGAGE",
+        "GIANT, UKBB",
+        "DIAGRAM",
+        "CARDIoGRAMplusC4D"
+      ],
+      "pred_terms": [
+        "igap",
+        "ukb",
+        "adgc2",
+        "igap stage 1",
+        "uk biobank"
+      ]
+    }
+  ],
+  [
+    "30448613_PMC6331247.csv",
+    {
+      "uncovered": [
+        "UKBEC",
+        "NABEC"
+      ],
+      "pred_terms": [
+        "international genomics of alzheimers project (igap)",
+        "igap",
+        "adni.loni.usc.edu",
+        "adgc",
+        "genetic datasets",
+        "igap snps",
+        "adni",
+        "adsp"
+      ]
+    }
+  ],
+  [
+    "30651383_PMC6369905.csv",
+    {
+      "uncovered": [
+        "CHARGE, METASTROKE, SiGN",
+        "AGES+, ASCOG, CAGE, EVA, Gen3, OATS, SMART",
+        "METASTROKE, SiGN, YLSDR",
+        "3C-Dijon, AGES+, ARIC, ASPS, CHAP, CHS, ERF, FHS, LBC1936, LLS, NOMAS, PROSPER, RSI, RSII, RSIII, SCES, SHIP, SiMES",
+        "ADGC",
+        "3C-Dijon, AGES+, ARIC, ASPS, CAGE, CHAP, CHS, ERF, EVA, FHS, Gen3, LBC1936, LLS, NOMAS, OATS, PROSPER, RSI, RSII, RSIII, SCES, SHIP, SiMES, SMART, TASCOG"
+      ],
+      "pred_terms": []
+    }
+  ],
+  [
+    "30930738_PMC6425305.csv",
+    {
+      "uncovered": [
+        "PGC2-BIP",
+        "IGAP"
+      ],
+      "pred_terms": [
+        "cohorts for heart and aging research in genomic epidemiology consortium",
+        "charge",
+        "dataset",
+        "study",
+        "charge consortium"
+      ]
+    }
+  ],
+  [
+    "31426376_PMC6723529.csv",
+    {
+      "uncovered": [
+        "ADGC",
+        "East Asian Cohort (Korean National Research Center for Dementia), Japanese (Japanese Genetics Study Consortium of Alzheimer\u00d5s Disease), Korean ( Korean Genome and Epidemiology Study) "
+      ],
+      "pred_terms": [
+        "eada",
+        "koges",
+        "alzheimers disease neuroimaging initiative",
+        "alzheimers disease genetics consortium",
+        "adni"
+      ]
+    }
+  ]
+]
