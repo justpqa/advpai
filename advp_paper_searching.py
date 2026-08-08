@@ -357,8 +357,8 @@ def main():
         print()
 
     all_papers = all_papers.sort_values(["year", "pmid"]).reset_index().drop("index", axis = 1)
-    all_papers.to_csv("new_gwas_ad_paper_only_tiab_extended_1.csv", index = False)
-    all_papers.to_excel("new_gwas_ad_paper_only_tiab_extended_1.xlsx", index = False)
+    all_papers.to_csv("new_paper/new_gwas_ad_paper_only_tiab_extended_1.csv", index = False)
+    all_papers.to_excel("new_paper/new_gwas_ad_paper_only_tiab_extended_1.xlsx", index = False)
 
     # now count paper based on disease
     all_papers["MeSH terms used list"] = all_papers['MeSH terms used'].str.split(",")
@@ -379,8 +379,8 @@ def main():
     count_paper_without_main_disease = all_papers.shape[0] - all_papers_exploded_with_main_disease["pmid"].nunique()
     count_new_paper_by_disease.loc[count_new_paper_by_disease["Disease"] == "Other ADRD", "Count papers"] = count_paper_without_main_disease
     count_new_paper_by_disease = count_new_paper_by_disease.sort_values("Count papers", ascending = False).reset_index().drop("index", axis = 1)
-    count_new_paper_by_disease.to_csv("count_new_paper_by_disease_only_tiab_extended_1.csv", index = False)
-    count_new_paper_by_disease.to_excel("count_new_paper_by_disease_only_tiab_extended_1.xlsx", index = False)
+    count_new_paper_by_disease.to_csv("count_new_paper/count_new_paper_by_disease_only_tiab_extended_1.csv", index = False)
+    count_new_paper_by_disease.to_excel("count_new_paper/count_new_paper_by_disease_only_tiab_extended_1.xlsx", index = False)
 
 if __name__ == "__main__":
     main()

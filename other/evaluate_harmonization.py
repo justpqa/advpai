@@ -169,8 +169,8 @@ def run(pred_dir: str, dict_path: str, results_path: str) -> list[dict]:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Validate pred table terms against term_mapping_dict.json")
     parser.add_argument("--dir",  default="pred_tables",              help="Directory of prediction files")
-    parser.add_argument("--dict", default="term_mapping_dict.json",   help="Path to term_mapping_dict.json")
-    parser.add_argument("--out",  default="term_validation_results.json", help="Output results JSON path")
+    parser.add_argument("--dict", default="test/term_mapping_dict.json",   help="Path to term_mapping_dict.json")
+    parser.add_argument("--out",  default="test/term_validation_results.json", help="Output results JSON path")
     args = parser.parse_args()
 
     run(args.dir, args.dict, args.out)

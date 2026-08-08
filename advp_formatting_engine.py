@@ -21,7 +21,7 @@ from transformers import AutoTokenizer, AutoModel, AutoModelForCausalLM, BitsAnd
 #             mask[:, tid] = self.bias_value
 #         return scores + mask
     
-class GWASFormattingEngine:
+class ADVPFormattingEngine:
     def __init__(self, referencing_col_df: pd.DataFrame, embeddings_model_name: str = "NeuML/pubmedbert-base-embeddings"):
         # df of referencing col
         self.referencing_col_lst = referencing_col_df["column"].to_list()
@@ -32,7 +32,7 @@ class GWASFormattingEngine:
         # self.referencing_col_numeric = referencing_col_df[referencing_col_df["is_numeric"]]["column"].tolist()
 
         # Try to first convert any abbreviation, then we match column with right semantic
-        self.gwas_abbreviation_dict = {
+        self.advp_abbreviation_dict = {
             "CHR": "Chromosome number",
             "BP": "Base-pair position",
             "POS": "Position",
@@ -145,15 +145,15 @@ class GWASFormattingEngine:
         Clean a column by replacing any possible abbreviation with their actual meaning for better semantic matching
         """
         new_col = col
-        for abb in self.gwas_abbreviation_dict:
+        for abb in self.advp_abbreviation_dict:
             if re.search(fr"[^a-zA-Z]{abb.lower()}[^a-zA-Z]", new_col.lower()):
-                new_col = re.sub(fr"([^a-zA-Z]){abb.lower()}([^a-zA-Z])", fr"\1{self.gwas_abbreviation_dict[abb]}\2", new_col.lower())
+                new_col = re.sub(fr"([^a-zA-Z]){abb.lower()}([^a-zA-Z])", fr"\1{self.advp_abbreviation_dict[abb]}\2", new_col.lower())
             elif re.search(fr"^{abb.lower()}[^a-zA-Z]", new_col.lower()):
-                new_col = re.sub(fr"^{abb.lower()}([^a-zA-Z])", fr"{self.gwas_abbreviation_dict[abb]}\1", new_col.lower())
+                new_col = re.sub(fr"^{abb.lower()}([^a-zA-Z])", fr"{self.advp_abbreviation_dict[abb]}\1", new_col.lower())
             elif re.search(fr"[^a-zA-Z]{abb.lower()}$", new_col.lower()):
-                new_col = re.sub(fr"([^a-zA-Z]){abb.lower()}$", fr"\1{self.gwas_abbreviation_dict[abb]}", new_col.lower())
+                new_col = re.sub(fr"([^a-zA-Z]){abb.lower()}$", fr"\1{self.advp_abbreviation_dict[abb]}", new_col.lower())
             elif re.search(fr"^{abb.lower()}$", new_col.lower()):
-                new_col = re.sub(fr"{abb.lower()}", self.gwas_abbreviation_dict[abb], new_col.lower())
+                new_col = re.sub(fr"{abb.lower()}", self.advp_abbreviation_dict[abb], new_col.lower())
         # new_col = new_col.replace(".", " ")
         return new_col
     
@@ -216,7 +216,7 @@ class GWASFormattingEngine:
 #         """
 #         # Format the candidates as a numbered list for the LLM
 
-#         prompt = f"""Task: Map clinical table headers to GWAS standard ontology, return a single number for the best choice, or 0 if nothing works
+#         prompt = f"""Task: Map clinical table headers to ADVP standard ontology, return a single number for the best choice, or 0 if nothing works
 
 # Header: "p-value: 0.001, 5e-8, 0.43"
 # Candidates: 
@@ -583,7 +583,7 @@ class GWASFormattingEngine:
         """
         # possible_ref_col_to_melt = ["P-value", "Effect", "AF"]
         # map the columns
-        # new_col_to_old_col_lst = gwas_column_matching_engine.match_many_col_to_ref_col(df)
+        # new_col_to_old_col_lst = advp_column_matching_engine.match_many_col_to_ref_col(df)
         df_with_ref_col = None
         new_col_to_not_melt = [] # list of columns that are stable and not need to be melt
         new_col_to_old_col_lst_to_melt = {}
