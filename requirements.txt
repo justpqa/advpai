@@ -24,6 +24,7 @@ bitsandbytes
 pytest
 openpyxl
 xlrd
+nest_asyncio
 beautifulsoup4
 chromadb
 langchain

@@ -1,0 +1,249 @@
+P-value,Effect,AF,SNP,Chr,Position,RA1,RA2,P-value notes
+,,,,,Normal: Aβ1-42,,,
+,,,,,Normal: Aβ1-42,,,
+,,,,,Position,,,
+,,,,,Position,,,
+1.86e-09,,,rs2899472,,49303347,,,
+5.4e-08,,,rs2899472,,49303347,,,
+6.37e-08,,,rs11206801,,56623274,,,
+6.37e-08,,,rs4431886,,56624855,,,
+1.11e-07,,,rs2899472,,49303347,,,
+3.03e-07,,,rs2075650,,50087459,,,
+3.09e-07,,,rs10784496,,64447238,,,
+9.04e-07,,,rs12534221,,130938530,,,
+9.71e-07,,,rs1727638,,72196293,,,
+9.71e-07,,,rs1727638,,72196293,,,
+,,,,,Normal: T-tau,,,
+,,,,,Normal: T-tau,,,
+,,,,,Position,,,
+,,,,,Position,,,
+1.1e-08,,,rs1997111,,117872301,,,
+1.65e-07,,,rs11069178,,117852210,,,
+3.9e-07,,,rs17189298,,119561787,,,
+5.53e-07,,,rs2935776,,109699079,,,
+5.77e-07,,,rs2928826,,109683270,,,
+8.9e-07,,,rs895401,,119584178,,,
+8.92e-07,,,rs893769,,119556554,,,
+8.92e-07,,,rs893769,,119556554,,,
+,,,,,Normal: P-tau181p,,,
+,,,,,Normal: P-tau181p,,,
+,,,,,Position,,,
+,,,,,Position,,,
+1.08e-07,,,rs1943816,,69209602,,,
+1.09e-07,,,rs2074955,,158686040,,,
+1.09e-07,,,rs2074955,,158686040,,,
+,,,,,MCI: T-tau,,,
+,,,,,MCI: T-tau,,,
+,,,,,Position,,,
+,,,,,Position,,,
+8.696e-07,,,rs5998432,,31075916,,,
+8.696e-07,,,rs5998432,,31075916,,,
+,,,,,MCI: P-tau181p,,,
+,,,,,MCI: P-tau181p,,,
+,,,,,Position,,,
+,,,,,Position,,,
+1.08e-07,,,rs7558386,,227270383,,,
+5.27e-07,,,rs7558386,,227270383,,,
+9.6e-07,,,rs7631605,,37209593,,,
+9.6e-07,,,rs7631605,,37209593,,,
+,,,,,AD: Aβ1-42,,,
+,,,,,AD: Aβ1-42,,,
+,,,,,Position,,,
+,,,,,Position,,,
+4.96e-07,,,rs239713,,27618347,,,
+4.96e-07,,,rs239713,,27618347,,,
+,,,,,AD: T-tau,,,
+,,,,,AD: T-tau,,,
+,,,,,Position,,,
+,,,,,Position,,,
+6.35e-07,,,rs4925189,,59380439,,,
+6.35e-07,,,rs4925189,,59380439,,,
+,,,,,AD: P-tau181p,,,
+,,,,,AD: P-tau181p,,,
+,,,,,Position,,,
+,,,,,Position,,,
+4.95e-07,,,rs12643654,,96378840,,,
+4.95e-07,,,rs12643654,,96378840,,,
+,,,,,Linear regression result using APOE genotype and age as covariates,,,
+,,,,,Linear regression result using APOE genotype and age as covariates,,,
+,,,,,Normal: Aβ1-42,,,
+,,,,,Normal: Aβ1-42,,,
+,,,,,Position,,,
+,,,,,Position,,,
+1.9e-12,,,rs2899472,,49303347,,,
+3.85,,,rs2899472,,49303347,,,
+4.15e-09,,,rs2899472,,49303347,,,
+2.75e-07,,,rs1022442,,21277717,,,
+6.14e-07,,,rs2493624,,19102262,,,
+6.45e-07,,,rs11015839,,19042893,,,
+6.45e-07,,,rs11015860,,19045045,,,
+7.69e-07,,,rs10911736,,183689227,,,
+7.87e-07,,,rs11015839,,19042893,,,
+7.87e-07,,,rs11015860,,19045045,,,
+9.25e-07,,,rs11015939,,19057948,,,
+9.25e-07,,,rs2495832,,19114467,,,
+9.76e-07,,,rs12203791,,67778209,,,
+9.78e-07,,,rs10763625,,19074957,,,
+9.78e-07,,,rs10763625,,19074957,,,
+,,,,,Normal: T-tau,,,
+,,,,,Normal: T-tau,,,
+,,,,,Position,,,
+,,,,,Position,,,
+2.11e-07,,,rs1997111,,117872301,,,
+8.66e-07,,,rs17189298,,119561787,,,
+8.81e-07,,,rs1021599,,28469054,,,
+8.81e-07,,,rs1021599,,28469054,,,
+,,,,,Normal: P-tau181p,,,
+,,,,,Normal: P-tau181p,,,
+,,,,,Position,,,
+,,,,,Position,,,
+1.5e-07,,,rs1943816,,69209602,,,
+2.07e-07,,,rs2074955,,158686040,,,
+2.07e-07,,,rs2074955,,158686040,,,
+,,,,,MCI: Aβ1-42,,,
+,,,,,MCI: Aβ1-42,,,
+,,,,,Position,,,
+,,,,,Position,,,
+1.2e-07,,,rs2986971,,30136634,,,
+8.88e-07,,,rs2986971,,30136634,,,
+8.88e-07,,,rs2986971,,30136634,,,
+,,,,,MCI: T-tau,,,
+,,,,,MCI: T-tau,,,
+,,,,,Position,,,
+,,,,,Position,,,
+1.96e-07,,,rs2768975,,48724658,,,
+3.18e-07,,,rs6850199,,48695607,,,
+7.75e-07,,,rs1445093,,48024821,,,
+7.75e-07,,,rs1445093,,48024821,,,
+,,,,,MCI: P-tau181p,,,
+,,,,,MCI: P-tau181p,,,
+,,,,,Position,,,
+,,,,,Position,,,
+1.45e-07,,,rs121724,,29207970,,,
+2.12e-07,,,rs7842088,,17629409,,,
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
+0.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
+0.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
+0.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
+0.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
+20.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
+12.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
+4.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
+4.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
+4.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
+0.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
+0.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
+0.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
+0.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
+22.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
+12.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
+5.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
+18.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
+10.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
+1.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
+1.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
+1.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
+1.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
+1.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
+1.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
+1.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
+1.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
+1.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
+20.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
+10.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
+2.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
+2.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
+2.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
+2.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
+2.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
+2.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
+2.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
+21.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
+40.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
+81.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
+81.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
+25.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
+52.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
+117.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
+117.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
+117.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
+24.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
+41.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
+83.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
+83.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
+,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
+28.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
+53.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
+120.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
+,71.7,,,,,,,
+,205.8,,,,,,,
+,25.4,,,,,,,
+,71.8,,,,,,,
+,29.0,,,,,,,
+,29.0,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,59.0,,,,,,,
+,50.0,,,,,,,
+,50.0,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,70.0,,,,,,,
+,170.4,,,,,,,
+,33.7,,,,,,,
+,99.5,,,,,,,
+,26.5,,,,,,,
+,26.5,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,72.0,,,,,,,
+,37.0,,,,,,,
+,37.0,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,71.0,,,,,,,
+,144.7,,,,,,,
+,40.3,,,,,,,
+,115.3,,,,,,,
+,21.1,,,,,,,
+,21.1,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,105.0,,,,,,,
+,67.0,,,,,,,

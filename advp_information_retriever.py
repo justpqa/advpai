@@ -12,25 +12,18 @@ from langchain_core.documents import Document
 from langchain_chroma import Chroma
 from langchain_huggingface.embeddings import HuggingFaceEmbeddings
 import torch
-import torch.nn.functional as F
-from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig, LogitsProcessor, AutoModel
-from sentence_transformers import CrossEncoder
+from transformers import AutoModelForCausalLM, AutoTokenizer, LogitsProcessor, AutoModel
 from llama_cpp import Llama, LogitsProcessorList
 from huggingface_hub import login
 from utils import *
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-import nest_asyncio
-import asyncio
-from openai import OpenAI, AsyncOpenAI
-import langextract as lx
-from langextract.providers.openai import OpenAILanguageModel
+from openai import OpenAI
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 from dotenv import load_dotenv
 load_dotenv()
 
 LLAMA_CLIENT = OpenAI(base_url=f"http://localhost:{os.environ.get('LLAMA_URL_PORT', 0)}/v1", api_key="none")
-# ASYNC_LLAMA_CLIENT = AsyncOpenAI(base_url=f"http://localhost:{os.environ.get('LLAMA_URL_PORT', 0)}/v1", api_key="none")
 
 ENTREZ_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
 
@@ -467,7 +460,7 @@ class ADVPInformationRetriever:
     def __init__(self, referencing_col_df: pd.DataFrame,
                  chroma_db_path: str = "./chroma_db", chroma_db_collection_name: str = "advp2", 
                  embeddings_model_name: str = "NeuML/pubmedbert-base-embeddings", reranker_model_name: str = "BAAI/bge-reranker-base",
-                 llm_model_name: Optional[str] = "Qwen/Qwen2.5-1.5B-Instruct", llm_gguf_path: Optional[str] = "./qwen2.5-3b-instruct-q8/qwen2.5-3b-instruct-q8_0.gguf",
+                 llm_model_name: Optional[str] = "Qwen/Qwen2.5-1.5B-Instruct", llm_gguf_path: Optional[str] = "./model/qwen2.5-3b-instruct-q8/qwen2.5-3b-instruct-q8_0.gguf",
                  use_hf: bool = True, device: Optional[str] = None):
         # load ref col df
         self.referencing_col_lst = referencing_col_df["column"].to_list()
@@ -918,7 +911,6 @@ Output: """
         if num_docs == 0:
             return {ref_col: [] for ref_col in self.referencing_col_lst}
 
-        # nest_asyncio.apply() 
         for ref_col, ref_col_context, ref_col_examples, ref_col_use_examples_in_llm, ref_col_retrieval_query in zip(
             self.referencing_col_lst,
             self.referencing_col_context_lst,

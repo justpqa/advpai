@@ -1,13 +1,12 @@
 import re
-import json
 from copy import deepcopy
-from typing import List, Union, Tuple, Dict
+from typing import List, Tuple, Dict
 from collections.abc import Iterable
 import numpy as np
 import pandas as pd
 import torch
 import torch.nn.functional as F
-from transformers import AutoTokenizer, AutoModel, AutoModelForCausalLM, BitsAndBytesConfig, LogitsProcessor, LogitsProcessorList
+from transformers import AutoTokenizer, AutoModel
     
 # class SingleTokenBiasProcessor(LogitsProcessor):
 #     def __init__(self, token_ids, bias_value):

@@ -29,6 +29,7 @@
 | `id_to_table_id_lst.json` | Dictionary of paper id -> list of table id that Pubmed central used in order to extract table later using PMC API |
 | `ingest_papers.py` | Old code for ingesting papers into Chroma DB before harmonizing, might not need it in current versions of info retriever |
 | `model_servers_init.sh` | Bash script to initialize API servers to serve model locally so that different python scripts can call and use these models |
+| `table_link_to_excel.py` | File with extra util func, need to be merged into util later |
 | `test/conftest.py` | Test config, needed to initialize pytest script |
 | `test/extract_test_tables_advp1.py` | Script for extracting test tables correspond to sample set of papers we test from ADVP1 from the full ADVP1 ground truth of all ADVP1 papers |
 | `test/test_advp1.py` | Set of test/evaluation functions for evaluating harmonization results for different col from ADVP1 papers |
