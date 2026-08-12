@@ -10,7 +10,7 @@ import re
 import warnings
 warnings.filterwarnings("ignore")
 
-CORPUS_PATHS = ["./test_papers", "./papers"]
+CORPUS_PATHS = ["./papers/old", "./papers/test"]
 PAPERS_INFO = [
     (30448613, "PMC6331247"), (30979435, "PMC6783343"), (28247064, "PMC5613285"), (30617256, "PMC6836675"),
     (30820047, "PMC6463297"), (29458411, "PMC5819208"), (29777097, "PMC5959890"), (30651383, "PMC6369905"),

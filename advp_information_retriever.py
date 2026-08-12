@@ -115,7 +115,7 @@ def clean_document(document: Document) -> Document:
     cleaned_document = Document(page_content=cleaned_text, metadata=document.metadata)
     return cleaned_document
 
-def ingest_doc_from_pmc(pmid: int, pmcid: str, embedding_model_name: str = "abhinand/MedEmbed-large-v0.1", 
+def ingest_doc_from_pmc(pmid: int, pmcid: str, embedding_model_name: str = "NeuML/pubmedbert-base-embeddings", 
                         chroma_db_path: str = "./chroma_db", chroma_db_collection_name: str = "advp2", 
                         chunk_size: int = 500, chunk_overlap: int = 50):
     documents = []
@@ -466,7 +466,7 @@ def get_gwas_ad_citations_with_context(
 class ADVPInformationRetriever:
     def __init__(self, referencing_col_df: pd.DataFrame,
                  chroma_db_path: str = "./chroma_db", chroma_db_collection_name: str = "advp2", 
-                 embeddings_model_name: str = "abhinand/MedEmbed-large-v0.1", reranker_model_name: str = "BAAI/bge-reranker-base",
+                 embeddings_model_name: str = "NeuML/pubmedbert-base-embeddings", reranker_model_name: str = "BAAI/bge-reranker-base",
                  llm_model_name: Optional[str] = "Qwen/Qwen2.5-1.5B-Instruct", llm_gguf_path: Optional[str] = "./qwen2.5-3b-instruct-q8/qwen2.5-3b-instruct-q8_0.gguf",
                  use_hf: bool = True, device: Optional[str] = None):
         # load ref col df

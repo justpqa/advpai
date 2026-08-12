@@ -90,7 +90,7 @@ def table_link_to_excel(pmid: int, pmcid: str) -> bool:
     has_error = False
     # for i in range(1, num_tables + 1):
     for table_id in table_id_list:
-        table_name = f'tables/{pmid}_{pmcid}_{table_id}_from_pmc.xlsx'
+        table_name = f'intermediate_tables/{pmid}_{pmcid}_{table_id}_from_pmc.xlsx'
         found_table = False
         # for pti in possible_table_id:
         try:

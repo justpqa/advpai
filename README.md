@@ -5,14 +5,13 @@
 | `chroma_db/` | Folder for Chroma DB for RAG |
 | `model` | Folder for models, each subfolder represent a model |
 | `other` | Folder for other experimental files that is not used by current pipeline |
-| `papers/` | Folder for set of papers used for exploring different approach, mostly not used more |
+| `papers/` | Folder for set of papers used for exploring different approach, **old** first set ever try, **test** current test set of 20 papers, other files outside is latest one |
 | `pred_tables/` | Set of harmonized tables from test_papers folder without text col, to be distinguished with pred_tables_with_text_col |
 | `pred_tables_with_text_col/` | Given a harmonized table from pred_tables_with_text_col, we harmonize the text col from paper and append onto that and finally save here |
 | `referencing_cols` | Folder for descriptions related to different columns (meanings, examples, etc.) |
-| `tables` | Intermediate tables created in the process before get to pred_tables |
+| `intermediate_tables` | Intermediate tables created in the process before get to pred_tables |
 | `test` | Folder for evaluation/test files, mostly to evaluate on text columns since they are hard to do |
 | `test_logs` | Folder for test logs for testing accuracy of different text columns |
-| `test_papers` | Folder for papers used to test the harmonization pipeline |
 | `.env` | Config file |
 | `.gitignore` | Including files that are not tracked by github |
 | `advp_paper_searching.py` | Python script for searching new Alzheimer's Disease-related GWAS papers => output are new_gwas_ad_paper*.csv/.xlsx files |
