@@ -1,249 +1,205 @@
 P-value,Effect,AF,SNP,Chr,Position,RA1,RA2,P-value notes
-,,,,,Normal: Aβ1-42,,,
-,,,,,Normal: Aβ1-42,,,
-,,,,,Position,,,
-,,,,,Position,,,
-1.86e-09,,,rs2899472,,49303347,,,
-5.4e-08,,,rs2899472,,49303347,,,
-6.37e-08,,,rs11206801,,56623274,,,
-6.37e-08,,,rs4431886,,56624855,,,
-1.11e-07,,,rs2899472,,49303347,,,
-3.03e-07,,,rs2075650,,50087459,,,
-3.09e-07,,,rs10784496,,64447238,,,
-9.04e-07,,,rs12534221,,130938530,,,
-9.71e-07,,,rs1727638,,72196293,,,
-9.71e-07,,,rs1727638,,72196293,,,
-,,,,,Normal: T-tau,,,
-,,,,,Normal: T-tau,,,
-,,,,,Position,,,
-,,,,,Position,,,
-1.1e-08,,,rs1997111,,117872301,,,
-1.65e-07,,,rs11069178,,117852210,,,
-3.9e-07,,,rs17189298,,119561787,,,
-5.53e-07,,,rs2935776,,109699079,,,
-5.77e-07,,,rs2928826,,109683270,,,
-8.9e-07,,,rs895401,,119584178,,,
-8.92e-07,,,rs893769,,119556554,,,
-8.92e-07,,,rs893769,,119556554,,,
-,,,,,Normal: P-tau181p,,,
-,,,,,Normal: P-tau181p,,,
-,,,,,Position,,,
-,,,,,Position,,,
-1.08e-07,,,rs1943816,,69209602,,,
-1.09e-07,,,rs2074955,,158686040,,,
-1.09e-07,,,rs2074955,,158686040,,,
-,,,,,MCI: T-tau,,,
-,,,,,MCI: T-tau,,,
-,,,,,Position,,,
-,,,,,Position,,,
-8.696e-07,,,rs5998432,,31075916,,,
-8.696e-07,,,rs5998432,,31075916,,,
-,,,,,MCI: P-tau181p,,,
-,,,,,MCI: P-tau181p,,,
-,,,,,Position,,,
-,,,,,Position,,,
-1.08e-07,,,rs7558386,,227270383,,,
-5.27e-07,,,rs7558386,,227270383,,,
-9.6e-07,,,rs7631605,,37209593,,,
-9.6e-07,,,rs7631605,,37209593,,,
-,,,,,AD: Aβ1-42,,,
-,,,,,AD: Aβ1-42,,,
-,,,,,Position,,,
-,,,,,Position,,,
-4.96e-07,,,rs239713,,27618347,,,
-4.96e-07,,,rs239713,,27618347,,,
-,,,,,AD: T-tau,,,
-,,,,,AD: T-tau,,,
-,,,,,Position,,,
-,,,,,Position,,,
-6.35e-07,,,rs4925189,,59380439,,,
-6.35e-07,,,rs4925189,,59380439,,,
-,,,,,AD: P-tau181p,,,
-,,,,,AD: P-tau181p,,,
-,,,,,Position,,,
-,,,,,Position,,,
-4.95e-07,,,rs12643654,,96378840,,,
-4.95e-07,,,rs12643654,,96378840,,,
-,,,,,Linear regression result using APOE genotype and age as covariates,,,
-,,,,,Linear regression result using APOE genotype and age as covariates,,,
-,,,,,Normal: Aβ1-42,,,
-,,,,,Normal: Aβ1-42,,,
-,,,,,Position,,,
-,,,,,Position,,,
-1.9e-12,,,rs2899472,,49303347,,,
-3.85,,,rs2899472,,49303347,,,
-4.15e-09,,,rs2899472,,49303347,,,
-2.75e-07,,,rs1022442,,21277717,,,
-6.14e-07,,,rs2493624,,19102262,,,
-6.45e-07,,,rs11015839,,19042893,,,
-6.45e-07,,,rs11015860,,19045045,,,
-7.69e-07,,,rs10911736,,183689227,,,
-7.87e-07,,,rs11015839,,19042893,,,
-7.87e-07,,,rs11015860,,19045045,,,
-9.25e-07,,,rs11015939,,19057948,,,
-9.25e-07,,,rs2495832,,19114467,,,
-9.76e-07,,,rs12203791,,67778209,,,
-9.78e-07,,,rs10763625,,19074957,,,
-9.78e-07,,,rs10763625,,19074957,,,
-,,,,,Normal: T-tau,,,
-,,,,,Normal: T-tau,,,
-,,,,,Position,,,
-,,,,,Position,,,
-2.11e-07,,,rs1997111,,117872301,,,
-8.66e-07,,,rs17189298,,119561787,,,
-8.81e-07,,,rs1021599,,28469054,,,
-8.81e-07,,,rs1021599,,28469054,,,
-,,,,,Normal: P-tau181p,,,
-,,,,,Normal: P-tau181p,,,
-,,,,,Position,,,
-,,,,,Position,,,
-1.5e-07,,,rs1943816,,69209602,,,
-2.07e-07,,,rs2074955,,158686040,,,
-2.07e-07,,,rs2074955,,158686040,,,
-,,,,,MCI: Aβ1-42,,,
-,,,,,MCI: Aβ1-42,,,
-,,,,,Position,,,
-,,,,,Position,,,
-1.2e-07,,,rs2986971,,30136634,,,
-8.88e-07,,,rs2986971,,30136634,,,
-8.88e-07,,,rs2986971,,30136634,,,
-,,,,,MCI: T-tau,,,
-,,,,,MCI: T-tau,,,
-,,,,,Position,,,
-,,,,,Position,,,
-1.96e-07,,,rs2768975,,48724658,,,
-3.18e-07,,,rs6850199,,48695607,,,
-7.75e-07,,,rs1445093,,48024821,,,
-7.75e-07,,,rs1445093,,48024821,,,
-,,,,,MCI: P-tau181p,,,
-,,,,,MCI: P-tau181p,,,
-,,,,,Position,,,
-,,,,,Position,,,
-1.45e-07,,,rs121724,,29207970,,,
-2.12e-07,,,rs7842088,,17629409,,,
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
-0.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
-0.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
-0.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
-0.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
-20.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
-12.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
-4.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
-4.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
-4.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
-0.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
-0.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
-0.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
-0.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
-22.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
-12.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
-5.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).2
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
-18.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
-10.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
-1.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
-1.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
-1.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
-1.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
-1.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
-1.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
-1.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
-1.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
-1.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
-20.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
-10.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
-2.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
-2.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
-2.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
-2.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
-2.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
-2.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
-2.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).3
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
-21.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
-40.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
-81.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
-81.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
-25.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
-52.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
-117.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
-117.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
-117.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
-24.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
-41.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
-83.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
-83.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
-,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
-28.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
-53.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
-120.0,,,,,,,,APOE genotype data (after removing outliers: n = 390).6
-,71.7,,,,,,,
-,205.8,,,,,,,
-,25.4,,,,,,,
-,71.8,,,,,,,
-,29.0,,,,,,,
-,29.0,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,59.0,,,,,,,
-,50.0,,,,,,,
-,50.0,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,70.0,,,,,,,
-,170.4,,,,,,,
-,33.7,,,,,,,
-,99.5,,,,,,,
-,26.5,,,,,,,
-,26.5,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,72.0,,,,,,,
-,37.0,,,,,,,
-,37.0,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,71.0,,,,,,,
-,144.7,,,,,,,
-,40.3,,,,,,,
-,115.3,,,,,,,
-,21.1,,,,,,,
-,21.1,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,105.0,,,,,,,
-,67.0,,,,,,,
+,,,rs2899472,15,49303347,,A,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs2899472,15,49303347,,A,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs11206801,1,56623274,,A,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs4431886,1,56624855,,C,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs2899472,15,49303347,,A,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs2075650,19,50087459,,G,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs10784496,12,64447238,,G,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs12534221,7,130938530,,A,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs1727638,6,72196293,,A,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs1997111,12,117872301,,T,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs11069178,12,117852210,,C,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs17189298,2,119561787,,A,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs2935776,8,109699079,,C,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs2928826,8,109683270,,T,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs895401,2,119584178,,G,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs893769,2,119556554,,C,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs1943816,18,69209602,,C,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs2074955,2,158686040,,C,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs5998432,22,31075916,,T,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs7558386,2,227270383,,G,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs7558386,2,227270383,,G,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs7631605,3,37209593,,T,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs239713,21,27618347,,T,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs4925189,20,59380439,,G,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs12643654,4,96378840,,G,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs2899472,15,49303347,,A,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs2899472,15,49303347,,A,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs2899472,15,49303347,,A,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs1022442,21,21277717,,A,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs2493624,10,19102262,,G,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs11015839,10,19042893,,A,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs11015860,10,19045045,,G,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs10911736,1,183689227,,A,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs11015839,10,19042893,,A,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs11015860,10,19045045,,G,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs11015939,10,19057948,,A,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs2495832,10,19114467,,G,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs12203791,6,67778209,,T,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs10763625,10,19074957,,T,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs1997111,12,117872301,,T,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs17189298,2,119561787,,A,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs1021599,18,28469054,,T,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs1943816,18,69209602,,C,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs2074955,2,158686040,,C,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs2986971,10,30136634,,G,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs2986971,10,30136634,,G,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs2768975,4,48724658,,G,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs6850199,4,48695607,,A,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs1445093,18,48024821,,C,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs121724,7,29207970,,G,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs7842088,8,17629409,,G,Linear regression result without using covariates.4.Normal: Aβ 1-42.TEST.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs2899472,15,49303347,,A,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+0.1791,,,rs2899472,15,49303347,,A,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs11206801,1,56623274,,A,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs4431886,1,56624855,,C,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+-0.1407,,,rs2899472,15,49303347,,A,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs2075650,19,50087459,,G,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs10784496,12,64447238,,G,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs12534221,7,130938530,,A,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs1727638,6,72196293,,A,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs1997111,12,117872301,,T,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs11069178,12,117852210,,C,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs17189298,2,119561787,,A,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs2935776,8,109699079,,C,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs2928826,8,109683270,,T,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs895401,2,119584178,,G,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+-0.1024,,,rs893769,2,119556554,,C,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs1943816,18,69209602,,C,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs2074955,2,158686040,,C,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs5998432,22,31075916,,T,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs7558386,2,227270383,,G,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+0.242,,,rs7558386,2,227270383,,G,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs7631605,3,37209593,,T,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs239713,21,27618347,,T,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+0.1969,,,rs4925189,20,59380439,,G,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs12643654,4,96378840,,G,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs2899472,15,49303347,,A,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+-0.1393,,,rs2899472,15,49303347,,A,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+0.1614,,,rs2899472,15,49303347,,A,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs1022442,21,21277717,,A,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs2493624,10,19102262,,G,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs11015839,10,19042893,,A,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs11015860,10,19045045,,G,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs10911736,1,183689227,,A,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+-0.1151,,,rs11015839,10,19042893,,A,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+-0.1151,,,rs11015860,10,19045045,,G,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+-0.1243,,,rs11015939,10,19057948,,A,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+-0.1243,,,rs2495832,10,19114467,,G,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs12203791,6,67778209,,T,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+-0.124,,,rs10763625,10,19074957,,T,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs1997111,12,117872301,,T,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs17189298,2,119561787,,A,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs1021599,18,28469054,,T,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs1943816,18,69209602,,C,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs2074955,2,158686040,,C,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs2986971,10,30136634,,G,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+0.08328,,,rs2986971,10,30136634,,G,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs2768975,4,48724658,,G,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs6850199,4,48695607,,A,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs1445093,18,48024821,,C,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs121724,7,29207970,,G,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+,,,rs7842088,8,17629409,,G,Linear regression result without using covariates.5.Normal: Aβ 1-42.BETA.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+40.21,,,rs2899472,15,49303347,,A,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+5.859,,,rs2899472,15,49303347,,A,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+33.14,,,rs11206801,1,56623274,,A,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+33.14,,,rs4431886,1,56624855,,C,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+-5.699,,,rs2899472,15,49303347,,A,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+30.02,,,rs2075650,19,50087459,,G,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+29.98,,,rs10784496,12,64447238,,G,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+27.83,,,rs12534221,7,130938530,,A,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+27.69,,,rs1727638,6,72196293,,A,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+36.66,,,rs1997111,12,117872301,,T,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+31.23,,,rs11069178,12,117852210,,C,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+29.51,,,rs17189298,2,119561787,,A,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+28.81,,,rs2935776,8,109699079,,C,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+28.73,,,rs2928826,8,109683270,,T,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+27.86,,,rs895401,2,119584178,,G,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+-5.237,,,rs893769,2,119556554,,C,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+32.09,,,rs1943816,18,69209602,,C,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+32.06,,,rs2074955,2,158686040,,C,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+27.91,,,rs5998432,22,31075916,,T,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+32.09,,,rs7558386,2,227270383,,G,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+5.343,,,rs7558386,2,227270383,,G,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+27.71,,,rs7631605,3,37209593,,T,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+29.03,,,rs239713,21,27618347,,T,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+5.178,,,rs4925189,20,59380439,,G,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+29.04,,,rs12643654,4,96378840,,G,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+53.98,,,rs2899472,15,49303347,,A,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+-6.925,,,rs2899472,15,49303347,,A,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+6.425,,,rs2899472,15,49303347,,A,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+30.21,,,rs1022442,21,21277717,,A,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+28.61,,,rs2493624,10,19102262,,G,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+28.51,,,rs11015839,10,19042893,,A,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+28.51,,,rs11015860,10,19045045,,G,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+28.16,,,rs10911736,1,183689227,,A,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+-5.257,,,rs11015839,10,19042893,,A,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+-5.257,,,rs11015860,10,19045045,,G,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+-5.219,,,rs11015939,10,19057948,,A,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+-5.219,,,rs2495832,10,19114467,,G,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+27.68,,,rs12203791,6,67778209,,T,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+-5.206,,,rs10763625,10,19074957,,T,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+30.74,,,rs1997111,12,117872301,,T,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+27.92,,,rs17189298,2,119561787,,A,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+27.88,,,rs1021599,18,28469054,,T,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+31.43,,,rs1943816,18,69209602,,C,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+30.78,,,rs2074955,2,158686040,,C,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+31.88,,,rs2986971,10,30136634,,G,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+5.228,,,rs2986971,10,30136634,,G,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+30.89,,,rs2768975,4,48724658,,G,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+29.93,,,rs6850199,4,48695607,,A,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+28.14,,,rs1445093,18,48024821,,C,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+31.49,,,rs121724,7,29207970,,G,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+30.73,,,rs7842088,8,17629409,,G,Linear regression result without using covariates.6.Normal: Aβ 1-42.STAT.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+1.86e-09,,,rs2899472,15,49303347,,A,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+5.4e-08,,,rs2899472,15,49303347,,A,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+6.37e-08,,,rs11206801,1,56623274,,A,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+6.37e-08,,,rs4431886,1,56624855,,C,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+1.11e-07,,,rs2899472,15,49303347,,A,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+3.03e-07,,,rs2075650,19,50087459,,G,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+3.09e-07,,,rs10784496,12,64447238,,G,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+9.04e-07,,,rs12534221,7,130938530,,A,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+9.71e-07,,,rs1727638,6,72196293,,A,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+1.1e-08,,,rs1997111,12,117872301,,T,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+1.65e-07,,,rs11069178,12,117852210,,C,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+3.9e-07,,,rs17189298,2,119561787,,A,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+5.53e-07,,,rs2935776,8,109699079,,C,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+5.77e-07,,,rs2928826,8,109683270,,T,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+8.9e-07,,,rs895401,2,119584178,,G,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+8.92e-07,,,rs893769,2,119556554,,C,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+1.08e-07,,,rs1943816,18,69209602,,C,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+1.09e-07,,,rs2074955,2,158686040,,C,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+8.696e-07,,,rs5998432,22,31075916,,T,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+1.08e-07,,,rs7558386,2,227270383,,G,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+5.27e-07,,,rs7558386,2,227270383,,G,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+9.6e-07,,,rs7631605,3,37209593,,T,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+4.96e-07,,,rs239713,21,27618347,,T,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+6.35e-07,,,rs4925189,20,59380439,,G,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+4.95e-07,,,rs12643654,4,96378840,,G,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+1.9e-12,,,rs2899472,15,49303347,,A,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+3.85,,,rs2899472,15,49303347,,A,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+4.15e-09,,,rs2899472,15,49303347,,A,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+2.75e-07,,,rs1022442,21,21277717,,A,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+6.14e-07,,,rs2493624,10,19102262,,G,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+6.45e-07,,,rs11015839,10,19042893,,A,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+6.45e-07,,,rs11015860,10,19045045,,G,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+7.69e-07,,,rs10911736,1,183689227,,A,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+7.87e-07,,,rs11015839,10,19042893,,A,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+7.87e-07,,,rs11015860,10,19045045,,G,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+9.25e-07,,,rs11015939,10,19057948,,A,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+9.25e-07,,,rs2495832,10,19114467,,G,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+9.76e-07,,,rs12203791,6,67778209,,T,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+9.78e-07,,,rs10763625,10,19074957,,T,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+2.11e-07,,,rs1997111,12,117872301,,T,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+8.66e-07,,,rs17189298,2,119561787,,A,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+8.81e-07,,,rs1021599,18,28469054,,T,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+1.5e-07,,,rs1943816,18,69209602,,C,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+2.07e-07,,,rs2074955,2,158686040,,C,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+1.2e-07,,,rs2986971,10,30136634,,G,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+8.88e-07,,,rs2986971,10,30136634,,G,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+1.96e-07,,,rs2768975,4,48724658,,G,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+3.18e-07,,,rs6850199,4,48695607,,A,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+7.75e-07,,,rs1445093,18,48024821,,C,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+1.45e-07,,,rs121724,7,29207970,,G,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42
+2.12e-07,,,rs7842088,8,17629409,,G,Linear regression result without using covariates.7.Normal: Aβ 1-42.P-value.Normal: T-tau.Normal: P-tau 181p.MCI: T-tau.MCI: P-tau 181p.AD: Aβ 1-42.AD: T-tau.AD: P-tau 181p.Linear regression result using APOE genotype and age as covariates.MCI: Aβ 1-42

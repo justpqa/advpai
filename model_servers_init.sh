@@ -11,7 +11,7 @@ fi
 # ---------------------------------------------------------------------------
 # Model: Qwen2.5-3B-Instruct Q8_0 GGUF
 # ---------------------------------------------------------------------------
-MODEL_DIR="$SCRIPT_DIR/qwen2.5-3b-instruct-q8"
+MODEL_DIR="$SCRIPT_DIR/model/qwen2.5-3b-instruct-q8"
 MODEL_FILE="$MODEL_DIR/qwen2.5-3b-instruct-q8_0.gguf"
 HF_REPO_ID="Qwen/Qwen2.5-3B-Instruct-GGUF"
 HF_FILENAME="qwen2.5-3b-instruct-q8_0.gguf"
@@ -50,8 +50,3 @@ python -m llama_cpp.server \
     --n_gpu_layers -1 \
     --n_ctx 8192 \
     --port "${LLAMA_PORT:-8001}"
-# llama-server \
-#     --model "$MODEL_FILE" \
-#     --n-gpu-layers -1 \
-#     --ctx-size 8192 \
-#     --port "${LLAMA_PORT:-8001}"

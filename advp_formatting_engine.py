@@ -139,6 +139,60 @@ class ADVPFormattingEngine:
         # # device
         # self.device = "mps"
 
+    def clean_df(self, df: pd.DataFrame) -> pd.DataFrame:
+        """
+        Cleaned empty rows + find all rows that are actually extra columns index 
+        and put them along with original column index to make a big one
+        """
+        # Before starting, remove any empty rows
+        df = df.dropna(how = "all").reset_index(drop=True)
+
+        # Try to find the actual column name, since the first rows are often super-index, 
+        # find until the first row that has SNP or CHR pattern as well as p-value pattern => first rows, all previous rows are info on col name
+        # all rows that are not actual result rows are combined together to make a big col name
+        snp_pattern_1 = re.compile(r"rs\d+")
+        snp_pattern_2 = re.compile(r"rsl*\d+")
+        snp_mask_1 = df.applymap(lambda x: snp_pattern_1.search(str(x)) is not None)
+        snp_mask_2 = df.applymap(lambda x: snp_pattern_2.search(str(x)) is not None)
+        snp_mask = snp_mask_1 | snp_mask_2
+        snp_row_mask = snp_mask.any(axis=1)
+        chr_pattern_1 = re.compile(r"(?<![A-Za-z.])[Cc][Hh][Rr](?![A-Za-z.])")
+        chr_mask_1 = df.applymap(lambda x: chr_pattern_1.search(str(x)) is not None)
+        chr_pattern_2 = re.compile('(?<![A-Za-z.])\d+(?![A-Za-z.])')
+        chr_mask_2 = df.applymap(lambda x: chr_pattern_2.search(str(x)) is not None)
+        chr_mask = chr_mask_1 & chr_mask_2
+        chr_row_mask = chr_mask.any(axis=1)
+        p_value_pattern = re.compile(r"\d+\.\d+")
+        p_value_mask = df.applymap(lambda x: p_value_pattern.search(str(x)) is not None)
+        p_value_row_mask = p_value_mask.any(axis = 1)
+        # final filter, filter rows that has at least 1 cell satisfy this
+        row_mask = (snp_row_mask | chr_row_mask) & p_value_row_mask
+        # separate into actual rows and other
+        df_actual_rows = df[row_mask]
+        df_other_column_indexes = df[~row_mask]
+
+        # Get new full col names that include:
+        # current col name + other info from rows that are not actual result rows but other col index
+        new_col_names = []
+        for col in df_other_column_indexes.columns:
+            # column name + values as strings
+            items = [str(col)] + df_other_column_indexes[col].astype(str).tolist()
+            # filter for duplicates (keep first occurrence, preserve order)
+            seen = set()
+            deduped = []
+            for item in items:
+                if item not in seen:
+                    seen.add(item)
+                    deduped.append(item)
+            # combine into 1 string with "." separator
+            combined = ".".join(deduped)
+            new_col_names.append(combined)
+        df_actual_rows.columns = new_col_names
+        # make it into the new df
+        df = df_actual_rows.copy()
+
+        return df
+
     def clean_col(self, col: str) -> str:
         """
         Clean a column by replacing any possible abbreviation with their actual meaning for better semantic matching
@@ -681,8 +735,11 @@ class ADVPFormattingEngine:
         """
         Format final table by running pipeline of col matching -> final format
         """
+        # Conduct cleaning before starting
+        clean_df = self.clean_df(df)
+
         # first do matching
-        ref_col_to_col_lst = self.match_many_col_to_ref_col(df)
+        ref_col_to_col_lst = self.match_many_col_to_ref_col(clean_df)
 
         # finally, filter col that cannot have multiple copies
         for ref_col in ref_col_to_col_lst:
@@ -695,7 +752,7 @@ class ADVPFormattingEngine:
                 ref_col_to_col_lst[ref_col] = [(best_col, best_score)]
 
         # then do final melt
-        final_df = self.format_original_table_from_col_matching(df, ref_col_to_col_lst, remove_unique_col)
+        final_df = self.format_original_table_from_col_matching(clean_df, ref_col_to_col_lst, remove_unique_col)
 
         # columns that is not in referencing col list will be created later
         for col in self.referencing_col_lst:

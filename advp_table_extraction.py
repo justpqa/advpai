@@ -77,85 +77,109 @@ def contains_valid_pvalue(row):
     row_pvalue_pattern = r"\d+\.\d+"
     return any(re.search(row_pvalue_pattern, str(value)) for value in row)
 
-# NOTE: code sometimes fail to extract tables given we have the right ID, fix it
-def table_link_to_excel(pmid: int, pmcid: str) -> bool:
-    # extract list of table id directly
-    table_id_list = extract_table_id_lst_from_pmc(pmcid) 
+def _fetch_pmc_soup(pmcid: str):
+    """
+    Fetch the article once and return a soup holding every table.
 
-    # possible_table_id = ["T", "Tab", "Table", "Tbl", "t", "tab", "table", "tbl"]
+    Ordering matters here. The article HTML page is rate limited: after ~2 requests
+    PMC stops serving the article and returns a reCAPTCHA challenge page with
+    HTTP 200, which fetch_html treats as a valid body (it only checks resp.ok).
+    The full text XML is served from Europe PMC / NCBI OAI / the OA package and is
+    stable across runs, so we try it first and keep the HTML page as the fallback.
+    """
+    if BeautifulSoup is None:
+        raise RuntimeError("beautifulsoup4 is not installed. Run: python3 -m pip install beautifulsoup4")
+
+    try:
+        return BeautifulSoup(fetch_pmc_fulltext_xml(pmcid), "xml")
+    except Exception as e:
+        print(f"Cannot fetch full text XML for {pmcid} with error {e}, falling back to article HTML")
+
+    html = fetch_html(f"https://pmc.ncbi.nlm.nih.gov/articles/{pmcid}")
+    # A 200 response is not proof of content: the bot challenge is served as 200.
+    if "RecaptchaChallengePageUi" in html or "<table" not in html.lower():
+        raise RuntimeError(f"PMC returned a bot challenge page instead of the article for {pmcid}")
+
+    soup = BeautifulSoup(html, "lxml")
+    # On the HTML page the <table> itself carries no id; the T1/T2/... id sits on an
+    # ancestor wrapper (table < div < section#T1 < section#S15 < ...). Copy the id of
+    # the *nearest* id bearing ancestor onto the table so pick_table resolves the same
+    # ids the BioC API reports, exactly as it does on the XML. Walking up from each
+    # table is what makes this safe: scanning id holders top down would let an outer
+    # section (#S15) claim the table before its own wrapper (#T1) is reached.
+    for table in soup.find_all("table"):
+        if table.get("id"):
+            continue
+        for parent in table.parents:
+            if parent.get("id"):
+                table["id"] = parent["id"]
+                break
+    return soup
+
+
+def table_link_to_excel(pmid: int, pmcid: str) -> bool:
+    # extract list of table id directly, sorted so a partial run is reproducible
+    # (extract_table_id_lst_from_pmc builds a set, whose order varies per process)
+    table_id_list = sorted(extract_table_id_lst_from_pmc(pmcid))
+
+    os.makedirs("intermediate_tables", exist_ok=True)
+
+    # one fetch per paper, not one per table id, so we stay under the rate limit
+    soup = None
+    try:
+        soup = _fetch_pmc_soup(pmcid)
+    except Exception as e:
+        print(f"Cannot fetch {pmcid} with error {e}")
+
     has_error = False
-    # for i in range(1, num_tables + 1):
     for table_id in table_id_list:
         table_name = f'intermediate_tables/{pmid}_{pmcid}_{table_id}_from_pmc.xlsx'
         found_table = False
-        # for pti in possible_table_id:
         try:
-            if BeautifulSoup is None:
-                raise RuntimeError("beautifulsoup4 is not installed. Run: python3 -m pip install beautifulsoup4")
+            if soup is not None:
+                try:
+                    tables = pick_table(soup, table_id=table_id, table_selector=None, table_index=0)
+                except Exception as e:
+                    tables = []
+                    print(f"Cannot find table {table_id} in the fetched {pmcid} document with error {e}")
 
-            # pmcid, url_table_id = _extract_pmc_info(f"https://pmc.ncbi.nlm.nih.gov/articles/{pmcid}")
-            # resolved_table_id = table_id
+                # collect first, so a table that yields nothing leaves no empty file behind
+                sheets = []
+                for i, table in enumerate(tables, start=1):
+                    df = table_to_dataframe(table)
+                    if df.empty:
+                        continue
+                    caption = ""
+                    cap = table.find("caption")
+                    if cap:
+                        caption = _clean_text(cap.get_text(" ", strip=True))
+                    df2 = _flatten_columns(df).ffill()
+                    sheets.append((sanitize_sheet_name(caption, fallback=f"table_{i}"), df2))
 
-            # Fast-path fallback for PMC direct table assets (often bypasses page-level 403).
-            if pmcid and table_id:
-                direct_tables = _try_pmc_direct_table_download(pmcid, table_id)
+                if sheets:
+                    with pd.ExcelWriter(table_name, engine="openpyxl") as writer:
+                        for sheet, df2 in sheets:
+                            df2.to_excel(writer, index=False, header=False, sheet_name=sheet)
+                    found_table = True
+
+            if not found_table:
+                # last resort: PMC direct table assets. Kept as a fallback rather than a
+                # fast path because it costs 5 requests per table id and its endpoints
+                # flap between 404 and 200 on identical URLs.
+                direct_tables = [df for df in (_try_pmc_direct_table_download(pmcid, table_id) or []) if not df.empty]
                 if direct_tables:
                     with pd.ExcelWriter(table_name, engine="openpyxl") as writer:
                         for i, df in enumerate(direct_tables, start=1):
-                            df2 = _flatten_columns(df)
-                            df2 = df2.ffill()
+                            df2 = _flatten_columns(df).ffill()
                             df2.to_excel(writer, index=False, sheet_name=sanitize_sheet_name("", f"table_{i}"))
-                            found_table = True
+                    found_table = True
 
             if not found_table:
-                html = ""
-                soup = None
-                parse_with_xml = False
-                try:
-                    html = fetch_html(f"https://pmc.ncbi.nlm.nih.gov/articles/{pmcid}")
-                    soup = BeautifulSoup(html, "lxml")
-                except Exception as e:
-                    # PMC pages may return 403 to scripts; fallback to Europe PMC XML.
-                    if pmcid:
-                        xml = fetch_pmc_fulltext_xml(pmcid)
-                        soup = BeautifulSoup(xml, "xml")
-                        parse_with_xml = True
-                    else:
-                        raise e
-
-                if table_id:
-                    tables = pick_table(soup, table_id=table_id, table_selector=None, table_index=0)
-                # elif args.all_tables:
-                #     if parse_with_xml:
-                #         wraps = soup.find_all("table-wrap")
-                #         tables = [w.find("table") for w in wraps if w.find("table") is not None]
-                #     else:
-                #         tables = soup.select(args.table_selector) if args.table_selector else soup.find_all("table")
-                #     if not tables:
-                #         raise ValueError("No matched tables found.")
-                # else:
-                #     tables = pick_table(
-                #         soup,
-                #         table_id=None,
-                #         table_selector=args.table_selector,
-                #         table_index=args.table_index,
-                #     )
-                with pd.ExcelWriter(table_name, engine="openpyxl") as writer:
-                    for i, table in enumerate(tables, start=1):
-                        df = table_to_dataframe(table)
-                        caption = ""
-                        cap = table.find("caption")
-                        if cap:
-                            caption = _clean_text(cap.get_text(" ", strip=True))
-                        sheet = sanitize_sheet_name(caption, fallback=f"table_{i}")
-                        df2 = _flatten_columns(df)
-                        df2 = df2.ffill()
-                        df2.to_excel(writer, index=False, header=False, sheet_name=sheet)
-                        found_table = True
+                raise ValueError(f"Cannot extract table with id={table_id}")
         except Exception as e:
             print(f"Error in extracting table {table_name} with error {e}")
             has_error = True
-            
+
         # if found_table:
         #     # filter table
         #     df = pd.read_excel(table_name)

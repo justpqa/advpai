@@ -1,217 +1,109 @@
 P-value,Effect,AF,SNP,Chr,Position,RA1,RA2,AF notes,Effect notes,P-value notes
-3e-08,0.712,0.35,rs10273639,7.0,142456928,,T,CP.cases,OR,1.P
-7.5e-08,0.712,0.35,rs10273639,7.0,142456928,,T,CP.cases,OR,P
-2e-14,0.712,0.35,rs10273639,7.0,142456928,,T,CP.cases,OR,P_1
-3e-08,0.044,0.35,rs10273639,7.0,142456928,,T,CP.cases,CP Stage.se(OR),1.P
-7.5e-08,0.044,0.35,rs10273639,7.0,142456928,,T,CP.cases,CP Stage.se(OR),P
-2e-14,0.044,0.35,rs10273639,7.0,142456928,,T,CP.cases,CP Stage.se(OR),P_1
-3e-08,0.748,0.35,rs10273639,7.0,142456928,,T,CP.cases,OR_1,1.P
-7.5e-08,0.748,0.35,rs10273639,7.0,142456928,,T,CP.cases,OR_1,P
-2e-14,0.748,0.35,rs10273639,7.0,142456928,,T,CP.cases,OR_1,P_1
-3e-08,0.039,0.35,rs10273639,7.0,142456928,,T,CP.cases,CP + RAP Stage.se(OR),1.P
-7.5e-08,0.039,0.35,rs10273639,7.0,142456928,,T,CP.cases,CP + RAP Stage.se(OR),P
-2e-14,0.039,0.35,rs10273639,7.0,142456928,,T,CP.cases,CP + RAP Stage.se(OR),P_1
-3e-08,0.734,0.35,rs10273639,7.0,142456928,,T,CP.cases,OR_2,1.P
-7.5e-08,0.734,0.35,rs10273639,7.0,142456928,,T,CP.cases,OR_2,P
-2e-14,0.734,0.35,rs10273639,7.0,142456928,,T,CP.cases,OR_2,P_1
-3e-08,0.029,0.35,rs10273639,7.0,142456928,,T,CP.cases,CP + RAP Combined.se(OR),1.P
-7.5e-08,0.029,0.35,rs10273639,7.0,142456928,,T,CP.cases,CP + RAP Combined.se(OR),P
-2e-14,0.029,0.35,rs10273639,7.0,142456928,,T,CP.cases,CP + RAP Combined.se(OR),P_1
-1e-15,1.493,0.374,rs7057398,,106144529,,C,CP.cases,OR,1.P
-1.8e-05,1.493,0.374,rs7057398,,106144529,,C,CP.cases,OR,P
-0.0,1.493,0.374,rs7057398,,106144529,,C,CP.cases,OR,P_1
-1e-15,0.075,0.374,rs7057398,,106144529,,C,CP.cases,CP Stage.se(OR),1.P
-1.8e-05,0.075,0.374,rs7057398,,106144529,,C,CP.cases,CP Stage.se(OR),P
-0.0,0.075,0.374,rs7057398,,106144529,,C,CP.cases,CP Stage.se(OR),P_1
-1e-15,1.21,0.374,rs7057398,,106144529,,C,CP.cases,OR_1,1.P
-1.8e-05,1.21,0.374,rs7057398,,106144529,,C,CP.cases,OR_1,P
-0.0,1.21,0.374,rs7057398,,106144529,,C,CP.cases,OR_1,P_1
-1e-15,0.066,0.374,rs7057398,,106144529,,C,CP.cases,CP + RAP Stage.se(OR),1.P
-1.8e-05,0.066,0.374,rs7057398,,106144529,,C,CP.cases,CP + RAP Stage.se(OR),P
-0.0,0.066,0.374,rs7057398,,106144529,,C,CP.cases,CP + RAP Stage.se(OR),P_1
-1e-15,1.321,0.374,rs7057398,,106144529,,C,CP.cases,OR_2,1.P
-1.8e-05,1.321,0.374,rs7057398,,106144529,,C,CP.cases,OR_2,P
-0.0,1.321,0.374,rs7057398,,106144529,,C,CP.cases,OR_2,P_1
-1e-15,0.049,0.374,rs7057398,,106144529,,C,CP.cases,CP + RAP Combined.se(OR),1.P
-1.8e-05,0.049,0.374,rs7057398,,106144529,,C,CP.cases,CP + RAP Combined.se(OR),P
-0.0,0.049,0.374,rs7057398,,106144529,,C,CP.cases,CP + RAP Combined.se(OR),P_1
-0.0,1.612,0.367,rs12688220,,106244767,,T,CP.cases,OR,1.P
-2.3e-06,1.612,0.367,rs12688220,,106244767,,T,CP.cases,OR,P
-0.0,1.612,0.367,rs12688220,,106244767,,T,CP.cases,OR,P_1
-0.0,0.081,0.367,rs12688220,,106244767,,T,CP.cases,CP Stage.se(OR),1.P
-2.3e-06,0.081,0.367,rs12688220,,106244767,,T,CP.cases,CP Stage.se(OR),P
-0.0,0.081,0.367,rs12688220,,106244767,,T,CP.cases,CP Stage.se(OR),P_1
-0.0,1.238,0.367,rs12688220,,106244767,,T,CP.cases,OR_1,1.P
-2.3e-06,1.238,0.367,rs12688220,,106244767,,T,CP.cases,OR_1,P
-0.0,1.238,0.367,rs12688220,,106244767,,T,CP.cases,OR_1,P_1
-0.0,0.073,0.367,rs12688220,,106244767,,T,CP.cases,CP + RAP Stage.se(OR),1.P
-2.3e-06,0.073,0.367,rs12688220,,106244767,,T,CP.cases,CP + RAP Stage.se(OR),P
-0.0,0.073,0.367,rs12688220,,106244767,,T,CP.cases,CP + RAP Stage.se(OR),P_1
-0.0,1.385,0.367,rs12688220,,106244767,,T,CP.cases,OR_2,1.P
-2.3e-06,1.385,0.367,rs12688220,,106244767,,T,CP.cases,OR_2,P
-0.0,1.385,0.367,rs12688220,,106244767,,T,CP.cases,OR_2,P_1
-0.0,0.054,0.367,rs12688220,,106244767,,T,CP.cases,CP + RAP Combined.se(OR),1.P
-2.3e-06,0.054,0.367,rs12688220,,106244767,,T,CP.cases,CP + RAP Combined.se(OR),P
-0.0,0.054,0.367,rs12688220,,106244767,,T,CP.cases,CP + RAP Combined.se(OR),P_1
-3e-08,0.712,0.424,rs10273639,7.0,142456928,,T,+ RAP Frequency (A1).controls,OR,1.P
-7.5e-08,0.712,0.424,rs10273639,7.0,142456928,,T,+ RAP Frequency (A1).controls,OR,P
-2e-14,0.712,0.424,rs10273639,7.0,142456928,,T,+ RAP Frequency (A1).controls,OR,P_1
-3e-08,0.044,0.424,rs10273639,7.0,142456928,,T,+ RAP Frequency (A1).controls,CP Stage.se(OR),1.P
-7.5e-08,0.044,0.424,rs10273639,7.0,142456928,,T,+ RAP Frequency (A1).controls,CP Stage.se(OR),P
-2e-14,0.044,0.424,rs10273639,7.0,142456928,,T,+ RAP Frequency (A1).controls,CP Stage.se(OR),P_1
-3e-08,0.748,0.424,rs10273639,7.0,142456928,,T,+ RAP Frequency (A1).controls,OR_1,1.P
-7.5e-08,0.748,0.424,rs10273639,7.0,142456928,,T,+ RAP Frequency (A1).controls,OR_1,P
-2e-14,0.748,0.424,rs10273639,7.0,142456928,,T,+ RAP Frequency (A1).controls,OR_1,P_1
-3e-08,0.039,0.424,rs10273639,7.0,142456928,,T,+ RAP Frequency (A1).controls,CP + RAP Stage.se(OR),1.P
-7.5e-08,0.039,0.424,rs10273639,7.0,142456928,,T,+ RAP Frequency (A1).controls,CP + RAP Stage.se(OR),P
-2e-14,0.039,0.424,rs10273639,7.0,142456928,,T,+ RAP Frequency (A1).controls,CP + RAP Stage.se(OR),P_1
-3e-08,0.734,0.424,rs10273639,7.0,142456928,,T,+ RAP Frequency (A1).controls,OR_2,1.P
-7.5e-08,0.734,0.424,rs10273639,7.0,142456928,,T,+ RAP Frequency (A1).controls,OR_2,P
-2e-14,0.734,0.424,rs10273639,7.0,142456928,,T,+ RAP Frequency (A1).controls,OR_2,P_1
-3e-08,0.029,0.424,rs10273639,7.0,142456928,,T,+ RAP Frequency (A1).controls,CP + RAP Combined.se(OR),1.P
-7.5e-08,0.029,0.424,rs10273639,7.0,142456928,,T,+ RAP Frequency (A1).controls,CP + RAP Combined.se(OR),P
-2e-14,0.029,0.424,rs10273639,7.0,142456928,,T,+ RAP Frequency (A1).controls,CP + RAP Combined.se(OR),P_1
-1e-15,1.493,0.281,rs7057398,,106144529,,C,+ RAP Frequency (A1).controls,OR,1.P
-1.8e-05,1.493,0.281,rs7057398,,106144529,,C,+ RAP Frequency (A1).controls,OR,P
-0.0,1.493,0.281,rs7057398,,106144529,,C,+ RAP Frequency (A1).controls,OR,P_1
-1e-15,0.075,0.281,rs7057398,,106144529,,C,+ RAP Frequency (A1).controls,CP Stage.se(OR),1.P
-1.8e-05,0.075,0.281,rs7057398,,106144529,,C,+ RAP Frequency (A1).controls,CP Stage.se(OR),P
-0.0,0.075,0.281,rs7057398,,106144529,,C,+ RAP Frequency (A1).controls,CP Stage.se(OR),P_1
-1e-15,1.21,0.281,rs7057398,,106144529,,C,+ RAP Frequency (A1).controls,OR_1,1.P
-1.8e-05,1.21,0.281,rs7057398,,106144529,,C,+ RAP Frequency (A1).controls,OR_1,P
-0.0,1.21,0.281,rs7057398,,106144529,,C,+ RAP Frequency (A1).controls,OR_1,P_1
-1e-15,0.066,0.281,rs7057398,,106144529,,C,+ RAP Frequency (A1).controls,CP + RAP Stage.se(OR),1.P
-1.8e-05,0.066,0.281,rs7057398,,106144529,,C,+ RAP Frequency (A1).controls,CP + RAP Stage.se(OR),P
-0.0,0.066,0.281,rs7057398,,106144529,,C,+ RAP Frequency (A1).controls,CP + RAP Stage.se(OR),P_1
-1e-15,1.321,0.281,rs7057398,,106144529,,C,+ RAP Frequency (A1).controls,OR_2,1.P
-1.8e-05,1.321,0.281,rs7057398,,106144529,,C,+ RAP Frequency (A1).controls,OR_2,P
-0.0,1.321,0.281,rs7057398,,106144529,,C,+ RAP Frequency (A1).controls,OR_2,P_1
-1e-15,0.049,0.281,rs7057398,,106144529,,C,+ RAP Frequency (A1).controls,CP + RAP Combined.se(OR),1.P
-1.8e-05,0.049,0.281,rs7057398,,106144529,,C,+ RAP Frequency (A1).controls,CP + RAP Combined.se(OR),P
-0.0,0.049,0.281,rs7057398,,106144529,,C,+ RAP Frequency (A1).controls,CP + RAP Combined.se(OR),P_1
-0.0,1.612,0.261,rs12688220,,106244767,,T,+ RAP Frequency (A1).controls,OR,1.P
-2.3e-06,1.612,0.261,rs12688220,,106244767,,T,+ RAP Frequency (A1).controls,OR,P
-0.0,1.612,0.261,rs12688220,,106244767,,T,+ RAP Frequency (A1).controls,OR,P_1
-0.0,0.081,0.261,rs12688220,,106244767,,T,+ RAP Frequency (A1).controls,CP Stage.se(OR),1.P
-2.3e-06,0.081,0.261,rs12688220,,106244767,,T,+ RAP Frequency (A1).controls,CP Stage.se(OR),P
-0.0,0.081,0.261,rs12688220,,106244767,,T,+ RAP Frequency (A1).controls,CP Stage.se(OR),P_1
-0.0,1.238,0.261,rs12688220,,106244767,,T,+ RAP Frequency (A1).controls,OR_1,1.P
-2.3e-06,1.238,0.261,rs12688220,,106244767,,T,+ RAP Frequency (A1).controls,OR_1,P
-0.0,1.238,0.261,rs12688220,,106244767,,T,+ RAP Frequency (A1).controls,OR_1,P_1
-0.0,0.073,0.261,rs12688220,,106244767,,T,+ RAP Frequency (A1).controls,CP + RAP Stage.se(OR),1.P
-2.3e-06,0.073,0.261,rs12688220,,106244767,,T,+ RAP Frequency (A1).controls,CP + RAP Stage.se(OR),P
-0.0,0.073,0.261,rs12688220,,106244767,,T,+ RAP Frequency (A1).controls,CP + RAP Stage.se(OR),P_1
-0.0,1.385,0.261,rs12688220,,106244767,,T,+ RAP Frequency (A1).controls,OR_2,1.P
-2.3e-06,1.385,0.261,rs12688220,,106244767,,T,+ RAP Frequency (A1).controls,OR_2,P
-0.0,1.385,0.261,rs12688220,,106244767,,T,+ RAP Frequency (A1).controls,OR_2,P_1
-0.0,0.054,0.261,rs12688220,,106244767,,T,+ RAP Frequency (A1).controls,CP + RAP Combined.se(OR),1.P
-2.3e-06,0.054,0.261,rs12688220,,106244767,,T,+ RAP Frequency (A1).controls,CP + RAP Combined.se(OR),P
-0.0,0.054,0.261,rs12688220,,106244767,,T,+ RAP Frequency (A1).controls,CP + RAP Combined.se(OR),P_1
-3e-08,0.712,0.35,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | cases,CP | Stage 1 | OR,CP | Stage 1 | P
-7.5e-08,0.712,0.35,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | cases,CP | Stage 1 | OR,CP + RAP | Stage 2 | P
-2e-14,0.712,0.35,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | cases,CP | Stage 1 | OR,CP + RAP | Combined | P
-3e-08,0.044,0.35,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | cases,CP | Stage 1 | se(OR),CP | Stage 1 | P
-7.5e-08,0.044,0.35,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | cases,CP | Stage 1 | se(OR),CP + RAP | Stage 2 | P
-2e-14,0.044,0.35,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | cases,CP | Stage 1 | se(OR),CP + RAP | Combined | P
-3e-08,0.748,0.35,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Stage 2 | OR,CP | Stage 1 | P
-7.5e-08,0.748,0.35,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Stage 2 | OR,CP + RAP | Stage 2 | P
-2e-14,0.748,0.35,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Stage 2 | OR,CP + RAP | Combined | P
-3e-08,0.039,0.35,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Stage 2 | se(OR),CP | Stage 1 | P
-7.5e-08,0.039,0.35,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Stage 2 | se(OR),CP + RAP | Stage 2 | P
-2e-14,0.039,0.35,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Stage 2 | se(OR),CP + RAP | Combined | P
-3e-08,0.734,0.35,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Combined | OR,CP | Stage 1 | P
-7.5e-08,0.734,0.35,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Combined | OR,CP + RAP | Stage 2 | P
-2e-14,0.734,0.35,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Combined | OR,CP + RAP | Combined | P
-3e-08,0.029,0.35,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Combined | se(OR),CP | Stage 1 | P
-7.5e-08,0.029,0.35,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Combined | se(OR),CP + RAP | Stage 2 | P
-2e-14,0.029,0.35,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Combined | se(OR),CP + RAP | Combined | P
-1e-15,1.493,0.374,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | cases,CP | Stage 1 | OR,CP | Stage 1 | P
-1.8e-05,1.493,0.374,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | cases,CP | Stage 1 | OR,CP + RAP | Stage 2 | P
-0.0,1.493,0.374,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | cases,CP | Stage 1 | OR,CP + RAP | Combined | P
-1e-15,0.075,0.374,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | cases,CP | Stage 1 | se(OR),CP | Stage 1 | P
-1.8e-05,0.075,0.374,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | cases,CP | Stage 1 | se(OR),CP + RAP | Stage 2 | P
-0.0,0.075,0.374,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | cases,CP | Stage 1 | se(OR),CP + RAP | Combined | P
-1e-15,1.21,0.374,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Stage 2 | OR,CP | Stage 1 | P
-1.8e-05,1.21,0.374,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Stage 2 | OR,CP + RAP | Stage 2 | P
-0.0,1.21,0.374,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Stage 2 | OR,CP + RAP | Combined | P
-1e-15,0.066,0.374,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Stage 2 | se(OR),CP | Stage 1 | P
-1.8e-05,0.066,0.374,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Stage 2 | se(OR),CP + RAP | Stage 2 | P
-0.0,0.066,0.374,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Stage 2 | se(OR),CP + RAP | Combined | P
-1e-15,1.321,0.374,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Combined | OR,CP | Stage 1 | P
-1.8e-05,1.321,0.374,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Combined | OR,CP + RAP | Stage 2 | P
-0.0,1.321,0.374,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Combined | OR,CP + RAP | Combined | P
-1e-15,0.049,0.374,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Combined | se(OR),CP | Stage 1 | P
-1.8e-05,0.049,0.374,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Combined | se(OR),CP + RAP | Stage 2 | P
-0.0,0.049,0.374,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Combined | se(OR),CP + RAP | Combined | P
-0.0,1.612,0.367,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | cases,CP | Stage 1 | OR,CP | Stage 1 | P
-2.3e-06,1.612,0.367,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | cases,CP | Stage 1 | OR,CP + RAP | Stage 2 | P
-0.0,1.612,0.367,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | cases,CP | Stage 1 | OR,CP + RAP | Combined | P
-0.0,0.081,0.367,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | cases,CP | Stage 1 | se(OR),CP | Stage 1 | P
-2.3e-06,0.081,0.367,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | cases,CP | Stage 1 | se(OR),CP + RAP | Stage 2 | P
-0.0,0.081,0.367,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | cases,CP | Stage 1 | se(OR),CP + RAP | Combined | P
-0.0,1.238,0.367,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Stage 2 | OR,CP | Stage 1 | P
-2.3e-06,1.238,0.367,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Stage 2 | OR,CP + RAP | Stage 2 | P
-0.0,1.238,0.367,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Stage 2 | OR,CP + RAP | Combined | P
-0.0,0.073,0.367,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Stage 2 | se(OR),CP | Stage 1 | P
-2.3e-06,0.073,0.367,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Stage 2 | se(OR),CP + RAP | Stage 2 | P
-0.0,0.073,0.367,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Stage 2 | se(OR),CP + RAP | Combined | P
-0.0,1.385,0.367,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Combined | OR,CP | Stage 1 | P
-2.3e-06,1.385,0.367,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Combined | OR,CP + RAP | Stage 2 | P
-0.0,1.385,0.367,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Combined | OR,CP + RAP | Combined | P
-0.0,0.054,0.367,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Combined | se(OR),CP | Stage 1 | P
-2.3e-06,0.054,0.367,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Combined | se(OR),CP + RAP | Stage 2 | P
-0.0,0.054,0.367,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | cases,CP + RAP | Combined | se(OR),CP + RAP | Combined | P
-3e-08,0.712,0.424,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | controls,CP | Stage 1 | OR,CP | Stage 1 | P
-7.5e-08,0.712,0.424,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | controls,CP | Stage 1 | OR,CP + RAP | Stage 2 | P
-2e-14,0.712,0.424,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | controls,CP | Stage 1 | OR,CP + RAP | Combined | P
-3e-08,0.044,0.424,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | controls,CP | Stage 1 | se(OR),CP | Stage 1 | P
-7.5e-08,0.044,0.424,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | controls,CP | Stage 1 | se(OR),CP + RAP | Stage 2 | P
-2e-14,0.044,0.424,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | controls,CP | Stage 1 | se(OR),CP + RAP | Combined | P
-3e-08,0.748,0.424,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Stage 2 | OR,CP | Stage 1 | P
-7.5e-08,0.748,0.424,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Stage 2 | OR,CP + RAP | Stage 2 | P
-2e-14,0.748,0.424,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Stage 2 | OR,CP + RAP | Combined | P
-3e-08,0.039,0.424,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Stage 2 | se(OR),CP | Stage 1 | P
-7.5e-08,0.039,0.424,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Stage 2 | se(OR),CP + RAP | Stage 2 | P
-2e-14,0.039,0.424,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Stage 2 | se(OR),CP + RAP | Combined | P
-3e-08,0.734,0.424,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Combined | OR,CP | Stage 1 | P
-7.5e-08,0.734,0.424,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Combined | OR,CP + RAP | Stage 2 | P
-2e-14,0.734,0.424,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Combined | OR,CP + RAP | Combined | P
-3e-08,0.029,0.424,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Combined | se(OR),CP | Stage 1 | P
-7.5e-08,0.029,0.424,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Combined | se(OR),CP + RAP | Stage 2 | P
-2e-14,0.029,0.424,rs10273639,7.0,142456928,,T,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Combined | se(OR),CP + RAP | Combined | P
-1e-15,1.493,0.281,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | controls,CP | Stage 1 | OR,CP | Stage 1 | P
-1.8e-05,1.493,0.281,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | controls,CP | Stage 1 | OR,CP + RAP | Stage 2 | P
-0.0,1.493,0.281,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | controls,CP | Stage 1 | OR,CP + RAP | Combined | P
-1e-15,0.075,0.281,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | controls,CP | Stage 1 | se(OR),CP | Stage 1 | P
-1.8e-05,0.075,0.281,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | controls,CP | Stage 1 | se(OR),CP + RAP | Stage 2 | P
-0.0,0.075,0.281,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | controls,CP | Stage 1 | se(OR),CP + RAP | Combined | P
-1e-15,1.21,0.281,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Stage 2 | OR,CP | Stage 1 | P
-1.8e-05,1.21,0.281,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Stage 2 | OR,CP + RAP | Stage 2 | P
-0.0,1.21,0.281,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Stage 2 | OR,CP + RAP | Combined | P
-1e-15,0.066,0.281,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Stage 2 | se(OR),CP | Stage 1 | P
-1.8e-05,0.066,0.281,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Stage 2 | se(OR),CP + RAP | Stage 2 | P
-0.0,0.066,0.281,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Stage 2 | se(OR),CP + RAP | Combined | P
-1e-15,1.321,0.281,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Combined | OR,CP | Stage 1 | P
-1.8e-05,1.321,0.281,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Combined | OR,CP + RAP | Stage 2 | P
-0.0,1.321,0.281,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Combined | OR,CP + RAP | Combined | P
-1e-15,0.049,0.281,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Combined | se(OR),CP | Stage 1 | P
-1.8e-05,0.049,0.281,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Combined | se(OR),CP + RAP | Stage 2 | P
-0.0,0.049,0.281,rs7057398,,106144529,,C,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Combined | se(OR),CP + RAP | Combined | P
-0.0,1.612,0.261,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | controls,CP | Stage 1 | OR,CP | Stage 1 | P
-2.3e-06,1.612,0.261,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | controls,CP | Stage 1 | OR,CP + RAP | Stage 2 | P
-0.0,1.612,0.261,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | controls,CP | Stage 1 | OR,CP + RAP | Combined | P
-0.0,0.081,0.261,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | controls,CP | Stage 1 | se(OR),CP | Stage 1 | P
-2.3e-06,0.081,0.261,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | controls,CP | Stage 1 | se(OR),CP + RAP | Stage 2 | P
-0.0,0.081,0.261,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | controls,CP | Stage 1 | se(OR),CP + RAP | Combined | P
-0.0,1.238,0.261,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Stage 2 | OR,CP | Stage 1 | P
-2.3e-06,1.238,0.261,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Stage 2 | OR,CP + RAP | Stage 2 | P
-0.0,1.238,0.261,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Stage 2 | OR,CP + RAP | Combined | P
-0.0,0.073,0.261,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Stage 2 | se(OR),CP | Stage 1 | P
-2.3e-06,0.073,0.261,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Stage 2 | se(OR),CP + RAP | Stage 2 | P
-0.0,0.073,0.261,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Stage 2 | se(OR),CP + RAP | Combined | P
-0.0,1.385,0.261,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Combined | OR,CP | Stage 1 | P
-2.3e-06,1.385,0.261,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Combined | OR,CP + RAP | Stage 2 | P
-0.0,1.385,0.261,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Combined | OR,CP + RAP | Combined | P
-0.0,0.054,0.261,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Combined | se(OR),CP | Stage 1 | P
-2.3e-06,0.054,0.261,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Combined | se(OR),CP + RAP | Stage 2 | P
-0.0,0.054,0.261,rs12688220,,106244767,,T,CP + RAP | Allele Frequency (A1) | controls,CP + RAP | Combined | se(OR),CP + RAP | Combined | P
+3e-08,0.712,0.35,rs10273639,7.0,142456928,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 7.CP.Stage 1.OR,Unnamed: 9.CP.Stage 1.P
+7.5e-08,0.712,0.35,rs10273639,7.0,142456928,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 7.CP.Stage 1.OR,Unnamed: 12.CP + RAP.Stage 2.P
+2e-14,0.712,0.35,rs10273639,7.0,142456928,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 7.CP.Stage 1.OR,Unnamed: 15.CP + RAP.Combined.P
+3e-08,0.044,0.35,rs10273639,7.0,142456928,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 8.CP.Stage 1.se(OR),Unnamed: 9.CP.Stage 1.P
+7.5e-08,0.044,0.35,rs10273639,7.0,142456928,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 8.CP.Stage 1.se(OR),Unnamed: 12.CP + RAP.Stage 2.P
+2e-14,0.044,0.35,rs10273639,7.0,142456928,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 8.CP.Stage 1.se(OR),Unnamed: 15.CP + RAP.Combined.P
+3e-08,0.748,0.35,rs10273639,7.0,142456928,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 10.CP + RAP.Stage 2.OR,Unnamed: 9.CP.Stage 1.P
+7.5e-08,0.748,0.35,rs10273639,7.0,142456928,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 10.CP + RAP.Stage 2.OR,Unnamed: 12.CP + RAP.Stage 2.P
+2e-14,0.748,0.35,rs10273639,7.0,142456928,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 10.CP + RAP.Stage 2.OR,Unnamed: 15.CP + RAP.Combined.P
+3e-08,0.039,0.35,rs10273639,7.0,142456928,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 11.CP + RAP.Stage 2.se(OR),Unnamed: 9.CP.Stage 1.P
+7.5e-08,0.039,0.35,rs10273639,7.0,142456928,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 11.CP + RAP.Stage 2.se(OR),Unnamed: 12.CP + RAP.Stage 2.P
+2e-14,0.039,0.35,rs10273639,7.0,142456928,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 11.CP + RAP.Stage 2.se(OR),Unnamed: 15.CP + RAP.Combined.P
+3e-08,0.734,0.35,rs10273639,7.0,142456928,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 13.CP + RAP.Combined.OR,Unnamed: 9.CP.Stage 1.P
+7.5e-08,0.734,0.35,rs10273639,7.0,142456928,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 13.CP + RAP.Combined.OR,Unnamed: 12.CP + RAP.Stage 2.P
+2e-14,0.734,0.35,rs10273639,7.0,142456928,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 13.CP + RAP.Combined.OR,Unnamed: 15.CP + RAP.Combined.P
+3e-08,0.029,0.35,rs10273639,7.0,142456928,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 14.CP + RAP.Combined.se(OR),Unnamed: 9.CP.Stage 1.P
+7.5e-08,0.029,0.35,rs10273639,7.0,142456928,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 14.CP + RAP.Combined.se(OR),Unnamed: 12.CP + RAP.Stage 2.P
+2e-14,0.029,0.35,rs10273639,7.0,142456928,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 14.CP + RAP.Combined.se(OR),Unnamed: 15.CP + RAP.Combined.P
+1e-15,1.493,0.374,rs7057398,,106144529,,C,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 7.CP.Stage 1.OR,Unnamed: 9.CP.Stage 1.P
+1.8e-05,1.493,0.374,rs7057398,,106144529,,C,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 7.CP.Stage 1.OR,Unnamed: 12.CP + RAP.Stage 2.P
+0.0,1.493,0.374,rs7057398,,106144529,,C,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 7.CP.Stage 1.OR,Unnamed: 15.CP + RAP.Combined.P
+1e-15,0.075,0.374,rs7057398,,106144529,,C,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 8.CP.Stage 1.se(OR),Unnamed: 9.CP.Stage 1.P
+1.8e-05,0.075,0.374,rs7057398,,106144529,,C,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 8.CP.Stage 1.se(OR),Unnamed: 12.CP + RAP.Stage 2.P
+0.0,0.075,0.374,rs7057398,,106144529,,C,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 8.CP.Stage 1.se(OR),Unnamed: 15.CP + RAP.Combined.P
+1e-15,1.21,0.374,rs7057398,,106144529,,C,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 10.CP + RAP.Stage 2.OR,Unnamed: 9.CP.Stage 1.P
+1.8e-05,1.21,0.374,rs7057398,,106144529,,C,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 10.CP + RAP.Stage 2.OR,Unnamed: 12.CP + RAP.Stage 2.P
+0.0,1.21,0.374,rs7057398,,106144529,,C,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 10.CP + RAP.Stage 2.OR,Unnamed: 15.CP + RAP.Combined.P
+1e-15,0.066,0.374,rs7057398,,106144529,,C,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 11.CP + RAP.Stage 2.se(OR),Unnamed: 9.CP.Stage 1.P
+1.8e-05,0.066,0.374,rs7057398,,106144529,,C,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 11.CP + RAP.Stage 2.se(OR),Unnamed: 12.CP + RAP.Stage 2.P
+0.0,0.066,0.374,rs7057398,,106144529,,C,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 11.CP + RAP.Stage 2.se(OR),Unnamed: 15.CP + RAP.Combined.P
+1e-15,1.321,0.374,rs7057398,,106144529,,C,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 13.CP + RAP.Combined.OR,Unnamed: 9.CP.Stage 1.P
+1.8e-05,1.321,0.374,rs7057398,,106144529,,C,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 13.CP + RAP.Combined.OR,Unnamed: 12.CP + RAP.Stage 2.P
+0.0,1.321,0.374,rs7057398,,106144529,,C,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 13.CP + RAP.Combined.OR,Unnamed: 15.CP + RAP.Combined.P
+1e-15,0.049,0.374,rs7057398,,106144529,,C,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 14.CP + RAP.Combined.se(OR),Unnamed: 9.CP.Stage 1.P
+1.8e-05,0.049,0.374,rs7057398,,106144529,,C,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 14.CP + RAP.Combined.se(OR),Unnamed: 12.CP + RAP.Stage 2.P
+0.0,0.049,0.374,rs7057398,,106144529,,C,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 14.CP + RAP.Combined.se(OR),Unnamed: 15.CP + RAP.Combined.P
+0.0,1.612,0.367,rs12688220,,106244767,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 7.CP.Stage 1.OR,Unnamed: 9.CP.Stage 1.P
+2.3e-06,1.612,0.367,rs12688220,,106244767,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 7.CP.Stage 1.OR,Unnamed: 12.CP + RAP.Stage 2.P
+0.0,1.612,0.367,rs12688220,,106244767,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 7.CP.Stage 1.OR,Unnamed: 15.CP + RAP.Combined.P
+0.0,0.081,0.367,rs12688220,,106244767,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 8.CP.Stage 1.se(OR),Unnamed: 9.CP.Stage 1.P
+2.3e-06,0.081,0.367,rs12688220,,106244767,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 8.CP.Stage 1.se(OR),Unnamed: 12.CP + RAP.Stage 2.P
+0.0,0.081,0.367,rs12688220,,106244767,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 8.CP.Stage 1.se(OR),Unnamed: 15.CP + RAP.Combined.P
+0.0,1.238,0.367,rs12688220,,106244767,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 10.CP + RAP.Stage 2.OR,Unnamed: 9.CP.Stage 1.P
+2.3e-06,1.238,0.367,rs12688220,,106244767,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 10.CP + RAP.Stage 2.OR,Unnamed: 12.CP + RAP.Stage 2.P
+0.0,1.238,0.367,rs12688220,,106244767,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 10.CP + RAP.Stage 2.OR,Unnamed: 15.CP + RAP.Combined.P
+0.0,0.073,0.367,rs12688220,,106244767,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 11.CP + RAP.Stage 2.se(OR),Unnamed: 9.CP.Stage 1.P
+2.3e-06,0.073,0.367,rs12688220,,106244767,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 11.CP + RAP.Stage 2.se(OR),Unnamed: 12.CP + RAP.Stage 2.P
+0.0,0.073,0.367,rs12688220,,106244767,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 11.CP + RAP.Stage 2.se(OR),Unnamed: 15.CP + RAP.Combined.P
+0.0,1.385,0.367,rs12688220,,106244767,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 13.CP + RAP.Combined.OR,Unnamed: 9.CP.Stage 1.P
+2.3e-06,1.385,0.367,rs12688220,,106244767,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 13.CP + RAP.Combined.OR,Unnamed: 12.CP + RAP.Stage 2.P
+0.0,1.385,0.367,rs12688220,,106244767,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 13.CP + RAP.Combined.OR,Unnamed: 15.CP + RAP.Combined.P
+0.0,0.054,0.367,rs12688220,,106244767,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 14.CP + RAP.Combined.se(OR),Unnamed: 9.CP.Stage 1.P
+2.3e-06,0.054,0.367,rs12688220,,106244767,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 14.CP + RAP.Combined.se(OR),Unnamed: 12.CP + RAP.Stage 2.P
+0.0,0.054,0.367,rs12688220,,106244767,,T,Unnamed: 5.CP + RAP.Allele Frequency (A1).cases,Unnamed: 14.CP + RAP.Combined.se(OR),Unnamed: 15.CP + RAP.Combined.P
+3e-08,0.712,0.424,rs10273639,7.0,142456928,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 7.CP.Stage 1.OR,Unnamed: 9.CP.Stage 1.P
+7.5e-08,0.712,0.424,rs10273639,7.0,142456928,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 7.CP.Stage 1.OR,Unnamed: 12.CP + RAP.Stage 2.P
+2e-14,0.712,0.424,rs10273639,7.0,142456928,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 7.CP.Stage 1.OR,Unnamed: 15.CP + RAP.Combined.P
+3e-08,0.044,0.424,rs10273639,7.0,142456928,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 8.CP.Stage 1.se(OR),Unnamed: 9.CP.Stage 1.P
+7.5e-08,0.044,0.424,rs10273639,7.0,142456928,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 8.CP.Stage 1.se(OR),Unnamed: 12.CP + RAP.Stage 2.P
+2e-14,0.044,0.424,rs10273639,7.0,142456928,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 8.CP.Stage 1.se(OR),Unnamed: 15.CP + RAP.Combined.P
+3e-08,0.748,0.424,rs10273639,7.0,142456928,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 10.CP + RAP.Stage 2.OR,Unnamed: 9.CP.Stage 1.P
+7.5e-08,0.748,0.424,rs10273639,7.0,142456928,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 10.CP + RAP.Stage 2.OR,Unnamed: 12.CP + RAP.Stage 2.P
+2e-14,0.748,0.424,rs10273639,7.0,142456928,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 10.CP + RAP.Stage 2.OR,Unnamed: 15.CP + RAP.Combined.P
+3e-08,0.039,0.424,rs10273639,7.0,142456928,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 11.CP + RAP.Stage 2.se(OR),Unnamed: 9.CP.Stage 1.P
+7.5e-08,0.039,0.424,rs10273639,7.0,142456928,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 11.CP + RAP.Stage 2.se(OR),Unnamed: 12.CP + RAP.Stage 2.P
+2e-14,0.039,0.424,rs10273639,7.0,142456928,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 11.CP + RAP.Stage 2.se(OR),Unnamed: 15.CP + RAP.Combined.P
+3e-08,0.734,0.424,rs10273639,7.0,142456928,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 13.CP + RAP.Combined.OR,Unnamed: 9.CP.Stage 1.P
+7.5e-08,0.734,0.424,rs10273639,7.0,142456928,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 13.CP + RAP.Combined.OR,Unnamed: 12.CP + RAP.Stage 2.P
+2e-14,0.734,0.424,rs10273639,7.0,142456928,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 13.CP + RAP.Combined.OR,Unnamed: 15.CP + RAP.Combined.P
+3e-08,0.029,0.424,rs10273639,7.0,142456928,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 14.CP + RAP.Combined.se(OR),Unnamed: 9.CP.Stage 1.P
+7.5e-08,0.029,0.424,rs10273639,7.0,142456928,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 14.CP + RAP.Combined.se(OR),Unnamed: 12.CP + RAP.Stage 2.P
+2e-14,0.029,0.424,rs10273639,7.0,142456928,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 14.CP + RAP.Combined.se(OR),Unnamed: 15.CP + RAP.Combined.P
+1e-15,1.493,0.281,rs7057398,,106144529,,C,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 7.CP.Stage 1.OR,Unnamed: 9.CP.Stage 1.P
+1.8e-05,1.493,0.281,rs7057398,,106144529,,C,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 7.CP.Stage 1.OR,Unnamed: 12.CP + RAP.Stage 2.P
+0.0,1.493,0.281,rs7057398,,106144529,,C,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 7.CP.Stage 1.OR,Unnamed: 15.CP + RAP.Combined.P
+1e-15,0.075,0.281,rs7057398,,106144529,,C,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 8.CP.Stage 1.se(OR),Unnamed: 9.CP.Stage 1.P
+1.8e-05,0.075,0.281,rs7057398,,106144529,,C,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 8.CP.Stage 1.se(OR),Unnamed: 12.CP + RAP.Stage 2.P
+0.0,0.075,0.281,rs7057398,,106144529,,C,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 8.CP.Stage 1.se(OR),Unnamed: 15.CP + RAP.Combined.P
+1e-15,1.21,0.281,rs7057398,,106144529,,C,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 10.CP + RAP.Stage 2.OR,Unnamed: 9.CP.Stage 1.P
+1.8e-05,1.21,0.281,rs7057398,,106144529,,C,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 10.CP + RAP.Stage 2.OR,Unnamed: 12.CP + RAP.Stage 2.P
+0.0,1.21,0.281,rs7057398,,106144529,,C,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 10.CP + RAP.Stage 2.OR,Unnamed: 15.CP + RAP.Combined.P
+1e-15,0.066,0.281,rs7057398,,106144529,,C,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 11.CP + RAP.Stage 2.se(OR),Unnamed: 9.CP.Stage 1.P
+1.8e-05,0.066,0.281,rs7057398,,106144529,,C,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 11.CP + RAP.Stage 2.se(OR),Unnamed: 12.CP + RAP.Stage 2.P
+0.0,0.066,0.281,rs7057398,,106144529,,C,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 11.CP + RAP.Stage 2.se(OR),Unnamed: 15.CP + RAP.Combined.P
+1e-15,1.321,0.281,rs7057398,,106144529,,C,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 13.CP + RAP.Combined.OR,Unnamed: 9.CP.Stage 1.P
+1.8e-05,1.321,0.281,rs7057398,,106144529,,C,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 13.CP + RAP.Combined.OR,Unnamed: 12.CP + RAP.Stage 2.P
+0.0,1.321,0.281,rs7057398,,106144529,,C,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 13.CP + RAP.Combined.OR,Unnamed: 15.CP + RAP.Combined.P
+1e-15,0.049,0.281,rs7057398,,106144529,,C,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 14.CP + RAP.Combined.se(OR),Unnamed: 9.CP.Stage 1.P
+1.8e-05,0.049,0.281,rs7057398,,106144529,,C,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 14.CP + RAP.Combined.se(OR),Unnamed: 12.CP + RAP.Stage 2.P
+0.0,0.049,0.281,rs7057398,,106144529,,C,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 14.CP + RAP.Combined.se(OR),Unnamed: 15.CP + RAP.Combined.P
+0.0,1.612,0.261,rs12688220,,106244767,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 7.CP.Stage 1.OR,Unnamed: 9.CP.Stage 1.P
+2.3e-06,1.612,0.261,rs12688220,,106244767,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 7.CP.Stage 1.OR,Unnamed: 12.CP + RAP.Stage 2.P
+0.0,1.612,0.261,rs12688220,,106244767,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 7.CP.Stage 1.OR,Unnamed: 15.CP + RAP.Combined.P
+0.0,0.081,0.261,rs12688220,,106244767,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 8.CP.Stage 1.se(OR),Unnamed: 9.CP.Stage 1.P
+2.3e-06,0.081,0.261,rs12688220,,106244767,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 8.CP.Stage 1.se(OR),Unnamed: 12.CP + RAP.Stage 2.P
+0.0,0.081,0.261,rs12688220,,106244767,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 8.CP.Stage 1.se(OR),Unnamed: 15.CP + RAP.Combined.P
+0.0,1.238,0.261,rs12688220,,106244767,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 10.CP + RAP.Stage 2.OR,Unnamed: 9.CP.Stage 1.P
+2.3e-06,1.238,0.261,rs12688220,,106244767,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 10.CP + RAP.Stage 2.OR,Unnamed: 12.CP + RAP.Stage 2.P
+0.0,1.238,0.261,rs12688220,,106244767,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 10.CP + RAP.Stage 2.OR,Unnamed: 15.CP + RAP.Combined.P
+0.0,0.073,0.261,rs12688220,,106244767,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 11.CP + RAP.Stage 2.se(OR),Unnamed: 9.CP.Stage 1.P
+2.3e-06,0.073,0.261,rs12688220,,106244767,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 11.CP + RAP.Stage 2.se(OR),Unnamed: 12.CP + RAP.Stage 2.P
+0.0,0.073,0.261,rs12688220,,106244767,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 11.CP + RAP.Stage 2.se(OR),Unnamed: 15.CP + RAP.Combined.P
+0.0,1.385,0.261,rs12688220,,106244767,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 13.CP + RAP.Combined.OR,Unnamed: 9.CP.Stage 1.P
+2.3e-06,1.385,0.261,rs12688220,,106244767,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 13.CP + RAP.Combined.OR,Unnamed: 12.CP + RAP.Stage 2.P
+0.0,1.385,0.261,rs12688220,,106244767,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 13.CP + RAP.Combined.OR,Unnamed: 15.CP + RAP.Combined.P
+0.0,0.054,0.261,rs12688220,,106244767,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 14.CP + RAP.Combined.se(OR),Unnamed: 9.CP.Stage 1.P
+2.3e-06,0.054,0.261,rs12688220,,106244767,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 14.CP + RAP.Combined.se(OR),Unnamed: 12.CP + RAP.Stage 2.P
+0.0,0.054,0.261,rs12688220,,106244767,,T,Unnamed: 6.CP + RAP.Allele Frequency (A1).controls,Unnamed: 14.CP + RAP.Combined.se(OR),Unnamed: 15.CP + RAP.Combined.P
