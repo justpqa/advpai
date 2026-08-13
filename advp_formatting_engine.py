@@ -156,11 +156,8 @@ class ADVPFormattingEngine:
         snp_mask_2 = df.applymap(lambda x: snp_pattern_2.search(str(x)) is not None)
         snp_mask = snp_mask_1 | snp_mask_2
         snp_row_mask = snp_mask.any(axis=1)
-        chr_pattern_1 = re.compile(r"(?<![A-Za-z.])[Cc][Hh][Rr](?![A-Za-z.])")
-        chr_mask_1 = df.applymap(lambda x: chr_pattern_1.search(str(x)) is not None)
-        chr_pattern_2 = re.compile('(?<![A-Za-z.])\d+(?![A-Za-z.])')
-        chr_mask_2 = df.applymap(lambda x: chr_pattern_2.search(str(x)) is not None)
-        chr_mask = chr_mask_1 & chr_mask_2
+        chr_pattern = re.compile('(?<![A-Za-z.])\d+(?![A-Za-z.])')
+        chr_mask = df.applymap(lambda x: chr_pattern.search(str(x)) is not None)
         chr_row_mask = chr_mask.any(axis=1)
         p_value_pattern = re.compile(r"\d+\.\d+")
         p_value_mask = df.applymap(lambda x: p_value_pattern.search(str(x)) is not None)
