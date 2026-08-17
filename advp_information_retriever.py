@@ -1031,10 +1031,10 @@ Output: """
             # documents = [doc for _, doc in sorted(zip(scores, documents), key=lambda x: x[0], reverse=True)]
             # documents = documents[:self.top_k_rerank]
             documents = self.rerank(retrieval_query, documents)
-            print(ref_col)
-            for d in documents:
-                print(d)
-                print()
+            # print(ref_col)
+            # for d in documents:
+            #     print(d)
+            #     print()
             messages = self.make_messages(query, documents, examples=ref_col_examples, use_examples_in_llm=ref_col_use_examples_in_llm)
             response = LLAMA_CLIENT.chat.completions.create(
                 model="local",
