@@ -1,0 +1,278 @@
+20932310 PMC2964649
+Cohort
+biomarkers, and apoe genotype data of the adni dataset are summarized in table 1, table 2 and additional file 1.
+
+data used in the preparation of this article were obtained from the alzheimers disease neuroimaging initiative (adni) database adni was launched in 2003 by the national institute on aging (nia), the national institute of biomedical imaging and bioengineering (nibib), the food and drug administration (fda), private pharmaceutical companies and non-profit organizations, as a 60 million, 5-year public-private partnership. the primary goal of adni has been to test
+
+these biomarkers may also be used to reveal genes that are important in ad pathogenesis. in the present study, we assessed the several putative ad genes associated with csf biomarkers that were identified from major public gwas dataset for alzheimers disease, the alzheimers disease neuroimaging initiative (adni). this initiative is the most comprehensive effort to identify neuroimaging measures and biomarkers associated with cognitive and functional changes in healthy elderly people and in
+
+subjects were participants in the alzheimers disease neuroimaging initiative (adni). the gwas dataset consisted of 818 participants (mainly caucasian) genotyped using the illumina human genome 610 quad beadchips. this sample included 410 subjects (119 normal, 115 mci and 176 ad) with measurements of csf a1-42, t-tau, and p-tau181p levels. we used plink to find genetic associations with the three csf biomarker levels. association of each of the 498,205 snps was tested using additive, dominant,
+
+the characterization of the csf biomarkers and genome-wide snp genotyping data from the adni cohort. this is the first genome-wide association study to use these ad-related biomarkers to identify genes critical the pathogenesis of ad.
+
+Population
+outliers: n = 410) apoe genotype 22 23 24 33 34 44 normal (n = 119) n 0 20 2 71 24 2 mci (n = 115) n 0 10 2 52 41 10 ad (n = 176) n 0 2 3 54 83 34 apoe allele 2 3 4 normal (n = 119) n 22 115 28 mci (n = 115) n 12 103 53 ad (n = 176) n 5 139 120
+
+apoe genotype data (after removing outliers: n = 390) apoe genotype 22 23 24 33 34 44 normal (n = 109) n 0 18 2 66 21 2 mci (n = 109) n 0 10 2 47 40 10 ad (n = 172) n 0 1 3 54 81 33 apoe allele 2 3 4 normal (n = 109) n 20 105 25 mci (n = 109) n 12 97 52 ad (n = 172) n 4 136 117 apoe genotype data before removing outliers: n = 410) apoe
+
+analysis. smartpca removed all but one of the asian samples and retained blackafrican americans (additional file 3) visual inspection suggests that the first principal component (pc0), which explains the most variance in the data, separates the caucasians and non-caucasians reasonably well (setting threshold pc0 < = 0.01 can exclude all non-caucasians). finally, we excluded 52 non-caucasian samples as outliers the genomic control variance inflation factor was 1.00983, suggesting minimal
+
+quality control for the genotyping data was performed using plink as follows. 498,205 snps were retained after excluding snps with minor allele frequency (maf) < 5%, call rate < 98%, or significant in hardy-weinberg equilibrium test (p 10-6). all samples had genotyping call rate > 95% and were retained. we then examined population stratification by visual inspection using the first two dimensions from principal components analysis, using smartpca
+
+of both additive and dominance (geno2df). in addition, we used age (of being recruited by the study) and apoe 4 genotype (number of apoe 4 allele 0, 1, 2) as covariates after removing outliers. to ensure the significance is not due to population stratification, we also incorporated the top five pca principal components in the linear regression to further control for the population structure, but found the addition has very little effect on the statistical significance.
+
+Stage
+methods sample
+
+results and discussion association of snps with csf biomarkers
+
+manhattan plots of the quantitative trait (csf biomarkers: t-tau, p-tau181p and a1-42) genome wide association analysis in normal subjects. colors on x-axis indicate an autosomal chromosome (from chromosome 1 to chromosome 22). the y-axis indicates p-values (-log10(observed p-values)). red arrows indicate rs2899472 on chromosome 15 and blue arrow indicates rs1022442 on chromosome 21.
+
+ad-susceptibility genes. for the past few years, genome-wide genotyping association studies brought considerable success by reporting new susceptible loci for ad such as golgi membrane protein 1 (golm1). recently two groups published the two largest load gwas harold et al. reported the association of snps in clusterin (clu) and phosphatidylinositol binding clathrin assembly protein (picalm), and lambert et al. reported association of clusterin (clu) with load and additionally reported a novel
+
+of both additive and dominance (geno2df). in addition, we used age (of being recruited by the study) and apoe 4 genotype (number of apoe 4 allele 0, 1, 2) as covariates after removing outliers. to ensure the significance is not due to population stratification, we also incorporated the top five pca principal components in the linear regression to further control for the population structure, but found the addition has very little effect on the statistical significance.
+
+Imputation
+498,205 snps was tested using additive, dominant, and general association models while considering apoe genotype and age. finally, an effort was made to better identify relevant biochemical pathways for associated genes using the aligator software.
+
+abbreviations: snp, single-nucleotide polymorphism add, additive effects of allele dosage domdev, dominance deviation from additivity, rather specifying that a particular allele is dominant or recessive geno2df, a 2 df joint test of both additive and dominance a1, tested allele (minor allele) beta, regression coefficient stat, coefficient t-statistic
+
+quality control for the genotyping data was performed using plink as follows. 498,205 snps were retained after excluding snps with minor allele frequency (maf) < 5%, call rate < 98%, or significant in hardy-weinberg equilibrium test (p 10-6). all samples had genotyping call rate > 95% and were retained. we then examined population stratification by visual inspection using the first two dimensions from principal components analysis, using smartpca
+
+of both additive and dominance (geno2df). in addition, we used age (of being recruited by the study) and apoe 4 genotype (number of apoe 4 allele 0, 1, 2) as covariates after removing outliers. to ensure the significance is not due to population stratification, we also incorporated the top five pca principal components in the linear regression to further control for the population structure, but found the addition has very little effect on the statistical significance.
+
+the characterization of the csf biomarkers and genome-wide snp genotyping data from the adni cohort. this is the first genome-wide association study to use these ad-related biomarkers to identify genes critical the pathogenesis of ad.
+
+Study type
+the characterization of the csf biomarkers and genome-wide snp genotyping data from the adni cohort. this is the first genome-wide association study to use these ad-related biomarkers to identify genes critical the pathogenesis of ad.
+
+subjects were participants in the alzheimers disease neuroimaging initiative (adni). the gwas dataset consisted of 818 participants (mainly caucasian) genotyped using the illumina human genome 610 quad beadchips. this sample included 410 subjects (119 normal, 115 mci and 176 ad) with measurements of csf a1-42, t-tau, and p-tau181p levels. we used plink to find genetic associations with the three csf biomarker levels. association of each of the 498,205 snps was tested using additive, dominant,
+
+quality control for the genotyping data was performed using plink as follows. 498,205 snps were retained after excluding snps with minor allele frequency (maf) < 5%, call rate < 98%, or significant in hardy-weinberg equilibrium test (p 10-6). all samples had genotyping call rate > 95% and were retained. we then examined population stratification by visual inspection using the first two dimensions from principal components analysis, using smartpca
+
+conclusions our genome-wide association analysis identified several snps as important factors for csf biomarker. we also provide new evidence for additional candidate genetic risk factors from pathway analysis that can be tested in further studies. background
+
+of both additive and dominance (geno2df). in addition, we used age (of being recruited by the study) and apoe 4 genotype (number of apoe 4 allele 0, 1, 2) as covariates after removing outliers. to ensure the significance is not due to population stratification, we also incorporated the top five pca principal components in the linear regression to further control for the population structure, but found the addition has very little effect on the statistical significance.
+
+Phenotype
+alzheimers disease (ad) is the most common cause of dementia and the most prevalent neurodegenerative disorder. an estimated 10 percent of americans over the age of 65 and half of those over age 85 have ad. more than 4.5 million americans currently suffer from the disease. in autosomal dominant early-onset alzheimers disease (eoad, age of onset < 60 years), three susceptible genes (app, psen1, and psen2) have been identified. late-onset ad (load) has 80% heritability, and is strongly
+
+alzheimers disease (ad) is common and highly heritable with many genes and gene variants associated with ad in one or more studies, including apoe 234. however, the genetic backgrounds for normal cognition, mild cognitive impairment (mci) and ad in terms of changes in cerebrospinal fluid (csf) levels of a1-42, t-tau, and p-tau181p, have not been clearly delineated. we carried out a genome-wide association study (gwas) in order to better define the genetic backgrounds to these three
+
+changes in healthy elderly people and in people who have mci and ad. the adni data is useful for researchers who are searching for genes that contribute to the development of alzheimers disease, which currently affects more than 4.5 million people in the united states alone. we also investigated possible associations of csf biomarkers (a1-42, t-tau, and p-tau181p) with the number of apoe 4 allele, age and apoe genotype in order to improve the characterization of the csf biomarkers and
+
+we summarize the top snps (p-value < 10-6) with and without using covariates (apoe genotype and age) in table 3. without using covariates, we found some genes near the top snps, including cyp19a1 (rs2899472, p = 1.86 10-7) and tomm40 (rs2075650, p = 3.03 10-7) from a1-42 in normal subject. several genetic studies have identified those genes as putative susceptible loci and genetic variants associated with alzheimers disease. however, close examination of nearby snps showed rs2899472 and
+
+these biomarkers may also be used to reveal genes that are important in ad pathogenesis. in the present study, we assessed the several putative ad genes associated with csf biomarkers that were identified from major public gwas dataset for alzheimers disease, the alzheimers disease neuroimaging initiative (adni). this initiative is the most comprehensive effort to identify neuroimaging measures and biomarkers associated with cognitive and functional changes in healthy elderly people and in
+
+{'Cohort': ['adni', 'gwas dataset', 'nibib', 'nia', 'alzheimers disease neuroimaging initiative', 'fda', 'adni database'], 'Population': ['ethnic', 'ancestry', 'caucasians', 'race', 'non-caucasian'], 'Stage': ['discovery', 'replication', 'meta'], 'Imputation': ['imputation', 'smartpca', 'snp', 'reference panel', 'aligator', 'genotype', 'pca'], 'Study type': ['geno2df', 'sequencing', 'genotyping', 'apoe 4 genotype'], 'Phenotype': ['csf', 'alzheimers disease', 'adni', 'mci', 'a1-42', "alzheimer's", 'ad', 'alzheimers disease neuroimaging initiative (adni)']}
+
+21123754 PMC3030225
+{'Cohort': [], 'Population': [], 'Stage': [], 'Imputation': [], 'Study type': [], 'Phenotype': []}
+
+22903471 PMC3779070
+Cohort
+(as of august 1, 2011) from the public adni database ( here we analyzed all adni subjects as a single group, to exploit the broader phenotypic continuum and increase power. some subjects were excluded to eliminate problems caused by population stratification using multi-dimensional scaling as outlined previously for the same dataset. the remaining sample had 742 caucasian subjects left for the analysis this represented the largest homogeneous group attainable
+
+the food and drug administration (fda), private pharmaceutical companies, and non-profit organizations. the study aims for adni are to identify and investigate biological markers of alzheimers disease through a combination of neuroimaging, genetics, neuropsychological tests and other measures in order to develop new treatments, track disease progression, and lessen the time required for clinical trials. the study was conducted according to the good clinical practice guidelines, the declaration
+
+we analyzed neuroimaging and genome-wide genotype data from two independent samples: the alzheimers disease neuroimaging initiative (adni) and the queensland twin imaging study (qtim). the alzheimers disease neuroimaging initiative (adni) is a large longitudinal study initiated in 2003 as a public-private partnership between the national institute on aging (nia), the national institute of biomedical imaging and bioengineering (nibib), the food and drug administration (fda), private
+
+the largest homogeneous group attainable from the adni cohort. after removing subjects by applying quality control criteria to the lentiform nucleus segmentations (discussed below), the final adni dataset consisted of 706 subjects (average age s.d.: 75.56.8 years 413 men293 women) including 162 patients with ad (75.67.6 years 88 men74 women), 346 with mild cognitive impairment or mci (75.07.3 years 221 men125 women), and 198 healthy elderly controls (76.1 4.8 years 104 men94
+
+future cohorts. second, the two samples have very different mean ages (over 50 years). combining data meta-analytically between groups penalizes snps that are significant in one sample, but not the other. this analysis of two cohorts is a special case of a meta-analysis, which tends to boost power to detect true positive associations by aggregating information from multiple cohorts. clearly the power to detect an association with a given effect size depends on the available sample size, so in
+
+Population
+heritability analysis
+
+1 rsl0918196 genotyped loc400794 0.41 c 120.25 3.45e-05 0.00061 0.40 c 63.93 0.039 93.94 9.31e-06 1 rsl0737511 0.98 loc400794 0.41 c 120.34 3.47e-05 0.00062 0.40 c 63.95 0.039 93.97 9.39e-06 6 rsl2530288 1.00 epb41l2 0.13 t -62.45 0.16 0.23 0.12 t -235.80 6.82e-07 -144.17 9.76e-06
+
+1 rs1920149 1.00 fm03 0.47 a -121.46 1.51e-05 0.00018 0.48 a -63.78 0.036 -94.95 4.18e-06 1 rsl2076145 1.00 fm03 0.47 g -121.68 1.49e-05 0.00018 0.48 g -63.33 0.038 -94.94 4.44e-06 1 rsl0911192 1.00 fm03 0.47 c -121.62 1.50e-05 0.00018 0.48 c -63.30 0.038 -94.89 4.45e-06 6 rs6941712 genotyped epb41l2 0.13 c -72.28 0.11 0.17 0.12 c -235.78 6.83e-07 -149.67 4.61e-06 1 rs1127091 genotyped gatad2b 0.49 a -78.02 0.0082 0.0069 0.49 a -117.60 0.00012 -97.12 4.76e-06
+
+(as of august 1, 2011) from the public adni database ( here we analyzed all adni subjects as a single group, to exploit the broader phenotypic continuum and increase power. some subjects were excluded to eliminate problems caused by population stratification using multi-dimensional scaling as outlined previously for the same dataset. the remaining sample had 742 caucasian subjects left for the analysis this represented the largest homogeneous group attainable
+
+meta-analysis of genetic results
+
+Stage
+meta-analysis
+
+meta-analysis of genetic results
+
+that case, meta-analyses may offer high power so long as the chosen phenotypes are measured consistently and reliably across datasets. at the same time, meta-analysis reduces the chance of false positives as it penalizes results that are not consistently detectable across sites in other words, it finds effects that are known to generalize to other cohorts, and less likely to be spurious associations attributable to the genetic diversity or particular ascertainment or sampling of any one
+
+test statistics from each study were combined meta-analytically to increase the power to detect real effects and to reduce false positives. beta values, and their standard error, for snps from each regression model were combined across samples. the signs of beta values were determined based on the reference allele in each study and combined using a fixed-effects, inverse variance-weighted meta-analysis. meta-analysis is preferred in this case, as opposed to combining all subjects into a single
+
+genome-wide association results from the adni and qtim samples were meta-analyzed using a fixed effects inverse variance-weighted method, as implemented in metasoft. beta coefficients from the regression analysis of each snp from both studies were pooled based on the inverse of the variance of each beta coefficient. in addition to the standard fixed-effects meta-analysis, we performed a random-effects meta-analysis in metasoft. the random-effects meta-analysis still follows the inverse
+
+Imputation
+genotyping and imputation
+
+a limited subset of variants, such as candidate genes. arguably, if the genetic loci influencing a given trait are unknown, a broad survey of the genome may avoid missing associations in regions that have no currently known relation to the trait. association statistics for the genetic variants were combined meta-analytically across two cohorts to boost power and reduce the risk of false positive findings. we assessed both an elderly and a young adult cohort to discover genes with robust
+
+imputation of hard genotype calls may be used to infer missing values based on the linkage among snp sets. in addition, imputation may be used to infer snps not directly genotyped in a given sample, but genotyped in a reference dataset. the quality of imputed snps depends on the strength of the linkage between hard genotyped snps and the imputed snps. in adni, we excluded any snps imputed with an r2 value of <0.3 from the analysis (62,053 snps removed) the same steps were taken for the qtim
+
+building on prior studies, here we performed an unbiased genome-wide association study (gwas) in two large independent cohorts to discover common genetic variants associated with differences in lentiform nucleus volume. the term unbiased is often used to describe the type of genetic analysis we performed-a genome-wide association scan-in which we search the whole genome for statistical associations, rather than prioritizing or choosing only a limited subset of variants, such as candidate
+
+control score of <0.07 to eliminate no call genotypes (variable number of missing genotypes across subjects). also, we chose to focus only on autosomal snps rather than those in mitochondrial dna and sex chromosomes.
+
+Study type
+genetic analysis
+
+meta-analysis of genetic results
+
+gene-based tests and pathway analysis
+
+genotyping and imputation
+
+a limited subset of variants, such as candidate genes. arguably, if the genetic loci influencing a given trait are unknown, a broad survey of the genome may avoid missing associations in regions that have no currently known relation to the trait. association statistics for the genetic variants were combined meta-analytically across two cohorts to boost power and reduce the risk of false positive findings. we assessed both an elderly and a young adult cohort to discover genes with robust
+
+Phenotype
+genetic analysis
+
+that case, meta-analyses may offer high power so long as the chosen phenotypes are measured consistently and reliably across datasets. at the same time, meta-analysis reduces the chance of false positives as it penalizes results that are not consistently detectable across sites in other words, it finds effects that are known to generalize to other cohorts, and less likely to be spurious associations attributable to the genetic diversity or particular ascertainment or sampling of any one
+
+the food and drug administration (fda), private pharmaceutical companies, and non-profit organizations. the study aims for adni are to identify and investigate biological markers of alzheimers disease through a combination of neuroimaging, genetics, neuropsychological tests and other measures in order to develop new treatments, track disease progression, and lessen the time required for clinical trials. the study was conducted according to the good clinical practice guidelines, the declaration
+
+we analyzed neuroimaging and genome-wide genotype data from two independent samples: the alzheimers disease neuroimaging initiative (adni) and the queensland twin imaging study (qtim). the alzheimers disease neuroimaging initiative (adni) is a large longitudinal study initiated in 2003 as a public-private partnership between the national institute on aging (nia), the national institute of biomedical imaging and bioengineering (nibib), the food and drug administration (fda), private
+
+1 rsl0918196 genotyped loc400794 0.41 c 120.25 3.45e-05 0.00061 0.40 c 63.93 0.039 93.94 9.31e-06 1 rsl0737511 0.98 loc400794 0.41 c 120.34 3.47e-05 0.00062 0.40 c 63.95 0.039 93.97 9.39e-06 6 rsl2530288 1.00 epb41l2 0.13 t -62.45 0.16 0.23 0.12 t -235.80 6.82e-07 -144.17 9.76e-06
+
+{'Cohort': ['adni', 'qtim', 'study', 'discovery', 'adni database'], 'Population': ['caucasian'], 'Stage': ['random-effects meta-analysis', 'meta', 'combined', 'analysis', 'meta-analysis'], 'Imputation': ['imputation', 'genome-wide association scan', 'control score', 'reference panel', 'genotyping', 'r2', 'phasing', 'gwas', 'elderly', 'no call genotypes'], 'Study type': ['imputation', 'sequencing', 'tests', 'genetic analysis', 'pathway', 'gene-based', 'genotyping', 'meta-analysis'], 'Phenotype': ['alzheimers disease', 'trait', 'queensland twin imaging study', 'alzheimers disease neuroimaging initiative', 'disease']}
+
+23143602 PMC3510344
+Cohort
+characterization of case subjects used for gwas.
+
+adgc data were received in three waves of 1763, 1110, and 1266 subjects. in the first wave, 659,224 snps were received, while in waves two and three, 730,525 snps were received. after qc as described for the chronic pancreatitis cohort, including harmonization with snps passing qc in the chronic pancreatitis cohort, 604,059, 632,761, and 633,023 snps remained, respectively. after merging cohorts, 30 related subjects were dropped, leaving 4046 adgc subjects. of the 633,615 unique snps in this
+
+adgc subjects. of the 633,615 unique snps in this adgc, qc filters dropped 5 for low maf and 5316 for hwe, leaving 628,294 snps. combining adgc and chronic pancreatitis cohorts and performing another round of qc yielded 625,739 snps for analysis.
+
+genotyping and expression studies: a.m.k., d.j.h., d.s., g.d.s., j.l., j.l.h., j.p.s., l.a.f., l.o., m.a.p-v., n.o.z., r.m., v.k.s. statistical analysis: b.d., d.y., k.r., l.k., m.m.b., m.r.o competing financial interest the authors declare no competing financial interests.
+
+the stage 2 cohort included 910 cases (331 chronic pancreatitis, 579 recurrent acute pancreatitis table 1, supplementary table 1), again genotyped at 625,739 snps, and 4170 controls, most genotyped previously on the illumina 1m. all subjects were of european ancestry as determined by genetic analyses. recurrent acute pancreatitis and chronic pancreatitis were modeled as having common susceptibilities, with chronic pancreatitis occurring over time in the presence of additional disease-modifying
+
+Population
+1, delineate 764 and 282 subjects, respectively, of european ancestry (self-identified) snp qc for maf and hardy weinberg equilibrium (hwe) were performed on data from these subjects. of 731,442 snps received, 633,790 passed qc filters. snps were dropped for the following reasons: 3165 for map location 11,977 for call rate 77,300 for maf < 0.01 and 5219 failed hwe (p-value < 0.005).
+
+snp qc was first performed using naps2 and adgc samples separately.. ancestry was estimated using dacgem based on 9700 snps that had a genotype completion rate of 99.9%, a minor allele frequency maf 0.05, and were separated by at least 500kb. analysis of genotypes from naps2 subjects identified 1 significant dimensions of ancestry and clustered subjects into 3 groups (supplementary fig. 1). groups a and b, illustrated in supplementary figure 1, delineate 764 and 282 subjects, respectively,
+
+to further define genetic risk, we conducted a two-stage (discoveryreplication) genomewide association study (gwas). the final data set for the stage 1 cohort included 676 chronic pancreatitis cases and 4507controls of european ancestry (supplementary figs. 2-3) genotyped at 625,739 snps (table 1 supplementary table 1). genomewide significant associations (p-value < 5 10-8) were identified at two loci. the most highly associated snp fell in xq23.3, dubbed the cldn2 locus, the other in 7q34,
+
+to control confounding due to ancestry, the first 10 major eigenvectors from the spectral decomposition were used as covariates in stage 1 and stage 2 analyses, although only one was significant. we contrasted the genotypes of case subjects and controls via logistic regression and a log-additive (logit) model using plink. genotypes for any snps showing association p-value < 5 10-7 were manually inspected for valid genotype clustering. snps showing poor-quality clustering were excluded.
+
+the stage 2 cohort included 910 cases (331 chronic pancreatitis, 579 recurrent acute pancreatitis table 1, supplementary table 1), again genotyped at 625,739 snps, and 4170 controls, most genotyped previously on the illumina 1m. all subjects were of european ancestry as determined by genetic analyses. recurrent acute pancreatitis and chronic pancreatitis were modeled as having common susceptibilities, with chronic pancreatitis occurring over time in the presence of additional disease-modifying
+
+Stage
+for all snps passing quality control and showing p-value < 510-7 for stage 1 or stage 2 or the joint analysis.
+
+to further define genetic risk, we conducted a two-stage (discoveryreplication) genomewide association study (gwas). the final data set for the stage 1 cohort included 676 chronic pancreatitis cases and 4507controls of european ancestry (supplementary figs. 2-3) genotyped at 625,739 snps (table 1 supplementary table 1). genomewide significant associations (p-value < 5 10-8) were identified at two loci. the most highly associated snp fell in xq23.3, dubbed the cldn2 locus, the other in 7q34,
+
+in the presence of additional disease-modifying factors. it is possible that this assumption reduces power relative to a study comprising solely chronic pancreatitis or recurrent acute pancreatitis cases. our primary targets in stage 2 were the prss1-prss2 and cldn2 loci, although we also conducted a joint analysis of stage 1 and stage 2 data to uncover any new risk loci. after controlling for ancestry, these data demonstrated significant effects for the cldn2 and prss1-prss2 loci (figure 1
+
+genotyping and expression studies: a.m.k., d.j.h., d.s., g.d.s., j.l., j.l.h., j.p.s., l.a.f., l.o., m.a.p-v., n.o.z., r.m., v.k.s. statistical analysis: b.d., d.y., k.r., l.k., m.m.b., m.r.o competing financial interest the authors declare no competing financial interests.
+
+does not include information from controls in stage 1 (n=4514) or from stage 2 (n=4053). for more complete characterization of samples, please see supplementary table 1 in the appendix. alcohol-related pancreatitis was assigned by the study physician at enrollment. results for leading snps at the prss1-prss2 and cldn2 loci from stage 1, stage 2, and joint analysis.
+
+Imputation
+to our knowledge, genetic variations in cldn2 have never been associated with disease in humans. we assessed dna sequence variants around cldn2, rna, and protein expression for claudin-2 in control tissue classified by histology and genotype (supplementary table 6, supplementary fig. 10). evaluating 1000 genomes data, no exonic variation was identified that could explain the association signal. using materials and methods described previously for prss1 expression, cldn2 expression levels in
+
+or highly related samples based on genotype and using gcta software (genetic relationship matrix score grm > 0.4), 35 cases and 78 controls (2 naps2, 76 adgc) were dropped. after these qc filters, 676 cases and 4507 controls remained for association analysis.
+
+qc was performed for individuals and then snps to determine which samples and snps should not be included in the analysis (dropped). assessing sex miscalls based on chromosome genotypes using plink, 7 chronic pancreatitis cases and 20 controls (10 naps2 10 adgc) were dropped. based on the requirement for 95% complete genotypes per individual, 40 cases and 27 controls (20 naps2 controls and 7 adgc controls) were dropped. searching duplicate or highly related samples based on genotype and
+
+to control confounding due to ancestry, the first 10 major eigenvectors from the spectral decomposition were used as covariates in stage 1 and stage 2 analyses, although only one was significant. we contrasted the genotypes of case subjects and controls via logistic regression and a log-additive (logit) model using plink. genotypes for any snps showing association p-value < 5 10-7 were manually inspected for valid genotype clustering. snps showing poor-quality clustering were excluded.
+
+genotypes all cases and naps2 controls were genotyped by the university of pittsburgh genomics and proteomics core laboratories using the illumina humanomniexpress beadchip. samples were processed and scanned using the manufacturers recommended protocols with no modifications. adgc samples were also genotyped using illumina humanomniexpress beadchips, whereas ngrc samples were genotyped on the illumina human1m-duo dna analysis beadchip. quality control (qc) for stage 1
+
+Study type
+characterization of case subjects used for gwas.
+
+genotyping and expression studies: a.m.k., d.j.h., d.s., g.d.s., j.l., j.l.h., j.p.s., l.a.f., l.o., m.a.p-v., n.o.z., r.m., v.k.s. statistical analysis: b.d., d.y., k.r., l.k., m.m.b., m.r.o competing financial interest the authors declare no competing financial interests.
+
+or highly related samples based on genotype and using gcta software (genetic relationship matrix score grm > 0.4), 35 cases and 78 controls (2 naps2, 76 adgc) were dropped. after these qc filters, 676 cases and 4507 controls remained for association analysis.
+
+genotypes all cases and naps2 controls were genotyped by the university of pittsburgh genomics and proteomics core laboratories using the illumina humanomniexpress beadchip. samples were processed and scanned using the manufacturers recommended protocols with no modifications. adgc samples were also genotyped using illumina humanomniexpress beadchips, whereas ngrc samples were genotyped on the illumina human1m-duo dna analysis beadchip. quality control (qc) for stage 1
+
+to further define genetic risk, we conducted a two-stage (discoveryreplication) genomewide association study (gwas). the final data set for the stage 1 cohort included 676 chronic pancreatitis cases and 4507controls of european ancestry (supplementary figs. 2-3) genotyped at 625,739 snps (table 1 supplementary table 1). genomewide significant associations (p-value < 5 10-8) were identified at two loci. the most highly associated snp fell in xq23.3, dubbed the cldn2 locus, the other in 7q34,
+
+Phenotype
+sample collection and phenotyping: a.b., a.c.m., a.c.n., a.g., a.g.s., a.i.l., a.j.s., a.k., a.m.g., a.p., a.p.l., a.r., a.s., b.g., b.l.m., b.n.v., b.r., b.s.s., b.t.h., c.a.m., c.b.w., c.cao, c.cruchaga, c.d., c.e.f., c.e.y., c.f.l., c.g.l., c.l., c.m.h., c.m.w., c.r., c.t.b., d.a.b., d.beekly, d.blacker, d.c., d.c.marson, d.c.mash, d.c.w., d.g.c., d.h.c., d.h.g., d.r.g., d.w.d., d.w.t., d.y., e.a.c., e.d.r., e.h., e.h.b., e.h.k., e.m., e.m.r., e.p., e.r.m., f.m., f.m.l., f.u.w., f.y.d.,
+
+characterization of case subjects used for gwas.
+
+from 4076 cases and controls from the alzheimer disease genetics consortium (adgc) and 493 naps2 subjects, all genotyped on the same platform as the chronic pancreatitis samples.
+
+genotyping and expression studies: a.m.k., d.j.h., d.s., g.d.s., j.l., j.l.h., j.p.s., l.a.f., l.o., m.a.p-v., n.o.z., r.m., v.k.s. statistical analysis: b.d., d.y., k.r., l.k., m.m.b., m.r.o competing financial interest the authors declare no competing financial interests.
+
+qc was performed for individuals and then snps to determine which samples and snps should not be included in the analysis (dropped). assessing sex miscalls based on chromosome genotypes using plink, 7 chronic pancreatitis cases and 20 controls (10 naps2 10 adgc) were dropped. based on the requirement for 95% complete genotypes per individual, 40 cases and 27 controls (20 naps2 controls and 7 adgc controls) were dropped. searching duplicate or highly related samples based on genotype and
+
+{'Cohort': ['adgc', 'chronic pancreatitis', 'chronic pancreatitis cohort', 'stage 2 cohort', 'genotyping and expression studies', 'illumina 1m', 'gwas'], 'Population': ['chronic pancreatitis', 'ancestry', 'naps2', 'european', 'race', 'cldn2', 'european ancestry'], 'Stage': ['discoveryreplication', 'combined', 'meta', 'joint analysis', 'stage 2', 'stage 1', 'gwas', 'discovery', 'replication', 'the joint analysis'], 'Imputation': ['grm', 'illumina humanomniexpress beadchip', '1000 genomes', 'illumina human1m-duo dna analysis beadchip', 'plink', 'prss1', 'gcta software'], 'Study type': ['sequencing', 'genomewide association study', 'genotyping', 'gwas', 'expression'], 'Phenotype': ['adgc', 'chronic pancreatitis', 'trait', 'naps2', 'case subjects', 'disease', 'alzheimer disease genetics consortium']}
+
+23535033 PMC3760995
+Cohort
+data used in the discovery sample were obtained from the ad neuroimaging initiative (adni) database. adni was launched in 2003 with the primary goal of testing whether longitudinal magnetic resonance imaging (mri), positron emission tomography (pet), and other serum or csf biomarkers could serve as proxy markers for the progression of mild cognitive impairment (mci) and early ad. after several waves of recruitment, adni has enrolled over 1000 individuals with ad, mci or who are normal controls.
+
+was measured and analyzed differently in the discovery and replication cohorts. a full description of these differences is beyond the scope of this paper, but there is face validity to the assumption that both represent a general measure of overall cognitive ability, since both the adas-cog, and the gcog incorporate measures on a variety of cognitive domains. our experience with the adni data indicates that the genetic association tests for decline are highly sensitive to the assessment scale
+
+methods discovery sample
+
+our results require confirmation in larger datasets, but support the intriguing possibility that previously unknown genetic variants may influence the rate of decline in ad. larger cohorts with longitudinal data, providing improved statistical power, are being collected to provide more definitive replication.
+
+ad subjects in total. the subset of adni subjects analyzed for the discovery sample included 303 individuals of european descent who either had ad at baseline or converted to ad during follow-up and had cognitive data. baseline data was defined as data from the examination with the first clinical diagnosis of ad. seventeen individuals with age at onset < 60 years (indicative of familial ad) were excluded.
+
+Population
+first three principal components of ancestry in our final models. to limit the number of tests performed in the replication sample, we created a list of the 65 most promising snps based on the strength of statistical evidence for association, including supporting evidence from flanking snps.
+
+adni participants contributed blood samples from which dna was extracted and were genotyped using the illumina human genome 610 quad beadchips. in the entire adni sample (both cases and controls) 67 individuals were excluded due to a genotyped snp call rate < 98% and 17 individuals were excluded because the onset of their ad began with age < 60 years. for analysis, we imputed the genotypes for all 1000 genomes snps using the markov chain haplotyping software (mach) and retained those with
+
+software (mach) and retained those with pairwise linkage disequilibrium (r2 >0.80) for further analysis. imputed genotypes were analyzed as allele dosages adjusted by the quality of the imputation. snps were not analyzed if they had minor allele frequencies (maf) of less than 4%. eigenstrat was used to measure principal components of ancestry (continuous measures summarizing genetic variation that were used to adjust for potential admixture in the sample).
+
+effect of time on cognitive score. we used r version 2.10.0 to evaluate these models with generalized estimating equations to account for the intra-individual correlation in cognitive performance and genotype. covariates such as apoe 4 allele count, education, age, gender, and pre-baseline disease duration (for those who already had ad at baseline) were considered and retained in the final models if significant at p < 0.05. we also included the first three principal components of ancestry in
+
+ad subjects in total. the subset of adni subjects analyzed for the discovery sample included 303 individuals of european descent who either had ad at baseline or converted to ad during follow-up and had cognitive data. baseline data was defined as data from the examination with the first clinical diagnosis of ad. seventeen individuals with age at onset < 60 years (indicative of familial ad) were excluded.
+
+Stage
+was measured and analyzed differently in the discovery and replication cohorts. a full description of these differences is beyond the scope of this paper, but there is face validity to the assumption that both represent a general measure of overall cognitive ability, since both the adas-cog, and the gcog incorporate measures on a variety of cognitive domains. our experience with the adni data indicates that the genetic association tests for decline are highly sensitive to the assessment scale
+
+methods discovery sample
+
+finally, we meta-analyzed the results from the discovery and replication samples using sample size-weighted p-values and the direction of the effect using metal. associations were considered significant if p values were less than 5 10-8. results
+
+with ad diagnosis, longitudinal cognitive data (2 or greater evaluations), and quality-controlled genotyping were available for the replication analysis.
+
+replication sample
+
+Imputation
+and for snps (hwe p > 0.001 maf > 0.01, genotype call rate > 0.95 misshap test > 110-9) to these data. in all, 13 individuals were removed due to low snp call rate. subsequently, eigenstrat was used to identify and remove population outliers using default parameters. snp genotypes were imputed using mach software (version 1.0.16a) and the 1000 genomes reference panel. at the conclusion of the qc pipeline and imputation, 203 ros and 171 map subjects with ad diagnosis, longitudinal cognitive
+
+genotyping and quality control
+
+with ad diagnosis, longitudinal cognitive data (2 or greater evaluations), and quality-controlled genotyping were available for the replication analysis.
+
+software (mach) and retained those with pairwise linkage disequilibrium (r2 >0.80) for further analysis. imputed genotypes were analyzed as allele dosages adjusted by the quality of the imputation. snps were not analyzed if they had minor allele frequencies (maf) of less than 4%. eigenstrat was used to measure principal components of ancestry (continuous measures summarizing genetic variation that were used to adjust for potential admixture in the sample).
+
+methods discovery sample
+
+Study type
+genotyping and quality control
+
+with ad diagnosis, longitudinal cognitive data (2 or greater evaluations), and quality-controlled genotyping were available for the replication analysis.
+
+our results require confirmation in larger datasets, but support the intriguing possibility that previously unknown genetic variants may influence the rate of decline in ad. larger cohorts with longitudinal data, providing improved statistical power, are being collected to provide more definitive replication.
+
+methods discovery sample
+
+was measured and analyzed differently in the discovery and replication cohorts. a full description of these differences is beyond the scope of this paper, but there is face validity to the assumption that both represent a general measure of overall cognitive ability, since both the adas-cog, and the gcog incorporate measures on a variety of cognitive domains. our experience with the adni data indicates that the genetic association tests for decline are highly sensitive to the assessment scale
+
+Phenotype
+phenotypic measures
+
+alzheimers disease (ad) is a common form of dementia with an enormous public health impact and for which there are no treatments yet available that can slow progression. through the efforts of large consortia that pool data from many genome wide association studies (gwas) of late onset ad, a number of risk genes have been identified and robustly replicated. only with samples in excess of 10,000 ad cases and similar numbers of controls, has consensus been reached on the veracity of these risk
+
+was measured and analyzed differently in the discovery and replication cohorts. a full description of these differences is beyond the scope of this paper, but there is face validity to the assumption that both represent a general measure of overall cognitive ability, since both the adas-cog, and the gcog incorporate measures on a variety of cognitive domains. our experience with the adni data indicates that the genetic association tests for decline are highly sensitive to the assessment scale
+
+normal and pathological age-related cognitive decline also mediate more rapid cognitive decline in some ad patients. other reports have postulated superimposed medical factors to be associated with rate of decline in ad, including diabetes and other vascular risk factors, kidney function, and muscle strength. two recent candidate gene studies tested a limited number of candidate snps for association with rate of decline and identified some promising associations.
+
+the strengths of this analysis were the unbiased nature of the gwas, a discovery and a replication sample, and a statistical model that allowed us to specifically measure test for a differential rate of decline (rather than cognitive function in general) while maximizing the information content of the data (use of repeated measures). our study was limited by small sample sizes in both datasets, and by the fact that the phenotype of cognitive decline was measured and analyzed differently in the
+
+{'Cohort': ['adni', 'adas-cog', 'gcog', 'larger cohorts', 'discovery', 'adni database'], 'Population': ['ethnic', 'ancestry', 'familial', 'european', 'race'], 'Stage': ['discovery', 'replication', 'meta'], 'Imputation': ['mach', '1000 genomes reference panel', 'reference panel', 'genotyping', 'phasing', 'eigenstrat', 'ad', 'imputed genotypes'], 'Study type': ['sequencing', 'genotyping'], 'Phenotype': ['outcome', 'dementia', 'adas-cog', 'ad', 'trait', 'phenotypic', 'cognitive ability', 'gcog', 'cognitive decline', 'alzheimers disease (ad)', 'vascular risk factors', 'differential rate of decline', 'disease']}

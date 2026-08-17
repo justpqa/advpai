@@ -114,7 +114,7 @@ def ingest_doc_from_pmc(pmid: int, pmcid: str, embedding_model_name: str = "NeuM
     documents = []
     metadata = []
     try:
-        curr_doc = ""
+        # curr_doc = ""
         url = f"https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/{pmcid}/unicode"
         response = requests.get(url)
         if response.status_code == 200:
@@ -123,27 +123,119 @@ def ingest_doc_from_pmc(pmid: int, pmcid: str, embedding_model_name: str = "NeuM
                 doc = d["documents"]
                 for p in doc:
                     passage = p["passages"]
+                    curr_section = ""
+                    title_lst = [] # Keep all suptitle, include (type, text)
+                    curr_doc = ""
+                    curr_table_doc = "" # specific doc string for table
+                    curr_fig_doc = "" # specific doc string for fig
                     for item in passage:
-                        if "text" in item:
-                            curr_doc += "\n\n" + item["text"]
-        documents.append(curr_doc)
-        metadata.append({"PMID": str(pmid), "PMCID": pmcid})
+                        # filter for parts that high chance that not contains the info 
+                        # or could become a source of distraction
+                        if item["infons"]["section_type"] in [
+                            "ABSTRACT", 'CONCL', 'DISCUSS', 'INTRO', 
+                            'METHODS', 'RESULTS', 'SUPPL', "TITLE"
+                        ]:
+                            # documents.append(Document(page_content = item["text"], metadata = {"PMID": str(pmid), "PMCID": pmcid}))
+                            # curr_doc += item["text"] + "\n\n"
+                            if item["infons"]["section_type"] != curr_section:
+                                # add the current doc if the doc is not empty
+                                if curr_doc.strip():
+                                    # print(curr_section)
+                                    # print(title_lst)
+                                    # print(curr_doc)
+                                    # print()
+                                    documents.append(
+                                        Document(
+                                            page_content = f"{curr_section}\n\n" + "\n\n".join([t[1] for t in title_lst]) + "\n\n" + curr_doc, 
+                                            metadata = {"PMID": str(pmid), "PMCID": pmcid}
+                                        )
+                                    )
+                                curr_section = item["infons"]["section_type"]
+                                title_lst = []
+                                curr_doc = ""
+                                if "title" in item["infons"]["type"]:
+                                    title_lst.append((item["infons"]["type"], item["text"]))
+                                else:
+                                    curr_doc += item["text"] + "\n"
+                            else:
+                                # same section, check if we get to a title or not
+                                if "title" in item["infons"]["type"]:
+                                    # new title, save the doc first before do anythng
+                                    if curr_doc.strip():
+                                        documents.append(
+                                            Document(
+                                                page_content = f"{curr_section}\n\n" + "\n\n".join([t[1] for t in title_lst]) + "\n\n" + curr_doc, 
+                                                metadata = {"PMID": str(pmid), "PMCID": pmcid}
+                                            )
+                                        )
+                                        curr_doc = ""
+                                    # Get to a title => check if it is in our tree of title, if yes then we found a new chunks
+                                    if item["infons"]["type"] in [t[0] for t in title_lst]:
+                                        # print(curr_section)
+                                        # print(title_lst)
+                                        # print(curr_doc)
+                                        # print()
+                                        # this already appear in the tree => we need to add the current chunk and start a new branch and leaf
+                                        while len(title_lst) > 0 and title_lst[-1][0] != item["infons"]["type"]:
+                                            title_lst.pop()
+                                        if len(title_lst) > 0 and title_lst[-1][0] == item["infons"]["type"]:
+                                            title_lst.pop()
+                                        title_lst.append((item["infons"]["type"], item["text"]))
+                                    else:
+                                        # append to current branch
+                                        title_lst.append((item["infons"]["type"], item["text"]))
+                                else:
+                                    curr_doc += item["text"] + "\n"
+                        elif item["infons"]["section_type"] == "TABLE":
+                            # add all table parts in the same chn
+                            curr_table_doc += item["text"] + "\n"
+                        elif item["infons"]["section_type"] == "FIG":
+                            # add all table parts in the same chn
+                            curr_fig_doc += item["text"] + "\n"
+                    # last item, add it
+                    # print(curr_section)
+                    # print(title_lst)
+                    # print(curr_doc)
+                    # print()
+                    if curr_doc.strip():
+                        documents.append(
+                            Document(
+                                page_content = f"{curr_section}\n\n" + "\n\n".join([t[1] for t in title_lst]) + "\n\n" + curr_doc, 
+                                metadata = {"PMID": str(pmid), "PMCID": pmcid}
+                            )
+                        )
+                    if curr_table_doc.strip():
+                        documents.append(
+                            Document(
+                                page_content = curr_table_doc, 
+                                metadata = {"PMID": str(pmid), "PMCID": pmcid}
+                            )
+                        )
+                    if curr_fig_doc.strip():
+                        documents.append(
+                            Document(
+                                page_content = curr_fig_doc, 
+                                metadata = {"PMID": str(pmid), "PMCID": pmcid}
+                            )
+                        )
+        # documents.append(curr_doc)
+        # metadata.append({"PMID": str(pmid), "PMCID": pmcid})
     except:
         return 0
         # raise Exception(f"Failed to extract paper {pmid}_{pmcid} from PMC with error {e}")
     
 
     # split documents into chunks
-    try:
-        text_splitter = RecursiveCharacterTextSplitter(
-            chunk_size=chunk_size, 
-            chunk_overlap=chunk_overlap,
-            separators=["\n\n", "\n", " ", ""]
-        )
-        splitted_documents = text_splitter.create_documents(texts=documents, metadatas=metadata)
-        splitted_documents = [clean_document(doc) for doc in splitted_documents]
-    except:
-        return 0
+    # try:
+    #     text_splitter = RecursiveCharacterTextSplitter(
+    #         chunk_size=chunk_size, 
+    #         chunk_overlap=chunk_overlap,
+    #         separators=["\n\n", "\n", " ", ""]
+    #     )
+    #     splitted_documents = text_splitter.create_documents(texts=documents, metadatas=metadata)
+    #     splitted_documents = [clean_document(doc) for doc in splitted_documents]
+    # except:
+    #     return 0
     
 
     # create Chroma vector store
@@ -162,8 +254,9 @@ def ingest_doc_from_pmc(pmid: int, pmcid: str, embedding_model_name: str = "NeuM
         if all_ids:
             collection.delete(ids=all_ids)
         # add documents to Chroma vector store
-        chroma_db.add_documents(splitted_documents)
-        return len(splitted_documents)
+        # chroma_db.add_documents(splitted_documents)
+        chroma_db.add_documents(documents)
+        return len(documents)
     except:
         return 0
     
@@ -578,8 +671,8 @@ class ADVPInformationRetriever:
 
 
         # NOTE: config for search and generate, add it as params later
-        self.top_k = 20
-        self.top_k_rerank = 5
+        self.top_k = 3
+        self.top_k_rerank = 3
         self.max_new_tokens = 32
         self.similarity_score_threshold = 0.0
         self.temperature = 0
@@ -938,6 +1031,10 @@ Output: """
             # documents = [doc for _, doc in sorted(zip(scores, documents), key=lambda x: x[0], reverse=True)]
             # documents = documents[:self.top_k_rerank]
             documents = self.rerank(retrieval_query, documents)
+            print(ref_col)
+            for d in documents:
+                print(d)
+                print()
             messages = self.make_messages(query, documents, examples=ref_col_examples, use_examples_in_llm=ref_col_use_examples_in_llm)
             response = LLAMA_CLIENT.chat.completions.create(
                 model="local",
